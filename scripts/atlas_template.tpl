@@ -219,6 +219,7 @@ const COLS = {
   ["Refus facturé", p => n(p.refusal_billed), p => p.refusal_billed||""],
   ["Paiement", p => n((p.payment||[]).join(", ")), p => (p.payment||[]).join()],
   ["LoRA", p => n(p.lora_hosting), p => p.lora_hosting?0:1],
+  ["Avis des usagers", p => `<span class="var">${esc(((p.user_feedback||{}).summary||"").slice(0,140))}${((p.user_feedback||{}).summary||"").length>140?"…":""}</span>`, p => "", 0, "wrap"],
   ["Pourquoi", p => `<span class="var">${esc(p.verdict_reason||"")}</span>`, p => "", 0, "wrap"],
  ],
 };
@@ -257,7 +258,11 @@ function detail(m){
 }
 function platformDetail(p){
   const src = (p.sources||[]).map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>`:"(témoignage direct)"} <span class="var">${esc(s.date||"")} ${esc(s.type||"")}</span></li>`).join("");
-  const row = (t,v) => v ? `<h4>${t}</h4><p>${esc(typeof v==="object"?JSON.stringify(v):v)}</p>` : "";
+  const txt = v => { if (v == null) return ""; if (typeof v !== "object") return esc(v);
+    if (Array.isArray(v)) return v.map(x => typeof x === "object" ? esc([x.text, x.ends ? "jusqu'au " + x.ends : "", x.source ? "" : ""].filter(Boolean).join(" · ")) + (x.source ? ` <a href="${esc(x.source)}" target="_blank" rel="noopener">source</a>` : "") : esc(x)).join("<br>");
+    const parts = [v.summary, v.verdict, v.calc, v.clip && v.usd_per_clip_sub != null ? `Clip ${v.clip} : ${v.usd_per_clip_sub} $ par abonnement (${v.plan||""}), ${v.best_api ? v.best_api.usd_per_clip + " $ chez " + v.best_api.platform : "?"} en API` : null, v.breakeven || v.volume].filter(Boolean);
+    return parts.length ? parts.map(esc).join("<br>") : esc(JSON.stringify(v)); };
+  const row = (t,v) => (v && (typeof v !== "object" || Object.keys(v).length)) ? `<h4>${t}</h4><p>${txt(v)}</p>` : "";
   return `<div class="det"><div>${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
    <div>${row("Modération",[g(p,"moderation.notes"),g(p,"moderation.public_figures"),g(p,"moderation.violence")].filter(Boolean).join(" · "))}${row("Refus facturé",p.refusal_billed)}${row("Conditions",p.terms)}</div>
    <div>${row("Fiabilité",p.reliability)}${row("Retours d'usagers",p.user_feedback)}${row("Abonnement ou API",p.api_vs_subscription)}</div>

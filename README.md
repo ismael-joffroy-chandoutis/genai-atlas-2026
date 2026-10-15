@@ -18,7 +18,7 @@ A comparison of generative video and image models as of 15 October 2026, variant
   - `gpu-hour.json`: GPU rental prices per hour.
   - `3d-models.json`: 76 3D variants (image to 3D, scene reconstruction, worlds, rigging, depth and camera), with the 3D Arena scores.
   - `rankings.json`: every public leaderboard score by category (Artificial Analysis and arena.ai: text, image and reference to video, with and without audio, video editing, text to image, image editing, multi-image editing).
-  - `platforms.json`: the platforms themselves: verdict, moderation of real faces, whether a refusal is billed, payment, Seedance price.
+  - `platforms.json`: 50 platforms: verdict, moderation of real faces, whether a refusal is billed, payment, Seedance price, user feedback, subscription versus API cost, current promotions.
   - `integrations.json`: in which local tools each model ships (official ComfyUI templates, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene).
   - `SCHEMA.md`: the format of every file.
 - `scripts/`: price readers (fal, OpenRouter, GPU clouds), the price merger, the table export and the builder of a single-file interactive page (`python3 scripts/build_atlas.py`, output in `site/`).

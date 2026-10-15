@@ -9,8 +9,11 @@
    "Seedance 2.5",
    "Seedance 2.0 / mini / Fast",
    "H3 Max (sans son)",
-   "Wan 3.0",
-   "Kling 3.0"
+   "Wan 3.0 / Prime",
+   "Kling 3.0",
+   "Veo 3.1",
+   "Grok Imagine Video 1.5",
+   "Runway Gen-4.5"
   ],
   "seedance": {
    "version": "2.5 (20260807)",
@@ -23,18 +26,30 @@
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "Pas de politique de modération propre à la vidéo. La doc Seedance 2.5 indique qu'une requête peut être refusée par le fournisseur qui la sert : la modération est celle du fournisseur amont. OpenRouter peut bloquer des entrées sans préavis et filtre automatiquement CSAM et malware."
   },
-  "refusal_billed": "echec amont (502) non facture ; refus de moderation inconnu",
+  "refusal_billed": "échec amont (502) non facturé selon la doc ; refus de modération non précisé (le coût n'apparaît qu'à la fin du job)",
   "payment": [
    "carte",
    "crypto"
   ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "terms": "OpenRouter, Inc. (New York), droit de l'État de New York, arbitrage. La propriété des sorties suit les conditions de chaque modèle. Licence mondiale, non exclusive, gratuite accordée à OpenRouter pour faire tourner le service ; licence plus large et perpétuelle si on active la journalisation des prompts. Indemnisation à la charge de l'utilisateur. Crédits remboursables 24 h après achat, jamais en crypto. CGU du 31/08/2026.",
+  "reliability": "Trustpilot 1,6/5 sur 66 avis (consulté le 15/10/2026), surtout des plaintes de comptes bloqués, crédits non remboursés et support lent. Avis portant sur l'usage LLM, rien de spécifique à la vidéo.",
+  "user_feedback": {
+   "summary": "Les avis négatifs portent sur des comptes restreints sans explication, des crédits disparus ou non remboursés et un support qui répond en semaines ; l'accès à de nombreux modèles avec peu d'avance est le point salué.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/openrouter.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "fiable",
-  "verdict_reason": "Prix officiel, une seule clé, paiement carte ou crypto.",
+  "verdict_reason": "Prix officiel Seedance, une seule clé, paiement carte ou crypto ; support faible en cas de litige.",
   "sources": [
    {
     "url": "https://openrouter.ai/api/v1/videos/models",
@@ -45,6 +60,26 @@
     "url": "https://openrouter.ai/bytedance/seedance-2.5",
     "date": "2026-10-15",
     "type": "editeur"
+   },
+   {
+    "url": "https://openrouter.ai/bytedance/seedance-2.5/llms.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://openrouter.ai/docs/guides/overview/multimodal/video-generation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://openrouter.ai/terms",
+    "date": "2026-08-31",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/openrouter.ai",
+    "date": "2026-10-15",
+    "type": "independant"
    }
   ]
  },
@@ -56,28 +91,37 @@
   "url": "https://www.byteplus.com/en/product/modelark",
   "models": [
    "Seedance 2.5",
-   "Seedance 2.0"
+   "Seedance 2.0",
+   "Seedance 2.0 Fast",
+   "Seedance 2.0 Mini",
+   "Seedance 1.5 Pro",
+   "Seedream 5.0 Pro"
   ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.103,
    "usd_720p_s": 0.231,
    "usd_1080p_s": 0.569,
-   "note": "voie officielle ByteDance hors Chine"
+   "note": "Voie officielle ByteDance hors Chine. Exemples officiels sans vidéo en entrée : 5 s 16:9 = 0,514 $ (480p), 1,156 $ (720p), 2,843 $ (1080p). Avec vidéo en entrée : 1,244 à 4,838 $ en 720p."
   },
   "moderation": {
    "real_faces": "verif_identite",
    "public_figures": null,
    "violence": "filtre par mots-clés (« attack », « blood » refusés)",
-   "notes": "Personne réelle seulement après vérification de vivacité faite par la personne (Group ID réutilisable)."
+   "notes": "Personne réelle seulement après vérification de vivacité faite par la personne (Group ID réutilisable). Les conditions vidéo interdisent de générer un contenu qui porte atteinte aux droits à l'image et à la voix d'un tiers."
   },
-  "refusal_billed": "non facture (annonce)",
-  "payment": [],
+  "refusal_billed": "non facturé : seules les vidéos générées avec succès sont payées, aucun frais si l'échec vient de la modération (page tarifs officielle)",
+  "payment": [
+   "carte"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": "Offre non vendue au Royaume-Uni ni aux États-Unis.",
+  "terms": "Contrat avec BytePlus Pte. Ltd. (Singapour). Les CGU générales accordent à BytePlus une licence mondiale, perpétuelle, irrévocable et sous-licenciable sur les données téléversées, pour exploiter le service. Le client reste seul responsable des entrées et sorties. La propriété des sorties n'est pas énoncée dans les pages lues. Les conditions spécifiques vidéo (mises à jour le 08/09/2026) priment sur les conditions ModelArk.",
+  "reliability": "Offre non vendue au Royaume-Uni ni aux États-Unis. Compte en impayé plus de 2 h = service suspendu jusqu'à rechargement. Aucun profil Trustpilot propre trouvé.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "fiable",
-  "verdict_reason": "Seule voie propre pour une personne réelle consentante.",
+  "verdict_reason": "Seule voie propre pour une personne réelle consentante, refus de modération non facturés.",
   "sources": [
    {
     "url": "https://docs.byteplus.com/docs/ModelArk/upload-real-person-portrait-assets",
@@ -88,6 +132,26 @@
     "url": "https://thesource.com/2026/04/15/seedance/",
     "date": "2026-04-15",
     "type": "independant"
+   },
+   {
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/1544106",
+    "date": "2026-10-08",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.byteplus.com/byteplus-platform/docs/adding-a-payment-method",
+    "date": "2024-03-18",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.byteplus.com/en/legal/docs/terms-of-service",
+    "date": "2024-03-18",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.byteplus.com/en/docs/ModelArk/Specific_Terms_for_the_BytePlus_Video_Generation_Model_Services",
+    "date": "2026-09-08",
+    "type": "editeur"
    }
   ]
  },
@@ -97,37 +161,110 @@
   "type": "agregateur",
   "country": "US",
   "url": "https://replicate.com",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Wan 3.0 / Prime",
+   "Kling 3.0 / Omni",
+   "Veo 3.1",
+   "Sora 2",
+   "Hailuo 2.3",
+   "Grok Imagine Video 1.5",
+   "LTX-2.5"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.1028,
    "usd_720p_s": 0.2312,
-   "usd_1080p_s": null
+   "usd_1080p_s": null,
+   "note": "480p et 720p ; avec vidéo en entrée : 0,4304 $/s en 480p et 0,9676 $/s en 720p"
   },
   "moderation": {
    "real_faces": "inconnu",
    "public_figures": null,
-   "violence": null,
-   "notes": null
+   "violence": "CGU : interdit de promouvoir la violence ou le terrorisme, gore extrême, usurpation d'identité sans consentement, nudité non consentie.",
+   "notes": "Un avis Trustpilot du 08/10/2026 décrit toutes ses requêtes vidéo rejetées par la modération, crédits bloqués."
   },
-  "refusal_billed": "inconnu",
+  "refusal_billed": "run échoué non facturé (« if a run fails, we don't charge you ») ; annulation d'un modèle officiel peut être facturée ; refus de modération non précisé",
   "payment": [
-   "carte"
+   "carte",
+   "facture"
   ],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "lora_hosting": "oui (entraîneurs Flux et Wan, modèles et LoRA perso hébergés)",
+  "terms": "Replicate, LLC, droit californien, arbitrage AAA. L'utilisateur possède entrées et sorties, usage commercial permis sous réserve des conditions de chaque modèle. Licence à Replicate pour fournir le service et produire des modèles dérivés du client. Indemnisation à la charge de l'utilisateur. Crédits prépayés non remboursables, expirent après 12 mois. Racheté par Cloudflare (finalisé le 01/12/2025). CGU du 01/04/2026.",
+  "reliability": "Trustpilot 1,8/5 sur 16 avis (consulté le 15/10/2026) : crédits expirés, facturation pendant une panne d'API, support muet. Filiale de Cloudflare depuis décembre 2025.",
+  "user_feedback": {
+   "summary": "Avis rares et très négatifs : requêtes vidéo bloquées par la modération avec crédits inutilisables, crédits retirés après un an, facturation pendant une panne, support qui ne répond pas.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/replicate.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "fiable",
-  "verdict_reason": "Prix officiel, plateforme établie.",
-  "sources": []
+  "verdict_reason": "Prix officiel Seedance et Wan 3.0 facturé moitié prix ; plateforme établie adossée à Cloudflare, support faible.",
+  "sources": [
+   {
+    "url": "https://replicate.com/bytedance/seedance-2.5",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://replicate.com/alibaba/wan-3",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://replicate.com/docs/topics/billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://replicate.com/terms",
+    "date": "2026-04-01",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.sec.gov/Archives/edgar/data/0001477333/000147733326000038/cloud-20260331.htm",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://replicate.com/ostris/flux-dev-lora-trainer",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://replicate.com/ostris/wan-lora-trainer",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/replicate.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "runware",
   "name": "Runware",
   "type": "agregateur",
-  "country": "US",
+  "country": "GB",
   "url": "https://runware.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Wan 3.0 / Prime",
+   "H3 Max / Turbo",
+   "Kling 3.0",
+   "Veo 3.1",
+   "LTX-2.5",
+   "Grok Imagine Video 1.5",
+   "FLUX 3 Video"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.1025,
@@ -138,24 +275,96 @@
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "CGU : interdit d'entraîner un modèle pour usurper l'identité d'une personne réelle ou de reproduire la ressemblance d'une personne vivante sans consentement. Filtres de sécurité réglables par modèle ; classifieur de contenu vidéo annoncé « coming soon »."
   },
   "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": "oui (upload de checkpoints et LoRA, gratuit en bêta puis 0,05 $/Go/mois ; entraînement de LoRA de style)",
+  "terms": "Runware Ltd (Harrow, Royaume-Uni), droit anglais, arbitrage à Londres. L'utilisateur possède ses sorties, Runware ne prend aucune licence dessus. Usage commercial permis selon la licence de chaque modèle. Indemnisation à la charge de l'utilisateur. Achats non remboursables, litiges réglés en crédits. CGU du 29/09/2026.",
+  "reliability": "Pas de page Trustpilot (consulté le 15/10/2026).",
+  "user_feedback": {
+   "summary": "Un avis Trustpilot sur Atlas Cloud (01/10/2026) cite Runware comme donnant de meilleurs résultats Wan 3.0 avec le même prompt ; sinon très peu de retours publics trouvés.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/atlascloud.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "HeyGen Video 1.0 à 0,0107 $/s au lieu de 0,0214 (environ -50 %)",
+    "ends": null,
+    "source": "https://runware.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "P-Video-Edit (Draft) à 0,01875 $/s au lieu de 0,025 (environ -25 %)",
+    "ends": null,
+    "source": "https://runware.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "2 $ offerts à l'inscription avec une adresse professionnelle",
+    "ends": null,
+    "source": "https://runware.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "fiable",
-  "verdict_reason": "Prix officiel.",
-  "sources": []
+  "verdict_reason": "Prix les plus bas sur Seedance 2.5, seul du groupe à afficher le 1080p au tarif officiel, hébergement de LoRA.",
+  "sources": [
+   {
+    "url": "https://runware.ai/pricing",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://runware.ai/terms",
+    "date": "2026-09-29",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.runware.ai/articles/7648578038-payments-and-credits",
+    "date": "2026-03-08",
+    "type": "editeur"
+   },
+   {
+    "url": "https://runware.ai/docs/platform/model-upload",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://runware.ai/docs/models/content-safety",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.runware.ai/articles/5571280435-is-there-a-way-to-filter-out-nsfw-content",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
  },
  {
   "id": "segmind",
   "name": "Segmind",
   "type": "agregateur",
-  "country": "US/IN",
+  "country": "US",
   "url": "https://www.segmind.com",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Wan 3.0 / Prime",
+   "H3 / H3 Max Turbo",
+   "Kling 3.0 / O3",
+   "Veo 3.1",
+   "Sora 2",
+   "LTX-2.5"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.1102,
@@ -166,24 +375,101 @@
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": "Annonce ne pas ajouter de filtre devant Seedance ; les contrôles de ByteDance restent actifs."
+   "notes": "Article Segmind : Seedance 2.5 termine parfois un clip puis refuse de le livrer après contrôle, surtout si le prompt cite un genre musical ou une franchise connue. Les CGU renvoient à une politique d'usage générale (pas de règle propre aux personnes réelles)."
   },
-  "refusal_billed": "0 $ (annonce, article incohérent)",
+  "refusal_billed": "0 $ selon un article de l'éditeur (17/08/2026) : jobs rejetés, en erreur ou bloqués après génération facturés 0,00 $ ; rien dans les CGU",
   "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "lora_hosting": "oui (fine-tuning facturé au temps GPU, Flux Pro par paliers ; endpoints dédiés)",
+  "terms": "Segmind Inc. (siège à Santa Clara, Californie, selon CB Insights), droit applicable non indiqué. L'utilisateur garde la propriété de ses contenus et résultats. Usage limité aux besoins internes de l'entreprise, revente interdite sans accord écrit. Indemnisation à la charge de l'utilisateur. Pas de politique générale de remboursement. CGU du 04/08/2026.",
+  "reliability": "Pas de page Trustpilot (consulté le 15/10/2026).",
+  "user_feedback": null,
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Pro",
+   "plan_usd_month": 39,
+   "credits_month": 50,
+   "credits_per_clip": 1.18,
+   "usd_per_clip_sub": 0.92,
+   "clips_per_month": 42,
+   "best_api": {
+    "platform": "Runware",
+    "usd_per_clip": 1.15,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "crédits en dollars : 0,2369 x 5 = 1,18 $ de crédits par clip ; 39 / 50 x 1,18 = 0,92 $ ; 50 / 1,18 = 42 clips ; Runware 0,2304 x 5 = 1,15 $",
+   "verdict": "Pro devient rentable à partir d'environ 34 clips par mois (39 / 1,15) ; en dessous, payer à l'acte chez Runware.",
+   "sources": [
+    {
+     "url": "https://www.segmind.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://www.segmind.com/models/seedance-2.5/pricing",
+     "date": "2026-10-15",
+     "type": "mesure"
+    },
+    {
+     "url": "https://runware.ai/pricing",
+     "date": "2026-10-15",
+     "type": "mesure"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Concours AI Film Award doté de 1 M$ pour un film de 5 à 7 min fait avec Seedance",
+    "ends": "2026-11-20",
+    "source": "https://www.segmind.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Rien de plus permissif en pratique que BytePlus.",
-  "sources": []
+  "verdict_reason": "Prix proche de l'officiel et refus annoncés non facturés, mais la modération Seedance de ByteDance reste active.",
+  "sources": [
+   {
+    "url": "https://www.segmind.com/models/seedance-2.5/pricing",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://blog.segmind.com/seedance-2-5-pricing-fal-charges-95-more-per-token-than-segmind/",
+    "date": "2026-08-17",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.segmind.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.segmind.com/terms",
+    "date": "2026-08-04",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.cbinsights.com/company/segmind",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "kie",
   "name": "kie.ai",
   "type": "agregateur",
-  "country": null,
+  "country": "US",
   "url": "https://kie.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Veo 3.1",
+   "Kling 3.0 / Omni",
+   "Wan 3.0 / Prime",
+   "Vidu Q4",
+   "Grok Imagine Video 1.5",
+   "H3",
+   "Suno"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.14,
@@ -194,44 +480,158 @@
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "CGU vagues : contenus illégaux, contrefaisants ou « inappropriés » interdits, rien sur les personnes réelles. Un avis Trustpilot (30/03/2026) signale des erreurs 422 « content flagged » sur des appels qui marchaient avant."
   },
-  "refusal_billed": "inconnu",
+  "refusal_billed": "l'éditeur affirme que les crédits des tâches échouées sont rendus automatiquement (réponse Trustpilot du 24/07/2026) ; des utilisateurs signalent des tâches bloquées à 99 % qui consomment les crédits",
   "payment": [],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": "Trustpilot 3,3/5 sur 5 avis, plaintes de fiabilité (Sora) ; domaine de 2022. Souvent le moins cher sur Veo et Grok.",
+  "terms": "NEXUSAI SERVICES LLC et INNOLEAP AI LLC (Denver, Colorado), droit du Colorado. L'utilisateur garde la propriété de ses contenus ; propriété des sorties, usage commercial et indemnisation non traités. Licence à Kie pour faire tourner et améliorer le service. Crédits sans expiration, remboursement sur demande par mail. CGU en vigueur depuis le 01/08/2025.",
+  "reliability": "Trustpilot 2,1/5 sur 16 avis (consulté le 15/10/2026) : tâches bloquées qui consomment des crédits (environ 1 sur 5 selon un avis du 02/10/2026), pannes d'API, support lent. Souvent le moins cher sur Veo et Grok.",
+  "user_feedback": {
+   "summary": "Prix bas et crédits sans expiration appréciés, mais générations bloquées à 99 % facturées, erreurs 500 pendant des heures, refus « content flagged » soudains et support joignable surtout aux heures asiatiques.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/kie.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "tester",
-  "verdict_reason": "Bas prix sur Veo et Grok, fiabilité moyenne.",
-  "sources": []
+  "verdict_reason": "Bas prix sur Veo et Grok, fiabilité moyenne et Seedance 36 % au-dessus du prix officiel.",
+  "sources": [
+   {
+    "url": "https://kie.ai/pricing",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://kie.ai/terms-of-use",
+    "date": "2025-08-01",
+    "type": "editeur"
+   },
+   {
+    "url": "https://kie.ai/refund-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/kie.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "wavespeed",
   "name": "WaveSpeed",
   "type": "agregateur",
-  "country": null,
+  "country": "SG/HK",
   "url": "https://wavespeed.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.5 / Turbo",
+   "Wan 3.0 / Prime",
+   "H3",
+   "Kling 3.0 / O3",
+   "Veo 3.1",
+   "Sora 2",
+   "Vidu Q3",
+   "Grok Imagine Video 1.5"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.18,
    "usd_720p_s": 0.36,
-   "usd_1080p_s": 0.9
+   "usd_1080p_s": 0.9,
+   "note": "variante Turbo : 0,20 $/s en 720p, 0,22 $/s en 1080p"
   },
   "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": null
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle propre ; certains fournisseurs (Google) appliquent leur politique.",
+   "violence": "Interdits dans les CGU : violence, terrorisme, gore extrême ; la politique de contenu vise aussi la fabrication d'armes ou d'explosifs.",
+   "notes": "Deepfakes de personnes réelles interdits sans consentement ou s'ils visent à tromper. Safety Checker actif par défaut sur l'interface web. Avis d'utilisateurs : filtres durcis sans préavis fin 2025, faux positifs de violation de contenu."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "refusal_billed": "échecs système et délais dépassés remboursés automatiquement ; refus de modération non précisé (l'éditeur conseille de vérifier tâche par tâche)",
+  "payment": [
+   "carte",
+   "PayPal",
+   "WeChat Pay",
+   "Alipay",
+   "Naver Pay"
+  ],
+  "lora_hosting": "oui (entraîneur LoRA Flux Dev)",
+  "terms": "WaveSpeedAI PTE. LTD. (Singapour) et WaveSpeedAI LIMITED (Hong Kong), droit de Singapour ou de Hong Kong selon l'entité, arbitrage SIAC. L'utilisateur possède ses sorties, sans garantie de protection par le droit d'auteur. Licence à WaveSpeed limitée à la fourniture du service. Usage commercial des sorties non mentionné explicitement. Indemnisation à la charge de l'utilisateur. Crédits non remboursables sauf accord, sans expiration. CGU du 28/09/2026.",
+  "reliability": "Trustpilot 2,6/5 sur 4 avis, tous à 1 étoile (consulté le 15/10/2026) : générations ratées facturées, double prélèvement en recharge automatique, faux refus de contenu, support muet.",
+  "user_feedback": {
+   "summary": "Avis peu nombreux et négatifs : générations échouées ou au mauvais format facturées, faux refus pour violation de contenu, recharge automatique prélevée deux fois, support qui ne répond pas.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/wavespeed.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://wavespeed.ai/blog/developer-friction/wavespeedai-safety-checker-blocked-prompts-outputs/",
+     "date": "2026-08-06",
+     "type": "editeur"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "1 $ offert aux nouveaux comptes éligibles, sans carte",
+    "ends": null,
+    "source": "https://wavespeed.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Environ 75 % plus cher que le prix officiel.",
-  "sources": []
+  "verdict_reason": "Environ 55 % plus cher que le prix officiel sur Seedance 2.5, avis d'utilisateurs négatifs, mais paiements asiatiques et PayPal.",
+  "sources": [
+   {
+    "url": "https://wavespeed.ai/models/bytedance/seedance-2.5/text-to-video",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://wavespeed.ai/static/terms",
+    "date": "2026-09-28",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.wavespeed.ai/docs/payment-methods",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.wavespeed.ai/docs/refund-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.wavespeed.ai/docs/content-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://wavespeed.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://wavespeed.ai/models/wavespeed-ai/flux-dev-lora-trainer",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/wavespeed.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "fal",
@@ -240,29 +640,121 @@
   "country": "US",
   "url": "https://fal.ai",
   "models": [
-   "catalogue le plus large",
-   "H3, H3 Max, LoRA H3 et Wan"
+   "Seedance 2.5",
+   "H3 Max / Turbo",
+   "Wan 3.0 / Prime",
+   "Kling 3.0 / O3",
+   "Veo 3",
+   "LTX-2.5",
+   "FLUX 3 Video",
+   "catalogue le plus large (plus de 120 modèles vidéo)"
   ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.2205,
    "usd_720p_s": 0.473,
-   "usd_1080p_s": null
+   "usd_1080p_s": 1.164,
+   "note": "endpoint US : 0,2646 $/s en 480p et 0,5676 $/s en 720p"
   },
   "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": null
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle propre aux personnalités ; interdit d'utiliser le nom, l'image ou la voix d'une personne sans son consentement pour l'usurper, et la désinformation qui touche l'intégrité des élections.",
+   "violence": "Interdits : violence gratuite, gore extrême, torture ; incitation à la violence ; terrorisme et extrémisme violent.",
+   "notes": "Filtres de contenu sur certains modèles : une requête signalée renvoie une erreur 422 content_policy_violation non rejouable. Sur Seedance, le filtre amont de ByteDance refuse les visages réels en référence."
   },
-  "refusal_billed": "erreur 500 non facturée ; refus 422 peut être facturé",
-  "payment": [],
-  "lora_hosting": "oui (H3, Wan)",
-  "terms": null,
-  "reliability": null,
+  "refusal_billed": "erreur 500 et plus jamais facturée ; erreur 422 (entrée invalide) peut être facturée si le GPU a tourné ; le refus de modération renvoie aussi un 422, sans règle de facturation explicite",
+  "payment": [
+   "carte",
+   "virement",
+   "facture"
+  ],
+  "lora_hosting": "oui (entraîneurs Flux, Wan, Qwen Image, LTX-2 ; LoRA H3)",
+  "terms": "Features & Labels, Inc. (San Francisco), droit californien, arbitrage AAA. L'utilisateur garde ses entrées ; les CGU ne disent pas clairement qu'il possède les sorties. Licence à fal limitée à la fourniture du service ; fal possède les données d'usage. Usage personnel ou interne, régime à part pour un produit destiné à des tiers. Indemnisation à la charge de l'utilisateur. Crédits non remboursables, expirent après 365 jours (90 jours pour les crédits promo). CGU du 08/09/2026.",
+  "reliability": "Trustpilot 2,5/5 sur 31 avis (consulté le 15/10/2026) : solde vidé ou négatif, compte verrouillé, support lent ; choix de modèles et automatisation salués.",
+  "user_feedback": {
+   "summary": "« jamais eu de problème avec fal, à part les refus sur Seedance ». Sur Trustpilot, plaintes sur la facturation (solde vidé, compte verrouillé) et le support lent, éloges sur le catalogue, les prix de certains modèles et l'automatisation par lots.",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-15",
+     "type": "mesure"
+    },
+    {
+     "url": "https://www.trustpilot.com/review/fal.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.inflearn.com/community/questions/1711300/video-생성-요청-fal-ai-정책위반-문의드립니다",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "H3 Max Turbo -40 % : 0,015 $/s en 480p, 0,024 $/s en 768p, 0,048 $/s en 1080p, puis 0,025 / 0,04 / 0,08 $/s",
+    "ends": "2026-10-15",
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "H3 Max -40 % : 0,03 $/s en 480p, 0,048 $/s en 768p, 0,096 $/s en 1080p, puis 0,05 / 0,08 / 0,16 $/s",
+    "ends": "2026-10-15",
+    "source": "https://fal.ai/models/minimax/h3-max/image-to-video",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "fiable",
-  "verdict_reason": "Catalogue le plus large et fonctions H3 Max ; Seedance deux fois plus cher qu'ailleurs.",
-  "sources": []
+  "verdict_reason": "Catalogue le plus large, LoRA et fonctions H3 Max ; Seedance deux fois plus cher qu'ailleurs et refusé sur les visages réels.",
+  "sources": [
+   {
+    "url": "https://fal.ai/docs/model-apis/faq",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/terms",
+    "date": "2026-09-08",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/legal/acceptable-use-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/minimax/h3-max/image-to-video",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/bytedance/seedance-2.5/text-to-video",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/wan-trainer",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.apiyi.com/en/faq/seedance2-asset-face-reference",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/fal.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "dreamina",
@@ -270,28 +762,127 @@
   "type": "editeur (abonnement)",
   "country": "SG/CN",
   "url": "https://dreamina.capcut.com",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0",
+   "Seedance 2.0 Fast",
+   "Seedance 2.0 Mini",
+   "GPT Image 2.5",
+   "Seedream"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": null,
    "usd_720p_s": 0.047,
    "usd_1080p_s": null,
-   "note": "plan Super annuel, 1re année ; promo 0,035 terminée le 09/10 ; prix de renouvellement inconnu"
+   "note": "Taux effectif du plan Super annuel, première année à -40 %, encore affiché le 15/10. La promo Basic 1er mois à 0,035 $/s a pris fin le 09/10/2026 à 23h59 (UTC+8). Ancien taux de référence : 0,097 $/s (Advanced annuel). Prix de renouvellement non publié."
   },
   "moderation": {
    "real_faces": "bloque",
    "public_figures": null,
    "violence": null,
-   "notes": "Filtre visages réels probablement plus strict que l'API."
+   "notes": "Le modèle standard refuse en entrée les images de référence avec un visage réel détectable. Des utilisateurs signalent des blocages « Face Detected » sur des visages de dessin animé ou de synthèse, parfois suivis d'un verrouillage du compte."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "refusal_billed": "inconnu (la FAQ renvoie aux « règles en vigueur » sur le remboursement des échecs sans les donner)",
+  "payment": [
+   "carte",
+   "PayPal",
+   "Apple Pay",
+   "Google Pay"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
-  "verdict": "fiable",
-  "verdict_reason": "Officiel ByteDance, le moins cher par abonnement si le prix se confirme.",
-  "sources": []
+  "terms": "Contrat avec Bytedance Pte. Ltd., droit de Singapour, arbitrage SIAC (CGU CapCut du 15/04/2026). « Nous ne possédons pas votre contenu », mais licence mondiale, perpétuelle, sous-licenciable et transférable accordée à l'éditeur. Usage commercial selon le contrat de licence des matériaux CapCut. Remboursement de l'abonnement sous 14 jours si les services Premium n'ont pas servi.",
+  "reliability": "Trustpilot 1,7/5 sur 25 avis (consulté le 15/10/2026).",
+  "user_feedback": {
+   "summary": "Avis très négatifs : crédits perdus sur des générations échouées (jusqu'à 8 000 crédits signalés), filtres qui bloquent du contenu anodin, filigrane IA sur les sorties payantes, support lent ou automatique.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/dreamina.capcut.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Super annuel, première année à -40 %",
+   "plan_usd_month": null,
+   "credits_month": null,
+   "credits_per_clip": null,
+   "usd_per_clip_sub": 0.235,
+   "clips_per_month": null,
+   "best_api": {
+    "platform": "Runware",
+    "usd_per_clip": 1.152,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "0,047 $/s x 5 s = 0,235 $ par abonnement ; API : 0,2304 $/s x 5 s = 1,152 $ (Runware), 1,156 $ (BytePlus, OpenRouter).",
+   "verdict": "L'abonnement revient environ 5 fois moins cher par clip que l'API tant que le crédit mensuel est consommé. Prix du plan, crédits et prix de renouvellement non publiés en dollars : seuil de rentabilité non calculable. Pas d'API, visages réels refusés : l'API BytePlus reste la voie pour une personne réelle.",
+   "sources": [
+    {
+     "url": "https://dreamina.capcut.com/seedance/seedance-price",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://dreamina.capcut.com/pricing/dreamina-price",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://docs.byteplus.com/en/docs/ModelArk/1544106",
+     "date": "2026-10-08",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Super annuel : -40 % la première année (Seedance 2.5 720p à 0,047 $/s effectif).",
+    "ends": null,
+    "source": "https://dreamina.capcut.com/seedance/seedance-price",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Le moins cher par clip, mais prix de renouvellement inconnu, visages réels bloqués et service client mal noté.",
+  "sources": [
+   {
+    "url": "https://dreamina.capcut.com/seedance/seedance-price",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://dreamina.capcut.com/resource/dreamina-september-offer-faq-2026",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://dreamina.capcut.com/seedance/seedance-2-5-pricing-2026",
+    "date": "2026-09-28",
+    "type": "editeur"
+   },
+   {
+    "url": "https://dreamina.capcut.com/pricing/dreamina-price",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://dreamina.capcut.com/clause/terms-of-service",
+    "date": "2026-04-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://seedance2.so/blog/seedance-2-real-face-workaround",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/dreamina.capcut.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "krea",
@@ -300,32 +891,114 @@
   "country": "US",
   "url": "https://www.krea.ai",
   "models": [
-   "Seedance 2.5 jusqu'en 1080p et 30 s",
-   "H3 Max",
+   "Seedance 2.5",
+   "Kling 3.0",
+   "Veo 3.1",
+   "MiniMax H3 Max",
    "Wan 3.0",
-   "GPT Image 2.5"
+   "Runway Gen-4.5",
+   "Flux 3 Video",
+   "Krea 2 (image)"
   ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": null,
-   "usd_720p_s": null,
+   "usd_720p_s": 0.304,
    "usd_1080p_s": null,
-   "note": "inclus dans l'abonnement, coût en unités non publié"
+   "note": "Calculé sur le plan Pro mensuel (35 $ pour 20 000 unités) et l'équivalence de la page tarifs : environ 23 clips Seedance 2.5 de 5 s en 720p, soit environ 870 unités par clip. Krea ne publie pas de coût unitaire par modèle."
   },
   "moderation": {
-   "real_faces": "bloque",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Seedance 2.5 refuse les visages réels par défaut ; H3 Max et Wan 3.0 avec vidéo de référence acceptés (observé le 08/10/2026)."
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de clause propre aux personnalités publiques. Les CGU interdisent d'imiter une personne sans son consentement, deepfakes compris.",
+   "violence": "Interdit les contenus montrant des actes illégaux ou une violence extrême. Armes et terrorisme ne sont pas nommés, l'interdiction générale des contenus dangereux s'applique.",
+   "notes": "Seedance 2.5 refuse les visages réels par défaut ; H3 Max et Wan 3.0 avec vidéo de référence acceptés (observé le 08/10/2026). Un avis Trustpilot juge l'outil devenu trop censuré."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": "oui",
-  "terms": null,
-  "reliability": null,
+  "refusal_billed": "inconnu (ni les CGU ni l'aide Krea ne traitent les générations échouées ou refusées ; contact help@krea.ai)",
+  "payment": [
+   "carte",
+   "Google Pay",
+   "Amazon Pay",
+   "Cash App Pay",
+   "prélèvement bancaire (US)"
+  ],
+  "lora_hosting": "oui (entraînement de LoRA inclus dans Pro et Max, jusqu'à 50 images par LoRA en Pro, 2 000 en Max)",
+  "terms": "Krea, Inc. (droit californien, arbitrage à San Francisco). L'utilisateur garde ses droits sur ses générations et reçoit une licence non exclusive. Usage commercial permis selon le plan, modifiable par Krea. L'utilisateur accorde à Krea une licence mondiale, perpétuelle, gratuite et transférable sur ses contenus, qui survit à la fermeture du compte. L'utilisateur indemnise Krea. Pas de remboursement hors cas prévus ; remboursement automatique à l'annulation si moins de 650 unités et moins de 20 générations dans le mois.",
+  "reliability": "Trustpilot 3,6/5 sur 167 avis (consulté le 15/10/2026), 33 % d'avis à une étoile. Krea ne répond pas aux avis négatifs.",
+  "user_feedback": {
+   "summary": "Outil polyvalent apprécié, mais plaintes récurrentes sur l'annulation et la facturation (prélèvements après résiliation, réductions changeantes), sur le support jugé automatisé et sur les crédits vite consommés en essais ratés.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/krea.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Pro (mensuel)",
+   "plan_usd_month": 35.0,
+   "credits_month": 20000,
+   "credits_per_clip": 870,
+   "usd_per_clip_sub": 1.522,
+   "clips_per_month": 23,
+   "best_api": {
+    "platform": "Runware",
+    "usd_per_clip": 1.152,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "35 $ / 20 000 unités = 0,00175 $/unité ; 20 000 / 23 clips = 870 unités par clip ; 870 x 0,00175 = 1.522 $ le clip. API : 0,2304 $/s x 5 = 1,152 $. En annuel (21 $/mois) : 21 / 23 = 0,913 $ le clip.",
+   "verdict": "En mensuel, l'API est moins chère à tout volume (1,15 $ contre 1,52 $). En annuel, l'abonnement passe devant à partir d'environ 19 clips par mois (21 / 1,152 = 18,2), à condition de consommer presque tout le quota en Seedance 2.5.",
+   "sources": [
+    {
+     "url": "https://www.krea.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://runware.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "40 % de réduction sur les plans annuels (Pro 21 $ au lieu de 35 $, Max 63 $ au lieu de 105 $).",
+    "ends": null,
+    "source": "https://www.krea.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "fiable",
-  "verdict_reason": "Plusieurs modèles sur un abonnement.",
-  "sources": []
+  "verdict_reason": "Large catalogue de modèles sur un abonnement, mais Seedance 2.5 y coûte plus cher qu'en API sauf en annuel bien rempli.",
+  "sources": [
+   {
+    "url": "https://www.krea.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.krea.ai/terms-of-use",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.krea.ai/docs/user-guide/help-and-support/refunds-and-billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.krea.ai/docs/user-guide/help-and-support/compute-units",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/krea.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "higgsfield",
@@ -334,29 +1007,131 @@
   "country": "US",
   "url": "https://higgsfield.ai",
   "models": [
-   "H3",
-   "Seedance",
-   "Kling",
-   "Veo",
-   "Soul ID",
-   "face swap",
-   "clonage de voix"
+   "Seedance 2.5",
+   "Kling 3.0",
+   "Veo 3.1",
+   "MiniMax H3 Max",
+   "Wan 3.0",
+   "Grok Video 1.5",
+   "Flux 3 Video",
+   "Nano Banana Pro (image)"
   ],
-  "seedance": null,
+  "seedance": {
+   "version": "2.0 (2.5 aussi proposé)",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.216,
+   "usd_1080p_s": 0.59,
+   "note": "Seedance 2.0 : environ 22 crédits par 5 s en 720p, 60 en 1080p (tableau de la page tarifs), valorisés au plan Plus mensuel (59 $ pour 1 200 crédits). Le coût Seedance 2.5 n'est pas détaillé (page : environ 80 vidéos sur le plan Plus, sans durée ni résolution)."
+  },
   "moderation": {
    "real_faces": "filtre partiel",
-   "public_figures": "Détecteur de ressemblance avec des célébrités qui signale sans bloquer (offre Team seulement).",
-   "violence": null,
-   "notes": "Bloque personnages, logos, marques sportives ; le filtre Seedance s'applique aussi."
+   "public_figures": "Pas de clause propre aux personnalités publiques dans les CGU : tout nom, visage ou voix d'une personne exige son consentement et les droits correspondants.",
+   "violence": "Pas de clause explicite sur la violence, les armes ou le terrorisme dans la version des CGU lue ; les filtres des fournisseurs (Seedance, Kling) s'appliquent.",
+   "notes": "Interdits explicites : représenter une personne sans permission, imagerie intime non consentie, identification biométrique, contournement des filtres. Des utilisateurs signalent des vidéos bloquées pour droit d'auteur sans explication."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "refusal_billed": "non : crédits rendus automatiquement pour les générations échouées et, pour la plupart des modèles, pour les refus NSFW (aide Higgsfield)",
+  "payment": [
+   "carte (Stripe)"
+  ],
   "lora_hosting": null,
-  "terms": "L'utilisateur garantit détenir les droits et indemnise Higgsfield en cas de réclamation ; usage commercial libre des sorties.",
-  "reliability": "Forbes (11/02/2026) : deepfakes non consentis fournis aux créateurs payés ; Trustpilot : refus de remboursement et comptes coupés.",
+  "terms": "Higgsfield Inc. (San Francisco, droit californien, arbitrage AAA). Higgsfield ne revendique pas les entrées ni les sorties et ne limite pas l'usage commercial. L'utilisateur accorde une licence perpétuelle et irrévocable, et ses entrées et sorties peuvent servir à entraîner les modèles de Higgsfield. L'utilisateur indemnise Higgsfield. Remboursement de l'achat initial sous 7 jours si aucun crédit n'est utilisé, frais jusqu'à 6 % ; renouvellements non remboursables.",
+  "reliability": "Trustpilot 4,0/5 sur 4 999 avis (consulté le 15/10/2026), 18 % d'avis à une étoile ; au moins un avis cinq étoiles déclare avoir reçu des crédits en échange. Forbes (11/02/2026) : deepfakes non consentis fournis aux créateurs payés, problèmes de paiement.",
+  "user_feedback": {
+   "summary": "Support souvent réactif mais plaintes sur la facturation (double prélèvement, renouvellements inattendus, relances d'upgrade), refus de remboursement au nom des CGU, files d'attente de plusieurs heures sur l'illimité et blocages pour droit d'auteur.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/higgsfield.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.forbes.com/sites/rashishrivastava/2026/02/11/racist-videos-and-payment-problems-the-dark-side-of-this-ai-startups-super-fast-growth/",
+     "date": "2026-02-11",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Kling 3.0",
+   "plan": "Plus (mensuel)",
+   "plan_usd_month": 59.0,
+   "credits_month": 1200,
+   "credits_per_clip": 7,
+   "usd_per_clip_sub": 0.344,
+   "clips_per_month": 171,
+   "best_api": {
+    "platform": "Kie.ai",
+    "usd_per_clip": 0.35,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "59 $ / 1 200 crédits = 0,0492 $/crédit ; Kling 3.0 720p environ 7 crédits par 5 s ; 7 x 0,0492 = 0.344 $ le clip ; 1 200 / 7 = 171 clips. API : 0,07 $/s x 5 = 0,35 $ (0,42 $ chez Kling en direct). En annuel (47 $/mois) : 0,274 $ le clip.",
+   "verdict": "Prix au clip proche de l'API la moins chère. L'abonnement mensuel n'est rentable qu'en consommant presque tout le quota (59 / 0,35 = 169 clips par mois) ; en annuel le seuil tombe à environ 134 clips. La semaine d'illimité Kling 3.0 incluse dans Plus peut faire basculer le calcul.",
+   "sources": [
+    {
+     "url": "https://higgsfield.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://klingai.com/global/dev/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Annuel jusqu'à 30 % moins cher (Plus 47 $ au lieu de 59 $, Ultra 99 $ au lieu de 129 $).",
+    "ends": null,
+    "source": "https://higgsfield.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Plus et Ultra : 7 jours d'illimité sur Kling 3.0 et Nano Banana 2 ; Ultra : Nano Banana Pro illimité 7 jours avec 30 % de remise.",
+    "ends": null,
+    "source": "https://higgsfield.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Plans Business : 30 jours de Seedance 2.5 illimité, jusqu'à 30 % de remise.",
+    "ends": null,
+    "source": "https://higgsfield.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Permissif en pratique mais tout le risque juridique est sur l'utilisateur.",
+  "verdict_reason": "Kling 3.0 au prix de l'API la moins chère, crédits rendus en cas d'échec, mais tout le risque juridique pèse sur l'utilisateur et les sorties servent à l'entraînement.",
   "sources": [
+   {
+    "url": "https://higgsfield.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://higgsfield.ai/terms-of-use-agreement-23-07-2026",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://higgsfield.ai/creator-hub/help-center/troubleshooting/content-flagged-as-nsfw",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://higgsfield.ai/creator-hub/help-center/troubleshooting/generation-is-stuck-or-failed",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/higgsfield.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
    {
     "url": "https://www.forbes.com/sites/rashishrivastava/2026/02/11/racist-videos-and-payment-problems-the-dark-side-of-this-ai-startups-super-fast-growth/",
     "date": "2026-02-11",
@@ -368,30 +1143,92 @@
   "id": "atlascloud",
   "name": "Atlas Cloud",
   "type": "agregateur",
-  "country": null,
+  "country": "US",
   "url": "https://www.atlascloud.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Seedream 5.0 Pro",
+   "Wan 3.0",
+   "Kling O3 4K",
+   "Nano Banana 2",
+   "GPT Image 2.5",
+   "Vidu",
+   "Pixverse"
+  ],
   "seedance": {
-   "version": "2.5 ?",
-   "usd_480p_s": null,
-   "usd_720p_s": 0.134,
-   "usd_1080p_s": null,
-   "note": "pages contradictoires (« coming soon »)"
+   "version": "2.5",
+   "usd_480p_s": 0.1397,
+   "usd_720p_s": 0.3005,
+   "usd_1080p_s": 0.5914,
+   "note": "prix estimés, facturation aux tokens vidéo réels en fin de tâche ; -20 % affiché sur un « prix officiel » de 0,3756 $/s en 720p ; revendeur US autorisé de Seedance 2.5"
   },
   "moderation": {
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "CGU : interdits les contenus qui portent atteinte aux droits, sans consentement des personnes identifiables, obscènes ou exploitant des enfants. Rien sur les deepfakes ou la violence."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "refusal_billed": "tâches échouées et délais dépassés non facturés, montant réservé rendu ; Seedance 2.x facturé seulement si la tâche aboutit ; refus de modération non précisé",
+  "payment": [
+   "carte"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": "Holding VCV Digital, société sœur dans la crypto ; blog qui inonde les recherches.",
+  "terms": "ATLAS CLOUD AI INC. (New York), droit de l'État de New York, tribunaux de New York. L'éditeur ne revendique pas la propriété des contributions de l'utilisateur ; sorties et usage commercial non traités. Indemnisation à la charge de l'utilisateur. Tous les achats non remboursables. Termes du 08/10/2026.",
+  "reliability": "Trustpilot 3,6/5 sur 6 avis (consulté le 15/10/2026). Société sœur d'une activité crypto sous la holding VCV Digital selon SemiAnalysis, qui classe son offre GPU en Bronze. Blog qui inonde les recherches.",
+  "user_feedback": {
+   "summary": "Prix et interface appréciés, support jugé arrangeant sur la facturation ; un avis du 01/10/2026 accuse Wan 3.0 d'être routé vers un modèle bien plus faible, un autre (20/05/2026) signale des sorties ratées sur plusieurs moteurs.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/atlascloud.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Seedance 2.5 à -20 % sur le prix affiché comme officiel",
+    "ends": null,
+    "source": "https://www.atlascloud.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "GPT Image 2.5 Sunburst à -20 % (environ 0,003 $ l'image)",
+    "ends": null,
+    "source": "https://www.atlascloud.ai/models",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Tester avec 5 $ au plus.",
-  "sources": []
+  "verdict_reason": "Seedance 2.5 au-dessus du prix officiel BytePlus malgré la remise affichée ; tester avec 5 $ au plus.",
+  "sources": [
+   {
+    "url": "https://www.atlascloud.ai/pricing",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://www.atlascloud.ai/privacy",
+    "date": "2026-10-08",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.atlascloud.ai/docs/billing/refunds",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://clustermax.semianalysis.com/cloudreview/atlascloud",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/atlascloud.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "apiyi",
@@ -399,18 +1236,23 @@
   "type": "revendeur",
   "country": "CN",
   "url": "https://apiyi.com",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0",
+   "Nano Banana Pro"
+  ],
   "seedance": {
-   "version": "2.5 (canal Volcengine)",
+   "version": "2.5 (canal amont officiel, non nommé)",
    "usd_480p_s": null,
    "usd_720p_s": 0.27,
-   "usd_1080p_s": null
+   "usd_1080p_s": null,
+   "note": "Groupe « SeeDance2 » facturé avec un multiplicateur 0,18 ; prix unitaire non vérifié."
   },
   "moderation": {
-   "real_faces": "inconnu",
+   "real_faces": "verif_identite",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "Visage réel interdit en première image ou référence ; il faut la vérification de vivacité de la personne et un actif autorisé (asset://). Changer l'URL ou compresser l'image ne contourne pas le filtre."
   },
   "refusal_billed": "inconnu",
   "payment": [
@@ -418,24 +1260,40 @@
   ],
   "lora_hosting": null,
   "terms": null,
-  "reliability": "Domaine de 06/2024.",
+  "reliability": "Domaine de 06/2024. Interface et facturation en chinois.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "tester",
   "verdict_reason": "Pas moins cher qu'OpenRouter.",
-  "sources": []
+  "sources": [
+   {
+    "url": "https://docs.apiyi.com/en/faq/seedance2-face-asset-whitelist.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.atlascloud.ai/it/blog/guides/best-seedance-2-5-api-providers-compared",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "chatcut",
   "name": "ChatCut",
   "type": "revendeur",
-  "country": "CN",
+  "country": null,
   "url": "https://chatcut.io",
-  "models": [],
+  "models": [
+   "Seedance 2.5"
+  ],
   "seedance": {
    "version": "2.5 (annonce 1080p)",
    "usd_480p_s": null,
    "usd_720p_s": 0.15,
    "usd_1080p_s": null,
-   "note": "promo affichée incohérente selon la langue"
+   "note": "Bannière : jusqu'à -51 %, « dès 0,33 ¥/s » en chinois, « dès 0,046 $/s » en espagnol, sans résolution ni date de fin. Prix par seconde en crédits non publié."
   },
   "moderation": {
    "real_faces": "inconnu",
@@ -447,10 +1305,31 @@
   "payment": [],
   "lora_hosting": null,
   "terms": null,
-  "reliability": "Domaine de 09/2024.",
+  "reliability": "Domaine de 09/2024. Aucune adresse ni société nommée sur la page tarifs.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Seedance 2.5 jusqu'à -51 %, dès 0,33 ¥/s.",
+    "ends": null,
+    "source": "https://chatcut.io/zh/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Promo à vérifier.",
-  "sources": []
+  "verdict_reason": "Promo affichée sans résolution ni date de fin, éditeur opaque.",
+  "sources": [
+   {
+    "url": "https://chatcut.io/zh/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://chatcut.io/es/docs/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
  },
  {
   "id": "openart",
@@ -458,54 +1337,118 @@
   "type": "abonnement",
   "country": "US",
   "url": "https://openart.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0 (mini, fast)",
+   "Nano Banana 2.1 (image)",
+   "Flux 3 Image",
+   "Director (réalisation multi-plans)"
+  ],
   "seedance": {
    "version": "2.5",
-   "note": "environ 3,64 $ le clip (chiffre d'un concurrent)"
+   "usd_480p_s": null,
+   "usd_720p_s": null,
+   "usd_1080p_s": null,
+   "note": "Coût en crédits par modèle non publié. Remise sur Seedance 2.5 de 10 % (Pro) à 20 % (Wonder) ; le chiffre de 3,64 $ le clip, issu d'un concurrent, n'est pas vérifiable."
   },
   "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": null
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de clause propre aux personnalités publiques ; interdiction des deepfakes (montrer quelqu'un faisant ou disant ce qu'il n'a pas fait) et des atteintes au droit à l'image.",
+   "violence": "Interdit les contenus qui promeuvent la violence, le harcèlement ou la cruauté animale. Armes et terrorisme ne sont pas nommés.",
+   "notes": "Interdit aussi les données personnelles d'autrui sans consentement et le contenu sexuel explicite."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "refusal_billed": "inconnu dans les CGU ; plusieurs avis Trustpilot disent que les générations ratées ou inachevées sont facturées sans retour de crédits",
+  "payment": [
+   "carte (Stripe)"
+  ],
+  "lora_hosting": "oui (personnages cohérents entraînés : environ 13 sur Starter, 40 sur Plus, 80 sur Pro)",
+  "terms": "OpenArt (droit californien). OpenArt ne revendique pas les sorties. Usage non commercial libre sur tous les plans, usage commercial à partir du plan Plus. Filigrane obligatoire sur les sorties du plan gratuit. L'utilisateur indemnise OpenArt. Achats non remboursables sauf obligation légale, pas de prorata.",
+  "reliability": "Trustpilot 3,6/5 sur 1 563 avis (consulté le 15/10/2026), 29 % d'avis à une étoile ; réponse à 41 % des avis négatifs.",
+  "user_feedback": {
+   "summary": "Crédits débités pour des sorties fausses ou jamais terminées, modules complémentaires facturés de façon inattendue et emails sans réponse ; d'autres avis saluent un support rapide.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/openart.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Annuel jusqu'à 27 % moins cher (Plus 27 $ au lieu de 34 $, Wonder 175 $ au lieu de 240 $) ; Seedance 2.0 mini et fast à -50 % sur Pro et Wonder.",
+    "ends": null,
+    "source": "https://openart.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Prix non vérifié.",
-  "sources": []
+  "verdict_reason": "Coût réel par modèle opaque et plaintes fréquentes sur les crédits perdus en générations ratées.",
+  "sources": [
+   {
+    "url": "https://openart.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://openart.ai/terms",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/openart.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "volcengine",
-  "name": "Volcengine Ark",
+  "name": "Volcengine Ark (火山方舟)",
   "type": "editeur",
   "country": "CN",
-  "url": "https://www.volcengine.com",
-  "models": [],
+  "url": "https://www.volcengine.com/product/ark",
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0",
+   "Seedream 5.0"
+  ],
   "seedance": {
    "version": "2.5",
    "usd_480p_s": 0.095,
    "usd_720p_s": 0.21,
    "usd_1080p_s": null,
-   "note": "70 ¥ par million de tokens"
+   "note": "70 ¥ par million de tokens sans vidéo en entrée, 42 ¥ avec vidéo. Exemples officiels : 5 s 720p environ 7,56 ¥, 5 s 480p environ 3,36 ¥ (conversion à environ 7,1 ¥ pour 1 $)."
   },
   "moderation": {
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "La règle Seedance commune interdit le visage réel en image de référence sans actif autorisé ; procédure Volcengine non lue."
   },
   "refusal_billed": "inconnu",
   "payment": [],
   "lora_hosting": null,
   "terms": null,
-  "reliability": "Compte avec vérification d'identité chinoise.",
+  "reliability": "Compte avec vérification d'identité chinoise. API Seedance 2.5 ouverte le 07/08/2026.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "eviter",
-  "verdict_reason": "Gain d'environ 10 %, compte chinois requis.",
-  "sources": []
+  "verdict_reason": "Gain d'environ 10 % sur BytePlus, compte chinois requis.",
+  "sources": [
+   {
+    "url": "https://tech.ifeng.com/c/8vOaWTboGWf",
+    "date": "2026-08-07",
+    "type": "independant"
+   },
+   {
+    "url": "https://docs.apiyi.com/en/faq/seedance2-face-asset-whitelist.md",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "laozhang",
@@ -513,7 +1456,10 @@
   "type": "revendeur",
   "country": null,
   "url": "https://laozhang.ai",
-  "models": [],
+  "models": [
+   "Seedance 2.0",
+   "Veo 3.1"
+  ],
   "seedance": null,
   "moderation": {
    "real_faces": "inconnu",
@@ -521,14 +1467,23 @@
    "violence": null,
    "notes": null
   },
-  "refusal_billed": "inconnu",
+  "refusal_billed": "non facturé selon le blog de l'éditeur (Veo 3.1, page de 02/2026)",
   "payment": [],
   "lora_hosting": null,
   "terms": null,
   "reliability": "Domaine de 03/2025, blog SEO, aucun avis indépendant.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "eviter",
   "verdict_reason": "Prix trop bas sans garantie.",
-  "sources": []
+  "sources": [
+   {
+    "url": "https://blog.laozhang.ai/en/posts/seedance-2-pricing-free-trial-guide",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
  },
  {
   "id": "jimeng-proxies",
@@ -536,7 +1491,9 @@
   "type": "revendeur",
   "country": null,
   "url": null,
-  "models": [],
+  "models": [
+   "Seedance (via comptes Jimeng/Dreamina)"
+  ],
   "seedance": null,
   "moderation": {
    "real_faces": "inconnu",
@@ -548,10 +1505,19 @@
   "payment": [],
   "lora_hosting": null,
   "terms": null,
-  "reliability": "Historiquement fondés sur la rétro-ingénierie de comptes Jimeng.",
+  "reliability": "Historiquement fondés sur la rétro-ingénierie de comptes Jimeng. Les surcouches de la version web de Dreamina sont la forme la plus courante de fausse API.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "eviter",
   "verdict_reason": "Rupture des conditions d'utilisation, comptes bannis, crédits perdus.",
-  "sources": []
+  "sources": [
+   {
+    "url": "https://help.apiyi.com/de/seedance-2-api-overseas-suspended-third-party-access-guide-de.html",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "seedance-clones",
@@ -572,6 +1538,9 @@
   "lora_hosting": null,
   "terms": null,
   "reliability": "Servent un autre modèle (Seedance 1.5, Veo, Sora) ; avis « arnaque », support mort.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
   "verdict": "eviter",
   "verdict_reason": "Arnaque documentée.",
   "sources": [
@@ -585,123 +1554,672 @@
  {
   "id": "runway",
   "name": "Runway",
-  "type": "editeur",
+  "type": "editeur (abonnement)",
   "country": "US",
-  "url": "https://runwayml.com",
-  "models": [],
-  "seedance": null,
-  "moderation": {
-   "real_faces": "bloque",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Interdit l'image ou la voix d'une personne réelle sans permission ; réglage contentModeration de l'API pour les personnalités publiques."
+  "url": "https://runway.com",
+  "models": [
+   "Gen-4.5",
+   "Aleph 2.0",
+   "Seedance 2.5",
+   "Kling 3.0",
+   "Veo 3.1",
+   "Gen-4 Image",
+   "Nano Banana Pro 2 (image)"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.2,
+   "usd_720p_s": 0.3,
+   "usd_1080p_s": 0.68,
+   "note": "Prix de l'API Runway (1 crédit = 0,01 $ ; 20, 30 et 68 crédits par seconde), minimum 80 crédits par génération. Dans l'application, la page tarifs affiche Seedance 2.0 en 1080p à 160 crédits par 4 s (environ 0,62 $/s au plan Pro)."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "La politique d'usage ne vise pas les personnalités publiques en propre mais interdit d'imiter une personne. L'API filtre les personnalités publiques reconnaissables par défaut (modération auto), assouplissable avec le paramètre contentModeration.",
+   "violence": "Interdit la violence graphique ou l'incitation à la violence (démembrements, décapitations) et tout contenu qui montre, facilite ou promeut le terrorisme ou l'extrémisme violent. Les armes ne sont pas nommées.",
+   "notes": "Interdit l'usage de l'image, de la vidéo ou de la voix d'une autre personne sans permission (politique mise à jour le 06/03/2026). Suspension possible pour toute violation, appel par suspension@runwayml.com ; trop de requêtes modérées sur l'API mènent à la suspension."
+  },
+  "refusal_billed": "oui sur l'API : une génération modérée coûte autant qu'une génération réussie (doc API). Dans l'application, les crédits sont rendus après une erreur de génération (centre d'aide).",
+  "payment": [
+   "carte",
+   "Apple Pay",
+   "Google Pay",
+   "Amazon Pay",
+   "Alipay",
+   "WeChat Pay",
+   "Cash App Pay",
+   "virement instantané (US, Stripe)"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": "La revue humaine peut suspendre un compte sur un sujet sensible (terrorisme).",
+  "terms": "Runway AI, Inc. (droit de New York, arbitrage JAMS). Runway ne revendique pas les entrées ni les sorties et ne limite pas leur usage commercial, sauf pour entraîner un produit concurrent. Les entrées et sorties peuvent servir à entraîner les modèles de Runway (licence perpétuelle et irrévocable). L'utilisateur indemnise Runway. Frais non remboursables sauf exception ou obligation légale.",
+  "reliability": "Trustpilot 1,2/5 sur 362 avis (consulté le 15/10/2026), 93 % d'avis à une étoile ; profil non revendiqué. La revue humaine peut suspendre un compte sur un sujet sensible (terrorisme).",
+  "user_feedback": {
+   "summary": "Avis très négatifs : crédits brûlés en générations qui ne suivent pas le prompt, visages qui changent entre segments, support jugé automatisé, remboursements refusés et difficultés de résiliation.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/runwayml.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Gen-4.5",
+   "plan": "Pro (mensuel)",
+   "plan_usd_month": 35.0,
+   "credits_month": 2250,
+   "credits_per_clip": 60,
+   "usd_per_clip_sub": 0.933,
+   "clips_per_month": 37.5,
+   "best_api": {
+    "platform": "Runway API (même prix sur OpenRouter et Runware)",
+    "usd_per_clip": 0.6,
+    "source": "https://docs.dev.runwayml.com/guides/pricing/"
+   },
+   "calc": "35 $ / 2 250 crédits = 0,01556 $/crédit ; Gen-4.5 = 12 crédits/s, 60 par clip ; 60 x 0,01556 = 0.933 $. API : 12 crédits/s x 0,01 $ x 5 = 0,60 $. Annuel (28 $/mois) : 0,747 $. Plan Max (95 $ / 9 500 crédits) : 0,60 $.",
+   "verdict": "L'API est moins chère ou égale à tout volume : l'abonnement Pro coûte 55 % de plus par clip, le plan Max seulement égale l'API. L'abonnement ne se justifie que pour l'interface et les outils d'édition.",
+   "sources": [
+    {
+     "url": "https://runway.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://docs.dev.runwayml.com/guides/pricing/",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://openrouter.ai/api/v1/videos/models",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Plan Max : Wan 3.0 illimité en mode Tool jusqu'au 18 octobre.",
+    "ends": "2026-10-18",
+    "source": "https://runway.com/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Entreprises : 2 mois d'usage offerts pour une signature avant le 31/10.",
+    "ends": "2026-10-31",
+    "source": "https://runway.com/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Facturation annuelle : Standard 12 $ au lieu de 15 $, Pro 28 $ au lieu de 35 $, Max 76 $ au lieu de 95 $.",
+    "ends": null,
+    "source": "https://runway.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Risque de suspension sur des sujets sensibles.",
+  "verdict_reason": "Gen-4.5 et Aleph sont propres à Runway, mais l'API revient moins cher que l'abonnement et les refus modérés sont facturés sur l'API.",
   "sources": [
    {
-    "url": "https://runwayml.com/safety/usage-policy",
+    "url": "https://runway.com/safety/usage-policy",
     "date": "2026-03-06",
     "type": "editeur"
+   },
+   {
+    "url": "https://runway.com/terms-of-use",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://runway.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.dev.runwayml.com/guides/pricing/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.dev.runwayml.com/api-details/moderation/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/15124877443219-Credits-FAQ",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.runwayml.com/hc/en-us/articles/30657959470483-What-payment-methods-are-available",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/runwayml.com",
+    "date": "2026-10-15",
+    "type": "independant"
    }
   ]
  },
  {
   "id": "google",
-  "name": "Google (Veo, Gemini)",
+  "name": "Google (Veo, Imagen, Nano Banana, Flow)",
   "type": "editeur",
   "country": "US",
-  "url": null,
-  "models": [],
-  "seedance": null,
-  "moderation": {
-   "real_faces": "bloque",
-   "public_figures": null,
-   "violence": null,
-   "notes": "person_generation=allow_all sur liste blanche dans Vertex."
-  },
-  "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
-  "verdict": "fiable",
-  "verdict_reason": "Fiable, restrictif sur les visages.",
-  "sources": []
- },
- {
-  "id": "xai",
-  "name": "xAI (Grok Imagine)",
-  "type": "editeur",
-  "country": "US",
-  "url": null,
-  "models": [],
+  "url": "https://ai.google.dev",
+  "models": [
+   "Veo 3.1 (Lite, Fast, Quality)",
+   "Gemini Omni Flash",
+   "Nano Banana 2",
+   "Nano Banana 2.1",
+   "Nano Banana Pro",
+   "Imagen 4"
+  ],
   "seedance": null,
   "moderation": {
    "real_faces": "filtre partiel",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Réservé à SuperGrok depuis le 19/03/2026 ; garde-fous ajoutés le 14/01/2026 ; NBC (04/2026) : produit encore des deepfakes sexuels non consentis."
+   "public_figures": "Sur Vertex, une représentation photoréaliste d'une personne connue est refusée, sauf si le projet est sur liste blanche (filtre Celebrity).",
+   "violence": "Filtres Violence et Dangerous content sur Veo. La politique d'usage interdit l'extrémisme violent, le terrorisme et l'incitation à la violence. Google peut accorder des exceptions au cas par cas pour un usage artistique, documentaire ou éducatif.",
+   "notes": "Imiter une personne réelle, vivante ou morte, est interdit si c'est pour tromper sans mention explicite. Enfants refusés si personGeneration n'est pas sur allow_all et sans liste blanche. Dans l'EEE, en Suisse et au Royaume-Uni, seule l'API payante est ouverte."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "refusal_billed": "Non sur l'API Gemini pour Veo : facturé seulement si la vidéo est générée. Flow : rien d'écrit ; un abonné Ultra signale des échecs débités en crédits.",
+  "payment": [
+   "carte",
+   "prélèvement bancaire",
+   "virement (compte facturé)"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "terms": "Google ne revendique pas la propriété des contenus générés et peut produire des contenus similaires pour d'autres. API réservée à un usage professionnel, 18 ans minimum. Offre gratuite : prompts et réponses servent à améliorer les produits et peuvent être lus par des humains. Offre payante : pas d'entraînement, journalisation limitée. CGU API en vigueur depuis le 23/03/2026.",
+  "reliability": "Trustpilot 1,4/5 sur 1 353 avis pour gemini.google.com (consulté le 15/10/2026), surtout sur l'assistant Gemini. Nano Banana (Gemini 2.5 Flash Image) arrêté le 02/10/2026.",
+  "user_feedback": {
+   "summary": "Sur Flow, un abonné Ultra signale des générations Veo bloquées en file ou en erreur, crédits débités malgré l'échec. Sur Trustpilot, filtres jugés excessifs et consignes d'image ignorées.",
+   "sources": [
+    {
+     "url": "https://discuss.ai.google.dev/t/google-flow-veo-stuck-in-queued-state-oops-something-went-wrong-failed-generations-deducting-credits-google-ai-ultra/173335",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.trustpilot.com/review/gemini.google.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Veo 3.1 Fast (génération Flow de 6 s)",
+   "plan": "Google AI Pro",
+   "plan_usd_month": 19.99,
+   "credits_month": 1000,
+   "credits_per_clip": 20,
+   "usd_per_clip_sub": 0.4,
+   "clips_per_month": 50,
+   "best_api": {
+    "platform": "kie",
+    "usd_per_clip": 0.1875,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "19,99 $ / 1 000 crédits x 20 crédits = 0,40 $ par clip, 50 clips par mois. API : 0,0375 $/s x 5 s = 0,19 $ chez kie ; 0,10 $/s x 5 s = 0,50 $ sur l'API Gemini officielle. Google AI Ultra 100 $ : 10 000 crédits, 10 crédits par clip Fast, soit 0,10 $ par clip et 1 000 clips.",
+   "verdict": "Pro ne bat que l'API officielle de Google. Ultra à 100 $ devient plus rentable que la meilleure API à partir d'environ 530 clips Fast par mois (100 / 0,19), à condition de tout consommer : les crédits ne se reportent pas.",
+   "sources": [
+    {
+     "url": "https://support.google.com/flow/answer/16526234?hl=en",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://ai.google.dev/gemini-api/docs/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://techcabal.com/2026/06/05/google-ai-subscription-plans-explained/",
+     "date": "2026-06-05",
+     "type": "independant"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "mesure"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Google AI Pro offert un an aux étudiants américains éligibles (vérification SheerID, 18 ans et plus), inscription jusqu'au 31/12/2026.",
+    "ends": "2026-12-31",
+    "source": "https://www.tonyreviewsthings.com/gemini-pro-free-students/",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Sans abonnement, Flow donne 50 crédits par jour, non cumulables.",
+    "ends": null,
+    "source": "https://support.google.com/flow/answer/16526234?hl=en",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "fiable",
+  "verdict_reason": "Tarifs publiés et vidéo non facturée en cas d'échec sur l'API, mais filtres stricts sur les personnalités et les enfants.",
+  "sources": [
+   {
+    "url": "https://ai.google.dev/gemini-api/docs/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://ai.google.dev/gemini-api/docs/video",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://support.google.com/flow/answer/16526234?hl=en",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/video/responsible-ai-and-usage-guidelines",
+    "date": "2026-10-13",
+    "type": "editeur"
+   },
+   {
+    "url": "https://policies.google.com/terms/generative-ai/use-policy",
+    "date": "2024-12-17",
+    "type": "editeur"
+   },
+   {
+    "url": "https://ai.google.dev/gemini-api/terms",
+    "date": "2026-04-28",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/payment-methods",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.cloud.google.com/billing/docs/how-to/pay-invoice",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://one.google.com/about/google-ai-plans?hl=en",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/gemini.google.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "xai",
+  "name": "xAI / SpaceXAI (Grok Imagine)",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://x.ai",
+  "models": [
+   "Grok Imagine Video 1.5",
+   "Grok Imagine Video 1.5 Lite",
+   "Grok Imagine Video",
+   "Grok Imagine Image 2.0",
+   "Grok Imagine Image",
+   "Grok Imagine Image Quality"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle dédiée aux personnalités. Interdit : déshabiller ou sexualiser une personne réelle, l'usurper de façon trompeuse, la montrer de façon diffamatoire ou sous un faux jour. Après les deepfakes de Taylor Swift, xAI a restreint le mode Spicy sur elle.",
+   "violence": "Interdit : nuire gravement à la vie humaine, activités pro-terroristes, armes biologiques, chimiques ou de destruction massive. L'AUP du 14/08/2026 ne vise ni la violence fictive ni les armes conventionnelles en général.",
+   "notes": "Société exploitante devenue SpaceXAI LLC (Nevada, siège à Austin). Garde-fous renforcés le 14/01/2026 ; Imagine réservé aux abonnés payants depuis mars 2026 ; NBC News (14/04/2026) relève encore des deepfakes sexuels non consentis, en baisse depuis janvier. Vidéos supprimées a posteriori signalées en mars 2026."
+  },
+  "refusal_billed": "Oui sur l'API : une génération signalée comme contraire aux règles reste facturée. Dans l'API Responses, un refus avant génération coûte 0,05 $ par requête.",
+  "payment": [
+   "carte",
+   "virement (Enterprise)",
+   "facture (Enterprise)"
+  ],
+  "lora_hosting": null,
+  "terms": "CGU grand public : l'utilisateur conserve ses droits sur entrées et sorties, mais accorde à SpaceXAI une licence irrévocable, perpétuelle, transférable, sous-licenciable et mondiale, pour tout usage. Mention du service exigée selon les règles de marque. Indemnisation par l'utilisateur. Litiges devant les tribunaux de Tarrant ou Wichita (Texas), droit texan, sauf loi locale contraire ; conditions spécifiques pour l'Europe. Abonnements non remboursables. Conditions Entreprise (API, version 12/2024) : le client possède les sorties, pas d'entraînement sans accord écrit.",
+  "reliability": "Trustpilot 1,4/5 sur 521 avis pour grok.com (consulté le 15/10/2026). Plaintes : messages « moderated » généralisés, quotas réduits, facturations inattendues.",
+  "user_feedback": {
+   "summary": "Abonnés payants : vidéos supprimées ou raccourcies sans avertissement (mars 2026), prompts bloqués à chaque essai (mai 2026), quota d'environ 25 clips 720p par jour selon un avis. Remboursements refusés et support muet.",
+   "sources": [
+    {
+     "url": "https://piunikaweb.com/2026/03/23/grok-imagine-users-say-videos-are-being-deleted-without-warning/",
+     "date": "2026-03-23",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.trustpilot.com/review/grok.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://gizmodo.com/i-want-everything-completely-uncensored-heres-what-grok-users-are-complaining-about-to-the-ftc-2000780843",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Grok Imagine Video",
+   "plan": "Premium (ex-SuperGrok)",
+   "plan_usd_month": 30,
+   "credits_month": null,
+   "credits_per_clip": null,
+   "usd_per_clip_sub": null,
+   "clips_per_month": null,
+   "best_api": {
+    "platform": "kie",
+    "usd_per_clip": 0.1125,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "Aucun quota publié : usage commun à Chat, Imagine, Voice et API, rechargé chaque semaine. API officielle : 0,05 $/s x 5 s = 0,25 $ ; kie : 0,0225 $/s x 5 s = 0,11 $. 30 $ valent environ 120 clips à l'API officielle, 267 chez kie.",
+   "verdict": "Abonnement impossible à chiffrer. Il ne gagne que si le quota réel dépasse environ 120 clips par mois ; un avis cite 25 clips par jour, non confirmé par xAI. Pour un volume prévisible, l'API reste plus lisible.",
+   "sources": [
+    {
+     "url": "https://web.archive.org/web/20261013052831/https://x.ai/pricing",
+     "date": "2026-10-13",
+     "type": "editeur"
+    },
+    {
+     "url": "https://docs.x.ai/developers/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "mesure"
+    }
+   ]
+  },
+  "promotions": [],
   "verdict": "tester",
-  "verdict_reason": "Permissif, risques documentés.",
-  "sources": []
+  "verdict_reason": "API bon marché mais refus facturés, licence très large sur les contenus et modération instable.",
+  "sources": [
+   {
+    "url": "https://docs.x.ai/developers/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.x.ai/docs/models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.x.ai/docs/guides/video-generations",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261014165045/https://x.ai/legal/acceptable-use-policy",
+    "date": "2026-08-14",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261013093310/https://x.ai/legal/terms-of-service",
+    "date": "2026-10-13",
+    "type": "editeur"
+   },
+   {
+    "url": "https://x.ai/legal/terms-of-service-enterprise/previous-2024-12-23",
+    "date": "2024-12-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261013052831/https://x.ai/pricing",
+    "date": "2026-10-13",
+    "type": "editeur"
+   },
+   {
+    "url": "https://decrypt.co/333796/elon-musk-xai-nude-deepfakes-taylor-swift",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://piunikaweb.com/2026/03/19/grok-imagine-locked-behind-premium-subscription/",
+    "date": "2026-03-19",
+    "type": "independant"
+   },
+   {
+    "url": "https://en.wikipedia.org/wiki/Grok_sexual_deepfake_scandal",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://metodoviral.com/en/news/grok-is-still-creating-sexual-deepfakes-research-says/",
+    "date": "2026-04-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/grok.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "kling",
   "name": "Kling (officiel)",
   "type": "editeur",
-  "country": "CN",
-  "url": "https://klingai.com",
-  "models": [],
+  "country": "SG/CN",
+  "url": "https://kling.ai",
+  "models": [
+   "Kling 3.0",
+   "Kling 3.0 Omni",
+   "Kling O1",
+   "Kling 2.6",
+   "Motion Control",
+   "Kling Image 3.0 Omni"
+  ],
   "seedance": null,
   "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Censure réputée stricte."
+   "real_faces": "filtre partiel",
+   "public_figures": "Aucune règle publiée ; des sources tierces signalent des refus fréquents sur les personnalités et les visages réels.",
+   "violence": "CGU : interdiction des menaces de violence physique et des instructions pour un crime ou une activité dangereuse ; terrorisme non nommé.",
+   "notes": "Les visages téléversés servent à l'image vers vidéo, aux Elements et à Motion Control ; l'utilisateur garantit détenir les droits de la personnalité (CGU 4.3). Censure réputée stricte."
   },
-  "refusal_billed": "remboursement incertain",
+  "refusal_billed": "API : une tâche échouée ne consomme pas de crédits. Application : des utilisateurs disent que les échecs consomment des crédits, sans remboursement automatique documenté.",
   "payment": [],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "terms": "Kling AI Pte. Ltd., droit de Singapour (CGU du 21/04/2026). L'utilisateur possède les droits sur le contenu ; licence non exclusive et gratuite à Kling pour l'exploitation. Contradiction : l'article 4.6 interdit l'usage commercial des sorties sans accord écrit, alors que la page des offres annonce l'usage commercial pour les plans payants (Standard et au-dessus).",
+  "reliability": "Trustpilot 1,2/5 sur 411 avis (consulté le 15/10/2026). Files d'attente longues signalées sur le gratuit.",
+  "user_feedback": {
+   "summary": "Crédits consommés par des générations ratées ou hors consigne, files d'attente longues (jusqu'à deux jours en gratuit), remboursements refusés, support automatique, prélèvements après résiliation.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/klingai.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Kling 3.0 sans audio",
+   "plan": "Pro mensuel (renouvellement)",
+   "plan_usd_month": 32.56,
+   "credits_month": 3000,
+   "credits_per_clip": 30,
+   "usd_per_clip_sub": 0.326,
+   "clips_per_month": 100,
+   "best_api": {
+    "platform": "kie.ai",
+    "usd_per_clip": 0.35,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "32,56 $ / 3 000 crédits x 30 crédits = 0,326 $ ; API officielle 0,084 $/s x 5 = 0,42 $ ; kie.ai 0,07 $/s x 5 = 0,35 $.",
+   "verdict": "Presque égalité : le Pro ne vaut le coup que si l'on consomme environ 93 clips par mois (32,56 / 0,35), crédits non reportés. Ultra (159,99 $, 26 000 crédits) descend à 0,185 $ par clip à partir d'environ 457 clips par mois. En dessous, l'API à l'acte gagne, et elle ne facture pas les échecs.",
+   "sources": [
+    {
+     "url": "https://kling.ai/llms.txt",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://eesel.ai/blog/kling-ai-pricing",
+     "date": "2026-06-05",
+     "type": "independant"
+    },
+    {
+     "url": "https://klingai.com/global/dev/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Premier mois réduit : Standard 6,99 $ au lieu de 8,80 $, Pro 25,99 $ au lieu de 32,56 $.",
+    "ends": null,
+    "source": "https://kling.ai/llms.txt",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Motion Control et Omni Reference, mais filtre strict.",
-  "sources": []
+  "verdict_reason": "Motion Control et Omni Reference solides, mais filtre strict, crédits perdus sur l'application et CGU ambiguës sur l'usage commercial.",
+  "sources": [
+   {
+    "url": "https://kling.ai/llms.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://kling.ai/docs/user-policy",
+    "date": "2026-04-21",
+    "type": "editeur"
+   },
+   {
+    "url": "https://eesel.ai/blog/kling-ai-pricing",
+    "date": "2026-06-05",
+    "type": "independant"
+   },
+   {
+    "url": "https://anycap.ai/page/en-US/ai/kling-ai-nsfw-policy-developers",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/klingai.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "minimax",
   "name": "MiniMax / Hailuo (officiel)",
   "type": "editeur",
-  "country": "CN",
+  "country": "SG/CN",
   "url": "https://hailuoai.video",
-  "models": [],
+  "models": [
+   "MiniMax H3",
+   "MiniMax H3 Max",
+   "Hailuo 2.3",
+   "Hailuo 2.3 Fast",
+   "Hailuo 02",
+   "MiniMax Image-01"
+  ],
   "seedance": null,
   "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Refuse les personnes réelles en situation compromettante (blog)."
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle nommée dans les CGU ; un utilisateur rapporte des violations pour un Père Noël traité comme célébrité.",
+   "violence": "CGU : contenu violent, haineux ou incendiaire interdit ; terrorisme non nommé.",
+   "notes": "Refuse les personnes réelles en situation compromettante (blog). CGU : interdiction d'usurper l'identité d'une personne et de violer les droits à l'image et à la vie privée ; mention IA obligatoire quand la loi l'exige."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
+  "refusal_billed": "non facturé : crédits rendus automatiquement si la génération échoue ou ne passe pas la revue (conditions d'abonnement) ; des utilisateurs signalent des crédits retirés sans vidéo.",
+  "payment": [
+   "carte"
+  ],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "terms": "Nanonoble Pte. Ltd., droit de Singapour, tribunaux de Singapour ou arbitrage SIAC (CGU du 19/08/2026). L'éditeur ne revendique pas la propriété ; usage commercial permis aux risques de l'utilisateur. Licence perpétuelle, irrévocable, mondiale et monétisable accordée à l'éditeur. Pas de remboursement des abonnements déjà payés.",
+  "reliability": "Trustpilot 1,4/5 sur 94 avis (consulté le 15/10/2026).",
+  "user_feedback": {
+   "summary": "Remboursements lents ou jamais versés, prélèvements après résiliation, taux d'échec élevé (« 70 % des vidéos ont échoué »), modération jugée arbitraire, support lent.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/hailuoai.video",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 2K MiniMax H3 (le site ne publie pas de coût en 768p)",
+   "plan": "Pro mensuel",
+   "plan_usd_month": 54.99,
+   "credits_month": 4500,
+   "credits_per_clip": null,
+   "usd_per_clip_sub": null,
+   "clips_per_month": null,
+   "best_api": {
+    "platform": "MiniMax (officiel)",
+    "usd_per_clip": 0.65,
+    "source": "https://platform.minimax.io/docs/guides/pricing-paygo"
+   },
+   "calc": "Site Hailuo : environ 0,37 à 0,60 $ par clip 5 s 2K selon le plan ; API officielle 2K 0,13 $/s x 5 = 0,65 $. En 768p : API officielle 0,08 $/s x 5 = 0,40 $, kie.ai 0,04 $/s x 5 = 0,20 $.",
+   "verdict": "En 2K l'abonnement gagne un peu (0,37 à 0,60 $ contre 0,65 $), rentable à partir d'environ 85 clips 2K par mois sur le Pro (54,99 / 0,65). En 768p l'API à l'acte (kie.ai 0,20 $, officielle 0,40 $) est le meilleur choix tant que le coût en crédits n'est pas publié.",
+   "sources": [
+    {
+     "url": "https://hailuoai.video/tools/minimax-h3",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://hailuoai.video/doc/payment-policy.html",
+     "date": "2025-07-14",
+     "type": "editeur"
+    },
+    {
+     "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [],
   "verdict": "fiable",
-  "verdict_reason": "Voie officielle H3.",
-  "sources": []
+  "verdict_reason": "Voie officielle H3, refus rendus en crédits, mais support et remboursements mal notés.",
+  "sources": [
+   {
+    "url": "https://hailuoai.video/doc/payment-policy.html",
+    "date": "2025-07-14",
+    "type": "editeur"
+   },
+   {
+    "url": "https://hailuoai.video/doc/terms-of-service.html",
+    "date": "2026-08-19",
+    "type": "editeur"
+   },
+   {
+    "url": "https://hailuoai.video/tools/minimax-h3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://platform.minimax.io/docs/guides/pricing-paygo",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.atlascloud.ai/blog/tips/minimax-h3-credits-per-video",
+    "date": "2026-08-03",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/hailuoai.video",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "comfycloud",
@@ -709,45 +2227,262 @@
   "type": "gpu-cloud",
   "country": "US",
   "url": "https://www.comfy.org/cloud/pricing",
-  "models": [],
-  "seedance": null,
-  "moderation": {
-   "real_faces": "inconnu",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Aucun filtre au niveau des modèles ouverts."
+  "models": [
+   "Wan 2.2",
+   "LTX",
+   "Flux",
+   "Qwen Image",
+   "Seedance 2.0 / 2.5 (Partner Node)",
+   "Kling (Partner Node)",
+   "Nano Banana Pro (Partner Node)",
+   "Seedream (Partner Node)"
+  ],
+  "seedance": {
+   "version": "2.0 (Partner Node ; 2.5 aussi)",
+   "usd_480p_s": 0.096,
+   "usd_720p_s": 0.216,
+   "usd_1080p_s": 0.535,
+   "note": "Facturé en jetons : (durée) × largeur × hauteur × 24 i/s ÷ 1024, à 2,112 crédits les 1000 jetons (2,323 en 1080p), 211 crédits = 1 $. 5 s 720p = 228 crédits, soit 1,08 $. Seedance 2.5 : 348,8 crédits pour 5 s 720p, soit 0,33 $/s."
   },
-  "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": "oui (à partir de 35 $/mois)",
-  "terms": null,
-  "reliability": "30 min maximum par exécution ; RTX 6000 Pro 96 Go.",
-  "verdict": "fiable",
-  "verdict_reason": "LoRA perso et 96 Go de VRAM à la demande.",
-  "sources": []
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle propre aux personnalités publiques. Interdit : les médias synthétiques conçus pour usurper l'identité d'une personne réelle sans son consentement, et les atteintes au droit à l'image.",
+   "violence": "Interdit : contenu qui incite à la violence ou à la haine contre une personne ou un groupe.",
+   "notes": "Règle contractuelle, pas de filtre décrit sur les modèles ouverts. Les Partner Nodes (Seedance, Kling, Nano Banana) gardent la modération du fournisseur d'origine. Interdits aussi : CSAM et images intimes non consenties. 30 min maximum par exécution (Standard, Creator), 1 h en Pro ; RTX 6000 Pro 96 Go."
+  },
+  "refusal_billed": "inconnu (refus de modération non documenté ; un utilisateur signale en janvier 2026 des crédits débités pour des générations échouées, ticket clos sans réponse de l'éditeur)",
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": "oui, import de LoRA et modèles depuis Civitai ou Hugging Face (safetensors, jusqu'à 100 Go) à partir du plan Creator, 35 $/mois",
+  "terms": "Comfy Organization, Inc. (Delaware), droit californien, arbitrage JAMS à San Francisco. Le client garde tous les droits sur ses entrées et sorties. Comfy n'entraîne pas de modèles sur les entrées ou sorties. Crédits prépayés non remboursables. Le client indemnise Comfy pour les réclamations liées à ses données.",
+  "reliability": "Trustpilot 3,3/5 sur 1 avis (consulté le 15/10/2026). Ticket GitHub de janvier 2026 : plus de la moitié des générations non produites mais débitées. Position dans la file non visible selon le support.",
+  "user_feedback": {
+   "summary": "Les avis signalent des crédits débités sur des tâches échouées ou annulées pendant l'initialisation, et des crédits non reportés d'un mois sur l'autre. La vitesse sur RTX 6000 Pro est jugée nettement supérieure au local, mais les gros lots rendent l'interface lente.",
+   "sources": [
+    {
+     "url": "https://github.com/Comfy-Org/ComfyUI/issues/11876",
+     "date": "2026-01-14",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.trustpilot.com/review/comfy.org",
+     "date": "2026-09-10",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.patreon.com/codecrafterscorner/posts/exploring-new-152366313",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.0",
+   "plan": "Standard (mensuel)",
+   "plan_usd_month": 20,
+   "credits_month": 4200,
+   "credits_per_clip": 228.1,
+   "usd_per_clip_sub": 1.09,
+   "clips_per_month": 18,
+   "best_api": {
+    "platform": "byteplus",
+    "usd_per_clip": 0.75,
+    "source": "https://docs.byteplus.com/docs/ModelArk/1544106"
+   },
+   "calc": "108 000 jetons × 2,112/1000 = 228,1 crédits ; 20 $ / 4200 crédits × 228,1 = 1,09 $ par clip, 18 clips par mois ; BytePlus 0,15 $/s × 5 = 0,75 $",
+   "verdict": "Pour Seedance, l'API directe est moins chère à tout volume (environ 30 % de moins). L'abonnement ne se justifie que pour le GPU (modèles ouverts, LoRA perso) : le crédit vaut presque le même prix qu'au paiement à l'acte (211 crédits par dollar).",
+   "sources": [
+    {
+     "url": "https://www.comfy.org/cloud/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://docs.comfy.org/tutorials/partner-nodes/pricing.md",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://support.comfy.org/articles/5846341390-how-credits-work-in-comfy",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "5 exécutions gratuites sur GPU sans carte bancaire pour les nouveaux comptes",
+    "ends": null,
+    "source": "https://www.comfy.org/cloud/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Jusqu'à 20 % de remise en paiement annuel",
+    "ends": null,
+    "source": "https://www.comfy.org/cloud/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Seul ComfyUI officiel en ligne avec LoRA perso et 96 Go de VRAM, mais des échecs facturés sont signalés et Seedance y coûte plus cher qu'en API directe.",
+  "sources": [
+   {
+    "url": "https://www.comfy.org/cloud/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.comfy.org/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/cloud/import-models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://comfy.org/cloud.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/partner-nodes/pricing.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://support.comfy.org/articles/5846341390-how-credits-work-in-comfy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/comfy.org",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "runcomfy",
   "name": "RunComfy",
   "type": "gpu-cloud",
-  "country": "US",
+  "country": null,
   "url": "https://www.runcomfy.com",
-  "models": [],
-  "seedance": null,
+  "models": [
+   "Seedance 2.5",
+   "Kling O3",
+   "Veo 3.1",
+   "LTX 2.5",
+   "FLUX 3",
+   "Nano Banana Pro",
+   "Hailuo",
+   "ComfyUI (Wan, Flux, etc. sur machine louée)"
+  ],
+  "seedance": {
+   "version": "2.5 (et 2.0, 1.5, 1.0)",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.306,
+   "usd_1080p_s": 0.57,
+   "note": "Seedance 2.5 : 0,306 $/s en 720p (1,53 $ les 5 s), 0,57 $/s en 1080p. Une page 480p existe, prix non relevé."
+  },
   "moderation": {
    "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": null
+   "notes": "La politique d'usage des modèles ne liste aucune catégorie interdite : le client utilise les modèles légalement et en porte la responsabilité. Aucun filtre décrit sur les machines ComfyUI. Les modèles fermés (Seedance, Kling, Veo) gardent a priori la modération de leur fournisseur, non documentée ici."
   },
   "refusal_billed": "inconnu",
   "payment": [],
-  "lora_hosting": "oui (Wan 2.2 à 0,11 $/s)",
-  "terms": null,
-  "reliability": "H100 à 4,49 $/h.",
-  "verdict": "fiable",
-  "verdict_reason": "ComfyUI hébergé.",
-  "sources": []
+  "lora_hosting": "oui, envoi de modèles et LoRA perso (10 Go de stockage, 200 Go en Pro) et entraînement sur le Trainer (H100 à 4,49 $/h, 3,59 $/h en Pro)",
+  "terms": "Exploitant : Inceptions AI INC, juridiction « du lieu de la société », non nommée. Les images générées sur les serveurs loués appartiennent au client, mais RunComfy ne garantit pas l'usage commercial : la licence de chaque modèle s'applique. Pas de clause d'entraînement ni d'indemnisation lisible sur les pages publiques consultées.",
+  "reliability": "Trustpilot 3,2/5 sur 1 avis (consulté le 15/10/2026), un avis à 1 étoile du 01/06/2026 (« très lent, coûte cher juste pour charger »).",
+  "user_feedback": {
+   "summary": "Très peu d'avis publics. Le seul avis Trustpilot reproche la lenteur du chargement des machines, facturé à l'heure.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/runcomfy.com",
+     "date": "2026-06-02",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Pro (mensuel)",
+   "plan_usd_month": 29.99,
+   "credits_month": 10,
+   "credits_per_clip": 1.53,
+   "usd_per_clip_sub": 1.53,
+   "clips_per_month": 6,
+   "best_api": {
+    "platform": "runware",
+    "usd_per_clip": 1.15,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "Pro = 29,99 $ avec 10 $ de crédit inclus (6 clips à 1,53 $) ; la remise Pro de 20 % ne vise que le GPU (ComfyUI, Trainer), pas les modèles ; Runware 0,2304 $/s × 5 = 1,15 $",
+   "verdict": "Pour Seedance, l'API directe est moins chère à tout volume. Le plan Pro ne devient rentable que pour plus de 100 $ de GPU par mois (20 % de 100 $ = 20 $, soit l'écart entre 29,99 $ et le crédit de 10 $).",
+   "sources": [
+    {
+     "url": "https://www.runcomfy.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://www.runcomfy.com/models/bytedance/seedance-2.5/text-to-video",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Plan Pro annuel à 19,99 $/mois (« 4 mois offerts »)",
+    "ends": null,
+    "source": "https://www.runcomfy.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "ComfyUI hébergé avec LoRA perso et un large catalogue d'API, mais exploitant et règles de contenu peu documentés et presque aucun retour d'utilisateurs.",
+  "sources": [
+   {
+    "url": "https://www.runcomfy.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runcomfy.com/legal/generation-model-usage-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runcomfy.com/models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runcomfy.com/models/collections/seedance",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runcomfy.com/models/bytedance/seedance-2.5/text-to-video",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runcomfy.com/models/bytedance/seedance-2.5/image-to-video/1080p",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/runcomfy.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "reactor",
@@ -756,69 +2491,2363 @@
   "country": "US",
   "url": "https://www.reactor.inc",
   "models": [
-   "FastH3",
-   "FastH3-Omni"
+   "MiniMax FastH3",
+   "FastH3 Omni",
+   "H3 reference-to-video turbo",
+   "LingBot World 2",
+   "LTX 2",
+   "Happy Oyster",
+   "Vidu S2 Avatar",
+   "Vidu S2 Editing"
   ],
   "seedance": null,
   "moderation": {
    "real_faces": "inconnu",
    "public_figures": null,
-   "violence": null,
-   "notes": null
+   "violence": "Les CGU interdisent les contenus sexuellement suggestifs, haineux, d'automutilation ou de violence excessive, et les faux profils.",
+   "notes": "Une politique d'usage acceptable séparée existe ; elle n'a pas été trouvée en ligne. Rien sur les visages réels ni les personnalités."
   },
-  "refusal_billed": "inconnu",
+  "refusal_billed": "inconnu. Facturation à la seconde de session, de l'état ready jusqu'à la fermeture, même inactive.",
   "payment": [],
   "lora_hosting": null,
-  "terms": null,
+  "terms": "Reactor Technologies, Inc. (San Francisco). L'utilisateur possède entrées et sorties. Licence à Reactor limitée au fonctionnement du service ; pas d'entraînement sans accord écrit séparé. Accès pour usage personnel ou interne à l'entreprise. Indemnisation par l'utilisateur. Droit californien, arbitrage. Crédits non remboursables, valables 365 jours.",
   "reliability": null,
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Solde de départ gratuit à l'inscription, sans moyen de paiement, valable 90 jours.",
+    "ends": null,
+    "source": "https://docs.reactor.inc/resources/billing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "tester",
-  "verdict_reason": "Seul hôte de FastH3-Omni, prix et politique non documentés.",
-  "sources": []
+  "verdict_reason": "Hôte temps réel de FastH3 Omni (0,0125 $/s) et FastH3 (0,035 $/s), sans abonnement ni minimum, mais politique de contenu introuvable.",
+  "sources": [
+   {
+    "url": "https://www.reactor.inc",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://api.reactor.inc/pricing",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://docs.reactor.inc/resources/billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.reactor.inc/legal/terms",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
  },
  {
   "id": "elevenlabs",
   "name": "ElevenLabs (voix)",
   "type": "editeur",
   "country": "US",
-  "url": null,
-  "models": [],
+  "url": "https://elevenlabs.io",
+  "models": [
+   "Eleven v4",
+   "Eleven v4 Turbo",
+   "Eleven v3",
+   "Multilingual v2",
+   "Flash v2.5",
+   "Scribe v2",
+   "Eleven Music",
+   "Voice Changer"
+  ],
   "seedance": null,
   "moderation": {
    "real_faces": "filtre partiel",
-   "public_figures": null,
-   "violence": null,
-   "notes": "Liste « no-go voices » limitée aux politiciens des élections US et UK ; contournements documentés (404 Media) ; captcha vocale."
+   "public_figures": "Clones approchant la voix de personnalités publiques de premier plan bloqués (« no-go voices »), liste non publiée, extension à d'autres langues en cours. Imiter un candidat ou un élu sans autorisation est interdit ; campagne politique soumise à accord écrit d'ElevenLabs.",
+   "violence": "Interdit : promouvoir ou faciliter le terrorisme ou l'extrémisme violent, glorifier les attaques de masse, menacer, fabriquer ou se procurer des armes (dont NRBC et explosifs).",
+   "notes": "Cloner une personne vivante exige son consentement explicite et éclairé. Voix de mineurs interdites pour entraîner un modèle. Contourner la vérification vocale est interdit. Sanctions : avertissement, retrait de voix, bannissement. Politique mise à jour le 09/10/2026."
   },
   "refusal_billed": "inconnu",
-  "payment": [],
-  "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "payment": [
+   "carte",
+   "Apple Pay",
+   "Google Pay",
+   "UPI (Inde)"
+  ],
+  "lora_hosting": "Oui pour la voix : clonage instantané dès Starter, clonage professionnel dès Creator (1 à 10 clones selon le plan).",
+  "terms": "Eleven Labs Inc. (New York) pour les utilisateurs hors EEE, Suisse et Royaume-Uni. L'utilisateur conserve ses droits sur les sorties, non exclusives. Gratuit : usage non commercial ; plans payants : usage commercial. Licence perpétuelle et irrévocable à ElevenLabs sur entrées et sorties pour fournir et améliorer le service, entraînement désactivable dans le menu Data use. Pas de commercialisation isolée de la voix sans accord. Indemnisation par l'utilisateur. Droit de New York, arbitrage JAMS. Ventes définitives. CGU du 09/10/2026.",
+  "reliability": "Trustpilot 3,1/5 sur 1 184 avis (consulté le 15/10/2026), 38 % à une étoile.",
+  "user_feedback": {
+   "summary": "Abonnements facturés par surprise, crédits consommés par les régénérations, support derrière un chatbot, comptes suspendus par l'anti-abus sans recours clair. Qualité de voix et latence saluées.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/elevenlabs.io",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://boingboing.net/2025/02/19/woman-banned-from-assistive-ai-app-after-teaching-it-to-say-arse.html",
+     "date": "2025-02-19",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "1 000 caractères de TTS Eleven v4 (environ 1 minute)",
+   "plan": "Creator",
+   "plan_usd_month": 22,
+   "credits_month": 121000,
+   "credits_per_clip": 1000,
+   "usd_per_clip_sub": 0.18,
+   "clips_per_month": 121,
+   "best_api": {
+    "platform": "ElevenLabs API",
+    "usd_per_clip": 0.08,
+    "source": "https://elevenlabs.io/pricing/api"
+   },
+   "calc": "22 $ / 121 000 crédits x 1 000 crédits (1 crédit par caractère) = 0,18 $ dans l'app. API : 0,08 $ les 1 000 caractères ; le même plan à 22 $ couvre 275 000 caractères en API.",
+   "verdict": "L'API coûte environ 2,3 fois moins cher par caractère que les crédits de l'app, dès le premier caractère. L'abonnement ne se justifie que pour le studio (doublage, projets, clonage pro).",
+   "sources": [
+    {
+     "url": "https://elevenlabs.io/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://elevenlabs.io/pricing/api",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Starter : premier mois à 1 $ au lieu de 6 $ (-83 %).",
+    "ends": "2026-10-18",
+    "source": "https://elevenlabs.io/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Creator : premier mois à 11 $ au lieu de 22 $ (-50 %).",
+    "ends": null,
+    "source": "https://elevenlabs.io/pricing",
+    "date": "2026-10-15"
+   }
+  ],
   "verdict": "fiable",
-  "verdict_reason": "Référence voix, filtre limité.",
-  "sources": []
+  "verdict_reason": "Référence voix aux tarifs clairs et au consentement exigé, mais support et suspensions automatiques critiqués.",
+  "sources": [
+   {
+    "url": "https://elevenlabs.io/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://elevenlabs.io/pricing/api",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://elevenlabs.io/use-policy",
+    "date": "2026-10-09",
+    "type": "editeur"
+   },
+   {
+    "url": "https://elevenlabs.io/terms-of-use",
+    "date": "2026-10-09",
+    "type": "editeur"
+   },
+   {
+    "url": "https://elevenlabs.io/docs/help-center/legal/what-are-no-go-voices.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://elevenlabs.io/docs/help-center/account/payment-billing/what-kind-of-payment-is-accepted.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/elevenlabs.io",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  },
  {
   "id": "fishaudio",
   "name": "Fish Audio (voix)",
   "type": "editeur",
-  "country": null,
-  "url": null,
-  "models": [],
+  "country": "US",
+  "url": "https://fish.audio",
+  "models": [
+   "S2.1 Pro",
+   "S2 Pro",
+   "S1 (fin le 31/12/2026)",
+   "Transcribe 1 Pro",
+   "Voice Design 1"
+  ],
   "seedance": null,
   "moderation": {
-   "real_faces": "autorise",
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de règle dédiée dans les CGU. Les voix importées par les utilisateurs restent en ligne jusqu'à signalement : 47 modèles de 25 comédiens de doublage français retirés en avril 2026 après plainte. Retrait désormais automatisé sur preuve (échantillon vocal ou contrat).",
+   "violence": "Les contributions ne doivent pas montrer d'actes illégaux, de violence extrême ni de cruauté animale. Le terrorisme n'est cité que dans les clauses d'export.",
+   "notes": "Usurpation d'identité et contenus trompeurs interdits. Les CGU (en vigueur depuis le 18/08/2024) n'exigent pas de consentement explicite pour cloner une voix. Un utilisateur décrit une étape de vérification vocale qui a bloqué son clone."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "carte de débit",
+   "moyens de paiement régionaux"
+  ],
+  "lora_hosting": "Oui pour la voix : clones privés et professionnels selon le plan (Plus : 10 privés et 1 pro ; Pro : 5 pro).",
+  "terms": "Hanabi AI Inc. (Delaware). Gratuit : usage personnel non commercial ; offres payantes : usage commercial. Les CGU ne disent rien de la propriété des audios générés. Licence perpétuelle et irrévocable sur les contributions ; données et contenus utilisables pour entraîner les modèles. Droit californien et fédéral, arbitrage à San Francisco. Pas de remboursement au prorata.",
+  "reliability": "Trustpilot 2,2/5 sur 31 avis (consulté le 15/10/2026). Levée d'amorçage de 52 M$ en juillet 2026.",
+  "user_feedback": {
+   "summary": "Avis partagés : modèle S2 salué, mais clones instables, remboursements refusés ou lents, support muet plus de deux semaines, clones publiés impossibles à supprimer.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/fish.audio",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Facturation annuelle avec 3 mois offerts : Plus à 11 $/mois au lieu de 15 $, Pro à 75 $ au lieu de 100 $.",
+    "ends": null,
+    "source": "https://fish.audio/plan",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "API bon marché (15 $ le million d'octets) et usage commercial clair, mais bibliothèque de voix clonées sans consentement et support faible.",
+  "sources": [
+   {
+    "url": "https://fish.audio/terms",
+    "date": "2024-08-18",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fish.audio/plan",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.fish.audio/developer-platform/models-pricing/pricing-and-rate-limits",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://oecd.ai/en/incidents/2026-04-02-eec9",
+    "date": "2026-04-02",
+    "type": "independant"
+   },
+   {
+    "url": "https://siliconangle.com/2026/07/28/fish-audio-makes-splash-raising-52m-seed-funding-ai-voices/",
+    "date": "2026-07-28",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/fish.audio",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "vidu",
+  "name": "Vidu (officiel, ShengShu)",
+  "type": "editeur",
+  "country": "HK/CN",
+  "url": "https://www.vidu.com",
+  "models": [
+   "Vidu Q4",
+   "Vidu Q3",
+   "Vidu Q3 Pro",
+   "Vidu Q3 Turbo",
+   "Vidu Q2 (image)"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Catégorie modérée : personnalités publiques et artistes vivants peuvent être bloqués.",
+   "violence": "Violence et gore (sang, viscères) modérés ; terrorisme non nommé.",
+   "notes": "Des utilisateurs signalent des avertissements « inappropriate » sur des portraits ordinaires."
+  },
+  "refusal_billed": "non facturé sur l'API : crédits rendus après une génération modérée (statut FAILED, CreationPolicyViolation). Sur l'application, des utilisateurs disent ne pas récupérer leurs crédits après un échec.",
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": null,
+  "terms": "API : ShengShu AI HK Limited, droit de Hong Kong, arbitrage HKIAC (en vigueur le 23/01/2025). Aucune restriction d'usage commercial ; propriété des sorties non énoncée. Application : usage commercial annoncé pour les plans payants. Paiement par Stripe.",
+  "reliability": "Trustpilot 2,3/5 sur 17 avis (consulté le 15/10/2026).",
+  "user_feedback": {
+   "summary": "Peu d'avis : crédits non rendus après échec, essais gratuits très courts, modération sur des portraits ordinaires, prolongations de vidéo qui bouclent, support muet une semaine.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/vidu.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Vidu Q4",
+   "plan": "Standard mensuel",
+   "plan_usd_month": 10,
+   "credits_month": 800,
+   "credits_per_clip": null,
+   "usd_per_clip_sub": null,
+   "clips_per_month": null,
+   "best_api": {
+    "platform": "fal",
+    "usd_per_clip": 0.3325,
+    "source": "https://fal.ai/models/fal-ai/vidu/q4/image-to-video"
+   },
+   "calc": "Application : seul le 540p est affiché, 2 crédits/s soit 10 crédits par clip = 0,125 $ (10 $ / 800 crédits) ; 720p non publié. API fal : 0,0665 $/s x 5 = 0,33 $.",
+   "verdict": "En 540p l'abonnement est très bon marché (80 clips par mois sur le Standard). Pour du 720p, coût en crédits inconnu : l'API à l'acte (fal 0,33 $) est la seule valeur sûre.",
+   "sources": [
+    {
+     "url": "https://www.vidu.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://fal.ai/models/fal-ai/vidu/q4/image-to-video",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Premier achat : jusqu'à -17 % (Standard, Ultimate) ou -18 % (Premium) ; annuel -18 %.",
+    "ends": null,
+    "source": "https://www.vidu.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Officiel, refus rendus en crédits sur l'API, mais coût 720p non publié dans l'application et peu d'avis.",
+  "sources": [
+   {
+    "url": "https://www.vidu.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://platform.vidu.com/docs/terms-and-policies/content-moderation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://platform.vidu.com/docs/terms-and-policies/terms-of-use",
+    "date": "2025-01-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/vidu.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.orcarouter.ai/fr/blog/vidu-q4-preview-vs-runway-gen-4-5",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "pixverse",
+  "name": "PixVerse (officiel)",
+  "type": "editeur",
+  "country": "SG",
+  "url": "https://app.pixverse.ai",
+  "models": [
+   "PixVerse V6",
+   "PixVerse C1",
+   "PixVerse V5.6",
+   "Seedance 2.5 (revendu)",
+   "MiniMax H3 (revendu)",
+   "Kling O3 (revendu)"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Pour partager un contenu avec une personne reconnaissable, l'utilisateur doit avoir obtenu les autorisations ; pas de règle nommée sur les personnalités.",
+   "violence": "Interdiction de partager des médias réels de gore, violence excessive ou maltraitance animale.",
+   "notes": "Contenu sexuel d'autrui sans consentement interdit. Des utilisateurs signalent des œuvres anodines bloquées, parfois après la génération."
+  },
+  "refusal_billed": "inconnu (CGU muettes ; des utilisateurs disent que les générations ratées consomment des crédits)",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": "AIVORA PTE. LTD., Singapour, droit de Singapour, arbitrage SIAC (CGU du 07/05/2026). L'éditeur ne revendique pas la propriété des sorties, mais elles sont limitées à un usage non commercial sauf autorisation séparée, sans distinction gratuit ou payant. Licence mondiale, perpétuelle et sous-licenciable pour l'entraînement des modèles (refus possible quand l'option existe). Remboursement intégral seulement d'un abonnement en cours jamais utilisé ; packs de crédits non remboursables.",
+  "reliability": "Trustpilot 2,3/5 sur 130 avis (consulté le 15/10/2026). L'éditeur répond à 97 % des avis négatifs.",
+  "user_feedback": {
+   "summary": "Sorties qui ignorent la consigne et crédits gaspillés, résiliation difficile et prélèvements continus, tâches bloquées en file sans erreur, promos qui finissent sans prévenir ; l'interface et la qualité cinéma sont saluées.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/pixverse.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p PixVerse V6 sans audio",
+   "plan": "Pro mensuel",
+   "plan_usd_month": 30,
+   "credits_month": 6000,
+   "credits_per_clip": 45,
+   "usd_per_clip_sub": 0.225,
+   "clips_per_month": 133,
+   "best_api": {
+    "platform": "kie.ai",
+    "usd_per_clip": 0.18,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "30 $ / 6 000 crédits x 45 crédits = 0,225 $ ; API kie.ai 0,036 $/s x 5 = 0,18 $, fal 0,045 $/s x 5 = 0,225 $.",
+   "verdict": "L'API à l'acte est moins chère ou égale à tout volume. L'abonnement ne se justifie que pour le mode heures creuses (gratuit sur Ultra pour les modèles PixVerse), les 60 crédits quotidiens ou l'accès aux modèles revendus.",
+   "sources": [
+    {
+     "url": "https://app.pixverse.ai/subscribe",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://apiframe.ai/guides/pixverse-api-guide",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Annuel : -20 % (Standard, Pro, Premium), Ultra à 149 $/mois au lieu de 249 $ (-40 %).",
+    "ends": null,
+    "source": "https://app.pixverse.ai/subscribe",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Bon rapport qualité-prix en API, mais CGU qui limitent l'usage commercial et facturation critiquée.",
+  "sources": [
+   {
+    "url": "https://app.pixverse.ai/subscribe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pixverse.ai/en/terms-of-service",
+    "date": "2026-05-07",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/pixverse.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://apiframe.ai/guides/pixverse-api-guide",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "dashscope",
+  "name": "Alibaba Model Studio (DashScope international) / ModelScope",
+  "type": "editeur",
+  "country": "SG/CN",
+  "url": "https://www.alibabacloud.com/product/modelstudio",
+  "models": [
+   "Wan 3.0",
+   "Wan 3.0 Prime",
+   "Wan 2.7",
+   "HappyHorse 1.1",
+   "Qwen-Image 3",
+   "Wan 2.7 Image"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": null,
+   "violence": "Filtre « Green Net » : entrée ou sortie jugée inappropriée = erreur DataInspectionFailed.",
+   "notes": "Une image qui échoue au contrôle préalable n'est pas traitée par le modèle. Erreur IPInfringementSuspect si le prompt ou l'image semblent enfreindre une propriété intellectuelle."
+  },
+  "refusal_billed": "inconnu (la documentation ne dit pas si les requêtes bloquées sont facturées)",
+  "payment": [
+   "carte",
+   "PayPal",
+   "virement"
+  ],
+  "lora_hosting": null,
+  "terms": "Alibaba Cloud (Singapore) Private Limited pour le site international ; droit de Singapour dans les conditions d'API. Aucun engagement de l'éditeur sur le contenu généré, l'utilisateur supporte seul les litiges et indemnise l'éditeur. En mode essai, aucun droit de propriété intellectuelle sur les sorties, usage limité à l'évaluation. Wan existe aussi en poids ouverts sous licence distincte.",
+  "reliability": "Trustpilot 1,2/5 sur 100 avis pour Alibaba Cloud (consulté le 15/10/2026). Erreurs de délai signalées entre régions hors Chine et le point d'accès DashScope ; modèle, URL et clé doivent être de la même région.",
+  "user_feedback": {
+   "summary": "Avis sur Alibaba Cloud en général : factures inattendues, vérifications d'identité exigeantes avec comptes suspendus, support lent. ModelScope : quota gratuit d'API dont les règles semblent changer (solde Magicube à la place du quota mensuel, 09/2026).",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/alibabacloud.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://lilting.ch/en/articles/modelscope-api-inference-magicube-probe",
+     "date": "2026-09-01",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Quota gratuit pour les nouveaux comptes (région Singapour annoncée, 90 jours pour les comptes activés après le 08/09/2025), inférence temps réel seulement.",
+    "ends": null,
+    "source": "https://help.aliyun.com/en/model-studio/new-free-quota",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "fiable",
+  "verdict_reason": "Source officielle de Wan au prix de référence (0,10 $/s en 720p pour Wan 3.0), même si Replicate revend Wan 3.0 moitié moins cher.",
+  "sources": [
+   {
+    "url": "https://www.alibabacloud.com/help/en/model-studio/model-pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.alibabacloud.com/help/en/model-studio/error-code",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.aliyun.com/en/model-studio/bailian-service-notes",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.aliyun.com/en/model-studio/new-free-quota",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://jp.aliyun.com/help/faq-detail/42443.htm",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.alibabacloud.com/help/en/legal/latest/api-term-of-use",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/alibabacloud.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://replicate.com/alibaba/wan-3",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "freepik",
+  "name": "Freepik AI (Magnific)",
+  "type": "abonnement",
+  "country": "ES",
+  "url": "https://www.magnific.com",
+  "models": [
+   "Seedance 2.5",
+   "Kling 3.0 Pro",
+   "Veo 3.1",
+   "Wan 3.0",
+   "MiniMax Hailuo 2.3",
+   "Nano Banana Pro (image)",
+   "Magnific One (upscale)",
+   "Flux.2 (image)"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.161,
+   "usd_720p_s": 0.355,
+   "usd_1080p_s": 0.887,
+   "note": "Premium+ mensuel 36 € HT pour 50 000 crédits (0,00072 €/crédit), converti à 1,1195 $/€ (BCE, 14/10/2026). 480p (mode Draft) 800 crédits par 4 s, 720p 1 760, 1080p 4 400."
+  },
+  "moderation": {
+   "real_faces": "inconnu",
    "public_figures": null,
    "violence": null,
-   "notes": "Héberge des modèles de voix publics de célébrités ; usage commercial sur les offres payantes ; aucune politique de consentement trouvée."
+   "notes": "Les conditions générales renvoient à des conditions IA et à une politique d'usage séparées, inaccessibles le 15/10/2026. Les consignes de génération citent les personnages protégés et le contenu sexuel impliquant des mineurs parmi les motifs de signalement."
+  },
+  "refusal_billed": "inconnu ; un avis Trustpilot rapporte environ 4 000 crédits facturés pour quatre passes vidéo qui ignoraient le prompt",
+  "payment": [
+   "carte",
+   "PayPal",
+   "Google Pay",
+   "Apple Pay"
+  ],
+  "lora_hosting": null,
+  "terms": "Magnific AI, S.L.U. (Málaga, Espagne ; droit espagnol, tribunaux de Málaga). Freepik est devenu Magnific le 28/04/2026. Les plans payants incluent une licence commerciale sur les contenus IA ; la plateforme ne garantit pas le droit d'auteur sur les sorties et l'utilisateur répond des atteintes aux droits de tiers. Contenus IA exclus de l'indemnisation accordée sur le stock. Pas de droit de rétractation sur le contenu numérique, crédits supplémentaires non remboursables.",
+  "reliability": "Trustpilot 4,0/5 sur 3 218 avis (consulté le 15/10/2026), 15 % d'avis à une étoile ; réponse à 93 % des avis négatifs.",
+  "user_feedback": {
+   "summary": "Satisfaction majoritaire, mais plaintes sur des essais devenus payants sans remboursement, des comptes bloqués après un litige de paiement, des tickets fermés sans réponse et des crédits facturés pour des vidéos ratées.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/freepik.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Premium+ (mensuel)",
+   "plan_usd_month": 40.3,
+   "credits_month": 50000,
+   "credits_per_clip": 2200,
+   "usd_per_clip_sub": 1.773,
+   "clips_per_month": 22.7,
+   "best_api": {
+    "platform": "Runware",
+    "usd_per_clip": 1.152,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "36 € / 50 000 = 0,00072 €/crédit ; 720p = 1 760 crédits par 4 s, soit 2 200 pour 5 s (extrapolé) ; 2 200 x 0,00072 = 1,584 € = 1.773 $ (1,1195 $/€). API : 0,2304 $/s x 5 = 1,152 $. En annuel (27 €/mois) : 1,33 $ le clip.",
+   "verdict": "Pour Seedance 2.5 l'API est moins chère à tout volume, même en annuel. L'abonnement ne devient intéressant que sur les modèles illimités du plan (Kling 2.5, Nano Banana 2 et Pro, Hailuo 2.3 Fast) où le coût marginal est nul.",
+   "sources": [
+    {
+     "url": "https://www.magnific.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://runware.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+     "date": "2026-10-14",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Magnific One illimité sur l'application de bureau jusqu'au 15 octobre.",
+    "ends": "2026-10-15",
+    "source": "https://www.magnific.com/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Wan 3.0 1080p à -50 % et Wan 3.0 PRIME à -40 %.",
+    "ends": null,
+    "source": "https://www.magnific.com/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Facturation annuelle : Premium 12 € au lieu de 16 €, Premium+ 27 € au lieu de 36 €, Pro Starter 66 € au lieu de 88 € par mois.",
+    "ends": null,
+    "source": "https://www.magnific.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Société européenne sous droit espagnol avec de nombreux modèles illimités, mais Seedance 2.5 y coûte plus cher qu'en API et les règles de modération IA ne sont pas lisibles publiquement.",
+  "sources": [
+   {
+    "url": "https://www.magnific.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.magnific.com/legal/terms-of-use",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.magnific.com/blog/from-freepik-to-magnific-the-story-of-europes-largest-ai-creative-platform/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.magnific.com/ai/docs/ai-content-and-copyright",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.magnific.com/ai/docs/ai-generation-guidelines",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.freepik.com/ai/faq/payment-methods",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/freepik.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+    "date": "2026-10-14",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "leonardo",
+  "name": "Leonardo.ai",
+  "type": "abonnement",
+  "country": "AU",
+  "url": "https://leonardo.ai",
+  "models": [
+   "Kling 3.0",
+   "Seedance 2.5",
+   "Veo 3.1",
+   "MiniMax H3",
+   "Motion 2.0",
+   "Wan 2.7",
+   "Flux 3 Video",
+   "Lucid Origin (image)"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": null,
+   "usd_720p_s": null,
+   "usd_1080p_s": null,
+   "note": "Seedance 2.5 disponible via l'API Leonardo ; coût en tokens non publié hors compte connecté."
+  },
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Interdit de générer l'imitation d'une personne réelle ou de la représenter de façon trompeuse ou diffamatoire. Pas de clause propre aux personnalités publiques.",
+   "violence": "Interdit le gore explicite, la violence extrême, la cruauté animale et l'incitation à la haine ou à la violence. Armes et terrorisme ne sont pas nommés.",
+   "notes": "Racheté par Canva le 30/07/2024, Leonardo continue comme plateforme indépendante."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte (Stripe)"
+  ],
+  "lora_hosting": "oui (modèles personnels entraînés : 10 sur Essential)",
+  "terms": "Leonardo Interactive Pty Ltd (Australie, droit de Nouvelle-Galles du Sud). Les abonnés payants possèdent leurs créations ; sur le plan gratuit, la propriété des sorties revient à Leonardo. Licence perpétuelle et transférable à Leonardo sur le contenu public. Le consommateur a droit à un remboursement au prorata dans certains cas (arrêt du service).",
+  "reliability": "Trustpilot 4,7/5 sur 1 524 avis (consulté le 15/10/2026), 10 % d'avis à une étoile ; seuls les avis cinq étoiles sont visibles en première page.",
+  "user_feedback": {
+   "summary": "Support réputé rapide ; les seules plaintes visibles portent sur une facturation confuse et des affichages de tokens erronés.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/leonardo.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Kling 3.0",
+   "plan": "Premium (mensuel)",
+   "plan_usd_month": 30.0,
+   "credits_month": 25000,
+   "credits_per_clip": null,
+   "usd_per_clip_sub": null,
+   "clips_per_month": null,
+   "best_api": {
+    "platform": "Kie.ai",
+    "usd_per_clip": 0.35,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "30 $ / 25 000 tokens = 0,0012 $/token ; nombre de tokens par clip Kling 3.0 non publié (page tarifs et calculateur API réservés aux comptes connectés). API la moins chère : 0,07 $/s x 5 = 0,35 $.",
+   "verdict": "Non calculable sans le coût en tokens par modèle. L'abonnement n'a d'intérêt chiffrable que pour les modèles en génération illimitée lente (Motion 2.0, Hailuo 2.3, MiniMax H3 480p, Wan 2.6).",
+   "sources": [
+    {
+     "url": "https://leonardo.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://docs.leonardo.ai/docs/pricing-and-plans-faq.md",
+     "date": "2026-09-01",
+     "type": "editeur"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Jusqu'à 20 % de remise en paiement annuel.",
+    "ends": null,
+    "source": "https://leonardo.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Bonne réputation et génération illimitée lente sur plusieurs modèles vidéo, mais coût réel des modèles partenaires invisible avant connexion.",
+  "sources": [
+   {
+    "url": "https://leonardo.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://leonardo.ai/terms-of-service/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.leonardo.ai/llms.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://mediaweek.com.au/canva-acquires-generative-ai-platform-leonardo-ai",
+    "date": "2024-07-30",
+    "type": "independant"
+   },
+   {
+    "url": "https://stripe.com/cn/customers/leonardo-ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/leonardo.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "pollo",
+  "name": "Pollo AI",
+  "type": "agregateur",
+  "country": "SG",
+  "url": "https://pollo.ai",
+  "models": [
+   "Kling 3.0",
+   "MiniMax H3",
+   "MiniMax H3 Max",
+   "Wan 3.0",
+   "Pollo 2.5",
+   "GPT Image 2.5",
+   "Nano Banana Pro",
+   "Seedream 5.0 Lite"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Pas de clause propre aux personnalités publiques ; interdit d'utiliser l'image, la voix ou les données biométriques d'une personne sans sa permission, et de présenter un contenu comme endossé par une personne réelle.",
+   "violence": "Interdit la violence, le contenu excessivement violent, le matériel lié au terrorisme et le contenu politique sensible.",
+   "notes": "Deepfakes et imitations destinés à tromper interdits. Un avis Trustpilot signale un rendu bloqué à cause d'un seul mot."
+  },
+  "refusal_billed": "inconnu ; des avis Trustpilot évoquent des crédits perdus sur des sorties à refaire",
+  "payment": [
+   "carte (Visa, Mastercard, American Express)",
+   "paiement local (option Pay Locally)"
+  ],
+  "lora_hosting": null,
+  "terms": "COCOSOFT TECHNOLOGY PTE. LTD. (société de droit singapourien). L'utilisateur garde la propriété de ses contenus. Licence perpétuelle et transférable à Pollo sur le contenu rendu public, y compris pour améliorer les modèles. L'utilisateur indemnise Pollo. Frais non remboursables sauf demande sous 3 jours pour un premier achat avec moins de 50 crédits utilisés, frais jusqu'à 6 %.",
+  "reliability": "Trustpilot 4,3/5 sur 5 581 avis (consulté le 15/10/2026), 11 % d'avis à une étoile.",
+  "user_feedback": {
+   "summary": "Avis majoritairement positifs sur la simplicité ; critiques sur les crédits brûlés en essais (une sortie juste sur dix selon un avis), un filtre trop sensible et un « illimité » plafonné par jour.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/pollo.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Annuel jusqu'à 48 % moins cher ; plan Pro en vente flash à -50 % (25 € par mois pour 800 crédits).",
+    "ends": null,
+    "source": "https://pollo.ai/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Abonnés : MiniMax H3 et GPT Image 2.5 illimités, jusqu'à 60 % de remise sur une sélection de modèles ; Ultra : 10 jours d'illimité sur Kling 3.0, H3, Wan 3.0 et Pollo 2.5.",
+    "ends": null,
+    "source": "https://pollo.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Agrégateur bien noté avec beaucoup d'illimité temporaire, mais coût par modèle non publié et remboursement très restreint.",
+  "sources": [
+   {
+    "url": "https://pollo.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pollo.ai/terms-and-conditions",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pollo.ai/refund-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pollo.ai/api-platform/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/pollo.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "luma",
+  "name": "Luma Dream Machine (Ray)",
+  "type": "editeur (abonnement)",
+  "country": "US",
+  "url": "https://lumalabs.ai",
+  "models": [
+   "Ray3.2",
+   "Ray3.14",
+   "Ray3.2 HDR / EXR",
+   "Uni-1.1 (image)",
+   "Luma Agents"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Interdit les deepfakes, l'imitation d'une personne et la manipulation politique. Toute sortie qui identifie ou ressemble à une personne doit être signalée publiquement comme générée par IA.",
+   "violence": "Interdit de promouvoir ou d'inciter à la violence ou à la haine, et de développer des armes de destruction massive ou des cyberarmes.",
+   "notes": "La modération du prompt et des images peut faire échouer une génération après soumission. Le contenu sexuel explicite est interdit."
+  },
+  "refusal_billed": "inconnu ; Luma se réserve le droit de refuser un remboursement si le compte est bloqué après une modération positive",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": "Luma AI, Inc. (droit californien). Luma cède au client tous ses droits sur les sorties. Licence perpétuelle à Luma sur les sorties pour fournir et améliorer le service. Usage commercial à partir du plan Plus. Interdiction d'utiliser les sorties pour entraîner un modèle. Le client indemnise Luma. Service destiné aux États-Unis selon les CGU.",
+  "reliability": "Trustpilot 1,4/5 sur 69 avis (consulté le 15/10/2026), 86 % d'avis à une étoile ; profil non revendiqué.",
+  "user_feedback": {
+   "summary": "Plaintes dominantes sur les crédits consommés par des générations ratées et leurs corrections, des remboursements refusés et un support qui répond en semaines.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/lumalabs.ai",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Ray3.2 (SDR)",
+   "plan": "Plus (mensuel)",
+   "plan_usd_month": 30.0,
+   "credits_month": 10000,
+   "credits_per_clip": 100,
+   "usd_per_clip_sub": 0.3,
+   "clips_per_month": 100,
+   "best_api": {
+    "platform": "Luma API (même prix sur Replicate et Runware)",
+    "usd_per_clip": 0.3,
+    "source": "https://lumalabs.ai/api/pricing"
+   },
+   "calc": "30 $ / 10 000 crédits = 0,003 $/crédit ; Ray3.2 720p = 100 crédits par 5 s ; 100 x 0,003 = 0,30 $. API Luma : 0,30 $ le clip de 5 s en 720p SDR. Annuel (25 $/mois) : 0,25 $.",
+   "verdict": "Prix identique en mensuel. En annuel, l'abonnement passe devant à partir d'environ 84 clips par mois (25 / 0,30 = 83,3), sur un quota de 100.",
+   "sources": [
+    {
+     "url": "https://lumalabs.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://lumalabs.ai/api/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://replicate.com/luma/ray-3.2",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Jusqu'à 20 % de remise en annuel (Plus 25 $ au lieu de 30 $).",
+    "ends": null,
+    "source": "https://lumalabs.ai/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Ray3.2 et la sortie HDR/EXR sont uniques, au même prix en API qu'en abonnement, mais avis utilisateurs très mauvais sur les crédits perdus.",
+  "sources": [
+   {
+    "url": "https://lumalabs.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://lumalabs.ai/api/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://lumalabs.ai/legal/tos",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://lumalabs.ai/legal/content-moderation-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.lumalabs.ai/docs/errors",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/lumalabs.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "pika",
+  "name": "Pika",
+  "type": "abonnement",
+  "country": "US",
+  "url": "https://pika.art",
+  "models": [
+   "Pika 2.5",
+   "Seedance 2.5",
+   "Wan 3.0",
+   "Kling 3.0",
+   "MiniMax H3",
+   "Nano Banana 2 (image)",
+   "GPT Image 2.5 (image)"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.271,
+   "usd_1080p_s": null,
+   "note": "122 crédits par clip de 5 s en 720p, valorisés au plan Creator mensuel (35 $ pour 3 150 crédits)."
+  },
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Interdit de téléverser des images de célébrités sans autorisation et toute photo d'une personne réelle sans son consentement exprès.",
+   "violence": "Interdit la violence, le terrorisme et le contenu excessivement violent ; interdit de développer ou diffuser des armes et explosifs ; pas de campagne politique.",
+   "notes": "Tout deepfake doit être signalé comme généré ou manipulé. Pas d'image de mineurs."
+  },
+  "refusal_billed": "inconnu ; des avis Trustpilot décrivent des crédits retirés sans vidéo produite",
+  "payment": [
+   "carte (Stripe)"
+  ],
+  "lora_hosting": null,
+  "terms": "Mellis, Inc. (Palo Alto ; droit californien). Pika ne revendique pas les entrées ni les sorties et cède ses éventuels droits à l'utilisateur. Usage commercial seulement si le plan l'inclut (Creator et au-dessus). L'utilisateur indemnise Pika. Paiements non remboursables, crédits achetés valables 365 jours.",
+  "reliability": "Trustpilot 1,7/5 sur 73 avis (consulté le 15/10/2026), 83 % d'avis à une étoile ; profil non revendiqué.",
+  "user_feedback": {
+   "summary": "Générations bloquées ou en échec avec crédits perdus, prélèvements inattendus, emails sans réponse et support renvoyé vers Discord.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/pika.art",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Seedance 2.5",
+   "plan": "Creator (mensuel)",
+   "plan_usd_month": 35.0,
+   "credits_month": 3150,
+   "credits_per_clip": 122,
+   "usd_per_clip_sub": 1.356,
+   "clips_per_month": 25.8,
+   "best_api": {
+    "platform": "Runware",
+    "usd_per_clip": 1.152,
+    "source": "https://runware.ai/pricing"
+   },
+   "calc": "35 $ / 3 150 crédits = 0,0111 $/crédit ; Seedance 2.5 720p 5 s = 122 crédits ; 122 x 0,0111 = 1.356 $. API : 0,2304 $/s x 5 = 1,152 $. Annuel (28 $/mois) : 1,084 $. Pour Pika 2.5 (20 crédits) : 0,222 $ contre environ 0,20 $ en API.",
+   "verdict": "En mensuel l'API est moins chère à tout volume. En annuel, l'abonnement ne gagne qu'en consommant tout le quota (seuil 28 / 1,152 = 24 clips sur 25,8 possibles).",
+   "sources": [
+    {
+     "url": "https://pika.art/pricing?tool=pika",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://runware.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://apiframe.ai/guides/pika-labs-api-guide",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Facturation annuelle environ 20 % moins chère (Starter 8 $ au lieu de 10 $, Creator 28 $ au lieu de 35 $, Fancy 76 $ au lieu de 95 $).",
+    "ends": null,
+    "source": "https://pika.art/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "eviter",
+  "verdict_reason": "Prix au clip au-dessus de l'API et nombreuses plaintes sur les générations ratées facturées et le support absent.",
+  "sources": [
+   {
+    "url": "https://pika.art/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pika.art/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://pika.art/acceptable-use-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/pika.art",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "midjourney",
+  "name": "Midjourney",
+  "type": "editeur (abonnement)",
+  "country": "US",
+  "url": "https://www.midjourney.com",
+  "models": [
+   "Midjourney V8.1 (image, modèle par défaut)",
+   "Midjourney V7 (image)",
+   "Midjourney Video (5 s extensibles)",
+   "Éditeur d'images"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Interdit les images de personnes réelles, célèbres ou non, qui pourraient servir à harceler, diffamer ou nuire, ainsi que les images offensantes de célébrités ou de personnalités publiques. Interdit les images de campagne politique ou visant une élection.",
+   "violence": "Interdit le gore : corps mutilés, membres coupés, sang, scènes où l'on tire sur quelqu'un ou le fait exploser. Certaines entrées sont bloquées automatiquement.",
+   "notes": "Sanction particulièrement sévère contre les images sexualisées de personnes réelles via l'éditeur : suspension ou bannissement sans remboursement."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "Apple Pay",
+   "Google Pay",
+   "Amazon Pay",
+   "Alipay",
+   "Link"
+  ],
+  "lora_hosting": null,
+  "terms": "Midjourney, Inc. (droit californien, arbitrage). L'utilisateur possède ses créations dans la mesure permise par la loi ; une entreprise de plus de 1 M$ de chiffre d'affaires doit prendre Pro ou Mega pour les posséder. L'utilisateur indemnise Midjourney. Pas de remboursement de la période en cours, compte résiliable pour violation des règles.",
+  "reliability": "Trustpilot 1,7/5 sur 374 avis (consulté le 15/10/2026), 76 % d'avis à une étoile ; réponse à 14 % des avis négatifs.",
+  "user_feedback": {
+   "summary": "Plaintes sur des résultats qui ne suivent pas le prompt, une modération jugée excessive avec des blocages de compte sans explication, des renouvellements annuels inattendus et un support difficile à joindre.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/midjourney.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "20 % de remise sur l'engagement annuel (Standard 24 $ au lieu de 30 $).",
+    "ends": null,
+    "source": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Référence esthétique en image, mais pas d'API officielle, vidéo limitée et modération stricte sur les personnes réelles.",
+  "sources": [
+   {
+    "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.midjourney.com/hc/en-us/articles/32013696484109-Community-Guidelines",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.midjourney.com/hc/en-us/articles/27868831972365-Accepted-Payment-Methods",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://eesel.ai/blog/midjourney-pricing",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/midjourney.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "adobe-firefly",
+  "name": "Adobe Firefly",
+  "type": "editeur (abonnement)",
+  "country": "US",
+  "url": "https://www.adobe.com/products/firefly.html",
+  "models": [
+   "Firefly Video et Image (Adobe)",
+   "Veo 3.1",
+   "Kling 3.0 / Omni",
+   "Seedance 2.0",
+   "Runway Gen-4.5 / Aleph 2.0",
+   "Luma Ray3.14",
+   "Nano Banana Pro / 2",
+   "GPT Image 2"
+  ],
+  "seedance": {
+   "version": "2.0",
+   "usd_480p_s": 0.2,
+   "usd_720p_s": 0.45,
+   "usd_1080p_s": 0.9,
+   "note": "40, 90 et 180 crédits génératifs par seconde (480p, 720p, 1080p), valorisés au plan Firefly Pro (19,99 $ pour 4 000 crédits). Réservé aux comptes individuels : Seedance et Kling ne sont pas ouverts aux plans entreprise."
+  },
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Interdit l'imitation de personnes ou d'entités et les atteintes aux droits de la personnalité, à la vie privée et au droit à l'image.",
+   "violence": "Interdit de glorifier la violence graphique ou le gore et de promouvoir le terrorisme ou l'extrémisme violent.",
+   "notes": "Prompts, entrées et sorties peuvent être revus automatiquement et manuellement ; Content Credentials attachés aux sorties et interdiction de les retirer. Avec Seedance et Kling, prompts et fichiers partent chez l'éditeur chinois. Un avis Trustpilot signale des images romantiques ordinaires bloquées comme pornographiques."
+  },
+  "refusal_billed": "non en principe : selon les modérateurs Adobe, les crédits d'une génération en erreur sont rendus automatiquement ; plusieurs utilisateurs signalent des crédits non rendus",
+  "payment": [
+   "carte",
+   "PayPal (selon le pays)"
+  ],
+  "lora_hosting": "oui pour les entreprises (Firefly Custom Models)",
+  "terms": "Adobe Inc. Contenus jamais utilisés pour entraîner les modèles Adobe ou partenaires. Adobe laisse l'utilisateur juger si un modèle partenaire convient à un usage commercial ; l'indemnisation en propriété intellectuelle est réservée aux offres entreprise. Comptes désactivables pour violation des règles d'IA générative.",
+  "reliability": "Trustpilot 1,8/5 sur 27 avis pour firefly.adobe.com (consulté le 15/10/2026), 81 % d'avis à une étoile. Page de statut : status.adobe.com.",
+  "user_feedback": {
+   "summary": "Crédits débités sur des générations en erreur, messages « Something went wrong » répétés, support difficile à joindre et filtre jugé trop strict.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/firefly.adobe.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://community.adobe.com/bug-reports-403/adobe-taking-credits-when-generation-fails-1550475",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Kling 3.0 (sans audio)",
+   "plan": "Firefly Pro (mensuel)",
+   "plan_usd_month": 19.99,
+   "credits_month": 4000,
+   "credits_per_clip": 100,
+   "usd_per_clip_sub": 0.5,
+   "clips_per_month": 40,
+   "best_api": {
+    "platform": "Kie.ai",
+    "usd_per_clip": 0.35,
+    "source": "https://kie.ai/pricing"
+   },
+   "calc": "19,99 $ / 4 000 crédits = 0,005 $/crédit ; Kling 3.0 720p sans audio = 20 crédits/s, 100 par clip ; 100 x 0,005 = 0.5 $. API : 0,07 $/s x 5 = 0,35 $ (0,42 $ chez Kling en direct). Premium (199,99 $ / 50 000) : 0,40 $.",
+   "verdict": "L'API est moins chère à tout volume. L'abonnement se justifie par l'intégration aux applications Adobe, les images standard illimitées et, sur Premium, la vidéo Firefly illimitée.",
+   "sources": [
+    {
+     "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://www.adobe.com/products/firefly/plans.html",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://kie.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Tarifs en crédits « pour une durée limitée » sur plusieurs modèles partenaires (Veo 3.1, Kling, Runway Gen-4.5, Luma Ray3.14, Nano Banana).",
+    "ends": null,
+    "source": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Cadre juridique le plus propre (pas d'entraînement, Content Credentials), mais vidéo plus chère qu'en API et crédits parfois perdus sur erreur.",
+  "sources": [
+   {
+    "url": "https://www.adobe.com/products/firefly/plans.html",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://helpx.adobe.com/creative-cloud/apps/generative-ai/non-adobe-models-in-adobe-products.html",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.adobe.com/legal/licenses-terms/adobe-gen-ai-user-guidelines.html",
+    "date": "2026-05-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://helpx.adobe.com/enterprise/kb/payment-methods-available-for-CCT.html",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/firefly.adobe.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "openai",
+  "name": "OpenAI (GPT Image, ex-Sora)",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://openai.com",
+  "models": [
+   "GPT Image 2.5 Sunburst",
+   "GPT Image 2.5 Flare",
+   "GPT Image 2",
+   "GPT Image 1.5",
+   "GPT Image 1 Mini",
+   "Sora 2 (fermé)",
+   "Sora 2 Pro (fermé)"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Depuis mars 2025, ChatGPT peut générer des personnalités publiques ; elles peuvent demander à en être exclues. La politique interdit d'utiliser l'image ou la voix photoréaliste de quelqu'un sans consentement d'une façon qui brouille l'authenticité.",
+   "violence": "Interdit : terrorisme ou violence, y compris haineuse ; développement, achat ou usage d'armes, conventionnelles ou NRBC ; violences sexuelles et contenus intimes non consentis.",
+   "notes": "Sora : fermeture annoncée le 24/03/2026. Application web et mobile fermées le 26/04/2026. API Videos, sora-2 et sora-2-pro coupées le 24/09/2026, sans remplacement. La page tarifs ChatGPT (11/10/2026) ne propose plus de vidéo. API image : modération auto ou low ; un blocage renvoie moderation_blocked avec la catégorie."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "crédits prépayés",
+   "facture (Enterprise)"
+  ],
+  "lora_hosting": null,
+  "terms": "L'utilisateur conserve ses entrées et possède les sorties ; OpenAI lui cède ses droits éventuels. Sorties non uniques. OpenAI peut utiliser les contenus pour améliorer ses services. Utilisateurs de l'EEE et de Suisse : contrat avec OpenAI Ireland Ltd ; API et entreprises : conditions Business séparées. Crédits API prépayés non remboursables, valables un an.",
+  "reliability": "Trustpilot 1,3/5 sur 1 248 avis (consulté le 15/10/2026). Plaintes : comptes payants désactivés, facturation après résiliation, support automatisé.",
+  "user_feedback": {
+   "summary": "Filtres d'image jugés trop stricts (vêtements, poses ordinaires) et comptes payants désactivés sans recours. Sora a perdu ses utilisateurs en quelques mois avant sa fermeture.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/openai.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html",
+     "date": "2026-03-24",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "fiable",
+  "verdict_reason": "Images : tarifs publiés (GPT Image 2 de 0,006 à 0,211 $ l'image en 1024x1024). Vidéo : Sora fermé, plus aucune offre.",
+  "sources": [
+   {
+    "url": "https://developers.openai.com/api/docs/models/sora-2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html",
+    "date": "2026-03-24",
+    "type": "independant"
+   },
+   {
+    "url": "https://kingy.ai/ai-launch-tracker/openai-sora-videos-api-shutdown-september-24-2026/",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://developers.openai.com/api/docs/guides/image-generation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://developers.openai.com/api/docs/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261013194836/https://openai.com/policies/usage-policies/",
+    "date": "2025-10-29",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261012125824/https://openai.com/policies/eu-terms-of-use/",
+    "date": "2026-10-12",
+    "type": "editeur"
+   },
+   {
+    "url": "https://web.archive.org/web/20261011054013/https://chatgpt.com/pricing/",
+    "date": "2026-10-11",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.techcrunch.com/2025/03/28/openai-peels-back-chatgpts-safeguards-around-image-creation",
+    "date": "2025-03-28",
+    "type": "independant"
+   },
+   {
+    "url": "https://help.openai.com/en/articles/8264644-setting-up-and-managing-prepaid-api-billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/openai.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "heygen",
+  "name": "HeyGen (avatars)",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://www.heygen.com",
+  "models": [
+   "Avatar IV",
+   "Avatar V",
+   "Avatar III",
+   "Photo Avatar",
+   "Video Agent",
+   "Video Translation",
+   "HeyGen Video 1"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "verif_identite",
+   "public_figures": "Avatar d'une personne réelle, célébrités et personnalités comprises, interdit sans son consentement explicite. Contenu politique interdit : opinions, partis, candidats, campagnes, élections.",
+   "violence": "Interdit : promouvoir la violence ou le crime, inciter, coordonner une guerre. Tolérance zéro pour les organisations terroristes. Promotion d'armes et de munitions restreinte.",
+   "notes": "Jumeau numérique : la personne filmée enregistre une déclaration de consentement par webcam avec un code oral (lien valable 24 h). Vidéo de consentement préenregistrée ou dispense contre indemnisation réservées à l'Enterprise. Photo avatars : aucune vérification ni trace de consentement, à la charge de l'utilisateur. Données biométriques traitées pour vérifier l'identité."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "PayPal (certains pays)",
+   "Apple Pay",
+   "Google Pay"
+  ],
+  "lora_hosting": "Oui : avatars personnalisés (jumeaux numériques, photo avatars) et clones de voix selon le plan.",
+  "terms": "HeyGen Technology, Inc. Plans payants : l'utilisateur possède entrées et sorties, usage commercial permis. Gratuit : licence limitée, non commerciale. Licence irrévocable, mondiale et sous-licenciable à HeyGen, y compris pour entraîner ses modèles. Indemnisation par l'utilisateur. Droit californien, arbitrage AAA dans le comté de Los Angeles, refus possible sous 30 jours. Paiements non remboursables. CGU mises à jour le 23/07/2026.",
+  "reliability": "Trustpilot 4,1/5 sur 4 464 avis (consulté le 15/10/2026). Lenteur Avatar IV en février 2026 ; rendu 4K Avatar IV et V suspendu en juin 2026.",
+  "user_feedback": {
+   "summary": "Crédits consommés très vite, rendus bloqués à 97 %, rendus échoués parfois facturés selon des testeurs ; support jugé lent.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/heygen.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.toolworthy.ai/en/blog/heygen-alternatives",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://developers.heygen.com/changelog.md",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s Avatar IV",
+   "plan": "Creator",
+   "plan_usd_month": 29,
+   "credits_month": 600,
+   "credits_per_clip": 1.67,
+   "usd_per_clip_sub": 0.08,
+   "clips_per_month": 360,
+   "best_api": {
+    "platform": "OpenRouter",
+    "usd_per_clip": 0.25,
+    "source": "https://openrouter.ai/api/v1/videos/models"
+   },
+   "calc": "29 $ / 600 crédits x (20 crédits par minute x 5/60) = 0,08 $ par clip, 360 clips (30 min). API : 0,05 $/s x 5 s = 0,25 $ (OpenRouter).",
+   "verdict": "Abonnement plus rentable à partir d'environ 116 clips de 5 s par mois (10 min d'Avatar IV), si le barème de 20 crédits par minute (relevé tiers) se confirme. Un autre comparatif donne 200 crédits pour Creator, soit 10 min seulement.",
+   "sources": [
+    {
+     "url": "https://www.heygen.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://creatify.ai/blog/heygen-pricing-(2026)-plans-and-what-you-ll-actually-pay",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://openrouter.ai/api/v1/videos/models",
+     "date": "2026-10-15",
+     "type": "mesure"
+    }
+   ]
+  },
+  "promotions": [
+   {
+    "text": "Creator à 24 $/mois en facturation annuelle au lieu de 29 $.",
+    "ends": null,
+    "source": "https://www.heygen.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "fiable",
+  "verdict_reason": "Consentement vérifié par webcam pour les jumeaux et bons avis, mais photo avatars sans contrôle et licence d'entraînement large.",
+  "sources": [
+   {
+    "url": "https://www.heygen.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.heygen.com/terms",
+    "date": "2026-07-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.heygen.com/moderation-policy",
+    "date": "2024-07-25",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.heygen.com/policy",
+    "date": "2026-08-11",
+    "type": "editeur"
+   },
+   {
+    "url": "https://developers.heygen.com/docs/avatar-consent",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://halocard.co/merchants/heygen",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/heygen.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hedra",
+  "name": "Hedra (avatars)",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://www.hedra.com",
+  "models": [
+   "Character-3 (540p, 720p)",
+   "Hedra Avatar",
+   "Hedra Omnia"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": "Pas de règle dédiée. La politique interdit d'importer ou de générer photos, voix ou vidéos d'une autre personne que soi (sauf personnes mortes depuis plus de 100 ans) et d'usurper une entité réelle sans consentement. Application concrète non documentée.",
+   "violence": "La politique d'usage (version du 31/07/2024) ne traite ni la violence, ni les armes, ni le terrorisme.",
+   "notes": "Désinformation électorale interdite. Politique de données biométriques séparée."
   },
   "refusal_billed": "inconnu",
   "payment": [],
   "lora_hosting": null,
-  "terms": null,
-  "reliability": null,
+  "terms": "Hedra Inc. (San Francisco). Hedra ne revendique pas les entrées et sorties. Licence perpétuelle, irrévocable et sous-licenciable à Hedra pour exploiter le service. Usage commercial indiqué sur tous les plans payants. Indemnisation par l'utilisateur. Arbitrage ; à défaut, tribunaux de New York. CGU du 04/09/2026.",
+  "reliability": "Trustpilot 1,8/5 sur 67 avis (consulté le 15/10/2026), 78 % à une étoile.",
+  "user_feedback": {
+   "summary": "Régénérations payées pour les erreurs du modèle, lip-sync et visages instables, renouvellements annuels non remboursés, support lent. Hedra répond qu'il ne rembourse pas sur ses plans les plus élevés.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/hedra.com",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": {
+   "clip": "5 s 720p Character-3",
+   "plan": "Basic",
+   "plan_usd_month": 20,
+   "credits_month": 2000,
+   "credits_per_clip": 30,
+   "usd_per_clip_sub": 0.3,
+   "clips_per_month": 66,
+   "best_api": {
+    "platform": null,
+    "usd_per_clip": null,
+    "source": null
+   },
+   "calc": "20 $ / 2 000 crédits x 30 crédits (6 crédits/s en 720p, relevé tiers) = 0,30 $ par clip, 66 clips. Ultra : 100 $ / 18 000 crédits x 30 = 0,17 $ par clip.",
+   "verdict": "Aucun prix API public trouvé pour Character-3 : comparaison impossible. Dans l'abonnement, Ultra coûte presque deux fois moins cher par clip que Basic.",
+   "sources": [
+    {
+     "url": "https://www.hedra.com/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": "https://usagepricing.com/blueprint/hedra",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "promotions": [],
   "verdict": "tester",
-  "verdict_reason": "Permissif, risque juridique pour l'utilisateur.",
-  "sources": []
+  "verdict_reason": "Avatars parlants corrects, mais avis très négatifs sur la facturation et pas de prix API publics.",
+  "sources": [
+   {
+    "url": "https://www.hedra.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.hedra.com/terms",
+    "date": "2026-09-04",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.hedra.com/acceptable-use",
+    "date": "2024-07-31",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.hedra.com/models/video/hedra/avatar",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://mkt.hedra.com/video-models/hedra-character-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/hedra.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "synthesia",
+  "name": "Synthesia (avatars)",
+  "type": "editeur",
+  "country": "GB",
+  "url": "https://www.synthesia.io",
+  "models": [
+   "Stock Avatars",
+   "Personal Avatars",
+   "Photo Avatars",
+   "Studio Avatars",
+   "Synthetic Avatars"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "verif_identite",
+   "public_figures": "Satire, parodie ou hommage seulement avec un avatar personnel, studio ou synthétique, sans laisser croire à une parole authentique ou à un soutien. Avatars stock interdits pour l'actualité, les campagnes politiques ou les sujets clivants sans accord écrit.",
+   "violence": "Interdit : usage pouvant causer la mort ou des blessures graves, soutien matériel à une organisation terroriste désignée, publicité pour les armes à feu.",
+   "notes": "Photo avatar : vidéo de consentement en direct, avec code lu à voix haute et correspondance de visage ; vidéo rejouée ou montée refusée. Modération avant génération. Après plusieurs refus, avertissement final puis bannissement ; appel réservé aux plans payants."
+  },
+  "refusal_billed": "inconnu. La modération a lieu avant génération et la vidéo refusée n'est pas créée ; rien d'écrit sur les minutes.",
+  "payment": [],
+  "lora_hosting": "Oui : avatars personnels (3 sur Starter, 5 sur Pro, illimités en Enterprise).",
+  "terms": "Synthesia Limited (Londres). Le client garde la propriété des vidéos, sous réserve du paiement et du respect du contrat. Licence à Synthesia pour fournir et améliorer le service ; pas de pré-entraînement sur les données clients selon sa page de gouvernance. Synthesia indemnise contre les plaintes de droit d'auteur visant ses composants IA. Droit anglais selon des relevés tiers.",
+  "reliability": "Trustpilot 3,8/5 sur 1 828 avis (consulté le 15/10/2026).",
+  "user_feedback": {
+   "summary": "Vidéos rejetées par la modération sans recours effectif (dont un projet médical validé), prix élevés, crédits non reportés, support lent.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/synthesia.io",
+     "date": "2026-10-15",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.capterra.com/p/198045/Enact/reviews/?page=2",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "Crédits promotionnels Syren : 2 000 crédits par utilisateur, valables un mois, offre limitée.",
+    "ends": null,
+    "source": "https://www.synthesia.io/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "fiable",
+  "verdict_reason": "Consentement vidéo vérifié et modération stricte avant génération, peu adapté aux sujets politiques ou d'actualité.",
+  "sources": [
+   {
+    "url": "https://www.synthesia.io/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.synthesia.io/legal/acceptable-use-policy",
+    "date": "2024-02-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/13846500-photo-avatars-content-moderation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/15394563-impersonation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://help.synthesia.io/en/articles/11137864-final-warnings-guidance-for-policy-violations",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.synthesia.io/ai-governance",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://synthesia.io/terms/master-service-agreement",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://conductatlas.com/platform/synthesia/synthesia-terms-of-service/",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/synthesia.io",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "siliconflow",
+  "name": "SiliconFlow",
+  "type": "inference",
+  "country": "SG/CN",
+  "url": "https://www.siliconflow.com",
+  "models": [
+   "Wan 2.2 T2V A14B",
+   "Wan 2.2 I2V A14B",
+   "Wan 2.1 T2V/I2V 14B",
+   "FLUX.2 pro / flex",
+   "FLUX.1 Kontext pro / max",
+   "FLUX.1 dev",
+   "Z-Image-Turbo"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": "Pas de règle nommée. Interdit : atteintes au droit à l'image et à la vie privée, et usage des contenus pour identifier des personnes physiques.",
+   "violence": "Interdit : menaces ou attaques directes contre des personnes ou des groupes, promotion de l'automutilation ou de la violence excessive.",
+   "notes": "Interdit aussi : nudité ou contenu sexuellement suggestif, informations jugées sensibles par les autorités. SiliconFlow juge seule de ce qui est « objectionable ». Service non ouvert à la Chine continentale (siliconflow.cn séparé)."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": "SILICONFLOW LABS PTE. LTD., droit de Singapour, arbitrage SIAC. Le client garde ses droits sur ses données et en est entièrement responsable ; il ne doit pas présenter une sortie comme faite par un humain. Données utilisées seulement pour fournir le service. Paiements non remboursables, contestation sous 7 jours. Le client indemnise SiliconFlow.",
+  "reliability": "Pas de page Trustpilot. Erreurs 503/504 attribuées par la documentation à la charge du système.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "1 $ de crédit offert aux nouveaux utilisateurs",
+    "ends": null,
+    "source": "https://www.siliconflow.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "tester",
+  "verdict_reason": "Wan 2.2 A14B à 0,29 $ la vidéo et FLUX bon marché, mais catalogue vidéo réduit à Wan et aucun retour d'utilisateurs vérifiable.",
+  "sources": [
+   {
+    "url": "https://www.siliconflow.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.siliconflow.com/blog/wan-2-2-series-now-available-on-siliconflow-generate-stable-realistic-and-cinematic-videos",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.siliconflow.com/en/userguide/capabilities/video.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.siliconflow.com/en/legals/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://api-docs.siliconflow.cn/docs/userguide/faqs/error-code",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "novita",
+  "name": "Novita AI",
+  "type": "inference",
+  "country": "US",
+  "url": "https://novita.ai",
+  "models": [
+   "Location de GPU (RTX 5090, RTX 4090, H100)",
+   "Ming Image 0.1 Design",
+   "MiniMax Speech 2.8",
+   "Fish Audio TTS"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": "Pas de règle propre. Interdit : deepfakes et images intimes synthétiques non consenties, contenu qui représente faussement une personne réelle sans son consentement de façon à tromper.",
+   "violence": "Pas de règle explicite sur la violence ou le terrorisme ; interdits : armes de destruction massive, activité criminelle.",
+   "notes": "La politique d'usage interdit le contenu sexuellement explicite et dit que Novita n'est pas tenue de filtrer les contenus. Sur GPU loué, aucun filtre."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": "seulement sur GPU loué ; aucune API image ou vidéo avec LoRA au catalogue au 15/10/2026",
+  "terms": "Droit du Delaware, tribunaux de Wilmington. Le client garde ses droits sur ses entrées ; la propriété des sorties n'est pas attribuée explicitement. Licence mondiale non exclusive à Novita sur entrées et sorties pour fournir le service. Frais non remboursables sauf panne vérifiée ou erreur de facturation (demande sous 30 jours). Le client indemnise Novita.",
+  "reliability": "Trustpilot 2,5/5 sur 9 avis (consulté le 15/10/2026). Catalogue image et vidéo retiré par vagues (22/07, 19/08 et 30/09/2026 : Kling 2.x, Wan 2.1 à 2.7, Seedance 1.5, Hailuo 2.3, Qwen-Image). Toutes les GPU listées marquées « épuisées » le 14/10/2026.",
+  "user_feedback": {
+   "summary": "Les avis signalent des crédits consommés trop vite, un double débit, une résiliation difficile à trouver et un support muet. Un utilisateur dit qu'un solde de 100 $ est exigé pour lancer plus de trois instances GPU sans que ce soit écrit.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/novita.ai",
+     "date": "2026-07-25",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "eviter",
+  "verdict_reason": "Le catalogue vidéo (Wan, Seedance, Kling 2.x, Hailuo) a été retiré en 2026 et les GPU sont épuisées ; il ne reste rien d'utile pour la vidéo.",
+  "sources": [
+   {
+    "url": "https://novita.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/models?category=video",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/docs/changelog/01-09-26.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/docs/changelog/07-07-26.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/legal/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/legal/acceptable-use-policy",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://novita.ai/docs/guides/payment-methods.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://computeprices.com/providers/novita",
+    "date": "2026-10-14",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/novita.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "together",
+  "name": "Together AI",
+  "type": "inference",
+  "country": "US",
+  "url": "https://www.together.ai",
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0",
+   "Veo 3.1",
+   "Kling 2.1",
+   "Wan 2.7",
+   "Vidu Q3",
+   "FLUX.2",
+   "GPT Image 2"
+  ],
+  "seedance": {
+   "version": "2.5 (et 2.0, 1.0 Pro, 1.0 Lite)",
+   "usd_480p_s": 0.115,
+   "usd_720p_s": 0.249,
+   "usd_1080p_s": null,
+   "note": "Seedance 2.5 plafonné à 720p, audio toujours actif ; 720p « à partir de » 0,249 $/s. Le catalogue affiche Seedance 2.0 à partir de 0,16 $ (réglages minimaux, unité non précisée)."
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": "Les CGU interdisent le contenu illégal ou qui encourage un comportement criminel ; pas de clause explicite sur la violence, les armes ou les deepfakes dans les CGU.",
+   "notes": "Images : un détecteur NSFW renvoie une erreur 422 par défaut, désactivable par requête (paramètre disable_safety_checker). CGU : contenus obscènes, pornographiques ou nuisibles aux mineurs interdits. La politique d'usage acceptable séparée n'a pas été trouvée en ligne."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "virement"
+  ],
+  "lora_hosting": "oui pour les LLM (entraînement LoRA, adaptateurs sur endpoint dédié depuis Hugging Face ou S3) ; pour l'image, FLUX.1-dev-lora est déprécié et l'entraînement de LoRA FLUX n'est pas proposé",
+  "terms": "Together Computer, Inc. (Delaware), droit californien. Le client possède exclusivement son contenu et ses sorties ; licence limitée à Together pour fournir le service. Frais non remboursables. Together indemnise le client contre les réclamations de propriété intellectuelle sur les services, plafonné à 1 million de dollars.",
+  "reliability": "Trustpilot 2,7/5 sur 8 avis (consulté le 15/10/2026), surtout des plaintes de facturation.",
+  "user_feedback": {
+   "summary": "Les avis Trustpilot citent des débits inattendus (160 $/mois), l'absence de résiliation en libre service, une carte impossible à retirer et un support qui ne répond pas. Peu d'avis au total.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/together.ai",
+     "date": "2026-07-03",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "tester",
+  "verdict_reason": "Catalogue vidéo large (Seedance 2.5, Veo 3.1, Kling, Wan 2.7) au prix proche des API officielles, mais facturation critiquée et politique de contenu vidéo peu lisible.",
+  "sources": [
+   {
+    "url": "https://www.together.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.together.ai/docs/serverless/models.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.together.ai/docs/seedance2.5-quickstart.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.together.ai/docs/inference/images/parameters.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.together.ai/docs/quickstart-flux-lora.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.together.ai/llms.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.together.ai/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/together.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "deepinfra",
+  "name": "DeepInfra",
+  "type": "inference",
+  "country": "US",
+  "url": "https://deepinfra.com",
+  "models": [
+   "Seedance 2.0",
+   "Wan 2.7 I2V",
+   "Wan 2.6 I2V",
+   "Wan 2.2 T2V A14B",
+   "LTX-2 Distilled",
+   "PixVerse 6",
+   "FLUX.2 max",
+   "Nano Banana 2"
+  ],
+  "seedance": {
+   "version": "2.0",
+   "usd_480p_s": 0.074,
+   "usd_720p_s": 0.166,
+   "usd_1080p_s": 0.408,
+   "note": "Facturé 7,7 $ le million de jetons sans vidéo d'entrée en 480p et 720p, 8,4 $ en 1080p (4,7 et 5,1 $ avec vidéo d'entrée). Prix par seconde calculés avec la formule ByteDance (largeur × hauteur × 24 ÷ 1024 par seconde, 720p = 1280×720)."
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": "Pas de règle nommée ; interdit : usurper l'identité d'une personne ou d'une entité.",
+   "violence": "Pas de clause sur la violence ; usages à haut risque interdits (systèmes d'armes, dispositifs médicaux).",
+   "notes": "Les CGU ne mentionnent ni deepfakes, ni contenu sexuel, ni CSAM ; aucune politique d'usage séparée trouvée. Zéro conservation des données par défaut."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte",
+   "virement",
+   "facture"
+  ],
+  "lora_hosting": "oui, LoRA image depuis Civitai et LoRA de LLM, déployés sur l'infrastructure DeepInfra",
+  "terms": "Deep Infra Inc. (Delaware), droit californien, arbitrage JAMS à San Francisco. Le client garde la propriété intellectuelle de ses données ; la propriété des sorties n'est pas traitée. Pas d'entraînement sur les données client, pas de conservation. Le client indemnise DeepInfra.",
+  "reliability": "Aucun avis Trustpilot (consulté le 15/10/2026). Page status.deepinfra.com « tous systèmes opérationnels » lors des relevés de StatusGator.",
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "tester",
+  "verdict_reason": "Seedance 2.0 à environ 0,17 $/s en 720p et Wan bon marché, avec LoRA image, mais aucun retour d'utilisateurs public pour juger la fiabilité.",
+  "sources": [
+   {
+    "url": "https://deepinfra.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://api.deepinfra.com/models/list",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://deepinfra.com/ByteDance/Seedance-2.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.deepinfra.com/llms.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.deepinfra.com/private-models/lora-image.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://deepinfra.com/terms",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/deepinfra.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://statusgator.com/services/deepinfra",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "runpod",
+  "name": "Runpod",
+  "type": "gpu-cloud",
+  "country": "US",
+  "url": "https://www.runpod.io",
+  "models": [
+   "RTX 5090 : 0,69 $/h (Community) à 0,99 $/h (Secure)",
+   "RTX 4090 : 0,34 à 0,74 $/h",
+   "H100 PCIe : 1,99 à 2,89 $/h ; H100 SXM : 2,69 à 3,49 $/h",
+   "Endpoints publics : Wan 2.2 / 2.6, Seedance 1.0 Pro / 1.5 Pro, Kling 2.1 / O1, FLUX.1"
+  ],
+  "seedance": {
+   "version": "1.0 Pro et 1.5 Pro (endpoints publics)",
+   "usd_480p_s": 0.024,
+   "usd_720p_s": null,
+   "usd_1080p_s": null,
+   "note": "Seedance 1.0 Pro : 0,12 $ la requête 480p de 5 s (0,024 $/s) ; Seedance 1.5 Pro I2V : 0,024 $/s, résolution non précisée."
+  },
+  "moderation": {
+   "real_faces": "autorise",
+   "public_figures": "Consentement écrit exigé de toute personne identifiable dont l'image apparaît dans le contenu ; atteintes à la vie privée et au droit à l'image interdites.",
+   "violence": "Interdit : contenu violent ou qui promeut la violence contre une personne ou un groupe.",
+   "notes": "Machine louée : pas de filtre technique, règles contractuelles seulement. Interdit : pornographie et contenu adulte graphique (bannissement à vie possible), tout préjudice aux mineurs (signalement CyberTipline)."
+  },
+  "refusal_billed": "sans objet pour la location (facturation au temps) ; inconnu pour les endpoints publics",
+  "payment": [
+   "carte",
+   "crypto",
+   "virement",
+   "facture"
+  ],
+  "lora_hosting": "oui, tout code sur pod ou serverless (entraînement et inférence de LoRA libres) ; endpoint public Wan 2.2 I2V 720p avec LoRA à 0,35 $ les 5 s",
+  "terms": "Runpod, Inc. (San Francisco), droit du Delaware, arbitrage NAM. Runpod ne revendique aucune propriété sur le contenu du client ; licence pour faire tourner le service et usage agrégé anonymisé. Frais non remboursables. Le client indemnise Runpod.",
+  "reliability": "Trustpilot 3,5/5 sur 384 avis (consulté le 15/10/2026), 22 % d'avis à 1 étoile. Plainte dominante en septembre et octobre 2026 : pas de GPU disponibles.",
+  "user_feedback": {
+   "summary": "Les avis récents décrivent des GPU indisponibles pendant des heures ou des jours, des conteneurs à déplacer, des pods qui plantent et des frais d'installation perdus. Le support répond à 74 % des avis négatifs.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/runpod.io",
+     "date": "2026-10-13",
+     "type": "independant"
+    },
+    {
+     "url": "https://www.cgl.ucsf.edu/trac/ChimeraX/ticket/19708",
+     "date": "2026-10-15",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "fiable",
+  "verdict_reason": "Location de RTX 5090 et H100 bon marché avec crypto acceptée et liberté totale de modèles, à condition de supporter les ruptures de capacité.",
+  "sources": [
+   {
+    "url": "https://www.runpod.io/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.runpod.io/legal/terms-of-service",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.runpod.io/accounts-billing/billing.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/runpod.io",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "vastai",
+  "name": "Vast.ai",
+  "type": "gpu-cloud",
+  "country": "US",
+  "url": "https://vast.ai",
+  "models": [
+   "RTX 5090 : dès 0,40 $/h, médiane 0,77 $/h",
+   "RTX 4090 : dès 0,14 $/h, médiane 0,54 $/h",
+   "H100 SXM : dès 1,92 $/h, médiane 2,94 $/h",
+   "H200 : dès 2,90 $/h"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "autorise",
+   "public_figures": null,
+   "violence": "Interdit : contenu illégal, obscène, haineux ou discriminatoire ; rien de spécifique sur la violence ou les deepfakes.",
+   "notes": "Place de marché de machines d'hébergeurs indépendants : pas de filtre technique. Minage de cryptomonnaie interdit à qui paie par carte. Les données passent par la machine d'un tiers."
+  },
+  "refusal_billed": "sans objet (facturation à la seconde de location)",
+  "payment": [
+   "carte",
+   "crypto"
+  ],
+  "lora_hosting": "oui, tout code sur instance louée (entraînement et inférence de LoRA libres)",
+  "terms": "Vast.ai Inc. (Los Angeles), droit californien, arbitrage JAMS, renonciation aux actions collectives, réclamations sous un an. Crédits dépensés non remboursables ; crédits non dépensés remboursables seulement s'ils ont été payés par carte. La propriété des sorties n'est pas traitée. Le client indemnise Vast et les hébergeurs.",
+  "reliability": "Trustpilot 3,9/5 sur 259 avis (consulté le 15/10/2026), 15 % d'avis à 1 étoile. Plaintes de septembre 2026 : débit réseau très inférieur à l'annonce, instances qui ne démarrent pas.",
+  "user_feedback": {
+   "summary": "Qualité très variable selon l'hébergeur : machines « vérifiées » au débit annoncé non tenu, instances inaccessibles à détruire et relancer, refus de compensation. Le support est jugé réactif mais renvoie vers un autre hébergeur.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/vast.ai",
+     "date": "2026-09-30",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "tester",
+  "verdict_reason": "Prix les plus bas du marché (RTX 4090 dès 0,14 $/h) et crypto acceptée, mais fiabilité qui dépend de chaque hébergeur.",
+  "sources": [
+   {
+    "url": "https://console.vast.ai/api/v0/bundles/",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://vast.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://vast.ai/terms",
+    "date": "2025-11-10",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.vast.ai/guides/reference/billing.md",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/vast.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "modal",
+  "name": "Modal",
+  "type": "gpu-cloud",
+  "country": "US",
+  "url": "https://modal.com",
+  "models": [
+   "H100 SXM : 3,95 $/h (0,001097 $/s)",
+   "H200 : 4,54 $/h",
+   "B200 : 6,25 $/h",
+   "RTX PRO 6000 : 3,03 $/h",
+   "A100 80 Go : 2,50 $/h",
+   "L40S : 1,95 $/h (pas de RTX 5090 ni 4090)"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "autorise",
+   "public_figures": "Pas de règle nommée ; interdit : atteinte à la vie privée ou appropriation du droit à l'image (publicity rights).",
+   "violence": "Pas de clause explicite ; contenu illégal interdit.",
+   "notes": "Calcul serverless en Python : pas de filtre technique. Interdits : contenu indécent ou obscène, faux ou trompeur, minage de cryptomonnaie, hébergement ou diffusion de médias en général."
+  },
+  "refusal_billed": "sans objet (facturation à la seconde de calcul)",
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": "oui, tout code Python sur GPU (entraînement et inférence de LoRA libres)",
+  "terms": "Modal Labs, Inc. (Delaware), droit fédéral et californien. Les sorties d'IA sont des données client et appartiennent au client. Frais non remboursables. Indemnisation croisée : le client pour ses données, Modal pour la contrefaçon du service. Usage interne seulement, revente interdite.",
+  "reliability": "Trustpilot 2,8/5 sur 8 avis (consulté le 15/10/2026). Incident du 07/05/2026 : latence de planification des H200 par manque de capacité.",
+  "user_feedback": {
+   "summary": "Peu d'avis : plaintes sur des alertes de plafond de dépense erronées, des cartes internationales refusées, un compte impossible à supprimer et un support par bot. Les crédits gratuits mensuels sont appréciés.",
+   "sources": [
+    {
+     "url": "https://www.trustpilot.com/review/modal.com",
+     "date": "2026-06-26",
+     "type": "independant"
+    },
+    {
+     "url": "https://pingoru.io/providers/modal/incidents/1460803",
+     "date": "2026-05-07",
+     "type": "independant"
+    }
+   ]
+  },
+  "api_vs_subscription": null,
+  "promotions": [
+   {
+    "text": "30 $ de crédit gratuit par mois sur le plan Starter (100 $ sur Team)",
+    "ends": null,
+    "source": "https://modal.com/pricing",
+    "date": "2026-10-15"
+   },
+   {
+    "text": "Jusqu'à 10 000 $ de crédits pour chercheurs et étudiants, crédits startups sur dossier",
+    "ends": null,
+    "source": "https://modal.com/pricing",
+    "date": "2026-10-15"
+   }
+  ],
+  "verdict": "fiable",
+  "verdict_reason": "GPU haut de gamme à la seconde avec 30 $ offerts chaque mois, adapté aux scripts de génération et d'entraînement de LoRA, mais pas de GPU grand public.",
+  "sources": [
+   {
+    "url": "https://modal.com/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://modal.com/legal/terms",
+    "date": "2026-05-05",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.trustpilot.com/review/modal.com",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
  }
 ]

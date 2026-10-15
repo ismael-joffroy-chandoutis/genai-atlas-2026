@@ -18,7 +18,7 @@ Un comparatif des modèles de génération vidéo et image au 15 octobre 2026, v
   - `gpu-hour.json` : prix de location de GPU à l'heure.
   - `3d-models.json` : 76 variantes 3D (image vers 3D, reconstruction de scène, mondes, rigging, profondeur et caméra), avec les scores de 3D Arena.
   - `rankings.json` : tous les scores des classements publics par catégorie (Artificial Analysis et arena.ai : texte, image et référence vers vidéo, avec et sans son, édition vidéo, texte vers image, édition d'image, édition multi-images).
-  - `platforms.json` : les plateformes elles-mêmes : verdict, modération des visages réels, refus facturé ou non, paiement, prix de Seedance.
+  - `platforms.json` : 50 plateformes : verdict, modération des visages réels, refus facturé ou non, paiement, prix de Seedance, retours d'usagers, coût abonnement contre API, promotions en cours.
   - `integrations.json` : dans quels outils locaux chaque modèle est intégré (templates officiels ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene).
   - `SCHEMA.md` : le format de chaque fichier.
 - `scripts/` : lecteurs de prix (fal, OpenRouter, clouds GPU), fusion des prix, export des tableaux et construction d'une page interactive en un seul fichier (`python3 scripts/build_atlas.py`, sortie dans `site/`).
