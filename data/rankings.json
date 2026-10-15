@@ -1,0 +1,4639 @@
+{
+ "generated": "2026-10-15",
+ "note": "Scores publics relevés le 15/10/2026 depuis les données embarquées des pages (Artificial Analysis : flux Next.js ; arena.ai : tableau rendu côté serveur). source_name = nom exact dans le classement. Un id peut avoir des scores issus d'une entrée par catégorie au plus ; les doublons de variantes (résolution, date) sont listés dans unmatched avec une note.",
+ "sources": {
+  "aa_t2v_audio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+   "date": "2026-10-15",
+   "n_models": 28,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Kling 3.0 1080p (Pro). ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Variante avec audio."
+  },
+  "aa_t2v_noaudio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
+   "date": "2026-10-15",
+   "n_models": 31,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Kling 3.0 1080p (Pro). ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Variante sans audio."
+  },
+  "aa_i2v_audio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+   "date": "2026-10-15",
+   "n_models": 23,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Kling 3.0 1080p (Pro). ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Variante avec audio."
+  },
+  "aa_i2v_noaudio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/image-to-video",
+   "date": "2026-10-15",
+   "n_models": 82,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Wan 2.1 14B. ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Tableau historique (82 modèles, échelle plus haute) sans rang publié : rank = position par Elo décroissant dans la liste publiée, modèles non courants inclus. Variante sans audio."
+  },
+  "aa_video_edit_audio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/video-editing",
+   "date": "2026-10-15",
+   "n_models": 9,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Kling 3.0 Omni 1080p (Pro). ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Variante avec audio."
+  },
+  "aa_video_edit_noaudio": {
+   "url": "https://artificialanalysis.ai/video/leaderboard/video-editing",
+   "date": "2026-10-15",
+   "n_models": 10,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : Kling 3.0 Omni 1080p (Pro). ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories. Variante sans audio."
+  },
+  "aa_t2i": {
+   "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+   "date": "2026-10-15",
+   "n_models": 102,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : FLUX.2 [dev]. ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories."
+  },
+  "aa_image_edit": {
+   "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+   "date": "2026-10-15",
+   "n_models": 69,
+   "scale_note": "Artificial Analysis Arena, Elo par votes humains par paires, classement général (overall). Ancre à 1000 : FLUX.2 [dev]. ci = demi-largeur de l'intervalle de confiance à 95 % (ciDelta). Échelle propre à cette catégorie, non comparable entre catégories."
+  },
+  "arena_t2i": {
+   "url": "https://arena.ai/leaderboard/image/text-to-image",
+   "date": "2026-10-15",
+   "n_models": 82,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "arena_image_edit": {
+   "url": "https://arena.ai/leaderboard/image/image-edit/single-image",
+   "date": "2026-10-15",
+   "n_models": 59,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "arena_multi_image_edit": {
+   "url": "https://arena.ai/leaderboard/image/image-edit/multi-image",
+   "date": "2026-10-15",
+   "n_models": 44,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "arena_t2v": {
+   "url": "https://arena.ai/leaderboard/video/text-to-video",
+   "date": "2026-10-15",
+   "n_models": 48,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "arena_i2v": {
+   "url": "https://arena.ai/leaderboard/video/image-to-video",
+   "date": "2026-10-15",
+   "n_models": 48,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "arena_video_edit": {
+   "url": "https://arena.ai/leaderboard/video/video-edit",
+   "date": "2026-10-15",
+   "n_models": 10,
+   "scale_note": "arena.ai (ex-LMArena), score Bradley-Terry de type Elo par votes humains par paires, vue par défaut. ci = ± publié (intervalle de confiance à 95 %). preliminary=true : score marqué « Preliminary » (peu de votes). Échelle propre à cette catégorie, non comparable avec Artificial Analysis."
+  },
+  "other_independent": {
+   "url": null,
+   "date": "2026-10-15",
+   "scale_note": "VBench et autres bancs indépendants non relevés : pas de classement 2026 vérifiable couvrant les modèles de l'atlas consulté dans cette passe. Aucune donnée ajoutée."
+  }
+ },
+ "scores": {
+  "agnes-video-2-5": {
+   "aa_t2v_audio": {
+    "elo": 1069,
+    "rank": 9,
+    "ci": 17,
+    "source_name": "Agnes-Video-2.5",
+    "votes": 3551
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1053,
+    "rank": 8,
+    "ci": 19,
+    "source_name": "Agnes-Video-2.5",
+    "votes": 2860
+   }
+  },
+  "alibaba-qwen-image-2-0-pro": {
+   "aa_t2i": {
+    "elo": 1027,
+    "rank": 26,
+    "ci": 12,
+    "source_name": "Qwen Image 2.0 Pro (2026-04-22)",
+    "votes": 5709
+   },
+   "aa_image_edit": {
+    "elo": 1057,
+    "rank": 26,
+    "ci": 19,
+    "source_name": "Qwen Image 2.0 Pro (2026-04-22)",
+    "votes": 2175
+   }
+  },
+  "alibaba-qwen-image-2-1": {
+   "aa_t2i": {
+    "elo": 1041,
+    "rank": 20,
+    "ci": 12,
+    "source_name": "Qwen-Image-2.1",
+    "votes": 5256
+   },
+   "aa_image_edit": {
+    "elo": 1080,
+    "rank": 19,
+    "ci": 14,
+    "source_name": "Qwen-Image-2.1",
+    "votes": 5671
+   },
+   "arena_t2i": {
+    "elo": 1223,
+    "rank": 19,
+    "ci": 7,
+    "source_name": "qwen-image-2.1",
+    "preliminary": true
+   },
+   "arena_image_edit": {
+    "elo": 1369,
+    "rank": 18,
+    "ci": 6,
+    "source_name": "qwen-image-2.1",
+    "preliminary": true
+   }
+  },
+  "alibaba-qwen-image-2512": {
+   "arena_t2i": {
+    "elo": 1125,
+    "rank": 44,
+    "ci": 3,
+    "source_name": "qwen-image-2512"
+   }
+  },
+  "alibaba-qwen-image-3-0": {
+   "aa_t2i": {
+    "elo": 1069,
+    "rank": 18,
+    "ci": 13,
+    "source_name": "Qwen-Image-3.0",
+    "votes": 5619
+   },
+   "aa_image_edit": {
+    "elo": 1064,
+    "rank": 23,
+    "ci": 13,
+    "source_name": "Qwen-Image-3.0",
+    "votes": 7341
+   }
+  },
+  "alibaba-qwen-image-3-0-pro": {
+   "aa_t2i": {
+    "elo": 1094,
+    "rank": 17,
+    "ci": 12,
+    "source_name": "Qwen-Image-3.0-Pro",
+    "votes": 5898
+   },
+   "aa_image_edit": {
+    "elo": 1087,
+    "rank": 18,
+    "ci": 13,
+    "source_name": "Qwen-Image-3.0-Pro",
+    "votes": 12708
+   },
+   "arena_t2i": {
+    "elo": 1255,
+    "rank": 13,
+    "ci": 6,
+    "source_name": "qwen-image-3.0-pro"
+   }
+  },
+  "alibaba-qwen-image-edit-2511": {
+   "aa_image_edit": {
+    "elo": 991,
+    "rank": 44,
+    "ci": 20,
+    "source_name": "Qwen Image Edit Plus 2511",
+    "votes": 2006
+   },
+   "arena_image_edit": {
+    "elo": 1234,
+    "rank": 39,
+    "ci": 3,
+    "source_name": "qwen-image-edit-2511"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1175,
+    "rank": 33,
+    "ci": 3,
+    "source_name": "qwen-image-edit-2511"
+   }
+  },
+  "alibaba-qwen-image-edit-max-2601": {
+   "aa_image_edit": {
+    "elo": 985,
+    "rank": 45,
+    "ci": 20,
+    "source_name": "Qwen Image Edit Max 2601",
+    "votes": 2060
+   }
+  },
+  "alibaba-z-image-base": {
+   "aa_t2i": {
+    "elo": 890,
+    "rank": 82,
+    "ci": 19,
+    "source_name": "Z-Image Base",
+    "votes": 2056
+   }
+  },
+  "alibaba-z-image-turbo": {
+   "aa_t2i": {
+    "elo": 936,
+    "rank": 68,
+    "ci": 11,
+    "source_name": "Z-Image Turbo",
+    "votes": 7781
+   },
+   "arena_t2i": {
+    "elo": 1083,
+    "rank": 59,
+    "ci": 5,
+    "source_name": "z-image-turbo"
+   }
+  },
+  "bach-1-0-pro": {
+   "aa_i2v_noaudio": {
+    "elo": 1362,
+    "rank": 2,
+    "ci": 11,
+    "source_name": "Bach 1.0 Pro",
+    "votes": 5519
+   }
+  },
+  "bfl-flux-1-kontext-dev": {
+   "aa_image_edit": {
+    "elo": 893,
+    "rank": 62,
+    "ci": 24,
+    "source_name": "FLUX.1 Kontext [dev]",
+    "votes": 1684
+   },
+   "arena_t2i": {
+    "elo": 941,
+    "rank": 80,
+    "ci": 4,
+    "source_name": "flux-1-kontext-dev"
+   },
+   "arena_image_edit": {
+    "elo": 1149,
+    "rank": 53,
+    "ci": 3,
+    "source_name": "flux-1-kontext-dev"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1035,
+    "rank": 44,
+    "ci": 9,
+    "source_name": "flux-1-kontext-dev"
+   }
+  },
+  "bfl-flux-1-kontext-max": {
+   "aa_t2i": {
+    "elo": 929,
+    "rank": 71,
+    "ci": 12,
+    "source_name": "FLUX.1 Kontext [max]",
+    "votes": 4910
+   },
+   "aa_image_edit": {
+    "elo": 918,
+    "rank": 57,
+    "ci": 22,
+    "source_name": "FLUX.1 Kontext [max]",
+    "votes": 1880
+   },
+   "arena_t2i": {
+    "elo": 1074,
+    "rank": 61,
+    "ci": 3,
+    "source_name": "flux-1-kontext-max"
+   },
+   "arena_image_edit": {
+    "elo": 1181,
+    "rank": 51,
+    "ci": 3,
+    "source_name": "flux-1-kontext-max"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1060,
+    "rank": 41,
+    "ci": 9,
+    "source_name": "flux-1-kontext-max"
+   }
+  },
+  "bfl-flux-1-kontext-pro": {
+   "aa_t2i": {
+    "elo": 920,
+    "rank": 73,
+    "ci": 19,
+    "source_name": "FLUX.1 Kontext [pro]",
+    "votes": 1807
+   },
+   "aa_image_edit": {
+    "elo": 911,
+    "rank": 59,
+    "ci": 23,
+    "source_name": "FLUX.1 Kontext [pro]",
+    "votes": 1804
+   },
+   "arena_t2i": {
+    "elo": 1059,
+    "rank": 64,
+    "ci": 3,
+    "source_name": "flux-1-kontext-pro"
+   },
+   "arena_image_edit": {
+    "elo": 1176,
+    "rank": 52,
+    "ci": 3,
+    "source_name": "flux-1-kontext-pro"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1063,
+    "rank": 40,
+    "ci": 12,
+    "source_name": "flux-1-kontext-pro"
+   }
+  },
+  "bfl-flux-1-krea-dev": {
+   "aa_t2i": {
+    "elo": 829,
+    "rank": 94,
+    "ci": 20,
+    "source_name": "FLUX.1 Krea [dev]",
+    "votes": 2016
+   }
+  },
+  "bfl-flux-2-dev": {
+   "aa_t2i": {
+    "elo": 1000,
+    "rank": 42,
+    "ci": 0,
+    "source_name": "FLUX.2 [dev]",
+    "votes": 17823
+   },
+   "aa_image_edit": {
+    "elo": 1000,
+    "rank": 41,
+    "ci": 0,
+    "source_name": "FLUX.2 [dev]",
+    "votes": 8142
+   },
+   "arena_t2i": {
+    "elo": 1146,
+    "rank": 38,
+    "ci": 4,
+    "source_name": "flux-2-dev"
+   },
+   "arena_image_edit": {
+    "elo": 1225,
+    "rank": 43,
+    "ci": 4,
+    "source_name": "flux-2-dev"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1202,
+    "rank": 31,
+    "ci": 5,
+    "source_name": "flux-2-dev"
+   }
+  },
+  "bfl-flux-2-flex": {
+   "aa_t2i": {
+    "elo": 1027,
+    "rank": 25,
+    "ci": 12,
+    "source_name": "FLUX.2 [flex]",
+    "votes": 5599
+   },
+   "aa_image_edit": {
+    "elo": 1009,
+    "rank": 39,
+    "ci": 20,
+    "source_name": "FLUX.2 [flex]",
+    "votes": 2012
+   },
+   "arena_t2i": {
+    "elo": 1157,
+    "rank": 30,
+    "ci": 3,
+    "source_name": "flux-2-flex"
+   },
+   "arena_image_edit": {
+    "elo": 1225,
+    "rank": 41,
+    "ci": 3,
+    "source_name": "flux-2-flex"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1234,
+    "rank": 26,
+    "ci": 4,
+    "source_name": "flux-2-flex"
+   }
+  },
+  "bfl-flux-2-klein-4b": {
+   "aa_t2i": {
+    "elo": 840,
+    "rank": 91,
+    "ci": 13,
+    "source_name": "FLUX.2 [klein] 4B",
+    "votes": 6060
+   },
+   "aa_image_edit": {
+    "elo": 935,
+    "rank": 55,
+    "ci": 18,
+    "source_name": "FLUX.2 [klein] 4B",
+    "votes": 2888
+   },
+   "arena_t2i": {
+    "elo": 1030,
+    "rank": 70,
+    "ci": 3,
+    "source_name": "flux-2-klein-4b"
+   },
+   "arena_image_edit": {
+    "elo": 1187,
+    "rank": 49,
+    "ci": 3,
+    "source_name": "flux-2-klein-4b"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1167,
+    "rank": 34,
+    "ci": 4,
+    "source_name": "flux-2-klein-4b"
+   }
+  },
+  "bfl-flux-2-klein-9b": {
+   "aa_t2i": {
+    "elo": 932,
+    "rank": 70,
+    "ci": 10,
+    "source_name": "FLUX.2 [klein] 9B",
+    "votes": 10344
+   },
+   "aa_image_edit": {
+    "elo": 1011,
+    "rank": 37,
+    "ci": 14,
+    "source_name": "FLUX.2 [klein] 9B",
+    "votes": 6284
+   },
+   "arena_t2i": {
+    "elo": 1070,
+    "rank": 62,
+    "ci": 3,
+    "source_name": "flux-2-klein-9b"
+   },
+   "arena_image_edit": {
+    "elo": 1225,
+    "rank": 42,
+    "ci": 3,
+    "source_name": "flux-2-klein-9b"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1212,
+    "rank": 29,
+    "ci": 4,
+    "source_name": "flux-2-klein-9b"
+   }
+  },
+  "bfl-flux-2-max": {
+   "aa_t2i": {
+    "elo": 1021,
+    "rank": 30,
+    "ci": 10,
+    "source_name": "FLUX.2 [max]",
+    "votes": 10655
+   },
+   "aa_image_edit": {
+    "elo": 995,
+    "rank": 42,
+    "ci": 14,
+    "source_name": "FLUX.2 [max]",
+    "votes": 6101
+   },
+   "arena_t2i": {
+    "elo": 1162,
+    "rank": 29,
+    "ci": 3,
+    "source_name": "flux-2-max"
+   },
+   "arena_image_edit": {
+    "elo": 1262,
+    "rank": 34,
+    "ci": 3,
+    "source_name": "flux-2-max"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1249,
+    "rank": 23,
+    "ci": 4,
+    "source_name": "flux-2-max"
+   }
+  },
+  "bfl-flux-2-pro": {
+   "aa_t2i": {
+    "elo": 1003,
+    "rank": 40,
+    "ci": 10,
+    "source_name": "FLUX.2 [pro]",
+    "votes": 10398
+   },
+   "aa_image_edit": {
+    "elo": 1009,
+    "rank": 38,
+    "ci": 17,
+    "source_name": "FLUX.2 [pro]",
+    "votes": 3309
+   },
+   "arena_t2i": {
+    "elo": 1153,
+    "rank": 32,
+    "ci": 3,
+    "source_name": "flux-2-pro"
+   },
+   "arena_image_edit": {
+    "elo": 1245,
+    "rank": 36,
+    "ci": 3,
+    "source_name": "flux-2-pro"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1241,
+    "rank": 24,
+    "ci": 3,
+    "source_name": "flux-2-pro"
+   }
+  },
+  "bfl-flux-3-image": {
+   "aa_t2i": {
+    "elo": 1114,
+    "rank": 13,
+    "ci": 13,
+    "source_name": "FLUX 3 Image",
+    "votes": 5672
+   }
+  },
+  "bfl-flux-3-video": {
+   "aa_t2v_audio": {
+    "elo": 1145,
+    "rank": 6,
+    "ci": 16,
+    "source_name": "FLUX 3",
+    "votes": 4864
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1095,
+    "rank": 5,
+    "ci": 19,
+    "source_name": "FLUX 3",
+    "votes": 2933
+   },
+   "aa_i2v_audio": {
+    "elo": 1089,
+    "rank": 7,
+    "ci": 17,
+    "source_name": "FLUX 3",
+    "votes": 3964
+   },
+   "arena_t2v": {
+    "elo": 1493,
+    "rank": 3,
+    "ci": 17,
+    "source_name": "flux-3-video",
+    "preliminary": true
+   },
+   "arena_i2v": {
+    "elo": 1449,
+    "rank": 9,
+    "ci": 5,
+    "source_name": "flux-3-video-20260811"
+   }
+  },
+  "bytedance-seedream-4-5": {
+   "aa_t2i": {
+    "elo": 1028,
+    "rank": 23,
+    "ci": 12,
+    "source_name": "Seedream 4.5",
+    "votes": 5945
+   },
+   "aa_image_edit": {
+    "elo": 1041,
+    "rank": 32,
+    "ci": 14,
+    "source_name": "Seedream 4.5",
+    "votes": 4721
+   },
+   "arena_t2i": {
+    "elo": 1149,
+    "rank": 36,
+    "ci": 3,
+    "source_name": "seedream-4.5"
+   },
+   "arena_image_edit": {
+    "elo": 1302,
+    "rank": 28,
+    "ci": 2,
+    "source_name": "seedream-4.5"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1291,
+    "rank": 15,
+    "ci": 3,
+    "source_name": "seedream-4.5"
+   }
+  },
+  "bytedance-seedream-5-0-lite": {
+   "aa_t2i": {
+    "elo": 1015,
+    "rank": 37,
+    "ci": 12,
+    "source_name": "Seedream 5.0 Lite",
+    "votes": 5229
+   },
+   "aa_image_edit": {
+    "elo": 1061,
+    "rank": 25,
+    "ci": 14,
+    "source_name": "Seedream 5.0 Lite",
+    "votes": 5689
+   },
+   "arena_t2i": {
+    "elo": 1138,
+    "rank": 40,
+    "ci": 3,
+    "source_name": "seedream-5.0-lite"
+   },
+   "arena_image_edit": {
+    "elo": 1294,
+    "rank": 30,
+    "ci": 3,
+    "source_name": "seedream-5.0-lite"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1268,
+    "rank": 20,
+    "ci": 3,
+    "source_name": "seedream-5.0-lite"
+   }
+  },
+  "bytedance-seedream-5-0-pro": {
+   "aa_t2i": {
+    "elo": 1096,
+    "rank": 16,
+    "ci": 11,
+    "source_name": "Seedream 5.0 Pro",
+    "votes": 11209
+   },
+   "aa_image_edit": {
+    "elo": 1126,
+    "rank": 8,
+    "ci": 14,
+    "source_name": "Seedream 5.0 Pro",
+    "votes": 12621
+   },
+   "arena_t2i": {
+    "elo": 1255,
+    "rank": 12,
+    "ci": 4,
+    "source_name": "seedream-5.0-pro"
+   },
+   "arena_image_edit": {
+    "elo": 1394,
+    "rank": 10,
+    "ci": 3,
+    "source_name": "seedream-5.0-pro"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1412,
+    "rank": 5,
+    "ci": 4,
+    "source_name": "seedream-5.0-pro"
+   }
+  },
+  "cosmos3-super-image2video": {
+   "aa_i2v_noaudio": {
+    "elo": 1253,
+    "rank": 33,
+    "ci": 11,
+    "source_name": "Cosmos3-Super-Image2Video",
+    "votes": 3055
+   }
+  },
+  "cosmos3-super-image2video-4step": {
+   "aa_i2v_noaudio": {
+    "elo": 1275,
+    "rank": 20,
+    "ci": 11,
+    "source_name": "Cosmos3-Super-Image2Video-4Step",
+    "votes": 2839
+   }
+  },
+  "creatify-boreal": {
+   "aa_t2v_audio": {
+    "elo": 830,
+    "rank": 28,
+    "ci": 20,
+    "source_name": "Boreal",
+    "votes": 2622
+   },
+   "aa_t2v_noaudio": {
+    "elo": 822,
+    "rank": 30,
+    "ci": 20,
+    "source_name": "Boreal",
+    "votes": 2809
+   }
+  },
+  "google-gemini-omni-flash-1-0": {
+   "aa_i2v_noaudio": {
+    "elo": 1368,
+    "rank": 1,
+    "ci": 11,
+    "source_name": "Gemini Omni Flash",
+    "votes": 5821
+   },
+   "arena_t2v": {
+    "elo": 1513,
+    "rank": 2,
+    "ci": 9,
+    "source_name": "gemini-omni-flash"
+   },
+   "arena_i2v": {
+    "elo": 1465,
+    "rank": 6,
+    "ci": 6,
+    "source_name": "gemini-omni-flash"
+   },
+   "arena_video_edit": {
+    "elo": 1367,
+    "rank": 4,
+    "ci": 15,
+    "source_name": "gemini-omni-flash"
+   }
+  },
+  "google-gemini-omni-flash-1-1": {
+   "aa_t2v_audio": {
+    "elo": 1132,
+    "rank": 8,
+    "ci": 15,
+    "source_name": "Gemini Omni Flash 1.1",
+    "votes": 6143
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1072,
+    "rank": 7,
+    "ci": 18,
+    "source_name": "Gemini Omni Flash 1.1",
+    "votes": 3923
+   },
+   "aa_i2v_audio": {
+    "elo": 1134,
+    "rank": 3,
+    "ci": 17,
+    "source_name": "Gemini Omni Flash 1.1",
+    "votes": 3176
+   },
+   "aa_video_edit_audio": {
+    "elo": 1149,
+    "rank": 3,
+    "ci": 11,
+    "source_name": "Gemini Omni Flash 1.1",
+    "votes": 6778
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1170,
+    "rank": 1,
+    "ci": 21,
+    "source_name": "Gemini Omni Flash 1.1",
+    "votes": 2012
+   },
+   "arena_t2v": {
+    "elo": 1516,
+    "rank": 1,
+    "ci": 15,
+    "source_name": "gemini-omni-1.1-flash"
+   },
+   "arena_i2v": {
+    "elo": 1488,
+    "rank": 2,
+    "ci": 11,
+    "source_name": "gemini-omni-1.1-flash"
+   }
+  },
+  "google-imagen-4-ultra": {
+   "arena_t2i": {
+    "elo": 1148,
+    "rank": 37,
+    "ci": 4,
+    "source_name": "imagen-ultra-4.0-generate-001"
+   }
+  },
+  "google-nano-banana": {
+   "aa_t2i": {
+    "elo": 984,
+    "rank": 54,
+    "ci": 12,
+    "source_name": "Nano Banana (Gemini 2.5 Flash Image)",
+    "votes": 4901
+   },
+   "aa_image_edit": {
+    "elo": 984,
+    "rank": 46,
+    "ci": 15,
+    "source_name": "Nano Banana (Gemini 2.5 Flash Image)",
+    "votes": 4497
+   },
+   "arena_t2i": {
+    "elo": 1150,
+    "rank": 34,
+    "ci": 2,
+    "source_name": "gemini-2.5-flash-image-preview (nano-banana)"
+   },
+   "arena_image_edit": {
+    "elo": 1293,
+    "rank": 31,
+    "ci": 2,
+    "source_name": "gemini-2.5-flash-image-preview (nano-banana)"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1235,
+    "rank": 25,
+    "ci": 2,
+    "source_name": "gemini-2.5-flash-image-preview (nano-banana)"
+   }
+  },
+  "google-nano-banana-2": {
+   "aa_t2i": {
+    "elo": 1138,
+    "rank": 7,
+    "ci": 10,
+    "source_name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+    "votes": 15683
+   },
+   "aa_image_edit": {
+    "elo": 1121,
+    "rank": 10,
+    "ci": 13,
+    "source_name": "Nano Banana 2 (Gemini 3.1 Flash Image)",
+    "votes": 15678
+   },
+   "arena_t2i": {
+    "elo": 1262,
+    "rank": 11,
+    "ci": 4,
+    "source_name": "gemini-3.1-flash-image (nano-banana-2) [web-search]"
+   },
+   "arena_image_edit": {
+    "elo": 1387,
+    "rank": 14,
+    "ci": 3,
+    "source_name": "gemini-3.1-flash-image (nano-banana-2) [web-search]"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1370,
+    "rank": 7,
+    "ci": 4,
+    "source_name": "gemini-3.1-flash-image (nano-banana-2) [web-search]"
+   }
+  },
+  "google-nano-banana-2-1": {
+   "aa_t2i": {
+    "elo": 1172,
+    "rank": 4,
+    "ci": 12,
+    "source_name": "Nano Banana 2.1",
+    "votes": 5841
+   },
+   "aa_image_edit": {
+    "elo": 1150,
+    "rank": 4,
+    "ci": 14,
+    "source_name": "Nano Banana 2.1",
+    "votes": 6205
+   },
+   "arena_t2i": {
+    "elo": 1328,
+    "rank": 6,
+    "ci": 9,
+    "source_name": "gemini-nano-banana-2.1",
+    "preliminary": true
+   },
+   "arena_image_edit": {
+    "elo": 1428,
+    "rank": 6,
+    "ci": 6,
+    "source_name": "gemini-nano-banana-2.1",
+    "preliminary": true
+   },
+   "arena_multi_image_edit": {
+    "elo": 1431,
+    "rank": 4,
+    "ci": 6,
+    "source_name": "gemini-nano-banana-2.1",
+    "preliminary": true
+   }
+  },
+  "google-nano-banana-2-lite": {
+   "aa_t2i": {
+    "elo": 1106,
+    "rank": 15,
+    "ci": 10,
+    "source_name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+    "votes": 14687
+   },
+   "aa_image_edit": {
+    "elo": 1050,
+    "rank": 27,
+    "ci": 13,
+    "source_name": "Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
+    "votes": 7133
+   },
+   "arena_t2i": {
+    "elo": 1250,
+    "rank": 15,
+    "ci": 6,
+    "source_name": "gemini-3.1-flash-lite-image (nano-banana-2-lite)"
+   },
+   "arena_image_edit": {
+    "elo": 1314,
+    "rank": 24,
+    "ci": 5,
+    "source_name": "gemini-3.1-flash-lite-image (nano-banana-2-lite)"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1289,
+    "rank": 17,
+    "ci": 5,
+    "source_name": "gemini-3.1-flash-lite-image (nano-banana-2-lite)"
+   }
+  },
+  "google-nano-banana-pro": {
+   "aa_t2i": {
+    "elo": 1115,
+    "rank": 12,
+    "ci": 10,
+    "source_name": "Nano Banana Pro (Gemini 3 Pro Image)",
+    "votes": 14743
+   },
+   "aa_image_edit": {
+    "elo": 1109,
+    "rank": 14,
+    "ci": 13,
+    "source_name": "Nano Banana Pro (Gemini 3 Pro Image)",
+    "votes": 14553
+   },
+   "arena_t2i": {
+    "elo": 1234,
+    "rank": 18,
+    "ci": 5,
+    "source_name": "gemini-3-pro-image-preview (nano-banana-pro)"
+   },
+   "arena_image_edit": {
+    "elo": 1386,
+    "rank": 15,
+    "ci": 3,
+    "source_name": "gemini-3-pro-image-preview (nano-banana-pro)"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1367,
+    "rank": 8,
+    "ci": 4,
+    "source_name": "gemini-3-pro-image-preview (nano-banana-pro)"
+   }
+  },
+  "google-veo-3-1": {
+   "aa_t2v_audio": {
+    "elo": 968,
+    "rank": 19,
+    "ci": 18,
+    "source_name": "Veo 3.1",
+    "votes": 2872
+   },
+   "aa_t2v_noaudio": {
+    "elo": 961,
+    "rank": 18,
+    "ci": 19,
+    "source_name": "Veo 3.1",
+    "votes": 2897
+   },
+   "aa_i2v_audio": {
+    "elo": 1031,
+    "rank": 13,
+    "ci": 17,
+    "source_name": "Veo 3.1",
+    "votes": 3320
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1253,
+    "rank": 32,
+    "ci": 10,
+    "source_name": "Veo 3.1",
+    "votes": 4304
+   },
+   "arena_t2v": {
+    "elo": 1364,
+    "rank": 12,
+    "ci": 14,
+    "source_name": "veo-3.1-audio"
+   },
+   "arena_i2v": {
+    "elo": 1398,
+    "rank": 13,
+    "ci": 10,
+    "source_name": "veo-3.1-audio"
+   }
+  },
+  "google-veo-3-1-fast": {
+   "aa_t2v_audio": {
+    "elo": 964,
+    "rank": 20,
+    "ci": 17,
+    "source_name": "Veo 3.1 Fast",
+    "votes": 3795
+   },
+   "aa_t2v_noaudio": {
+    "elo": 960,
+    "rank": 19,
+    "ci": 18,
+    "source_name": "Veo 3.1 Fast",
+    "votes": 3590
+   },
+   "aa_i2v_audio": {
+    "elo": 1017,
+    "rank": 15,
+    "ci": 16,
+    "source_name": "Veo 3.1 Fast",
+    "votes": 4826
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1259,
+    "rank": 28,
+    "ci": 9,
+    "source_name": "Veo 3.1 Fast",
+    "votes": 6430
+   },
+   "arena_t2v": {
+    "elo": 1362,
+    "rank": 14,
+    "ci": 10,
+    "source_name": "veo-3.1-fast-audio"
+   },
+   "arena_i2v": {
+    "elo": 1385,
+    "rank": 15,
+    "ci": 9,
+    "source_name": "veo-3.1-fast-audio"
+   }
+  },
+  "google-veo-3-1-lite": {
+   "aa_t2v_audio": {
+    "elo": 952,
+    "rank": 21,
+    "ci": 18,
+    "source_name": "Veo 3.1 Lite",
+    "votes": 2755
+   },
+   "aa_t2v_noaudio": {
+    "elo": 945,
+    "rank": 20,
+    "ci": 19,
+    "source_name": "Veo 3.1 Lite",
+    "votes": 2893
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1242,
+    "rank": 39,
+    "ci": 12,
+    "source_name": "Veo 3.1 Lite",
+    "votes": 1892
+   }
+  },
+  "happyhorse-1-0": {
+   "aa_t2v_audio": {
+    "elo": 1034,
+    "rank": 14,
+    "ci": 17,
+    "source_name": "HappyHorse-1.0",
+    "votes": 3538
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1037,
+    "rank": 10,
+    "ci": 19,
+    "source_name": "HappyHorse-1.0",
+    "votes": 2838
+   },
+   "aa_i2v_audio": {
+    "elo": 1043,
+    "rank": 11,
+    "ci": 17,
+    "source_name": "HappyHorse-1.0",
+    "votes": 3294
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1294,
+    "rank": 12,
+    "ci": 9,
+    "source_name": "HappyHorse-1.0",
+    "votes": 6478
+   },
+   "aa_video_edit_audio": {
+    "elo": 1092,
+    "rank": 5,
+    "ci": 8,
+    "source_name": "HappyHorse-1.0",
+    "votes": 24226
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1093,
+    "rank": 7,
+    "ci": 14,
+    "source_name": "HappyHorse-1.0",
+    "votes": 6872
+   },
+   "arena_t2v": {
+    "elo": 1427,
+    "rank": 10,
+    "ci": 13,
+    "source_name": "happyhorse-1.0"
+   },
+   "arena_i2v": {
+    "elo": 1442,
+    "rank": 10,
+    "ci": 10,
+    "source_name": "happyhorse-1.0"
+   },
+   "arena_video_edit": {
+    "elo": 1307,
+    "rank": 6,
+    "ci": 14,
+    "source_name": "happyhorse-1.0"
+   }
+  },
+  "happyhorse-1-1": {
+   "aa_t2v_audio": {
+    "elo": 1054,
+    "rank": 11,
+    "ci": 16,
+    "source_name": "HappyHorse-1.1",
+    "votes": 5044
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1041,
+    "rank": 9,
+    "ci": 18,
+    "source_name": "HappyHorse-1.1",
+    "votes": 3940
+   },
+   "aa_i2v_audio": {
+    "elo": 1061,
+    "rank": 9,
+    "ci": 17,
+    "source_name": "HappyHorse-1.1",
+    "votes": 4421
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1314,
+    "rank": 10,
+    "ci": 10,
+    "source_name": "HappyHorse-1.1",
+    "votes": 5734
+   }
+  },
+  "hidream-o1-image": {
+   "aa_t2i": {
+    "elo": 976,
+    "rank": 59,
+    "ci": 10,
+    "source_name": "HiDream-O1-Image",
+    "votes": 10254
+   },
+   "aa_image_edit": {
+    "elo": 953,
+    "rank": 51,
+    "ci": 15,
+    "source_name": "HiDream-O1-Image",
+    "votes": 4498
+   },
+   "arena_t2i": {
+    "elo": 1116,
+    "rank": 47,
+    "ci": 4,
+    "source_name": "hidream-o1-image"
+   }
+  },
+  "hidream-o1-image-1-5": {
+   "aa_t2i": {
+    "elo": 1018,
+    "rank": 34,
+    "ci": 11,
+    "source_name": "HiDream-O1-Image-1.5",
+    "votes": 11755
+   }
+  },
+  "hidream-o1-image-dev": {
+   "aa_t2i": {
+    "elo": 811,
+    "rank": 97,
+    "ci": 22,
+    "source_name": "HiDream-O1-Image-Dev",
+    "votes": 1915
+   },
+   "aa_image_edit": {
+    "elo": 879,
+    "rank": 64,
+    "ci": 16,
+    "source_name": "HiDream-O1-Image-Dev",
+    "votes": 4447
+   }
+  },
+  "hunyuanvideo-1-5": {
+   "aa_i2v_noaudio": {
+    "elo": 1134,
+    "rank": 65,
+    "ci": 11,
+    "source_name": "HunyuanVideo-1.5 (Fal)",
+    "votes": 2715
+   },
+   "arena_t2v": {
+    "elo": 1169,
+    "rank": 38,
+    "ci": 16,
+    "source_name": "hunyuan-video-1.5"
+   },
+   "arena_i2v": {
+    "elo": 1198,
+    "rank": 40,
+    "ci": 16,
+    "source_name": "hunyuan-video-1.5"
+   }
+  },
+  "ideogram-3-0": {
+   "aa_t2i": {
+    "elo": 914,
+    "rank": 76,
+    "ci": 19,
+    "source_name": "Ideogram 3.0",
+    "votes": 1897
+   },
+   "arena_t2i": {
+    "elo": 1048,
+    "rank": 67,
+    "ci": 4,
+    "source_name": "ideogram-v3-quality"
+   }
+  },
+  "ideogram-4-0": {
+   "aa_t2i": {
+    "elo": 1001,
+    "rank": 41,
+    "ci": 10,
+    "source_name": "Ideogram 4.0",
+    "votes": 9704
+   }
+  },
+  "ideogram-4-0-quality": {
+   "aa_t2i": {
+    "elo": 1024,
+    "rank": 28,
+    "ci": 10,
+    "source_name": "Ideogram 4.0 (Quality)",
+    "votes": 10254
+   },
+   "arena_t2i": {
+    "elo": 1205,
+    "rank": 20,
+    "ci": 4,
+    "source_name": "ideogram-4.0-quality"
+   }
+  },
+  "ideogram-4-5-high": {
+   "aa_t2i": {
+    "elo": 1019,
+    "rank": 32,
+    "ci": 16,
+    "source_name": "Ideogram 4.5 (High)",
+    "votes": 2421
+   },
+   "aa_image_edit": {
+    "elo": 1065,
+    "rank": 22,
+    "ci": 17,
+    "source_name": "Ideogram 4.5 (High)",
+    "votes": 2571
+   },
+   "arena_image_edit": {
+    "elo": 1347,
+    "rank": 20,
+    "ci": 5,
+    "source_name": "ideogram-4.5",
+    "preliminary": true
+   },
+   "arena_multi_image_edit": {
+    "elo": 1336,
+    "rank": 13,
+    "ci": 7,
+    "source_name": "ideogram-4.5",
+    "preliminary": true
+   }
+  },
+  "kling-2-5-turbo-pro": {
+   "aa_i2v_noaudio": {
+    "elo": 1299,
+    "rank": 11,
+    "ci": 9,
+    "source_name": "Kling 2.5 Turbo 1080p",
+    "votes": 6655
+   },
+   "arena_t2v": {
+    "elo": 1220,
+    "rank": 28,
+    "ci": 17,
+    "source_name": "kling-2.5-turbo-1080p"
+   },
+   "arena_i2v": {
+    "elo": 1276,
+    "rank": 27,
+    "ci": 13,
+    "source_name": "kling-2.5-turbo-1080p"
+   }
+  },
+  "kling-2-6-pro": {
+   "aa_i2v_noaudio": {
+    "elo": 1266,
+    "rank": 25,
+    "ci": 9,
+    "source_name": "Kling 2.6 Pro (January)",
+    "votes": 4732
+   },
+   "arena_t2v": {
+    "elo": 1216,
+    "rank": 29,
+    "ci": 7,
+    "source_name": "kling-2.6-pro"
+   },
+   "arena_i2v": {
+    "elo": 1294,
+    "rank": 26,
+    "ci": 8,
+    "source_name": "kling-2.6-pro"
+   }
+  },
+  "kling-2-6-std": {
+   "aa_i2v_noaudio": {
+    "elo": 1265,
+    "rank": 27,
+    "ci": 10,
+    "source_name": "Kling 2.6 Standard (January)",
+    "votes": 4100
+   }
+  },
+  "kling-3-0-omni-pro": {
+   "aa_t2v_audio": {
+    "elo": 1020,
+    "rank": 15,
+    "ci": 17,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 3378
+   },
+   "aa_t2v_noaudio": {
+    "elo": 984,
+    "rank": 16,
+    "ci": 19,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 2840
+   },
+   "aa_i2v_audio": {
+    "elo": 1004,
+    "rank": 17,
+    "ci": 18,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 2859
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1281,
+    "rank": 16,
+    "ci": 10,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 4051
+   },
+   "aa_video_edit_audio": {
+    "elo": 1000,
+    "rank": 9,
+    "ci": 0,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 18707
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1000,
+    "rank": 9,
+    "ci": 0,
+    "source_name": "Kling 3.0 Omni 1080p (Pro)",
+    "votes": 4398
+   },
+   "arena_video_edit": {
+    "elo": 1255,
+    "rank": 8,
+    "ci": 11,
+    "source_name": "kling-o3-pro"
+   }
+  },
+  "kling-3-0-omni-std": {
+   "aa_i2v_noaudio": {
+    "elo": 1271,
+    "rank": 21,
+    "ci": 10,
+    "source_name": "Kling 3.0 Omni 720p (Standard)",
+    "votes": 4107
+   }
+  },
+  "kling-3-0-pro": {
+   "aa_t2v_audio": {
+    "elo": 1000,
+    "rank": 16,
+    "ci": 0,
+    "source_name": "Kling 3.0 1080p (Pro)",
+    "votes": 4698
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1000,
+    "rank": 14,
+    "ci": 0,
+    "source_name": "Kling 3.0 1080p (Pro)",
+    "votes": 3729
+   },
+   "aa_i2v_audio": {
+    "elo": 1000,
+    "rank": 18,
+    "ci": 0,
+    "source_name": "Kling 3.0 1080p (Pro)",
+    "votes": 5007
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1277,
+    "rank": 17,
+    "ci": 9,
+    "source_name": "Kling 3.0 1080p (Pro)",
+    "votes": 7240
+   },
+   "arena_i2v": {
+    "elo": 1354,
+    "rank": 19,
+    "ci": 6,
+    "source_name": "kling-v3-pro"
+   }
+  },
+  "kling-3-0-std": {
+   "aa_i2v_noaudio": {
+    "elo": 1270,
+    "rank": 23,
+    "ci": 9,
+    "source_name": "Kling 3.0 720p (Standard)",
+    "votes": 7081
+   }
+  },
+  "kling-o1-pro": {
+   "aa_t2v_noaudio": {
+    "elo": 885,
+    "rank": 26,
+    "ci": 19,
+    "source_name": "Kling O1 Pro (January)",
+    "votes": 2705
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 990,
+    "rank": 10,
+    "ci": 16,
+    "source_name": "Kling O1 Pro (January)",
+    "votes": 3369
+   },
+   "arena_t2v": {
+    "elo": 1205,
+    "rank": 33,
+    "ci": 27,
+    "source_name": "kling-o1-pro"
+   },
+   "arena_video_edit": {
+    "elo": 1197,
+    "rank": 9,
+    "ci": 10,
+    "source_name": "kling-o1-pro"
+   }
+  },
+  "krea-2-large": {
+   "aa_t2i": {
+    "elo": 1034,
+    "rank": 21,
+    "ci": 9,
+    "source_name": "Krea 2 Large",
+    "votes": 14090
+   },
+   "arena_t2i": {
+    "elo": 1112,
+    "rank": 53,
+    "ci": 4,
+    "source_name": "krea-2-large"
+   }
+  },
+  "krea-2-medium": {
+   "aa_t2i": {
+    "elo": 1013,
+    "rank": 38,
+    "ci": 9,
+    "source_name": "Krea 2 Medium",
+    "votes": 14045
+   },
+   "arena_t2i": {
+    "elo": 1124,
+    "rank": 45,
+    "ci": 4,
+    "source_name": "krea-2-medium"
+   }
+  },
+  "krea-2-turbo": {
+   "arena_t2i": {
+    "elo": 1113,
+    "rank": 52,
+    "ci": 4,
+    "source_name": "krea-2-turbo"
+   }
+  },
+  "leonardo-lucid-origin-fast": {
+   "aa_t2i": {
+    "elo": 851,
+    "rank": 88,
+    "ci": 19,
+    "source_name": "Lucid Origin Fast",
+    "votes": 2181
+   }
+  },
+  "leonardo-lucid-origin-ultra": {
+   "aa_t2i": {
+    "elo": 885,
+    "rank": 84,
+    "ci": 18,
+    "source_name": "Lucid Origin Ultra",
+    "votes": 2218
+   }
+  },
+  "leonardo-phoenix-0-9-ultra": {
+   "aa_t2i": {
+    "elo": 839,
+    "rank": 92,
+    "ci": 21,
+    "source_name": "Phoenix 0.9 Ultra",
+    "votes": 1783
+   }
+  },
+  "leonardo-phoenix-1-0-fast": {
+   "aa_t2i": {
+    "elo": 833,
+    "rank": 93,
+    "ci": 22,
+    "source_name": "Phoenix 1.0 Fast",
+    "votes": 1694
+   }
+  },
+  "ltx-2-3-fast-api": {
+   "aa_t2v_audio": {
+    "elo": 845,
+    "rank": 27,
+    "ci": 19,
+    "source_name": "LTX-2.3 Fast",
+    "votes": 2896
+   },
+   "aa_t2v_noaudio": {
+    "elo": 845,
+    "rank": 27,
+    "ci": 19,
+    "source_name": "LTX-2.3 Fast",
+    "votes": 2998
+   },
+   "aa_i2v_audio": {
+    "elo": 889,
+    "rank": 23,
+    "ci": 19,
+    "source_name": "LTX-2.3 Fast",
+    "votes": 2953
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1150,
+    "rank": 62,
+    "ci": 10,
+    "source_name": "LTX-2.3 Fast",
+    "votes": 4077
+   }
+  },
+  "ltx-2-3-pro-api": {
+   "aa_t2v_audio": {
+    "elo": 894,
+    "rank": 26,
+    "ci": 18,
+    "source_name": "LTX-2.3 Pro",
+    "votes": 3240
+   },
+   "aa_t2v_noaudio": {
+    "elo": 838,
+    "rank": 28,
+    "ci": 19,
+    "source_name": "LTX-2.3 Pro",
+    "votes": 3094
+   },
+   "aa_i2v_audio": {
+    "elo": 903,
+    "rank": 22,
+    "ci": 18,
+    "source_name": "LTX-2.3 Pro",
+    "votes": 2945
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1158,
+    "rank": 60,
+    "ci": 10,
+    "source_name": "LTX-2.3 Pro",
+    "votes": 4106
+   }
+  },
+  "ltx-2-5-fast-api": {
+   "aa_t2v_audio": {
+    "elo": 951,
+    "rank": 22,
+    "ci": 18,
+    "source_name": "LTX-2.5 Fast",
+    "votes": 2763
+   },
+   "aa_t2v_noaudio": {
+    "elo": 931,
+    "rank": 21,
+    "ci": 19,
+    "source_name": "LTX-2.5 Fast",
+    "votes": 2811
+   },
+   "aa_i2v_audio": {
+    "elo": 985,
+    "rank": 19,
+    "ci": 20,
+    "source_name": "LTX-2.5 Fast",
+    "votes": 2123
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1215,
+    "rank": 48,
+    "ci": 12,
+    "source_name": "LTX-2.5 Fast",
+    "votes": 2357
+   }
+  },
+  "ltx-2-5-pro-api": {
+   "aa_t2v_audio": {
+    "elo": 948,
+    "rank": 23,
+    "ci": 18,
+    "source_name": "LTX-2.5 Pro",
+    "votes": 2690
+   },
+   "aa_t2v_noaudio": {
+    "elo": 929,
+    "rank": 22,
+    "ci": 19,
+    "source_name": "LTX-2.5 Pro",
+    "votes": 2859
+   },
+   "aa_i2v_audio": {
+    "elo": 957,
+    "rank": 21,
+    "ci": 20,
+    "source_name": "LTX-2.5 Pro",
+    "votes": 2129
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1194,
+    "rank": 53,
+    "ci": 12,
+    "source_name": "LTX-2.5 Pro",
+    "votes": 2339
+   }
+  },
+  "luma-photon": {
+   "aa_t2i": {
+    "elo": 847,
+    "rank": 90,
+    "ci": 21,
+    "source_name": "Luma Photon",
+    "votes": 1821
+   },
+   "arena_t2i": {
+    "elo": 1036,
+    "rank": 68,
+    "ci": 4,
+    "source_name": "photon"
+   }
+  },
+  "luma-photon-flash": {
+   "aa_t2i": {
+    "elo": 775,
+    "rank": 99,
+    "ci": 25,
+    "source_name": "Luma Photon Flash",
+    "votes": 1634
+   }
+  },
+  "luma-ray-3": {
+   "aa_i2v_noaudio": {
+    "elo": 1215,
+    "rank": 47,
+    "ci": 10,
+    "source_name": "Ray 3",
+    "votes": 4054
+   },
+   "arena_t2v": {
+    "elo": 1206,
+    "rank": 31,
+    "ci": 22,
+    "source_name": "ray-3"
+   },
+   "arena_i2v": {
+    "elo": 1226,
+    "rank": 37,
+    "ci": 19,
+    "source_name": "ray-3"
+   }
+  },
+  "luma-uni-1": {
+   "aa_t2i": {
+    "elo": 992,
+    "rank": 48,
+    "ci": 12,
+    "source_name": "Luma UNI 1",
+    "votes": 5108
+   },
+   "aa_image_edit": {
+    "elo": 1043,
+    "rank": 31,
+    "ci": 13,
+    "source_name": "Luma UNI 1",
+    "votes": 8751
+   }
+  },
+  "luma-uni-1-max": {
+   "aa_t2i": {
+    "elo": 1020,
+    "rank": 31,
+    "ci": 12,
+    "source_name": "Luma UNI 1 Max",
+    "votes": 5124
+   },
+   "aa_image_edit": {
+    "elo": 1076,
+    "rank": 20,
+    "ci": 14,
+    "source_name": "Luma UNI 1 Max",
+    "votes": 5750
+   }
+  },
+  "meta-muse-image": {
+   "aa_t2i": {
+    "elo": 1127,
+    "rank": 8,
+    "ci": 12,
+    "source_name": "Muse Image",
+    "votes": 8029
+   },
+   "aa_image_edit": {
+    "elo": 1126,
+    "rank": 7,
+    "ci": 12,
+    "source_name": "Muse Image",
+    "votes": 12337
+   },
+   "arena_t2i": {
+    "elo": 1274,
+    "rank": 9,
+    "ci": 5,
+    "source_name": "muse-image"
+   },
+   "arena_image_edit": {
+    "elo": 1403,
+    "rank": 8,
+    "ci": 4,
+    "source_name": "muse-image"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1402,
+    "rank": 6,
+    "ci": 4,
+    "source_name": "muse-image"
+   }
+  },
+  "microsoft-mai-image-2-5": {
+   "aa_t2i": {
+    "elo": 1116,
+    "rank": 11,
+    "ci": 11,
+    "source_name": "MAI-Image-2.5",
+    "votes": 13370
+   },
+   "aa_image_edit": {
+    "elo": 1125,
+    "rank": 9,
+    "ci": 13,
+    "source_name": "MAI-Image-2.5",
+    "votes": 12770
+   },
+   "arena_t2i": {
+    "elo": 1254,
+    "rank": 14,
+    "ci": 4,
+    "source_name": "mai-image-2.5"
+   },
+   "arena_image_edit": {
+    "elo": 1401,
+    "rank": 9,
+    "ci": 4,
+    "source_name": "mai-image-2.5"
+   }
+  },
+  "microsoft-mai-image-2-5-flash": {
+   "aa_t2i": {
+    "elo": 1029,
+    "rank": 22,
+    "ci": 12,
+    "source_name": "MAI-Image-2.5-Flash",
+    "votes": 5437
+   },
+   "aa_image_edit": {
+    "elo": 1095,
+    "rank": 15,
+    "ci": 13,
+    "source_name": "MAI-Image-2.5-Flash",
+    "votes": 12603
+   }
+  },
+  "microsoft-mai-image-2-5-pro": {
+   "aa_t2i": {
+    "elo": 1113,
+    "rank": 14,
+    "ci": 10,
+    "source_name": "MAI-Image-2.5-Pro",
+    "votes": 11776
+   },
+   "aa_image_edit": {
+    "elo": 1117,
+    "rank": 11,
+    "ci": 13,
+    "source_name": "MAI-Image-2.5-Pro",
+    "votes": 14641
+   }
+  },
+  "microsoft-mai-image-2-6": {
+   "aa_t2i": {
+    "elo": 1164,
+    "rank": 6,
+    "ci": 12,
+    "source_name": "MAI-Image-2.6",
+    "votes": 7879
+   },
+   "aa_image_edit": {
+    "elo": 1151,
+    "rank": 3,
+    "ci": 13,
+    "source_name": "MAI-Image-2.6",
+    "votes": 15641
+   },
+   "arena_t2i": {
+    "elo": 1332,
+    "rank": 5,
+    "ci": 5,
+    "source_name": "mai-image-2.6"
+   },
+   "arena_image_edit": {
+    "elo": 1428,
+    "rank": 5,
+    "ci": 5,
+    "source_name": "mai-image-2.6"
+   }
+  },
+  "microsoft-mai-image-2-6-flash": {
+   "aa_t2i": {
+    "elo": 1116,
+    "rank": 10,
+    "ci": 13,
+    "source_name": "MAI-Image-2.6-Flash",
+    "votes": 5109
+   },
+   "aa_image_edit": {
+    "elo": 1142,
+    "rank": 5,
+    "ci": 14,
+    "source_name": "MAI-Image-2.6-Flash",
+    "votes": 10004
+   }
+  },
+  "midjourney-video-v1": {
+   "aa_i2v_noaudio": {
+    "elo": 1165,
+    "rank": 59,
+    "ci": 11,
+    "source_name": "Midjourney V1",
+    "votes": 2221
+   }
+  },
+  "minimax-h3-api": {
+   "aa_t2v_audio": {
+    "elo": 1158,
+    "rank": 4,
+    "ci": 16,
+    "source_name": "MiniMax H3 (768p)",
+    "votes": 5781
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1121,
+    "rank": 2,
+    "ci": 19,
+    "source_name": "MiniMax H3 (768p)",
+    "votes": 3637
+   },
+   "aa_i2v_audio": {
+    "elo": 1141,
+    "rank": 1,
+    "ci": 17,
+    "source_name": "MiniMax H3 (768p)",
+    "votes": 4009
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1356,
+    "rank": 4,
+    "ci": 11,
+    "source_name": "MiniMax H3",
+    "votes": 5745
+   },
+   "aa_video_edit_audio": {
+    "elo": 1125,
+    "rank": 4,
+    "ci": 11,
+    "source_name": "MiniMax H3 (768p)",
+    "votes": 7457
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1129,
+    "rank": 4,
+    "ci": 20,
+    "source_name": "MiniMax H3 (768p)",
+    "votes": 2107
+   },
+   "arena_t2v": {
+    "elo": 1460,
+    "rank": 8,
+    "ci": 9,
+    "source_name": "minimax-h3"
+   },
+   "arena_i2v": {
+    "elo": 1495,
+    "rank": 1,
+    "ci": 5,
+    "source_name": "minimax-h3"
+   },
+   "arena_video_edit": {
+    "elo": 1392,
+    "rank": 3,
+    "ci": 19,
+    "source_name": "minimax-h3"
+   }
+  },
+  "minimax-h3-max": {
+   "aa_t2v_audio": {
+    "elo": 1156,
+    "rank": 5,
+    "ci": 16,
+    "source_name": "MiniMax H3 Max",
+    "votes": 5440
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1117,
+    "rank": 3,
+    "ci": 18,
+    "source_name": "MiniMax H3 Max",
+    "votes": 5564
+   },
+   "aa_i2v_audio": {
+    "elo": 1124,
+    "rank": 5,
+    "ci": 17,
+    "source_name": "MiniMax H3 Max",
+    "votes": 3255
+   }
+  },
+  "minimax-hailuo-2-3": {
+   "aa_i2v_noaudio": {
+    "elo": 1255,
+    "rank": 31,
+    "ci": 9,
+    "source_name": "Hailuo 2.3",
+    "votes": 6606
+   },
+   "arena_t2v": {
+    "elo": 1206,
+    "rank": 32,
+    "ci": 6,
+    "source_name": "hailuo-2.3"
+   },
+   "arena_i2v": {
+    "elo": 1262,
+    "rank": 29,
+    "ci": 5,
+    "source_name": "hailuo-2.3"
+   }
+  },
+  "minimax-hailuo-2-3-fast": {
+   "aa_i2v_noaudio": {
+    "elo": 1257,
+    "rank": 29,
+    "ci": 10,
+    "source_name": "Hailuo 2.3 Fast",
+    "votes": 4866
+   }
+  },
+  "moonvalley-marey": {
+   "aa_i2v_noaudio": {
+    "elo": 1007,
+    "rank": 77,
+    "ci": 12,
+    "source_name": "Marey",
+    "votes": 4133
+   }
+  },
+  "openai-gpt-image-1-5": {
+   "aa_t2i": {
+    "elo": 1120,
+    "rank": 9,
+    "ci": 11,
+    "source_name": "GPT Image 1.5 (high)",
+    "votes": 12419
+   },
+   "aa_image_edit": {
+    "elo": 1116,
+    "rank": 12,
+    "ci": 14,
+    "source_name": "GPT Image 1.5 (high)",
+    "votes": 12730
+   },
+   "arena_t2i": {
+    "elo": 1237,
+    "rank": 17,
+    "ci": 3,
+    "source_name": "gpt-image-1.5-high-fidelity"
+   },
+   "arena_image_edit": {
+    "elo": 1370,
+    "rank": 17,
+    "ci": 3,
+    "source_name": "gpt-image-1.5-high-fidelity"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1343,
+    "rank": 12,
+    "ci": 3,
+    "source_name": "gpt-image-1.5-high-fidelity"
+   }
+  },
+  "openai-gpt-image-1-mini": {
+   "aa_t2i": {
+    "elo": 942,
+    "rank": 67,
+    "ci": 19,
+    "source_name": "GPT Image 1 Mini (medium)",
+    "votes": 1867
+   },
+   "aa_image_edit": {
+    "elo": 924,
+    "rank": 56,
+    "ci": 23,
+    "source_name": "GPT Image 1 Mini (medium)",
+    "votes": 1734
+   },
+   "arena_t2i": {
+    "elo": 1110,
+    "rank": 54,
+    "ci": 3,
+    "source_name": "gpt-image-1-mini"
+   },
+   "arena_image_edit": {
+    "elo": 1124,
+    "rank": 56,
+    "ci": 3,
+    "source_name": "gpt-image-1-mini"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1110,
+    "rank": 39,
+    "ci": 4,
+    "source_name": "gpt-image-1-mini"
+   }
+  },
+  "openai-gpt-image-2": {
+   "aa_t2i": {
+    "elo": 1187,
+    "rank": 3,
+    "ci": 12,
+    "source_name": "GPT Image 2 (high)",
+    "votes": 12409
+   },
+   "aa_image_edit": {
+    "elo": 1133,
+    "rank": 6,
+    "ci": 14,
+    "source_name": "GPT Image 2 (high)",
+    "votes": 13773
+   },
+   "arena_t2i": {
+    "elo": 1383,
+    "rank": 3,
+    "ci": 4,
+    "source_name": "gpt-image-2 (medium)"
+   },
+   "arena_image_edit": {
+    "elo": 1462,
+    "rank": 3,
+    "ci": 3,
+    "source_name": "gpt-image-2 (medium)"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1454,
+    "rank": 3,
+    "ci": 4,
+    "source_name": "gpt-image-2 (medium)"
+   }
+  },
+  "openai-gpt-image-2-5-flare": {
+   "aa_t2i": {
+    "elo": 1207,
+    "rank": 2,
+    "ci": 10,
+    "source_name": "GPT Image 2.5 Flare (max)",
+    "votes": 12174
+   },
+   "aa_image_edit": {
+    "elo": 1178,
+    "rank": 2,
+    "ci": 11,
+    "source_name": "GPT Image 2.5 Flare (max)",
+    "votes": 18194
+   },
+   "arena_t2i": {
+    "elo": 1398,
+    "rank": 2,
+    "ci": 7,
+    "source_name": "gpt-image-2.5-flare",
+    "preliminary": true
+   },
+   "arena_image_edit": {
+    "elo": 1481,
+    "rank": 2,
+    "ci": 5,
+    "source_name": "gpt-image-2.5-flare",
+    "preliminary": true
+   },
+   "arena_multi_image_edit": {
+    "elo": 1476,
+    "rank": 2,
+    "ci": 6,
+    "source_name": "gpt-image-2.5-flare",
+    "preliminary": true
+   }
+  },
+  "openai-gpt-image-2-5-sunburst": {
+   "aa_t2i": {
+    "elo": 1217,
+    "rank": 1,
+    "ci": 10,
+    "source_name": "GPT Image 2.5 Sunburst (max)",
+    "votes": 12792
+   },
+   "aa_image_edit": {
+    "elo": 1199,
+    "rank": 1,
+    "ci": 11,
+    "source_name": "GPT Image 2.5 Sunburst (max)",
+    "votes": 17344
+   },
+   "arena_t2i": {
+    "elo": 1425,
+    "rank": 1,
+    "ci": 7,
+    "source_name": "gpt-image-2.5-sunburst",
+    "preliminary": true
+   },
+   "arena_image_edit": {
+    "elo": 1524,
+    "rank": 1,
+    "ci": 5,
+    "source_name": "gpt-image-2.5-sunburst",
+    "preliminary": true
+   },
+   "arena_multi_image_edit": {
+    "elo": 1527,
+    "rank": 1,
+    "ci": 6,
+    "source_name": "gpt-image-2.5-sunburst",
+    "preliminary": true
+   }
+  },
+  "openai-sora-2": {
+   "arena_t2v": {
+    "elo": 1343,
+    "rank": 17,
+    "ci": 6,
+    "source_name": "sora-2"
+   }
+  },
+  "openai-sora-2-pro": {
+   "arena_t2v": {
+    "elo": 1368,
+    "rank": 11,
+    "ci": 7,
+    "source_name": "sora-2-pro"
+   }
+  },
+  "pika-2-5": {
+   "aa_t2v_noaudio": {
+    "elo": 838,
+    "rank": 29,
+    "ci": 20,
+    "source_name": "Pika 2.5",
+    "votes": 2671
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1199,
+    "rank": 52,
+    "ci": 10,
+    "source_name": "Pika 2.5",
+    "votes": 4113
+   }
+  },
+  "pixverse-v6": {
+   "aa_t2v_audio": {
+    "elo": 989,
+    "rank": 18,
+    "ci": 18,
+    "source_name": "PixVerse V6",
+    "votes": 2769
+   },
+   "aa_t2v_noaudio": {
+    "elo": 998,
+    "rank": 15,
+    "ci": 19,
+    "source_name": "PixVerse V6",
+    "votes": 2923
+   },
+   "aa_i2v_audio": {
+    "elo": 1025,
+    "rank": 14,
+    "ci": 17,
+    "source_name": "PixVerse V6",
+    "votes": 3246
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1339,
+    "rank": 7,
+    "ci": 10,
+    "source_name": "PixVerse V6",
+    "votes": 5655
+   }
+  },
+  "pruna-p-video": {
+   "aa_t2v_noaudio": {
+    "elo": 803,
+    "rank": 31,
+    "ci": 20,
+    "source_name": "P-Video",
+    "votes": 2782
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1130,
+    "rank": 66,
+    "ci": 11,
+    "source_name": "P-Video",
+    "votes": 3803
+   },
+   "arena_t2v": {
+    "elo": 1207,
+    "rank": 30,
+    "ci": 16,
+    "source_name": "p-video"
+   },
+   "arena_i2v": {
+    "elo": 1244,
+    "rank": 32,
+    "ci": 16,
+    "source_name": "p-video"
+   }
+  },
+  "recraft-v4-1-flash": {
+   "aa_t2i": {
+    "elo": 950,
+    "rank": 66,
+    "ci": 12,
+    "source_name": "Recraft V4.1 Flash",
+    "votes": 5314
+   },
+   "arena_t2i": {
+    "elo": 1099,
+    "rank": 57,
+    "ci": 9,
+    "source_name": "recraft-v4.1-flash"
+   }
+  },
+  "recraft-v4-1-utility": {
+   "aa_t2i": {
+    "elo": 1027,
+    "rank": 27,
+    "ci": 11,
+    "source_name": "Recraft V4.1 Utility",
+    "votes": 7004
+   }
+  },
+  "recraft-v4-1-utility-pro": {
+   "aa_t2i": {
+    "elo": 1016,
+    "rank": 35,
+    "ci": 9,
+    "source_name": "Recraft V4.1 Utility Pro",
+    "votes": 15018
+   },
+   "arena_t2i": {
+    "elo": 1169,
+    "rank": 26,
+    "ci": 11,
+    "source_name": "recraft-v4.1-utility-pro"
+   }
+  },
+  "reve-2-1": {
+   "arena_t2i": {
+    "elo": 1302,
+    "rank": 7,
+    "ci": 8,
+    "source_name": "reve-2.1"
+   },
+   "arena_image_edit": {
+    "elo": 1374,
+    "rank": 16,
+    "ci": 6,
+    "source_name": "reve-2.1"
+   }
+  },
+  "reve-v1": {
+   "aa_image_edit": {
+    "elo": 982,
+    "rank": 47,
+    "ci": 20,
+    "source_name": "Reve V1 (December)",
+    "votes": 2063
+   },
+   "arena_image_edit": {
+    "elo": 1235,
+    "rank": 38,
+    "ci": 5,
+    "source_name": "reve-v1"
+   },
+   "arena_multi_image_edit": {
+    "elo": 1222,
+    "rank": 27,
+    "ci": 8,
+    "source_name": "reve-v1"
+   }
+  },
+  "runway-aleph-2": {
+   "aa_video_edit_audio": {
+    "elo": 1014,
+    "rank": 8,
+    "ci": 8,
+    "source_name": "Aleph 2.0",
+    "votes": 20816
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1040,
+    "rank": 8,
+    "ci": 14,
+    "source_name": "Aleph 2.0",
+    "votes": 5857
+   }
+  },
+  "runway-gen-4-5": {
+   "aa_t2v_noaudio": {
+    "elo": 912,
+    "rank": 23,
+    "ci": 19,
+    "source_name": "Runway Gen-4.5 (720p)",
+    "votes": 2759
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1265,
+    "rank": 26,
+    "ci": 10,
+    "source_name": "Runway Gen-4.5 (720p)",
+    "votes": 3578
+   },
+   "arena_t2v": {
+    "elo": 1225,
+    "rank": 27,
+    "ci": 8,
+    "source_name": "runway-gen-4.5"
+   }
+  },
+  "sandai-magi-2-preview": {
+   "aa_t2v_audio": {
+    "elo": 1044,
+    "rank": 12,
+    "ci": 16,
+    "source_name": "MAGI-2 Preview",
+    "votes": 5284
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1011,
+    "rank": 13,
+    "ci": 17,
+    "source_name": "MAGI-2 Preview",
+    "votes": 5148
+   },
+   "aa_i2v_audio": {
+    "elo": 1046,
+    "rank": 10,
+    "ci": 17,
+    "source_name": "MAGI-2 Preview",
+    "votes": 3972
+   }
+  },
+  "seedance-1-5-pro": {
+   "aa_i2v_noaudio": {
+    "elo": 1256,
+    "rank": 30,
+    "ci": 9,
+    "source_name": "Seedance 1.5 pro",
+    "votes": 5673
+   },
+   "arena_t2v": {
+    "elo": 1256,
+    "rank": 22,
+    "ci": 7,
+    "source_name": "seedance-v1.5-pro"
+   },
+   "arena_i2v": {
+    "elo": 1307,
+    "rank": 24,
+    "ci": 7,
+    "source_name": "seedance-v1.5-pro"
+   }
+  },
+  "seedance-2-0": {
+   "aa_t2v_audio": {
+    "elo": 1138,
+    "rank": 7,
+    "ci": 16,
+    "source_name": "Dreamina Seedance 2.0",
+    "votes": 4807
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1084,
+    "rank": 6,
+    "ci": 19,
+    "source_name": "Dreamina Seedance 2.0",
+    "votes": 2949
+   },
+   "aa_i2v_audio": {
+    "elo": 1121,
+    "rank": 6,
+    "ci": 18,
+    "source_name": "Dreamina Seedance 2.0",
+    "votes": 2570
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1339,
+    "rank": 6,
+    "ci": 9,
+    "source_name": "Dreamina Seedance 2.0 720p",
+    "votes": 7258
+   },
+   "aa_video_edit_audio": {
+    "elo": 1079,
+    "rank": 6,
+    "ci": 11,
+    "source_name": "Dreamina Seedance 2.0",
+    "votes": 7564
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1121,
+    "rank": 6,
+    "ci": 20,
+    "source_name": "Dreamina Seedance 2.0",
+    "votes": 2491
+   },
+   "arena_t2v": {
+    "elo": 1479,
+    "rank": 5,
+    "ci": 8,
+    "source_name": "dreamina-seedance-2.0-720p"
+   },
+   "arena_i2v": {
+    "elo": 1475,
+    "rank": 5,
+    "ci": 7,
+    "source_name": "dreamina-seedance-2.0-720p"
+   },
+   "arena_video_edit": {
+    "elo": 1365,
+    "rank": 5,
+    "ci": 14,
+    "source_name": "dreamina-seedance-2.0-720p"
+   }
+  },
+  "seedance-2-5": {
+   "aa_t2v_audio": {
+    "elo": 1159,
+    "rank": 3,
+    "ci": 16,
+    "source_name": "Dreamina Seedance 2.5",
+    "votes": 5761
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1105,
+    "rank": 4,
+    "ci": 19,
+    "source_name": "Dreamina Seedance 2.5",
+    "votes": 3793
+   },
+   "aa_i2v_audio": {
+    "elo": 1139,
+    "rank": 2,
+    "ci": 17,
+    "source_name": "Dreamina Seedance 2.5",
+    "votes": 3475
+   },
+   "aa_video_edit_audio": {
+    "elo": 1155,
+    "rank": 2,
+    "ci": 12,
+    "source_name": "Dreamina Seedance 2.5",
+    "votes": 5616
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1146,
+    "rank": 3,
+    "ci": 21,
+    "source_name": "Dreamina Seedance 2.5",
+    "votes": 2050
+   },
+   "arena_t2v": {
+    "elo": 1474,
+    "rank": 7,
+    "ci": 9,
+    "source_name": "dreamina-seedance-2.5-720p"
+   },
+   "arena_i2v": {
+    "elo": 1477,
+    "rank": 4,
+    "ci": 7,
+    "source_name": "dreamina-seedance-2.5-720p"
+   },
+   "arena_video_edit": {
+    "elo": 1410,
+    "rank": 2,
+    "ci": 26,
+    "source_name": "dreamina-seedance-2.5-720p"
+   }
+  },
+  "stability-sd-3-5-large": {
+   "arena_t2i": {
+    "elo": 938,
+    "rank": 81,
+    "ci": 5,
+    "source_name": "stable-diffusion-v35-large"
+   }
+  },
+  "tencent-hunyuanimage-3-0": {
+   "aa_t2i": {
+    "elo": 936,
+    "rank": 69,
+    "ci": 18,
+    "source_name": "HunyuanImage 3.0",
+    "votes": 2043
+   },
+   "arena_t2i": {
+    "elo": 1150,
+    "rank": 35,
+    "ci": 3,
+    "source_name": "hunyuan-image-3.0"
+   }
+  },
+  "tencent-hunyuanimage-3-0-instruct": {
+   "aa_t2i": {
+    "elo": 990,
+    "rank": 49,
+    "ci": 12,
+    "source_name": "HunyuanImage 3.0 Instruct",
+    "votes": 5263
+   },
+   "aa_image_edit": {
+    "elo": 1063,
+    "rank": 24,
+    "ci": 14,
+    "source_name": "HunyuanImage 3.0 Instruct",
+    "votes": 5340
+   },
+   "arena_image_edit": {
+    "elo": 1303,
+    "rank": 26,
+    "ci": 3,
+    "source_name": "hunyuan-image-3.0-instruct"
+   }
+  },
+  "tencent-hy-image-3-5-preview": {
+   "aa_t2i": {
+    "elo": 969,
+    "rank": 62,
+    "ci": 12,
+    "source_name": "HunyuanImage 3.5 (Preview)",
+    "votes": 5123
+   },
+   "aa_image_edit": {
+    "elo": 1088,
+    "rank": 17,
+    "ci": 14,
+    "source_name": "HunyuanImage 3.5 (Preview)",
+    "votes": 5664
+   }
+  },
+  "utopai-x": {
+   "aa_t2v_audio": {
+    "elo": 1166,
+    "rank": 2,
+    "ci": 17,
+    "source_name": "Utopai X",
+    "votes": 5103
+   }
+  },
+  "vidu-q2-pro": {
+   "aa_i2v_noaudio": {
+    "elo": 1233,
+    "rank": 43,
+    "ci": 10,
+    "source_name": "Vidu Q2 Pro",
+    "votes": 4025
+   },
+   "arena_i2v": {
+    "elo": 1223,
+    "rank": 39,
+    "ci": 17,
+    "source_name": "vidu-q2-pro"
+   }
+  },
+  "vidu-q2-turbo": {
+   "aa_i2v_noaudio": {
+    "elo": 1237,
+    "rank": 41,
+    "ci": 10,
+    "source_name": "Vidu Q2 Turbo",
+    "votes": 4031
+   },
+   "arena_i2v": {
+    "elo": 1244,
+    "rank": 33,
+    "ci": 17,
+    "source_name": "vidu-q2-turbo"
+   }
+  },
+  "vidu-q3-pro": {
+   "aa_t2v_audio": {
+    "elo": 943,
+    "rank": 24,
+    "ci": 17,
+    "source_name": "Vidu Q3 Pro",
+    "votes": 3593
+   },
+   "aa_t2v_noaudio": {
+    "elo": 899,
+    "rank": 25,
+    "ci": 18,
+    "source_name": "Vidu Q3 Pro",
+    "votes": 3305
+   },
+   "aa_i2v_audio": {
+    "elo": 1015,
+    "rank": 16,
+    "ci": 16,
+    "source_name": "Vidu Q3 Pro",
+    "votes": 4734
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1290,
+    "rank": 13,
+    "ci": 9,
+    "source_name": "Vidu Q3 Pro",
+    "votes": 8308
+   },
+   "arena_i2v": {
+    "elo": 1363,
+    "rank": 18,
+    "ci": 9,
+    "source_name": "vidu-q3-pro"
+   }
+  },
+  "vidu-q3-turbo": {
+   "aa_t2v_audio": {
+    "elo": 918,
+    "rank": 25,
+    "ci": 18,
+    "source_name": "Vidu Q3 Turbo",
+    "votes": 3251
+   },
+   "aa_t2v_noaudio": {
+    "elo": 900,
+    "rank": 24,
+    "ci": 18,
+    "source_name": "Vidu Q3 Turbo",
+    "votes": 3301
+   },
+   "aa_i2v_audio": {
+    "elo": 967,
+    "rank": 20,
+    "ci": 19,
+    "source_name": "Vidu Q3 Turbo",
+    "votes": 2232
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1230,
+    "rank": 44,
+    "ci": 11,
+    "source_name": "Vidu Q3 Turbo",
+    "votes": 3150
+   }
+  },
+  "vimoo-1-0": {
+   "aa_i2v_noaudio": {
+    "elo": 1348,
+    "rank": 5,
+    "ci": 14,
+    "source_name": "Vimoo 1.0",
+    "votes": 5084
+   }
+  },
+  "wan-2-2-a14b": {
+   "aa_i2v_noaudio": {
+    "elo": 1107,
+    "rank": 68,
+    "ci": 10,
+    "source_name": "Wan 2.2 A14B",
+    "votes": 3722
+   },
+   "arena_t2v": {
+    "elo": 1132,
+    "rank": 42,
+    "ci": 15,
+    "source_name": "wan-v2.2-a14b"
+   },
+   "arena_i2v": {
+    "elo": 1170,
+    "rank": 43,
+    "ci": 10,
+    "source_name": "wan-v2.2-a14b"
+   }
+  },
+  "wan-2-2-ti2v-5b": {
+   "aa_i2v_noaudio": {
+    "elo": 992,
+    "rank": 80,
+    "ci": 12,
+    "source_name": "Wan 2.2 5B",
+    "votes": 3520
+   }
+  },
+  "wan-2-6": {
+   "aa_i2v_noaudio": {
+    "elo": 1222,
+    "rank": 46,
+    "ci": 10,
+    "source_name": "Wan 2.6",
+    "votes": 2327
+   },
+   "arena_t2v": {
+    "elo": 1327,
+    "rank": 21,
+    "ci": 7,
+    "source_name": "wan2.6-t2v"
+   },
+   "arena_i2v": {
+    "elo": 1310,
+    "rank": 23,
+    "ci": 7,
+    "source_name": "wan2.6-i2v"
+   }
+  },
+  "wan-2-7": {
+   "aa_t2v_audio": {
+    "elo": 1040,
+    "rank": 13,
+    "ci": 17,
+    "source_name": "Wan2.7-260612",
+    "votes": 4287
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1023,
+    "rank": 12,
+    "ci": 18,
+    "source_name": "Wan2.7-260612",
+    "votes": 3853
+   },
+   "aa_i2v_audio": {
+    "elo": 1033,
+    "rank": 12,
+    "ci": 19,
+    "source_name": "Wan 2.7",
+    "votes": 2306
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1271,
+    "rank": 22,
+    "ci": 11,
+    "source_name": "Wan 2.7",
+    "votes": 3112
+   },
+   "aa_video_edit_audio": {
+    "elo": 1078,
+    "rank": 7,
+    "ci": 8,
+    "source_name": "Wan 2.7",
+    "votes": 20490
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1122,
+    "rank": 5,
+    "ci": 15,
+    "source_name": "Wan 2.7",
+    "votes": 5985
+   },
+   "arena_t2v": {
+    "elo": 1337,
+    "rank": 20,
+    "ci": 7,
+    "source_name": "wan2.7-t2v"
+   },
+   "arena_i2v": {
+    "elo": 1428,
+    "rank": 11,
+    "ci": 5,
+    "source_name": "wan2.7-i2v"
+   }
+  },
+  "wan-3-0": {
+   "aa_t2v_audio": {
+    "elo": 1173,
+    "rank": 1,
+    "ci": 16,
+    "source_name": "Wan 3.0",
+    "votes": 5682
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1134,
+    "rank": 1,
+    "ci": 19,
+    "source_name": "Wan 3.0",
+    "votes": 3718
+   },
+   "aa_i2v_audio": {
+    "elo": 1127,
+    "rank": 4,
+    "ci": 16,
+    "source_name": "Wan 3.0",
+    "votes": 4957
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1362,
+    "rank": 3,
+    "ci": 13,
+    "source_name": "Wan 3.0",
+    "votes": 3137
+   },
+   "aa_video_edit_audio": {
+    "elo": 1200,
+    "rank": 1,
+    "ci": 11,
+    "source_name": "Wan 3.0",
+    "votes": 7762
+   },
+   "aa_video_edit_noaudio": {
+    "elo": 1156,
+    "rank": 2,
+    "ci": 18,
+    "source_name": "Wan 3.0",
+    "votes": 2896
+   },
+   "arena_t2v": {
+    "elo": 1476,
+    "rank": 6,
+    "ci": 13,
+    "source_name": "wan3.0"
+   },
+   "arena_i2v": {
+    "elo": 1480,
+    "rank": 3,
+    "ci": 11,
+    "source_name": "wan3.0"
+   },
+   "arena_video_edit": {
+    "elo": 1414,
+    "rank": 1,
+    "ci": 26,
+    "source_name": "wan3.0"
+   }
+  },
+  "xai-grok-imagine-1-0": {
+   "aa_i2v_noaudio": {
+    "elo": 1328,
+    "rank": 9,
+    "ci": 9,
+    "source_name": "grok-imagine-video",
+    "votes": 7810
+   },
+   "arena_t2v": {
+    "elo": 1342,
+    "rank": 18,
+    "ci": 6,
+    "source_name": "grok-imagine-video-720p"
+   },
+   "arena_i2v": {
+    "elo": 1415,
+    "rank": 12,
+    "ci": 4,
+    "source_name": "grok-imagine-video-720p"
+   },
+   "arena_video_edit": {
+    "elo": 1258,
+    "rank": 7,
+    "ci": 10,
+    "source_name": "grok-imagine-video"
+   }
+  },
+  "xai-grok-imagine-1-5": {
+   "aa_t2v_audio": {
+    "elo": 1059,
+    "rank": 10,
+    "ci": 17,
+    "source_name": "Grok Imagine Video 1.5",
+    "votes": 3591
+   },
+   "aa_t2v_noaudio": {
+    "elo": 1036,
+    "rank": 11,
+    "ci": 19,
+    "source_name": "Grok Imagine Video 1.5",
+    "votes": 2961
+   },
+   "aa_i2v_audio": {
+    "elo": 1068,
+    "rank": 8,
+    "ci": 17,
+    "source_name": "Grok Imagine Video 1.5",
+    "votes": 3211
+   },
+   "aa_i2v_noaudio": {
+    "elo": 1331,
+    "rank": 8,
+    "ci": 11,
+    "source_name": "Grok Imagine Video 1.5",
+    "votes": 3392
+   },
+   "arena_i2v": {
+    "elo": 1456,
+    "rank": 8,
+    "ci": 4,
+    "source_name": "grok-imagine-video-1.5-720p"
+   }
+  },
+  "xai-grok-imagine-1-5-lite": {
+   "aa_t2v_audio": {
+    "elo": 998,
+    "rank": 17,
+    "ci": 15,
+    "source_name": "Grok Imagine Video 1.5 Lite",
+    "votes": 5957
+   },
+   "aa_t2v_noaudio": {
+    "elo": 980,
+    "rank": 17,
+    "ci": 18,
+    "source_name": "Grok Imagine Video 1.5 Lite",
+    "votes": 3333
+   }
+  },
+  "xai-grok-imagine-image": {
+   "aa_t2i": {
+    "elo": 1021,
+    "rank": 29,
+    "ci": 12,
+    "source_name": "grok-imagine-image",
+    "votes": 5904
+   },
+   "aa_image_edit": {
+    "elo": 1070,
+    "rank": 21,
+    "ci": 14,
+    "source_name": "grok-imagine-image",
+    "votes": 5328
+   },
+   "arena_t2i": {
+    "elo": 1170,
+    "rank": 25,
+    "ci": 3,
+    "source_name": "grok-imagine-image"
+   },
+   "arena_image_edit": {
+    "elo": 1329,
+    "rank": 22,
+    "ci": 2,
+    "source_name": "grok-imagine-image"
+   }
+  },
+  "xai-grok-imagine-image-2-0": {
+   "aa_t2i": {
+    "elo": 1166,
+    "rank": 5,
+    "ci": 13,
+    "source_name": "Grok Imagine Image 2.0",
+    "votes": 7039
+   },
+   "aa_image_edit": {
+    "elo": 1112,
+    "rank": 13,
+    "ci": 13,
+    "source_name": "Grok Imagine Image 2.0",
+    "votes": 7664
+   },
+   "arena_t2i": {
+    "elo": 1294,
+    "rank": 8,
+    "ci": 6,
+    "source_name": "grok-imagine-image-2.0 (20260801)"
+   },
+   "arena_image_edit": {
+    "elo": 1425,
+    "rank": 7,
+    "ci": 5,
+    "source_name": "grok-imagine-image-2.0 (20260801)"
+   }
+  },
+  "xai-grok-imagine-image-quality": {
+   "aa_t2i": {
+    "elo": 1049,
+    "rank": 19,
+    "ci": 9,
+    "source_name": "grok-imagine-image-quality",
+    "votes": 16335
+   },
+   "aa_image_edit": {
+    "elo": 1091,
+    "rank": 16,
+    "ci": 13,
+    "source_name": "grok-imagine-image-quality",
+    "votes": 7858
+   },
+   "arena_image_edit": {
+    "elo": 1391,
+    "rank": 11,
+    "ci": 6,
+    "source_name": "grok-imagine-image-quality (20260519)"
+   }
+  }
+ },
+ "unmatched": [
+  {
+   "name": "PixVerse V5.6",
+   "creator": "PixVerse",
+   "category": "aa_i2v_noaudio",
+   "elo": 1287,
+   "rank": 14
+  },
+  {
+   "name": "Kling O1 Pro (December)",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1281,
+   "rank": 15,
+   "note": "ancienne version (isCurrent=false) de kling-o1-pro, non rattachée pour éviter le doublon"
+  },
+  {
+   "name": "PixVerse V5",
+   "creator": "PixVerse",
+   "category": "aa_i2v_noaudio",
+   "elo": 1277,
+   "rank": 18
+  },
+  {
+   "name": "PixVerse V5.5",
+   "creator": "PixVerse",
+   "category": "aa_i2v_noaudio",
+   "elo": 1275,
+   "rank": 19
+  },
+  {
+   "name": "Avenger 0.5 Pro",
+   "creator": "Video Rebirth",
+   "category": "aa_i2v_noaudio",
+   "elo": 1270,
+   "rank": 24
+  },
+  {
+   "name": "Kling 2.6 Pro (December)",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1249,
+   "rank": 34,
+   "note": "ancienne version (isCurrent=false) de kling-2-6-pro, non rattachée"
+  },
+  {
+   "name": "Hailuo 02 Pro",
+   "creator": "MiniMax",
+   "category": "aa_i2v_noaudio",
+   "elo": 1249,
+   "rank": 35
+  },
+  {
+   "name": "Hailuo 02 Standard",
+   "creator": "MiniMax",
+   "category": "aa_i2v_noaudio",
+   "elo": 1247,
+   "rank": 36
+  },
+  {
+   "name": "Wan 2.5 Preview",
+   "creator": "Alibaba",
+   "category": "aa_i2v_noaudio",
+   "elo": 1245,
+   "rank": 37
+  },
+  {
+   "name": "PixVerse V5.6 (January)",
+   "creator": "PixVerse",
+   "category": "aa_i2v_noaudio",
+   "elo": 1244,
+   "rank": 38
+  },
+  {
+   "name": "Avenger 0.5",
+   "creator": "Video Rebirth",
+   "category": "aa_i2v_noaudio",
+   "elo": 1242,
+   "rank": 40
+  },
+  {
+   "name": "Seedance 1.0",
+   "creator": "ByteDance Seed",
+   "category": "aa_i2v_noaudio",
+   "elo": 1235,
+   "rank": 42
+  },
+  {
+   "name": "Veo 3",
+   "creator": "Google",
+   "category": "aa_i2v_noaudio",
+   "elo": 1225,
+   "rank": 45
+  },
+  {
+   "name": "Kling 2.1 Master",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1208,
+   "rank": 49
+  },
+  {
+   "name": "Hailuo 02 Fast",
+   "creator": "MiniMax",
+   "category": "aa_i2v_noaudio",
+   "elo": 1207,
+   "rank": 50
+  },
+  {
+   "name": "LTX-2 Pro",
+   "creator": "Lightricks",
+   "category": "aa_i2v_noaudio",
+   "elo": 1201,
+   "rank": 51
+  },
+  {
+   "name": "LTX-2 Fast",
+   "creator": "Lightricks",
+   "category": "aa_i2v_noaudio",
+   "elo": 1191,
+   "rank": 54
+  },
+  {
+   "name": "Kling 2.1 Pro",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1185,
+   "rank": 55
+  },
+  {
+   "name": "Kling 2.0",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1180,
+   "rank": 56
+  },
+  {
+   "name": "Vivago 2.0",
+   "creator": "HiDream",
+   "category": "aa_i2v_noaudio",
+   "elo": 1177,
+   "rank": 57
+  },
+  {
+   "name": "Kling 2.1 Standard",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1174,
+   "rank": 58
+  },
+  {
+   "name": "PixVerse V4.5",
+   "creator": "PixVerse",
+   "category": "aa_i2v_noaudio",
+   "elo": 1153,
+   "rank": 61
+  },
+  {
+   "name": "Seedance 1.0 Mini",
+   "creator": "ByteDance Seed",
+   "category": "aa_i2v_noaudio",
+   "elo": 1138,
+   "rank": 63
+  },
+  {
+   "name": "Kling 1.6 Pro",
+   "creator": "KlingAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1137,
+   "rank": 64
+  },
+  {
+   "name": "Agnes-Video-V2.0",
+   "creator": "Sapiens AI",
+   "category": "aa_i2v_noaudio",
+   "elo": 1127,
+   "rank": 67
+  },
+  {
+   "name": "Veo 2",
+   "creator": "Google",
+   "category": "aa_i2v_noaudio",
+   "elo": 1100,
+   "rank": 69
+  },
+  {
+   "name": "Runway Gen 4",
+   "creator": "Runway",
+   "category": "aa_i2v_noaudio",
+   "elo": 1088,
+   "rank": 70
+  },
+  {
+   "name": "I2V-01-Director",
+   "creator": "MiniMax",
+   "category": "aa_i2v_noaudio",
+   "elo": 1048,
+   "rank": 71
+  },
+  {
+   "name": "Vidu Q1",
+   "creator": "Vidu",
+   "category": "aa_i2v_noaudio",
+   "elo": 1032,
+   "rank": 72
+  },
+  {
+   "name": "LTX Video v0.9.7 13B",
+   "creator": "Lightricks",
+   "category": "aa_i2v_noaudio",
+   "elo": 1031,
+   "rank": 73
+  },
+  {
+   "name": "Motion 2.0",
+   "creator": "Leonardo.Ai",
+   "category": "aa_i2v_noaudio",
+   "elo": 1026,
+   "rank": 74
+  },
+  {
+   "name": "Runway Gen 3 Alpha",
+   "creator": "Runway",
+   "category": "aa_i2v_noaudio",
+   "elo": 1017,
+   "rank": 75
+  },
+  {
+   "name": "Pika 2.2",
+   "creator": "Pika Art",
+   "category": "aa_i2v_noaudio",
+   "elo": 1013,
+   "rank": 76,
+   "note": "Pika 2.2 générique ; l'atlas a pika-2-2-pikaframes (fonction keyframes), non rattaché"
+  },
+  {
+   "name": "Runway Gen 3 Alpha Turbo",
+   "creator": "Runway",
+   "category": "aa_i2v_noaudio",
+   "elo": 1004,
+   "rank": 78
+  },
+  {
+   "name": "Wan 2.1 14B",
+   "creator": "Alibaba",
+   "category": "aa_i2v_noaudio",
+   "elo": 1000,
+   "rank": 79
+  },
+  {
+   "name": "Sora",
+   "creator": "OpenAI",
+   "category": "aa_i2v_noaudio",
+   "elo": 982,
+   "rank": 81
+  },
+  {
+   "name": "Hunyuan Video (Fal)",
+   "creator": "Tencent",
+   "category": "aa_i2v_noaudio",
+   "elo": 921,
+   "rank": 82
+  },
+  {
+   "name": "Wan 2.6 Image",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 1028,
+   "rank": 24
+  },
+  {
+   "name": "Krea 2 Medium Turbo",
+   "creator": "Krea",
+   "category": "aa_t2i",
+   "elo": 1018,
+   "rank": 33,
+   "note": "ne correspond ni à krea-2-medium ni à krea-2-turbo de façon certaine"
+  },
+  {
+   "name": "Wan2.6 Text to Image",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 1016,
+   "rank": 36
+  },
+  {
+   "name": "GPT Image 1 (high)",
+   "creator": "OpenAI",
+   "category": "aa_t2i",
+   "elo": 1012,
+   "rank": 39
+  },
+  {
+   "name": "Ming-Image-0.1-Design",
+   "creator": "InclusionAI",
+   "category": "aa_t2i",
+   "elo": 1000,
+   "rank": 43
+  },
+  {
+   "name": "FLUX.2 [dev] Turbo",
+   "creator": "Fal",
+   "category": "aa_t2i",
+   "elo": 997,
+   "rank": 44
+  },
+  {
+   "name": "P-Image-Ideogram (High)",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 995,
+   "rank": 45
+  },
+  {
+   "name": "Qwen Image 2.0 (2026-03-03)",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 994,
+   "rank": 46
+  },
+  {
+   "name": "Cosmos3-Super-Text2Image (agentic)",
+   "creator": "NVIDIA",
+   "category": "aa_t2i",
+   "elo": 992,
+   "rank": 47
+  },
+  {
+   "name": "P-Image-Ideogram (Very High)",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 988,
+   "rank": 50
+  },
+  {
+   "name": "FLUX.2 [dev] Flash",
+   "creator": "Fal",
+   "category": "aa_t2i",
+   "elo": 986,
+   "rank": 51
+  },
+  {
+   "name": "Wan 2.7",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 986,
+   "rank": 52
+  },
+  {
+   "name": "HunyuanImage 3.0 (Tencent Cloud)",
+   "creator": "Tencent",
+   "category": "aa_t2i",
+   "elo": 985,
+   "rank": 53,
+   "note": "service Tencent Cloud de HunyuanImage 3.0, doublon de tencent-hunyuanimage-3-0 (rattaché à l'entrée sans suffixe)"
+  },
+  {
+   "name": "Ideogram 4.0 Instant",
+   "creator": "Fal",
+   "category": "aa_t2i",
+   "elo": 983,
+   "rank": 55
+  },
+  {
+   "name": "Cosmos3-Super-Text2Image",
+   "creator": "NVIDIA",
+   "category": "aa_t2i",
+   "elo": 983,
+   "rank": 56
+  },
+  {
+   "name": "Ideogram 4.0 Fast (Quality)",
+   "creator": "Fal",
+   "category": "aa_t2i",
+   "elo": 982,
+   "rank": 57
+  },
+  {
+   "name": "Wan 2.7 Pro",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 979,
+   "rank": 58
+  },
+  {
+   "name": "P-Image-Ideogram (Medium)",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 974,
+   "rank": 60
+  },
+  {
+   "name": "Cosmos3-Super-Text2Image-4Step",
+   "creator": "NVIDIA",
+   "category": "aa_t2i",
+   "elo": 971,
+   "rank": 61
+  },
+  {
+   "name": "Ideogram 4.0 Fast",
+   "creator": "Fal",
+   "category": "aa_t2i",
+   "elo": 963,
+   "rank": 63
+  },
+  {
+   "name": "P-Image-Ideogram (Low)",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 958,
+   "rank": 64
+  },
+  {
+   "name": "Qwen Image Plus 2601",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 956,
+   "rank": 65
+  },
+  {
+   "name": "Dreamina 3.1",
+   "creator": "Bytedance",
+   "category": "aa_t2i",
+   "elo": 925,
+   "rank": 72
+  },
+  {
+   "name": "Kling Image 3.0 Omni",
+   "creator": "KlingAI",
+   "category": "aa_t2i",
+   "elo": 918,
+   "rank": 74
+  },
+  {
+   "name": "ERNIE Image Turbo",
+   "creator": "Baidu",
+   "category": "aa_t2i",
+   "elo": 914,
+   "rank": 75
+  },
+  {
+   "name": "P-Image-Ideogram (Very Low)",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 908,
+   "rank": 77
+  },
+  {
+   "name": "ERNIE Image",
+   "creator": "Baidu",
+   "category": "aa_t2i",
+   "elo": 904,
+   "rank": 78
+  },
+  {
+   "name": "P-Image",
+   "creator": "Pruna AI",
+   "category": "aa_t2i",
+   "elo": 904,
+   "rank": 79
+  },
+  {
+   "name": "Vidu Q2",
+   "creator": "Vidu",
+   "category": "aa_t2i",
+   "elo": 901,
+   "rank": 80
+  },
+  {
+   "name": "Qwen Image",
+   "creator": "Alibaba",
+   "category": "aa_t2i",
+   "elo": 898,
+   "rank": 81,
+   "note": "révision non précisée (l'atlas a alibaba-qwen-image-2512)"
+  },
+  {
+   "name": "GLM-Image",
+   "creator": "Z AI",
+   "category": "aa_t2i",
+   "elo": 887,
+   "rank": 83
+  },
+  {
+   "name": "FLUX1.1 [pro]",
+   "creator": "Black Forest Labs",
+   "category": "aa_t2i",
+   "elo": 872,
+   "rank": 85
+  },
+  {
+   "name": "LongCat Image",
+   "creator": "Meituan",
+   "category": "aa_t2i",
+   "elo": 861,
+   "rank": 86
+  },
+  {
+   "name": "FLUX1.1 [pro] Ultra",
+   "creator": "Black Forest Labs",
+   "category": "aa_t2i",
+   "elo": 854,
+   "rank": 87
+  },
+  {
+   "name": "FIBO",
+   "creator": "Bria",
+   "category": "aa_t2i",
+   "elo": 849,
+   "rank": 89
+  },
+  {
+   "name": "FIBO Lite",
+   "creator": "Bria",
+   "category": "aa_t2i",
+   "elo": 815,
+   "rank": 95
+  },
+  {
+   "name": "SRPO",
+   "creator": "Tencent",
+   "category": "aa_t2i",
+   "elo": 814,
+   "rank": 96
+  },
+  {
+   "name": "FLUX.1 [dev]",
+   "creator": "Black Forest Labs",
+   "category": "aa_t2i",
+   "elo": 796,
+   "rank": 98
+  },
+  {
+   "name": "FLUX.1 [schnell]",
+   "creator": "Black Forest Labs",
+   "category": "aa_t2i",
+   "elo": 744,
+   "rank": 100
+  },
+  {
+   "name": "OmniGen V2",
+   "creator": "VectorSpaceLab",
+   "category": "aa_t2i",
+   "elo": 721,
+   "rank": 101
+  },
+  {
+   "name": "Bagel",
+   "creator": "Bytedance",
+   "category": "aa_t2i",
+   "elo": 578,
+   "rank": 102
+  },
+  {
+   "name": "DreamImage 2.0",
+   "creator": "Newport AI",
+   "category": "aa_image_edit",
+   "elo": 1047,
+   "rank": 28
+  },
+  {
+   "name": "Wan 2.6 Image",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 1046,
+   "rank": 29
+  },
+  {
+   "name": "Wan 2.7 Pro",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 1045,
+   "rank": 30
+  },
+  {
+   "name": "Wan 2.7",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 1038,
+   "rank": 33
+  },
+  {
+   "name": "HunyuanImage 3.0 (Tencent Cloud)",
+   "creator": "Tencent",
+   "category": "aa_image_edit",
+   "elo": 1023,
+   "rank": 34,
+   "note": "service Tencent Cloud de HunyuanImage 3.0, doublon de tencent-hunyuanimage-3-0 (rattaché à l'entrée sans suffixe)"
+  },
+  {
+   "name": "FLUX.2 [dev] Flash",
+   "creator": "Fal",
+   "category": "aa_image_edit",
+   "elo": 1021,
+   "rank": 35
+  },
+  {
+   "name": "FLUX.2 [dev] Turbo",
+   "creator": "Fal",
+   "category": "aa_image_edit",
+   "elo": 1012,
+   "rank": 36
+  },
+  {
+   "name": "Step Image Edit 2",
+   "creator": "StepFun",
+   "category": "aa_image_edit",
+   "elo": 1005,
+   "rank": 40
+  },
+  {
+   "name": "GPT Image 1 (high)",
+   "creator": "OpenAI",
+   "category": "aa_image_edit",
+   "elo": 991,
+   "rank": 43
+  },
+  {
+   "name": "P-Image-Edit",
+   "creator": "Pruna AI",
+   "category": "aa_image_edit",
+   "elo": 981,
+   "rank": 48
+  },
+  {
+   "name": "Qwen Image 2.0 (2026-03-03)",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 971,
+   "rank": 49
+  },
+  {
+   "name": "Qwen Image Edit Plus 2509",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 969,
+   "rank": 50
+  },
+  {
+   "name": "Kling Image 3.0 Omni",
+   "creator": "KlingAI",
+   "category": "aa_image_edit",
+   "elo": 952,
+   "rank": 52
+  },
+  {
+   "name": "Kling Image O1",
+   "creator": "KlingAI",
+   "category": "aa_image_edit",
+   "elo": 944,
+   "rank": 53
+  },
+  {
+   "name": "Vidu Q2",
+   "creator": "Vidu",
+   "category": "aa_image_edit",
+   "elo": 943,
+   "rank": 54
+  },
+  {
+   "name": "FIBO Edit",
+   "creator": "Bria",
+   "category": "aa_image_edit",
+   "elo": 912,
+   "rank": 58
+  },
+  {
+   "name": "SeedEdit 3.0",
+   "creator": "ByteDance Seed",
+   "category": "aa_image_edit",
+   "elo": 904,
+   "rank": 60
+  },
+  {
+   "name": "Qwen Image Edit",
+   "creator": "Alibaba",
+   "category": "aa_image_edit",
+   "elo": 893,
+   "rank": 61
+  },
+  {
+   "name": "LongCat Image",
+   "creator": "Meituan",
+   "category": "aa_image_edit",
+   "elo": 893,
+   "rank": 63
+  },
+  {
+   "name": "GLM-Image",
+   "creator": "Z AI",
+   "category": "aa_image_edit",
+   "elo": 817,
+   "rank": 65
+  },
+  {
+   "name": "OmniGen V2",
+   "creator": "VectorSpaceLab",
+   "category": "aa_image_edit",
+   "elo": 797,
+   "rank": 66
+  },
+  {
+   "name": "Bagel",
+   "creator": "Bytedance",
+   "category": "aa_image_edit",
+   "elo": 792,
+   "rank": 67
+  },
+  {
+   "name": "HiDream-E1.1",
+   "creator": "HiDream",
+   "category": "aa_image_edit",
+   "elo": 775,
+   "rank": 68
+  },
+  {
+   "name": "Step1X-Edit",
+   "creator": "StepFun",
+   "category": "aa_image_edit",
+   "elo": 608,
+   "rank": 69
+  },
+  {
+   "name": "grok-imagine-image-2.0 (canvas)",
+   "category": "arena_t2i",
+   "elo": 1334,
+   "rank": 4,
+   "preliminary": true,
+   "note": "variante canvas ; l'entrée datée (20260801) est rattachée à xai-grok-imagine-image-2-0"
+  },
+  {
+   "name": "reve-2.0",
+   "category": "arena_t2i",
+   "elo": 1269,
+   "rank": 10
+  },
+  {
+   "name": "gemini-3-pro-image-2k (nano-banana-pro)",
+   "category": "arena_t2i",
+   "elo": 1248,
+   "rank": 16,
+   "note": "variante 2K de Nano Banana Pro ; l'entrée preview est rattachée à google-nano-banana-pro"
+  },
+  {
+   "name": "qwen-image-2.0-pro-2026-06-22",
+   "category": "arena_t2i",
+   "elo": 1192,
+   "rank": 21,
+   "note": "révision du 22/06, l'atlas a la révision du 22/04 (alibaba-qwen-image-2-0-pro)"
+  },
+  {
+   "name": "uni-1.1-max",
+   "category": "arena_t2i",
+   "elo": 1189,
+   "rank": 22,
+   "note": "version 1.1, l'atlas a UNI-1 Max"
+  },
+  {
+   "name": "uni-1.1",
+   "category": "arena_t2i",
+   "elo": 1184,
+   "rank": 23,
+   "note": "version 1.1, l'atlas a UNI-1"
+  },
+  {
+   "name": "mai-image-2",
+   "category": "arena_t2i",
+   "elo": 1184,
+   "rank": 24
+  },
+  {
+   "name": "Cosmos3-Super-Text2Image (Agentic)",
+   "category": "arena_t2i",
+   "elo": 1165,
+   "rank": 27
+  },
+  {
+   "name": "grok-imagine-image-pro",
+   "category": "arena_t2i",
+   "elo": 1162,
+   "rank": 28,
+   "note": "nom différent de grok-imagine-image-quality, non rattaché"
+  },
+  {
+   "name": "reve-v1.5",
+   "category": "arena_t2i",
+   "elo": 1155,
+   "rank": 31
+  },
+  {
+   "name": "Cosmos3-Super-Text2Image",
+   "category": "arena_t2i",
+   "elo": 1152,
+   "rank": 33
+  },
+  {
+   "name": "seedream-4-2k",
+   "category": "arena_t2i",
+   "elo": 1140,
+   "rank": 39,
+   "note": "variante de Seedream 4.0 (trois entrées arena : 2k, fal, high-res-fal), non rattachée faute d'entrée canonique"
+  },
+  {
+   "name": "wan2.6-t2i",
+   "category": "arena_t2i",
+   "elo": 1137,
+   "rank": 41
+  },
+  {
+   "name": "recraft-v4.1-pro",
+   "category": "arena_t2i",
+   "elo": 1133,
+   "rank": 42,
+   "note": "ne correspond pas à une entrée Recraft V4.1 de l'atlas"
+  },
+  {
+   "name": "imagen-4.0-generate-001",
+   "category": "arena_t2i",
+   "elo": 1129,
+   "rank": 43
+  },
+  {
+   "name": "seedream-4-fal",
+   "category": "arena_t2i",
+   "elo": 1117,
+   "rank": 46,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "wan2.5-t2i-preview",
+   "category": "arena_t2i",
+   "elo": 1116,
+   "rank": 48
+  },
+  {
+   "name": "gpt-image-1",
+   "category": "arena_t2i",
+   "elo": 1116,
+   "rank": 49
+  },
+  {
+   "name": "recraft-v4",
+   "category": "arena_t2i",
+   "elo": 1115,
+   "rank": 50
+  },
+  {
+   "name": "seedream-4-high-res-fal",
+   "category": "arena_t2i",
+   "elo": 1113,
+   "rank": 51,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "wan2.7-image-pro",
+   "category": "arena_t2i",
+   "elo": 1104,
+   "rank": 55
+  },
+  {
+   "name": "wan2.7-image",
+   "category": "arena_t2i",
+   "elo": 1101,
+   "rank": 56
+  },
+  {
+   "name": "mai-image-1",
+   "category": "arena_t2i",
+   "elo": 1093,
+   "rank": 58
+  },
+  {
+   "name": "seedream-3",
+   "category": "arena_t2i",
+   "elo": 1082,
+   "rank": 60
+  },
+  {
+   "name": "qwen-image-prompt-extend",
+   "category": "arena_t2i",
+   "elo": 1060,
+   "rank": 63
+  },
+  {
+   "name": "imagen-3.0-generate-002",
+   "category": "arena_t2i",
+   "elo": 1058,
+   "rank": 65
+  },
+  {
+   "name": "qwen-image",
+   "category": "arena_t2i",
+   "elo": 1057,
+   "rank": 66
+  },
+  {
+   "name": "p-image",
+   "category": "arena_t2i",
+   "elo": 1033,
+   "rank": 69
+  },
+  {
+   "name": "runway-gen4",
+   "category": "arena_t2i",
+   "elo": 1024,
+   "rank": 71
+  },
+  {
+   "name": "recraft-v3",
+   "category": "arena_t2i",
+   "elo": 1021,
+   "rank": 72
+  },
+  {
+   "name": "flux-1.1-pro",
+   "category": "arena_t2i",
+   "elo": 1016,
+   "rank": 73
+  },
+  {
+   "name": "ideogram-v2",
+   "category": "arena_t2i",
+   "elo": 1013,
+   "rank": 74
+  },
+  {
+   "name": "lucid-origin",
+   "category": "arena_t2i",
+   "elo": 1013,
+   "rank": 75,
+   "note": "Ultra ou Fast non précisé"
+  },
+  {
+   "name": "glm-image",
+   "category": "arena_t2i",
+   "elo": 1012,
+   "rank": 76
+  },
+  {
+   "name": "gemini-2.0-flash-preview-image-generation",
+   "category": "arena_t2i",
+   "elo": 975,
+   "rank": 77
+  },
+  {
+   "name": "flux-1-dev-fp8",
+   "category": "arena_t2i",
+   "elo": 969,
+   "rank": 78
+  },
+  {
+   "name": "dall-e-3",
+   "category": "arena_t2i",
+   "elo": 968,
+   "rank": 79
+  },
+  {
+   "name": "bagel",
+   "category": "arena_t2i",
+   "elo": 898,
+   "rank": 82
+  },
+  {
+   "name": "grok-imagine-image-2.0 (canvas)",
+   "category": "arena_image_edit",
+   "elo": 1439,
+   "rank": 4,
+   "preliminary": true,
+   "note": "variante canvas ; l'entrée datée (20260801) est rattachée à xai-grok-imagine-image-2-0"
+  },
+  {
+   "name": "gemini-3-pro-image-2k (nano-banana-pro)",
+   "category": "arena_image_edit",
+   "elo": 1390,
+   "rank": 12,
+   "note": "variante 2K de Nano Banana Pro ; l'entrée preview est rattachée à google-nano-banana-pro"
+  },
+  {
+   "name": "chatgpt-image-latest-high-fidelity (20251216)",
+   "category": "arena_image_edit",
+   "elo": 1389,
+   "rank": 13
+  },
+  {
+   "name": "reve-2.0",
+   "category": "arena_image_edit",
+   "elo": 1359,
+   "rank": 19
+  },
+  {
+   "name": "uni-1.1-max",
+   "category": "arena_image_edit",
+   "elo": 1334,
+   "rank": 21,
+   "note": "version 1.1, l'atlas a UNI-1 Max"
+  },
+  {
+   "name": "uni-1.1",
+   "category": "arena_image_edit",
+   "elo": 1315,
+   "rank": 23,
+   "note": "version 1.1, l'atlas a UNI-1"
+  },
+  {
+   "name": "qwen-image-2.0-pro-2026-06-22",
+   "category": "arena_image_edit",
+   "elo": 1303,
+   "rank": 25,
+   "note": "révision du 22/06, l'atlas a la révision du 22/04 (alibaba-qwen-image-2-0-pro)"
+  },
+  {
+   "name": "wan2.7-image-pro",
+   "category": "arena_image_edit",
+   "elo": 1303,
+   "rank": 27
+  },
+  {
+   "name": "wan2.7-image",
+   "category": "arena_image_edit",
+   "elo": 1301,
+   "rank": 29
+  },
+  {
+   "name": "seedream-4-2k",
+   "category": "arena_image_edit",
+   "elo": 1270,
+   "rank": 32,
+   "note": "variante de Seedream 4.0 (trois entrées arena : 2k, fal, high-res-fal), non rattachée faute d'entrée canonique"
+  },
+  {
+   "name": "reve-v1.1",
+   "category": "arena_image_edit",
+   "elo": 1262,
+   "rank": 33
+  },
+  {
+   "name": "kling-image-o1",
+   "category": "arena_image_edit",
+   "elo": 1251,
+   "rank": 35
+  },
+  {
+   "name": "qwen-image-edit",
+   "category": "arena_image_edit",
+   "elo": 1242,
+   "rank": 37
+  },
+  {
+   "name": "wan2.6-image",
+   "category": "arena_image_edit",
+   "elo": 1231,
+   "rank": 40
+  },
+  {
+   "name": "seedream-4-high-res-fal",
+   "category": "arena_image_edit",
+   "elo": 1217,
+   "rank": 44,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "p-image-edit",
+   "category": "arena_image_edit",
+   "elo": 1211,
+   "rank": 45
+  },
+  {
+   "name": "seedream-4-fal",
+   "category": "arena_image_edit",
+   "elo": 1210,
+   "rank": 46,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "reve-v1.1-fast",
+   "category": "arena_image_edit",
+   "elo": 1207,
+   "rank": 47
+  },
+  {
+   "name": "reve-edit-fast",
+   "category": "arena_image_edit",
+   "elo": 1198,
+   "rank": 48
+  },
+  {
+   "name": "wan2.5-i2i-preview",
+   "category": "arena_image_edit",
+   "elo": 1181,
+   "rank": 50
+  },
+  {
+   "name": "seededit-3.0",
+   "category": "arena_image_edit",
+   "elo": 1139,
+   "rank": 54
+  },
+  {
+   "name": "gpt-image-1",
+   "category": "arena_image_edit",
+   "elo": 1139,
+   "rank": 55
+  },
+  {
+   "name": "gemini-2.0-flash-preview-image-generation",
+   "category": "arena_image_edit",
+   "elo": 1081,
+   "rank": 57
+  },
+  {
+   "name": "bagel",
+   "category": "arena_image_edit",
+   "elo": 1027,
+   "rank": 58
+  },
+  {
+   "name": "step1x-edit",
+   "category": "arena_image_edit",
+   "elo": 998,
+   "rank": 59
+  },
+  {
+   "name": "gemini-3-pro-image-2k (nano-banana-pro)",
+   "category": "arena_multi_image_edit",
+   "elo": 1364,
+   "rank": 9,
+   "note": "variante 2K de Nano Banana Pro ; l'entrée preview est rattachée à google-nano-banana-pro"
+  },
+  {
+   "name": "chatgpt-image-latest-high-fidelity (20251216)",
+   "category": "arena_multi_image_edit",
+   "elo": 1353,
+   "rank": 10
+  },
+  {
+   "name": "reve-2.0",
+   "category": "arena_multi_image_edit",
+   "elo": 1345,
+   "rank": 11
+  },
+  {
+   "name": "uni-1.1-max",
+   "category": "arena_multi_image_edit",
+   "elo": 1308,
+   "rank": 14,
+   "note": "version 1.1, l'atlas a UNI-1 Max"
+  },
+  {
+   "name": "wan2.7-image-pro",
+   "category": "arena_multi_image_edit",
+   "elo": 1290,
+   "rank": 16
+  },
+  {
+   "name": "uni-1.1",
+   "category": "arena_multi_image_edit",
+   "elo": 1286,
+   "rank": 18,
+   "note": "version 1.1, l'atlas a UNI-1"
+  },
+  {
+   "name": "wan2.7-image",
+   "category": "arena_multi_image_edit",
+   "elo": 1280,
+   "rank": 19
+  },
+  {
+   "name": "reve-v1.1",
+   "category": "arena_multi_image_edit",
+   "elo": 1262,
+   "rank": 21
+  },
+  {
+   "name": "kling-image-o1",
+   "category": "arena_multi_image_edit",
+   "elo": 1254,
+   "rank": 22
+  },
+  {
+   "name": "wan2.6-image",
+   "category": "arena_multi_image_edit",
+   "elo": 1219,
+   "rank": 28
+  },
+  {
+   "name": "seedream-4-high-res-fal",
+   "category": "arena_multi_image_edit",
+   "elo": 1209,
+   "rank": 30,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "seedream-4-2k",
+   "category": "arena_multi_image_edit",
+   "elo": 1202,
+   "rank": 32,
+   "note": "variante de Seedream 4.0 (trois entrées arena : 2k, fal, high-res-fal), non rattachée faute d'entrée canonique"
+  },
+  {
+   "name": "wan2.5-i2i-preview",
+   "category": "arena_multi_image_edit",
+   "elo": 1165,
+   "rank": 35
+  },
+  {
+   "name": "seedream-4-fal",
+   "category": "arena_multi_image_edit",
+   "elo": 1156,
+   "rank": 36,
+   "note": "variante de Seedream 4.0, non rattachée"
+  },
+  {
+   "name": "p-image-edit",
+   "category": "arena_multi_image_edit",
+   "elo": 1146,
+   "rank": 37
+  },
+  {
+   "name": "gpt-image-1",
+   "category": "arena_multi_image_edit",
+   "elo": 1126,
+   "rank": 38
+  },
+  {
+   "name": "gemini-2.0-flash-preview-image-generation",
+   "category": "arena_multi_image_edit",
+   "elo": 1058,
+   "rank": 42
+  },
+  {
+   "name": "seededit-3.0",
+   "category": "arena_multi_image_edit",
+   "elo": 1043,
+   "rank": 43
+  },
+  {
+   "name": "grok-imagine-video-1.5-agent",
+   "category": "arena_t2v",
+   "elo": 1492,
+   "rank": 4,
+   "preliminary": true,
+   "note": "mode agent de Grok Imagine 1.5, distinct de l'entrée 720p"
+  },
+  {
+   "name": "muse-video",
+   "category": "arena_t2v",
+   "elo": 1456,
+   "rank": 9
+  },
+  {
+   "name": "veo-3.1-audio-1080p",
+   "category": "arena_t2v",
+   "elo": 1362,
+   "rank": 13,
+   "note": "variante 1080p de google-veo-3-1 (rattachée à l'entrée de base)"
+  },
+  {
+   "name": "veo-3.1-fast-audio-1080p",
+   "category": "arena_t2v",
+   "elo": 1358,
+   "rank": 15,
+   "note": "variante 1080p de google-veo-3-1-fast"
+  },
+  {
+   "name": "veo-3-fast-audio",
+   "category": "arena_t2v",
+   "elo": 1348,
+   "rank": 16
+  },
+  {
+   "name": "veo-3-audio",
+   "category": "arena_t2v",
+   "elo": 1340,
+   "rank": 19
+  },
+  {
+   "name": "veo-3",
+   "category": "arena_t2v",
+   "elo": 1254,
+   "rank": 23
+  },
+  {
+   "name": "veo-3-fast",
+   "category": "arena_t2v",
+   "elo": 1248,
+   "rank": 24
+  },
+  {
+   "name": "wan2.5-t2v-preview",
+   "category": "arena_t2v",
+   "elo": 1245,
+   "rank": 25
+  },
+  {
+   "name": "pixverse-v5.6",
+   "category": "arena_t2v",
+   "elo": 1240,
+   "rank": 26
+  },
+  {
+   "name": "hailuo-02-pro",
+   "category": "arena_t2v",
+   "elo": 1198,
+   "rank": 34
+  },
+  {
+   "name": "seedance-v1-pro",
+   "category": "arena_t2v",
+   "elo": 1191,
+   "rank": 35
+  },
+  {
+   "name": "hailuo-02-standard",
+   "category": "arena_t2v",
+   "elo": 1181,
+   "rank": 36
+  },
+  {
+   "name": "kandinsky-5.0-t2v-pro",
+   "category": "arena_t2v",
+   "elo": 1175,
+   "rank": 37
+  },
+  {
+   "name": "veo-2",
+   "category": "arena_t2v",
+   "elo": 1164,
+   "rank": 39
+  },
+  {
+   "name": "kling-v2.1-master",
+   "category": "arena_t2v",
+   "elo": 1163,
+   "rank": 40
+  },
+  {
+   "name": "ltx-2-19b",
+   "category": "arena_t2v",
+   "elo": 1154,
+   "rank": 41
+  },
+  {
+   "name": "seedance-v1-lite",
+   "category": "arena_t2v",
+   "elo": 1113,
+   "rank": 43
+  },
+  {
+   "name": "kandinsky-5.0-t2v-lite",
+   "category": "arena_t2v",
+   "elo": 1113,
+   "rank": 44
+  },
+  {
+   "name": "sora",
+   "category": "arena_t2v",
+   "elo": 1069,
+   "rank": 45
+  },
+  {
+   "name": "ray2",
+   "category": "arena_t2v",
+   "elo": 1065,
+   "rank": 46
+  },
+  {
+   "name": "pika-v2.2",
+   "category": "arena_t2v",
+   "elo": 1009,
+   "rank": 47,
+   "note": "Pika 2.2 générique ; l'atlas a pika-2-2-pikaframes, non rattaché"
+  },
+  {
+   "name": "mochi-v1",
+   "category": "arena_t2v",
+   "elo": 1007,
+   "rank": 48
+  },
+  {
+   "name": "hidream-o1-video-1.0",
+   "category": "arena_i2v",
+   "elo": 1456,
+   "rank": 7,
+   "preliminary": true
+  },
+  {
+   "name": "veo-3.1-audio-1080p",
+   "category": "arena_i2v",
+   "elo": 1390,
+   "rank": 14,
+   "note": "variante 1080p de google-veo-3-1 (rattachée à l'entrée de base)"
+  },
+  {
+   "name": "grok-imagine-video-480p",
+   "category": "arena_i2v",
+   "elo": 1385,
+   "rank": 16,
+   "note": "variante 480p de xai-grok-imagine-1-0"
+  },
+  {
+   "name": "veo-3.1-fast-audio-1080p",
+   "category": "arena_i2v",
+   "elo": 1372,
+   "rank": 17,
+   "note": "variante 1080p de google-veo-3-1-fast"
+  },
+  {
+   "name": "veo-3-audio",
+   "category": "arena_i2v",
+   "elo": 1331,
+   "rank": 20
+  },
+  {
+   "name": "veo-3-fast-audio",
+   "category": "arena_i2v",
+   "elo": 1326,
+   "rank": 21
+  },
+  {
+   "name": "wan2.5-i2v-preview",
+   "category": "arena_i2v",
+   "elo": 1321,
+   "rank": 22
+  },
+  {
+   "name": "pixverse-v5.6",
+   "category": "arena_i2v",
+   "elo": 1299,
+   "rank": 25
+  },
+  {
+   "name": "seedance-v1-pro",
+   "category": "arena_i2v",
+   "elo": 1273,
+   "rank": 28
+  },
+  {
+   "name": "veo-3",
+   "category": "arena_i2v",
+   "elo": 1258,
+   "rank": 30
+  },
+  {
+   "name": "veo-3-fast",
+   "category": "arena_i2v",
+   "elo": 1257,
+   "rank": 31
+  },
+  {
+   "name": "kling-v2.1-master",
+   "category": "arena_i2v",
+   "elo": 1235,
+   "rank": 34
+  },
+  {
+   "name": "hailuo-02-pro",
+   "category": "arena_i2v",
+   "elo": 1229,
+   "rank": 35
+  },
+  {
+   "name": "kling-v2.1-standard",
+   "category": "arena_i2v",
+   "elo": 1229,
+   "rank": 36
+  },
+  {
+   "name": "hailuo-02-standard",
+   "category": "arena_i2v",
+   "elo": 1224,
+   "rank": 38
+  },
+  {
+   "name": "hailuo-02-fast",
+   "category": "arena_i2v",
+   "elo": 1194,
+   "rank": 41
+  },
+  {
+   "name": "seedance-v1-lite",
+   "category": "arena_i2v",
+   "elo": 1185,
+   "rank": 42
+  },
+  {
+   "name": "veo-2",
+   "category": "arena_i2v",
+   "elo": 1166,
+   "rank": 44
+  },
+  {
+   "name": "ltx-2-19b",
+   "category": "arena_i2v",
+   "elo": 1159,
+   "rank": 45
+  },
+  {
+   "name": "ray2",
+   "category": "arena_i2v",
+   "elo": 1108,
+   "rank": 46
+  },
+  {
+   "name": "runway-gen4-turbo",
+   "category": "arena_i2v",
+   "elo": 1052,
+   "rank": 47
+  },
+  {
+   "name": "pika-v2.2",
+   "category": "arena_i2v",
+   "elo": 997,
+   "rank": 48,
+   "note": "Pika 2.2 générique ; l'atlas a pika-2-2-pikaframes, non rattaché"
+  },
+  {
+   "name": "runway-gen4-aleph",
+   "category": "arena_video_edit",
+   "elo": 1182,
+   "rank": 10,
+   "note": "Aleph première version ; l'atlas a runway-aleph-2"
+  }
+ ],
+ "conflicts_skipped": []
+}

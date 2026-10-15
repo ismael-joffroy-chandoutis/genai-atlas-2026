@@ -16,6 +16,10 @@ A comparison of generative video and image models as of 15 October 2026, variant
   - `prices.json`: 1138 prices for 362 models across 27 platforms (pay-per-use APIs, vendors, subscriptions).
   - `local-runs.json`: whether each open-weight model runs on a Mac M5 Max 128 GB and on an RTX 4090 24 GB, with the tool to use.
   - `gpu-hour.json`: GPU rental prices per hour.
+  - `3d-models.json`: 76 3D variants (image to 3D, scene reconstruction, worlds, rigging, depth and camera), with the 3D Arena scores.
+  - `rankings.json`: every public leaderboard score by category (Artificial Analysis and arena.ai: text, image and reference to video, with and without audio, video editing, text to image, image editing, multi-image editing).
+  - `platforms.json`: the platforms themselves: verdict, moderation of real faces, whether a refusal is billed, payment, Seedance price.
+  - `integrations.json`: in which local tools each model ships (official ComfyUI templates, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene).
   - `SCHEMA.md`: the format of every file.
 - `scripts/`: price readers (fal, OpenRouter, GPU clouds), the price merger, the table export and the builder of a single-file interactive page (`python3 scripts/build_atlas.py`, output in `site/`).
 - `lab/focal-test/`: a reproducible test on focal length and sensor (see below).

@@ -8,6 +8,15 @@ D = ROOT / "data"
 load = lambda n, d: json.loads((D / n).read_text()) if (D / n).exists() else d
 video, image = load("video-models.json", []), load("image-models.json", [])
 prices, alias, local = load("prices.json", []), load("model-id-aliases.json", {}), load("local-runs.json", {})
+integ = load("integrations.json", {}).get("by_id", {})
+def ints(mid):
+    i = integ.get(mid, {}); L = []
+    if i.get("comfyui_local"): L.append("ComfyUI")
+    if i.get("wan2gp"): L.append("Wan2GP")
+    if i.get("pinokio"): L.append("Pinokio")
+    for k, nm in (("drawthings", "Draw Things"), ("maestro", "Maestro"), ("phosphene", "Phosphene")):
+        if i.get(k) is True: L.append(nm)
+    return ", ".join(L) or "–"
 
 best = {}
 for p in prices:
@@ -36,9 +45,9 @@ def refs(m, n, s):
 
 out = ["# Tables", "", "Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 October 2026. "
        "`?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. "
-       "Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. Notes inside the JSON files are in French.", ""]
-out += ["## Video", "", "| Model | Vendor | Open weights | Duration | Max res | Audio | Image refs | Video refs | Audio refs | First / last frame | Keyframes | LoRA | 5090 | 4090 | Mac 128 GB | AA T2V | AA I2V | Cheapest 720p $/s |",
-        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+       "Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. \"Integrated in\" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.", ""]
+out += ["## Video", "", "| Model | Vendor | Open weights | Duration | Max res | Audio | Image refs | Video refs | Audio refs | First / last frame | Keyframes | LoRA | 5090 | 4090 | Mac 128 GB | AA T2V | AA I2V | Integrated in | Cheapest 720p $/s |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 for m in sorted(video, key=lambda m: (m["family"], m["variant"])):
     L = local.get(m["id"], {})
     out.append("| " + " | ".join([
@@ -48,10 +57,10 @@ for m in sorted(video, key=lambda m: (m["family"], m["variant"])):
         refs(m, "inputs.audio_refs_max", "inputs.audio_refs_total_s"),
         f"{yn(g(m, 'inputs.first_frame'))} / {yn(g(m, 'inputs.last_frame'))}", num(g(m, "inputs.keyframes_max")),
         yn(g(m, "inputs.lora_inference")), yn(g(m, "local.runs_on_rtx5090_32gb")), yn(L.get("rtx4090_24gb")), yn(L.get("mac_m5max_128gb")),
-        num(g(m, "ranking.aa_text_to_video")), num(g(m, "ranking.aa_image_to_video")), money(m["id"], "price_usd_720p_s"),
+        num(g(m, "ranking.aa_text_to_video")), num(g(m, "ranking.aa_image_to_video")), ints(m["id"]), money(m["id"], "price_usd_720p_s"),
     ]).replace("\n", " ") + " |")
-out += ["", "## Image", "", "| Model | Vendor | Open weights | License | Max res | Image refs | Edit | LoRA | 5090 | 4090 | Mac 128 GB | AA T2I | AA edit | Cheapest $/image |",
-        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+out += ["", "## Image", "", "| Model | Vendor | Open weights | License | Max res | Image refs | Edit | LoRA | 5090 | 4090 | Mac 128 GB | AA T2I | AA edit | Integrated in | Cheapest $/image |",
+        "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
 for m in sorted(image, key=lambda m: (m["family"], m["variant"])):
     L = local.get(m["id"], {})
     out.append("| " + " | ".join([
@@ -59,7 +68,7 @@ for m in sorted(image, key=lambda m: (m["family"], m["variant"])):
         (g(m, "access.license") or "?").replace("|", "/"), num(g(m, "outputs.max_resolution")),
         num(g(m, "inputs.image_refs_max")), yn(g(m, "inputs.image_edit")), yn(g(m, "inputs.lora_inference")),
         yn(g(m, "local.runs_on_rtx5090_32gb")), yn(L.get("rtx4090_24gb")), yn(L.get("mac_m5max_128gb")),
-        num(g(m, "ranking.aa_text_to_image")), num(g(m, "ranking.aa_image_edit")), money(m["id"], "price_usd_per_image"),
+        num(g(m, "ranking.aa_text_to_image")), num(g(m, "ranking.aa_image_edit")), ints(m["id"]), money(m["id"], "price_usd_per_image"),
     ]).replace("\n", " ") + " |")
 (ROOT / "TABLES.md").write_text("\n".join(out) + "\n")
 print("TABLES.md :", len(video), "video,", len(image), "image")

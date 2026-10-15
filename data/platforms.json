@@ -1,0 +1,824 @@
+[
+ {
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "type": "agregateur",
+  "country": "US",
+  "url": "https://openrouter.ai",
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0 / mini / Fast",
+   "H3 Max (sans son)",
+   "Wan 3.0",
+   "Kling 3.0"
+  ],
+  "seedance": {
+   "version": "2.5 (20260807)",
+   "usd_480p_s": 0.103,
+   "usd_720p_s": 0.231,
+   "usd_1080p_s": null,
+   "note": "480p et 720p seulement, 4 à 30 s ; prix officiel BytePlus"
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "echec amont (502) non facture ; refus de moderation inconnu",
+  "payment": [
+   "carte",
+   "crypto"
+  ],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Prix officiel, une seule clé, paiement carte ou crypto.",
+  "sources": [
+   {
+    "url": "https://openrouter.ai/api/v1/videos/models",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://openrouter.ai/bytedance/seedance-2.5",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "byteplus",
+  "name": "BytePlus ModelArk",
+  "type": "editeur",
+  "country": "SG/CN",
+  "url": "https://www.byteplus.com/en/product/modelark",
+  "models": [
+   "Seedance 2.5",
+   "Seedance 2.0"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.103,
+   "usd_720p_s": 0.231,
+   "usd_1080p_s": 0.569,
+   "note": "voie officielle ByteDance hors Chine"
+  },
+  "moderation": {
+   "real_faces": "verif_identite",
+   "public_figures": null,
+   "violence": "filtre par mots-clés (« attack », « blood » refusés)",
+   "notes": "Personne réelle seulement après vérification de vivacité faite par la personne (Group ID réutilisable)."
+  },
+  "refusal_billed": "non facture (annonce)",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Offre non vendue au Royaume-Uni ni aux États-Unis.",
+  "verdict": "fiable",
+  "verdict_reason": "Seule voie propre pour une personne réelle consentante.",
+  "sources": [
+   {
+    "url": "https://docs.byteplus.com/docs/ModelArk/upload-real-person-portrait-assets",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://thesource.com/2026/04/15/seedance/",
+    "date": "2026-04-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "replicate",
+  "name": "Replicate",
+  "type": "agregateur",
+  "country": "US",
+  "url": "https://replicate.com",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.1028,
+   "usd_720p_s": 0.2312,
+   "usd_1080p_s": null
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "carte"
+  ],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Prix officiel, plateforme établie.",
+  "sources": []
+ },
+ {
+  "id": "runware",
+  "name": "Runware",
+  "type": "agregateur",
+  "country": "US",
+  "url": "https://runware.ai",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.1025,
+   "usd_720p_s": 0.2304,
+   "usd_1080p_s": 0.6135
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Prix officiel.",
+  "sources": []
+ },
+ {
+  "id": "segmind",
+  "name": "Segmind",
+  "type": "agregateur",
+  "country": "US/IN",
+  "url": "https://www.segmind.com",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.1102,
+   "usd_720p_s": 0.2369,
+   "usd_1080p_s": 0.5828
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Annonce ne pas ajouter de filtre devant Seedance ; les contrôles de ByteDance restent actifs."
+  },
+  "refusal_billed": "0 $ (annonce, article incohérent)",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Rien de plus permissif en pratique que BytePlus.",
+  "sources": []
+ },
+ {
+  "id": "kie",
+  "name": "kie.ai",
+  "type": "agregateur",
+  "country": null,
+  "url": "https://kie.ai",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.14,
+   "usd_720p_s": 0.315,
+   "usd_1080p_s": 0.79
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Trustpilot 3,3/5 sur 5 avis, plaintes de fiabilité (Sora) ; domaine de 2022. Souvent le moins cher sur Veo et Grok.",
+  "verdict": "tester",
+  "verdict_reason": "Bas prix sur Veo et Grok, fiabilité moyenne.",
+  "sources": []
+ },
+ {
+  "id": "wavespeed",
+  "name": "WaveSpeed",
+  "type": "agregateur",
+  "country": null,
+  "url": "https://wavespeed.ai",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.18,
+   "usd_720p_s": 0.36,
+   "usd_1080p_s": 0.9
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Environ 75 % plus cher que le prix officiel.",
+  "sources": []
+ },
+ {
+  "id": "fal",
+  "name": "fal.ai",
+  "type": "agregateur",
+  "country": "US",
+  "url": "https://fal.ai",
+  "models": [
+   "catalogue le plus large",
+   "H3, H3 Max, LoRA H3 et Wan"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.2205,
+   "usd_720p_s": 0.473,
+   "usd_1080p_s": null
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "erreur 500 non facturée ; refus 422 peut être facturé",
+  "payment": [],
+  "lora_hosting": "oui (H3, Wan)",
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Catalogue le plus large et fonctions H3 Max ; Seedance deux fois plus cher qu'ailleurs.",
+  "sources": []
+ },
+ {
+  "id": "dreamina",
+  "name": "Dreamina / CapCut",
+  "type": "editeur (abonnement)",
+  "country": "SG/CN",
+  "url": "https://dreamina.capcut.com",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.047,
+   "usd_1080p_s": null,
+   "note": "plan Super annuel, 1re année ; promo 0,035 terminée le 09/10 ; prix de renouvellement inconnu"
+  },
+  "moderation": {
+   "real_faces": "bloque",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Filtre visages réels probablement plus strict que l'API."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Officiel ByteDance, le moins cher par abonnement si le prix se confirme.",
+  "sources": []
+ },
+ {
+  "id": "krea",
+  "name": "Krea",
+  "type": "abonnement",
+  "country": "US",
+  "url": "https://www.krea.ai",
+  "models": [
+   "Seedance 2.5 jusqu'en 1080p et 30 s",
+   "H3 Max",
+   "Wan 3.0",
+   "GPT Image 2.5"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": null,
+   "usd_720p_s": null,
+   "usd_1080p_s": null,
+   "note": "inclus dans l'abonnement, coût en unités non publié"
+  },
+  "moderation": {
+   "real_faces": "bloque",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Seedance 2.5 refuse les visages réels par défaut ; H3 Max et Wan 3.0 avec vidéo de référence acceptés (observé le 08/10/2026)."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": "oui",
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Plusieurs modèles sur un abonnement.",
+  "sources": []
+ },
+ {
+  "id": "higgsfield",
+  "name": "Higgsfield",
+  "type": "abonnement",
+  "country": "US",
+  "url": "https://higgsfield.ai",
+  "models": [
+   "H3",
+   "Seedance",
+   "Kling",
+   "Veo",
+   "Soul ID",
+   "face swap",
+   "clonage de voix"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": "Détecteur de ressemblance avec des célébrités qui signale sans bloquer (offre Team seulement).",
+   "violence": null,
+   "notes": "Bloque personnages, logos, marques sportives ; le filtre Seedance s'applique aussi."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": "L'utilisateur garantit détenir les droits et indemnise Higgsfield en cas de réclamation ; usage commercial libre des sorties.",
+  "reliability": "Forbes (11/02/2026) : deepfakes non consentis fournis aux créateurs payés ; Trustpilot : refus de remboursement et comptes coupés.",
+  "verdict": "tester",
+  "verdict_reason": "Permissif en pratique mais tout le risque juridique est sur l'utilisateur.",
+  "sources": [
+   {
+    "url": "https://www.forbes.com/sites/rashishrivastava/2026/02/11/racist-videos-and-payment-problems-the-dark-side-of-this-ai-startups-super-fast-growth/",
+    "date": "2026-02-11",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "atlascloud",
+  "name": "Atlas Cloud",
+  "type": "agregateur",
+  "country": null,
+  "url": "https://www.atlascloud.ai",
+  "models": [],
+  "seedance": {
+   "version": "2.5 ?",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.134,
+   "usd_1080p_s": null,
+   "note": "pages contradictoires (« coming soon »)"
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Holding VCV Digital, société sœur dans la crypto ; blog qui inonde les recherches.",
+  "verdict": "tester",
+  "verdict_reason": "Tester avec 5 $ au plus.",
+  "sources": []
+ },
+ {
+  "id": "apiyi",
+  "name": "APIYI",
+  "type": "revendeur",
+  "country": "CN",
+  "url": "https://apiyi.com",
+  "models": [],
+  "seedance": {
+   "version": "2.5 (canal Volcengine)",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.27,
+   "usd_1080p_s": null
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [
+   "yuan"
+  ],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Domaine de 06/2024.",
+  "verdict": "tester",
+  "verdict_reason": "Pas moins cher qu'OpenRouter.",
+  "sources": []
+ },
+ {
+  "id": "chatcut",
+  "name": "ChatCut",
+  "type": "revendeur",
+  "country": "CN",
+  "url": "https://chatcut.io",
+  "models": [],
+  "seedance": {
+   "version": "2.5 (annonce 1080p)",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.15,
+   "usd_1080p_s": null,
+   "note": "promo affichée incohérente selon la langue"
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Domaine de 09/2024.",
+  "verdict": "tester",
+  "verdict_reason": "Promo à vérifier.",
+  "sources": []
+ },
+ {
+  "id": "openart",
+  "name": "OpenArt",
+  "type": "abonnement",
+  "country": "US",
+  "url": "https://openart.ai",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "note": "environ 3,64 $ le clip (chiffre d'un concurrent)"
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Prix non vérifié.",
+  "sources": []
+ },
+ {
+  "id": "volcengine",
+  "name": "Volcengine Ark",
+  "type": "editeur",
+  "country": "CN",
+  "url": "https://www.volcengine.com",
+  "models": [],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": 0.095,
+   "usd_720p_s": 0.21,
+   "usd_1080p_s": null,
+   "note": "70 ¥ par million de tokens"
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Compte avec vérification d'identité chinoise.",
+  "verdict": "eviter",
+  "verdict_reason": "Gain d'environ 10 %, compte chinois requis.",
+  "sources": []
+ },
+ {
+  "id": "laozhang",
+  "name": "laozhang.ai",
+  "type": "revendeur",
+  "country": null,
+  "url": "https://laozhang.ai",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Domaine de 03/2025, blog SEO, aucun avis indépendant.",
+  "verdict": "eviter",
+  "verdict_reason": "Prix trop bas sans garantie.",
+  "sources": []
+ },
+ {
+  "id": "jimeng-proxies",
+  "name": "PiAPI, 302.ai, useapi, GoAPI, Ttapi, Muapi",
+  "type": "revendeur",
+  "country": null,
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Historiquement fondés sur la rétro-ingénierie de comptes Jimeng.",
+  "verdict": "eviter",
+  "verdict_reason": "Rupture des conditions d'utilisation, comptes bannis, crédits perdus.",
+  "sources": []
+ },
+ {
+  "id": "seedance-clones",
+  "name": "seedance2.ai et clones",
+  "type": "clone",
+  "country": null,
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "Servent un autre modèle (Seedance 1.5, Veo, Sora) ; avis « arnaque », support mort.",
+  "verdict": "eviter",
+  "verdict_reason": "Arnaque documentée.",
+  "sources": [
+   {
+    "url": "https://ca.trustpilot.com/review/seedance2.ai",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "runway",
+  "name": "Runway",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://runwayml.com",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "bloque",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Interdit l'image ou la voix d'une personne réelle sans permission ; réglage contentModeration de l'API pour les personnalités publiques."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": "La revue humaine peut suspendre un compte sur un sujet sensible (terrorisme).",
+  "verdict": "tester",
+  "verdict_reason": "Risque de suspension sur des sujets sensibles.",
+  "sources": [
+   {
+    "url": "https://runwayml.com/safety/usage-policy",
+    "date": "2026-03-06",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "google",
+  "name": "Google (Veo, Gemini)",
+  "type": "editeur",
+  "country": "US",
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "bloque",
+   "public_figures": null,
+   "violence": null,
+   "notes": "person_generation=allow_all sur liste blanche dans Vertex."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Fiable, restrictif sur les visages.",
+  "sources": []
+ },
+ {
+  "id": "xai",
+  "name": "xAI (Grok Imagine)",
+  "type": "editeur",
+  "country": "US",
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Réservé à SuperGrok depuis le 19/03/2026 ; garde-fous ajoutés le 14/01/2026 ; NBC (04/2026) : produit encore des deepfakes sexuels non consentis."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Permissif, risques documentés.",
+  "sources": []
+ },
+ {
+  "id": "kling",
+  "name": "Kling (officiel)",
+  "type": "editeur",
+  "country": "CN",
+  "url": "https://klingai.com",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Censure réputée stricte."
+  },
+  "refusal_billed": "remboursement incertain",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Motion Control et Omni Reference, mais filtre strict.",
+  "sources": []
+ },
+ {
+  "id": "minimax",
+  "name": "MiniMax / Hailuo (officiel)",
+  "type": "editeur",
+  "country": "CN",
+  "url": "https://hailuoai.video",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Refuse les personnes réelles en situation compromettante (blog)."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Voie officielle H3.",
+  "sources": []
+ },
+ {
+  "id": "comfycloud",
+  "name": "Comfy Cloud",
+  "type": "gpu-cloud",
+  "country": "US",
+  "url": "https://www.comfy.org/cloud/pricing",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Aucun filtre au niveau des modèles ouverts."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": "oui (à partir de 35 $/mois)",
+  "terms": null,
+  "reliability": "30 min maximum par exécution ; RTX 6000 Pro 96 Go.",
+  "verdict": "fiable",
+  "verdict_reason": "LoRA perso et 96 Go de VRAM à la demande.",
+  "sources": []
+ },
+ {
+  "id": "runcomfy",
+  "name": "RunComfy",
+  "type": "gpu-cloud",
+  "country": "US",
+  "url": "https://www.runcomfy.com",
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": "oui (Wan 2.2 à 0,11 $/s)",
+  "terms": null,
+  "reliability": "H100 à 4,49 $/h.",
+  "verdict": "fiable",
+  "verdict_reason": "ComfyUI hébergé.",
+  "sources": []
+ },
+ {
+  "id": "reactor",
+  "name": "Reactor",
+  "type": "editeur",
+  "country": "US",
+  "url": "https://www.reactor.inc",
+  "models": [
+   "FastH3",
+   "FastH3-Omni"
+  ],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "violence": null,
+   "notes": null
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Seul hôte de FastH3-Omni, prix et politique non documentés.",
+  "sources": []
+ },
+ {
+  "id": "elevenlabs",
+  "name": "ElevenLabs (voix)",
+  "type": "editeur",
+  "country": "US",
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "filtre partiel",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Liste « no-go voices » limitée aux politiciens des élections US et UK ; contournements documentés (404 Media) ; captcha vocale."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "fiable",
+  "verdict_reason": "Référence voix, filtre limité.",
+  "sources": []
+ },
+ {
+  "id": "fishaudio",
+  "name": "Fish Audio (voix)",
+  "type": "editeur",
+  "country": null,
+  "url": null,
+  "models": [],
+  "seedance": null,
+  "moderation": {
+   "real_faces": "autorise",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Héberge des modèles de voix publics de célébrités ; usage commercial sur les offres payantes ; aucune politique de consentement trouvée."
+  },
+  "refusal_billed": "inconnu",
+  "payment": [],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "verdict": "tester",
+  "verdict_reason": "Permissif, risque juridique pour l'utilisateur.",
+  "sources": []
+ }
+]

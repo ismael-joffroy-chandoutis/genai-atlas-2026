@@ -16,13 +16,22 @@ prices = load("prices.json", [])
 gpu = load("gpu-hour.json", [])
 alias = load("model-id-aliases.json", {})  # id des prix -> id des modeles
 local = load("local-runs.json", {})  # id -> Mac M5 Max 128 Go, RTX 4090
+audio = load("audio-models.json", [])
+threed = load("3d-models.json", [])
+platforms = load("platforms.json", [])
+rank = load("rankings.json", {})
+integ = load("integrations.json", {}).get("by_id", {})
 
 by_model = {}
 for p in prices:
     mid = alias.get(p.get("model_id"), p.get("model_id"))
     by_model.setdefault(mid, []).append(p)
 
+for m in audio + threed:
+    m["_int"] = integ.get(m["id"], {})
 for m in video + image:
+    m["_int"] = integ.get(m["id"], {})
+    m["_scores"] = rank.get("scores", {}).get(m["id"], {})
     m["_local"] = local.get(m["id"], {})
     ps = by_model.get(m["id"], [])
     m["_prices"] = ps
@@ -31,7 +40,7 @@ for m in video + image:
         return min(vals) if vals else None
     m["_best"] = {k: best(k) for k in ("price_usd_480p_s", "price_usd_720p_s", "price_usd_1080p_s", "price_usd_per_image")}
 
-data = {"video": video, "image": image, "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
+data = {"video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
         "orphans": sorted({p.get("model_id") for p in prices} - {m["id"] for m in video + image} - set(alias)),
         "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")}
 

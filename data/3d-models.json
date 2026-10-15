@@ -1,0 +1,5904 @@
+[
+ {
+  "id": "hunyuan3d-2-0",
+  "family": "Hunyuan3D",
+  "variant": "2.0 (forme + Paint)",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-01-21",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent Hunyuan 3D 2.0 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1284,
+   "3d_arena_topologie": 1358
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 8e (5245 votes), topologie 1er (853 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Texture par Hunyuan3D-Paint 2.0 (couleur, pas PBR)"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on Blender officiel (janvier 2025) : Blender appelle un serveur API Hunyuan3D lancé en local."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "Endpoint fal-ai/hunyuan3d/v2 actif, prix non affiché sur la page le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": true,
+   "tool": "Dépôt officiel (gradio_app.py, mode low_vram), ComfyUI",
+   "vram_note": "6 Go pour la forme, 16 Go forme + texture (README officiel). macOS, Windows et Linux annoncés."
+  },
+  "pros": [
+   "1er au classement topologie de 3D Arena",
+   "Tourne sur petite carte et sur Mac selon l'éditeur",
+   "Add-on Blender officiel"
+  ],
+  "cons": [
+   "Licence inapplicable en France (UE exclue)",
+   "Texture non PBR",
+   "Remplacé par 2.1 côté éditeur"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/tencent/Hunyuan3D-2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan3d/v2",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-2-1",
+  "family": "Hunyuan3D",
+  "variant": "2.1 (forme + Paint PBR)",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-06-13",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent Hunyuan 3D 2.1 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1272,
+   "3d_arena_topologie": 1313
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 10e (2208 votes), topologie 4e (823 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Textures PBR (métal, rugosité) par Hunyuan3D-Paint 2.1"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB importable ; l'add-on Blender officiel vise la version 2.0."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": "fal",
+   "note": "Endpoint fal-ai/hunyuan3d-v21 marqué « deprecated » le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI",
+   "vram_note": "10 Go pour la forme, 21 Go pour la texture, 29 Go pour les deux (README officiel) : la chaîne complète dépasse 24 Go."
+  },
+  "pros": [
+   "Premier modèle ouvert de Tencent avec textures PBR",
+   "4e au classement topologie de 3D Arena",
+   "Code d'entraînement publié"
+  ],
+  "cons": [
+   "Licence inapplicable en France (UE exclue)",
+   "29 Go pour forme + texture",
+   "Plus d'API fal active"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/Hunyuan3D-2.1/main/LICENSE",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-2mv",
+  "family": "Hunyuan3D",
+  "variant": "2mv (multivue)",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "multiview_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 12/03/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "Tencent Hunyuan 3D 2.0 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Même add-on Blender que la 2.0 (serveur local)."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "Endpoint fal-ai/hunyuan3d/v2/multi-view actif, prix non affiché le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt Hunyuan3D-2 (sous-dossier hunyuan3d-dit-v2-mv, version turbo)",
+   "vram_note": null
+  },
+  "pros": [
+   "Prend plusieurs vues d'un même objet (face, côté, dos)",
+   "Version turbo disponible"
+  ],
+  "cons": [
+   "Licence inapplicable en France (UE exclue)",
+   "Forme seule, texture par un second modèle"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/tencent/Hunyuan3D-2mv",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan3d/v2/multi-view",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-omni",
+  "family": "Hunyuan3D",
+  "variant": "Omni (contrôlable)",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 23/09/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "Licence Tencent « other » sur Hugging Face (texte non relu)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Contrôles annoncés à vérifier sur la fiche"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Version ouverte annoncée en même temps que la 3.0"
+  ],
+  "cons": [
+   "Détails techniques non relus pour cet atlas"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/tencent/Hunyuan3D-Omni",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.notebookcheck.net/Tencent-s-new-Hunyuan-3D-3-0-brings-realistic-AI-model-generation-to-developers-and-creators.1116964.0.html",
+    "date": "2025-09-16",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-2-5",
+  "family": "Hunyuan3D",
+  "variant": "2.5",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-04-23",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": "Textures 4K et PBR multivue selon la presse"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "credits",
+   "usd": null,
+   "platform": "Tencent Cloud",
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "10 milliards de paramètres selon le rapport technique",
+   "Textures PBR"
+  ],
+  "cons": [
+   "Aucun poids publié sur Hugging Face (dépôts Tencent vérifiés le 15/10/2026)",
+   "Remplacé par 3.0 et 3.1"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://www.aibase.com/news/17448",
+    "date": "2025-04-23",
+    "type": "independant"
+   },
+   {
+    "url": "https://cgworld.jp/flashnews/01-202505-Hunyuan3D-25.html",
+    "date": "2025-05-01",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-3-0",
+  "family": "Hunyuan3D",
+  "variant": "3.0",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": "2025-09-16",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": "Croquis (sketch-to-3D)"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Modes Normal, LowPoly, Geometry"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "Export GLB ; ComfyUI Partner Nodes."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.375,
+   "platform": "fal",
+   "note": "Normal 0,375 $, LowPoly 0,45 $, géométrie seule 0,225 $ ; PBR +0,15 $, multivue +0,15 $, nombre de faces imposé +0,15 $."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Résolution annoncée 1536³",
+   "20 générations gratuites par jour sur le site Tencent (2025)",
+   "Croquis vers 3D"
+  ],
+  "cons": [
+   "Pas de poids publiés",
+   "Prix fal élevé dès qu'on ajoute PBR et multivue"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://cgworld.jp/flashnews/01-202509-Hunyuan3D-30.html",
+    "date": "2025-09-16",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan3d-v3/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan3d-v3/sketch-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-3-1-pro",
+  "family": "Hunyuan3D",
+  "variant": "3.1 Pro",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": null,
+  "released_note": "Sur fal depuis le 27/01/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": "Nombre de faces réglable (jusqu'à 1,5 M selon des revendeurs)",
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.375,
+   "platform": "fal",
+   "note": "0,375 $ ; PBR +0,15 $, multivue +0,15 $, faces imposées +0,15 $. Tencent Cloud : 25 crédits (Normal), 30 (LowPoly), 15 (géométrie), crédit à 0,02 $ en postpayé."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Même prix que la 3.0 chez Tencent (choix 3.0 ou 3.1 sans surcoût)",
+   "Outils annexes : découpe en parties, retopologie, dépliage UV, rigging automatique"
+  ],
+  "cons": [
+   "Pas de poids publiés",
+   "Date de sortie officielle non trouvée"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan-3d/v3.1/pro/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.tencentcloud.com/document/product/1284/75281",
+    "date": "2026-05-08",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-3-1-rapid",
+  "family": "Hunyuan3D",
+  "variant": "3.1 Rapid",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d"
+  ],
+  "released": null,
+  "released_note": "Sur fal depuis le 27/01/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.225,
+   "platform": "fal",
+   "note": "0,225 $ ; PBR +0,15 $. Tencent Cloud édition Express : 15 crédits, PBR +10."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Le moins cher de la famille 3.x",
+   "Texte ou image"
+  ],
+  "cons": [
+   "Qualité inférieure à Pro (positionnement éditeur)",
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan-3d/v3.1/rapid/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.tencentcloud.com/document/product/1284/75281",
+    "date": "2026-05-08",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "trellis-image-large",
+  "family": "TRELLIS",
+  "variant": "TRELLIS image-large (1re génération)",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "multiview_to_3d"
+  ],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 02/12/2024.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu_maillage": 1304,
+   "3d_arena_rendu_3dgs": 1398,
+   "3d_arena_topologie": 1328
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : « TRELLIS-3DGS » 2e (4834 votes), « TRELLIS » 6e (5780 votes), topologie 2e (853 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY (Gaussiennes)"
+   ],
+   "polygons": null,
+   "other": "Maillage, Gaussiennes ou champ de radiance"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB natif ; PLY de Gaussiennes via un add-on de splats."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "fal-ai/trellis et fal-ai/trellis/multi actifs, prix non affiché le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": false,
+   "tool": "Dépôt officiel (Linux), ComfyUI",
+   "vram_note": "GPU NVIDIA d'au moins 16 Go ; testé seulement sous Linux (README)."
+  },
+  "pros": [
+   "2e au rendu de 3D Arena en sortie Gaussiennes",
+   "2e en topologie",
+   "Licence MIT"
+  ],
+  "cons": [
+   "Linux et NVIDIA uniquement",
+   "Textures non PBR"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/TRELLIS",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/microsoft/TRELLIS-image-large",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/trellis",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "trellis-2-4b",
+  "family": "TRELLIS",
+  "variant": "TRELLIS.2 4B",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 01/12/2025, sur fal depuis le 17/12/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (dépendances nvdiffrast et nvdiffrec sous licence NVIDIA propre)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1126,
+   "3d_arena_topologie": 1144
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 18e (1426 votes), topologie 11e (740 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "PBR : couleur, rugosité, métal, opacité ; transparence à rebrancher à la main"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB opaque par défaut, brancher l'alpha dans Blender."
+  },
+  "speed": "Sur H100 : environ 3 s en 512³, 17 s en 1024³, 60 s en 1536³ (éditeur).",
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.25,
+   "platform": "fal",
+   "note": "0,25 $ en 512, 0,30 $ en 1024, 0,35 $ en 1536 ; LoRA sur fal au même tarif."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": false,
+   "tool": "Dépôt officiel (Linux, CUDA 12.4), ComfyUI",
+   "vram_note": "GPU NVIDIA d'au moins 24 Go, Linux seulement (README) : 4090 à la limite."
+  },
+  "pros": [
+   "Textures PBR complètes",
+   "Licence MIT",
+   "Inférence LoRA proposée par fal"
+  ],
+  "cons": [
+   "Classé derrière TRELLIS 1 sur 3D Arena (18e au rendu)",
+   "Linux et 24 Go minimum",
+   "Dépendances NVIDIA sous licence à part"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/TRELLIS.2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/trellis-2",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/trellis-2-lora",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "trellis-2-retexture",
+  "family": "TRELLIS",
+  "variant": "TRELLIS.2 retexture",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "texturing",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 02/03/2026.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage existant + image"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.2,
+   "platform": "fal",
+   "note": "0,20 $ en 512, 0,24 $ en 1024 et plus."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": false,
+   "tool": "Dépôt TRELLIS.2 (génération de textures PBR sur forme existante)",
+   "vram_note": "Même besoin que TRELLIS.2 : 24 Go, Linux."
+  },
+  "pros": [
+   "Texture PBR sur un maillage fait à la main ou scanné"
+  ],
+  "cons": [
+   "Linux et 24 Go en local"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/TRELLIS.2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/trellis-2/retexture",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "triposg-1-5b",
+  "family": "TripoSG",
+  "variant": "TripoSG 1.5B",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Publié en mars 2025 (README).",
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_topologie": 1222
+  },
+  "scores_note": "3D Arena topologie lu le 15/10/2026 : 8e (814 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": "Nombre de faces limitable (--faces)",
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": false,
+   "tool": "Dépôt officiel, ComfyUI",
+   "vram_note": "GPU CUDA d'au moins 8 Go (README)."
+  },
+  "pros": [
+   "8 Go suffisent",
+   "8e en topologie sur 3D Arena",
+   "Variante croquis + texte (TripoSG-scribble)"
+  ],
+  "cons": [
+   "Forme seule, pas de texture",
+   "Pas d'API officielle pour ce modèle ouvert"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/VAST-AI-Research/TripoSG",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/VAST-AI/TripoSG",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "triposplat",
+  "family": "TripoSplat",
+  "variant": "TripoSplat",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 31/05/2026.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "PLY (Gaussiennes)"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Gaussiennes : add-on de splats nécessaire dans Blender."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "tripo3d/triposplat actif, prix non affiché le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Image vers Gaussiennes, poids ouverts"
+  ],
+  "cons": [
+   "Pas de maillage",
+   "Peu de mesures publiques"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/VAST-AI/TripoSplat",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/tripo3d/triposplat",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "tripo-v3-0",
+  "family": "Tripo",
+  "variant": "v3.0 (Ultra)",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Septembre 2025 selon une revue indépendante, non confirmé par l'éditeur.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": null,
+  "price": {
+   "unit": "credits",
+   "usd": null,
+   "platform": "Tripo",
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Mode Ultra pour le détail"
+  ],
+  "cons": [
+   "Prix API par modèle non publié en clair",
+   "Site tripo3d.ai inaccessible aux robots (403) le 15/10/2026"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://pasqualepillitteri.it/en/news/7811/tripo-ai-review-3d-model-generator",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.tripo3d.ai/blog/tripo-dcc-bridge-for-blender",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "tripo-h3-1",
+  "family": "Tripo",
+  "variant": "H3.1",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": null,
+  "released_note": "Annoncé avec P1.0 en mars 2026 (communiqué du 20/03/2026) ; sur fal depuis le 07/04/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": "Un classement « Top 3D AI » cité par Sloyd (concurrent) met « Tripo AI v3.1 » 1er à 1042 (03/08/2026) ; correspondance avec H3.1 non vérifiée.",
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": "Option maillage quad",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.2,
+   "platform": "fal",
+   "note": "Image : 0,20 $ sans texture, 0,30 $ texture standard, 0,40 $ HD ; géométrie détaillée +0,20 $, quad +0,05 $. Texte : 0,10 à 0,30 $."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Modèle haut de gamme de Tripo en 2026",
+   "Quads en option",
+   "Pont Blender officiel"
+  ],
+  "cons": [
+   "Pas de poids publiés",
+   "Classement communautaire indépendant non trouvé pour ce nom exact"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://www.newsfilecorp.com/release/289194",
+    "date": "2026-03-20",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/tripo3d/h3.1/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/tripo3d/h3.1/text-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.sloyd.ai/blog/ai-3d-model-generator-rankings",
+    "date": "2026-08-03",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "tripo-p1",
+  "family": "Tripo",
+  "variant": "Smart Mesh P1.0",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d"
+  ],
+  "released": "2026-03-20",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": "Low poly",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": "Annoncé « en deux secondes » par l'éditeur.",
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.4,
+   "platform": "fal",
+   "note": "0,40 $ sans texture, 0,50 $ avec texture."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Low poly propre et rapide, utile pour du blocage"
+  ],
+  "cons": [
+   "Peu de détail par construction"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://www.newsfilecorp.com/release/289194",
+    "date": "2026-03-20",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/tripo3d/p1/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "tripo-p2",
+  "family": "Tripo",
+  "variant": "P2",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d"
+  ],
+  "released": null,
+  "released_note": "Sur fal depuis le 20/09/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": "Nombre de faces réglable, triangles ou quads",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.0,
+   "platform": "fal",
+   "note": "1,00 $ sans texture, 1,10 $ texture rapide ou standard, 1,20 $ détaillée, 1,30 $ extrême ; quads sans surcoût."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Topologie quad sans surcoût",
+   "Faces réglables"
+  ],
+  "cons": [
+   "Le plus cher de Tripo sur fal",
+   "Annonce éditeur non trouvée"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/tripo3d/p2/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/tripo3d/p2/text-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "tripo-h3-1-multiview",
+  "family": "Tripo",
+  "variant": "H3.1 multivue",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "multiview_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 07/04/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.2,
+   "platform": "fal",
+   "note": "Même grille que H3.1 image : 0,20 à 0,40 $ plus options."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Plusieurs vues d'un objet ou d'un personnage"
+  ],
+  "cons": [
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/tripo3d/h3.1/multiview-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "tripo-h3-1-text",
+  "family": "Tripo",
+  "variant": "H3.1 texte",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "text_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 07/04/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Tripo DCC Bridge pour Blender 4.1 et plus : envoie le modèle du site vers Blender, animations comprises."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.1,
+   "platform": "fal",
+   "note": "0,10 $ sans texture, 0,20 $ standard, 0,30 $ HD ; géométrie détaillée +0,20 $, quad +0,05 $."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Texte vers 3D le moins cher relevé sur fal"
+  ],
+  "cons": [
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/tripo3d/h3.1/text-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "unirig",
+  "family": "UniRig",
+  "variant": "UniRig",
+  "vendor": "VAST (Tripo)",
+  "country": "CN",
+  "task": "rigging_animation",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "SIGGRAPH 2025 ; fiche Hugging Face créée le 09/04/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage OBJ, FBX, GLB ou VRM"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": true,
+   "formats": [
+    "FBX",
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Squelette puis poids de peau, fusion avec le modèle d'origine"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on Blender fourni (dérivé de VRM-Addon-for-Blender) pour importer et exporter les .vrm ; FBX et GLB s'importent directement."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": "GPU CUDA d'au moins 8 Go pour l'inférence (README)."
+  },
+  "pros": [
+   "Rigging automatique de n'importe quel modèle, humain, animal ou objet",
+   "Squelette modifiable avant le calcul des poids",
+   "Licence MIT"
+  ],
+  "cons": [
+   "Squelettes manquants dégradent la peau (README)",
+   "Attributs physiques des os pas encore publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/VAST-AI-Research/UniRig",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/VAST-AI/UniRig",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "geosam2",
+  "family": "GeoSAM2",
+  "variant": "GeoSAM2",
+  "vendor": "VAST, HKU, Tsinghua",
+  "country": "CN",
+  "task": "part_segmentation",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "CVPR 2026 ; fiche Hugging Face créée le 20/04/2026.",
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0 (fiche Hugging Face)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage sans texture + clics ou boîtes 2D"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": "Découpe du maillage en parties"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel VAST-AI-Research/GeoSAM2",
+   "vram_note": null
+  },
+  "pros": [
+   "Découpe un maillage en parties avec de simples clics",
+   "Base SAM 2.1 (environ 154 M paramètres)"
+  ],
+  "cons": [
+   "Évalué seulement sur des objets sans texture",
+   "Catégorie hors liste : segmentation en parties"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/VAST-AI/GeoSAM2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://arxiv.org/abs/2508.14036v2",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "meshy-6",
+  "family": "Meshy",
+  "variant": "Meshy 6",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": null,
+  "released_note": "Meshy 6 Preview dans l'API le 16/09/2025 (image) et le 23/09/2025 (texte).",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {
+   "3d_arena_rendu": 1356,
+   "3d_arena_topologie": 1327
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 3e (1013 votes), topologie 3e (565 votes).",
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB",
+    "FBX",
+    "OBJ",
+    "USDZ"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Plugin Blender officiel Meshy ; USDZ en mètres depuis le 12/10/2026."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.2,
+   "platform": "fal",
+   "note": "Meshy 6 Preview sur fal : 0,80 $ sans texture, 1,20 $ texturé ; rigging +0,20 $, animation +0,12 $. API Meshy : 20 crédits (Pro à 19 €/mois pour 1000 crédits)."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "3e au rendu et 3e en topologie de 3D Arena, 1er des modèles payants classés",
+   "Rigging et animation dans la même API"
+  ],
+  "cons": [
+   "Pas de poids publiés",
+   "Assets API supprimés après 3 jours hors offre Entreprise"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.meshy.ai/api",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/meshy/v6-preview/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "meshy-7",
+  "family": "Meshy",
+  "variant": "Meshy 7",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": "2026-08-13",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {
+   "3d_arena_rendu": 1306,
+   "3d_arena_topologie": 1276
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 5e (199 votes), topologie 5e (167 votes).",
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB",
+    "FBX",
+    "OBJ",
+    "USDZ"
+   ],
+   "polygons": "Smart Topology à nombre de polygones visé",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Plugin Blender officiel Meshy ; USDZ en mètres depuis le 12/10/2026."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.2,
+   "platform": "fal",
+   "note": "0,80 $ sans texture, 1,20 $ texturé, 1,40 $ en mode ultra ; API Meshy : 20 à 35 crédits."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Géométrie plus fidèle que Meshy 6 (éditeur)",
+   "Topologie « jeu vidéo » à budget de polygones"
+  ],
+  "cons": [
+   "Classé sous Meshy 6 sur 3D Arena (peu de votes)",
+   "Déprécié au profit de 7.1"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/meshy/v7/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "meshy-7-1",
+  "family": "Meshy",
+  "variant": "Meshy 7.1",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": "2026-09-18",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB",
+    "FBX",
+    "OBJ",
+    "USDZ"
+   ],
+   "polygons": "Modes standard, low poly, Smart Topology ; géométrie standard, 2k ou 4k",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Plugin Blender officiel Meshy ; USDZ en mètres depuis le 12/10/2026."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.2,
+   "platform": "fal",
+   "note": "0,80 $ sans texture, 1,20 $ texturé, rigging +0,20 $, animation +0,12 $ ; API Meshy : même coût que Meshy 7, géométrie 2k ou 4k +5 crédits."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Modèle par défaut (« latest ») de Meshy",
+   "Géométrie 4k",
+   "Chaîne complète : texture, rig, animation, export Blender"
+  ],
+  "cons": [
+   "Pas encore classé sur 3D Arena",
+   "4k indisponible en multivue"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/meshy/v7.1/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/meshy/v7.1/text-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/meshy/v7.1/multi-image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "meshy-6-lite-retexture",
+  "family": "Meshy",
+  "variant": "Meshy 6 Lite (retexture)",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "texturing",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 06/10/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage existant + texte ou image de style"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB",
+    "FBX",
+    "OBJ",
+    "USDZ"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Plugin Blender officiel Meshy ; USDZ en mètres depuis le 12/10/2026."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.3,
+   "platform": "fal",
+   "note": "0,30 $ par modèle, PBR inclus ; API Meshy : 10 crédits (2K ou 4K), 15 en 8K pour la texture."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Retexture un modèle importé (GLB, glTF, OBJ, FBX, STL)",
+   "PBR inclus"
+  ],
+  "cons": [
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/meshy/v6-lite/retexture",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.meshy.ai/api",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "meshy-rigging-animation",
+  "family": "Meshy",
+  "variant": "Auto-rigging + animation",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "rigging_animation",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Personnage humanoïde en GLB"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": false,
+   "rig": true,
+   "formats": [
+    "GLB",
+    "FBX"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Plugin Blender officiel Meshy ; USDZ en mètres depuis le 12/10/2026."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_request",
+   "usd": 0.2,
+   "platform": "fal",
+   "note": "Rigging 0,20 $, +0,12 $ par clip d'animation ; API Meshy : rigging 5 crédits, animation 3 crédits."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Rig et bibliothèque de mouvements en un appel",
+   "Accepte un mouvement généré par texte"
+  ],
+  "cons": [
+   "Humanoïdes seulement"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/meshy/rigging",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/meshy/rigging/multi-animation",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.meshy.ai/api",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "meshy-text-to-motion",
+  "family": "Meshy",
+  "variant": "Text to Motion",
+  "vendor": "Meshy",
+  "country": "US",
+  "task": "rigging_animation",
+  "tasks_other": [],
+  "released": "2026-08-21",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": true,
+   "formats": [
+    "FBX",
+    "BVH"
+   ],
+   "polygons": null,
+   "other": "Clip de mouvement de 2 à 10 s"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "FBX et BVH s'importent dans Blender."
+  },
+  "speed": null,
+  "price": {
+   "unit": "credits",
+   "usd": null,
+   "platform": "Meshy",
+   "note": "Mode prime 10 crédits (FBX), mode swift 3 crédits (BVH)."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Mouvement décrit en texte, applicable ensuite à un personnage riggé"
+  ],
+  "cons": [
+   "Bipèdes",
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.meshy.ai/en/api/changelog",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "rodin-gen-2",
+  "family": "Rodin (Hyper3D)",
+  "variant": "Gen-2",
+  "vendor": "Deemos Tech",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d",
+   "multiview_to_3d"
+  ],
+  "released": "2025-10-01",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on Blender Hyper3D listé parmi les plug-ins officiels."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "fal-ai/hyper3d/rodin/v2 actif, prix non affiché le 15/10/2026. Hyper3D : Creator 30 $/mois, Business 120 $/mois avec API."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "10 milliards de paramètres annoncés",
+   "Édition de modèle par texte (Gen-2 Edit, mars 2026)"
+  ],
+  "cons": [
+   "API réservée à l'offre Business"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://markets.financialcontent.com/pennwell.pennenergy/article/pressadvantage-2025-10-1-deemos-tech-launches-hyper3d-rodin-gen-2-next-generation-3d-model-generator",
+    "date": "2025-10-01",
+    "type": "editeur"
+   },
+   {
+    "url": "https://hyper3d.ai/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hyper3d/rodin/v2",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "rodin-gen-2-5",
+  "family": "Rodin (Hyper3D)",
+  "variant": "Gen-2.5",
+  "vendor": "Deemos Tech",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "text_to_3d"
+  ],
+  "released": null,
+  "released_note": "Sur fal depuis le 28/05/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": "Classement « Top 3D AI » cité par Sloyd (concurrent) : Rodin Gen 2.5 6e à 1009 (03/08/2026).",
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on Blender Hyper3D listé parmi les plug-ins officiels."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.4,
+   "platform": "fal",
+   "note": "0,40 $, option HighPack +0,80 $ ; version Fast 0,10 $ ; WaveSpeed annonce dès 0,48 $."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Version Fast à 0,10 $ pour le blocage",
+   "Niveaux de qualité réglables"
+  ],
+  "cons": [
+   "Annonce éditeur non trouvée",
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/hyper3d/rodin/v2.5",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hyper3d/rodin/v2.5/fast",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://wavespeed.ai/hyper-3d-studio",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.sloyd.ai/blog/ai-3d-model-generator-rankings",
+    "date": "2026-08-03",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "csm-cube",
+  "family": "CSM Cube",
+  "variant": "Cube",
+  "vendor": "Common Sense Machines",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": null,
+   "consumer_app": null
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": null,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [],
+  "cons": [
+   "Site csm.ai injoignable le 15/10/2026 (nom de domaine sans réponse web) ; aucune actualité 2026 trouvée"
+  ],
+  "status_note": "Statut non confirmé : site injoignable au relevé, ne pas conclure à un arrêt sans source.",
+  "sources": [
+   {
+    "url": "https://csm.ai/academy/what-is-cube-by-csm",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "luma-genie",
+  "family": "Luma Genie",
+  "variant": "Genie",
+  "vendor": "Luma AI",
+  "country": "US",
+  "task": "text_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": null,
+   "consumer_app": null
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": null,
+   "text": true,
+   "video": null,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": "Moins de 10 s annoncées au lancement.",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [],
+  "cons": [
+   "lumalabs.ai/genie redirige vers l'accueil le 15/10/2026 : produit plus mis en avant",
+   "Luma concentré sur la vidéo (Ray)"
+  ],
+  "status_note": "Page produit retirée au relevé du 15/10/2026 ; disponibilité non confirmée.",
+  "sources": [
+   {
+    "url": "https://lumalabs.ai/genie",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "stable-fast-3d",
+  "family": "Stability 3D",
+  "variant": "Stable Fast 3D (SF3D)",
+  "vendor": "Stability AI",
+  "country": "GB",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 17/07/2024.",
+  "access": {
+   "open_weights": true,
+   "license": "Stability AI Community License (gratuit sous 1 M$ de revenu annuel)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1175,
+   "3d_arena_topologie": 1061
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 15e (8035 votes), topologie 16e (839 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Maillage UV déplié texturé"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI",
+   "vram_note": null
+  },
+  "pros": [
+   "Licence commerciale gratuite sous 1 M$ de revenu annuel",
+   "Maillage UV déplié"
+  ],
+  "cons": [
+   "15e au rendu, 16e en topologie sur 3D Arena",
+   "Accès Hugging Face soumis à acceptation"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/stabilityai/stable-fast-3d",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "spar3d",
+  "family": "Stability 3D",
+  "variant": "SPAR3D",
+  "vendor": "Stability AI",
+  "country": "GB",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-01-08",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Stability AI Community License (gratuit sous 1 M$ de revenu annuel)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1113,
+   "3d_arena_topologie": 1159
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 19e (4928 votes), topologie 10e (854 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Nuage de points éditable"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": "Maillage UV texturé, rugosité et métal par objet"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": "Moins d'une seconde par objet (éditeur).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": null
+  },
+  "pros": [
+   "Moins d'une seconde",
+   "Dos de l'objet corrigeable via le nuage de points"
+  ],
+  "cons": [
+   "Qualité dépassée (19e au rendu sur 3D Arena)"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/stabilityai/stable-point-aware-3d",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "partcrafter",
+  "family": "PartCrafter",
+  "variant": "PartCrafter",
+  "vendor": null,
+  "country": null,
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-07-13",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": "Plusieurs maillages par parties en une passe, objet ou scène"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": "GPU CUDA d'au moins 8 Go (README)."
+  },
+  "pros": [
+   "Pièces séparées dès la génération (utile pour animer un accessoire)",
+   "NeurIPS 2025, licence MIT"
+  ],
+  "cons": [
+   "Pas de texture documentée",
+   "Format de sortie non précisé"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/wgsxm/PartCrafter",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/wgsxm/PartCrafter",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "step1x-3d",
+  "family": "Step1X-3D",
+  "variant": "Step1X-3D (géométrie 1,3B + texture 3,5B)",
+  "vendor": "StepFun",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-05-13",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": "152 s pour 50 pas (éditeur).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": "27 à 29 Go pour géométrie + texture (README) : au-delà d'une 4090."
+  },
+  "pros": [
+   "Apache-2.0, usage commercial libre",
+   "Code d'entraînement publié"
+  ],
+  "cons": [
+   "Plus de mise à jour depuis juin 2025",
+   "PBR non confirmé"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/stepfun-ai/Step1X-3D",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "sparc3d",
+  "family": "Sparc3D",
+  "variant": "Sparc3D (recherche)",
+  "vendor": "Math Magic, NTU, Imperial College",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Annoncé le 13/06/2025.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Géométrie très haute résolution (base de Hitem3D)"
+  ],
+  "cons": [
+   "Code annoncé mais jamais publié ; exploité commercialement via Hitem3D"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://www.gamebusiness.jp/article/2025/06/27/24512.html",
+    "date": "2025-06-27",
+    "type": "independant"
+   },
+   {
+    "url": "https://blog.hitem3d.ai/blog/sparc3d/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hi3d-v3-0",
+  "family": "Hitem3D (Hi3D)",
+  "variant": "Hi3D V3.0",
+  "vendor": "Math Magic",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [
+   "multiview_to_3d"
+  ],
+  "released": null,
+  "released_note": "Vers le 19/08/2026 selon le communiqué ; sur fal depuis le 19/08/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [
+    "GLB",
+    "OBJ"
+   ],
+   "polygons": "Géométrie jusqu'à 2048³",
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 2.1,
+   "platform": "fal",
+   "note": "2,10 $ en qualité 2048³, 9,10 $ en master ; crédit à 0,02 $."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Géométrie la plus fine annoncée (2048³)",
+   "Outils de découpe en parties et de texture"
+  ],
+  "cons": [
+   "Cher en mode master",
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/hitem3d/hi3d/v3.0/image-to-3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.thailand-business-news.com/pr-news/math-magic-closes-series-a-raising-nearly-50-million-across-two-rounds-in-six-months",
+    "date": "2026-08-20",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "direct3d-s2",
+  "family": "Direct3D-S2",
+  "variant": "Direct3D-S2 v1.1",
+  "vendor": "DreamTech",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-05-30",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "MIT",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "OBJ"
+   ],
+   "polygons": "Résolution 1024³",
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": "Environ 2 fois plus rapide que la v1.0 (éditeur).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": "Au moins 10 Go en 512, environ 24 Go en 1024 (README)."
+  },
+  "pros": [
+   "Géométrie fine en 1024³",
+   "Licence MIT"
+  ],
+  "cons": [
+   "Forme seule",
+   "La 1024 frôle les 24 Go"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/DreamTechAI/Direct3D-S2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "pixal3d",
+  "family": "Pixal3D",
+  "variant": "Pixal3D (base TRELLIS.2)",
+  "vendor": "Tencent ARC et Tsinghua",
+  "country": "CN",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Mai 2026 (fiche Hugging Face) ; sur fal depuis le 13/05/2026.",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (composants tiers sous leurs licences)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu": 1265,
+   "3d_arena_topologie": 1221
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 13e (321 votes), topologie 9e (251 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.3,
+   "platform": "fal",
+   "note": "0,30 $ en 1024, 0,42 $ en 1536."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, nœuds ComfyUI communautaires",
+   "vram_note": null
+  },
+  "pros": [
+   "Licence MIT, contrairement aux autres modèles Tencent",
+   "13e au rendu et 9e en topologie sur 3D Arena"
+  ],
+  "cons": [
+   "Licence MIT relevée via des sources secondaires et la fiche HF"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://huggingface.co/TencentARC/Pixal3D",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/pixal3d",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "picgen3d",
+  "family": "PicGen3D",
+  "variant": "PicGen3D",
+  "vendor": null,
+  "country": null,
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": null,
+   "consumer_app": null
+  },
+  "scores": {
+   "3d_arena_rendu": 1416
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 1er (4373 votes), marqué non open source.",
+  "inputs": {
+   "images": true,
+   "text": null,
+   "video": null,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "1er au rendu de 3D Arena au 15/10/2026"
+  ],
+  "cons": [
+   "Éditeur, accès et prix introuvables"
+  ],
+  "status_note": "Présent seulement dans le classement ; aucune page produit trouvée.",
+  "sources": [
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "404-gen",
+  "family": "404-GEN",
+  "variant": "404-GEN (Bittensor sous-réseau 17)",
+  "vendor": "404 (Bittensor SN17)",
+  "country": null,
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": null,
+   "consumer_app": true
+  },
+  "scores": {
+   "3d_arena_rendu": 1334
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : rendu 4e (1449 votes), marqué non open source.",
+  "inputs": {
+   "images": true,
+   "text": null,
+   "video": null,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "4e au rendu de 3D Arena"
+  ],
+  "cons": [
+   "Réseau décentralisé à jeton, informations surtout issues de réseaux sociaux"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://404-gen-readme.static.hf.space/README.md",
+    "date": "2025-04-14",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "sam-3d-objects",
+  "family": "SAM 3D",
+  "variant": "SAM 3D Objects",
+  "vendor": "Meta",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": "2025-11-19",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "SAM License (accès sur demande)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {
+   "3d_arena_rendu_3dgs": 1267
+  },
+  "scores_note": "3D Arena lu le 15/10/2026 : « SAM-3D-Objects-3DGS » 12e (1406 votes).",
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Image + masque de l'objet, plusieurs objets"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": null,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "PLY (Gaussiennes)"
+   ],
+   "polygons": null,
+   "other": "Forme, texture, pose et place dans la scène"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Gaussiennes : add-on de splats nécessaire."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_unit",
+   "usd": 0.02,
+   "platform": "fal",
+   "note": "0,02 $ par unité."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": null
+  },
+  "pros": [
+   "Objets tirés d'une vraie photo, à leur place dans la scène",
+   "12e au rendu de 3D Arena"
+  ],
+  "cons": [
+   "Sortie Gaussiennes dans l'exemple officiel",
+   "Poids sur demande"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/sam-3d-objects",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/sam-3/3d-objects",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "sam-3d-body",
+  "family": "SAM 3D",
+  "variant": "SAM 3D Body",
+  "vendor": "Meta",
+  "country": "US",
+  "task": "image_to_3d",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 02/12/2025.",
+  "access": {
+   "open_weights": null,
+   "license": null,
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": "Forme et position du corps humain"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_unit",
+   "usd": 0.02,
+   "platform": "fal",
+   "note": "0,02 $ par unité."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Pose d'un acteur depuis une seule image, utile pour bloquer une scène"
+  ],
+  "cons": [
+   "Licence non relue (fiche HF fermée)"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/sam-3/3d-body",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "marble-1-1",
+  "family": "Marble (World Labs)",
+  "variant": "Marble 1.1",
+  "vendor": "World Labs",
+  "country": "US",
+  "task": "image_to_world",
+  "tasks_other": [
+   "scene_reconstruction"
+  ],
+  "released": "2026-04-02",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": true,
+   "multiview": true,
+   "other": "Panorama, maquette 3D grossière (Chisel)"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "SPZ",
+    "PLY",
+    "GLB (collision)",
+    "GLB texturé (Pro)",
+    "panorama 360"
+   ],
+   "polygons": "Maillage haute qualité vers 600 k triangles texturé ou 1 M en couleurs de sommets",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Splats via add-on Gaussian Splatting (doc officielle Blender) ; maillage GLB en import direct."
+  },
+  "speed": "Maillage haute qualité : jusqu'à 1 h de calcul (doc).",
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.2,
+   "platform": "World Labs API",
+   "note": "1500 crédits par génération, crédits API à 1 $ les 1250. Application : offres Free, Standard, Pro (export GLB texturé et droits commerciaux), Max."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Monde persistant exportable en splats et en maillage",
+   "Blocage 3D grossier transformé en décor (Chisel)",
+   "Caméras et vidéos de survol (Record)"
+  ],
+  "cons": [
+   "Maillage moins propre que les splats (doc)",
+   "Export impossible en offre gratuite",
+   "Crédits app et API séparés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.worldlabs.ai/marble/models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/release-notes",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/api/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/export/mesh",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/support/account-billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "marble-1-1-plus",
+  "family": "Marble (World Labs)",
+  "variant": "Marble 1.1 Plus",
+  "vendor": "World Labs",
+  "country": "US",
+  "task": "image_to_world",
+  "tasks_other": [],
+  "released": "2026-04-02",
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": true,
+   "multiview": true,
+   "other": "Panorama, maquette 3D grossière (Chisel)"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "SPZ",
+    "PLY",
+    "GLB (collision)",
+    "GLB texturé (Pro)",
+    "panorama 360"
+   ],
+   "polygons": "Maillage haute qualité vers 600 k triangles texturé ou 1 M en couleurs de sommets",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Splats via add-on Gaussian Splatting (doc officielle Blender) ; maillage GLB en import direct."
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": 1.2,
+   "platform": "World Labs API",
+   "note": "1500 crédits de base + 0 à 1500 variables, soit 1,20 à 2,40 $ via l'API."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Mondes les plus grands de la gamme"
+  ],
+  "cons": [
+   "Coût variable"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.worldlabs.ai/marble/models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/release-notes",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/api/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/export/mesh",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/support/account-billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "marble-1-0-draft",
+  "family": "Marble (World Labs)",
+  "variant": "Marble 1.0 Draft",
+  "vendor": "World Labs",
+  "country": "US",
+  "task": "image_to_world",
+  "tasks_other": [],
+  "released": null,
+  "released_note": null,
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": true,
+   "multiview": true,
+   "other": "Panorama, maquette 3D grossière (Chisel)"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "SPZ",
+    "PLY",
+    "GLB (collision)",
+    "GLB texturé (Pro)",
+    "panorama 360"
+   ],
+   "polygons": "Maillage haute qualité vers 600 k triangles texturé ou 1 M en couleurs de sommets",
+   "other": null
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Splats via add-on Gaussian Splatting (doc officielle Blender) ; maillage GLB en import direct."
+  },
+  "speed": "Modèle le plus rapide de la gamme (doc).",
+  "price": {
+   "unit": "per_generation",
+   "usd": 0.12,
+   "platform": "World Labs API",
+   "note": "150 crédits par génération."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Dix fois moins cher, pour tester des cadrages"
+  ],
+  "cons": [
+   "Qualité brouillon"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://docs.worldlabs.ai/marble/models",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/release-notes",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/api/pricing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/export/mesh",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.worldlabs.ai/marble/support/account-billing",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "genie-3",
+  "family": "Genie (Google DeepMind)",
+  "variant": "Genie 3 (Project Genie)",
+  "vendor": "Google DeepMind",
+  "country": "US",
+  "task": "image_to_world",
+  "tasks_other": [],
+  "released": "2025-08-05",
+  "released_note": "Annoncé le 05/08/2025 ; Project Genie ouvert le 29/01/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": false,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "vidéo"
+   ],
+   "polygons": null,
+   "other": "Monde explorable en temps réel, 720p, 20 à 24 images/s"
+  },
+  "blender": {
+   "mode": "none",
+   "note": "Aucun export 3D : seules les vidéos se téléchargent."
+  },
+  "speed": "Temps réel ; sessions de 60 s.",
+  "price": {
+   "unit": "subscription",
+   "usd": 250,
+   "platform": "Google AI Ultra",
+   "note": "Inclus dans Google AI Ultra (environ 250 $/mois selon la presse)."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Exploration interactive en première ou troisième personne",
+   "Mémoire de plusieurs minutes"
+  ],
+  "cons": [
+   "États-Unis seulement, 18 ans et plus (janvier 2026)",
+   "Pas de géométrie exportable"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://deepmind.google/models/genie/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+    "date": "2026-01-29",
+    "type": "editeur"
+   },
+   {
+    "url": "https://startupintros.com/news/2026-01-29-google-project-genie",
+    "date": "2026-01-29",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hy-world-2-0",
+  "family": "HunyuanWorld",
+  "variant": "HY-World 2.0",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_world",
+  "tasks_other": [
+   "scene_reconstruction"
+  ],
+  "released": "2026-04-15",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent HY-WORLD 2.0 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": false,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": true,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "PLY (Gaussiennes)",
+    "panorama 360"
+   ],
+   "polygons": null,
+   "other": "Maillage, 3DGS, nuage de points, caméras"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "Import Blender, Unity, Unreal annoncé, sans procédure détaillée."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel (CUDA 12.8)",
+   "vram_note": "HY-Pano-2 environ 80 milliards de paramètres, WorldStereo-2 environ 17 milliards : poids lourds pour une carte grand public."
+  },
+  "pros": [
+   "Chaîne ouverte complète texte ou image vers monde navigable",
+   "Collision physique"
+  ],
+  "cons": [
+   "Licence inapplicable en France (UE exclue)",
+   "Très gros modèles"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/HY-World-2.0/main/License.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hy-world-2-1",
+  "family": "HunyuanWorld",
+  "variant": "HY World 2.1",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_world",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Juillet 2026 (README).",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": null,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": null,
+   "video": null,
+   "multiview": null,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Mise à jour accessible sur le site Tencent (sceneTo3D)"
+  ],
+  "cons": [
+   "Aucun détail technique publié"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hunyuanworld-1-0",
+  "family": "HunyuanWorld",
+  "variant": "HunyuanWorld 1.0",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "image_to_world",
+  "tasks_other": [],
+  "released": "2025-07-27",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent HunyuanWorld-1.0 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": null,
+   "splats": null,
+   "rig": false,
+   "formats": [
+    "panorama"
+   ],
+   "polygons": null,
+   "other": "Panorama ou monde 3D en couches"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "fal-ai/hunyuan_world/image-to-world actif, prix non affiché."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Premier monde 3D ouvert de Tencent"
+  ],
+  "cons": [
+   "Licence inapplicable en France",
+   "Dépassé par la 2.0"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/HunyuanWorld-1.0/main/LICENSE",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan_world/image-to-world",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "worldmirror-2-0",
+  "family": "HunyuanWorld",
+  "variant": "WorldMirror 2.0",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": "2026-04-16",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent HY-WORLD 2.0 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "A priori caméra, profondeur, intrinsèques"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "PLY (Gaussiennes)",
+    "COLMAP"
+   ],
+   "polygons": null,
+   "other": "Profondeur, normales, caméras, nuage de points, 3DGS"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "Caméras COLMAP et nuage de points importables via add-ons Blender."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt HY-World-2.0",
+   "vram_note": "Environ 1,2 milliard de paramètres ; 50 k à 500 k pixels par image."
+  },
+  "pros": [
+   "Photos ou vidéo vers caméras et splats en une passe",
+   "Accepte des caméras connues"
+  ],
+  "cons": [
+   "Licence inapplicable en France (UE exclue)",
+   "VRAM non publiée"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "worldmirror-1-0",
+  "family": "HunyuanWorld",
+  "variant": "WorldMirror 1.0",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": "2025-10-22",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent HunyuanWorld-Mirror Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "A priori caméra, profondeur, intrinsèques"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "COLMAP",
+    "PLY (Gaussiennes)"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Export COLMAP direct"
+  ],
+  "cons": [
+   "Remplacé par 2.0",
+   "Licence inapplicable en France"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/HunyuanWorld-Mirror",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/HunyuanWorld-Mirror/main/License.txt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "mapanything-apache",
+  "family": "MapAnything",
+  "variant": "map-anything-apache",
+  "vendor": "Meta",
+  "country": "US",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Version V1, septembre 2025 (README).",
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": "Intrinsèques, poses, profondeur optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "COLMAP",
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Géométrie métrique et caméras ; entraînement gsplat ensuite"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB direct ; COLMAP via add-on."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel",
+   "vram_note": "Mode économe : jusqu'à 2000 vues sur 140 Go (README)."
+  },
+  "pros": [
+   "Variante utilisable commercialement",
+   "Prend des caméras ou profondeurs connues"
+  ],
+  "cons": [
+   "Pas de tableau de VRAM publié"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/map-anything",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/facebook/map-anything-apache",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "mapanything-nc",
+  "family": "MapAnything",
+  "variant": "map-anything (CC-BY-NC)",
+  "vendor": "Meta",
+  "country": "US",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Septembre 2025 (README).",
+  "access": {
+   "open_weights": true,
+   "license": "CC-BY-NC 4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": "Intrinsèques, poses, profondeur optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "COLMAP",
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Géométrie métrique et caméras ; entraînement gsplat ensuite"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Recommandée pour la recherche"
+  ],
+  "cons": [
+   "Non commercial"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/map-anything",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/facebook/map-anything",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "vggt-1b-commercial",
+  "family": "VGGT",
+  "variant": "VGGT-1B-Commercial",
+  "vendor": "Meta et Oxford VGG",
+  "country": "US",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 21/07/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "Licence VGGT (usage commercial permis hors militaire, accès sur formulaire)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "COLMAP"
+   ],
+   "polygons": null,
+   "other": "Caméras, profondeur, cartes de points, suivi de points"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "COLMAP puis gsplat."
+  },
+  "speed": "Moins d'une seconde par scène en général (README).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Seul checkpoint VGGT utilisable commercialement",
+   "Sortie COLMAP directe"
+  ],
+  "cons": [
+   "Accès sur demande"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/vggt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/facebook/VGGT-1B-Commercial",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "vggt-1b",
+  "family": "VGGT",
+  "variant": "VGGT-1B",
+  "vendor": "Meta et Oxford VGG",
+  "country": "US",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Fiche Hugging Face créée le 11/03/2025.",
+  "access": {
+   "open_weights": true,
+   "license": "CC-BY-NC 4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "COLMAP"
+   ],
+   "polygons": null,
+   "other": "Caméras, profondeur, cartes de points, suivi de points"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": "Moins d'une seconde par scène en général (README).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Référence de la reconstruction en une passe (CVPR 2025)"
+  ],
+  "cons": [
+   "Non commercial"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/vggt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/facebook/VGGT-1B",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "vggt-omega",
+  "family": "VGGT",
+  "variant": "VGGT-Omega",
+  "vendor": "Meta et Oxford VGG",
+  "country": "US",
+  "task": "scene_reconstruction",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Annoncé dans le dépôt VGGT le 18/05/2026.",
+  "access": {
+   "open_weights": true,
+   "license": null,
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": true,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "COLMAP"
+   ],
+   "polygons": null,
+   "other": "Caméras, profondeur, cartes de points, suivi de points"
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Successeur de VGGT (CVPR 2026 oral)"
+  ],
+  "cons": [
+   "Accès sur demande, refus signalés",
+   "Licence non lue"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/facebookresearch/vggt",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/facebook/VGGT-Omega",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-nested-giant-large-1-1",
+  "family": "Depth Anything 3",
+  "variant": "DA3NESTED-GIANT-LARGE-1.1",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [
+   "depth_and_camera"
+  ],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "CC-BY-NC 4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "Poses caméra optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY",
+    "NPZ"
+   ],
+   "polygons": null,
+   "other": "Profondeur, poses caméra, Gaussiennes"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI-DepthAnythingV3",
+   "vram_note": "DA3-Streaming : moins de 12 Go pour les très longues vidéos (README)."
+  },
+  "pros": [
+   "Version la plus complète, métrique (1,40 milliard de paramètres)",
+   "Vidéo vers profondeur cohérente et caméras"
+  ],
+  "cons": [
+   "Non commercial",
+   "Préférer les versions « 1.1 » (bug d'entraînement corrigé)"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-giant-1-1",
+  "family": "Depth Anything 3",
+  "variant": "DA3-GIANT-1.1",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [
+   "depth_and_camera"
+  ],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "CC-BY-NC 4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "Poses caméra optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY",
+    "NPZ"
+   ],
+   "polygons": null,
+   "other": "Profondeur, poses caméra, Gaussiennes"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI-DepthAnythingV3",
+   "vram_note": "DA3-Streaming : moins de 12 Go pour les très longues vidéos (README)."
+  },
+  "pros": [
+   "Toutes vues (1,15 milliard de paramètres)",
+   "Vidéo vers profondeur cohérente et caméras"
+  ],
+  "cons": [
+   "Non commercial",
+   "Préférer les versions « 1.1 » (bug d'entraînement corrigé)"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-large-1-1",
+  "family": "Depth Anything 3",
+  "variant": "DA3-LARGE-1.1",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [
+   "depth_and_camera"
+  ],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "CC-BY-NC 4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "Poses caméra optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY",
+    "NPZ"
+   ],
+   "polygons": null,
+   "other": "Profondeur, poses caméra, Gaussiennes"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI-DepthAnythingV3",
+   "vram_note": "DA3-Streaming : moins de 12 Go pour les très longues vidéos (README)."
+  },
+  "pros": [
+   "Toutes vues (0,35 milliard de paramètres)",
+   "Vidéo vers profondeur cohérente et caméras"
+  ],
+  "cons": [
+   "Non commercial",
+   "Préférer les versions « 1.1 » (bug d'entraînement corrigé)"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-base",
+  "family": "Depth Anything 3",
+  "variant": "DA3-BASE",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [
+   "depth_and_camera"
+  ],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "Poses caméra optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY",
+    "NPZ"
+   ],
+   "polygons": null,
+   "other": "Profondeur, poses caméra, Gaussiennes"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI-DepthAnythingV3",
+   "vram_note": "DA3-Streaming : moins de 12 Go pour les très longues vidéos (README)."
+  },
+  "pros": [
+   "Toutes vues, commercial (0,12 milliard de paramètres)",
+   "Vidéo vers profondeur cohérente et caméras"
+  ],
+  "cons": [
+   "Moins précis que les grandes variantes"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-small",
+  "family": "Depth Anything 3",
+  "variant": "DA3-SMALL",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "scene_reconstruction",
+  "tasks_other": [
+   "depth_and_camera"
+  ],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": true,
+   "other": "Poses caméra optionnelles"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": true,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY",
+    "NPZ"
+   ],
+   "polygons": null,
+   "other": "Profondeur, poses caméra, Gaussiennes"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI-DepthAnythingV3",
+   "vram_note": "DA3-Streaming : moins de 12 Go pour les très longues vidéos (README)."
+  },
+  "pros": [
+   "Toutes vues, commercial (0,08 milliard de paramètres)",
+   "Vidéo vers profondeur cohérente et caméras"
+  ],
+  "cons": [
+   "Moins précis que les grandes variantes"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-metric-large",
+  "family": "Depth Anything 3",
+  "variant": "DA3METRIC-LARGE",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "NPZ",
+    "images de profondeur"
+   ],
+   "polygons": null,
+   "other": "Profondeur métrique"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI",
+   "vram_note": null
+  },
+  "pros": [
+   "Monoculaire, licence commerciale",
+   "0,35 milliard de paramètres"
+  ],
+  "cons": [
+   "Une image à la fois"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "da3-mono-large",
+  "family": "Depth Anything 3",
+  "variant": "DA3MONO-LARGE",
+  "vendor": "ByteDance Seed",
+  "country": "CN",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": "2025-11-14",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "NPZ",
+    "images de profondeur"
+   ],
+   "polygons": null,
+   "other": "Profondeur relative"
+  },
+  "blender": {
+   "mode": "addon",
+   "note": "Add-on communautaire DA3-blender ; nœuds ComfyUI."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, ComfyUI",
+   "vram_note": null
+  },
+  "pros": [
+   "Monoculaire, licence commerciale",
+   "0,35 milliard de paramètres"
+  ],
+  "cons": [
+   "Une image à la fois"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/ByteDance-Seed/Depth-Anything-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-2-vitl-normal",
+  "family": "MoGe",
+  "variant": "MoGe-2 ViT-L normal",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "arXiv 2507.02546 (juillet 2025).",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée hors fiche HF)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Champ de vision connu optionnel"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB texturé ou PLY en couleurs de sommets."
+  },
+  "speed": "60 ms par image annoncés (A100 ou RTX 3090, FP16, ViT-L), version non précisée.",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "moge infer --version v2",
+   "vram_note": null
+  },
+  "pros": [
+   "331 M paramètres",
+   "Échelle métrique et focale estimées d'une seule image"
+  ],
+  "cons": [
+   "Remplacé par MoGe-3 pour le détail fin"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-2-vitl",
+  "family": "MoGe",
+  "variant": "MoGe-2 ViT-L",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "arXiv 2507.02546 (juillet 2025).",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée hors fiche HF)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Champ de vision connu optionnel"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB texturé ou PLY en couleurs de sommets."
+  },
+  "speed": "60 ms par image annoncés (A100 ou RTX 3090, FP16, ViT-L), version non précisée.",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "moge infer --version v2",
+   "vram_note": null
+  },
+  "pros": [
+   "326 M paramètres",
+   "Échelle métrique et focale estimées d'une seule image"
+  ],
+  "cons": [
+   "Remplacé par MoGe-3 pour le détail fin"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-2-vitb-normal",
+  "family": "MoGe",
+  "variant": "MoGe-2 ViT-B normal",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "arXiv 2507.02546 (juillet 2025).",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée hors fiche HF)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Champ de vision connu optionnel"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB texturé ou PLY en couleurs de sommets."
+  },
+  "speed": "60 ms par image annoncés (A100 ou RTX 3090, FP16, ViT-L), version non précisée.",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "moge infer --version v2",
+   "vram_note": null
+  },
+  "pros": [
+   "104 M paramètres",
+   "Échelle métrique et focale estimées d'une seule image"
+  ],
+  "cons": [
+   "Remplacé par MoGe-3 pour le détail fin"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-2-vits-normal",
+  "family": "MoGe",
+  "variant": "MoGe-2 ViT-S normal",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "arXiv 2507.02546 (juillet 2025).",
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée hors fiche HF)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Champ de vision connu optionnel"
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "GLB texturé ou PLY en couleurs de sommets."
+  },
+  "speed": "60 ms par image annoncés (A100 ou RTX 3090, FP16, ViT-L), version non précisée.",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "moge infer --version v2",
+   "vram_note": null
+  },
+  "pros": [
+   "35 M paramètres",
+   "Échelle métrique et focale estimées d'une seule image"
+  ],
+  "cons": [
+   "Remplacé par MoGe-3 pour le détail fin"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-3-vitg",
+  "family": "MoGe",
+  "variant": "MoGe-3 ViT-G",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": "2026-08-18",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": false,
+   "tool": "moge infer (v3 par défaut)",
+   "vram_note": "macOS non pris en charge (FlexGEMM sur Triton)."
+  },
+  "pros": [
+   "1,25 milliard paramètres",
+   "Géométrie fine améliorée par raffinement"
+  ],
+  "cons": [
+   "Pas sur Mac"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "moge-3-vitl",
+  "family": "MoGe",
+  "variant": "MoGe-3 ViT-L",
+  "vendor": "Microsoft",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": "2026-08-18",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "MIT (code ; licence des poids non précisée)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": null,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB",
+    "PLY"
+   ],
+   "polygons": null,
+   "other": "Carte de points métrique, profondeur, intrinsèques, normales"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": false,
+   "tool": "moge infer (v3 par défaut)",
+   "vram_note": "macOS non pris en charge (FlexGEMM sur Triton)."
+  },
+  "pros": [
+   "370 M paramètres",
+   "Géométrie fine améliorée par raffinement"
+  ],
+  "cons": [
+   "Pas sur Mac"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/microsoft/MoGe",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "depth-pro",
+  "family": "Depth Pro",
+  "variant": "Depth Pro",
+  "vendor": "Apple",
+  "country": "US",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "ICLR 2025 ; fiche Hugging Face créée le 03/10/2024.",
+  "access": {
+   "open_weights": true,
+   "license": "Apple AMLR (licence de recherche Apple)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": "Profondeur métrique en mètres et focale en pixels, 2,25 mégapixels"
+  },
+  "blender": {
+   "mode": "none",
+   "note": "Carte de profondeur à convertir (displacement, nuage de points)."
+  },
+  "speed": "0,3 s pour une carte de 2,25 Mpx sur un GPU standard (éditeur).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Focale estimée sans métadonnées",
+   "Bords nets"
+  ],
+  "cons": [
+   "Licence de recherche"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/apple/ml-depth-pro",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/apple/DepthPro",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "geocalib",
+  "family": "GeoCalib",
+  "variant": "GeoCalib (pinhole et distorted)",
+  "vendor": "ETH Zurich (CVG)",
+  "country": "CH",
+  "task": "depth_and_camera",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "ECCV 2024.",
+  "access": {
+   "open_weights": true,
+   "license": "Code Apache-2.0, poids CC-BY-4.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": true,
+   "multiview": false,
+   "other": "Focale ou gravité connues optionnelles ; plusieurs images d'une même caméra"
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [],
+   "polygons": null,
+   "other": "Focale, gravité (roulis, tangage), distorsion radiale ou fisheye"
+  },
+  "blender": {
+   "mode": "none",
+   "note": "Valeurs à reporter dans la caméra Blender."
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel, démo webcam",
+   "vram_note": null
+  },
+  "pros": [
+   "Retrouve la focale et l'horizon d'un plan pour caler une caméra 3D",
+   "Modèles fisheye"
+  ],
+  "cons": [
+   "Point principal fixé au centre"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/cvg/GeoCalib",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "animateanymesh",
+  "family": "AnimateAnyMesh",
+  "variant": "AnimateAnyMesh",
+  "vendor": "HUST et Alibaba DAMO",
+  "country": "CN",
+  "task": "rigging_animation",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Poids publiés le 22/08/2025 ; ICCV 2025.",
+  "access": {
+   "open_weights": true,
+   "license": "Apache-2.0",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage statique GLB"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "FBX",
+    "ABC"
+   ],
+   "polygons": null,
+   "other": "Animation de sommets sans squelette"
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": "FBX ou Alembic dans Blender."
+  },
+  "speed": "Quelques secondes par maillage (README).",
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt officiel (CUDA 11.8+)",
+   "vram_note": null
+  },
+  "pros": [
+   "Anime n'importe quel maillage par texte, sans rig",
+   "Apache-2.0"
+  ],
+  "cons": [
+   "GLB seul en entrée",
+   "Pas de squelette éditable"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/JarrentWu1031/AnimateAnyMesh",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan-motion",
+  "family": "Hunyuan Motion",
+  "variant": "Hunyuan Motion 1B et 0,46B (fast)",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "rigging_animation",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 30/12/2025.",
+  "access": {
+   "open_weights": null,
+   "license": null,
+   "api": true,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": false,
+   "text": true,
+   "video": false,
+   "multiview": false,
+   "other": null
+  },
+  "outputs": {
+   "mesh": false,
+   "textures_pbr": false,
+   "splats": false,
+   "rig": true,
+   "formats": [],
+   "polygons": null,
+   "other": "Mouvement humain 3D"
+  },
+  "blender": {
+   "mode": null,
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "per_generation",
+   "usd": null,
+   "platform": "fal",
+   "note": "Prix non affiché sur fal le 15/10/2026."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": null,
+   "rtx4090_24gb": null,
+   "mac_m5max_128gb": null,
+   "tool": null,
+   "vram_note": null
+  },
+  "pros": [
+   "Mouvement humain par texte"
+  ],
+  "cons": [
+   "Licence et format non relus"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/fal-ai/hunyuan-motion",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ {
+  "id": "hunyuan3d-paint-2-1",
+  "family": "Hunyuan3D",
+  "variant": "Paint 2.1",
+  "vendor": "Tencent",
+  "country": "CN",
+  "task": "texturing",
+  "tasks_other": [],
+  "released": "2025-06-13",
+  "released_note": null,
+  "access": {
+   "open_weights": true,
+   "license": "Tencent Hunyuan 3D 2.1 Community License (ne s'applique pas dans l'Union européenne, au Royaume-Uni ni en Corée du Sud)",
+   "api": false,
+   "consumer_app": false
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage existant + image"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": false,
+   "formats": [
+    "GLB"
+   ],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": null,
+   "usd": null,
+   "platform": null,
+   "note": null
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": true,
+   "rtx4090_24gb": true,
+   "mac_m5max_128gb": null,
+   "tool": "Dépôt Hunyuan3D-2.1",
+   "vram_note": "Environ 21 Go pour la texture (README)."
+  },
+  "pros": [
+   "Texture PBR sur un maillage existant, en local"
+  ],
+  "cons": [
+   "Licence inapplicable en France"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ {
+  "id": "hi3d-texture",
+  "family": "Hitem3D (Hi3D)",
+  "variant": "Hi3D Texture",
+  "vendor": "Math Magic",
+  "country": "CN",
+  "task": "texturing",
+  "tasks_other": [],
+  "released": null,
+  "released_note": "Sur fal depuis le 31/07/2026.",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": true
+  },
+  "scores": {},
+  "scores_note": null,
+  "inputs": {
+   "images": true,
+   "text": false,
+   "video": false,
+   "multiview": false,
+   "other": "Maillage + image de référence"
+  },
+  "outputs": {
+   "mesh": true,
+   "textures_pbr": true,
+   "splats": false,
+   "rig": null,
+   "formats": [],
+   "polygons": null,
+   "other": null
+  },
+  "blender": {
+   "mode": "import_direct",
+   "note": null
+  },
+  "speed": null,
+  "price": {
+   "unit": "credits",
+   "usd": null,
+   "platform": "fal",
+   "note": "0,02 $ le crédit ; texture 10 crédits et PBR 5 crédits dans la grille de génération."
+  },
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "rtx4090_24gb": false,
+   "mac_m5max_128gb": false,
+   "tool": null,
+   "vram_note": "Service en ligne, pas de poids publiés."
+  },
+  "pros": [
+   "Texture depuis une image de référence"
+  ],
+  "cons": [
+   "Pas de poids publiés"
+  ],
+  "status_note": null,
+  "sources": [
+   {
+    "url": "https://fal.ai/models/hitem3d/hi3d/texture",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ }
+]
