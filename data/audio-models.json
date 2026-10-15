@@ -20,6 +20,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": "Français pris en charge, aucune mesure propre au français publiée.",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1326 (bonne au-dessus de 1100, faible sous 1000). Accents : balise expérimentale [strong X accent] (doc v3), sans liste anglaise.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -115,6 +118,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1328 (bonne au-dessus de 1100, faible sous 1000). Accents : balise expérimentale [strong X accent] (doc v3), sans liste anglaise.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -204,6 +210,9 @@
   "languages": "70+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1175 (bonne au-dessus de 1100, faible sous 1000). Accents : balise expérimentale [strong X accent] (doc v3), sans liste anglaise.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -297,6 +306,9 @@
   "languages": "70+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1207 (bonne au-dessus de 1100, faible sous 1000). Accents : balise expérimentale [strong X accent] (doc v3), sans liste anglaise.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -385,6 +397,14 @@
   "languages": "29 langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-CA"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1095 (bonne au-dessus de 1100, faible sous 1000). Accents : doc ElevenLabs Models : English (USA, UK, Australia, Canada).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -473,6 +493,14 @@
   "languages": "32 langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-CA"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1077 (bonne au-dessus de 1100, faible sous 1000). Accents : doc ElevenLabs Models : toutes les langues de v2, donc English (USA, UK, Australia, Canada).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -562,6 +590,14 @@
   "languages": "32 langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-CA"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1098 (bonne au-dessus de 1100, faible sous 1000). Accents : doc ElevenLabs Models : toutes les langues de v2, donc English (USA, UK, Australia, Canada).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -644,6 +680,9 @@
   "languages": "Celles du modèle de synthèse choisi",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Qualité selon le modèle de synthèse choisi ; aucune mesure propre au clonage en anglais.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -715,6 +754,9 @@
   "languages": "Celles du modèle de synthèse choisi",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Qualité selon le modèle de synthèse choisi ; aucune mesure propre au clonage en anglais.",
   "clone": {
    "seconds_needed": 1800,
    "zero_shot": false,
@@ -781,6 +823,9 @@
   "languages": "29 langues (eleven_multilingual_sts_v2)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Doc ElevenLabs : modèle eleven_english_sts_v2 dédié à l'anglais, aucune mesure publiée. Accents : balise expérimentale [strong X accent] (doc v3), sans liste anglaise.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -851,6 +896,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure publiée du doublage vers ou depuis l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -923,6 +971,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure publiée du doublage vers ou depuis l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1306,6 +1357,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 5,37 % ; Artificial Analysis WER 2,2 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1386,6 +1440,9 @@
   "languages": "90+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun WER anglais publié pour la version temps réel dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1453,6 +1510,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Doc OpenAI : voix optimisées pour l'anglais, accent réglable par instructions sans liste ; aucun score dans la base.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -1521,6 +1581,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1104 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1587,6 +1650,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1078 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -1668,6 +1734,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1725,6 +1794,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais dans les classements consultés.",
   "clone": {
    "seconds_needed": 5,
    "zero_shot": true,
@@ -1789,6 +1861,9 @@
   "languages": "70+ langues en entrée, 13 en sortie",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Anglais parmi les langues de sortie ; aucune mesure publiée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1856,6 +1931,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 6,38 % ; Artificial Analysis WER 3,3 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1925,6 +2003,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 4,0 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -1987,6 +2068,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 4,5 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2047,6 +2131,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun WER anglais publié dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2112,6 +2199,9 @@
   "languages": "Multilingue ; résultats forts dans environ 10 langues selon la fiche",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 8,39 % ; Artificial Analysis WER 4,6 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2186,6 +2276,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 7,84 % ; Artificial Analysis WER 4,1 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2258,6 +2351,12 @@
   "languages": "130+ langues, détection automatique",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1273 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Gemini API speech-generation : filtre d'accent American/British de la Voice Library.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -2343,6 +2442,12 @@
   "languages": "101 langues (presse)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1247 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Gemini API speech-generation : filtre d'accent American/British de la Voice Library.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2419,6 +2524,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1212 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2483,6 +2591,14 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-IN"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1060 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Google Cloud Chirp 3 HD.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2547,6 +2663,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2607,6 +2726,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure publiée de la traduction vocale vers l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -2666,6 +2788,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 2,6 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -3078,6 +3203,9 @@
   "languages": "40+ langues (presse, chiffres divergents)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1173 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -3162,6 +3290,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1151 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -3242,6 +3373,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1129 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -3304,6 +3438,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Qualité selon le modèle Speech choisi ; aucune mesure propre au clonage en anglais.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -3515,6 +3652,9 @@
   "languages": "80+ langues listées dans la fiche, dont le français",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1242 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 3.9,
    "zero_shot": true,
@@ -3591,6 +3731,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1190 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -3657,6 +3800,9 @@
   "languages": "80+ langues ; palier 1 : ja, en, zh ; palier 2 : ko, es, pt, ar, ru, fr, de",
   "french_quality": "moyenne",
   "french_note": "Français en palier 2 sur 3 selon l'éditeur (pas une mesure).",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1116 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -3736,6 +3882,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1080 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -3806,6 +3955,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1043 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -3876,6 +4028,12 @@
   "languages": "44 langues, 61 variantes régionales",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1283 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Cartesia : voix en-US et en-GB, localisation d'accent.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -3954,6 +4112,12 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1191 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Cartesia Localize voices : en-US et en-GB.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4016,6 +4180,13 @@
   "languages": "11 langues : anglais, japonais, coréen, espagnol, français, portugais, italien, allemand, russe, hindi, arabe",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-ZA"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1050 (bonne au-dessus de 1100, faible sous 1000). Accents : Hume, guide de prompting Octave : accents britannique, texan, sud-africain par description de voix.",
   "clone": {
    "seconds_needed": 15,
    "zero_shot": true,
@@ -4093,6 +4264,13 @@
   "languages": "Anglais, espagnol",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-ZA"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1039 (bonne au-dessus de 1100, faible sous 1000). Accents : Hume, guide de prompting Octave : accents britannique, texan, sud-africain par description de voix.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4161,6 +4339,32 @@
   "languages": "200+ langues et variantes (doc), qualité inégale selon des tiers",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-IN",
+   "en-CA",
+   "en-IE",
+   "en-NZ",
+   "en-ZA",
+   "en-SG",
+   "en-PH",
+   "en-NG",
+   "en-KE",
+   "en-MY",
+   "en-ID",
+   "en-JM",
+   "en-HK",
+   "en-SC",
+   "en-GB-u-sd-gbwls",
+   "en-029",
+   "en-southern",
+   "en-scottish",
+   "en-UG"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1259 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Inworld multilingual : 22 codes anglais dont gallois, écossais, sud des États-Unis.",
   "clone": {
    "seconds_needed": 5,
    "zero_shot": true,
@@ -4237,6 +4441,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "TTS Arena V2 Hugging Face (anglais) : Elo 1553. Accents : la doc multilingue ne couvre que TTS-2.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4302,6 +4509,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1297 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4375,6 +4585,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1243 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4439,6 +4652,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais), voix contrôlée : Elo 1200.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4500,6 +4716,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "TTS Arena V2 Hugging Face (anglais) : Elo 1559.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4563,6 +4782,13 @@
   "languages": "Anglais, français, espagnol, portugais, allemand",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-IE"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1173 (bonne au-dessus de 1100, faible sous 1000). Accents : doc LiveKit Gradium et gradium.ai : voix anglaises américaines, britanniques, irlandaises.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -4643,6 +4869,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais récent dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4706,6 +4935,9 @@
   "languages": "23+ langues dont le français (ar, da, de, el, en, es, fi, fr, he, hi, it, ja, ko, ms, nl, no, pl, pt, ru, sv, sw, tr, zh)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais propre à cette version dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -4775,6 +5007,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1025 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -4849,6 +5084,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun score anglais propre à cette version dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -4915,6 +5153,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1103 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -4970,6 +5211,9 @@
   "languages": "Anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Modèle anglais seul selon l'éditeur, aucune mesure publiée.",
   "clone": {
    "seconds_needed": 10,
    "zero_shot": true,
@@ -5033,6 +5277,9 @@
   "languages": "Anglais, chinois",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "faible",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 956 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5103,6 +5350,9 @@
   "languages": "Anglais ; voix expérimentales en 9 langues dont le français",
   "french_quality": "inconnu",
   "french_note": "Voix françaises « expérimentales » selon l'éditeur.",
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Anglais principal selon Microsoft, aucun score dans les classements consultés.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5169,6 +5419,14 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-IN"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1133 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Azure language support : voix HD en en-US, en-GB, en-AU, en-IN.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5235,6 +5493,24 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB",
+   "en-AU",
+   "en-IN",
+   "en-CA",
+   "en-IE",
+   "en-NZ",
+   "en-ZA",
+   "en-SG",
+   "en-PH",
+   "en-HK",
+   "en-KE",
+   "en-NG",
+   "en-TZ"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1035 (bonne au-dessus de 1100, faible sous 1000). Accents : doc Azure language support : 14 locales anglaises en voix neurales.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5297,6 +5573,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1031 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5354,6 +5633,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 2,0 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5413,6 +5695,9 @@
   "languages": "50+ langues dont le français",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 8,23 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5483,6 +5768,9 @@
   "languages": "Anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Dialogue en anglais seul selon Kyutai, aucune mesure comparable publiée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5549,6 +5837,9 @@
   "languages": "Anglais, français",
   "french_quality": "inconnu",
   "french_note": "Entraîné pour l'anglais et le français, pas de mesure publique de qualité française trouvée.",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Page Kyutai TTS : WER anglais 2,82 % (NTREX), meilleur de son tableau devant ElevenLabs Multilingual v2 à 3,1 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": false,
@@ -5614,6 +5905,9 @@
   "languages": "Anglais, français",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucun WER anglais de ce modèle trouvé dans l'Open ASR Leaderboard.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5679,6 +5973,9 @@
   "languages": "Anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard (instantané mai 2026) : WER anglais moyen 6,40 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5734,6 +6031,9 @@
   "languages": "Anglais (autres langues peu fiables selon l'éditeur)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Tableau de Kyutai : WER anglais 5,47 %, similarité de voix 82,5 % ; mesure d'un concurrent.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -5799,6 +6099,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Démo en anglais, aucune mesure publiée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -5856,6 +6159,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Seed-TTS-eval test-en : WER 1,83 à 2,00 % selon les papiers (référence humaine 2,14 %) ; intelligibilité, pas naturel.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -5918,6 +6224,12 @@
   "languages": "Plusieurs langues dont le français (lang_code 'f')",
   "french_quality": "inconnu",
   "french_note": "Voix française entraînée sur le corpus SIWIS, moins de 11 h (fiche).",
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1061 (bonne au-dessus de 1100, faible sous 1000). Accents : VOICES.md hexgrad : anglais américain (20 voix) et britannique (8 voix).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": false,
@@ -5997,6 +6309,9 @@
   "languages": "17 langues dont le français",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "faible",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 914 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 6,
    "zero_shot": true,
@@ -6072,6 +6387,9 @@
   "languages": "Anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Tableau de Kyutai : WER anglais 4,16 %, similarité 69,7 % ; mesure d'un concurrent.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -6131,6 +6449,9 @@
   "languages": "Anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Modèle anglais seul selon Nari Labs, aucune mesure comparable publiée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6191,6 +6512,9 @@
   "languages": "Anglais ; modèles multilingues en préversion de recherche (avril 2025)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Tableau de Kyutai : WER anglais 4,66 %, similarité 34,6 % ; mesure d'un concurrent.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6258,6 +6582,9 @@
   "languages": "100+ langues",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1037 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6339,6 +6666,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 6,19 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -6399,6 +6729,9 @@
   "languages": "Chinois, anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Seed-TTS-eval test-en : WER environ 2,2 % dans les tableaux comparatifs publiés ; intelligibilité, pas naturel.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6463,6 +6796,9 @@
   "languages": "Chinois, anglais, japonais, espagnol, arabe",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure anglaise propre à la 2.5 trouvée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6522,6 +6858,9 @@
   "languages": "9 langues dont le français, 18+ dialectes chinois",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Papier CosyVoice 3 : WER Seed-TTS-eval test-en 2,22 % (1,5B) ; intelligibilité, pas naturel.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6581,6 +6920,9 @@
   "languages": "Chinois, anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Papier Spark-TTS : WER test-en 1,98 %, deuxième derrière F5-TTS ; intelligibilité, pas naturel.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6640,6 +6982,12 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": [
+   "en-US",
+   "en-GB"
+  ],
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1000 (bonne au-dessus de 1100, faible sous 1000). Accents : fiche OpenRouter (tiers) : accents américain et britannique.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6704,6 +7052,9 @@
   "languages": "Palier 1 : anglais, mandarin, japonais ; palier 2 dont le français ; palier 3 : 21 langues",
   "french_quality": "moyenne",
   "french_note": "Français en palier 2 sur 3 selon l'éditeur (pas une mesure).",
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "WER anglais auto-déclaré sur jeu interne ZTT1-Eval, aucune mesure indépendante.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6763,6 +7114,9 @@
   "languages": "30 langues dont le français, 9 dialectes chinois",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Rapport VoxCPM2 : WER moyen 1,68 % sur 30 langues, pas de chiffre anglais isolé.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,
@@ -6826,6 +7180,9 @@
   "languages": "10 langues : chinois, anglais, japonais, coréen, allemand, français, russe, portugais, espagnol, italien",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "faible",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 931 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 3,
    "zero_shot": true,
@@ -6894,6 +7251,9 @@
   "languages": "9 langues : anglais, français, allemand, espagnol, néerlandais, portugais, italien, hindi, arabe",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1088 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": 3,
    "zero_shot": true,
@@ -6971,6 +7331,9 @@
   "languages": "12 langues (fiche)",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis Speech Arena (anglais) : Elo 1064 (bonne au-dessus de 1100, faible sous 1000).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7034,6 +7397,9 @@
   "languages": "25 langues européennes dont le français, détection automatique",
   "french_quality": "bonne",
   "french_note": "WER français 5,15 % sur FLEURS, 4,97 % sur MLS, 6,05 % sur CoVoST (mesures éditeur).",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 6,51 % ; Artificial Analysis WER 4,5 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7108,6 +7474,9 @@
   "languages": "Anglais seulement",
   "french_quality": "faible",
   "french_note": "Entraîné sur l'anglais seulement ; le français n'est « pas fiable » selon la fiche.",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 6,37 % ; Artificial Analysis WER 4,3 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7179,6 +7548,9 @@
   "languages": "25 langues européennes dont le français ; traduction vers et depuis l'anglais",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 7,91 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7245,6 +7617,9 @@
   "languages": null,
   "french_quality": "bonne",
   "french_note": "WER français 4,32 % (tableau éditeur, hors ligne).",
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 3,6 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7307,6 +7682,9 @@
   "languages": "13 langues dont le français",
   "french_quality": "moyenne",
   "french_note": "WER français 6,42 % avec 480 ms de délai (tableau éditeur).",
+  "english_quality": "moyenne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 9,01 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7374,6 +7752,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 6,9 % ; Artificial Analysis WER 2,8 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7446,6 +7827,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 7,84 % ; Artificial Analysis WER 3,8 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7513,6 +7897,9 @@
   "languages": "30 langues dont le français et 22 dialectes chinois ; chant et musique de fond",
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 5,75 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7578,6 +7965,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 1,7 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7637,6 +8027,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Artificial Analysis WER 2,3 % (jeux anglais).",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -7694,6 +8087,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "bonne",
+  "english_accents": null,
+  "english_note": "Open ASR Leaderboard WER anglais moyen 4,02 %.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -9193,6 +9589,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Modèle visuel indépendant de la langue ; aucune mesure propre à l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -9257,6 +9656,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Modèle visuel indépendant de la langue ; aucune mesure propre à l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -9321,6 +9723,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Modèle visuel indépendant de la langue ; aucune mesure propre à l'anglais.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": null,
@@ -9390,6 +9795,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure anglaise publiée.",
   "clone": {
    "seconds_needed": 1,
    "zero_shot": true,
@@ -9457,6 +9865,9 @@
   "languages": null,
   "french_quality": "inconnu",
   "french_note": null,
+  "english_quality": "inconnu",
+  "english_accents": null,
+  "english_note": "Aucune mesure anglaise publiée.",
   "clone": {
    "seconds_needed": null,
    "zero_shot": true,

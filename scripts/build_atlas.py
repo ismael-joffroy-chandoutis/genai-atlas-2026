@@ -27,8 +27,10 @@ for p in prices:
     mid = alias.get(p.get("model_id"), p.get("model_id"))
     by_model.setdefault(mid, []).append(p)
 
+extra = load("local-runs-extra.json", {})
 for m in audio + threed:
     m["_int"] = integ.get(m["id"], {})
+    m["_local"] = extra.get(m["id"], {})
 for m in video + image:
     m["_int"] = integ.get(m["id"], {})
     m["_scores"] = rank.get("scores", {}).get(m["id"], {})

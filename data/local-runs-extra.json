@@ -1,0 +1,1701 @@
+{
+  "mac_studio_chip": "Mac Studio M5 Ultra (annoncé le 25/08/2026, page Apple lue le 15/10/2026) : 96 Go de base, 256 ou 512 Go en option (36 cœurs CPU, 80 cœurs GPU, 1,2 To/s). Apple ne propose PAS de M5 Ultra en 128 Go : la colonne 128 Go correspond au Mac Studio M5 Max 128 Go (18 cœurs CPU, 40 cœurs GPU, 614 Go/s), même mémoire que le MacBook Pro M5 Max 128 Go de référence. Les 512 Go sont annoncés pour fin octobre.",
+  "_sources_communes": [
+    {
+      "url": "https://www.apple.com/mac-studio/specs/",
+      "date": "2026-10-15",
+      "type": "editeur"
+    }
+  ],
+  "openai-whisper-large-v3-turbo": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (environ 0,8 milliard de paramètres) : tourne sur M5 Max 128 Go via faster-whisper, whisper.cpp, MLX (mlx-community/whisper-large-v3-turbo), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/openai/whisper-large-v3-turbo",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "openai-whisper-large-v3": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (environ 1,5 milliard de paramètres) : tourne sur M5 Max 128 Go via faster-whisper, whisper.cpp, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/openai/whisper-large-v3",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "minimax-music-3": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "fish-audio-drama-3": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "fish-audio-s2-pro": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (4,4 milliards de paramètres (4 B + 0,4 B) : tient sur 24 Go en bf16 par déduction) : tourne sur M5 Max 128 Go via fish-speech, SGLang ; MLX (mlx-community/fish-audio-s2-pro-8bit), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/fishaudio/s2-pro",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "fish-openaudio-s1-mini": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "resemble-chatterbox-multilingual-v3": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (500 millions de paramètres : petit) : tourne sur M5 Max 128 Go via chatterbox ; MLX (mlx-community/chatterbox-multilingual-v3), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/ResembleAI/chatterbox",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/mlx-community/chatterbox-multilingual-v3",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "resemble-chatterbox": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (500 millions de paramètres) : tourne sur M5 Max 128 Go via chatterbox, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/ResembleAI/chatterbox",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "resemble-chatterbox-turbo": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (350 millions de paramètres) : tourne sur M5 Max 128 Go via chatterbox ; ONNX ; MLX (mlx-community/chatterbox-turbo-4bit), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/ResembleAI/chatterbox-turbo-ONNX",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "resemble-dramabox": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit : LTX-2.3 audio 3,3B plus Gemma 3 12B, environ 31 Go en bf16 et moins en 8 bits ; version MLX existante. Non mesuré.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/ResembleAI/Dramabox",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "microsoft-vibevoice-1-5b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "microsoft-vibevoice-realtime-0-5b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "microsoft-vibevoice-asr": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "kyutai-moshi": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit : 7B, version MLX q4 (kyutai/moshiko-mlx-q4) de quelques Go ; la version PyTorch tient sur 24 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/kyutai-labs/moshi",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/kyutai/moshiko-pytorch-bf16",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "kyutai-tts-1-6b-en-fr": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (1,8 milliard de paramètres) : tourne sur M5 Max 128 Go via moshi, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/kyutai/tts-1.6b-en_fr",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/kyutai-labs/delayed-streams-modeling",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "kyutai-stt-1b-en-fr": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (Environ 1 milliard de paramètres) : tourne sur M5 Max 128 Go via moshi, Rust, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/kyutai/stt-1b-en_fr-trfs",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/kyutai-labs/delayed-streams-modeling",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "kyutai-stt-2-6b-en": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (2,6 milliards de paramètres) : tourne sur M5 Max 128 Go via moshi, Rust, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/kyutai-labs/delayed-streams-modeling",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "sesame-csm-1b": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (1 milliard de paramètres) : tourne sur M5 Max 128 Go via csm (PyTorch, MPS) ; MLX (mlx-community/csm-1b), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/SesameAILabs/csm",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/sesame/csm-1b",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "f5-tts": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Tourne sur M5 Max 128 Go via f5-tts ; f5-tts-mlx, mais taille non relevée dans l'atlas : inconnu sur 64 Go, sans doute petit.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/SWivid/F5-TTS",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "kokoro-82m": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (82 millions de paramètres : tourne aussi sur CPU) : tourne sur M5 Max 128 Go via kokoro, ONNX, MLX (mlx-community/Kokoro-82M-bf16), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/hexgrad/Kokoro-82M",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/hexgrad/kokoro",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "coqui-xtts-v2": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Tourne sur M5 Max 128 Go via coqui-tts (fork idiap, roues macOS), mais taille non relevée dans l'atlas : inconnu sur 64 Go, sans doute petit.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/coqui/XTTS-v2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/idiap/coqui-ai-TTS",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "nari-dia-1-6b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "nari-dia2-2b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "canopy-orpheus-3b": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (3 milliards de paramètres) : tourne sur M5 Max 128 Go via orpheus-speech (vLLM), GGUF, MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/canopyai/Orpheus-TTS",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/canopylabs/orpheus-3b-0.1-ft",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "boson-higgs-audio-v3-tts": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "boson-higgs-audio-v3-stt": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "indextts-2": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Tourne sur M5 Max 128 Go via indextts ; MLX (mlx-community/index-tts2-mlx), mais taille non relevée dans l'atlas : inconnu sur 64 Go, sans doute petit.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/IndexTeam/IndexTTS-2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/index-tts/index-tts/blob/main/LICENSE",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "indextts-2-5": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (Environ 6 Go de VRAM (fiche) : tourne sur M5 Max 128 Go via indextts ; MLX (mlx-community/IndexTTS-2.5-fp16), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/IndexTeam/IndexTTS-2.5",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "cosyvoice-3": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (0,5 milliard de paramètres) : tourne sur M5 Max 128 Go via CosyVoice ; MLX (mlx-community/Fun-CosyVoice3-0.5B-2512-fp16), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "spark-tts-0-5b": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (0,5 milliard de paramètres) : tourne sur M5 Max 128 Go via Spark-TTS ; MLX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/SparkAudio/Spark-TTS-0.5B",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "zyphra-zonos-v0-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "zyphra-zonos2": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "MLX existe mais taille non relevée (MoE) : inconnu sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": []
+  },
+  "openbmb-voxcpm2": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (2 milliards de paramètres ; RTF 0,3 sur RTX 4090 (fiche) : tourne sur M5 Max 128 Go via voxcpm, Nano-VLLM ; MLX (mlx-community/VoxCPM2-8bit), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/openbmb/VoxCPM2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "qwen3-tts": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "mistral-voxtral-tts": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "nvidia-magpie-tts-multilingual": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "nvidia-parakeet-tdt-0-6b-v3": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (600 millions de paramètres) : tourne sur M5 Max 128 Go via NeMo ; MLX (mlx-community/parakeet-tdt-0.6b-v3) ; CoreML ; ONNX, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "nvidia-canary-qwen-2-5b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "nvidia-canary-1b-v2": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (1 milliard de paramètres) : tourne sur M5 Max 128 Go via NeMo ; ONNX ; MLX communautaire, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/nvidia/canary-1b-v2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "mistral-voxtral-mini-4b-realtime": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (4 milliards de paramètres) : tourne sur M5 Max 128 Go via vLLM ; mlx-audio, voxmlx ; GGUF, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/mistralai/Voxtral-Mini-4B-Realtime-2602",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "mistral-voxtral-small-24b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "mistral-voxtral-mini-3b": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (3 milliards de paramètres) : tourne sur M5 Max 128 Go via vLLM ; MLX ; GGUF, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/mistralai/Voxtral-Mini-3B-2507",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "qwen3-asr-1-7b": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (1,7 milliard de paramètres) : tourne sur M5 Max 128 Go via qwen-asr (transformers, vLLM) ; MLX ; GGUF, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/Qwen/Qwen3-ASR-1.7B",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/datasets/hf-audio/open-asr-leaderboard-results/blob/main/english_short_latest.csv",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "stable-audio-3-medium": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "stable-audio-3-small": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "stable-audio-3-small-sfx": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "stable-audio-open-1-0": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "ace-step-1-5": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (Moins de 4 Go (fiche). Moins de 10 s par chanson sur RTX 3090) : tourne sur M5 Max 128 Go via ACE-Step (CUDA, MPS, ROCm) ; ComfyUI ; GGUF, nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/ACE-Step/Ace-Step1.5",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/ace-step/ACE-Step-1.5",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "yue2-3b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "yue-s1-7b": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "meta-musicgen-large": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "mmaudio": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuanvideo-foley-xxl": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuanvideo-foley-xl": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "thinksound": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "foley-omni": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "latentsync-1-6": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "seed-vc": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit de la taille (Modèles de 25 à 200 millions de paramètres) : tourne sur M5 Max 128 Go via seed-vc ; MLX (Avdpro/MLX-Seed-VC-v2), nettement sous 40 Go. Non mesuré sur 64 Go.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/Plachtaa/seed-vc",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/Plachta/Seed-VC",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "resemble-chatterbox-vc": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuan3d-2-0": {
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit : 6 Go pour la forme, 16 Go forme + texture (README officiel), macOS annoncé.",
+    "mac_studio_128gb": true,
+    "mac_studio_256gb": true,
+    "mac_studio_512gb": true,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
+    "sources": [
+      {
+        "url": "https://github.com/Tencent-Hunyuan/Hunyuan3D-2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/tencent/Hunyuan3D-2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "hunyuan3d-2-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuan3d-2mv": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuan3d-2-5": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://www.aibase.com/news/17448",
+        "date": "2025-04-23",
+        "type": "independant"
+      },
+      {
+        "url": "https://cgworld.jp/flashnews/01-202505-Hunyuan3D-25.html",
+        "date": "2025-05-01",
+        "type": "independant"
+      }
+    ]
+  },
+  "hunyuan3d-3-0": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://cgworld.jp/flashnews/01-202509-Hunyuan3D-30.html",
+        "date": "2025-09-16",
+        "type": "independant"
+      },
+      {
+        "url": "https://fal.ai/models/fal-ai/hunyuan3d-v3/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "hunyuan3d-3-1-pro": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/fal-ai/hunyuan-3d/v3.1/pro/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://www.tencentcloud.com/document/product/1284/75281",
+        "date": "2026-05-08",
+        "type": "editeur"
+      }
+    ]
+  },
+  "hunyuan3d-3-1-rapid": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/fal-ai/hunyuan-3d/v3.1/rapid/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://www.tencentcloud.com/document/product/1284/75281",
+        "date": "2026-05-08",
+        "type": "editeur"
+      }
+    ]
+  },
+  "trellis-image-large": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : GPU NVIDIA d'au moins 16 Go ; testé seulement sous Linux (README).",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/microsoft/TRELLIS",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/microsoft/TRELLIS-image-large",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "trellis-2-4b": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : GPU NVIDIA d'au moins 24 Go, Linux seulement (README).",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/microsoft/TRELLIS.2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/microsoft/TRELLIS.2-4B",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "trellis-2-retexture": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Même besoin que TRELLIS.2 : 24 Go, Linux.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/microsoft/TRELLIS.2",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "triposg-1-5b": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : GPU CUDA d'au moins 8 Go (README).",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/VAST-AI-Research/TripoSG",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/VAST-AI/TripoSG",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "tripo-v3-0": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://pasqualepillitteri.it/en/news/7811/tripo-ai-review-3d-model-generator",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://www.tripo3d.ai/blog/tripo-dcc-bridge-for-blender",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "tripo-h3-1": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://www.newsfilecorp.com/release/289194",
+        "date": "2026-03-20",
+        "type": "editeur"
+      },
+      {
+        "url": "https://fal.ai/models/tripo3d/h3.1/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "tripo-p1": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://www.newsfilecorp.com/release/289194",
+        "date": "2026-03-20",
+        "type": "editeur"
+      },
+      {
+        "url": "https://fal.ai/models/tripo3d/p1/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "tripo-p2": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/tripo3d/p2/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://fal.ai/models/tripo3d/p2/text-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "tripo-h3-1-multiview": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/tripo3d/h3.1/multiview-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "tripo-h3-1-text": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/tripo3d/h3.1/text-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "unirig": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "geosam2": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "meshy-6": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.meshy.ai/en/api/changelog",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://www.meshy.ai/api",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "meshy-7": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.meshy.ai/en/api/changelog",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "meshy-7-1": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.meshy.ai/en/api/changelog",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://fal.ai/models/meshy/v7.1/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "meshy-6-lite-retexture": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/meshy/v6-lite/retexture",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://docs.meshy.ai/en/api/changelog",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "meshy-rigging-animation": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/fal-ai/meshy/rigging",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://fal.ai/models/fal-ai/meshy/rigging/multi-animation",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "meshy-text-to-motion": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.meshy.ai/en/api/changelog",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "rodin-gen-2": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://markets.financialcontent.com/pennwell.pennenergy/article/pressadvantage-2025-10-1-deemos-tech-launches-hyper3d-rodin-gen-2-next-generation-3d-model-generator",
+        "date": "2025-10-01",
+        "type": "editeur"
+      },
+      {
+        "url": "https://hyper3d.ai/pricing",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "rodin-gen-2-5": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/fal-ai/hyper3d/rodin/v2.5",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://fal.ai/models/fal-ai/hyper3d/rodin/v2.5/fast",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  },
+  "csm-cube": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://csm.ai/academy/what-is-cube-by-csm",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "luma-genie": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://lumalabs.ai/genie",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "stable-fast-3d": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "spar3d": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "partcrafter": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "step1x-3d": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "sparc3d": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://www.gamebusiness.jp/article/2025/06/27/24512.html",
+        "date": "2025-06-27",
+        "type": "independant"
+      },
+      {
+        "url": "https://blog.hitem3d.ai/blog/sparc3d/",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "hi3d-v3-0": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/hitem3d/hi3d/v3.0/image-to-3d",
+        "date": "2026-10-15",
+        "type": "independant"
+      },
+      {
+        "url": "https://www.thailand-business-news.com/pr-news/math-magic-closes-series-a-raising-nearly-50-million-across-two-rounds-in-six-months",
+        "date": "2026-08-20",
+        "type": "independant"
+      }
+    ]
+  },
+  "direct3d-s2": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "pixal3d": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "sam-3d-objects": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "marble-1-1": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.worldlabs.ai/marble/models",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://docs.worldlabs.ai/marble/release-notes",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "marble-1-1-plus": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.worldlabs.ai/marble/models",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://docs.worldlabs.ai/marble/release-notes",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "marble-1-0-draft": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://docs.worldlabs.ai/marble/models",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://docs.worldlabs.ai/marble/release-notes",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "genie-3": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://deepmind.google/models/genie/",
+        "date": "2026-10-15",
+        "type": "editeur"
+      },
+      {
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie/",
+        "date": "2026-01-29",
+        "type": "editeur"
+      }
+    ]
+  },
+  "hy-world-2-0": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hy-world-2-1": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://github.com/Tencent-Hunyuan/HY-World-2.0",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "worldmirror-2-0": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "mapanything-apache": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-nested-giant-large-1-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-giant-1-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-large-1-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-base": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-small": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-metric-large": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "da3-mono-large": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "moge-2-vitl-normal": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "moge-2-vitl": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "moge-2-vitb-normal": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "moge-2-vits-normal": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "moge-3-vitg": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : macOS non pris en charge (FlexGEMM sur Triton).",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/microsoft/MoGe",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "moge-3-vitl": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : macOS non pris en charge (FlexGEMM sur Triton).",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Pas de voie Mac : plus de mémoire n'y change rien.",
+    "sources": [
+      {
+        "url": "https://github.com/microsoft/MoGe",
+        "date": "2026-10-15",
+        "type": "editeur"
+      }
+    ]
+  },
+  "geocalib": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "animateanymesh": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hunyuan3d-paint-2-1": {
+    "mac_m5pro_64gb": null,
+    "mac64_note": "Aucune voie Mac confirmée sur M5 Max 128 Go : inconnu.",
+    "mac_studio_128gb": null,
+    "mac_studio_256gb": null,
+    "mac_studio_512gb": null,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure.",
+    "sources": []
+  },
+  "hi3d-texture": {
+    "mac_m5pro_64gb": false,
+    "mac64_note": "Pas de voie Mac : Service en ligne, pas de poids publiés.",
+    "mac_studio_128gb": false,
+    "mac_studio_256gb": false,
+    "mac_studio_512gb": false,
+    "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Service en ligne, pas de poids publiés.",
+    "sources": [
+      {
+        "url": "https://fal.ai/models/hitem3d/hi3d/texture",
+        "date": "2026-10-15",
+        "type": "independant"
+      }
+    ]
+  }
+}

@@ -4,7 +4,7 @@
 
 # GenAI Atlas 2026
 
-A comparison of generative video and image models as of 15 October 2026, variant by variant: what each one accepts as input (text, reference images, reference videos, reference audio, first and last frame, keyframes, 3D, control maps, LoRA), what it outputs (duration, resolution, native audio, lip-sync), its editing functions, its independent ranking, whether it runs locally on an RTX 5090, an RTX 4090 or a Mac M5 Max with 128 GB, and what it costs, platform by platform. It was built for filmmakers who need to choose a tool for a given shot, not a favourite model.
+A comparison of generative video and image models as of 15 October 2026, variant by variant: what each one accepts as input (text, reference images, reference videos, reference audio, first and last frame, keyframes, 3D, control maps, LoRA), what it outputs (duration, resolution, native audio, lip-sync), its editing functions, its independent ranking, whether it runs locally on an RTX 5090, an RTX 4090 or a MacBook Pro M5 Max (128 GB), a MacBook Pro M5 Pro (64 GB), a Mac Studio M5 Max (128 GB) or M5 Ultra (256 or 512 GB), and what it costs, platform by platform. It was built for filmmakers who need to choose a tool for a given shot, not a favourite model.
 
 <img src="monde.jpg" alt="image-monde" width="100%">
 
@@ -15,7 +15,7 @@ A comparison of generative video and image models as of 15 October 2026, variant
   - `video-models.json`, `image-models.json`: capabilities, inputs, outputs, ranking, moderation, strengths and weaknesses.
   - `prices.json`: 1138 prices for 362 models across 27 platforms (pay-per-use APIs, vendors, subscriptions).
   - `local-runs.json`: whether each open-weight model runs on a Mac M5 Max 128 GB and on an RTX 4090 24 GB, with the tool to use.
-  - `gpu-hour.json`: GPU rental prices per hour.
+  - `gpu-hour.json`: GPU rental by the hour (RunPod, Vast.ai, Modal) and whole machines you rent and install Pinokio or ComfyUI on yourself (Scaleway, OVHcloud, Hetzner, DigitalOcean, Paperspace, Lambda, Vultr, Shadow, Nebius, Verda, Hyperstack, TensorDock), with what stopping a machine still bills.
   - `audio-models.json`: 139 audio variants (speech, voice cloning, transcription, music, sound effects, sound from video, dubbing, lip-sync, real-time dialogue), with the Artificial Analysis Speech, Music and speech-to-text arenas, TTS Arena V2 and the Open ASR Leaderboard, and the consent check of each voice cloning service.
   - `3d-models.json`: 76 3D variants (image to 3D, scene reconstruction, worlds, rigging, depth and camera), with the 3D Arena scores.
   - `rankings.json`: every public leaderboard score by category (Artificial Analysis and arena.ai: text, image and reference to video, with and without audio, video editing, text to image, image editing, multi-image editing).

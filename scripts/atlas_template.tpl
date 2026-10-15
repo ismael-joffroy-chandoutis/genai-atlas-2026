@@ -80,7 +80,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 <header>
   <div class="meta" id="built"></div>
   <h1>Atlas génératif 2026</h1>
-  <p class="lede">Modèles vidéo, image, audio et 3D, variante par variante : entrées, sorties, classements indépendants, local (RTX 5090, RTX 4090, Mac 128 Go) et prix plateforme par plateforme, avec la fiabilité et la permissivité des plateformes. « ? » = non documenté. Le bouton « + » ajoute un modèle à la comparaison.</p>
+  <p class="lede">Modèles vidéo, image, audio et 3D, variante par variante : entrées, sorties, classements indépendants, local (RTX 5090, RTX 4090, MacBook Pro M5 Max 128 Go, MacBook Pro M5 Pro 64 Go) et prix plateforme par plateforme, avec la fiabilité et la permissivité des plateformes. « ? » = non documenté. Le bouton « + » ajoute un modèle à la comparaison.</p>
 </header>
 <nav class="tabs" role="tablist" id="tabs">
   <button role="tab" data-tab="choose" aria-selected="true">Choisir</button>
@@ -115,7 +115,7 @@ const byId = id => ALL().find(m => m.id === id);
 const modality = m => DATA.video.includes(m) ? "video" : DATA.image.includes(m) ? "image" : DATA.audio.includes(m) ? "audio" : "threed";
 const acc = m => g(m,"access.open_weights") ? '<span class="pill open">ouvert</span>' : (g(m,"access.api") ? '<span class="pill api">API</span>' : n(null));
 const name = m => `<span class="fam">${esc(m.family)}</span><br><span class="var">${esc(m.variant)}</span>`;
-const loc = (m, k) => { const L = m._local || {}; if (k === "5090") return g(m,"local.runs_on_rtx5090_32gb") ?? L.rtx5090; if (k === "4090") return L.rtx4090_24gb ?? g(m,"local.rtx4090_24gb"); return L.mac_m5max_128gb ?? g(m,"local.mac_m5max_128gb"); };
+const loc = (m, k) => { const L = m._local || {}; if (k === "mac64") return L.mac_m5pro_64gb ?? g(m,"local.mac_m5pro_64gb"); if (k.startsWith("studio")) return L["mac_studio_"+k.slice(6)+"gb"]; if (k === "5090") return g(m,"local.runs_on_rtx5090_32gb") ?? L.rtx5090; if (k === "4090") return L.rtx4090_24gb ?? g(m,"local.rtx4090_24gb"); return L.mac_m5max_128gb ?? g(m,"local.mac_m5max_128gb"); };
 const scoreList = m => { const S = Object.assign({}, m._scores || {}, m.scores || {}); const r = m.ranking || {};
   [["aa_text_to_video","aa_t2v"],["aa_image_to_video","aa_i2v"],["aa_text_to_image","aa_t2i"],["aa_image_edit","aa_image_edit"]].forEach(([k,c]) => { if (r[k] != null && !Object.keys(S).some(x => x.startsWith(c))) S[c] = {elo:r[k]}; });
   return Object.entries(S).map(([k,v]) => [k, typeof v === "object" ? (v.elo ?? v.score ?? v.wer ?? null) : v]).filter(x => x[1] != null); };
@@ -150,7 +150,9 @@ const COLS = {
   ["LoRA", m => b(g(m,"inputs.lora_inference")), m => g(m,"inputs.lora_inference")?0:1],
   ["5090", m => b(loc(m,"5090")), m => loc(m,"5090")?0:1],
   ["4090", m => b(loc(m,"4090")), m => loc(m,"4090")?0:1],
-  ["Mac 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Max 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
+  ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
   ["Visages réels", m => n(g(m,"moderation.real_faces")), m => g(m,"moderation.real_faces")||""],
   ["$/s 480p", m => money(best(m,"price_usd_480p_s")), m => best(m,"price_usd_480p_s") ?? 1e9, 1],
@@ -171,7 +173,9 @@ const COLS = {
   ["LoRA", m => b(g(m,"inputs.lora_inference")), m => g(m,"inputs.lora_inference")?0:1],
   ["5090", m => b(loc(m,"5090")), m => loc(m,"5090")?0:1],
   ["4090", m => b(loc(m,"4090")), m => loc(m,"4090")?0:1],
-  ["Mac 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Max 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
+  ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
   ["Visages réels", m => n(g(m,"moderation.real_faces")), m => g(m,"moderation.real_faces")||""],
   ["$/image", m => money(best(m,"price_usd_per_image")), m => best(m,"price_usd_per_image") ?? 1e9, 1],
@@ -184,13 +188,17 @@ const COLS = {
   ["Licence", m => n(g(m,"access.license")), m => g(m,"access.license")||""],
   ["Meilleur score", scoreCell, m => -(bestScore(m)||0), 1],
   ["Français", m => n(m.french_quality), m => m.french_quality||""],
+  ["Anglais", m => n(m.english_quality), m => m.english_quality||""],
+  ["Accents anglais", m => n((m.english_accents||[]).join(", ")), m => -((m.english_accents||[]).length)],
   ["Clonage", m => { const c=m.clone||{}; return c.seconds_needed==null&&c.zero_shot==null?n(null):`${c.zero_shot?"zéro-shot":""} ${c.seconds_needed!=null?esc(c.seconds_needed)+" s":""}`; }, m => (m.clone||{}).seconds_needed ?? 1e9, 1],
   ["Contrôle consentement", m => n((m.clone||{}).consent_check), m => (m.clone||{}).consent_check||""],
   ["Latence ms", m => n(m.realtime_latency_ms), m => m.realtime_latency_ms ?? 1e9, 1],
   ["Prix", m => { const p=m.price||{}; const v=p.usd_per_1k_chars??p.usd_per_min??p.usd_per_track??p.usd; return v==null?n(null):`${money(v)} $ <span class="var">${esc(p.unit||"")} ${esc(p.platform||"")}</span>`; }, m => { const p=m.price||{}; return p.usd_per_1k_chars??p.usd_per_min??p.usd_per_track??p.usd??1e9; }, 1],
   ["5090", m => b(loc(m,"5090")), m => loc(m,"5090")?0:1],
   ["4090", m => b(loc(m,"4090")), m => loc(m,"4090")?0:1],
-  ["Mac 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Max 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
+  ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
  ],
  threed: [
@@ -205,7 +213,9 @@ const COLS = {
   ["Prix", m => { const p=m.price||{}; return p.usd==null?n(null):`${money(p.usd)} $ <span class="var">${esc(p.unit||"")}</span>`; }, m => (m.price||{}).usd ?? 1e9, 1],
   ["5090", m => b(loc(m,"5090")), m => loc(m,"5090")?0:1],
   ["4090", m => b(loc(m,"4090")), m => loc(m,"4090")?0:1],
-  ["Mac 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Max 128 Go", m => b(loc(m,"mac")), m => loc(m,"mac")?0:1],
+  ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
+  ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
  ],
  platforms: [
@@ -245,7 +255,9 @@ function detail(m){
   if (g(m,"inputs.incompatible_combinations")) extra.push(`<h4>Ne se combine pas</h4><p>${esc(g(m,"inputs.incompatible_combinations"))}</p>`);
   if (g(m,"local.vram_note")) extra.push(`<h4>Local</h4><p>${esc(g(m,"local.vram_note"))}</p>`);
   if (L.rtx4090_note) extra.push(`<h4>RTX 4090</h4><p>${esc(L.rtx4090_note)}</p>`);
-  if (L.mac_tool || L.mac_note) extra.push(`<h4>Mac M5 Max 128 Go</h4><p>${esc([L.mac_tool,L.mac_note].filter(Boolean).join(" · "))}</p>`);
+  if (L.mac_studio_note) extra.push(`<h4>Mac Studio</h4><p>${esc(L.mac_studio_note)}</p>`);
+  if (L.mac64_note) extra.push(`<h4>MacBook Pro M5 Pro 64 Go</h4><p>${esc(L.mac64_note)}</p>`);
+  if (L.mac_tool || L.mac_note) extra.push(`<h4>MacBook Pro M5 Max 128 Go</h4><p>${esc([L.mac_tool,L.mac_note].filter(Boolean).join(" · "))}</p>`);
   const mod = [g(m,"moderation.public_figures"), g(m,"moderation.notes"), g(m,"moderation.voix_celebrites")].filter(Boolean).join(" · ");
   if (mod) extra.push(`<h4>Modération</h4><p>${esc(mod)}</p>`);
   if (g(m,"ranking.aa_note")) extra.push(`<h4>Note</h4><p>${esc(g(m,"ranking.aa_note"))}</p>`);
@@ -269,7 +281,7 @@ function platformDetail(p){
    <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
 }
 function filtersHtml(kind){
-  const loc3 = `<label><input type="checkbox" data-f="open"> poids ouverts</label><label><input type="checkbox" data-f="l5090"> RTX 5090</label><label><input type="checkbox" data-f="l4090"> RTX 4090</label><label><input type="checkbox" data-f="lmac"> Mac 128 Go</label>`;
+  const loc3 = `<label><input type="checkbox" data-f="open"> poids ouverts</label><label><input type="checkbox" data-f="l5090"> RTX 5090</label><label><input type="checkbox" data-f="l4090"> RTX 4090</label><label><input type="checkbox" data-f="lmac"> MacBook Pro M5 Max 128 Go</label><label><input type="checkbox" data-f="lmac64"> MacBook Pro M5 Pro 64 Go</label><label><input type="checkbox" data-f="lstudio"> Mac Studio (M5 Max 128 ou M5 Ultra 256/512)</label>`;
   const extra = kind==="video" ? `<label><input type="checkbox" data-f="audio"> son natif</label><label><input type="checkbox" data-f="ff"> 1re / dernière image</label><label><input type="checkbox" data-f="ref"> références image</label><label><input type="checkbox" data-f="lora"> LoRA</label><label><input type="checkbox" data-f="price"> avec prix</label>`
     : kind==="image" ? `<label><input type="checkbox" data-f="edit"> édition</label><label><input type="checkbox" data-f="lora"> LoRA</label><label><input type="checkbox" data-f="price"> avec prix</label>` : "";
   return `<div class="filters"><input type="search" id="q" placeholder="Filtrer : nom, éditeur, fonction…" aria-label="Filtrer" value="${esc(q)}">${kind!=="platforms"&&kind!=="prices"?loc3:""}${extra}<span class="count" id="count"></span></div>`;
@@ -280,6 +292,8 @@ function passes(m, kind){
   if(flt.l5090 && !loc(m,"5090")) return false;
   if(flt.l4090 && !loc(m,"4090")) return false;
   if(flt.lmac && !loc(m,"mac")) return false;
+  if(flt.lmac64 && !loc(m,"mac64")) return false;
+  if(flt.lstudio && !(loc(m,"studio128")||loc(m,"studio256")||loc(m,"studio512"))) return false;
   if(flt.lora && !g(m,"inputs.lora_inference")) return false;
   if(flt.price && !(m._prices||[]).length) return false;
   if(flt.audio && !g(m,"outputs.native_audio")) return false;
@@ -296,7 +310,7 @@ function card(m, kind, reason){
   if (kind==="audio" && m.task) chips.push(`<span class="chip">${esc(m.task)}</span>`);
   if (kind==="threed" && m.task) chips.push(`<span class="chip">${esc(m.task)}</span>`);
   if (g(m,"access.open_weights")) chips.push('<span class="chip good">ouvert</span>');
-  ["5090","4090","mac"].forEach(k => { if (loc(m,k)) chips.push(`<span class="chip">${k==="mac"?"Mac":k}</span>`); });
+  ["5090","4090","mac","mac64"].forEach(k => { if (loc(m,k)) chips.push(`<span class="chip">${k==="mac"?"M5 Max 128":k==="mac64"?"M5 Pro 64":k}</span>`); });
   if (intCount(m)) chips.push(`<span class="chip good">intégré dans ${intCount(m)} outil${intCount(m)>1?"s":""} locaux</span>`);
   return `<article class="card"><div class="top"><div><div class="name">${esc(m.family)} · ${esc(m.variant)}</div><div class="sub">${esc(m.vendor||"")}</div></div>${cmpBtn(m)}</div>
     ${reason?`<div class="var">${reason}</div>`:""}<div class="chips">${chips.join("")}</div>
@@ -326,7 +340,7 @@ function renderPrices(){
   $("#count").textContent = `${rows.length} / ${DATA.prices.length} prix`;
 }
 function renderGpu(){
-  const rows = DATA.gpu||[], keys = rows.length ? Object.keys(rows[0]).filter(k=>k!=="sources") : [];
+  const rows = DATA.gpu||[], keys = [...new Set(rows.flatMap(r => Object.keys(r)))].filter(k=>k!=="sources");
   $("#view").innerHTML = `<div class="scroll"><table><thead><tr>${keys.map(k=>`<th>${esc(k)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>"<tr>"+keys.map(k=>`<td>${typeof r[k]==="object"?esc(JSON.stringify(r[k])):esc(r[k])}</td>`).join("")+"</tr>").join("")}</tbody></table></div>`;
 }
 let need = {integ:0, kind:"video", audio:false, lipsync:false, ff:false, lf:false, refs:0, vrefs:false, lora:false, open:false, machine:"", maxprice:"", mindur:"", edit:false, task:"", french:false, clone:false};
@@ -349,12 +363,14 @@ function renderChoose(){
   const aud = `<fieldset><legend>L'audio doit</legend>
       <label>tâche <select data-n="task"><option value="">toutes</option>${tasks.map(t=>`<option ${need.task===t?"selected":""}>${esc(t)}</option>`).join("")}</select></label>
       <label><input type="checkbox" data-n="french" ${need.french?"checked":""}> bien parler français</label>
+      <label><input type="checkbox" data-n="english" ${need.english?"checked":""}> bien parler anglais</label>
+      <label><input type="checkbox" data-n="engb" ${need.engb?"checked":""}> anglais britannique (en-GB) disponible</label>
       <label><input type="checkbox" data-n="clone" ${need.clone?"checked":""}> cloner une voix</label></fieldset>`;
   const common = `<fieldset><legend>Contraintes</legend>
       <label><input type="checkbox" data-n="lora" ${need.lora?"checked":""}> accepter ma LoRA</label>
       <label><input type="checkbox" data-n="open" ${need.open?"checked":""}> poids ouverts</label>
       <label>intégré dans au moins <select data-n="integ"><option value="0" ${!need.integ?"selected":""}>0</option><option value="1" ${need.integ==1?"selected":""}>1</option><option value="2" ${need.integ==2?"selected":""}>2</option><option value="3" ${need.integ==3?"selected":""}>3</option></select> outils locaux (ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene)</label>
-      <label>tourner sur <select data-n="machine"><option value="">peu importe</option><option value="5090" ${need.machine==="5090"?"selected":""}>RTX 5090</option><option value="4090" ${need.machine==="4090"?"selected":""}>RTX 4090</option><option value="mac" ${need.machine==="mac"?"selected":""}>Mac 128 Go</option></select></label></fieldset>`;
+      <label>tourner sur <select data-n="machine"><option value="">peu importe</option><option value="5090" ${need.machine==="5090"?"selected":""}>RTX 5090</option><option value="4090" ${need.machine==="4090"?"selected":""}>RTX 4090</option><option value="mac" ${need.machine==="mac"?"selected":""}>MacBook Pro M5 Max 128 Go</option><option value="mac64" ${need.machine==="mac64"?"selected":""}>MacBook Pro M5 Pro 64 Go</option><option value="studio128" ${need.machine==="studio128"?"selected":""}>Mac Studio M5 Max 128 Go</option><option value="studio256" ${need.machine==="studio256"?"selected":""}>Mac Studio M5 Ultra 256 Go</option><option value="studio512" ${need.machine==="studio512"?"selected":""}>Mac Studio M5 Ultra 512 Go</option></select></label></fieldset>`;
   const pool = DATA[k] || [];
   const ok = pool.filter(m => {
     if (need.open && !g(m,"access.open_weights")) return false;
@@ -379,6 +395,8 @@ function renderChoose(){
     if (k==="audio"){
       if (need.task && m.task!==need.task) return false;
       if (need.french && !["bonne"].includes(m.french_quality)) return false;
+      if (need.english && !["bonne"].includes(m.english_quality)) return false;
+      if (need.engb && !(m.english_accents||[]).includes("en-GB")) return false;
       if (need.clone && !(m.clone && (m.clone.zero_shot || m.clone.seconds_needed!=null))) return false;
     }
     return true;
@@ -396,9 +414,9 @@ const CMP_ROWS = [
   ["Images de réf.", m => n(g(m,"inputs.image_refs_max"))],["Vidéos de réf.", m => n(g(m,"inputs.video_refs_max"))],["Sons de réf.", m => n(g(m,"inputs.audio_refs_max"))],
   ["1re / dernière image", m => `${b(g(m,"inputs.first_frame"))} / ${b(g(m,"inputs.last_frame"))}`],["Images-clés", m => n(g(m,"inputs.keyframes_max"))],
   ["Ne se combine pas", m => n(g(m,"inputs.incompatible_combinations"))],["Contrôle", m => n((g(m,"inputs.control")||[]).join(", "))],["LoRA", m => b(g(m,"inputs.lora_inference"))],
-  ["Édition", m => n((m.edit_functions||[]).join(", "))],["Tâche", m => n(m.task)],["Français", m => n(m.french_quality)],
+  ["Édition", m => n((m.edit_functions||[]).join(", "))],["Tâche", m => n(m.task)],["Français", m => n(m.french_quality)],["Anglais", m => n([m.english_quality,(m.english_accents||[]).join(", ")].filter(Boolean).join(" · "))],
   ["Intégré dans", m => esc(intList(m).join(", ")) || n(null)],
-  ["RTX 5090 / 4090 / Mac", m => `${b(loc(m,"5090"))} / ${b(loc(m,"4090"))} / ${b(loc(m,"mac"))}`],
+  ["RTX 5090 / 4090 / M5 Max 128 / M5 Pro 64", m => `${b(loc(m,"5090"))} / ${b(loc(m,"4090"))} / ${b(loc(m,"mac"))} / ${b(loc(m,"mac64"))}`],
   ["Visages réels", m => n(g(m,"moderation.real_faces"))],
   ["Meilleur prix", m => { const p=[["480p",best(m,"price_usd_480p_s")],["720p",best(m,"price_usd_720p_s")],["1080p",best(m,"price_usd_1080p_s")]].filter(x=>x[1]!=null).map(x=>`${x[0]} ${money(x[1])} $/s`); if(best(m,"price_usd_per_image")!=null) p.push(`${money(best(m,"price_usd_per_image"))} $/image`); return p.join("<br>")||n(null); }],
   ["Points forts", m => esc((m.pros||[]).join(" · "))],["Faiblesses", m => esc((m.cons||[]).join(" · "))],

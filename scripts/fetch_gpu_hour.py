@@ -93,6 +93,11 @@ def main():
     runpod(rows, raw); vast(rows, raw); modal(rows)
     os.makedirs(os.path.dirname(RAW), exist_ok=True)
     json.dump(raw, open(RAW, "w"), indent=1)
+    # garder les machines completes (kind=machine) ajoutees a la main, sinon un refetch les efface
+    try:
+        rows += [r for r in json.load(open(OUT)) if r.get("kind") == "machine"]
+    except (OSError, ValueError):
+        pass
     json.dump(rows, open(OUT, "w"), indent=1, ensure_ascii=False)
     print(len(rows), "lignes")
 
