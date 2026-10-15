@@ -10,3 +10,4 @@ data/open-weight-ids.txt
 data/model-ids.txt
 .venv/
 cache/
+*.bak
