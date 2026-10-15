@@ -22,7 +22,7 @@ VAST_GPUS = {"RTX 5090": "RTX 5090", "RTX 4090": "RTX 4090", "L40S": "L40S",
              "H100 SXM": "H100 SXM", "H100 PCIE": "H100 PCIe", "H100 NVL": "H100 NVL",
              "H200": "H200", "B200": "B200"}
 
-# --- Modal : valeurs relevees A LA MAIN via WebFetch de https://modal.com/pricing le 2026-10-15.
+# --- Modal : valeurs relevees A LA MAIN sur https://modal.com/pricing le 2026-10-15.
 # La page affiche des $/seconde (la colonne "par heure" repete a tort la valeur par seconde).
 # Heure = seconde x 3600. Modal n'affiche ni RTX 5090 ni RTX 4090.
 # gpu: (prix_par_seconde_usd, vram_gb)  VRAM = specs constructeur, pas affichee sur la page.

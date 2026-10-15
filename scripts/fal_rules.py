@@ -159,7 +159,10 @@ def fal_rules(e):
     elif unit in ("image", "images"):
         u = "per_image"
         cols["price_usd_per_image"] = p
-    elif unit in ("megapixel", "megapixels"):
+    elif unit in ("megapixel", "megapixels", "processed megapixels") and "video" in (e.get("category") or ""):
+        u = "per_second"
+        cols["_note"] = "vidéo facturée au mégapixel traité : pas de conversion en $/s"
+    elif unit in ("megapixel", "megapixels", "processed megapixels"):
         u = "per_image"
         cols["price_usd_per_image"] = p
         cols["_note"] = "facturé au mégapixel : colonne = image de 1 MP (1024x1024)"

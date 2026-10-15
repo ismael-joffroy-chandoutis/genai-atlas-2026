@@ -160,11 +160,42 @@ def load_openrouter():
 
 
 # ---------------------------------------------------------------- fal
+RES_A = re.compile(r"(\d{3,4})p([^$]{0,80}?)\$(\d*\.?\d+)")
+RES_B = re.compile(r"\$(\d*\.?\d+)\s*(?:per second\s*)?(?:at\s*|for\s*)?(\d{3,4})p")
+RES_COL = {"480": "price_usd_480p_s", "720": "price_usd_720p_s", "768": "price_usd_720p_s", "1080": "price_usd_1080p_s"}
+
+
+def parse_fal_page(text):
+    """Extrait des $/s par résolution du texte de prix d'une page fal. Première occurrence par résolution.
+    Ordre « prix puis résolution » si le premier $ précède la première résolution, sinon l'inverse."""
+    cols = {}
+    if not text or not re.search(r"per second|every second|/second|second of|per-second|/s\b", text):
+        return cols  # prix par vidéo (« 5 second video ») : pas de conversion ici
+    first_d, m_res = text.find("$"), re.search(r"\d{3,4}p", text)
+    if first_d == -1 or not m_res:
+        return cols
+    if first_d < m_res.start():
+        for m in RES_B.finditer(text):
+            c = RES_COL.get(m.group(2))
+            if c and c not in cols and "token" not in text[m.end():m.end() + 15]:
+                cols[c] = float(m.group(1))
+    else:
+        for m in RES_A.finditer(text):
+            c = RES_COL.get(m.group(1))
+            after = text[m.end():m.end() + 15]
+            if c and c not in cols and ("second" in m.group(2) or "second" in after) \
+                    and "token" not in m.group(2) and "token" not in after:
+                cols[c] = float(m.group(3))
+    return cols
+
+
 def load_fal():
     p = RAW / f"fal-{DATE}.json"
     if not p.exists():
         return []
     d = json.loads(p.read_text())
+    pp = RAW / f"fal-pages-{DATE}.json"
+    pages = json.loads(pp.read_text()) if pp.exists() else {}
     rows = []
     for e in d["endpoints"]:
         pr = e.get("price")
@@ -181,6 +212,17 @@ def load_fal():
                         "video" if "video" in (e["category"] or "") else "image", **cols))
         rows[-1]["price_usd_unit"] = unit_price
         rows[-1]["unit_api"] = pr["unit"]
+        txt = pages.get(e["endpoint_id"])
+        if txt:
+            r = rows[-1]
+            r["raw"] += " | page fal.ai : " + " ".join(txt.split())
+            pc = parse_fal_page(txt) if r["modality"] == "video" else {}
+            if pc:
+                for k in COLS.values():
+                    r[k] = round(pc[k], 6) if k in pc else None
+                r["raw"] += " | colonnes = prix par seconde lus sur la page (première valeur citée par résolution ; 768p en colonne 720p)"
+                r["verified"] = "page"
+                r["source_url"] = f"https://fal.ai/models/{e['endpoint_id']}"
     return rows
 
 

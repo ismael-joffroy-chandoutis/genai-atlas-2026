@@ -13,7 +13,7 @@ A comparison of generative video and image models as of 15 October 2026, variant
 - `TABLES.md`: the two big tables (106 video variants, 81 image variants), readable directly on GitHub.
 - `data/`: the source data in JSON, one object per variant, every object with dated sources.
   - `video-models.json`, `image-models.json`: capabilities, inputs, outputs, ranking, moderation, strengths and weaknesses.
-  - `prices.json`: 651 prices across 26 platforms (pay-per-use APIs, vendors, subscriptions).
+  - `prices.json`: 1138 prices for 362 models across 27 platforms (pay-per-use APIs, vendors, subscriptions).
   - `local-runs.json`: whether each open-weight model runs on a Mac M5 Max 128 GB and on an RTX 4090 24 GB, with the tool to use.
   - `gpu-hour.json`: GPU rental prices per hour.
   - `SCHEMA.md`: the format of every file.
@@ -36,7 +36,7 @@ A comparison of generative video and image models as of 15 October 2026, variant
 
 - Image to video with audio: MiniMax H3, Seedance 2.5, Gemini Omni Flash and Wan 3.0 are statistically tied at the top. Kling 3.0 and Veo 3.1 are well behind, LTX-2.5 about 200 points behind.
 - Inputs differ more than quality. Seedance 2.5 takes up to 30 images, 10 videos and 10 audio clips, but not together with first and last frame. H3 Max combines up to 9 images, 3 videos and 3 audio clips with first, last and an in-between frame. Wan 3.0 offers 30-second shots but no LoRA.
-- The same model can cost twice as much depending on the platform: Seedance 2.5 at 480p goes from 0.10 to 0.18 USD per second.
+- The same model can cost twice as much depending on the platform: Seedance 2.5 at 720p goes from 0.23 USD per second (BytePlus, Runware, Replicate, OpenRouter) to 0.47 on fal.
 - Locally, H3 holds on a 4090 with INT8 or FP8 weights and runs on a Mac through Draw Things or community ports, slowly. LTX-2.5 distilled is the fastest open model on both.
 
 <a id="mesures-maison"></a>

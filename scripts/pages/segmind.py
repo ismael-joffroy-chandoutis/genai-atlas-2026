@@ -1,0 +1,92 @@
+import os
+# Parseur de la page de prix « segmind » (relevé du 15/10/2026). Lit des copies HTML faites ce jour-là
+# (copies HTML des pages de prix, rangées dans le dossier ATLAS_PAGES, par défaut cache/) : pour relancer, re-télécharger les pages dans ce dossier.
+import sys
+sys.path.insert(0,os.path.join(os.environ.get('ATLAS_PAGES','cache'),''))
+from lib import *
+P='segmind'; B='https://www.segmind.com/models/'
+rows=[]
+def V(mid,name,slug,raw,p480=None,p720=None,p1080=None):
+    rows.append(row(P,name,mid,slug,'video','per_second','Segmind model pricing page: '+raw,B+slug+'/pricing',p480=p480,p720=p720,p1080=p1080))
+def I(mid,name,slug,raw,p):
+    rows.append(row(P,name,mid,slug,'image','per_image','Segmind model pricing page: '+raw,B+slug+'/pricing',pimg=p))
+dims={'480':864*496,'720':1280*720,'1080':1920*1080}
+def tok(rate,res,fps=24):
+    return round(dims[res]*fps/1024*rate/1e6,4)
+def seed(mid,name,slug,rates,formula_note):
+    p={r:tok(rates[r],r) for r in rates}
+    raw=f"Priced per million video tokens (text/image input): {', '.join(f'{r}p ${rates[r]}/M' for r in rates)}. Page formula: tokens = output width x height x frame rate x duration / 1024. Per-second conversion (derived by me): {', '.join(f'{r}p = {dims[r]} px x 24 fps / 1024 x ${rates[r]}/1e6 = ${p[r]}/s' for r in rates)}. fps=24 and 16:9 dimensions 864x496 / 1280x720 / 1920x1080 are assumptions (Seedance published sizes). {formula_note}"
+    V(mid,name,slug,raw,p.get('480'),p.get('720'),p.get('1080'))
+seed('bytedance-seedance-2-0','Seedance 2.0','seedance-2.0',{'480':7,'720':7,'1080':7.7},'4k $4/M tokens; with reference video input $4.3/M (480/720p), $4.7/M (1080p).')
+seed('bytedance-seedance-2-0-fast','Seedance 2.0 Fast','seedance-2.0-fast',{'480':5.6,'720':5.6,'1080':5.6},'Single rate for all resolutions ($5.6/M text/image input; video input $3.3/M).')
+seed('bytedance-seedance-2-0-mini','Seedance 2.0 Mini','seedance-2.0-mini',{'480':3.5,'720':3.5,'1080':3.5},'Single rate for all resolutions ($3.5/M; video input $2.1/M).')
+seed('bytedance-seedance-2-5','Seedance 2.5','seedance-2.5',{'480':10.9675,'720':10.9675,'1080':11.9925},'Video input $6.56/M (480/720p), $7.175/M (1080p). fps for 2.5 not confirmed.')
+V('bytedance-seedance-1-5-pro','Seedance 1.5 Pro','seedance-1.5-pro','Per million tokens: output $1.2/M, output with audio $2.4/M, input $0. Token-per-second ratio not given on page, so no per-second price.')
+V('alibaba-wan-3-0','Wan 3.0','wan3.0-video','480p $0.05/s, 720p $0.10/s, 1080p $0.20/s (input video also billed at same rate).',0.05,0.10,0.20)
+V('alibaba-wan-3-0-prime','Wan 3.0 Prime','wan3.0-video-prime','480p $0.085/s, 720p $0.175/s, 1080p $0.35/s.',0.085,0.175,0.35)
+V('alibaba-wan-2-7','Wan 2.7 T2V','wan2.7-t2v','720p $0.143/s, 1080p $0.2145/s.',None,0.143,0.2145)
+V('alibaba-wan-2-5','Wan 2.5 T2V','wan-2.5-t2v','Per clip: 480p 5s $0.3125 (=0.3125/5=$0.0625/s); 720p 5s $0.625 (=$0.125/s); 1080p 5s $0.9375 (=$0.1875/s); 10s doubles.',0.0625,0.125,0.1875)
+V('alibaba-wan-2-6','Wan 2.6 I2V','wan-2.6-i2v','Per clip (image-to-video): 720p 5s $0.625 (=$0.125/s), 1080p 5s $0.9375 (=$0.1875/s).',None,0.125,0.1875)
+V('alibaba-happyhorse-1-1','HappyHorse 1.1','happyhorse-1.1','720p $0.2002/s, 1080p $0.2574/s.',None,0.2002,0.2574)
+V('alibaba-happyhorse-1-0','HappyHorse (1.0)','happyhorse','720p $0.2002/s, 1080p $0.3432/s.',None,0.2002,0.3432)
+V('kling-3-0-std','Kling 3.0 Standard (T2V)','kling-3-standard-text2video','No audio: 3s $0.504, 5s $0.84 (=0.84/5=$0.168/s), 6s $1.008; with audio 5s $1.26 (=$0.252/s); with voice IDs 5s $2.80. Column = no audio.',None,0.168)
+V('kling-3-0-pro','Kling 3.0 Pro (T2V)','kling-3-pro-text2video','No audio: 5s $1.12 (=$0.224/s); with audio 5s $1.68 (=$0.336/s); with voice IDs 5s $3.64. Column = no audio.',None,None,0.224)
+V('kling-o3-std','Kling O3 Std (T2V)','kling-o3-text2video','Std no audio 5s $1.05 (=$0.21/s), with audio 5s $1.40 (=$0.28/s); Pro no audio 5s $1.40 (=$0.28/s), with audio 5s $1.75 (=$0.35/s). Column = no audio.',None,0.21)
+V('kling-o3-pro','Kling O3 Pro (T2V)','kling-o3-text2video','Pro no audio 5s $1.40 (=$0.28/s); with audio 5s $1.75 (=$0.35/s).',None,None,0.28)
+V('kling-2-6-pro','Kling 2.6 Pro','kling-2.6','Pro, no audio 5s $0.4375 (=$0.0875/s), 10s $0.875; with audio 5s $0.875 (=$0.175/s). Column = no audio (1080p class).',None,None,0.0875)
+V('kling-2-5-turbo-pro','Kling 2.5 Turbo Pro','kling-2.5-turbo','Pro 5s $0.44 (=$0.088/s), 10s $0.88.',None,None,0.088)
+V('kling-2-1-std','Kling 2.1 Std','kling-2.1','Std 5s $0.375 (=$0.075/s), 10s $0.75.',None,0.075)
+V('kling-2-1-pro','Kling 2.1 Pro','kling-2.1','Pro 5s $0.675 (=$0.135/s), 10s $1.35.',None,None,0.135)
+V('kling-2-1-master','Kling 2.1 Master','kling-2.1','Master 5s $2.10 (=$0.42/s), 10s $4.20.')
+V('google-veo-3-1','Veo 3.1','veo-3.1','No audio: 4s $0.80, 6s $1.20, 8s $1.60 (=$0.20/s); with audio 8s $3.20 (=$0.40/s). Resolution not a pricing dimension. Columns = no audio, same value in 720p/1080p.',None,0.20,0.20)
+V('google-veo-3-1-fast','Veo 3.1 Fast','veo-3.1-fast','No audio 8s $0.80 (=$0.10/s); with audio 8s $1.20 (=$0.15/s). Columns = no audio.',None,0.10,0.10)
+V('google-veo-3-1-lite','Veo 3.1 Lite','veo-3.1-lite','No audio: 4s $0.25, 6s $0.375, 8s $0.50 (=$0.0625/s); with audio 8s $1.00 (=$0.125/s). Columns = no audio.',None,0.0625,0.0625)
+V('google-veo-3','Veo 3','veo-3','No audio 8s $1.60 (=$0.20/s); with audio $3.20 (=$0.40/s). Columns = no audio.',None,0.20,0.20)
+V('google-veo-3-fast','Veo 3 Fast','veo-3-fast','No audio 8s $0.80 (=$0.10/s); with audio $1.20 (=$0.15/s).',None,0.10,0.10)
+V('google-veo-2','Veo 2','veo-2','5s $2.50 (=$0.50/s), 8s $4.00.')
+V('openai-sora-2','Sora 2','sora-2','4s $0.572, 8s $1.144, 12s $1.716 (=1.144/8=$0.143/s). Resolution not specified.')
+V('openai-sora-2-pro','Sora 2 Pro','sora-2-pro','720p-class (720x1280/1280x720) 8s $3.432 (=$0.429/s); 1024x1792/1792x1024 8s $5.72 (=$0.715/s).',None,0.429)
+V('xai-grok-imagine-video','Grok Imagine Video','grok-imagine-video','480p $0.0675/s, 720p $0.0945/s (each input image +$0.0027).',0.0675,0.0945)
+V('minimax-h3','MiniMax H3 (T2V)','minimax-h3-text-to-video','768P: 4s $0.40, 5s $0.50 (=$0.10/s), 10s $1.00; 2K: 4s $0.65, 5s $0.8125 (=$0.1625/s), 10s $1.625. Native audio. 768P in 720p column; 2K not in columns.',None,0.10)
+V('minimax-h3-max-turbo','MiniMax H3 Max Turbo','minimax-h3-max-turbo','480P $0.025 per second, 768P $0.04 per second; billed per second of output; same rate for text-to-video and image-to-video. 768P in 720p column.',0.025,0.04)
+V('minimax-hailuo-2-3','Hailuo 2.3','hailuo-2.3','768p 6s $0.35 (=$0.0583/s), 10s $0.70 (=$0.07/s); 1080p 6s $0.61 (=$0.1017/s). 6s used; 768p in 720p column.',None,0.0583,0.1017)
+V('minimax-hailuo-2-3-fast','Hailuo 2.3 Fast','hailuo-2.3-fast','768p 6s $0.24 (=$0.04/s), 10s $0.40; 1080p 6s $0.41 (=$0.0683/s). 6s used.',None,0.04,0.0683)
+V('bfl-flux-3-video','FLUX 3 Video','flux-3-text-to-video','draft (hd) $0.0858/s, hd $0.2431/s, fhd $0.4147/s (native lip-synced audio). hd->720p column, fhd->1080p column.',None,0.2431,0.4147)
+V('ltx-2-5-fast','LTX-2.5 Fast','ltx-2.5-fast','720p 6s $0.675 (=$0.1125/s), 10s $1.125; 1080p 6s $0.975 (=$0.1625/s); 2k 6s $1.425; 4k 6s $2.25.',None,0.1125,0.1625)
+V('ltx-2-5-pro','LTX-2.5 Pro','ltx-2.5-pro','720p 6s $0.90 (=$0.15/s), 10s $1.50; 1080p 6s $1.275 (=$0.2125/s), 10s $2.125.',None,0.15,0.2125)
+V('ltx-2-pro','LTX-2 Pro','ltx-2-pro','1080p 6s $0.45 (=$0.075/s); 2k 6s $0.90; 4k 6s $1.80.',None,None,0.075)
+V('ltx-2-fast','LTX-2 Fast','ltx-2-fast','1080p 6s $0.30 (=$0.05/s); 2k 6s $0.60; 4k 6s $1.20.',None,None,0.05)
+V('pixverse-v6','PixVerse V6','pixverse-v6','720p $0.075/s (5s $0.375), 1080p $0.14375/s (5s $0.71875), 540p 5s $0.28125, 360p 5s $0.21875 (=$0.04375/s). Audio handling not shown.',None,0.075,0.14375)
+V('luma-ray-3-2','Luma Ray 3.2','luma-ray-3-2','5s: 540p $0.625 (=$0.125/s), 720p $1.25 (=$0.25/s), 1080p $2.50 (=$0.50/s); 10s doubles.',None,0.25,0.50)
+V('runway-gen-4-turbo','Runway Gen-4 Turbo','runway-gen4-turbo','5s $0.50 (=$0.10/s), 10s $1.00.')
+I('google-gemini-3-pro-image','Nano Banana Pro (Gemini 3 Pro Image)','nano-banana-pro','1K and 2K $0.1675 (no web search), $0.185 with search; 4K $0.30. Column = 1K, no search.',0.1675)
+I('google-nano-banana-2','Nano Banana 2','nano-banana-2','512px $0.05625, 1K $0.08375 (no web search), 2K $0.12625, 4K $0.18875; +$0.0175 with web search. Column = 1K no search. NOTE: page for imagen-4 slug shows this same table.',0.08375)
+I('google-nano-banana-2-1','Nano Banana 2.1','nano-banana-2.1','1K no search: minimal thinking $0.045, medium/high $0.055; 2K minimal $0.065, medium/high $0.075; with search +$0.035. Column = 1K minimal thinking, no search.',0.045)
+I('google-nano-banana-2-lite','Nano Banana 2 Lite','nano-banana-2-lite','$0.042 per generation',0.042)
+I('google-nano-banana','Nano Banana','nano-banana','$0.04 per generation',0.04)
+I('bfl-flux-2-pro','FLUX.2 [pro]','flux-2-pro','First generated megapixel $0.0405, each additional MP $0.02025, reference image $0.02025/MP. Column = 1MP output.',0.0405)
+I('bfl-flux-2-max','FLUX.2 [max]','flux-2-max','First generated MP $0.0945, each additional MP $0.0405, reference $0.0405/MP. Column = 1MP.',0.0945)
+I('bfl-flux-2-flex','FLUX.2 [flex]','flux-2-flex','$0.0675 per megapixel (reference and generated). Column = 1MP.',0.0675)
+I('bfl-flux-3-image','FLUX 3 Image','flux-3-text-to-image','768sq $0.05863, 1k $0.06864, 2k $0.143, 4k $0.86801. Column = 1k.',0.06864)
+I('bfl-flux-1-1-pro-ultra','FLUX 1.1 [pro] Ultra','flux-1.1-pro-ultra','$0.075 per generation',0.075)
+I('bfl-flux-1-1-pro','FLUX 1.1 [pro]','flux-1.1-pro','$0.05 per generation',0.05)
+I('bfl-flux-1-kontext-pro','FLUX.1 Kontext [pro]','flux-kontext-pro','$0.05 per generation',0.05)
+I('bfl-flux-1-kontext-max','FLUX.1 Kontext [max]','flux-kontext-max','$0.10 per generation',0.10)
+I('bytedance-seedream-5-0-pro','Seedream 5.0 Pro','seedream-5-pro','Base image 1K output (up to 2.36 MP) $0.05343705; 2K output $0.1068741; +$0.00356247 per extra reference image.',0.0534)
+I('bytedance-seedream-5-0-lite','Seedream 5.0 Lite','seedream-v5-lite-text-to-image','$0.035 per generation',0.035)
+I('bytedance-seedream-4-5','Seedream 4.5','seedream-4.5','$0.04 per generation',0.04); I('bytedance-seedream-4','Seedream 4','seedream-4','$0.035 per generation',0.035)
+I('alibaba-qwen-image-3','Qwen-Image 3','qwen-image-3','$0.049 per generation',0.049); I('alibaba-qwen-image-2-1-pro','Qwen-Image 2.1 Pro','qwen-image-2.1-pro','$0.05 per generation',0.05); I('alibaba-qwen-image-2-1-turbo','Qwen-Image 2.1 Turbo','qwen-image-2.1-turbo','$0.016 per generation',0.016)
+I('alibaba-wan-2-7-image','Wan 2.7 Image','wan2.7-image','$0.0429 per generation',0.0429); I('alibaba-wan-2-7-image-pro','Wan 2.7 Image Pro','wan2.7-image-pro','$0.1073 per generation',0.1073)
+I('xai-grok-imagine-image','Grok Imagine Image','grok-imagine-image','standard 1k/2k $0.027; quality 1k $0.0675, 2k $0.0945. Column = standard.',0.027)
+I('xai-grok-imagine-image-2','Grok Imagine Image 2','grok-imagine-image-2','low 1k $0.054, 2k $0.081; medium 1k $0.081, 2k $0.108. Column = 1k medium.',0.081)
+I('recraft-v4','Recraft V4','recraft-v4','$0.05 (style reference $0.05625)',0.05); I('recraft-v4-pro','Recraft V4 Pro','recraft-v4-pro','$0.3125 ($0.31875 with style reference)',0.3125); I('recraft-v3','Recraft V3','recraft-v3','$0.05 per generation',0.05)
+I('ideogram-4-5','Ideogram 4.5','ideogram-4.5','low $0.0375, medium $0.075, high $0.125. Column = medium.',0.075)
+I('ideogram-v4-fast','Ideogram V4 (Fast page)','ideogram-v4-fast','TURBO $0.0375, DEFAULT $0.075, QUALITY $0.125. Column = default.',0.075)
+I('luma-uni-1','Luma Uni-1','luma-uni-1','$0.0543 per generation',0.0543); I('luma-uni-1-max','Luma Uni-1 Max','luma-uni-1-max','$0.129 per generation',0.129)
+I('runway-gen-4-image','Runway Gen-4 Image','runway-gen4-image','$0.10 per generation',0.10)
+# token-priced image models
+for mid,nm,slug,raw in [('openai-gpt-image-2','GPT Image 2','gpt-image-2','Token pricing: text input $6.25/M, image input $10/M, output tokens $37.5/M. No per-image price on page.'),('openai-gpt-image-2-5-sunburst','GPT Image 2.5 Sunburst','gpt-image-2.5-sunburst','Token pricing: text input $6.25/M, image input $10/M, output $37.5/M.'),('openai-gpt-image-2-5-flare','GPT Image 2.5 Flare','gpt-image-2.5-flare','Token pricing: text input $6.25/M, image input $10/M, output $37.5/M.'),('openai-gpt-image-1-5','GPT Image 1.5','gpt-image-1.5','Token pricing: input $10/M, output $40/M.')]:
+    rows.append(row(P,nm,mid,slug,'image','per_token','Segmind model pricing page: '+raw,B+slug+'/pricing'))
+pages=['https://www.segmind.com/pricing']+sorted({r['source_url'] for r in rows})
+save(P,pages,['Seedance 1 Pro/Lite, Grok Imagine Video 1.5, Hailuo 02 pages: no pricing block parsed','imagen-4 slug returns the Nano Banana 2 pricing table (no Imagen row created)','Kling O1 page shows "$0.035 per generation (images)" which looks mis-templated: skipped','FLUX.2 [klein] and LTX-2 19B and Wan 2.1 are billed per GPU second ($0.0036-0.0096): skipped'],
+ 'Prices from segmind.com/models/<slug>/pricing pages (public, "Model Price Explorer"). Segmind prices are consistently above other platforms (e.g. Grok Imagine Video 480p $0.0675 vs $0.05 elsewhere; Kling 3.0 std same as Replicate). Seedance 2.x are billed per million tokens: per-second columns are DERIVED with the page formula (w*h*fps*duration/1024) assuming 24 fps and the 16:9 dimensions 864x496/1280x720/1920x1080; treat as estimates. GPT Image models are token-priced (unit per_token, no per-image price). Where page lists per-clip prices the 5 s or 6 s clip was divided by its duration.',rows)

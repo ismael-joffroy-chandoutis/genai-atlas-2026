@@ -13,7 +13,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | FLUX 3 · FLUX 3 Video | Black Forest Labs | no | 5–20 s | 4K selon bfl.ai et OpenRouter ; 1080p maximum sur fal (contradiction) | yes | 0 | ? | 0 | yes / yes | 10 | no | no | ? | ? | 1145 | 1089 | 0.060 (bfl) |
 | FLUX 3 · FLUX Video Edit [fast] | Black Forest Labs | no | ?–15 s | ? | no | ? | 1 | ? | no / no | ? | no | no | ? | ? | ? | ? | 0.030 (openrouter) |
 | Gemini Omni Flash · Gemini Omni Flash 1.0 | Google | no | 3–10 s | ? | yes | 10 | ? | ? | yes / ? | ? | no | no | ? | ? | ? | ? |  |
-| Gemini Omni Flash · Gemini Omni Flash 1.1 | Google | no | 3–10 s | 4K (1080p et 4K par agrandissement ; 720p par défaut) | yes | 10 | 3 (9 s) | 0 | yes / yes | ? | no | no | ? | ? | 1132 | 1134 | 0.100 (google) |
+| Gemini Omni Flash · Gemini Omni Flash 1.1 | Google | no | 3–10 s | 4K (1080p et 4K par agrandissement ; 720p par défaut) | yes | 10 | 3 (9 s) | 0 | yes / yes | ? | no | no | ? | ? | 1132 | 1134 | 0.100 (fal) |
 | Grok Imagine · Grok Imagine Video (1.0) | xAI (SpaceXAI) | no | 1–15 s | 720p | yes | 7 | ? | ? | yes / no | ? | ? | no | ? | ? | ? | ? | 0.022 (kie) |
 | Grok Imagine · Grok Imagine Video 1.5 | xAI (SpaceXAI) | no | 1–15 s | 1080p | yes | 14 | ? | 3 | yes / yes | 4 | ? | no | ? | ? | 1059 | 1068 | 0.022 (kie) |
 | Grok Imagine · Grok Imagine Video 1.5 Lite | xAI (SpaceXAI) | no | 1–15 s | 1080p (720p agrandi) | yes | 0 | ? | ? | yes / no | 0 | ? | no | ? | ? | 998 | ? | 0.030 (openrouter) |
@@ -45,7 +45,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | LTX · LTX-2.5 Fast (API) | Lightricks | yes | 6–20 s | 4K (3840x2160) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 951 | 985 | 0.030 (replicate) |
 | LTX · LTX-2.5 IC-LoRA Layout-To-Render | Lightricks | yes | ? | 1920x1088 (deuxième passe) | ? | ? | ? | ? | yes / yes | 3 | yes | ? | ? | ? | ? | ? |  |
 | LTX · LTX-2.5 IC-LoRA officielles (Refine-Details, Restore, SDR-To-HDR, Alpha-Gen, Ingredients, Clean-Plate, Deblur, Decompression, Colorization, Day-To-Night, Water-Simulation, Pixel-Spatial-Upscaler) | Lightricks | yes | ? | 4K HDR (via Pixel-Spatial-Upscaler et SDR-To-HDR) | ? | ? | ? | ? | yes / ? | ? | yes | ? | ? | ? | ? | ? |  |
-| LTX · LTX-2.5 Pro (API) | Lightricks | yes | 6–10 s | 4K selon docs.ltx.io ; 1080p maximum sur fal (contradiction) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 948 | 957 | 0.120 (ltx) |
+| LTX · LTX-2.5 Pro (API) | Lightricks | yes | 6–10 s | 4K selon docs.ltx.io ; 1080p maximum sur fal (contradiction) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 948 | 957 | 0.120 (fal) |
 | LTX · LTX-2.5 dev 22B (bf16) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | ? | ? | ? | ? | 0.100 (wavespeed) |
 | LTX · LTX-2.5 distillé 22B (8 étapes) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | yes | yes | ? | ? |  |
 | LTX · LTX-2.5 distillé quantifié (NVFP4, int8 convrot) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | yes | no | ? | ? |  |
@@ -62,8 +62,8 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | MiniMax H3 · H3 (API MiniMax et fal) | MiniMax | yes | 4–15 s | 4K sur fal (agrandi d'une base 768p) ; 2K chez MiniMax et OpenRouter | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 2 | yes | no | no | no | 1158 | 1141 | 0.040 (kie) |
 | MiniMax H3 · H3 FL2VA 33B (poids ouverts) | MiniMax | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | 0 | 0 | 0 | yes / yes | 2 | yes | yes | yes | yes | 1158 | 1141 |  |
 | MiniMax H3 · H3 Fun ControlNet Union (1.0 puis 2.0) | Alibaba PAI | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | ? | yes | ? | ? | ? | ? | ? |  |
-| MiniMax H3 · H3 Max | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 3 | no | no | ? | ? | 1156 | 1124 | 0.080 (minimax) |
-| MiniMax H3 · H3 Max Turbo | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | ? | ? | 3 | yes / yes | ? | no | no | ? | ? | ? | ? | 0.040 (runware) |
+| MiniMax H3 · H3 Max | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 3 | no | no | ? | ? | 1156 | 1124 | 0.048 (fal) |
+| MiniMax H3 · H3 Max Turbo | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | ? | ? | 3 | yes / yes | ? | no | no | ? | ? | ? | ? | 0.024 (fal) |
 | MiniMax H3 · H3 PDD 8 étapes (33B et 20B, Wan2GP) | MiniMax / Wan2GP | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | 2 | yes | yes | yes | no | ? | ? |  |
 | MiniMax H3 · H3 Ref2VA 33B (poids ouverts) | MiniMax | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | 9 | 3 (15 s) | 3 (15 s) | no / no | 0 | yes | yes | yes | yes | ? | ? |  |
 | MiniMax H3 · H3 Turbo LoRA (communautaires : lightx2v, larryvrh et dérivés) | Communauté (lightx2v, larryvrh) | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | 2 | yes | yes | yes | ? | ? | ? |  |
@@ -77,9 +77,9 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | NVIDIA Cosmos3 · Cosmos3 Super Image2Video 4Step (64B distillé) | NVIDIA | yes | ? | 720p | ? | 1 | ? | 0 | yes / no | ? | ? | no | no | ? | ? | ? |  |
 | OmniHuman · OmniHuman 1.5 | ByteDance | no | ?–60 s | 1080p | no | ? | ? | 1 (60 s) | yes / ? | ? | ? | no | ? | ? | ? | ? |  |
 | P-Video · P-Video | Pruna AI | ? | 1–10 s | 1080p | yes | 0 | ? | 1 | yes / ? | ? | ? | ? | ? | ? | 803 | ? | 0.025 (runware) |
-| Pika · Pika 2.2 Pikaframes | Pika Labs | no | ?–25 s | 1080p | ? | ? | ? | ? | yes / yes | 5 | ? | no | ? | ? | ? | ? |  |
+| Pika · Pika 2.2 Pikaframes | Pika Labs | no | ?–25 s | 1080p | ? | ? | ? | ? | yes / yes | 5 | ? | no | ? | ? | ? | ? | 0.040 (fal) |
 | Pika · Pika 2.5 | Pika Labs | no | ? | ? | ? | ? | ? | ? | ? / ? | ? | ? | no | ? | ? | 838 | ? |  |
-| PixVerse · C1 | PixVerse (AISphere) | no | 1–15 s | 1080p | yes | 7 | ? | ? | yes / yes | ? | ? | no | ? | ? | ? | ? | 0.050 (wavespeed) |
+| PixVerse · C1 | PixVerse (AISphere) | no | 1–15 s | 1080p | yes | 7 | ? | ? | yes / yes | ? | ? | no | ? | ? | ? | ? | 0.050 (fal) |
 | PixVerse · V6 | PixVerse (AISphere) | no | 1–15 s | 1080p | yes | ? | ? | ? | yes / yes | 0 | ? | no | ? | ? | 989 | 1025 | 0.036 (kie) |
 | PixVerse · VibeMV (clip musical) | PixVerse (AISphere) | no | ? | 1080p | no | 2 | ? | 1 (360 s) | no / ? | ? | ? | no | ? | ? | ? | ? |  |
 | Runway Act · Act-Two | Runway | no | 3–30 s | ? | ? | 1 | 2 | ? | ? / ? | ? | ? | no | ? | ? | ? | ? |  |
@@ -101,7 +101,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Vidu · Q3 Mix (référence vers vidéo) | Shengshu Technology | no | 1–16 s | 1080p | yes | 4 | ? | ? | no / no | ? | ? | no | ? | ? | ? | ? |  |
 | Vidu · Q3 Pro | Shengshu Technology | no | 1–16 s | 1080p | yes | 0 | ? | ? | yes / yes | 0 | ? | no | ? | ? | 943 | 1015 | 0.065 (runware) |
 | Vidu · Q3 Turbo | Shengshu Technology | no | 1–16 s | 1080p | yes | ? | ? | ? | yes / yes | 0 | ? | no | ? | ? | 918 | 967 | 0.036 (runware) |
-| Vidu · Q4 Preview | Shengshu Technology | no | 3–16 s | 4K (10 bits en 2K et 4K) | yes | 12 | ? | 3 | yes / ? | ? | ? | no | ? | ? | ? | ? | 0.076 (kie) |
+| Vidu · Q4 Preview | Shengshu Technology | no | 3–16 s | 4K (10 bits en 2K et 4K) | yes | 12 | ? | 3 | yes / ? | ? | ? | no | ? | ? | ? | ? | 0.067 (fal) |
 | Vimoo · 1.0 | Vimoo | no | ? | ? | ? | ? | ? | ? | yes / ? | ? | ? | ? | ? | ? | ? | ? |  |
 | Wan · 2.2 A14B (T2V / I2V) | Alibaba (Tongyi Wan) | yes | ? | 720p | no | 0 | 0 | 0 | yes / yes | ? | yes | yes | yes | yes | ? | ? | 0.060 (wavespeed) |
 | Wan · 2.2 Animate-2 14B (et Animate 14B) | Alibaba (Tongyi Wan / HumanAIGC) | yes | ? | 720p | no | 1 | 1 | 0 | ? / ? | ? | ? | no | yes | ? | ? | ? |  |
@@ -118,8 +118,8 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Model | Vendor | Open weights | License | Max res | Image refs | Edit | LoRA | 5090 | 4090 | Mac 128 GB | AA T2I | AA edit | Cheapest $/image |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | FLUX 3 · FLUX 3 Image | Black Forest Labs | no | Propriétaire (API BFL, Replicate, partenaires) | 4K natif (source tierce) | 10 | yes | no | no | ? | ? | 1114 | ? | 0.024 (fal) |
-| FLUX.1 · FLUX.1 Krea [dev] | Black Forest Labs / Krea | yes | FLUX.1 [dev] Non-Commercial License | ? | ? | ? | yes | yes | yes | ? | 829 | ? |  |
-| FLUX.1 Kontext · FLUX.1 Kontext [dev] | Black Forest Labs | yes | FLUX.1 [dev] Non-Commercial License | ? | 1 | yes | yes | yes | yes | yes | ? | 893 |  |
+| FLUX.1 · FLUX.1 Krea [dev] | Black Forest Labs / Krea | yes | FLUX.1 [dev] Non-Commercial License | ? | ? | ? | yes | yes | yes | ? | 829 | ? | 0.025 (fal) |
+| FLUX.1 Kontext · FLUX.1 Kontext [dev] | Black Forest Labs | yes | FLUX.1 [dev] Non-Commercial License | ? | 1 | yes | yes | yes | yes | yes | ? | 893 | 0.025 (fal) |
 | FLUX.1 Kontext · FLUX.1 Kontext [max] | Black Forest Labs | no | Propriétaire (API BFL) | ? | 1 | yes | no | no | ? | ? | 929 | 918 | 0.050 (kie) |
 | FLUX.1 Kontext · FLUX.1 Kontext [pro] | Black Forest Labs | no | Propriétaire (API BFL) | ? | 1 | yes | no | no | ? | ? | 920 | 911 | 0.025 (kie) |
 | FLUX.2 · FLUX.2 [dev] | Black Forest Labs | yes | FLUX Non-Commercial License (usage commercial = licence payante) | 4 MP | 6 | yes | yes | yes | yes | yes | 1000 | 1000 | 0.014 (replicate) |
@@ -195,6 +195,6 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Seedream · Seedream 5.0 Pro | ByteDance Seed | no | Propriétaire (BytePlus ModelArk, Volcengine) | 2K (une place de marché annonce 4K) | 10 | yes | no | no | ? | ? | 1096 | 1126 | 0.035 (kie) |
 | Stable Diffusion · SDXL 1.0 (base) | Stability AI | yes | CreativeML OpenRAIL++-M (commercial autorisé) | 1024x1024 | ? | yes | yes | yes | yes | yes | ? | ? |  |
 | Stable Diffusion · Stable Diffusion 3.5 Large | Stability AI | yes | Stability AI Community License (commercial gratuit sous 1 M$ de CA annuel) | 1 MP | ? | no | yes | yes | yes | yes | ? | ? | 0.065 (replicate) |
-| Z-Image · Z-Image (Base) | Alibaba (Tongyi-MAI) | yes | Apache 2.0 (commercial autorisé) | ? | ? | no | yes | yes | yes | yes | 890 | ? |  |
-| Z-Image · Z-Image Turbo | Alibaba (Tongyi-MAI) | yes | Apache 2.0 (commercial autorisé) | ? | ? | no | yes | yes | yes | yes | 936 | ? |  |
+| Z-Image · Z-Image (Base) | Alibaba (Tongyi-MAI) | yes | Apache 2.0 (commercial autorisé) | ? | ? | no | yes | yes | yes | yes | 890 | ? | 0.010 (fal) |
+| Z-Image · Z-Image Turbo | Alibaba (Tongyi-MAI) | yes | Apache 2.0 (commercial autorisé) | ? | ? | no | yes | yes | yes | yes | 936 | ? | 0.005 (fal) |
 | Z-Image · Z-Image-Edit | Alibaba (Tongyi-MAI) | no | ? | ? | ? | yes | no | ? | ? | ? | ? | ? |  |

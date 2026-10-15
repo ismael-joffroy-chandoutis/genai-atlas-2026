@@ -54,5 +54,17 @@
  "recraft-v4-1-pro": "recraft-v4-1-utility-pro",
  "recraft-v4-1-pro-vector": "recraft-v4-1-vector",
  "krea-2-medium-turbo": "krea-2-medium",
- "bfl-flux-3-video-draft": "bfl-flux-3-video"
+ "bfl-flux-3-video-draft": "bfl-flux-3-video",
+ "z-image-base": "alibaba-z-image-base",
+ "z-image-turbo": "alibaba-z-image-turbo",
+ "bfl-flux-kontext-dev": "bfl-flux-1-kontext-dev",
+ "bfl-flux-1-krea": "bfl-flux-1-krea-dev",
+ "bfl-flux-krea": "bfl-flux-1-krea-dev",
+ "alibaba-wan-2-2-a14b": "wan-2-2-a14b",
+ "alibaba-wan-2-2-5b": "wan-2-2-ti2v-5b",
+ "ltx-2-3-22b": "ltx-2-3-open-weights",
+ "hunyuan-video-1-5": "hunyuanvideo-1-5",
+ "kling-3-0-turbo-std": "kling-3-0-turbo",
+ "minimax-hailuo-2-3-fast-pro": "minimax-hailuo-2-3-fast",
+ "minimax-hailuo-2-3-fast-std": "minimax-hailuo-2-3-fast"
 }
