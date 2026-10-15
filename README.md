@@ -20,6 +20,10 @@ A comparison of generative video and image models as of 15 October 2026, variant
 - `scripts/`: price readers (fal, OpenRouter, GPU clouds), the price merger, the table export and the builder of a single-file interactive page (`python3 scripts/build_atlas.py`, output in `site/`).
 - `lab/focal-test/`: a reproducible test on focal length and sensor (see below).
 
+## Guides
+
+- [Matching a hybrid film to a grainy iPhone look](guides/hybrid-look-matching.md): Blackmagic, iPhone, infrared and AI shots in one look. Colour management, SDR or HDR, what makes the iPhone look, degrain and regrain, order of passes, documented cases ([version française](guides/raccord-look-hybride.fr.md)).
+
 ## How to read it
 
 - `?` means the information is not documented anywhere we could find. Nothing is guessed.

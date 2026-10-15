@@ -20,6 +20,10 @@ Un comparatif des modèles de génération vidéo et image au 15 octobre 2026, v
 - `scripts/` : lecteurs de prix (fal, OpenRouter, clouds GPU), fusion des prix, export des tableaux et construction d'une page interactive en un seul fichier (`python3 scripts/build_atlas.py`, sortie dans `site/`).
 - `lab/focal-test/` : un test reproductible sur la focale et le capteur (plus bas).
 
+## Guides
+
+- [Raccorder un film hybride dans un look iPhone granuleux](guides/raccord-look-hybride.fr.md) : plans Blackmagic, iPhone, infrarouges et IA dans un même look. Gestion des couleurs, SDR ou HDR, ce qui fait le look iPhone, dégrain et regrain, ordre des passes, cas documentés ([English version](guides/hybrid-look-matching.md)).
+
 ## Comment le lire
 
 - `?` veut dire que l'information n'est documentée nulle part où nous avons cherché. Rien n'est deviné.
