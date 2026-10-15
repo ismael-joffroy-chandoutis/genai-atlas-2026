@@ -1573,5 +1573,26 @@
     "mac_studio_256gb": null,
     "mac_studio_512gb": null,
     "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Aucun portage Mac trouvé : la mémoire seule ne suffit pas à conclure."
+  },
+  "bfl-flux-3-image-klein": {
+    "rtx4090_24gb": true,
+    "rtx4090_note": "Mesuré le 16/10/2026 sur RTX 4090 (BEQUIET, ComfyUI 0.41.0, distillé INT8 + encodeur INT8, 1024², 15 pas) : 9,70 s par image à chaud, 14,76 s à froid, pic 11,2 Go de VRAM. Un test public sur 3090 donne environ 13 s, contre environ 82 s pour Qwen-Image 2.1.",
+    "mac_m5max_128gb": true,
+    "mac_tool": "MLX communautaire (vanch007/FLUX.3-Image-Klein-mlx)",
+    "mac_note": "Déduit : 5,6B, versions MLX 4 et 8 bits publiées par la communauté le jour de la sortie ; non testé.",
+    "mac_m5pro_64gb": true,
+    "mac64_note": "Déduit : même raisonnement, non testé.",
+    "sources": [
+      {
+        "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein",
+        "date": "2026-10-16",
+        "type": "editeur"
+      },
+      {
+        "url": "https://x.com/Tech2Wild/status/2110809384641028544",
+        "date": "2026-10-15",
+        "type": "mesure"
+      }
+    ]
   }
 }

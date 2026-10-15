@@ -2913,19 +2913,19 @@
   "vendor": "Kuaishou (KlingAI)",
   "country": "CN",
   "modality": "video",
-  "released": null,
+  "released": "2026-10-15",
   "access": {
    "open_weights": false,
    "license": null,
    "api": false,
-   "consumer_app": null
+   "consumer_app": true
   },
   "ranking": {
    "aa_text_to_video": null,
    "aa_image_to_video": null,
    "aa_text_to_image": null,
    "aa_image_edit": null,
-   "aa_note": "Absent des classements lus le 15/10/2026 (pas encore sorti)."
+   "aa_note": "Sorti le 15/10/2026 sur kling.ai ; pas encore classé au 16/10/2026."
   },
   "inputs": {
    "text": true,
@@ -2973,13 +2973,19 @@
   },
   "pros": [
    "30 s par plan et 10 images-clés annoncés",
-   "Audio stéréo"
+   "Audio stéréo",
+   "Disponible sur kling.ai, MCP et CLI au lancement"
   ],
   "cons": [
-   "Pas encore sorti au 15/10/2026 (annoncé pour octobre)",
-   "Spécifications non vérifiables en production"
+   "API entreprise et 4K HDR 10 bits annoncés « à venir » au 15/10/2026",
+   "Premiers retours d'utilisateurs sur X plutôt déçus face à Seedance 2.5 (15/10/2026)"
   ],
   "sources": [
+   {
+    "url": "https://x.com/Kling_ai/status/2110747537187709424",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
    {
     "url": "https://fal.ai/learn/tools/what-is-kling-4-0",
     "date": "2026-10-15",

@@ -5647,6 +5647,32 @@
    "phosphene": false,
    "notes": "Aucune app Pinokio installable relevée ; Draw Things ne fait pas d'audio ; absent des définitions Maestro ; Phosphene n'a que YuE2 en audio.",
    "count": 0
+  },
+  "bfl-flux-3-image-klein": {
+   "comfyui_local": [
+    "image_flux3_klein_distilled_t2i"
+   ],
+   "comfyui_api": [],
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "notes": "ComfyUI 0.41.0 (PR #17064, 15/10/2026) ; modèle de workflow dans workflow_templates 0.11.85. Wan2GP : pas encore (dernier commit 12/10).",
+   "count": 1
+  },
+  "krea-3": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "Krea 3 Image (nœud partenaire)"
+   ],
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": false,
+   "maestro": null,
+   "phosphene": null,
+   "notes": "API seulement.",
+   "count": 0
   }
  }
 }

@@ -7219,5 +7219,195 @@
         "type": "independant"
       }
     ]
+  },
+  {
+    "id": "bfl-flux-3-image-klein",
+    "family": "FLUX 3",
+    "variant": "FLUX 3 Image Klein (5,6B, poids ouverts)",
+    "vendor": "Black Forest Labs",
+    "country": "DE",
+    "modality": "image",
+    "released": "2026-10-15",
+    "access": {
+      "open_weights": true,
+      "license": "FLUX Kommunity License v1.0 : usage commercial gratuit sous 5 M$ de CA annuel (affiliés compris), licence payante au-delà",
+      "api": true,
+      "consumer_app": null
+    },
+    "ranking": {
+      "aa_text_to_video": null,
+      "aa_image_to_video": null,
+      "aa_text_to_image": null,
+      "aa_image_edit": null,
+      "aa_note": "Pas encore classé au 16/10/2026. BFL annonce battre Qwen-Image 2.1 dans ses propres évaluations (non indépendant)."
+    },
+    "inputs": {
+      "text": true,
+      "image_refs_max": null,
+      "video_refs_max": null,
+      "video_refs_total_s": null,
+      "audio_refs_max": null,
+      "audio_refs_total_s": null,
+      "first_frame": null,
+      "last_frame": null,
+      "keyframes_max": null,
+      "video_to_video": null,
+      "control": [],
+      "camera_control": null,
+      "input_3d": null,
+      "image_edit": true,
+      "multi_image_edit_max": null,
+      "lora_inference": true,
+      "lora_training": true,
+      "incompatible_combinations": null
+    },
+    "outputs": {
+      "max_resolution": "4K natif annoncé",
+      "min_s": null,
+      "max_s": null,
+      "fps": null,
+      "native_audio": null,
+      "lip_sync": null,
+      "languages": null,
+      "max_images_per_call": null,
+      "text_rendering": null
+    },
+    "edit_functions": [
+      "édition au pixel",
+      "boîtes englobantes (nœud FLUX.3 Layout Prompt)"
+    ],
+    "local": {
+      "runs_on_rtx5090_32gb": true,
+      "vram_note": "Mesuré le 16/10/2026 sur RTX 5090 (TORRENT, ComfyUI 0.41.1, distillé INT8 ConvRot + Qwen3-VL-4B INT8, 1024², 15 pas) : 5,85 s par image à chaud, 8,29 s à froid, environ 10,8 Go de VRAM. BFL annonce 8 Go en INT8. Fichiers : modèle 5,8 Go + encodeur 4,9 Go + VAE FLUX.2 0,34 Go ; réécriture de prompt (PUP) optionnelle, 18,8 Go."
+    },
+    "moderation": {
+      "real_faces": "autorise",
+      "public_figures": "Pas de filtre en local",
+      "notes": "Licence FLUX Kommunity : interdits d'usage de la licence"
+    },
+    "pros": [
+      "Poids ouverts, commercial gratuit sous 5 M$ de CA",
+      "Rapide : 5,85 s par image 1024² sur 5090, 9,7 s sur 4090 (mesuré)",
+      "Version Base non distillée pour LoRA, ComfyUI au jour 1"
+    ],
+    "cons": [
+      "Licence à seuil, pas Apache",
+      "Pas encore dans Wan2GP au 16/10/2026",
+      "Aucun classement indépendant à la sortie"
+    ],
+    "sources": [
+      {
+        "url": "https://bfl.ai/blog/flux-3-image-klein",
+        "date": "2026-10-16",
+        "type": "editeur"
+      },
+      {
+        "url": "https://huggingface.co/black-forest-labs/flux-3-image-klein-comfy",
+        "date": "2026-10-16",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/comfyanonymous/ComfyUI/pull/17064",
+        "date": "2026-10-16",
+        "type": "independant"
+      },
+      {
+        "url": "https://venturebeat.com/technology/black-forest-labs-opens-flux-3-image-klein-weights-with-free-commercial-use-limited-to-smaller-businesses",
+        "date": "2026-10-16",
+        "type": "independant"
+      }
+    ]
+  },
+  {
+    "id": "krea-3",
+    "family": "Krea 3",
+    "variant": "Krea 3 (bêta, édition d'image)",
+    "vendor": "Krea",
+    "country": "US",
+    "modality": "image",
+    "released": "2026-10-15",
+    "access": {
+      "open_weights": false,
+      "license": "Propriétaire (API et app Krea) ; auto-hébergement seulement en offre entreprise",
+      "api": true,
+      "consumer_app": true
+    },
+    "ranking": {
+      "aa_text_to_video": null,
+      "aa_image_to_video": null,
+      "aa_text_to_image": null,
+      "aa_image_edit": null,
+      "aa_note": "Pas encore classé au 16/10/2026. Krea se compare à Nano Banana Pro et GPT Image 2.5 (non indépendant)."
+    },
+    "inputs": {
+      "text": true,
+      "image_refs_max": null,
+      "video_refs_max": null,
+      "video_refs_total_s": null,
+      "audio_refs_max": null,
+      "audio_refs_total_s": null,
+      "first_frame": null,
+      "last_frame": null,
+      "keyframes_max": null,
+      "video_to_video": null,
+      "control": [],
+      "camera_control": null,
+      "input_3d": null,
+      "image_edit": true,
+      "multi_image_edit_max": null,
+      "lora_inference": false,
+      "lora_training": false,
+      "incompatible_combinations": null
+    },
+    "outputs": {
+      "max_resolution": "2K natif (2736×1536)",
+      "min_s": null,
+      "max_s": null,
+      "fps": null,
+      "native_audio": null,
+      "lip_sync": null,
+      "languages": null,
+      "max_images_per_call": null,
+      "text_rendering": null
+    },
+    "edit_functions": [
+      "édition multi-tours",
+      "boîtes englobantes"
+    ],
+    "local": {
+      "runs_on_rtx5090_32gb": false,
+      "vram_note": "Pas de poids. Un membre de l'équipe dit sur HN que des poids ouverts sont « en discussion », sans date."
+    },
+    "moderation": {
+      "real_faces": null,
+      "public_figures": null,
+      "notes": null
+    },
+    "pros": [
+      "Environ 0,06 $ l'édition 2K, moins de 8 s (Krea)",
+      "Nœud partenaire ComfyUI (API)"
+    ],
+    "cons": [
+      "Pas de poids ouverts",
+      "Texte vers image encore expérimental",
+      "Bêta"
+    ],
+    "sources": [
+      {
+        "url": "https://www.krea.ai/krea-3",
+        "date": "2026-10-16",
+        "type": "editeur"
+      },
+      {
+        "url": "https://github.com/comfyanonymous/ComfyUI/pull/17067",
+        "date": "2026-10-16",
+        "type": "independant"
+      },
+      {
+        "url": "https://news.ycombinator.com/item?id=50105648",
+        "date": "2026-10-16",
+        "type": "independant"
+      }
+    ]
   }
 ]

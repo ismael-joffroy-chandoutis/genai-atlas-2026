@@ -118,6 +118,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Model | Vendor | Open weights | License | Max res | Image refs | Edit | LoRA | 5090 | 4090 | Mac 128 GB | AA T2I | AA edit | Integrated in | Cheapest $/image |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | FLUX 3 · FLUX 3 Image | Black Forest Labs | no | Propriétaire (API BFL, Replicate, partenaires) | 4K natif (source tierce) | 10 | yes | no | no | ? | ? | 1114 | ? | – | 0.024 (fal) |
+| FLUX 3 · FLUX 3 Image Klein (5,6B, poids ouverts) | Black Forest Labs | yes | FLUX Kommunity License v1.0 : usage commercial gratuit sous 5 M$ de CA annuel (affiliés compris), licence payante au-delà | 4K natif annoncé | ? | yes | yes | yes | yes | yes | ? | ? | ComfyUI |  |
 | FLUX.1 · FLUX.1 Krea [dev] | Black Forest Labs / Krea | yes | FLUX.1 [dev] Non-Commercial License | ? | ? | ? | yes | yes | yes | ? | 829 | ? | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro | 0.025 (fal) |
 | FLUX.1 Kontext · FLUX.1 Kontext [dev] | Black Forest Labs | yes | FLUX.1 [dev] Non-Commercial License | ? | 1 | yes | yes | yes | yes | yes | ? | 893 | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro | 0.025 (fal) |
 | FLUX.1 Kontext · FLUX.1 Kontext [max] | Black Forest Labs | no | Propriétaire (API BFL) | ? | 1 | yes | no | no | ? | ? | 929 | 918 | – | 0.050 (kie) |
@@ -152,6 +153,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Krea 2 · Krea 2 Large | Krea | no | Propriétaire (API et app Krea) | 1K via l'API (source tierce, non confirmée) | ? | ? | no | no | ? | ? | 1034 | ? | ComfyUI | 0.060 (openrouter) |
 | Krea 2 · Krea 2 Medium | Krea | no | Propriétaire (API et app Krea) | 1K via l'API (source tierce) | ? | ? | no | no | ? | ? | 1013 | ? | ComfyUI | 0.015 (openrouter) |
 | Krea 2 · Krea 2 Turbo / Raw (poids ouverts) | Krea | yes | Krea 2 Community License (gratuit sous 50 postes, plafond de CA cité à 1 M$ par une source ; Enterprise au-delà) | 2K natif (Turbo, 8 pas) | ? | no | yes | yes | yes | yes | 1018 | ? | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro | 0.008 (fal) |
+| Krea 3 · Krea 3 (bêta, édition d'image) | Krea | no | Propriétaire (API et app Krea) ; auto-hébergement seulement en offre entreprise | 2K natif (2736×1536) | ? | yes | no | no | ? | ? | ? | ? | – |  |
 | Leonardo · Lucid Origin Fast | Leonardo.Ai (Canva) | no | Propriétaire (app et API Leonardo) | Full HD (1920x1080) | ? | ? | yes | no | ? | ? | 851 | ? | – |  |
 | Leonardo · Lucid Origin Ultra | Leonardo.Ai (Canva) | no | Propriétaire (app et API Leonardo) | Full HD (1920x1080) | ? | ? | yes | no | ? | ? | 885 | ? | – |  |
 | Leonardo · Phoenix 0.9 Ultra | Leonardo.Ai (Canva) | no | Propriétaire (app et API Leonardo) | ? | ? | ? | yes | no | ? | ? | 839 | ? | – |  |
