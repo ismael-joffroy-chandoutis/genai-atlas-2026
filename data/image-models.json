@@ -18,7 +18,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1217,
       "aa_image_edit": 1199,
-      "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). #1 T2I et #1 édition AA au 15/10/2026"
+      "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). #1 T2I et #1 édition AA au 15/10/2026 · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -126,7 +126,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1207,
       "aa_image_edit": 1178,
-      "aa_note": "Elo mesuré en qualité max. Mêmes niveaux de qualité que Sunburst (low à max). Modèle « petit », par défaut pour la plupart des usages"
+      "aa_note": "Elo mesuré en qualité max. Mêmes niveaux de qualité que Sunburst (low à max). Modèle « petit », par défaut pour la plupart des usages · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -228,7 +228,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1187,
       "aa_image_edit": 1133,
-      "aa_note": "Elo en qualité high. Niveaux : low, medium, high, auto"
+      "aa_note": "Elo en qualité high. Niveaux : low, medium, high, auto · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -324,7 +324,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1120,
       "aa_image_edit": 1116,
-      "aa_note": "Elo en qualité high ; AA date la sortie à déc. 2025"
+      "aa_note": "Elo en qualité high ; AA date la sortie à déc. 2025 · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -419,7 +419,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 942,
       "aa_image_edit": 924,
-      "aa_note": "Elo en qualité medium ; AA date la sortie à oct. 2025"
+      "aa_note": "Elo en qualité medium ; AA date la sortie à oct. 2025 · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -502,7 +502,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1172,
       "aa_image_edit": 1150,
-      "aa_note": "#4 T2I, #3-5 édition. Niveaux de réflexion minimal/medium/high (défaut medium)"
+      "aa_note": "#4 T2I, #3-5 édition. Niveaux de réflexion minimal/medium/high (défaut medium) · Forfait contre API : score mesuré par l'API. La version de l'application Gemini (forfait) n'est notée par aucun classement."
     },
     "inputs": {
       "text": true,
@@ -608,7 +608,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1138,
       "aa_image_edit": 1121,
-      "aa_note": "AA date la sortie à fév. 2026"
+      "aa_note": "AA date la sortie à fév. 2026 · Forfait contre API : score mesuré par l'API. La version de l'application Gemini (forfait) n'est notée par aucun classement."
     },
     "inputs": {
       "text": true,
@@ -705,7 +705,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1106,
       "aa_image_edit": 1050,
-      "aa_note": "AA date la sortie à juin 2026"
+      "aa_note": "AA date la sortie à juin 2026 · Forfait contre API : score mesuré par l'API. La version de l'application Gemini (forfait) n'est notée par aucun classement."
     },
     "inputs": {
       "text": true,
@@ -795,7 +795,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 1115,
       "aa_image_edit": 1109,
-      "aa_note": "AA date la sortie à nov. 2025"
+      "aa_note": "AA date la sortie à nov. 2025 · Forfait contre API : score mesuré par l'API. La version de l'application Gemini (forfait) n'est notée par aucun classement."
     },
     "inputs": {
       "text": true,
@@ -889,7 +889,7 @@
       "aa_image_to_video": null,
       "aa_text_to_image": 984,
       "aa_image_edit": 984,
-      "aa_note": "AA date la sortie à août 2025 ; modèle hérité"
+      "aa_note": "AA date la sortie à août 2025 ; modèle hérité · Forfait contre API : score mesuré par l'API. La version de l'application Gemini (forfait) n'est notée par aucun classement."
     },
     "inputs": {
       "text": true,
