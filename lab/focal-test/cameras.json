@@ -1,0 +1,37 @@
+[
+ {
+  "nom": "f24_plein-format",
+  "focale_mm": 24,
+  "capteur_mm": 36.0,
+  "distance_m": 3.36,
+  "angle_horizontal_deg": 73.74
+ },
+ {
+  "nom": "f50_plein-format",
+  "focale_mm": 50,
+  "capteur_mm": 36.0,
+  "distance_m": 7.0,
+  "angle_horizontal_deg": 39.6
+ },
+ {
+  "nom": "f100_plein-format",
+  "focale_mm": 100,
+  "capteur_mm": 36.0,
+  "distance_m": 14.0,
+  "angle_horizontal_deg": 20.41
+ },
+ {
+  "nom": "f35_plein-format",
+  "focale_mm": 35,
+  "capteur_mm": 36.0,
+  "distance_m": 4.9,
+  "angle_horizontal_deg": 54.43
+ },
+ {
+  "nom": "f35_super35",
+  "focale_mm": 35,
+  "capteur_mm": 24.89,
+  "distance_m": 4.9,
+  "angle_horizontal_deg": 39.15
+ }
+]

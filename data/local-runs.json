@@ -1,0 +1,1139 @@
+{
+ "minimax-h3-fl2va-33b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "h3.c (Metal natif, antirez), mlx-h3, minimax-h3-mlx (PipeNetwork), Draw Things",
+  "mac_note": "Mesures sur M5 Max 128 Go avec h3.c : 512x512, 22 images, préréglage rapide 16,7 s (12,6 s avec réduction de jetons), chemin 4 étapes environ 3,5 s ; int8 19,3 s contre 25,8 s en bf16 sur un rendu 50 couches ; pic mémoire environ 40 Go. Simon Willison, M5 Max, minimax-h3-mlx 8 bits : un peu moins de 45 min pour un clip, 115 Go de fichiers téléchargés. Draw Things intègre la série H3 (LoRA et TeaCache) depuis le 11/09/2026. Pas de régénération 2K en local.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré : ComfyUI 0.30, fp8 ou int8, pic 15,7 Go en 1344x768, environ 300 s pour 5 s avec 12 étapes turbo, 990 s pour 10 s en 20 étapes de base (Pedro Alonso, 4090, 62 Go de RAM). Wan2GP INT8 ConvRot : 14 min 16 s pour 5,17 s en 1280x736 à 50 étapes, environ 10,4 Go de VRAM (Civitai, 13900K). GGUF Q8_0 environ 20 Go. NVFP4 inutile sur Ada (émulé).",
+  "sources": [
+   {
+    "url": "https://github.com/antirez/h3.c",
+    "date": "2026-08-10",
+    "type": "mesure"
+   },
+   {
+    "url": "https://aiweekly.co/alerts/antirez-ships-h3c-minimax-h3-inference-on-apple-silicon",
+    "date": "2026-08-10",
+    "type": "independant"
+   },
+   {
+    "url": "https://simonwillison.net/2026/aug/4/minimax-h3-mlx",
+    "date": "2026-08-04",
+    "type": "mesure"
+   },
+   {
+    "url": "https://github.com/PipeNetwork/minimax-h3-mlx",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://pypi.org/project/mlx-h3/",
+    "date": "2026-08-06",
+    "type": "independant"
+   },
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.pedroalonso.net/blog/minimax-h3-local-rtx-4090/",
+    "date": "2026-08-09",
+    "type": "mesure"
+   },
+   {
+    "url": "https://civitai.com/articles/35555/minimax-h3-on-rtx-4090-14m16s-for-517s-720p-at-full-50-steps-no-turbo-lora",
+    "date": "2026-09-20",
+    "type": "mesure"
+   },
+   {
+    "url": "https://hellogen.ai/blog/minimax-h3-local-deployment/",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://github.com/deepbeepmeep/Wan2GP",
+    "date": "2026-10-11",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-ref2va-33b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "mlx-h3, h3.c, Draw Things",
+  "mac_note": "mlx-h3 0.0.1a3 (06/08/2026) donne Ref2VA et le conditionnement par bande-son de référence comme fonctionnels, en 8 bits ; h3.c a un arbre de checkpoint Ref2VA. Aucune vitesse publiée pour ce mode sur Mac.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré par Pedro Alonso sur 4090 (ComfyUI) : mode référence, 5 s, 20 étapes, 435 s. GGUF Q8_0 ref2va environ 21,4 Go.",
+  "sources": [
+   {
+    "url": "https://pypi.org/project/mlx-h3/",
+    "date": "2026-08-06",
+    "type": "independant"
+   },
+   {
+    "url": "https://github.com/antirez/h3.c",
+    "date": "2026-08-10",
+    "type": "mesure"
+   },
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://www.pedroalonso.net/blog/minimax-h3-local-rtx-4090/",
+    "date": "2026-08-09",
+    "type": "mesure"
+   },
+   {
+    "url": "https://hellogen.ai/blog/minimax-h3-local-deployment/",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-pruned-20b-fl2va": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun portage Mac ne cite la version élaguée (h3.c, mlx-h3 et minimax-h3-mlx visent la 33B ; la fiche multimodalart ne contient qu'un commentaire « mps »). La 33B tournant sur M5 Max, la 20B devrait être plus légère, mais rien n'est mesuré.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Transformeur élagué int8 ConvRot Comfy-Org environ 21 Go, tient en 24 Go sans streaming ; mesure SGLang sur 4090 D : pic GPU environ 18 Go en 1344x768 (source secondaire). GGUF Q5_K_M 14,1 Go conseillé pour 24 Go. Utiliser int8 ConvRot, pas NVFP4 (Blackwell, émulé sur Ada). Aucune mesure propre au mode FL2VA.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/multimodalart/MiniMax-H3-Pruned",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://openclawdc.com/blog/can-i-run-minimax-h3-locally/",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-pruned-20b-ref2va": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun portage Mac ne cite la version élaguée (h3.c, mlx-h3 et minimax-h3-mlx visent la 33B ; la fiche multimodalart ne contient qu'un commentaire « mps »). La 33B tournant sur M5 Max, la 20B devrait être plus légère, mais rien n'est mesuré.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Transformeur élagué int8 ConvRot Comfy-Org environ 21 Go, tient en 24 Go sans streaming ; mesure SGLang sur 4090 D : pic GPU environ 18 Go en 1344x768 (source secondaire). GGUF Q5_K_M 14,1 Go conseillé pour 24 Go. Utiliser int8 ConvRot, pas NVFP4 (Blackwell, émulé sur Ada). Aucune mesure propre au mode Ref2VA.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/multimodalart/MiniMax-H3-Pruned",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-GGUF",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://openclawdc.com/blog/can-i-run-minimax-h3-locally/",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-pdd-8-etapes": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Fonction de Wan2GP, qui ne prend en charge que les GPU NVIDIA et AMD (aucune mention du Mac).",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Wan2GP prend en charge les RTX 40 et fait tourner H3 avec 5 à 6 Go de VRAM pour 15 s en 480p ; aucune mesure publiée du mode PDD sur 4090 (mesure maison sur RTX 5090 seulement).",
+  "sources": [
+   {
+    "url": "https://github.com/deepbeepmeep/Wan2GP",
+    "date": "2026-10-11",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-veda-sparse": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Fonction de Wan2GP v18, qui ne prend en charge que NVIDIA et AMD.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Wan2GP v18 tourne sur RTX 40, mais rien ne confirme que l'attention creuse Veda fonctionne ou accélère sur Ada ; aucune mesure 4090.",
+  "sources": [
+   {
+    "url": "https://github.com/deepbeepmeep/Wan2GP",
+    "date": "2026-10-11",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-h3-turbo-lora": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Draw Things charge les LoRA H3 depuis le 11/09/2026, mais aucune source ne confirme le Turbo LoRA (qui exige un échantillonneur dédié sous ComfyUI). Les « 4 étapes » de h3.c sont un débruitage court du modèle de base, pas le Turbo LoRA.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré (ComfyUI, 4090) : 5 s en 12 étapes turbo environ 300 s ; 10 s en 4/8/12 étapes : 275/420/605 s. Exige les nœuds MiniMaxH3TurboLoRA et MiniMaxH3TurboSampler (avec les nœuds génériques : stries et postérisation). 4 étapes dégradé sur les clips longs.",
+  "sources": [
+   {
+    "url": "https://www.pedroalonso.net/blog/minimax-h3-local-rtx-4090/",
+    "date": "2026-08-09",
+    "type": "mesure"
+   },
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/antirez/h3.c",
+    "date": "2026-08-10",
+    "type": "mesure"
+   }
+  ]
+ },
+ "minimax-h3-fun-controlnet-union": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Tourne via le pipeline VideoX-Fun (et Wan2GP) ; aucun portage Mac trouvé.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Checkpoint de 6,8 Go (1.0) ou 13,5 Go (2.0) à ajouter au transformeur H3 ; aucune mesure sur 24 Go trouvée.",
+  "sources": [
+   {
+    "url": "https://comfyui-wiki.com/news/2026-08-24-minimax-h3-fun-controlnet-union",
+    "date": "2026-08-24",
+    "type": "independant"
+   },
+   {
+    "url": "https://github.com/deepbeepmeep/Wan2GP",
+    "date": "2026-10-11",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-fasth3-v2-8-etapes": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Le modèle impose l'attention creuse VSA (noyaux CUDA ou Triton, carte RTX 30 ou plus récente) ; la version NVFP4 Consumer vise Blackwell. Aucune voie Mac trouvée.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "La version NVFP4 « Consumer » est empaquetée pour Blackwell (5090, PRO 6000, DGX Spark) : pas pour la 4090. Il existe un transformeur élagué int8 ConvRot (Comfy-Org) et un GGUF Q4_K_M de 19,8 Go, et VSA accepte les RTX 30 et plus, mais l'encodeur de texte du modèle ComfyUI est en NVFP4 et aucune mesure 4090 n'a été trouvée.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-8-Step-V2-NVFP4-Consumer",
+    "date": "2026-10-05",
+    "type": "editeur"
+   },
+   {
+    "url": "https://comfyui-wiki.com/en/news/2026-09-16-fasth3-comfyui-templates",
+    "date": "2026-09-16",
+    "type": "independant"
+   }
+  ]
+ },
+ "minimax-fasth3-preview-v1-4-etapes": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Pile FastVideo avec noyaux VSA en CUDA, testée sur quatre B200 ; aucune voie Mac.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "35B en bf16, documenté seulement en multi-GPU (B200, autres systèmes CUDA) ; aucune mention de carte grand public.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-4-step-Preview-v1-VSA-DataFree",
+    "date": "2026-08-27",
+    "type": "editeur"
+   }
+  ]
+ },
+ "minimax-h3-api": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Ligne API : le même modèle tourne en local, voir les lignes poids ouverts.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Ligne API : voir les lignes poids ouverts.",
+  "sources": [
+   {
+    "url": "https://platform.minimax.io/docs/guides/video-generation",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "lynnreal-omni-32b": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Code bâti sur des noyaux CUDA sur mesure et des backends d'attention CUDA ; aucune mention du Mac ni de MPS.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "DiT Standard Lite BF16 37,6 Go, INT8 20,4 Go (checkpoint INT8 « à venir »). L'éditeur n'a testé que H100 80 Go et une RTX 4090 modifiée 48 Go, et précise qu'une 4090 standard de 24 Go « n'est pas équivalente ». Portage ComfyUI expérimental. Aucune mesure en 24 Go.",
+  "sources": [
+   {
+    "url": "https://github.com/LynnReal-AI/LynnReal-Omni",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "lynnreal-omni-flash-27b": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Code bâti sur des noyaux CUDA sur mesure et des backends d'attention CUDA ; aucune mention du Mac ni de MPS.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "DiT Flash Lite INT8 (W8A8) 16,7 Go. L'éditeur n'a testé que H100 80 Go et une RTX 4090 modifiée 48 Go, et précise qu'une 4090 standard de 24 Go « n'est pas équivalente ». Portage ComfyUI expérimental. Aucune mesure en 24 Go.",
+  "sources": [
+   {
+    "url": "https://github.com/LynnReal-AI/LynnReal-Omni",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "sandai-magi-2-preview": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "MoE 114B, poids complets environ 307 Go : dépasse 128 Go ; aucun portage.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Exige 8 GPU NVIDIA Hopper.",
+  "sources": [
+   {
+    "url": "https://comfyui-wiki.com/en/news/2026-08-05-magi-2-preview",
+    "date": "2026-08-05",
+    "type": "independant"
+   }
+  ]
+ },
+ "wan-2-2-a14b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mlx-video (Blaizzy), ComfyUI sur MPS",
+  "mac_note": "Draw Things ajoute la série 14B dès le 03/08/2025 ; mlx-video gère T2V-14B et I2V-14B. Aucune vitesse mesurée sur M4 Max ou M5 Max trouvée ; seul repère : 82 min pour 2 s en GGUF sur M1 Max 64 Go (ComfyUI), et l'fp8 échoue sur Metal dans ce test.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Possible en fp8 ou GGUF sous ComfyUI avec déchargement (le chemin officiel demande 80 Go sans optimisation). Guide RunPod : une carte de 24 Go fait le 14B en 480p. Aucune mesure 720p sur 4090 relevée.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/Blaizzy/mlx-video",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://lilting.ch/en/articles/ltx2-wan22-mac-local-video-gen",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://github.com/Wan-Video/Wan2.2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.runpod.io/articles/guides/comfyui-wan-2-2",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "wan-2-2-ti2v-5b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mlx-video",
+  "mac_note": "Draw Things : prise en charge préliminaire le 01/10/2025, complète le 15/10/2025 ; mlx-video gère TI2V-5B. Aucune vitesse Mac relevée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "L'éditeur indique au moins 24 Go (exemple RTX 4090) avec --offload_model, --convert_model_dtype et --t5_cpu ; ComfyUI annonce 8 Go avec son déchargement natif. Un test de Computing for Geeks (09/2026) signale que la commande officielle finit les 50 étapes en 9 min puis manque de mémoire au décodage : passer par ComfyUI.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/Blaizzy/mlx-video",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://github.com/Wan-Video/Wan2.2",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://computingforgeeks.com/?p=171832",
+    "date": "2026-09",
+    "type": "mesure"
+   }
+  ]
+ },
+ "wan-2-2-vace-fun-a14b": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Draw Things n'a ajouté VACE que pour Wan 2.1 ; aucun rapport sur Mac pour la variante Wan 2.2 VACE Fun.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Même base 14B que Wan 2.2 A14B ; aucune mesure sur 24 Go trouvée.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "wan-2-2-animate-2": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun rapport sur Mac ; l'exemple diffusers de la fiche code le CUDA en dur.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré (ComfyUI, nœuds WanAnimate2) : int8 ConvRot, 480x832, 81 images, pic 21,4 Go plus 12 à 15 Go de RAM système ; 4 min 12 s à froid, médiane 1 min 48 s ensuite ; 1 échec sur 5 essais.",
+  "sources": [
+   {
+    "url": "https://www.nemovideo.com/blog/ai-video-models/wan-animate-2-comfyui-review",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://computingforgeeks.com/?p=171832",
+    "date": "2026-09",
+    "type": "independant"
+   }
+  ]
+ },
+ "wan-2-2-s2v-14b": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun rapport sur Mac.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Fichier fp8 « scaled » prévu pour les cartes plus petites et LoRA 4 étapes dans le flux ComfyUI, mais aucune mesure sur 24 Go ; un hébergeur recommande une 5090.",
+  "sources": [
+   {
+    "url": "https://www.thundercompute.com/blog/wan-2-2-comfyui-ai-video-model",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://vast.ai/model/wan-2.2-s2v-14b",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "hunyuanvideo-1-5": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Le code de référence exige NVIDIA et CUDA sous Linux ; Draw Things n'a intégré que le HunyuanVideo d'origine (02/2025), pas la 1.5 ; aucun rapport MPS ou MLX trouvé.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Éditeur : 14 Go minimum avec déchargement ; le modèle distillé 480p I2V tourne en 75 s sur une seule 4090. Wan2GP annonce 6 Go. Aucune mesure 720p fiable.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/tencent/HunyuanVideo-1.5",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/deepbeepmeep/Wan2GP",
+    "date": "2026-10-11",
+    "type": "independant"
+   }
+  ]
+ },
+ "cosmos3-super-image2video": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Un seul article secondaire (09/09/2026) rapporte une version INT4 communautaire du « Cosmos3 64B » via MLX, environ 5 min par clip sur M4 Max 128 Go, sans préciser la variante ni donner de dépôt : non vérifié.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "64B : l'éditeur demande un nœud de 4 à 8 H100/H200 ou une B200 ; même en INT4 il faut environ 35 Go.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/nvidia/Cosmos3-Super-Image2Video",
+    "date": "2026-05-31",
+    "type": "editeur"
+   },
+   {
+    "url": "https://0dev.duckdns.org/en/posts/nvidia-s-64b-cosmos3-model-quantized-to-int4-for-local-mlx-and",
+    "date": "2026-09-09",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.spheron.network/tools/gpu-recommender/nvidia/Cosmos3-Super/",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "cosmos3-super-image2video-4step": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Un seul article secondaire (09/09/2026) rapporte une version INT4 communautaire du « Cosmos3 64B » via MLX, environ 5 min par clip sur M4 Max 128 Go, sans préciser la variante ni donner de dépôt : non vérifié.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "64B : l'éditeur demande un nœud de 4 à 8 H100/H200 ou une B200 ; même en INT4 il faut environ 35 Go.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/nvidia/Cosmos3-Super-Image2Video",
+    "date": "2026-05-31",
+    "type": "editeur"
+   },
+   {
+    "url": "https://0dev.duckdns.org/en/posts/nvidia-s-64b-cosmos3-model-quantized-to-int4-for-local-mlx-and",
+    "date": "2026-09-09",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.spheron.network/tools/gpu-recommender/nvidia/Cosmos3-Super/",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "ltx-2-3-open-weights": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "MLX (gajesh/ltx-2.3-mlx, mlx-video), Draw Things",
+  "mac_note": "Mesuré sur M4 Max (MLX fp16, distillé 22B) : 576x1024, 121 images (5 s), débruitage 152,5 s en vidéo seule et 206 s avec audio ; pic 34 à 47 Go ; 64 Go minimum, 4 bits pour 32 Go. Draw Things intègre la série 22B depuis le 16/03/2026. Rien de mesuré sur M5 Max.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Distillé fp8 conseillé en 24 Go, déchargement séquentiel conseillé ; un flux audio vers vidéo annonce moins de 4 min pour 10 s en 480p sur 4090. Sources communautaires, pas de mesure contrôlée.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/gajesh/ltx-2.3-mlx-fp16",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://github.com/Blaizzy/mlx-video",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://ltxworkflow.com/guide/vram-requirements",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://www.patreon.com/TheLocalLab/posts/animate-any-free-153297616",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "ltx-2-3-pro-api": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Ligne API ; poids LTX-2.3 ouverts par ailleurs.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Ligne API.",
+  "sources": [
+   {
+    "url": "https://docs.ltx.io/models/ltx-2-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "ltx-2-3-fast-api": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Ligne API ; poids LTX-2.3 ouverts par ailleurs.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Ligne API.",
+  "sources": [
+   {
+    "url": "https://docs.ltx.io/models/ltx-2-3",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "ltx-2-5-dev": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Les portages MLX trouvés (PocketAiHub, FrankDase, MrMofer) visent le distillé ; la conversion mlx-community est bf16 sans préciser dev ou distillé. Rien de confirmé pour dev.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Guide indépendant : dev = plafond de qualité, pour 32 Go et plus ou le cloud ; aucune mesure sur 24 Go.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/PocketAiHub/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://huggingface.co/FrankDase/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx",
+    "date": "2026-08-13",
+    "type": "independant"
+   },
+   {
+    "url": "https://runaihome.com/blog/ltx-2-5-local-ai-video-hardware-guide-2026/",
+    "date": "2026-08-19",
+    "type": "mesure"
+   }
+  ]
+ },
+ "ltx-2-5-distilled": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "MLX (ltx-2-mlx branche ltx-2.5 ; conversions PocketAiHub, mlx-community, FrankDase)",
+  "mac_note": "Mesuré sur M5 Max 128 Go, Q8 : préréglage officiel 768x512, 121 images à 24 i/s en 93,1 s, pic 22,9 Go ; bf16 pic 39,8 Go sur un test court. Q4 disponible mais dérive plus. Portages non officiels, accès aux poids Lightricks requis.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré : int8 ConvRot (modèle officiel ComfyUI), 22,67 Gio résidents ; les clips de 5 s passent, ceux de 10 s peuvent caler au décodage VAE. Une conversion fp8 annonce environ 99 s par vidéo (64 Go de RAM), sans durée ni résolution précisées.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/PocketAiHub/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://huggingface.co/mlx-community/ltx-2.5-mlx",
+    "date": "2026-08-13",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/FrankDase/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://runaihome.com/blog/ltx-2-5-local-ai-video-hardware-guide-2026/",
+    "date": "2026-08-19",
+    "type": "mesure"
+   },
+   {
+    "url": "https://huggingface.co/guillaume127/LTX-2.5-FP8",
+    "date": "2026-10-15",
+    "type": "mesure"
+   }
+  ]
+ },
+ "ltx-2-5-nvfp4-int8": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "NVFP4 (Blackwell) et int8 ConvRot sont des formats pour GPU NVIDIA ; sur Mac on passe par les quantifications MLX Q8/Q4 (voir la ligne distillé).",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "int8 ConvRot : oui, 22,67 Gio résidents, 5 s fiables. NVFP4 : non, réservé à Blackwell.",
+  "sources": [
+   {
+    "url": "https://runaihome.com/blog/ltx-2-5-local-ai-video-hardware-guide-2026/",
+    "date": "2026-08-19",
+    "type": "mesure"
+   },
+   {
+    "url": "https://huggingface.co/Lightricks/LTX-2.5",
+    "date": "2026-07-23",
+    "type": "editeur"
+   }
+  ]
+ },
+ "ltx-2-5-fast-api": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Ligne API ; poids LTX-2.5 ouverts par ailleurs.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Ligne API.",
+  "sources": [
+   {
+    "url": "https://docs.ltx.io/models/ltx-2-5",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "ltx-2-5-pro-api": {
+  "mac_m5max_128gb": false,
+  "mac_tool": null,
+  "mac_note": "Ligne API ; poids LTX-2.5 ouverts par ailleurs.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Ligne API.",
+  "sources": [
+   {
+    "url": "https://docs.ltx.io/models/ltx-2-5",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "ltx-2-5-ic-lora-layout-to-render": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun portage MLX ou Draw Things ne mentionne les IC-LoRA.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Exige le distillé (int8 ConvRot tient juste en 24 Go) plus un adaptateur rang 128 ; aucune mesure.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/PocketAiHub/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://runaihome.com/blog/ltx-2-5-local-ai-video-hardware-guide-2026/",
+    "date": "2026-08-19",
+    "type": "mesure"
+   }
+  ]
+ },
+ "ltx-2-5-ic-lora-suite": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucun portage MLX ou Draw Things ne mentionne les IC-LoRA.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Exigent le distillé, déjà à 22,67 Gio en int8 ConvRot ; aucune mesure avec IC-LoRA.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/PocketAiHub/LTX-2.5-MLX",
+    "date": "2026-10-15",
+    "type": "mesure"
+   },
+   {
+    "url": "https://runaihome.com/blog/ltx-2-5-local-ai-video-hardware-guide-2026/",
+    "date": "2026-08-19",
+    "type": "mesure"
+   }
+  ]
+ },
+ "ltx-2-3-ic-lora-control": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Les conversions MLX de LTX-2.3 ne citent pas les IC-LoRA.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Aucune mesure sur 24 Go trouvée.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/gajesh/ltx-2.3-mlx-fp16",
+    "date": "2026-10-15",
+    "type": "mesure"
+   }
+  ]
+ },
+ "bfl-flux-2-dev": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things",
+  "mac_note": "Draw Things intègre FLUX.2 [dev] depuis le 22/12/2025 et cite le modèle parmi les gros modèles optimisés pour M5. Aucune vitesse publiée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "L'éditeur donne un exemple sur RTX 4090 : transformeur 4 bits (bitsandbytes) et encodeur de texte distant. ComfyUI fournit un fp8mixed. VRAM exacte non publiée.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://releases.drawthings.ai/p/introducing-lightning-draft-interactive",
+    "date": "2026-03-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/black-forest-labs/FLUX.2-dev",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/flux/flux-2-dev",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "bfl-flux-2-klein-9b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Lightning Draft (Draw Things, M5 Max) : environ 1 s ou moins aux réglages recommandés. mflux propose Q3 à Q8 et le variant KV.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "VRAM du 9B non publiée par BFL ; fp8 officiel (jusqu'à 40 % de VRAM en moins). Aucune mesure 4090.",
+  "sources": [
+   {
+    "url": "https://releases.drawthings.ai/p/introducing-lightning-draft-interactive",
+    "date": "2026-03-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence",
+    "date": "2026-01-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "bfl-flux-2-klein-4b": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Lightning Draft (Draw Things, M5 Max) : environ 1 s ou moins aux réglages recommandés.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "BFL : environ 13 Go de VRAM, RTX 3090 ou 4070 et au-dessus. NVFP4 non (Blackwell) ; fp8 oui.",
+  "sources": [
+   {
+    "url": "https://releases.drawthings.ai/p/introducing-lightning-draft-interactive",
+    "date": "2026-03-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://bfl.ai/blog/flux2-klein-towards-interactive-visual-intelligence",
+    "date": "2026-01-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "bfl-flux-1-kontext-dev": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things",
+  "mac_note": "Draw Things gère l'édition Kontext [dev] depuis le 27/06/2025. Aucune vitesse relevée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "ComfyUI fournit un fp8 « scaled » et un encodeur T5 fp8 ; même architecture 12B que FLUX.1 [dev], pour laquelle ComfyUI juge 24 Go suffisants en poids d'origine. Pas de mesure propre à Kontext.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/flux/flux-1-kontext-dev",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/flux/flux1-krea-dev",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "alibaba-qwen-image-2-1": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : Qwen Image 2.1 avec LoRA depuis le 25/09/2026 ; mflux l'intègre (calcul Float16 possible). La fiche liste aussi DiffusionBee. Aucune vitesse publiée.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "7B plus encodeur 8B ; Qwen ne publie pas de VRAM et propose le déchargement CPU. Le chiffre « 18,7 s en 1024² sur 4090 (SGLang) » du brouillon n'apparaît dans aucune des sources lues.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "alibaba-qwen-image-2512": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : 2512 depuis le 07/01/2026 ; mflux propose Qwen-Image 2512 (20B, quantifiable). Aucune vitesse relevée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Mesuré par ComfyUI sur 4090 D 24 Go (Qwen-Image 20B, version non précisée) : fp8, 86 % de VRAM, 94 s puis 71 s ; avec LoRA Lightning 8 étapes 55 s puis 34 s.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image",
+    "date": "2026-10-15",
+    "type": "mesure"
+   }
+  ]
+ },
+ "alibaba-qwen-image-edit-2511": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : Edit 2511 depuis le 28/12/2025 ; mflux liste les versions Edit 2509 et 2511.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "Même base 20B que Qwen-Image, mesurée à 86 % de VRAM en fp8 sur 4090 D, mais l'édition ajoute les images de référence : aucune mesure propre à l'Edit 2511.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://docs.comfy.org/tutorials/image/qwen/qwen-image",
+    "date": "2026-10-15",
+    "type": "mesure"
+   }
+  ]
+ },
+ "alibaba-z-image-turbo": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Lightning Draft (Draw Things, M5 Max) : environ 1 s ou moins aux réglages recommandés.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Éditeur : tient confortablement dans 16 Go de VRAM.",
+  "sources": [
+   {
+    "url": "https://releases.drawthings.ai/p/introducing-lightning-draft-interactive",
+    "date": "2026-03-23",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "alibaba-z-image-base": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : Base depuis le 10/02/2026 ; mflux l'intègre. Aucune vitesse relevée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Même architecture 6B que Turbo (moins de 16 Go selon l'éditeur) ; pas de chiffre propre à Base, plus lent (non distillé, CFG).",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/Tongyi-MAI/Z-Image-Turbo",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "krea-2-turbo": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : série Krea 2 avec LoRA depuis le 17/07/2026 ; mflux propose Krea 2 Turbo en Q4 et Q8.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "24 Go et plus en BF16, 16 Go en FP8, 8 Go en INT8 (ComfyUI Wiki).",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://comfyui-wiki.com/models/krea/krea-2",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "bfl-flux-1-krea-dev": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Ni Draw Things ni mflux ne citent FLUX.1 Krea [dev] dans les pages lues (mflux ne liste FLUX.1 que comme famille « legacy »).",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "ComfyUI : les poids d'origine passent avec 24 Go ; fp8 « scaled » conseillé pour moins.",
+  "sources": [
+   {
+    "url": "https://docs.comfy.org/tutorials/flux/flux1-krea-dev",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   }
+  ]
+ },
+ "ideogram-4-0": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things, mflux",
+  "mac_note": "Draw Things : série Ideogram 4 avec LoRA depuis le 17/07/2026 ; mflux 0.18 ajoute Ideogram 4 et son fp8. Aucune vitesse relevée.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "9,3B ; fp8 annoncé compatible tout matériel, nf4 réservé à CUDA ; aucune VRAM ni mesure 4090 publiées.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://github.com/filipstrand/mflux",
+    "date": "2026-10-15",
+    "type": "independant"
+   },
+   {
+    "url": "https://huggingface.co/ideogram-ai/ideogram-4-fp8",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "hidream-o1-image": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "La fiche éditeur exige un GPU CUDA pour l'inférence ; ni Draw Things ni mflux ne l'intègrent ; un repackage Comfy-Org existe mais aucun essai sur MPS trouvé.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "8B ; BF16, FP8 scaled et MXFP8 publiés (MXFP8 = format Blackwell) ; aucune VRAM ni mesure sur 24 Go.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://comfyui-wiki.com/en/models/hidream/hidream-o1-image",
+    "date": "2026-05-08",
+    "type": "independant"
+   }
+  ]
+ },
+ "hidream-o1-image-dev": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "La fiche éditeur exige un GPU CUDA pour l'inférence ; ni Draw Things ni mflux ne l'intègrent ; un repackage Comfy-Org existe mais aucun essai sur MPS trouvé.",
+  "rtx4090_24gb": null,
+  "rtx4090_note": "8B ; BF16, FP8 scaled et MXFP8 publiés (MXFP8 = format Blackwell) ; aucune VRAM ni mesure sur 24 Go.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/HiDream-ai/HiDream-O1-Image",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://comfyui-wiki.com/en/models/hidream/hidream-o1-image",
+    "date": "2026-05-08",
+    "type": "independant"
+   }
+  ]
+ },
+ "tencent-hunyuanimage-3-0-instruct": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "MoE d'environ 80B (13B actifs) : 160 Go en bf16, au-delà de 128 Go ; des quantifications tierces existent mais aucun portage MLX ni essai Mac trouvé. FlashInfer (CUDA) recommandé.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Démo éditeur sur 4 GPU, répartition multi-GPU ; aucune voie sur une seule carte de 24 Go documentée.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/tencent/HunyuanImage-3.0-Instruct",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "tencent-hunyuanimage-3-0": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "MoE d'environ 80B (13B actifs) : 160 Go en bf16, au-delà de 128 Go ; des quantifications tierces existent mais aucun portage MLX ni essai Mac trouvé. FlashInfer (CUDA) recommandé.",
+  "rtx4090_24gb": false,
+  "rtx4090_note": "Démo éditeur sur 4 GPU, répartition multi-GPU ; aucune voie sur une seule carte de 24 Go documentée.",
+  "sources": [
+   {
+    "url": "https://huggingface.co/tencent/HunyuanImage-3.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "stability-sd-3-5-large": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things",
+  "mac_note": "Draw Things intègre SD3 Large 3.5 depuis le 23/10/2024 (DiffusionKit, archivé, ne gère que SD3 Medium). Aucune vitesse relevée.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "8B en bf16 (environ 16 Go de poids) ; l'éditeur propose NF4 et le déchargement CPU des encodeurs pour les petites cartes. Pas de mesure 4090 publiée.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-large",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "stability-sdxl-1-0": {
+  "mac_m5max_128gb": true,
+  "mac_tool": "Draw Things",
+  "mac_note": "Draw Things gère SDXL (mises à jour d'aperçu et d'entraînement 2025-2026) ; aucune vitesse relevée ici.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "3,5B (environ 7 Go de poids en fp16) ; la fiche éditeur ne donne pas de chiffre de VRAM ni de mesure 4090.",
+  "sources": [
+   {
+    "url": "https://drawthings.ai/downloads/",
+    "date": "2026-10-15",
+    "type": "editeur"
+   },
+   {
+    "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "nvidia-sana-1-5-4-8b": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucune mention de Mac, MPS ou MLX chez l'éditeur ; Draw Things et mflux ne l'intègrent pas.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "L'éditeur dit SANA déployable sur des GPU portables de moins de 8 Go en 4 bits ; pas de chiffre 4090 propre au 4,8B. Nœuds ComfyUI disponibles.",
+  "sources": [
+   {
+    "url": "https://github.com/NVlabs/Sana",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ },
+ "nvidia-sana-sprint-1-6b": {
+  "mac_m5max_128gb": null,
+  "mac_tool": null,
+  "mac_note": "Aucune mention de Mac, MPS ou MLX chez l'éditeur.",
+  "rtx4090_24gb": true,
+  "rtx4090_note": "Éditeur : environ 0,3 s par image 1024 px sur RTX 4090.",
+  "sources": [
+   {
+    "url": "https://github.com/NVlabs/Sana",
+    "date": "2026-10-15",
+    "type": "editeur"
+   }
+  ]
+ }
+}

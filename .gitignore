@@ -1,0 +1,12 @@
+*.htm*
+.DS_Store
+__pycache__/
+site/
+papiers/
+test-optique/
+data/raw/
+data/brouillon-*
+data/open-weight-ids.txt
+data/model-ids.txt
+scripts/pages/
+.venv/
