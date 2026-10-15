@@ -5,7 +5,7 @@
   "web": null
  },
  "by_id": {
-  "hunyuan3d-3-1-pro": {
+  "triposg-1-5b": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -16,7 +16,7 @@
    "phosphene": null,
    "count": 0
   },
-  "sparc3d": {
+  "minimax-music-2-6": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -27,23 +27,353 @@
    "phosphene": null,
    "count": 0
   },
-  "hunyuanvideo-1-5": {
-   "comfyui_local": [
-    "video_hunyuan_video_1.5_720p_t2v"
-   ],
+  "fish-openaudio-s1-mini": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-lyria-3-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "gradium-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-music-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nvidia-canary-qwen-2-5b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tripo-h3-1-text": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-lyria-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "foley-omni": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "da3-giant-1-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stable-audio-3-large": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stable-audio-3-small": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hi3d-texture": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-3-dev": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "cartesia-sonic-3-6": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-vibevoice-1-5b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "marble-1-0-draft": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-3-0-std": {
+   "comfyui_local": [],
    "comfyui_api": [
-    "video_hunyuan_video_1.5_720p_i2v"
+    "api_kling_v3_t2i",
+    "api_kling_v3_video",
+    "api_kling_v3_flf2v",
+    "template_product_placement",
+    "template_contact_sheet-step_3.app"
    ],
-   "comfyui_usage": 99,
+   "comfyui_usage": 752,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-chirp-3-hd": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "suno-v6-wild": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "speechify-simba-3-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nvidia-sana-1-5-4-8b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "mistral-voxtral-mini-3b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-nano-banana-2": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_google_nano_banana2_image_edit",
+    "api_nano_banana_2_lite_image_edit",
+    "api_nano_banana_2_lite_t2i",
+    "api_google_nano_banana2_text_to_image",
+    "api_google_nano_banana2_image_edit_continuation",
+    "templates_mjm_image_to_3d",
+    "template_eric_exploded_view"
+   ],
+   "comfyui_usage": 7112,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "runway-aleph-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "reson8-resonant-1-flash": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "lynnreal-omni-flash-27b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "indextts-2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "resemble-dramabox": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "worldmirror-1-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-klein-9b": {
+   "comfyui_local": [
+    "image_flux2_klein_image_edit_9b_base",
+    "image_flux2_klein_9b_kv_image_edit",
+    "image_flux2_text_to_image_9b",
+    "image_flux2_klein_image_edit_9b_distilled",
+    "image_flux2_klein_image_edit_4b_base",
+    "image_flux2_klein_text_to_image",
+    "image_flux2_klein_image_edit_4b_distilled"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 2639,
    "wan2gp": [
-    "hunyuan_1_5_480_i2v",
-    "hunyuan_1_5_480_i2v_step_distilled",
-    "hunyuan_1_5_480_t2v",
-    "hunyuan_1_5_480_t2v_lightx2v",
-    "hunyuan_1_5_i2v",
-    "hunyuan_1_5_t2v",
-    "hunyuan_1_5_upsampler",
-    "hunyuan_1_5_upsampler_1080"
+    "flux2_klein_9b"
    ],
    "pinokio": [],
    "drawthings": null,
@@ -51,7 +381,138 @@
    "phosphene": null,
    "count": 2
   },
-  "marble-1-1": {
+  "depth-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "cartesia-sonic-3-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-dev": {
+   "comfyui_local": [
+    "image_flux2",
+    "image_flux2_text_to_image",
+    "image_flux2_fp8"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 3584,
+   "wan2gp": [
+    "flux2_dev",
+    "flux2_dev_nvfp4"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "kling-video-to-audio": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tencent-hunyuanimage-3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-2-5-turbo-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bytedance-seedream-5-0-lite": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_bytedance_seedream_5_0_lite_image_edit",
+    "api_bytedance_seedream_5_0_lite_t2i"
+   ],
+   "comfyui_usage": 1077,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-3-ic-lora-control": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "suno-v6": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "boson-higgs-audio-v3-stt": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tripo-h3-1-multiview": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuan3d-omni": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -73,7 +534,728 @@
    "phosphene": null,
    "count": 0
   },
-  "microsoft-mai-image-2-6-flash": {
+  "minimax-voice-clone": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-ref2va-33b": {
+   "comfyui_local": [
+    "video_minimax_h3_r2v",
+    "video_minimax_h3_multiframe_reference"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 11965,
+   "wan2gp": [
+    "minimax_h3_ref2va"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "kling-o1-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_kling_omni_image",
+    "api_kling_omni_v2v",
+    "api_kling_omni_edit_video",
+    "api_kling_omni_i2v",
+    "api_kling_omni_t2v"
+   ],
+   "comfyui_usage": 153,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "meshy-7-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-uni-1-max": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pika-2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nvidia-magpie-tts-multilingual": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vocu-v3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hidream-o1-image": {
+   "comfyui_local": [
+    "image_hidream_o1_dev",
+    "image_hidream_o1",
+    "hidream_e1_full",
+    "hidream_e1_1",
+    "hidream_i1_dev",
+    "hidream_i1_full",
+    "hidream_i1_fast"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 294,
+   "wan2gp": [
+    "hidream_o1"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "f5-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vidu-q2-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "da3-nested-giant-large-1-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "reve-v1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-2-vitl": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hy-world-2-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "playht": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "krea-2-turbo": {
+   "comfyui_local": [
+    "image_krea2_turbo_t2i",
+    "image_krea2_turbo_int8_image_style_reference",
+    "image_krea2_turbo_t2i_int8"
+   ],
+   "comfyui_api": [
+    "api_krea2_t2i",
+    "api_krea2_style_reference"
+   ],
+   "comfyui_usage": 10446,
+   "wan2gp": [
+    "krea2_turbo",
+    "krea2_turbo_edit"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "partcrafter": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vidu-q3-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_vidu_q3_text_to_video",
+    "api_vidu_q3_image_to_video"
+   ],
+   "comfyui_usage": 29,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-live-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-image-2-5-sunburst": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_openai_gpt_image_25_flare_t2i",
+    "api_openai_gpt_image_25_flare_image_edit",
+    "api_openai_gpt_image_25_sunburst_t2i",
+    "api_openai_gpt_image_25_sunburst_image_edit"
+   ],
+   "comfyui_usage": 2855,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "marble-1-1-plus": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "marble-1-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "direct3d-s2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-ic-lora-layout-to-render": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "ltx2_25_22B_layout_to_render"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "runway-gen-4-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-4o-mini-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-3-0-motion-control": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_kling_motion_control3"
+   ],
+   "comfyui_usage": 135,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vggt-omega": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_wan3_0_r2v",
+    "api_wan3_0_i2v",
+    "api_wan3_0_t2v"
+   ],
+   "comfyui_usage": 1504,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-1-kontext-max": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "cosyvoice-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-vibevoice-asr": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openbmb-voxcpm2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tripo-h3-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "spark-tts-0-5b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "xai-grok-imagine-image-quality": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stable-fast-3d": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hidream-o1-image-dev": {
+   "comfyui_local": [
+    "image_hidream_o1_dev",
+    "image_hidream_o1",
+    "hidream_e1_full",
+    "hidream_e1_1",
+    "hidream_i1_dev",
+    "hidream_i1_full",
+    "hidream_i1_fast"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 294,
+   "wan2gp": [
+    "hidream_o1_dev",
+    "hidream_o1_dev_2604"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "bfl-flux-1-kontext-dev": {
+   "comfyui_local": [
+    "flux_kontext_dev_basic"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 327,
+   "wan2gp": [
+    "flux_dev_kontext"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "tripo-p2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-max": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_minimax_h3_max_i2v",
+    "api_minimax_h3_max_r2v",
+    "api_minimax_h3_max_flf2v",
+    "api_minimax_h3_max_t2v"
+   ],
+   "comfyui_usage": 1645,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "resemble-chatterbox-hd": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-realtime-mini": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bytedance-seedream-5-0-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_bytedance_seedream_5_0_pro_image_edit",
+    "api_bytedance_seedream_5_0_pro_t2i",
+    "api_bytedance_seedream_5_0_layer_separation"
+   ],
+   "comfyui_usage": 6314,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pika-2-2-pikaframes": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tencent-hy-image-3-5-preview": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stability-sdxl-1-0": {
+   "comfyui_local": [
+    "image_sdxl_simple"
+   ],
+   "comfyui_api": [
+    "sdxl_simple_example",
+    "sdxlturbo_example",
+    "sdxl_revision_text_prompts",
+    "sdxl_refiner_prompt_example"
+   ],
+   "comfyui_usage": 430,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "midjourney-v7": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kyutai-stt-2-6b-en": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "rodin-gen-2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "seed-vc": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "mistral-voxtral-small-24b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "da3-large-1-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-hailuo-2-3-fast": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-genie": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-api": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_minimax_h3_r2v",
+    "api_minimax_h3_t2v",
+    "api_minimax_h3_flf2v",
+    "templates_ohneis_i2v"
+   ],
+   "comfyui_usage": 332,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kyutai-moshi": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-veo-3-1-lite": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -102,16 +1284,51 @@
    "phosphene": null,
    "count": 0
   },
-  "wan-2-2-vace-fun-a14b": {
+  "seedance-2-0-fast": {
    "comfyui_local": [],
-   "comfyui_api": [
-    "video_wan2_2_14B_fun_control",
-    "video_wan2_2_14B_fun_inpaint",
-    "video_wan2_2_14B_fun_camera"
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-qwen-image-edit-2511": {
+   "comfyui_local": [
+    "image_qwen_image_edit_2509",
+    "image_qwen_image_edit_2511",
+    "image_qwen_image_edit_2511_int8",
+    "image-qwen_image_edit_2511_lora_inflation",
+    "image_qwen_image_edit",
+    "template_qwen_image_edit_2511_systms_action",
+    "templates-image_to_real",
+    "templates-1_click_multiple_character_angles-v1.0",
+    "templates_rob_portrait_light_migration.app",
+    "templates-portrait_light_migration"
    ],
-   "comfyui_usage": 87,
+   "comfyui_api": [
+    "image_qwen_image_edit_2509_relight",
+    "templates-1_click_multiple_scene_angles-v1.0"
+   ],
+   "comfyui_usage": 10725,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "minimax-h3-pdd-8-etapes": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
    "wan2gp": [
-    "vace_fun_14B_2_2"
+    "minimax_h3_fl2va_pdd",
+    "minimax_h3_fl2va_pruned_pdd",
+    "minimax_h3_ref2va_pdd",
+    "minimax_h3_ref2va_pruned_pdd"
    ],
    "pinokio": [],
    "drawthings": null,
@@ -119,7 +1336,7 @@
    "phosphene": null,
    "count": 1
   },
-  "minimax-hailuo-2-3-fast": {
+  "worldmirror-2-0": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -130,7 +1347,7 @@
    "phosphene": null,
    "count": 0
   },
-  "moge-2-vitb-normal": {
+  "404-gen": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -141,12 +1358,31 @@
    "phosphene": null,
    "count": 0
   },
-  "bfl-flux-2-pro": {
+  "step1x-3d": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "seedance-2-0": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_flux2"
+    "api_seedance2_0_r2v",
+    "api_seedance2_0_flf2v",
+    "api_seedance2_0_t2v",
+    "api_seedance2_0_r2v_4k",
+    "api_seedance2_0_flf2v_real_human",
+    "api_seedance2_0_r2v_real_human",
+    "template_seedance2_storyboard_to_video",
+    "template_seedance_2_0_plus_llm_prompt_helper",
+    "template_seedance2_0_viral_videos_character_swap"
    ],
-   "comfyui_usage": 237,
+   "comfyui_usage": 1551,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -154,28 +1390,7 @@
    "phosphene": null,
    "count": 0
   },
-  "alibaba-z-image-turbo": {
-   "comfyui_local": [
-    "image_z_image_turbo",
-    "image_z_image_turbo_int8",
-    "image_z_image",
-    "image_z_image_int8",
-    "image_z_image_turbo_fun_union_controlnet",
-    "utility_z_image_turbo_2k_upscaler.app",
-    "basic_switch_node"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 16972,
-   "wan2gp": [
-    "z_image"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "recraft-v4-1-utility-pro": {
+  "hunyuan3d-3-0": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -185,6 +1400,173 @@
    "maestro": null,
    "phosphene": null,
    "count": 0
+  },
+  "minimax-fasth3-omni-reactor": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pixverse-c1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "animateanymesh": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-2-vitl-normal": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nari-dia2-2b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-lyria-realtime": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "xai-grok-imagine-image": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_grok_imagine_image_2_t2i",
+    "api_grok_imagine_image_2_image_edit",
+    "api_grok_imagine_image_quality_image_generation",
+    "api_grok_imagine_image_quality_image_edit",
+    "api_grok_imagine_video_1_5"
+   ],
+   "comfyui_usage": 2874,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "recraft-v4-1-utility": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_recraft_v4_style_reference",
+    "api_recraft_v4_1_t2i",
+    "api_recraft_v4_1_text_to_vector",
+    "api_recraft_v4_t2i",
+    "api_recraft_style_reference",
+    "api_recraft_v4_text_to_vector",
+    "api_recraft_image_gen_with_color_control",
+    "api_recraft_vector_gen",
+    "api_recraft_image_gen_with_style_control",
+    "template-recraft_create_style",
+    "utility_recraft_creative_image_upscale",
+    "utility_recraft_crisp_image_upscale"
+   ],
+   "comfyui_usage": 528,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "agnes-video-2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-3-pro-api": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "template_image_speech_to_video"
+   ],
+   "comfyui_usage": 8,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-v4-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nvidia-canary-1b-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-qwen-image-2-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "qwen_image_21_7B",
+    "qwen_image_21_turbo_7B"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
   },
   "google-nano-banana-pro": {
    "comfyui_local": [],
@@ -220,177 +1602,6 @@
    "phosphene": null,
    "count": 0
   },
-  "krea-2-large": {
-   "comfyui_local": [
-    "image_krea2_turbo_t2i",
-    "image_krea2_turbo_int8_image_style_reference",
-    "image_krea2_turbo_t2i_int8"
-   ],
-   "comfyui_api": [
-    "api_krea2_t2i",
-    "api_krea2_style_reference"
-   ],
-   "comfyui_usage": 10446,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "leonardo-lucid-origin-ultra": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hi3d-texture": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "geosam2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "sandai-magi-2-preview": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "kling-3-0-std": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_kling_v3_t2i",
-    "api_kling_v3_video",
-    "api_kling_v3_flf2v",
-    "template_product_placement",
-    "template_contact_sheet-step_3.app"
-   ],
-   "comfyui_usage": 752,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "microsoft-mai-image-2-5-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "rodin-gen-2-5": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-image-2-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "kling-3-0-turbo": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vggt-1b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "pika-2-5": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "kling-2-6-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_kling_motion_control",
-    "api_kling2_6_i2v",
-    "api_kling2_6_t2v"
-   ],
-   "comfyui_usage": 84,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hunyuan3d-2-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
   "meta-muse-image": {
    "comfyui_local": [],
    "comfyui_api": [],
@@ -402,7 +1613,7 @@
    "phosphene": null,
    "count": 0
   },
-  "vidu-q2-turbo": {
+  "hume-octave-2": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -413,7 +1624,7 @@
    "phosphene": null,
    "count": 0
   },
-  "recraft-v4-1-flash": {
+  "openai-whisper-large-v3-turbo": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -424,7 +1635,7 @@
    "phosphene": null,
    "count": 0
   },
-  "kling-4-0-flash": {
+  "microsoft-vibevoice-realtime-0-5b": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -435,7 +1646,7 @@
    "phosphene": null,
    "count": 0
   },
-  "hedra-character-3": {
+  "yue-s1-7b": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -446,76 +1657,13 @@
    "phosphene": null,
    "count": 0
   },
-  "wan-2-2-animate-2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "animate2",
-    "animate2_distilled"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "bfl-flux-2-klein-4b": {
-   "comfyui_local": [
-    "image_flux2_klein_image_edit_9b_base",
-    "image_flux2_klein_9b_kv_image_edit",
-    "image_flux2_text_to_image_9b",
-    "image_flux2_klein_image_edit_9b_distilled",
-    "image_flux2_klein_image_edit_4b_base",
-    "image_flux2_klein_text_to_image",
-    "image_flux2_klein_image_edit_4b_distilled"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 2639,
-   "wan2gp": [
-    "flux2_klein_4b"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "da3-large-1-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-fl2va-33b": {
-   "comfyui_local": [
-    "video_minimax_h3_i2v",
-    "video_minimax_h3_t2v",
-    "video_minimax_h3_i2v_continuation"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 31035,
-   "wan2gp": [
-    "minimax_h3_fl2va"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "vidu-q3-pro": {
+  "bfl-flux-3-video": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_vidu_q3_text_to_video",
-    "api_vidu_q3_image_to_video"
+    "api_bfl_flux3_t2v",
+    "api_bfl_flux3_i2v"
    ],
-   "comfyui_usage": 29,
+   "comfyui_usage": 102,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -523,41 +1671,7 @@
    "phosphene": null,
    "count": 0
   },
-  "stability-sdxl-1-0": {
-   "comfyui_local": [
-    "image_sdxl_simple"
-   ],
-   "comfyui_api": [
-    "sdxl_simple_example",
-    "sdxlturbo_example",
-    "sdxl_revision_text_prompts",
-    "sdxl_refiner_prompt_example"
-   ],
-   "comfyui_usage": 430,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "openai-gpt-image-2-5-flare": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_openai_gpt_image_25_flare_t2i",
-    "api_openai_gpt_image_25_flare_image_edit",
-    "api_openai_gpt_image_25_sunburst_t2i",
-    "api_openai_gpt_image_25_sunburst_image_edit"
-   ],
-   "comfyui_usage": 2855,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "sam-3d-objects": {
+  "google-imagen-4-ultra": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -568,7 +1682,7 @@
    "phosphene": null,
    "count": 0
   },
-  "meshy-6-lite-retexture": {
+  "kyutai-tts-1-6b-en-fr": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -579,7 +1693,7 @@
    "phosphene": null,
    "count": 0
   },
-  "pixverse-vibemv": {
+  "elevenlabs-professional-voice-clone": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -590,28 +1704,7 @@
    "phosphene": null,
    "count": 0
   },
-  "bfl-flux-2-klein-9b": {
-   "comfyui_local": [
-    "image_flux2_klein_image_edit_9b_base",
-    "image_flux2_klein_9b_kv_image_edit",
-    "image_flux2_text_to_image_9b",
-    "image_flux2_klein_image_edit_9b_distilled",
-    "image_flux2_klein_image_edit_4b_base",
-    "image_flux2_klein_text_to_image",
-    "image_flux2_klein_image_edit_4b_distilled"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 2639,
-   "wan2gp": [
-    "flux2_klein_9b"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "step1x-3d": {
+  "picgen3d": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -622,7 +1715,7 @@
    "phosphene": null,
    "count": 0
   },
-  "kling-4-0": {
+  "midjourney-v8-1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -633,7 +1726,7 @@
    "phosphene": null,
    "count": 0
   },
-  "agnes-video-2-5": {
+  "genie-3": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -644,15 +1737,34 @@
    "phosphene": null,
    "count": 0
   },
-  "wan-2-7": {
+  "elevenlabs-scribe-v2-realtime": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "leonardo-phoenix-0-9-ultra": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bytedance-seedream-4-5": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_wan2_7_i2v",
-    "api_wan2_7_video_edit",
-    "api_wan2_7_t2v",
-    "api_wan2_7_r2v"
+    "template_eric_seedance_5_subject_and_outfit_combine"
    ],
-   "comfyui_usage": 183,
+   "comfyui_usage": 33,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -660,7 +1772,7 @@
    "phosphene": null,
    "count": 0
   },
-  "da3-small": {
+  "resemble-chatterbox-vc": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -671,7 +1783,30 @@
    "phosphene": null,
    "count": 0
   },
-  "hunyuan3d-omni": {
+  "xai-grok-imagine-1-5": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_grok_image_edit",
+    "api_grok_text_to_image",
+    "templates_rob_realistic_2k_images_quick_variations.app",
+    "template_rob_realistic_2k_images_quick_variations",
+    "templates-1_input-multiple_styles_prompt.app",
+    "templates-all_in_one-image_edit_models",
+    "api_grok_video",
+    "api_grok_reference_to_video",
+    "api_grok_video_edit",
+    "api_grok_video_extend",
+    "api_openrouter_grok4_5"
+   ],
+   "comfyui_usage": 4008,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "trellis-2-retexture": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -693,7 +1828,7 @@
    "phosphene": null,
    "count": 0
   },
-  "tencent-hunyuanimage-3-0": {
+  "sonauto-melodia-v3": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -704,7 +1839,7 @@
    "phosphene": null,
    "count": 0
   },
-  "bfl-flux-2-max": {
+  "elevenlabs-dubbing-v1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -715,7 +1850,7 @@
    "phosphene": null,
    "count": 0
   },
-  "tripo-h3-1": {
+  "stable-audio-3-small-sfx": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -726,7 +1861,7 @@
    "phosphene": null,
    "count": 0
   },
-  "heygen-avatar-iv": {
+  "alibaba-qwen-image-2-0-pro": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -737,7 +1872,149 @@
    "phosphene": null,
    "count": 0
   },
-  "google-imagen-4-ultra": {
+  "minimax-speech-2-8-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-z-image-turbo": {
+   "comfyui_local": [
+    "image_z_image_turbo",
+    "image_z_image_turbo_int8",
+    "image_z_image",
+    "image_z_image_int8",
+    "image_z_image_turbo_fun_union_controlnet",
+    "utility_z_image_turbo_2k_upscaler.app",
+    "basic_switch_node"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 16972,
+   "wan2gp": [
+    "z_image"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "microsoft-mai-image-2-5-flash": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-whisper-large-v3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pixverse-vibemv": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-z-image-edit": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-music-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-mai-voice-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moonvalley-marey": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "higgsfield-cinema-studio-4-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stepfun-stepaudio-3-asr": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-flash-v2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "udio": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -765,7 +2042,7 @@
    "phosphene": null,
    "count": 0
   },
-  "pruna-p-video": {
+  "da3-base": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -776,7 +2053,7 @@
    "phosphene": null,
    "count": 0
   },
-  "bach-1-0-pro": {
+  "sparc3d": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -787,7 +2064,7 @@
    "phosphene": null,
    "count": 0
   },
-  "worldmirror-1-0": {
+  "mureka-v9-5": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -798,7 +2075,7 @@
    "phosphene": null,
    "count": 0
   },
-  "microsoft-mai-image-2-5-flash": {
+  "stable-audio-open-1-0": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -809,97 +2086,21 @@
    "phosphene": null,
    "count": 0
   },
-  "minimax-fasth3-omni-reactor": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "lynnreal-omni-32b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-ray-3": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "meshy-6": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-pruned-20b-ref2va": {
+  "minimax-fasth3-v2-8-etapes": {
    "comfyui_local": [
-    "video_minimax_h3_r2v",
-    "video_minimax_h3_multiframe_reference"
+    "video_fastvideo_fasth3_i2v",
+    "video_fastvideo_fasth3_t2v"
    ],
    "comfyui_api": [],
-   "comfyui_usage": 11965,
-   "wan2gp": [
-    "minimax_h3_ref2va_pruned"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "minimax-h3-pruned-20b-fl2va": {
-   "comfyui_local": [
-    "video_minimax_h3_i2v",
-    "video_minimax_h3_t2v",
-    "video_minimax_h3_i2v_continuation"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 31035,
-   "wan2gp": [
-    "minimax_h3_fl2va_pruned"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "bytedance-seedream-4-0": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bytedance_seedream4"
-   ],
-   "comfyui_usage": 1856,
+   "comfyui_usage": 0,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
    "maestro": null,
    "phosphene": null,
-   "count": 0
+   "count": 1
   },
-  "404-gen": {
+  "alibaba-qwen-image-edit-max-2601": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -910,7 +2111,7 @@
    "phosphene": null,
    "count": 0
   },
-  "leonardo-phoenix-0-9-ultra": {
+  "sync-3": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -921,7 +2122,7 @@
    "phosphene": null,
    "count": 0
   },
-  "openai-gpt-image-1-mini": {
+  "coqui-xtts-v2": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -932,21 +2133,7 @@
    "phosphene": null,
    "count": 0
   },
-  "openai-gpt-image-2": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_openai_gpt_image_2_image_edit",
-    "api_openai_gpt_image_2_t2i"
-   ],
-   "comfyui_usage": 3544,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "cosmos3-super-image2video": {
+  "openai-gpt-4o-mini-transcribe": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -957,18 +2144,7 @@
    "phosphene": null,
    "count": 0
   },
-  "openai-sora-2-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "krea-2-medium": {
+  "krea-2-large": {
    "comfyui_local": [
     "image_krea2_turbo_t2i",
     "image_krea2_turbo_int8_image_style_reference",
@@ -986,15 +2162,10 @@
    "phosphene": null,
    "count": 1
   },
-  "stability-sd-3-5-large": {
+  "fish-audio-s2-pro": {
    "comfyui_local": [],
-   "comfyui_api": [
-    "sd3.5_large_canny_controlnet_example",
-    "sd3.5_simple_example",
-    "sd3.5_large_depth",
-    "sd3.5_large_blur"
-   ],
-   "comfyui_usage": 128,
+   "comfyui_api": [],
+   "comfyui_usage": 0,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -1002,21 +2173,131 @@
    "phosphene": null,
    "count": 0
   },
-  "minimax-h3-pdd-8-etapes": {
+  "nari-dia-1-6b": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
-   "wan2gp": [
-    "minimax_h3_fl2va_pdd",
-    "minimax_h3_fl2va_pruned_pdd",
-    "minimax_h3_ref2va_pdd",
-    "minimax_h3_ref2va_pruned_pdd"
-   ],
+   "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
    "maestro": null,
    "phosphene": null,
-   "count": 1
+   "count": 0
+  },
+  "ace-step-1-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "fish-audio-s2-1-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "heygen-voice": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-3-vitl": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-2-7": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_wan2_7_i2v",
+    "api_wan2_7_video_edit",
+    "api_wan2_7_t2v",
+    "api_wan2_7_r2v"
+   ],
+   "comfyui_usage": 183,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-photon": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-turbo-v2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "midjourney-v8-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hidream-o1-image-1-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hedra-character-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
   },
   "wan-2-2-ti2v-5b": {
    "comfyui_local": [],
@@ -1036,7 +2317,22 @@
    "phosphene": null,
    "count": 1
   },
-  "lynnreal-omni-flash-27b": {
+  "google-gemini-omni-flash-1-0": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_google_gemini_omni_flash_i2v",
+    "api_google_gemini_omni_flash_video_edit",
+    "api_google_gemini_omni_flash_t2v"
+   ],
+   "comfyui_usage": 131,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "qwen3-tts": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1047,7 +2343,7 @@
    "phosphene": null,
    "count": 0
   },
-  "kling-2-5-turbo-pro": {
+  "hunyuan3d-paint-2-1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1058,7 +2354,7 @@
    "phosphene": null,
    "count": 0
   },
-  "meshy-rigging-animation": {
+  "sesame-csm-1b": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1069,7 +2365,21 @@
    "phosphene": null,
    "count": 0
   },
-  "marble-1-1-plus": {
+  "google-nano-banana": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_google_nano_banana_create_turnaround_sheet",
+    "api_google_gemini_image"
+   ],
+   "comfyui_usage": 263,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-azure-neural": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1091,7 +2401,7 @@
    "phosphene": null,
    "count": 0
   },
-  "hunyuan3d-3-0": {
+  "krea-1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1102,7 +2412,7 @@
    "phosphene": null,
    "count": 0
   },
-  "luma-photon": {
+  "da3-metric-large": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1113,7 +2423,7 @@
    "phosphene": null,
    "count": 0
   },
-  "direct3d-s2": {
+  "hunyuan3d-2-5": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1124,7 +2434,7 @@
    "phosphene": null,
    "count": 0
   },
-  "google-veo-3-1-fast": {
+  "kling-4-0-flash": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1135,7 +2445,7 @@
    "phosphene": null,
    "count": 0
   },
-  "alibaba-qwen-image-2-0-pro": {
+  "mistral-voxtral-mini-transcribe-2": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1146,7 +2456,7 @@
    "phosphene": null,
    "count": 0
   },
-  "reve-v1": {
+  "tencent-hunyuanimage-3-0-instruct": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1157,7 +2467,7 @@
    "phosphene": null,
    "count": 0
   },
-  "mapanything-nc": {
+  "vidu-q3-turbo": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1168,16 +2478,93 @@
    "phosphene": null,
    "count": 0
   },
-  "kling-o1-pro": {
+  "cosmos3-super-image2video": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "trellis-2-4b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bytedance-omnihuman-1-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "lynnreal-omni-32b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-1-krea-dev": {
+   "comfyui_local": [
+    "flux1_krea_dev"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 169,
+   "wan2gp": [
+    "flux_krea"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "meshy-text-to-motion": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-ai-avatar-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-2-2-s2v-14b": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_kling_omni_image",
-    "api_kling_omni_v2v",
-    "api_kling_omni_edit_video",
-    "api_kling_omni_i2v",
-    "api_kling_omni_t2v"
+    "video_wan2_2_14B_s2v"
    ],
-   "comfyui_usage": 153,
+   "comfyui_usage": 56,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -1185,7 +2572,7 @@
    "phosphene": null,
    "count": 0
   },
-  "animateanymesh": {
+  "recraft-v4-1-utility-pro": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1196,7 +2583,7 @@
    "phosphene": null,
    "count": 0
   },
-  "vidu-q4-preview": {
+  "suno-v6-mini": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1207,34 +2594,16 @@
    "phosphene": null,
    "count": 0
   },
-  "mapanything-apache": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hunyuan-motion": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "kling-3-0-motion-control": {
+  "google-gemini-omni-flash-1-1": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_kling_motion_control3"
+    "api_google_gemini_omni_flash_1_1_t2v",
+    "api_google_gemini_omni_flash_1_1_i2v",
+    "api_google_gemini_omni_flash_1_1_edit",
+    "api_google_gemini_omni_flash_1_1_r2v",
+    "api_google_gemini_omni_flash_1_1_extend"
    ],
-   "comfyui_usage": 135,
+   "comfyui_usage": 1489,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -1242,7 +2611,153 @@
    "phosphene": null,
    "count": 0
   },
-  "picgen3d": {
+  "openai-tts-1-hd": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuanvideo-foley-xl": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "sync-lipsync-2-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-speech-2-6-hd": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "unirig": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-max-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_minimax_h3_max_turbo_i2v",
+    "api_minimax_h3_max_turbo_t2v"
+   ],
+   "comfyui_usage": 491,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuan3d-2-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-8-flash-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "runway-act-two": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "resemble-chatterbox": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hume-octave-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-hailuo-2-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vggt-1b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-sora-2": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1264,20 +2779,7 @@
    "phosphene": null,
    "count": 0
   },
-  "ltx-2-5-nvfp4-int8": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "ltx2_25_22B_distilled_nvfp4"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "unirig": {
+  "google-lyria-3-pro": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1288,7 +2790,7 @@
    "phosphene": null,
    "count": 0
   },
-  "midjourney-v8-1": {
+  "csm-cube": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1299,7 +2801,7 @@
    "phosphene": null,
    "count": 0
   },
-  "ltx-2-3-ic-lora-control": {
+  "luma-photon-flash": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1310,7 +2812,40 @@
    "phosphene": null,
    "count": 0
   },
-  "runway-gen-4-5": {
+  "latentsync-1-6": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "triposplat": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "da3-small": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ideogram-4-0-quality": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1340,7 +2875,7 @@
    "phosphene": null,
    "count": 0
   },
-  "hunyuan3d-paint-2-1": {
+  "fish-openaudio-s1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1351,23 +2886,13 @@
    "phosphene": null,
    "count": 0
   },
-  "recraft-v4-1-utility": {
+  "openai-gpt-image-2": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_recraft_v4_style_reference",
-    "api_recraft_v4_1_t2i",
-    "api_recraft_v4_1_text_to_vector",
-    "api_recraft_v4_t2i",
-    "api_recraft_style_reference",
-    "api_recraft_v4_text_to_vector",
-    "api_recraft_image_gen_with_color_control",
-    "api_recraft_vector_gen",
-    "api_recraft_image_gen_with_style_control",
-    "template-recraft_create_style",
-    "utility_recraft_creative_image_upscale",
-    "utility_recraft_crisp_image_upscale"
+    "api_openai_gpt_image_2_image_edit",
+    "api_openai_gpt_image_2_t2i"
    ],
-   "comfyui_usage": 528,
+   "comfyui_usage": 3544,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -1375,7 +2900,7 @@
    "phosphene": null,
    "count": 0
   },
-  "ltx-2-3-fast-api": {
+  "leonardo-lucid-origin-fast": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1386,20 +2911,31 @@
    "phosphene": null,
    "count": 0
   },
-  "krea-2-turbo": {
+  "google-lyria-3-clip": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-klein-4b": {
    "comfyui_local": [
-    "image_krea2_turbo_t2i",
-    "image_krea2_turbo_int8_image_style_reference",
-    "image_krea2_turbo_t2i_int8"
+    "image_flux2_klein_image_edit_9b_base",
+    "image_flux2_klein_9b_kv_image_edit",
+    "image_flux2_text_to_image_9b",
+    "image_flux2_klein_image_edit_9b_distilled",
+    "image_flux2_klein_image_edit_4b_base",
+    "image_flux2_klein_text_to_image",
+    "image_flux2_klein_image_edit_4b_distilled"
    ],
-   "comfyui_api": [
-    "api_krea2_t2i",
-    "api_krea2_style_reference"
-   ],
-   "comfyui_usage": 10446,
+   "comfyui_api": [],
+   "comfyui_usage": 2639,
    "wan2gp": [
-    "krea2_turbo",
-    "krea2_turbo_edit"
+    "flux2_klein_4b"
    ],
    "pinokio": [],
    "drawthings": null,
@@ -1407,7 +2943,7 @@
    "phosphene": null,
    "count": 2
   },
-  "moge-2-vitl-normal": {
+  "meshy-rigging-animation": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1418,7 +2954,685 @@
    "phosphene": null,
    "count": 0
   },
-  "alibaba-qwen-image-edit-max-2601": {
+  "microsoft-mai-image-2-6": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_openrouter_mai_image_26_image_edit",
+    "api_openrouter_mai_image_26_flash_image_edit",
+    "api_openrouter_mai_image_26_flash",
+    "api_openrouter_mai_image_26_t2i"
+   ],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hi3d-v3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "qwen-audio-3-1-tts-plus": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "fish-audio-drama-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-nano-banana-2-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-max": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-4o-transcribe": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "inworld-tts-max": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-fl2va-33b": {
+   "comfyui_local": [
+    "video_minimax_h3_i2v",
+    "video_minimax_h3_t2v",
+    "video_minimax_h3_i2v_continuation"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 31035,
+   "wan2gp": [
+    "minimax_h3_fl2va"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "elevenlabs-voice-changer": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuanworld-1-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-multilingual-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pixal3d": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-3-0-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-sfx-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-1-flash-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-5-transcribe": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-pruned-20b-fl2va": {
+   "comfyui_local": [
+    "video_minimax_h3_i2v",
+    "video_minimax_h3_t2v",
+    "video_minimax_h3_i2v_continuation"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 31035,
+   "wan2gp": [
+    "minimax_h3_fl2va_pruned"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "xai-grok-imagine-1-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "resemble-chatterbox-multilingual-v3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "leonardo-lucid-origin-ultra": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "sam-3d-body": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-3-0-omni-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_kling_o3_image",
+    "api_kling_o3_video_edit",
+    "api_kling_o3_flf2v",
+    "api_king_o3_t2v",
+    "api_kling_o3_i2v",
+    "template_sirolim_image_script_video"
+   ],
+   "comfyui_usage": 422,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "yue2-3b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "recraft-v4-1-vector": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tripo-p1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-2-vitb-normal": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-veda-sparse": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "minimax_h3_fl2va_pruned_veda",
+    "minimax_h3_fl2va_veda",
+    "minimax_h3_ref2va_pruned_veda",
+    "minimax_h3_ref2va_veda"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "reve-2-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-realtime-whisper": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-nvfp4-int8": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "ltx2_25_22B_distilled_nvfp4"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "nvidia-parakeet-tdt-0-6b-v3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-3-vitg": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "tripo-v3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuanvideo-1-5": {
+   "comfyui_local": [
+    "video_hunyuan_video_1.5_720p_t2v"
+   ],
+   "comfyui_api": [
+    "video_hunyuan_video_1.5_720p_i2v"
+   ],
+   "comfyui_usage": 99,
+   "wan2gp": [
+    "hunyuan_1_5_480_i2v",
+    "hunyuan_1_5_480_i2v_step_distilled",
+    "hunyuan_1_5_480_t2v",
+    "hunyuan_1_5_480_t2v_lightx2v",
+    "hunyuan_1_5_i2v",
+    "hunyuan_1_5_t2v",
+    "hunyuan_1_5_upsampler",
+    "hunyuan_1_5_upsampler_1080"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "openai-gpt-image-2-5-flare": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_openai_gpt_image_25_flare_t2i",
+    "api_openai_gpt_image_25_flare_image_edit",
+    "api_openai_gpt_image_25_sunburst_t2i",
+    "api_openai_gpt_image_25_sunburst_image_edit"
+   ],
+   "comfyui_usage": 2855,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-qwen-image-3-0-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "meshy-7": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vimoo-1-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vggt-1b-commercial": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-ray-3-2": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_luma_ray3_3_t2v",
+    "api_luma_ray3_3_i2v",
+    "api_luma_ray3_2_video_edit"
+   ],
+   "comfyui_usage": 29,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "recraft-v4-1-flash": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-sora-2-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-uni-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-fasth3-preview-v1-4-etapes": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vidu-q3-mix": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "meshy-6-lite-retexture": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "mapanything-nc": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-pruned-20b-ref2va": {
+   "comfyui_local": [
+    "video_minimax_h3_r2v",
+    "video_minimax_h3_multiframe_reference"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 11965,
+   "wan2gp": [
+    "minimax_h3_ref2va_pruned"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "inworld-realtime-tts-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-2-6-std": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_kling_motion_control",
+    "api_kling2_6_i2v",
+    "api_kling2_6_t2v"
+   ],
+   "comfyui_usage": 84,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "xai-grok-imagine-image-2-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "mistral-voxtral-mini-4b-realtime": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "rodin-gen-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-ray-3": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-azure-hd-2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kokoro-82m": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1440,7 +3654,7 @@
    "phosphene": null,
    "count": 0
   },
-  "google-veo-3-1-lite": {
+  "google-veo-3-1": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1451,7 +3665,27 @@
    "phosphene": null,
    "count": 0
   },
-  "adobe-firefly-image-5": {
+  "ideogram-4-0": {
+   "comfyui_local": [
+    "image_ideogram4_t2i",
+    "image_ideogram4_t2i_int8"
+   ],
+   "comfyui_api": [
+    "api_ideogram_v4_t2i"
+   ],
+   "comfyui_usage": 526,
+   "wan2gp": [
+    "ideogram4",
+    "ideogram4_nf4",
+    "ideogram4_turbotime"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "prismaudio": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1462,10 +3696,822 @@
    "phosphene": null,
    "count": 0
   },
-  "hidream-o1-image-1-5": {
+  "mistral-voxtral-tts": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuanvideo-foley-xxl": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-2-6-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_kling_motion_control",
+    "api_kling2_6_i2v",
+    "api_kling2_6_t2v"
+   ],
+   "comfyui_usage": 84,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-dubbing-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "hunyuan3d-2mv": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-v4": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-2-2-animate-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "animate2",
+    "animate2_distilled"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "hy-world-2-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "kling-4-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-image-1-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-fast-api": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_ltx2_5_flf2v",
+    "api_ltx2_5_t2v",
+    "api_ltx2_5_i2v"
+   ],
+   "comfyui_usage": 206,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pixverse-v6": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-instant-voice-clone": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "nvidia-sana-sprint-1-6b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-turbo-lora": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "minimax_h3_fl2va"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "ideogram-4-5-high": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-2-2-a14b": {
+   "comfyui_local": [
+    "video_wan2_2_14B_i2v",
+    "templates-6-key-frames"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 8281,
+   "wan2gp": [
+    "i2v_2_2",
+    "i2v_2_2_Enhanced_Lightning_v2",
+    "i2v_2_2_Enhanced_Lightning_v2_svi2pro",
+    "i2v_2_2_multitalk",
+    "i2v_2_2_svi2pro",
+    "t2v_2_2"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "hunyuan3d-3-1-rapid": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-mai-transcribe-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-8-live": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-distilled": {
+   "comfyui_local": [
+    "video_ltx2_5_i2v",
+    "video_ltx2_5_t2v",
+    "video_ltx2_5_flf2v"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 7512,
+   "wan2gp": [
+    "ltx2_25_22B_distilled"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "hunyuan3d-3-1-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-pro-api": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_ltx2_5_flf2v",
+    "api_ltx2_5_t2v",
+    "api_ltx2_5_i2v"
+   ],
+   "comfyui_usage": 206,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "sandai-magi-2-preview": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "alibaba-qwen-image-2512": {
+   "comfyui_local": [
+    "image_qwen_Image_2512_controlnet",
+    "image_qwen_image_2512_with_2steps_lora",
+    "template_qwen_Image_2512_360_lora"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 164,
+   "wan2gp": [
+    "qwen_image_2512_20B"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "wan-3-0-prime": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-3-image": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_bfl_flux_video_upscale"
+   ],
+   "comfyui_usage": 101,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-veo-3-1-fast": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "zyphra-zonos-v0-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "sam-3d-objects": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "xai-grok-imagine-1-5-lite": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "vidu-q2-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_vidu_q2_i2v",
+    "api_vidu_q2_flf2v",
+    "api_vidu_q2_r2v",
+    "api_vidu_q2_t2v",
+    "api_vidu_video_extension"
+   ],
+   "comfyui_usage": 242,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-5-live-translate": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "utopai-x": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "qwen3-asr-1-7b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "krea-2-medium": {
+   "comfyui_local": [
+    "image_krea2_turbo_t2i",
+    "image_krea2_turbo_int8_image_style_reference",
+    "image_krea2_turbo_t2i_int8"
+   ],
+   "comfyui_api": [
+    "api_krea2_t2i",
+    "api_krea2_style_reference"
+   ],
+   "comfyui_usage": 10446,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "alibaba-qwen-image-3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "zyphra-zonos2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-video-edit": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-flex": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "xai-grok-voice-transcribe-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-mai-image-2-5-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "microsoft-mai-image-2-6-flash": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-1-kontext-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_bfl_flux_1_kontext_pro_image",
+    "api_bfl_flux_1_kontext_multiple_images_input",
+    "api_bfl_flux_1_kontext_max_image"
+   ],
+   "comfyui_usage": 186,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-h3-fun-controlnet-union": {
+   "comfyui_local": [
+    "video_minimax_h3_fun_controlnet_union"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 187,
+   "wan2gp": [
+    "minimax_h3_control",
+    "minimax_h3_control_pruned"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "geosam2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "indextts-2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "resemble-chatterbox-turbo": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "boson-higgs-audio-v3-tts": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "heygen-video-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "happyhorse-1-1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-music-v1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "openai-gpt-transcribe": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "higgsfield-cinema-studio-3-0": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-dev": {
+   "comfyui_local": [
+    "video_ltx2_5_i2v",
+    "video_ltx2_5_t2v",
+    "video_ltx2_5_flf2v"
+   ],
+   "comfyui_api": [],
+   "comfyui_usage": 7512,
+   "wan2gp": [
+    "ltx2_25_22B"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 2
+  },
+  "alibaba-z-image-base": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [
+    "z_image_base"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "wan-2-6": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_wan2_6_i2v",
+    "api_wan2_6_t2v",
+    "api_wan_r2v"
+   ],
+   "comfyui_usage": 37,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-music-v2-5": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "wan-2-2-vace-fun-a14b": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "video_wan2_2_14B_fun_control",
+    "video_wan2_2_14B_fun_inpaint",
+    "video_wan2_2_14B_fun_camera"
+   ],
+   "comfyui_usage": 87,
+   "wan2gp": [
+    "vace_fun_14B_2_2"
+   ],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 1
+  },
+  "vidu-q4-preview": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "luma-ray-3-14": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "canopy-orpheus-3b": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "seedance-1-5-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "pruna-p-video": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "ltx-2-5-ic-lora-suite": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "sesame-maya-miles": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "stability-sd-3-5-large": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "sd3.5_large_canny_controlnet_example",
+    "sd3.5_simple_example",
+    "sd3.5_large_depth",
+    "sd3.5_large_blur"
+   ],
+   "comfyui_usage": 128,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -1508,7 +4554,7 @@
    "phosphene": null,
    "count": 2
   },
-  "luma-photon-flash": {
+  "microsoft-mai-image-2-5": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1519,22 +4565,7 @@
    "phosphene": null,
    "count": 0
   },
-  "bfl-flux-1-kontext-dev": {
-   "comfyui_local": [
-    "flux_kontext_dev_basic"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 327,
-   "wan2gp": [
-    "flux_dev_kontext"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "vggt-1b-commercial": {
+  "elevenlabs-v3-conversational": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1545,7 +4576,7 @@
    "phosphene": null,
    "count": 0
   },
-  "moge-3-vitg": {
+  "meta-musicgen-large": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1556,7 +4587,7 @@
    "phosphene": null,
    "count": 0
   },
-  "wan-3-0-prime": {
+  "thinksound": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -1566,796 +4597,6 @@
    "maestro": null,
    "phosphene": null,
    "count": 0
-  },
-  "sam-3d-body": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-gemini-omni-flash-1-0": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_google_gemini_omni_flash_i2v",
-    "api_google_gemini_omni_flash_video_edit",
-    "api_google_gemini_omni_flash_t2v"
-   ],
-   "comfyui_usage": 131,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-1-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "moonvalley-marey": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-5-fast-api": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_ltx2_5_flf2v",
-    "api_ltx2_5_t2v",
-    "api_ltx2_5_i2v"
-   ],
-   "comfyui_usage": 206,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-3-dev": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "heygen-video-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vidu-q2-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_vidu_q2_i2v",
-    "api_vidu_q2_flf2v",
-    "api_vidu_q2_r2v",
-    "api_vidu_q2_t2v",
-    "api_vidu_video_extension"
-   ],
-   "comfyui_usage": 242,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-qwen-image-3-0-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "openai-gpt-image-2-5-sunburst": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_openai_gpt_image_25_flare_t2i",
-    "api_openai_gpt_image_25_flare_image_edit",
-    "api_openai_gpt_image_25_sunburst_t2i",
-    "api_openai_gpt_image_25_sunburst_image_edit"
-   ],
-   "comfyui_usage": 2855,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "partcrafter": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "csm-cube": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vggt-omega": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "trellis-2-4b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "trellis-2-retexture": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-qwen-image-3-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "tencent-hunyuanimage-3-0-instruct": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "leonardo-lucid-origin-fast": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "midjourney-video-v1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-nano-banana-2-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-image-quality": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-max-turbo": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_minimax_h3_max_turbo_i2v",
-    "api_minimax_h3_max_turbo_t2v"
-   ],
-   "comfyui_usage": 491,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vidu-q3-turbo": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "pixal3d": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "wan-2-2-s2v-14b": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "video_wan2_2_14B_s2v"
-   ],
-   "comfyui_usage": 56,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-1-kontext-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bfl_flux_1_kontext_pro_image",
-    "api_bfl_flux_1_kontext_multiple_images_input",
-    "api_bfl_flux_1_kontext_max_image"
-   ],
-   "comfyui_usage": 186,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hunyuan3d-2-5": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "triposg-1-5b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "seedance-1-5-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "geocalib": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bytedance-seedream-4-5": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "template_eric_seedance_5_subject_and_outfit_combine"
-   ],
-   "comfyui_usage": 33,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "runway-aleph-2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-video-edit": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "nvidia-sana-sprint-1-6b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hy-world-2-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "moge-2-vitl": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vimoo-1-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-2-dev": {
-   "comfyui_local": [
-    "image_flux2",
-    "image_flux2_text_to_image",
-    "image_flux2_fp8"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 3584,
-   "wan2gp": [
-    "flux2_dev",
-    "flux2_dev_nvfp4"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "openai-sora-2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hi3d-v3-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-gemini-omni-flash-1-1": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_google_gemini_omni_flash_1_1_t2v",
-    "api_google_gemini_omni_flash_1_1_i2v",
-    "api_google_gemini_omni_flash_1_1_edit",
-    "api_google_gemini_omni_flash_1_1_r2v",
-    "api_google_gemini_omni_flash_1_1_extend"
-   ],
-   "comfyui_usage": 1489,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-genie": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "kling-3-0-omni-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_kling_o3_image",
-    "api_kling_o3_video_edit",
-    "api_kling_o3_flf2v",
-    "api_king_o3_t2v",
-    "api_kling_o3_i2v",
-    "template_sirolim_image_script_video"
-   ],
-   "comfyui_usage": 422,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "recraft-v4-1-vector": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-nano-banana": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_google_nano_banana_create_turnaround_sheet",
-    "api_google_gemini_image"
-   ],
-   "comfyui_usage": 263,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-3-pro-api": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "template_image_speech_to_video"
-   ],
-   "comfyui_usage": 8,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "happyhorse-1-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "wan-2-6": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_wan2_6_i2v",
-    "api_wan2_6_t2v",
-    "api_wan_r2v"
-   ],
-   "comfyui_usage": 37,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "nvidia-sana-1-5-4-8b": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "cosmos3-super-image2video-4step": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-1-5-lite": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-uni-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-1-kontext-max": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-5-ic-lora-layout-to-render": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "ltx2_25_22B_layout_to_render"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "meshy-text-to-motion": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-5-pro-api": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_ltx2_5_flf2v",
-    "api_ltx2_5_t2v",
-    "api_ltx2_5_i2v"
-   ],
-   "comfyui_usage": 206,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "utopai-x": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bytedance-seedream-5-0-pro": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bytedance_seedream_5_0_pro_image_edit",
-    "api_bytedance_seedream_5_0_pro_t2i",
-    "api_bytedance_seedream_5_0_layer_separation"
-   ],
-   "comfyui_usage": 6314,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-3-image": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bfl_flux_video_upscale"
-   ],
-   "comfyui_usage": 101,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-1-5": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_grok_image_edit",
-    "api_grok_text_to_image",
-    "templates_rob_realistic_2k_images_quick_variations.app",
-    "template_rob_realistic_2k_images_quick_variations",
-    "templates-1_input-multiple_styles_prompt.app",
-    "templates-all_in_one-image_edit_models",
-    "api_grok_video",
-    "api_grok_reference_to_video",
-    "api_grok_video_edit",
-    "api_grok_video_extend",
-    "api_openrouter_grok4_5"
-   ],
-   "comfyui_usage": 4008,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ideogram-4-5-high": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "vidu-q3-mix": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-qwen-image-edit-2511": {
-   "comfyui_local": [
-    "image_qwen_image_edit_2509",
-    "image_qwen_image_edit_2511",
-    "image_qwen_image_edit_2511_int8",
-    "image-qwen_image_edit_2511_lora_inflation",
-    "image_qwen_image_edit",
-    "template_qwen_image_edit_2511_systms_action",
-    "templates-image_to_real",
-    "templates-1_click_multiple_character_angles-v1.0",
-    "templates_rob_portrait_light_migration.app",
-    "templates-portrait_light_migration"
-   ],
-   "comfyui_api": [
-    "image_qwen_image_edit_2509_relight",
-    "templates-1_click_multiple_scene_angles-v1.0"
-   ],
-   "comfyui_usage": 10725,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
   },
   "hunyuan3d-2-1": {
    "comfyui_local": [],
@@ -2368,518 +4609,7 @@
    "phosphene": null,
    "count": 0
   },
-  "pika-2-2-pikaframes": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "seedance-2-0-fast": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hunyuanworld-1-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "higgsfield-cinema-studio-4-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "midjourney-v8-2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "tripo-v3-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-max": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_minimax_h3_max_i2v",
-    "api_minimax_h3_max_r2v",
-    "api_minimax_h3_max_flf2v",
-    "api_minimax_h3_max_t2v"
-   ],
-   "comfyui_usage": 1645,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "reve-2-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "hunyuan3d-3-1-rapid": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-veda-sparse": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "minimax_h3_fl2va_pruned_veda",
-    "minimax_h3_fl2va_veda",
-    "minimax_h3_ref2va_pruned_veda",
-    "minimax_h3_ref2va_veda"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "genie-3": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ideogram-4-0-quality": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-turbo-lora": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "minimax_h3_fl2va"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "kling-2-6-std": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_kling_motion_control",
-    "api_kling2_6_i2v",
-    "api_kling2_6_t2v"
-   ],
-   "comfyui_usage": 84,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-uni-1-max": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-5-ic-lora-suite": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-ray-3-2": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_luma_ray3_3_t2v",
-    "api_luma_ray3_3_i2v",
-    "api_luma_ray3_2_video_edit"
-   ],
-   "comfyui_usage": 29,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-1-krea-dev": {
-   "comfyui_local": [
-    "flux1_krea_dev"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 169,
-   "wan2gp": [
-    "flux_krea"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "wan-2-2-a14b": {
-   "comfyui_local": [
-    "video_wan2_2_14B_i2v",
-    "templates-6-key-frames"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 8281,
-   "wan2gp": [
-    "i2v_2_2",
-    "i2v_2_2_Enhanced_Lightning_v2",
-    "i2v_2_2_Enhanced_Lightning_v2_svi2pro",
-    "i2v_2_2_multitalk",
-    "i2v_2_2_svi2pro",
-    "t2v_2_2"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "tripo-h3-1-multiview": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "stable-fast-3d": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "luma-ray-3-14": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "wan-3-0": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_wan3_0_r2v",
-    "api_wan3_0_i2v",
-    "api_wan3_0_t2v"
-   ],
-   "comfyui_usage": 1504,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-2-flex": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-fasth3-v2-8-etapes": {
-   "comfyui_local": [
-    "video_fastvideo_fasth3_i2v",
-    "video_fastvideo_fasth3_t2v"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "hidream-o1-image-dev": {
-   "comfyui_local": [
-    "image_hidream_o1_dev",
-    "image_hidream_o1",
-    "hidream_e1_full",
-    "hidream_e1_1",
-    "hidream_i1_dev",
-    "hidream_i1_full",
-    "hidream_i1_fast"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 294,
-   "wan2gp": [
-    "hidream_o1_dev",
-    "hidream_o1_dev_2604"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "midjourney-v7": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-api": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_minimax_h3_r2v",
-    "api_minimax_h3_t2v",
-    "api_minimax_h3_flf2v",
-    "templates_ohneis_i2v"
-   ],
-   "comfyui_usage": 332,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "pixverse-c1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-z-image-base": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "z_image_base"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "ltx-2-5-distilled": {
-   "comfyui_local": [
-    "video_ltx2_5_i2v",
-    "video_ltx2_5_t2v",
-    "video_ltx2_5_flf2v"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 7512,
-   "wan2gp": [
-    "ltx2_25_22B_distilled"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "bytedance-omnihuman-1-5": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "xai-grok-imagine-image": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_grok_imagine_image_2_t2i",
-    "api_grok_imagine_image_2_image_edit",
-    "api_grok_imagine_image_quality_image_generation",
-    "api_grok_imagine_image_quality_image_edit",
-    "api_grok_imagine_video_1_5"
-   ],
-   "comfyui_usage": 2874,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "worldmirror-2-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "moge-2-vits-normal": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-ref2va-33b": {
-   "comfyui_local": [
-    "video_minimax_h3_r2v",
-    "video_minimax_h3_multiframe_reference"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 11965,
-   "wan2gp": [
-    "minimax_h3_ref2va"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "minimax-fasth3-preview-v1-4-etapes": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-qwen-image-2512": {
-   "comfyui_local": [
-    "image_qwen_Image_2512_controlnet",
-    "image_qwen_image_2512_with_2steps_lora",
-    "template_qwen_Image_2512_360_lora"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 164,
-   "wan2gp": [
-    "qwen_image_2512_20B"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "triposplat": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "meshy-7": {
+  "meshy-6": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -2909,7 +4639,7 @@
    "phosphene": null,
    "count": 0
   },
-  "alibaba-z-image-edit": {
+  "geocalib": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -2920,7 +4650,7 @@
    "phosphene": null,
    "count": 0
   },
-  "meshy-7-1": {
+  "ltx-2-3-fast-api": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -2931,7 +4661,7 @@
    "phosphene": null,
    "count": 0
   },
-  "moge-3-vitl": {
+  "stable-audio-3-medium": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -2942,28 +4672,7 @@
    "phosphene": null,
    "count": 0
   },
-  "hidream-o1-image": {
-   "comfyui_local": [
-    "image_hidream_o1_dev",
-    "image_hidream_o1",
-    "hidream_e1_full",
-    "hidream_e1_1",
-    "hidream_i1_dev",
-    "hidream_i1_full",
-    "hidream_i1_fast"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 294,
-   "wan2gp": [
-    "hidream_o1"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "higgsfield-cinema-studio-3-0": {
+  "elevenlabs-v3": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -2974,15 +4683,12 @@
    "phosphene": null,
    "count": 0
   },
-  "microsoft-mai-image-2-6": {
+  "bytedance-seedream-4-0": {
    "comfyui_local": [],
    "comfyui_api": [
-    "api_openrouter_mai_image_26_image_edit",
-    "api_openrouter_mai_image_26_flash_image_edit",
-    "api_openrouter_mai_image_26_flash",
-    "api_openrouter_mai_image_26_t2i"
+    "api_bytedance_seedream4"
    ],
-   "comfyui_usage": 0,
+   "comfyui_usage": 1856,
    "wan2gp": [],
    "pinokio": [],
    "drawthings": null,
@@ -2990,7 +4696,7 @@
    "phosphene": null,
    "count": 0
   },
-  "microsoft-mai-image-2-5": {
+  "openai-gpt-realtime-2": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3001,7 +4707,7 @@
    "phosphene": null,
    "count": 0
   },
-  "tripo-p1": {
+  "mapanything-apache": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3012,7 +4718,7 @@
    "phosphene": null,
    "count": 0
   },
-  "runway-act-two": {
+  "openai-gpt-image-1-mini": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3023,28 +4729,7 @@
    "phosphene": null,
    "count": 0
   },
-  "seedance-2-0": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_seedance2_0_r2v",
-    "api_seedance2_0_flf2v",
-    "api_seedance2_0_t2v",
-    "api_seedance2_0_r2v_4k",
-    "api_seedance2_0_flf2v_real_human",
-    "api_seedance2_0_r2v_real_human",
-    "template_seedance2_storyboard_to_video",
-    "template_seedance_2_0_plus_llm_prompt_helper",
-    "template_seedance2_0_viral_videos_character_swap"
-   ],
-   "comfyui_usage": 1551,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "rodin-gen-2": {
+  "adobe-firefly-image-5": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3066,252 +4751,6 @@
    "phosphene": null,
    "count": 0
   },
-  "kling-ai-avatar-v2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-veo-3-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "da3-metric-large": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "da3-base": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ltx-2-5-dev": {
-   "comfyui_local": [
-    "video_ltx2_5_i2v",
-    "video_ltx2_5_t2v",
-    "video_ltx2_5_flf2v"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 7512,
-   "wan2gp": [
-    "ltx2_25_22B"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "hunyuan3d-2mv": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-h3-fun-controlnet-union": {
-   "comfyui_local": [
-    "video_minimax_h3_fun_controlnet_union"
-   ],
-   "comfyui_api": [],
-   "comfyui_usage": 187,
-   "wan2gp": [
-    "minimax_h3_control",
-    "minimax_h3_control_pruned"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "tripo-p2": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "da3-nested-giant-large-1-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "google-nano-banana-2": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_google_nano_banana2_image_edit",
-    "api_nano_banana_2_lite_image_edit",
-    "api_nano_banana_2_lite_t2i",
-    "api_google_nano_banana2_text_to_image",
-    "api_google_nano_banana2_image_edit_continuation",
-    "templates_mjm_image_to_3d",
-    "template_eric_exploded_view"
-   ],
-   "comfyui_usage": 7112,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "krea-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "minimax-hailuo-2-3": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "ideogram-4-0": {
-   "comfyui_local": [
-    "image_ideogram4_t2i",
-    "image_ideogram4_t2i_int8"
-   ],
-   "comfyui_api": [
-    "api_ideogram_v4_t2i"
-   ],
-   "comfyui_usage": 526,
-   "wan2gp": [
-    "ideogram4",
-    "ideogram4_nf4",
-    "ideogram4_turbotime"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 2
-  },
-  "hy-world-2-0": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "alibaba-qwen-image-2-1": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [
-    "qwen_image_21_7B",
-    "qwen_image_21_turbo_7B"
-   ],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 1
-  },
-  "tencent-hy-image-3-5-preview": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bfl-flux-3-video": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bfl_flux3_t2v",
-    "api_bfl_flux3_i2v"
-   ],
-   "comfyui_usage": 102,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "tripo-h3-1-text": {
-   "comfyui_local": [],
-   "comfyui_api": [],
-   "comfyui_usage": 0,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
-  "bytedance-seedream-5-0-lite": {
-   "comfyui_local": [],
-   "comfyui_api": [
-    "api_bytedance_seedream_5_0_lite_image_edit",
-    "api_bytedance_seedream_5_0_lite_t2i"
-   ],
-   "comfyui_usage": 1077,
-   "wan2gp": [],
-   "pinokio": [],
-   "drawthings": null,
-   "maestro": null,
-   "phosphene": null,
-   "count": 0
-  },
   "leonardo-phoenix-1-0-fast": {
    "comfyui_local": [],
    "comfyui_api": [],
@@ -3323,7 +4762,7 @@
    "phosphene": null,
    "count": 0
   },
-  "marble-1-0-draft": {
+  "openai-gpt-realtime-translate": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3334,7 +4773,75 @@
    "phosphene": null,
    "count": 0
   },
-  "pixverse-v6": {
+  "heygen-avatar-iv": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bfl-flux-2-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [
+    "api_flux2"
+   ],
+   "comfyui_usage": 237,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "cosmos3-super-image2video-4step": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "minimax-speech-2-8-hd": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "bach-1-0-pro": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "midjourney-video-v1": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "google-gemini-3-8-flash-lite-tts": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3359,7 +4866,7 @@
    "phosphene": null,
    "count": 0
   },
-  "depth-pro": {
+  "mmaudio": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3370,7 +4877,7 @@
    "phosphene": null,
    "count": 0
   },
-  "openai-gpt-image-1-5": {
+  "hunyuan-motion": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,
@@ -3381,7 +4888,29 @@
    "phosphene": null,
    "count": 0
   },
-  "da3-giant-1-1": {
+  "kyutai-stt-1b-en-fr": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "elevenlabs-scribe-v2": {
+   "comfyui_local": [],
+   "comfyui_api": [],
+   "comfyui_usage": 0,
+   "wan2gp": [],
+   "pinokio": [],
+   "drawthings": null,
+   "maestro": null,
+   "phosphene": null,
+   "count": 0
+  },
+  "moge-2-vits-normal": {
    "comfyui_local": [],
    "comfyui_api": [],
    "comfyui_usage": 0,

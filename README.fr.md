@@ -16,6 +16,7 @@ Un comparatif des modèles de génération vidéo et image au 15 octobre 2026, v
   - `prices.json` : 1138 prix pour 362 modèles sur 27 plateformes (API à l'usage, éditeurs, abonnements).
   - `local-runs.json` : si chaque modèle à poids ouverts tourne sur un Mac M5 Max 128 Go et sur une RTX 4090 24 Go, avec l'outil à utiliser.
   - `gpu-hour.json` : prix de location de GPU à l'heure.
+  - `audio-models.json` : 139 variantes audio (synthèse vocale, clonage de voix, transcription, musique, bruitages, son à partir de la vidéo, doublage, synchronisation labiale, dialogue en temps réel), avec les arènes Speech, Music et transcription d'Artificial Analysis, TTS Arena V2 et l'Open ASR Leaderboard, et le contrôle de consentement de chaque service de clonage.
   - `3d-models.json` : 76 variantes 3D (image vers 3D, reconstruction de scène, mondes, rigging, profondeur et caméra), avec les scores de 3D Arena.
   - `rankings.json` : tous les scores des classements publics par catégorie (Artificial Analysis et arena.ai : texte, image et référence vers vidéo, avec et sans son, édition vidéo, texte vers image, édition d'image, édition multi-images).
   - `platforms.json` : 50 plateformes : verdict, modération des visages réels, refus facturé ou non, paiement, prix de Seedance, retours d'usagers, coût abonnement contre API, promotions en cours.
