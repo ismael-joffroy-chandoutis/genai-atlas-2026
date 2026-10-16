@@ -112,6 +112,15 @@ for L in (video, image, audio, threed):
 for p in platforms:
     p["_status"] = resolve_status(status.get("platforms", {}).get(p["id"]), p.get("sources"))
 
+fbm = {}
+for p in platforms:
+    for f in p.get("faces") or []:
+        if f.get("model_id"):
+            fbm.setdefault(f["model_id"], []).append(dict(f, platform=p["name"]))
+for L in (video, image):
+    for m in L:
+        m["_faces_pf"] = fbm.get(m["id"], [])
+
 import re as _re
 def last_checked(o):
     """Date la plus récente parmi toutes les sources (dicts avec date et type) de la fiche, local et statut compris."""

@@ -113,6 +113,28 @@
      }
     ]
    }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Refus constaté sur un visage photoréaliste le 15/10/2026 : filtre ByteDance hérité.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -204,6 +226,28 @@
    {
     "model": "Seedance 2.5 / 2.0",
     "note": "« do not support directly uploading reference images/videos that contain real human faces » (guide du 08/10/2026). Trois portes : sorties de confiance Seedream 5.0 et Seedance du même compte (30 jours, sans retouche), plus de 10 000 personnages virtuels prédéfinis, personne réelle autorisée par QR + vérification faciale faite par la personne elle-même. Le filtre attrape aussi des visages inventés photoréalistes.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5 / 2.0",
+    "model_id": "seedance-2-5",
+    "value": "verif_identite",
+    "note": "Pas de visage direct ; personne réelle après QR + vérification faciale faite par la personne, ou sortie de confiance Seedream 5.0 du même compte, ou personnage virtuel prédéfini. Visages inventés photoréalistes souvent refusés aussi.",
     "sources": [
      {
       "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -313,6 +357,28 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -413,6 +479,28 @@
     "url": "https://help.runware.ai/articles/5571280435-is-there-a-way-to-filter-out-nsfw-content",
     "date": "2026-10-15",
     "type": "editeur"
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
    }
   ]
  },
@@ -518,6 +606,28 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -587,6 +697,28 @@
     "url": "https://www.trustpilot.com/review/kie.ai",
     "date": "2026-10-15",
     "type": "independant"
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
    }
   ]
  },
@@ -696,6 +828,23 @@
     "url": "https://www.trustpilot.com/review/wavespeed.ai",
     "date": "2026-10-15",
     "type": "independant"
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "inconnu",
+    "note": "Deux comparatifs tiers se contredisent (l'un dit oui, l'autre bloqué).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
    }
   ]
  },
@@ -875,6 +1024,43 @@
      }
     ]
    }
+  ],
+  "faces": [
+   {
+    "model": "OmniHuman V2",
+    "model_id": "bytedance-omnihuman-v2",
+    "value": "accepte",
+    "note": "Visages photoréalistes de synthèse acceptés, un seul et trois dans le même plan ; visage réel non testé.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -1022,6 +1208,23 @@
       "type": "independant",
       "label": "relevé des règles publiées, 16/10/2026",
       "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "« realistic human faces is not supported » ; blocages « Face Detected » signalés sur des visages de synthèse.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
      }
     ]
    }
@@ -1203,6 +1406,35 @@
       "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
       "date": "2026-10-08",
       "type": "editeur"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Visages réels refusés par défaut (filtre amont).",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     }
+    ]
+   },
+   {
+    "model": "H3 Max, Wan 3.0",
+    "model_id": "minimax-h3-max",
+    "value": "accepte",
+    "note": "Acceptés avec vidéo de référence (observé le 08/10/2026, fiche Krea).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-08",
+      "type": "mesure",
+      "label": "observation du 08/10/2026 (fiche Krea)"
      }
     ]
    }
@@ -1537,6 +1769,83 @@
      }
     ]
    }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "accepte",
+    "note": "Visages photoréalistes acceptés en référence et en image de départ, y compris trois acteurs réels en référence (un échec passager sans message, relancé avec succès).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.0 Mini",
+    "model_id": "seedance-2-0-mini",
+    "value": "accepte",
+    "note": "Visage synthétique, acteur réel seul et trio réel en image de départ acceptés.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.0",
+    "model_id": "seedance-2-0",
+    "value": "accepte",
+    "note": "Accepté via un Element « personnage » créé depuis le visage (contrôle IP passé).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Wan 3.0",
+    "model_id": "wan-3-0",
+    "value": "accepte",
+    "note": "Visage accepté en référence (par MCP).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "MiniMax H3",
+    "model_id": "minimax-h3-api",
+    "value": "accepte",
+    "note": "Lip-sync gros plan et trio acceptés avec l'image en référence ; en image de départ, refus 422.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/stack-film/swap-telenovela-2026-10-15/BRIEF-SESSION-SUITE-2026-10-16.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -1655,6 +1964,23 @@
      }
     ]
    }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "refuse",
+    "note": "Refus des visages réels en référence selon sa propre FAQ.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -1723,6 +2049,23 @@
    {
     "model": "Seedance 2.5 / 2.0",
     "note": "Voie publiée « avatar virtuel » (humain photoréaliste généré, sans équivalent réel) : ingestion automatique sans revue puis appel en asset://. La page parle de Seedance 2.0 et ne dit pas que la voie vaut pour 2.5. Environ 0,27 $/s en 720p, 0,62 $/s en 1080p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.0 (2.5 non confirmé)",
+    "model_id": "seedance-2-0",
+    "value": "verif_identite",
+    "note": "Personne réelle : vérification de vivacité par la personne. Avatar virtuel (humain photoréaliste généré) : ingestion automatique sans revue, puis asset://.",
     "sources": [
      {
       "url": null,
@@ -1808,6 +2151,21 @@
     "type": "independant",
     "label": "relevé des règles publiées, 16/10/2026",
     "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "verif_identite",
+    "note": "Visage accepté seulement après dépôt dans la Private Asset Library et revue PiAPI ; acceptation non garantie ; règle publiée, non testée.",
+    "sources": [
+     {
+      "url": "https://piapi.ai/blogs/seedance-2-5-less-restriction",
+      "date": "2026-09-08",
+      "type": "editeur"
+     }
+    ]
    }
   ]
  },
@@ -2236,6 +2594,23 @@
    {
     "model": "Seedance 2.5",
     "note": "La fiche Seedance 2.5 ne pose aucune règle sur les visages et son propre exemple part de la photo d'un coureur ; filtre amont probable, non documenté. 30 crédits/s en 720p, 68 en 1080p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance 2.5",
+    "model_id": "seedance-2-5",
+    "value": "inconnu",
+    "note": "Aucune règle sur la fiche Seedance 2.5, exemple officiel avec une photo de coureur ; filtre amont probable, non documenté.",
     "sources": [
      {
       "url": null,
@@ -4404,6 +4779,23 @@
    {
     "model": "Seedance",
     "note": "« uploaded images and videos cannot contain real human faces » ; des personnages inventés par IA sont pris pour de vrais visages (forum Adobe, 25-26/09/2026).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
+  ],
+  "faces": [
+   {
+    "model": "Seedance",
+    "model_id": "seedance-2-0",
+    "value": "refuse",
+    "note": "« uploaded images and videos cannot contain real human faces » ; personnages inventés par IA pris pour de vrais visages (forum Adobe, 25-26/09/2026).",
     "sources": [
      {
       "url": null,

@@ -139,6 +139,14 @@ const fdate = d => d ? d.split("-").reverse().join("/") : "";
 const statusCell = m => { const s = m._status||{}; if (s.presumed) return '<span class="var">actif (présumé)</span>'; return `<span class="chip ${ST_CLS[s.value]||""}">${esc(ST_LAB[s.value]||s.value)}</span>${s.date?` <span class="var">${fdate(s.date)}</span>`:""}`; };
 const statusSort = m => { const s=m._status||{}; return s.presumed ? 9 : ({arrete:0,rachete:1,pas_sorti:2,beta:3,a_verifier:4,actif:5}[s.value] ?? 8); };
 const statusBlock = m => { const s = m._status||{}; if (s.presumed) return `<h4>Statut</h4><p>actif (présumé) : aucun arrêt ni rachat relevé dans les sources de la fiche.</p>`; return `<h4>Statut</h4><p>${statusCell(m)}${s.note?"<br>"+esc(s.note):""}<br>${s.from_card?'<span class="var">source : voir les sources de la fiche</span>':srcShort(s.sources)}</p>`; };
+const FACE_LAB = {accepte:"accepté", autorise:"accepté", refuse:"refusé", bloque:"refusé", verif_identite:"vérification d'identité exigée", inconnu:"inconnu"};
+const FACE_CLS = {accepte:"good", autorise:"good", refuse:"bad", bloque:"bad", verif_identite:"warn"};
+const faceChip = (v, pre) => `<span class="chip ${FACE_CLS[v]||""}">${pre?esc(pre)+" : ":""}${esc(FACE_LAB[v]||v||"inconnu")}</span>`;
+const faceModelCell = m => { const v = g(m,"moderation.real_faces"); const pf = (m._faces_pf||[]).filter(f => f.value !== v && !(FACE_LAB[f.value]===FACE_LAB[v])); return (v?faceChip(v):n(null)) + pf.map(f => `<br><span class="var">${esc(f.platform)} : ${esc(FACE_LAB[f.value]||f.value)}</span>`).join(""); };
+const faceModelSort = m => ({accepte:0,autorise:0,verif_identite:1,"filtre partiel":2,inconnu:3,refuse:4,bloque:4}[g(m,"moderation.real_faces")] ?? 5) - ((m._faces_pf||[]).some(f=>f.value==="accepte")?0.5:0);
+const facePlatCell = p => { const L = p.faces||[]; if (L.length) return L.map(f => faceChip(f.value, f.model)).join(" "); const v = g(p,"moderation.real_faces"); return v ? `${faceChip(v)} <span class="var">(général)</span>` : n(null); };
+const facePlatSort = p => { const L=(p.faces||[]).map(f=>f.value); return L.includes("accepte")?0:L.includes("verif_identite")?1:L.length?2:3; };
+const facesBlock = (L, withPlatform) => (L||[]).length ? `<h4>Visages acceptés</h4><ul>${L.map(f=>`<li>${faceChip(f.value, withPlatform?f.platform:f.model)} ${esc(f.note||"")} ${srcShort(f.sources)}</li>`).join("")}</ul>` : "";
 const checkedCell = m => m._checked ? `<span class="var">${fdate(m._checked)}</span>` : n(null);
 const offerCell = p => { const o = p._offer||{}; if(!o.billing) return n(null); const u = (o.unlimited||[]).length; return `${esc(o.billing)}${o.derived?' <span class="var">(déduit du type)</span>':""}${u?`<br><span class="chip good">illimité : ${u} lot${u>1?"s":""}</span>`:""}`; };
 let compare = new Set(); try { compare = new Set(JSON.parse(localStorage.getItem("atlas-compare") || "[]")); } catch(e) {}
@@ -172,7 +180,7 @@ const COLS = {
   ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
   ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
-  ["Visages réels", m => n(g(m,"moderation.real_faces")), m => g(m,"moderation.real_faces")||""],
+  ["Visages acceptés", faceModelCell, faceModelSort],
   ["$/s 480p", m => money(best(m,"price_usd_480p_s")), m => best(m,"price_usd_480p_s") ?? 1e9, 1],
   ["$/s 720p", m => money(best(m,"price_usd_720p_s")), m => best(m,"price_usd_720p_s") ?? 1e9, 1],
   ["$/s 1080p", m => money(best(m,"price_usd_1080p_s")), m => best(m,"price_usd_1080p_s") ?? 1e9, 1],
@@ -197,7 +205,7 @@ const COLS = {
   ["MacBook Pro M5 Pro 64 Go", m => b(loc(m,"mac64")), m => loc(m,"mac64")?0:1],
   ["Mac Studio M5 Max 128 / M5 Ultra 256 / 512 Go", m => `${b(loc(m,"studio128"))} / ${b(loc(m,"studio256"))} / ${b(loc(m,"studio512"))}`, m => (loc(m,"studio128")?0:1)+(loc(m,"studio256")?0:1)+(loc(m,"studio512")?0:1)],
   ["Intégré dans", intCell, m => -intCount(m), 1],
-  ["Visages réels", m => n(g(m,"moderation.real_faces")), m => g(m,"moderation.real_faces")||""],
+  ["Visages acceptés", faceModelCell, faceModelSort],
   ["$/image", m => money(best(m,"price_usd_per_image")), m => best(m,"price_usd_per_image") ?? 1e9, 1],
  ],
  audio: [
@@ -252,7 +260,7 @@ const COLS = {
   ["Seedance $/s 480p", p => money(g(p,"seedance.usd_480p_s")), p => g(p,"seedance.usd_480p_s") ?? 1e9, 1],
   ["720p", p => money(g(p,"seedance.usd_720p_s")), p => g(p,"seedance.usd_720p_s") ?? 1e9, 1],
   ["1080p", p => money(g(p,"seedance.usd_1080p_s")), p => g(p,"seedance.usd_1080p_s") ?? 1e9, 1],
-  ["Visages réels", p => n(g(p,"moderation.real_faces")), p => g(p,"moderation.real_faces")||""],
+  ["Visages acceptés", facePlatCell, facePlatSort, 0, "wrap"],
   ["Refus facturé", p => n(p.refusal_billed), p => p.refusal_billed||""],
   ["Paiement", p => n((p.payment||[]).join(", ")), p => (p.payment||[]).join()],
   ["LoRA", p => n(p.lora_hosting), p => p.lora_hosting?0:1],
@@ -278,7 +286,7 @@ function detail(m){
   const src = (m.sources||[]).map(srcLi).join("");
   const sc = scoreList(m).map(([k,v]) => `<li>${esc(k)} : <b>${esc(v)}</b></li>`).join("");
   const L = m._local || {};
-  const extra = [statusBlock(m)];
+  const extra = [statusBlock(m), facesBlock(m._faces_pf, true)];
   if (g(m,"inputs.incompatible_combinations")) extra.push(`<h4>Ne se combine pas</h4><p>${esc(g(m,"inputs.incompatible_combinations"))}</p>`);
   if (g(m,"local.vram_note")) extra.push(`<h4>Local</h4><p>${esc(g(m,"local.vram_note"))}</p>`);
   if (L.rtx4090_note) extra.push(`<h4>RTX 4090</h4><p>${esc(L.rtx4090_note)}</p>`);
@@ -305,7 +313,7 @@ function platformDetail(p){
   const o = p._offer||{};
   const offer = o.billing ? `<h4>Ce que comprend l'offre</h4><p>${esc(o.billing)}${o.derived?" (déduit du type de plateforme)":""}${o.plan_observed?"<br>"+esc(o.plan_observed):""}${(o.unlimited||[]).length?"<br><b>Illimité</b> : "+o.unlimited.map(x=>esc(x.models+" ("+x.duration+")")).join(" ; "):""}${o.unlimited_where?"<br>"+esc(o.unlimited_where):""}${o.notes?"<br>"+esc(o.notes):""}${(o.sources||[]).length?"<br>"+srcShort(o.sources):""}</p>` : "";
   const mn = (p.model_notes||[]).length ? `<h4>Modèle par modèle sur ${esc(p.name)}</h4><ul>${p.model_notes.map(x=>`<li><b>${esc(x.model)}</b> : ${esc(x.note)} ${srcShort(x.sources)}</li>`).join("")}</ul>` : "";
-  const stb = statusBlock(p);
+  const stb = statusBlock(p) + facesBlock(p.faces, false);
   return `${mn?`<div class="det" style="grid-template-columns:1fr"><div>${mn}</div></div>`:""}<div class="det"><div>${stb}${offer}${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
    <div>${row("Modération",[g(p,"moderation.notes"),g(p,"moderation.public_figures"),g(p,"moderation.violence")].filter(Boolean).join(" · "))}${row("Refus facturé",p.refusal_billed)}${row("Conditions",p.terms)}</div>
    <div>${row("Fiabilité",p.reliability)}${row("Retours d'usagers",p.user_feedback)}${row("Abonnement ou API",p.api_vs_subscription)}</div>
@@ -337,6 +345,7 @@ function card(m, kind, reason){
   const chips = [];
   { const st = m._status||{}; if (!st.presumed && st.value) chips.push(`<span class="chip ${ST_CLS[st.value]||""}">${esc(ST_LAB[st.value]||st.value)}${st.date?" "+fdate(st.date):""}</span>`); }
   const s = bestScore(m); if (s) chips.push(`<span class="chip">score ${s}</span>`);
+  { const v = g(m,"moderation.real_faces"); if (v && v !== "inconnu") chips.push(faceChip(v, "visages")); (m._faces_pf||[]).filter(f=>f.value==="accepte" && v!=="autorise").forEach(f => chips.push(faceChip("accepte", "visages chez "+f.platform))); }
   if (kind==="video"){ const mx=g(m,"outputs.max_s"); if(mx) chips.push(`<span class="chip">≤ ${mx} s</span>`); if(g(m,"outputs.native_audio")) chips.push('<span class="chip good">son</span>'); if(g(m,"inputs.first_frame")) chips.push('<span class="chip">1re img</span>'); if(g(m,"inputs.image_refs_max")) chips.push(`<span class="chip">${g(m,"inputs.image_refs_max")} réf.</span>`); const p=best(m,"price_usd_720p_s"); if(p!=null) chips.push(`<span class="chip good">${money(p)} $/s 720p</span>`); }
   if (kind==="image"){ if(g(m,"inputs.image_edit")) chips.push('<span class="chip">édition</span>'); const r=g(m,"inputs.image_refs_max"); if(r) chips.push(`<span class="chip">${r} réf.</span>`); const p=best(m,"price_usd_per_image"); if(p!=null) chips.push(`<span class="chip good">${money(p)} $/image</span>`); }
   if (kind==="audio" && m.task) chips.push(`<span class="chip">${esc(m.task)}</span>`);
@@ -354,7 +363,7 @@ function renderModels(kind){
   let body;
   if (!DATA[kind].length) body = `<p class="note">Données en cours de collecte pour cet onglet.</p>`;
   else if (isMobile() && kind!=="platforms") body = `<div class="cards">${rows.map(m => card(m, kind)).join("")}</div>`;
-  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}${p._checked?` · vérifié le ${fdate(p._checked)}`:""}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><div class="chips">${(p._offer||{}).billing?`<span class="chip">${esc(p._offer.billing)}</span>`:""}${((p._offer||{}).unlimited||[]).length?'<span class="chip good">illimité inclus</span>':""}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
+  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}${p._checked?` · vérifié le ${fdate(p._checked)}`:""}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><div class="chips">${(p._offer||{}).billing?`<span class="chip">${esc(p._offer.billing)}</span>`:""}${((p._offer||{}).unlimited||[]).length?'<span class="chip good">illimité inclus</span>':""}${(p.faces||[]).map(f=>faceChip(f.value,f.model)).join("")}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
   else body = `<div class="scroll"><table><thead><tr>${cols.map((c,i)=>`<th data-i="${i}" class="${i===sortCol?"sorted":""}">${esc(c[0])}${i===sortCol?(sortDir>0?" ↑":" ↓"):""}</th>`).join("")}</tr></thead><tbody>${
       rows.map(m => `<tr class="row" data-id="${esc(m.id)}">`+cols.map((c,i)=>`<td class="${c[4]||""} ${c[3]?"n":""}">${c[1](m)}</td>`).join("")+"</tr>"+(open.has(m.id)?`<tr class="detail"><td colspan="${cols.length}">${kind==="platforms"?platformDetail(m):detail(m)}</td></tr>`:"")).join("")}</tbody></table></div>`;
   $("#view").innerHTML = filtersHtml(kind) + body;
@@ -468,7 +477,7 @@ const CMP_ROWS = [
   ["Édition", m => n((m.edit_functions||[]).join(", "))],["Tâche", m => n(m.task)],["Français", m => n(m.french_quality)],["Anglais", m => n([m.english_quality,(m.english_accents||[]).join(", ")].filter(Boolean).join(" · "))],
   ["Intégré dans", m => esc(intList(m).join(", ")) || n(null)],
   ["RTX 5090 / 4090 / M5 Max 128 / M5 Pro 64", m => `${b(loc(m,"5090"))} / ${b(loc(m,"4090"))} / ${b(loc(m,"mac"))} / ${b(loc(m,"mac64"))}`],
-  ["Visages réels", m => n(g(m,"moderation.real_faces"))],
+  ["Visages acceptés", faceModelCell],
   ["Meilleur prix", m => { const p=[["480p",best(m,"price_usd_480p_s")],["720p",best(m,"price_usd_720p_s")],["1080p",best(m,"price_usd_1080p_s")]].filter(x=>x[1]!=null).map(x=>`${x[0]} ${money(x[1])} $/s`); if(best(m,"price_usd_per_image")!=null) p.push(`${money(best(m,"price_usd_per_image"))} $/image`); return p.join("<br>")||n(null); }],
   ["Points forts", m => esc((m.pros||[]).join(" · "))],["Faiblesses", m => esc((m.cons||[]).join(" · "))],
 ];
