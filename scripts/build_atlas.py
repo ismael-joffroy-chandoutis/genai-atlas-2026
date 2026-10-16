@@ -112,6 +112,28 @@ for L in (video, image, audio, threed):
 for p in platforms:
     p["_status"] = resolve_status(status.get("platforms", {}).get(p["id"]), p.get("sources"))
 
+import re as _re
+def last_checked(o):
+    """Date la plus récente parmi toutes les sources (dicts avec date et type) de la fiche, local et statut compris."""
+    found = []
+    def walk(x, key=""):
+        if key == "_prices":
+            return
+        if isinstance(x, dict):
+            d = x.get("date")
+            if isinstance(d, str) and x.get("type") and _re.match(r"^\d{4}-\d{2}(-\d{2})?$", d):
+                found.append(d)
+            for k, v in x.items():
+                walk(v, k)
+        elif isinstance(x, list):
+            for v in x:
+                walk(v, key)
+    walk(o)
+    return max(found) if found else None
+for L in (video, image, audio, threed, platforms):
+    for m in L:
+        m["_checked"] = last_checked(m)
+
 data = {"stages": stages, "video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
         "orphans": sorted({p.get("model_id") for p in prices} - {m["id"] for m in video + image} - set(alias)),
         "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")}

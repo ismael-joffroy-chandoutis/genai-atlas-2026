@@ -139,6 +139,7 @@ const fdate = d => d ? d.split("-").reverse().join("/") : "";
 const statusCell = m => { const s = m._status||{}; if (s.presumed) return '<span class="var">actif (présumé)</span>'; return `<span class="chip ${ST_CLS[s.value]||""}">${esc(ST_LAB[s.value]||s.value)}</span>${s.date?` <span class="var">${fdate(s.date)}</span>`:""}`; };
 const statusSort = m => { const s=m._status||{}; return s.presumed ? 9 : ({arrete:0,rachete:1,pas_sorti:2,beta:3,a_verifier:4,actif:5}[s.value] ?? 8); };
 const statusBlock = m => { const s = m._status||{}; if (s.presumed) return `<h4>Statut</h4><p>actif (présumé) : aucun arrêt ni rachat relevé dans les sources de la fiche.</p>`; return `<h4>Statut</h4><p>${statusCell(m)}${s.note?"<br>"+esc(s.note):""}<br>${s.from_card?'<span class="var">source : voir les sources de la fiche</span>':srcShort(s.sources)}</p>`; };
+const checkedCell = m => m._checked ? `<span class="var">${fdate(m._checked)}</span>` : n(null);
 const offerCell = p => { const o = p._offer||{}; if(!o.billing) return n(null); const u = (o.unlimited||[]).length; return `${esc(o.billing)}${o.derived?' <span class="var">(déduit du type)</span>':""}${u?`<br><span class="chip good">illimité : ${u} lot${u>1?"s":""}</span>`:""}`; };
 let compare = new Set(); try { compare = new Set(JSON.parse(localStorage.getItem("atlas-compare") || "[]")); } catch(e) {}
 const saveCmp = () => { try { localStorage.setItem("atlas-compare", JSON.stringify([...compare])); } catch(e) {} };
@@ -148,6 +149,7 @@ const COLS = {
  video: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
   ["Statut", statusCell, statusSort],
+  ["Vérifié le", checkedCell, m => -(+(m._checked||"0").replace(/-/g,""))],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
   ["Meilleur score", scoreCell, m => -(bestScore(m)||0), 1],
@@ -178,6 +180,7 @@ const COLS = {
  image: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
   ["Statut", statusCell, statusSort],
+  ["Vérifié le", checkedCell, m => -(+(m._checked||"0").replace(/-/g,""))],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
   ["Licence", m => n(g(m,"access.license")), m => g(m,"access.license")||""],
@@ -200,6 +203,7 @@ const COLS = {
  audio: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
   ["Statut", statusCell, statusSort],
+  ["Vérifié le", checkedCell, m => -(+(m._checked||"0").replace(/-/g,""))],
   ["Tâche", m => n(m.task), m => m.task||""],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
@@ -222,6 +226,7 @@ const COLS = {
  threed: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
   ["Statut", statusCell, statusSort],
+  ["Vérifié le", checkedCell, m => -(+(m._checked||"0").replace(/-/g,""))],
   ["Tâche", m => n(m.task), m => m.task||""],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
@@ -240,6 +245,7 @@ const COLS = {
  platforms: [
   ["Plateforme", p => `<span class="fam">${esc(p.name)}</span><br><span class="var">${esc(p.type||"")}</span>`, p => (p.name||"").toLowerCase()],
   ["Statut", statusCell, statusSort],
+  ["Vérifié le", checkedCell, p => -(+(p._checked||"0").replace(/-/g,""))],
   ["Verdict", p => p.verdict ? `<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>` : n(null), p => ({fiable:0,tester:1,eviter:2}[p.verdict] ?? 3)],
   ["Pays", p => n(p.country), p => p.country||""],
   ["Offre", offerCell, p => (p._offer||{}).billing||"~"],
@@ -287,7 +293,7 @@ function detail(m){
     <div><h4>Points forts</h4>${li(m.pros)}<h4>Faiblesses</h4>${li(m.cons)}</div>
     <div><h4>Scores</h4>${sc?`<ul>${sc}</ul>`:"<p class='note'>Aucun classement.</p>"}<h4>Prix par plateforme</h4>${priceRows(m)}</div>
     <div><h4>Fonctions d'édition</h4>${li(m.edit_functions)}${extra.join("")}</div>
-    <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
+    <div><h4>Sources</h4>${m._checked?`<p class="var">Dernière vérification : ${fdate(m._checked)} (date la plus récente des sources).</p>`:""}<ul>${src||"<li>–</li>"}</ul></div></div>`;
 }
 function platformDetail(p){
   const src = (p.sources||[]).map(srcLi).join("");
@@ -303,7 +309,7 @@ function platformDetail(p){
   return `${mn?`<div class="det" style="grid-template-columns:1fr"><div>${mn}</div></div>`:""}<div class="det"><div>${stb}${offer}${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
    <div>${row("Modération",[g(p,"moderation.notes"),g(p,"moderation.public_figures"),g(p,"moderation.violence")].filter(Boolean).join(" · "))}${row("Refus facturé",p.refusal_billed)}${row("Conditions",p.terms)}</div>
    <div>${row("Fiabilité",p.reliability)}${row("Retours d'usagers",p.user_feedback)}${row("Abonnement ou API",p.api_vs_subscription)}</div>
-   <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
+   <div><h4>Sources</h4>${p._checked?`<p class="var">Dernière vérification : ${fdate(p._checked)} (date la plus récente des sources).</p>`:""}<ul>${src||"<li>–</li>"}</ul></div></div>`;
 }
 function filtersHtml(kind){
   const loc3 = `<label><input type="checkbox" data-f="open"> poids ouverts</label><label><input type="checkbox" data-f="l5090"> RTX 5090</label><label><input type="checkbox" data-f="l4090"> RTX 4090</label><label><input type="checkbox" data-f="lmac"> MacBook Pro M5 Max 128 Go</label><label><input type="checkbox" data-f="lmac64"> MacBook Pro M5 Pro 64 Go</label><label><input type="checkbox" data-f="lstudio"> Mac Studio (M5 Max 128 ou M5 Ultra 256/512)</label>`;
@@ -338,7 +344,7 @@ function card(m, kind, reason){
   if (g(m,"access.open_weights")) chips.push('<span class="chip good">ouvert</span>');
   ["5090","4090","mac","mac64"].forEach(k => { if (loc(m,k)) chips.push(`<span class="chip">${k==="mac"?"M5 Max 128":k==="mac64"?"M5 Pro 64":k}</span>`); });
   if (intCount(m)) chips.push(`<span class="chip good">intégré dans ${intCount(m)} outil${intCount(m)>1?"s":""} locaux</span>`);
-  return `<article class="card"><div class="top"><div><div class="name">${esc(m.family)} · ${esc(m.variant)}</div><div class="sub">${esc(m.vendor||"")}</div></div>${cmpBtn(m)}</div>
+  return `<article class="card"><div class="top"><div><div class="name">${esc(m.family)} · ${esc(m.variant)}</div><div class="sub">${esc(m.vendor||"")}${m._checked?` · vérifié le ${fdate(m._checked)}`:""}</div></div>${cmpBtn(m)}</div>
     ${reason?`<div class="var">${reason}</div>`:""}<div class="chips">${chips.join("")}</div>
     <button class="more" data-open="${esc(m.id)}">${open.has(m.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(m.id)?detail(m):""}</article>`;
 }
@@ -348,7 +354,7 @@ function renderModels(kind){
   let body;
   if (!DATA[kind].length) body = `<p class="note">Données en cours de collecte pour cet onglet.</p>`;
   else if (isMobile() && kind!=="platforms") body = `<div class="cards">${rows.map(m => card(m, kind)).join("")}</div>`;
-  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><div class="chips">${(p._offer||{}).billing?`<span class="chip">${esc(p._offer.billing)}</span>`:""}${((p._offer||{}).unlimited||[]).length?'<span class="chip good">illimité inclus</span>':""}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
+  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}${p._checked?` · vérifié le ${fdate(p._checked)}`:""}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><div class="chips">${(p._offer||{}).billing?`<span class="chip">${esc(p._offer.billing)}</span>`:""}${((p._offer||{}).unlimited||[]).length?'<span class="chip good">illimité inclus</span>':""}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
   else body = `<div class="scroll"><table><thead><tr>${cols.map((c,i)=>`<th data-i="${i}" class="${i===sortCol?"sorted":""}">${esc(c[0])}${i===sortCol?(sortDir>0?" ↑":" ↓"):""}</th>`).join("")}</tr></thead><tbody>${
       rows.map(m => `<tr class="row" data-id="${esc(m.id)}">`+cols.map((c,i)=>`<td class="${c[4]||""} ${c[3]?"n":""}">${c[1](m)}</td>`).join("")+"</tr>"+(open.has(m.id)?`<tr class="detail"><td colspan="${cols.length}">${kind==="platforms"?platformDetail(m):detail(m)}</td></tr>`:"")).join("")}</tbody></table></div>`;
   $("#view").innerHTML = filtersHtml(kind) + body;
@@ -453,7 +459,7 @@ function renderChoose(){
     <section><h2>${ok.length} modèle${ok.length>1?"s":""} répond${ok.length>1?"ent":""}</h2><div class="cards" style="margin-top:10px">${ok.slice(0,60).map(m => card(m,k)).join("") || "<p class='note'>Aucun modèle ne remplit tous ces critères. Décochez un critère.</p>"}</div></section></div>`;
 }
 const CMP_ROWS = [
-  ["Statut", statusCell],["Éditeur", m => esc(m.vendor||"?")],["Accès", acc],["Licence", m => n(g(m,"access.license"))],["Scores", m => scoreList(m).map(([k,v])=>`${esc(k)} ${esc(v)}`).join("<br>") || n(null)],
+  ["Statut", statusCell],["Vérifié le", checkedCell],["Éditeur", m => esc(m.vendor||"?")],["Accès", acc],["Licence", m => n(g(m,"access.license"))],["Scores", m => scoreList(m).map(([k,v])=>`${esc(k)} ${esc(v)}`).join("<br>") || n(null)],
   ["Durée", m => g(m,"outputs.max_s")!=null?`${g(m,"outputs.min_s")??"?"}–${g(m,"outputs.max_s")} s`:n(null)],["Résolution max", m => n(g(m,"outputs.max_resolution"))],
   ["Son natif", m => b(g(m,"outputs.native_audio"))],["Lip-sync", m => b(g(m,"outputs.lip_sync"))],
   ["Images de réf.", m => n(g(m,"inputs.image_refs_max"))],["Vidéos de réf.", m => n(g(m,"inputs.video_refs_max"))],["Sons de réf.", m => n(g(m,"inputs.audio_refs_max"))],
