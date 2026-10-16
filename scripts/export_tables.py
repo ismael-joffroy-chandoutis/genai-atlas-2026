@@ -18,6 +18,11 @@ def ints(mid):
         if i.get(k) is True: L.append(nm)
     return ", ".join(L) or "–"
 
+import re
+_cl = ROOT / "CHANGELOG.md"
+_vm = re.search(r"^## (v[0-9.]+) · (\d{2})/(\d{2})/(\d{4})", _cl.read_text(), re.M) if _cl.exists() else None
+MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
+asof = f"Version {_vm.group(1)}, data as of {int(_vm.group(2))} {MONTHS[int(_vm.group(3))-1]} {_vm.group(4)}." if _vm else "Data as of 15 October 2026."
 best = {}
 for p in prices:
     if p.get("unit") == "subscription":
@@ -43,7 +48,7 @@ def refs(m, n, s):
     v, t = g(m, n), g(m, s)
     return "?" if v is None else (f"{v} ({t} s)" if t else str(v))
 
-out = ["# Tables", "", "Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 October 2026. "
+out = ["# Tables", "", "Generated from `data/*.json` by `scripts/export_tables.py`. " + asof + " "
        "`?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. "
        "Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. \"Integrated in\" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.", ""]
 out += ["## Video", "", "| Model | Vendor | Open weights | Duration | Max res | Audio | Image refs | Video refs | Audio refs | First / last frame | Keyframes | LoRA | 5090 | 4090 | Mac 128 GB | AA T2V | AA I2V | Integrated in | Cheapest 720p $/s |",

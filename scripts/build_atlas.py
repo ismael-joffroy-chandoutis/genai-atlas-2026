@@ -122,6 +122,9 @@ for L in (video, image):
         m["_faces_pf"] = fbm.get(m["id"], [])
 
 import re as _re
+_cl = ROOT / "CHANGELOG.md"
+_vm = _re.search(r"^## (v[0-9.]+)", _cl.read_text(), _re.M) if _cl.exists() else None
+version = _vm.group(1) if _vm else None
 def last_checked(o):
     """Date la plus récente parmi toutes les sources (dicts avec date et type) de la fiche, local et statut compris."""
     found = []
@@ -145,10 +148,11 @@ for L in (video, image, audio, threed, platforms):
 
 data = {"stages": stages, "video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
         "orphans": sorted({p.get("model_id") for p in prices} - {m["id"] for m in video + image} - set(alias)),
-        "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")}
+        "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M"),
+        "version": version, "data_max": max([m.get("_checked") or "" for L in (video, image, audio, threed, platforms) for m in L] or [""])}
 
 tpl = (ROOT / "scripts" / "atlas_template.tpl").read_text()
 out = pathlib.Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "site" / "index.html"
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(tpl.replace("/*__DATA__*/null", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
-print(f"{out} : {len(video)} video, {len(image)} image, {len(prices)} prix, {len(data['orphans'])} prix sans modele")
+print(f"{out} : version {version}, {len(video)} video, {len(image)} image, {len(prices)} prix, {len(data['orphans'])} prix sans modele")

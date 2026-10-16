@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Atlas génératif 2026</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -37,7 +38,8 @@ thead th.sorted{color:var(--accent)}
 tbody td:first-child,thead th:first-child{position:sticky;left:0;background:var(--surface);z-index:1;border-right:1px solid var(--line)}
 thead th:first-child{z-index:3}
 td.n{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
-td.wrap{white-space:normal;min-width:220px;max-width:340px}
+td.wrapcell{white-space:normal;min-width:220px;max-width:340px}
+td.wrapcell .chip{display:inline-block;white-space:normal;margin:0 4px 3px 0}
 .y{color:var(--accent);font-weight:600}.no{color:var(--muted)}.q{color:var(--warn)}
 .fam{font-weight:600}.var{color:var(--muted);font-size:12px}
 tr.row{cursor:pointer} tr.row:hover td{background:var(--accent-soft)}
@@ -261,12 +263,12 @@ const COLS = {
   ["Seedance $/s 480p", p => money(g(p,"seedance.usd_480p_s")), p => g(p,"seedance.usd_480p_s") ?? 1e9, 1],
   ["720p", p => money(g(p,"seedance.usd_720p_s")), p => g(p,"seedance.usd_720p_s") ?? 1e9, 1],
   ["1080p", p => money(g(p,"seedance.usd_1080p_s")), p => g(p,"seedance.usd_1080p_s") ?? 1e9, 1],
-  ["Visages acceptés", facePlatCell, facePlatSort, 0, "wrap"],
+  ["Visages acceptés", facePlatCell, facePlatSort, 0, "wrapcell"],
   ["Refus facturé", p => n(p.refusal_billed), p => p.refusal_billed||""],
   ["Paiement", p => n((p.payment||[]).join(", ")), p => (p.payment||[]).join()],
   ["LoRA", p => n(p.lora_hosting), p => p.lora_hosting?0:1],
-  ["Avis des usagers", p => `<span class="var">${esc(((p.user_feedback||{}).summary||"").slice(0,140))}${((p.user_feedback||{}).summary||"").length>140?"…":""}</span>`, p => "", 0, "wrap"],
-  ["Pourquoi", p => `<span class="var">${esc(p.verdict_reason||"")}</span>`, p => "", 0, "wrap"],
+  ["Avis des usagers", p => `<span class="var">${esc(((p.user_feedback||{}).summary||"").slice(0,140))}${((p.user_feedback||{}).summary||"").length>140?"…":""}</span>`, p => "", 0, "wrapcell"],
+  ["Pourquoi", p => `<span class="var">${esc(p.verdict_reason||"")}</span>`, p => "", 0, "wrapcell"],
  ],
 };
 const DETAIL_KEYS = {video:["inputs.incompatible_combinations","local.vram_note","moderation.notes"], image:["outputs.text_rendering","local.vram_note","moderation.notes"]};
@@ -526,7 +528,7 @@ $("#view").addEventListener("input", e => {
 $("#cmpgo").addEventListener("click", () => { tab="compare"; document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected","false")); render(); window.scrollTo(0,0); });
 $("#cmpclear").addEventListener("click", () => { compare.clear(); saveCmp(); if (tab==="compare") tab="choose"; render(); });
 matchMedia("(max-width: 760px)").addEventListener("change", render);
-$("#built").textContent = `Données relevées le 15/10/2026 · page construite le ${DATA.built} · ${DATA.video.length} vidéo, ${DATA.image.length} image, ${DATA.audio.length} audio, ${DATA.threed.length} 3D, ${DATA.platforms.length} plateformes, ${DATA.prices.length} prix`;
+$("#built").textContent = `${DATA.version?"Version "+DATA.version+" · ":""}données vérifiées jusqu'au ${fdate(DATA.data_max)} · page construite le ${DATA.built} · ${DATA.video.length} vidéo, ${DATA.image.length} image, ${DATA.audio.length} audio, ${DATA.threed.length} 3D, ${DATA.platforms.length} plateformes, ${DATA.prices.length} prix`;
 $("#foot").textContent = DATA.orphans.length ? `${DATA.orphans.length} modèles ont des prix mais pas de fiche (anciens modèles, abonnements) : ils sont dans l'onglet « Tous les prix ».` : "";
 render();
 </script>

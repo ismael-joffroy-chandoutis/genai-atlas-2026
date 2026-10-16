@@ -1,6 +1,6 @@
 # Tables
 
-Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 October 2026. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
+Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.10.16, data as of 16 October 2026. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
 
 ## Video
 
