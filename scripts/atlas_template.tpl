@@ -74,6 +74,7 @@ tr.detail td{white-space:normal;background:var(--bg)}
 .cmptable td{white-space:normal;min-width:180px;max-width:300px}
 .cmptable th[scope=row]{font:500 11px var(--mono);text-transform:uppercase;color:var(--muted);white-space:nowrap}
 @media (max-width:760px){ .choose{grid-template-columns:1fr} .filters input[type=search]{max-width:none} }
+.bench{font-size:12px;min-width:0}.bench td,.bench th{padding:3px 6px}
 .stagebar{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .stagebtn{font:500 13px var(--body);padding:7px 12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;cursor:pointer}
 .stagebtn[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
@@ -289,6 +290,11 @@ function detail(m){
   const extra = [statusBlock(m), facesBlock(m._faces_pf, true)];
   if (g(m,"inputs.incompatible_combinations")) extra.push(`<h4>Ne se combine pas</h4><p>${esc(g(m,"inputs.incompatible_combinations"))}</p>`);
   if (g(m,"local.vram_note")) extra.push(`<h4>Local</h4><p>${esc(g(m,"local.vram_note"))}</p>`);
+  if (L.bench_2026_10_16){ const B = L.bench_2026_10_16;
+    extra.push(`<h4>Banc local du 16/10/2026</h4><p class="var">${esc(B.title||"")} · ${srcShort(B.sources)}</p><div class="scroll"><table class="bench"><thead><tr><th>Réglage</th><th>GPU</th><th>Chaud 1024² (s)</th><th>Froid (s)</th><th>1344×768 (s)</th><th>VRAM (Go)</th></tr></thead><tbody>${(B.runs||[]).map(r=>`<tr><td>${esc(r.config)}</td><td>${esc(r.gpu)}</td><td class="n">${esc(r.warm_1024_s)}</td><td class="n">${esc(r.cold_s)}</td><td class="n">${esc(r.warm_1344x768_s)}</td><td class="n">${esc(r.vram_gb)}</td></tr>`).join("")}</tbody></table></div>
+      <p>${esc(B.edit||"")}</p><p>${esc(B.quality||"")}</p><p>${esc(B.use||"")}</p>
+      <details><summary>Par catégorie</summary><ul>${(B.categories||[]).map(c=>`<li><b>${esc(c.category)}</b> : qualité ${esc(c.winner_quality||"?")}${c.winner_fast?`, rapide ${esc(c.winner_fast)}`:""}${c.klein_scores?` (Klein ${esc(c.klein_scores)}, Qwen ${esc(c.qwen_scores)})`:""}. ${esc(c.note||"")}</li>`).join("")}</ul></details>
+      <p class="var">${esc(B.setup||"")} ${esc(B.files||"")}</p>`); }
   if (L.rtx4090_note) extra.push(`<h4>RTX 4090</h4><p>${esc(L.rtx4090_note)}</p>`);
   if (L.mac_studio_note) extra.push(`<h4>Mac Studio</h4><p>${esc(L.mac_studio_note)}</p>`);
   if (L.mac64_note) extra.push(`<h4>MacBook Pro M5 Pro 64 Go</h4><p>${esc(L.mac64_note)}</p>`);

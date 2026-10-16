@@ -179,7 +179,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | Nano Banana (Gemini Image) · Nano Banana Pro (gemini-3-pro-image) | Google | no | Propriétaire (Gemini API, Vertex AI) | 4K (1K défaut, 2K, 4K) | 14 | yes | no | no | ? | ? | 1115 | 1109 | – | 0.090 (kie) |
 | Qwen-Image 1 · Qwen-Image (20B, révision 2512) | Alibaba (Qwen) | yes | Apache 2.0 (commercial autorisé) | ? | ? | no | yes | yes | yes | yes | 898 | ? | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro | 0.020 (fal) |
 | Qwen-Image 2 · Qwen Image 2.0 Pro (2026-04-22) | Alibaba (Qwen) | no | Propriétaire (API) | ? | ? | yes | no | no | ? | ? | 1027 | 1057 | – | 0.070 (wavespeed) |
-| Qwen-Image 2 · Qwen-Image-2.1 | Alibaba (Qwen) | yes | Qwen Research License (commercial = accord séparé) | 2048x2048 (exemples ; max non publié) | 10 | yes | yes | yes | ? | yes | 1041 | 1080 | Wan2GP, Pinokio, Draw Things, Maestro | 0.020 (kie) |
+| Qwen-Image 2 · Qwen-Image-2.1 | Alibaba (Qwen) | yes | Qwen Research License (commercial = accord séparé) | 2048x2048 (exemples ; max non publié) | 10 | yes | yes | yes | yes | yes | 1041 | 1080 | Wan2GP, Pinokio, Draw Things, Maestro | 0.020 (kie) |
 | Qwen-Image 3 · Qwen-Image-3.0 | Alibaba (Qwen) | no | Propriétaire (Qwen Chat, Alibaba Cloud) | ? | ? | yes | no | no | ? | ? | 1069 | 1064 | – | 0.024 (kie) |
 | Qwen-Image 3 · Qwen-Image-3.0-Pro | Alibaba (Qwen) | no | Propriétaire (Qwen Chat, Alibaba Cloud / Qwen Cloud) | ? | ? | yes | no | no | ? | ? | 1094 | 1087 | – | 0.032 (kie) |
 | Qwen-Image-Edit · Qwen Image Edit Max 2601 | Alibaba (Qwen) | no | Propriétaire (API) | ? | ? | yes | no | no | ? | ? | ? | 985 | – |  |
