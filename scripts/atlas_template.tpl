@@ -73,6 +73,10 @@ tr.detail td{white-space:normal;background:var(--bg)}
 .cmptable td{white-space:normal;min-width:180px;max-width:300px}
 .cmptable th[scope=row]{font:500 11px var(--mono);text-transform:uppercase;color:var(--muted);white-space:nowrap}
 @media (max-width:760px){ .choose{grid-template-columns:1fr} .filters input[type=search]{max-width:none} }
+.stagebar{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.stagebtn{font:500 13px var(--body);padding:7px 12px;border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:8px;cursor:pointer}
+.stagebtn[aria-pressed="true"]{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}
+.stagegrp{margin-top:18px}.platlist{columns:2 260px;column-gap:24px;margin-top:8px;padding-left:18px;font-size:13px}.platlist li{break-inside:avoid;margin-bottom:6px}
 button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 </style>
 
@@ -84,6 +88,7 @@ button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid 
 </header>
 <nav class="tabs" role="tablist" id="tabs">
   <button role="tab" data-tab="choose" aria-selected="true">Choisir</button>
+  <button role="tab" data-tab="stages" aria-selected="false">Par étape</button>
   <button role="tab" data-tab="video" aria-selected="false">Vidéo</button>
   <button role="tab" data-tab="image" aria-selected="false">Image</button>
   <button role="tab" data-tab="audio" aria-selected="false">Audio</button>
@@ -343,6 +348,25 @@ function renderGpu(){
   const rows = DATA.gpu||[], keys = [...new Set(rows.flatMap(r => Object.keys(r)))].filter(k=>k!=="sources");
   $("#view").innerHTML = `<div class="scroll"><table><thead><tr>${keys.map(k=>`<th>${esc(k)}</th>`).join("")}</tr></thead><tbody>${rows.map(r=>"<tr>"+keys.map(k=>`<td>${typeof r[k]==="object"?esc(JSON.stringify(r[k])):esc(r[k])}</td>`).join("")+"</tr>").join("")}</tbody></table></div>`;
 }
+let stage = "tournage", stageKind = "";
+function renderStages(){
+  const S = (DATA.stages||{}).stages || [], cur = S.find(s=>s.id===stage) || S[0]; if(!cur){ $("#view").innerHTML = "<p class='note'>Aucune étape définie.</p>"; return; }
+  const kinds = [["video","Vidéo"],["image","Image"],["audio","Audio"],["threed","3D"]];
+  const cnt = id => kinds.reduce((a,[k]) => a + DATA[k].filter(m => (m._stages||[]).includes(id)).length, 0);
+  const why = (DATA.stages||{}).platform_why || {};
+  const plats = DATA.platforms.filter(p => (p._stages||[]).includes(cur.id));
+  const groups = kinds.filter(([k]) => !stageKind || stageKind===k).map(([k,lab]) => {
+    const L = DATA[k].filter(m => (m._stages||[]).includes(cur.id) && passes(m,k)).sort((a,c)=>(bestScore(c)||0)-(bestScore(a)||0));
+    return L.length ? `<section class="stagegrp"><h2>${lab} <span class="var">${L.length}</span></h2><div class="cards" style="margin-top:8px">${L.map(m=>card(m,k)).join("")}</div></section>` : "";
+  }).join("");
+  $("#view").innerHTML = `<div class="stagebar" role="group" aria-label="Étape de production">${S.map(s=>`<button class="stagebtn" data-stage="${esc(s.id)}" aria-pressed="${s.id===cur.id}">${esc(s.label)} <span class="var">${cnt(s.id)}</span></button>`).join("")}</div>
+    <p class="lede" style="margin:10px 0">${esc(cur.desc||"")}</p>
+    <div class="filters"><input type="search" id="q" placeholder="Filtrer : nom, éditeur, fonction…" aria-label="Filtrer" value="${esc(q)}">
+      <label>modalité <select id="stagekind"><option value="">toutes</option>${kinds.map(([k,l])=>`<option value="${k}" ${stageKind===k?"selected":""}>${l}</option>`).join("")}</select></label></div>
+    <section class="stagegrp"><h2>Plateformes <span class="var">${plats.length}</span></h2>${plats.length?`<ul class="platlist">${plats.map(p=>`<li><b>${esc(p.name)}</b> <span class="var">${esc(p.type||"")}</span>${why[p.id]?`<br><span class="var">${esc(why[p.id])}</span>`:""}</li>`).join("")}</ul>`:"<p class='note'>Aucune plateforme relevée pour cette étape.</p>"}</section>
+    ${groups || "<p class='note'>Aucun modèle pour cette étape avec ces filtres.</p>"}
+    <p class="note">Rangement automatique d'après les fonctions documentées de chaque modèle (voir data/stages.json), corrigé à la main pour quelques cas. Un modèle peut servir plusieurs étapes.</p>`;
+}
 let need = {integ:0, kind:"video", audio:false, lipsync:false, ff:false, lf:false, refs:0, vrefs:false, lora:false, open:false, machine:"", maxprice:"", mindur:"", edit:false, task:"", french:false, clone:false};
 function renderChoose(){
   const k = need.kind;
@@ -431,6 +455,7 @@ function render(){
   if (tab==="compare") renderCompare();
   else if (tab==="choose") renderChoose();
   else if (tab==="prices") renderPrices();
+  else if (tab==="stages") renderStages();
   else if (tab==="gpu") renderGpu();
   else renderModels(tab);
   $("#cmpbar").hidden = compare.size === 0;
@@ -439,6 +464,7 @@ function render(){
 $("#tabs").addEventListener("click", e => { const t = e.target.closest("button"); if(!t) return;
   document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected", x===t)); tab = t.dataset.tab; sortCol=null; render(); });
 $("#view").addEventListener("click", e => {
+  const sb = e.target.closest("[data-stage]"); if (sb){ stage = sb.dataset.stage; render(); return; }
   const c = e.target.closest("[data-cmp]"); if (c){ const id=c.dataset.cmp; compare.has(id)?compare.delete(id):compare.add(id); saveCmp(); e.stopPropagation(); render(); return; }
   if (e.target.id === "back"){ tab = "video"; document.querySelectorAll("#tabs button").forEach(x=>x.setAttribute("aria-selected", x.dataset.tab===tab)); render(); return; }
   const o = e.target.closest("[data-open]"); if (o){ const id=o.dataset.open; open.has(id)?open.delete(id):open.add(id); render(); return; }
@@ -448,6 +474,7 @@ $("#view").addEventListener("click", e => {
 });
 $("#view").addEventListener("input", e => {
   if (e.target.id === "q"){ q = e.target.value.trim().toLowerCase(); const pos = e.target.selectionStart; render(); const el=$("#q"); if(el){ el.focus(); el.setSelectionRange(pos,pos); } return; }
+  if (e.target.id === "stagekind"){ stageKind = e.target.value; render(); return; }
   if (e.target.dataset.f){ flt[e.target.dataset.f] = e.target.checked; render(); return; }
   const k = e.target.dataset.n; if (!k) return;
   need[k] = e.target.type==="checkbox" ? e.target.checked : (e.target.type==="number" ? (e.target.value===""?"":(k==="refs"?+e.target.value:e.target.value)) : e.target.value);

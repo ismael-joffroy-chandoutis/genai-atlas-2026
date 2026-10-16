@@ -1,0 +1,50 @@
+{
+  "note": "Étapes de production. Les modèles sont rangés automatiquement par scripts/build_atlas.py (fonction stages_for) à partir de leurs champs : modalité, tâche audio ou 3D, entrées, sorties, fonctions d'édition. Les corrections à la main sont dans model_overrides. Les plateformes sont rangées à la main dans platforms, d'après leur catalogue lu dans data/platforms.json et les relevés du 16/10/2026.",
+  "stages": [
+    {"id": "ecriture", "label": "Écriture", "desc": "Transcription d'entretiens et de rushes pour écrire et dérusher. Les modèles de langage (LLM) d'écriture sont hors du périmètre de l'atlas."},
+    {"id": "storyboard", "label": "Storyboard et animatique", "desc": "Images de repérage, planches, feuilles de personnages, prévisualisation 3D, vidéos de brouillon rapides et peu chères."},
+    {"id": "tournage", "label": "Tournage / génération vidéo", "desc": "Génération des plans : texte, image ou références vers vidéo."},
+    {"id": "effets", "label": "Effets et retouche de visage", "desc": "Échange de visage, remplacement de personnage, lip-sync, avatar parlant, transfert de mouvement, retouche d'image, effacement, incrustation, suivi de caméra."},
+    {"id": "montage", "label": "Montage", "desc": "Prolongation, multi-plans, insertion, reprise d'un passage, recadrage, transitions, montage par transcription."},
+    {"id": "etalonnage", "label": "Étalonnage", "desc": "Rééclairage, SDR vers HDR, couleur."},
+    {"id": "son", "label": "Son et voix", "desc": "Voix de synthèse, clonage, doublage, musique, bruitages, son natif des modèles vidéo."},
+    {"id": "agrandissement", "label": "Agrandissement", "desc": "Super-résolution, restauration, défloutage, passage en 4K."}
+  ],
+  "model_overrides": {
+    "add": {
+      "ltx-2-5-ic-lora-suite": ["agrandissement", "etalonnage"],
+      "minimax-h3-max": ["effets"],
+      "minimax-h3-max-turbo": ["storyboard"],
+      "seedance-2-0-mini": ["storyboard"],
+      "seedance-2-5": ["storyboard"]
+    },
+    "remove": {
+      "openai-sora-2": ["storyboard"],
+      "openai-sora-2-pro": ["storyboard"]
+    },
+    "why": {
+      "minimax-h3-max": "Lip-sync et doublage par piste audio fournie, testés en local sur les tours.",
+      "minimax-h3-max-turbo": "Version rapide et moins chère, utilisée pour les brouillons.",
+      "seedance-2-0-mini": "2,5 crédits Higgsfield en 480p : retenu pour l'animatique (mesure maison 16/10/2026).",
+      "seedance-2-5": "Mode brouillon 480p finalisable en 1080p (Higgsfield, mesure maison 16/10/2026)."
+    }
+  },
+  "platforms": {
+    "ecriture": ["elevenlabs", "fishaudio"],
+    "storyboard": ["higgsfield", "krea", "midjourney", "openai", "google", "leonardo", "freepik", "openart", "dreamina", "byteplus", "xai", "fal", "replicate", "runware", "atlascloud", "pollo", "adobe-firefly"],
+    "tournage": ["openrouter", "byteplus", "replicate", "runware", "segmind", "kie", "wavespeed", "fal", "dreamina", "krea", "higgsfield", "atlascloud", "apiyi", "piapi", "chatcut", "openart", "runway", "google", "xai", "kling", "minimax", "comfycloud", "runcomfy", "reactor", "vidu", "pixverse", "dashscope", "freepik", "leonardo", "pollo", "luma", "pika", "midjourney", "adobe-firefly", "together", "deepinfra", "siliconflow", "runpod", "vastai", "modal"],
+    "effets": ["higgsfield", "fal", "heygen", "hedra", "synthesia", "kling", "reactor", "runway", "krea"],
+    "montage": ["runway", "luma", "openart", "higgsfield", "chatcut"],
+    "etalonnage": ["krea", "luma", "higgsfield"],
+    "son": ["elevenlabs", "fishaudio", "higgsfield", "minimax", "kie", "fal"],
+    "agrandissement": ["krea", "freepik", "higgsfield", "runpod", "vastai", "modal"]
+  },
+  "platform_why": {
+    "krea": "Catalogue lu par le connecteur MCP le 16/10/2026 : Topaz (Astra 2, Starlight, Bloom, Hyperion SDR vers HDR), Magnific, SeedVR 2, Runway Ruby (SDR vers HDR), Flux Video Upscale.",
+    "higgsfield": "Rapport du 16/10/2026 : Elements et Soul ID (storyboard, feuilles de personnages), Scene Builder 3D, voix Seed Audio et ElevenLabs, upscale vidéo Topaz ou ByteDance jusqu'en 4K, rééclairage d'image, extension avant et arrière dans Cinema Studio 4.0.",
+    "fal": "OmniHuman V2 (avatar parlant sur audio), mesure maison 16/10/2026.",
+    "runpod": "Location de GPU : tout modèle local (SeedVR2, Wan, H3) peut y tourner.",
+    "vastai": "Location de GPU : tout modèle local peut y tourner.",
+    "modal": "Location de GPU : tout modèle local peut y tourner."
+  }
+}

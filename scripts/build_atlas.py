@@ -42,7 +42,55 @@ for m in video + image:
         return min(vals) if vals else None
     m["_best"] = {k: best(k) for k in ("price_usd_480p_s", "price_usd_720p_s", "price_usd_1080p_s", "price_usd_per_image")}
 
-data = {"video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
+stages = load("stages.json", {"stages": [], "model_overrides": {}, "platforms": {}})
+STAGE_RE = [  # (étape, motif cherché dans les fonctions d'édition et le nom de la variante)
+    ("effets", r"visage|lip|recast|remplac|swap|avatar|doublage|dubit|motion control|mouvement d.une vidéo|animation d.un personnage|personnage|inpainting|plaque propre|alpha|retouche|suppression de fond|baguette"),
+    ("montage", r"prolong|extend|multi-plans|multi-clips|insert|reprise|retake|continuation|recadrage|reframe|transition|interpolation|boucle|outpainting"),
+    ("etalonnage", r"relight|hdr|étalonn|couleur|recolor"),
+    ("agrandissement", r"super-résolution|upscal|restauration|défloutage|détails affinés|seedvr|topaz|starlight"),
+    ("storyboard", r"storyboard|3d-to-video|viewport|brouillon|draft|\b(?:fast|mini|lite|turbo|flash|preview)\b"),
+]
+def stages_for(m, kind):
+    import re
+    txt = " ".join((m.get("edit_functions") or []) + [m.get("variant") or "", m.get("family") or ""]).lower()
+    S = set()
+    if kind == "video":
+        S.add("tournage")
+        if (m.get("outputs") or {}).get("lip_sync"): S.add("effets")
+        if (m.get("outputs") or {}).get("native_audio") or re.search(r"texte vers audio|musique|doublage", txt): S.add("son")
+        if (m.get("inputs") or {}).get("input_3d"): S.add("storyboard")
+        for st, rx in STAGE_RE:
+            if re.search(rx, txt): S.add(st)
+    elif kind == "image":
+        S.add("storyboard")
+        if (m.get("inputs") or {}).get("image_edit"): S.add("effets")
+        for st, rx in STAGE_RE:
+            if st in ("effets", "etalonnage", "agrandissement") and re.search(rx, txt): S.add(st)
+    elif kind == "audio":
+        S.add("son")
+        t = m.get("task") or ""
+        if t == "stt": S |= {"ecriture", "montage"}
+        if t in ("lip_sync", "dubbing"): S.add("effets")
+    elif kind == "threed":
+        S.add("storyboard")
+        if (m.get("task") or "") in ("depth_and_camera", "scene_reconstruction"): S.add("effets")
+    ov = stages.get("model_overrides", {})
+    S |= set(ov.get("add", {}).get(m["id"], []))
+    S -= set(ov.get("remove", {}).get(m["id"], []))
+    order = [s["id"] for s in stages.get("stages", [])]
+    return [s for s in order if s in S]
+for kind, L in (("video", video), ("image", image), ("audio", audio), ("threed", threed)):
+    for m in L:
+        m["_stages"] = stages_for(m, kind)
+pids = {p["id"] for p in platforms}
+for st, L in stages.get("platforms", {}).items():
+    for pid in L:
+        if pid not in pids:
+            print(f"étape {st} : plateforme inconnue {pid}, ignorée")
+for p in platforms:
+    p["_stages"] = [s["id"] for s in stages.get("stages", []) if p["id"] in stages.get("platforms", {}).get(s["id"], [])]
+
+data = {"stages": stages, "video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
         "orphans": sorted({p.get("model_id") for p in prices} - {m["id"] for m in video + image} - set(alias)),
         "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")}
 
