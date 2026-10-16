@@ -76,6 +76,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Data as of 15 Octobe
 | NVIDIA Cosmos3 · Cosmos3 Super Image2Video (64B) | NVIDIA | yes | ? | 720p | ? | 1 | ? | 0 | yes / no | ? | ? | no | no | ? | ? | ? | – |  |
 | NVIDIA Cosmos3 · Cosmos3 Super Image2Video 4Step (64B distillé) | NVIDIA | yes | ? | 720p | ? | 1 | ? | 0 | yes / no | ? | ? | no | no | ? | ? | ? | – |  |
 | OmniHuman · OmniHuman 1.5 | ByteDance | no | ?–60 s | 1080p | no | ? | ? | 1 (60 s) | yes / ? | ? | ? | no | ? | ? | ? | ? | – |  |
+| OmniHuman · OmniHuman V2 | ByteDance | no | ? | ? | no | ? | ? | 1 | yes / ? | ? | ? | no | ? | ? | ? | ? | – | 0.105 (fal) |
 | P-Video · P-Video | Pruna AI | ? | 1–10 s | 1080p | yes | 0 | ? | 1 | yes / ? | ? | ? | ? | ? | ? | 803 | ? | – | 0.025 (runware) |
 | Pika · Pika 2.2 Pikaframes | Pika Labs | no | ?–25 s | 1080p | ? | ? | ? | ? | yes / yes | 5 | ? | no | ? | ? | ? | ? | – | 0.040 (fal) |
 | Pika · Pika 2.5 | Pika Labs | no | ? | ? | ? | ? | ? | ? | ? / ? | ? | ? | no | ? | ? | 838 | ? | – |  |

@@ -87,6 +87,13 @@ for st, L in stages.get("platforms", {}).items():
     for pid in L:
         if pid not in pids:
             print(f"étape {st} : plateforme inconnue {pid}, ignorée")
+TYPE_BILLING = {"abonnement": "abonnement", "editeur (abonnement)": "abonnement", "agregateur": "paiement à l'usage",
+                "revendeur": "paiement à l'usage", "inference": "paiement à l'usage", "gpu-cloud": "location de GPU à l'heure"}
+for p in platforms:
+    if not p.get("offer") and TYPE_BILLING.get(p.get("type")):
+        p["_offer"] = {"billing": TYPE_BILLING[p["type"]], "derived": True}
+    else:
+        p["_offer"] = p.get("offer") or {}
 for p in platforms:
     p["_stages"] = [s["id"] for s in stages.get("stages", []) if p["id"] in stages.get("platforms", {}).get(s["id"], [])]
 

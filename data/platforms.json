@@ -81,6 +81,38 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "Crédits prépayés (carte ou crypto).",
+   "sources": [
+    {
+     "url": "https://openrouter.ai/terms",
+     "date": "2026-08-31",
+     "type": "editeur"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "Visage photoréaliste en référence refusé (test du 15/10/2026) : filtre ByteDance hérité, pas de voie de consentement. 0,231 $/s en 720p, pas de 1080p.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -152,6 +184,40 @@
     "url": "https://docs.byteplus.com/en/docs/ModelArk/Specific_Terms_for_the_BytePlus_Video_Generation_Model_Services",
     "date": "2026-09-08",
     "type": "editeur"
+   }
+  ],
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "Facturation à la requête ; les Advanced Creation Rights (bibliothèque d'actifs) ont une page d'achat dédiée, prix non trouvé.",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "independant",
+     "label": "relevé des accès Seedance, 16/10/2026",
+     "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5 / 2.0",
+    "note": "« do not support directly uploading reference images/videos that contain real human faces » (guide du 08/10/2026). Trois portes : sorties de confiance Seedream 5.0 et Seedance du même compte (30 jours, sans retouche), plus de 10 000 personnages virtuels prédéfinis, personne réelle autorisée par QR + vérification faciale faite par la personne elle-même. Le filtre attrape aussi des visages inventés photoréalistes.",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
    }
   ]
  },
@@ -647,7 +713,8 @@
    "Veo 3",
    "LTX-2.5",
    "FLUX 3 Video",
-   "catalogue le plus large (plus de 120 modèles vidéo)"
+   "catalogue le plus large (plus de 120 modèles vidéo)",
+   "OmniHuman V2 (avatar parlant sur audio, sorti le 16/10/2026)"
   ],
   "seedance": {
    "version": "2.5",
@@ -753,6 +820,60 @@
     "url": "https://www.trustpilot.com/review/fal.ai",
     "date": "2026-10-15",
     "type": "independant"
+   },
+   {
+    "url": null,
+    "date": "2026-10-16",
+    "type": "mesure",
+    "label": "mesure maison 16/10/2026",
+    "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+   }
+  ],
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "Crédits prépayés débités à la requête. Crédits prépayés ; solde trouvé à zéro le 08/10/2026 (403).",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "mesure",
+     "label": "mesure maison 16/10/2026",
+     "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "OmniHuman V2",
+    "note": "0,105 $/s, image + audio vers vidéo parlante. Visages photoréalistes de synthèse acceptés, un seul personnage et trois personnages dans le même plan (16/10/2026, environ 1,03 $ dépensés). Part d'une image fixe et anime librement : ne suit pas le mouvement d'un plan source. Audio par le stockage fal, data URI refusée.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.5",
+    "note": "Hérite du refus ByteDance des visages réels ou photoréalistes en référence ; aucune voie de consentement publiée. Le plus cher des revendeurs relevés (environ 0,473 $/s en 720p).",
+    "sources": [
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
    }
   ]
  },
@@ -882,6 +1003,28 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "« uploading creatives… containing realistic human faces is not supported » ; la FAQ des références du 30/09/2026 ne dit rien de plus.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -998,6 +1141,71 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "offer": {
+   "billing": "abonnement",
+   "unlimited": [],
+   "notes": "Unités de calcul mensuelles (Pro 35 $ pour 20 000 unités). Accès aussi par connecteur MCP et API publique, débités sur les mêmes unités.",
+   "sources": [
+    {
+     "url": "https://www.krea.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    },
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "mesure",
+     "label": "catalogue lu par le connecteur MCP Krea le 16/10/2026",
+     "ref": "mcp krea list_models (video, enhance)"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Catalogue vidéo (MCP)",
+    "note": "Seedance 2.5, Seedance 2.0, 2.0 Fast et 2.0 Mini, MiniMax H3, H3 Max et H3 Max Turbo, Kling 2.5, 2.6, 3.0 et O1, Veo 3, 3.1, 3.1 Fast et 3.1 Lite, Wan 2.1 à 3.0, Flux 3 Video et Flux Video Edit, Gemini Omni Flash et 1.1, Grok Imagine et 1.5, LTX-2.3 et LTX-2.5, Runway Gen-4 et Gen-4.5, Vidu Q3, Hailuo, Ray 2. Pas d'OmniHuman, pas de Kling 4.0.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "catalogue lu par le connecteur MCP Krea le 16/10/2026",
+      "ref": "mcp krea list_models (video, enhance)"
+     }
+    ]
+   },
+   {
+    "model": "Agrandissement et HDR (MCP)",
+    "note": "Topaz Astra 2, Starlight Fast 3, Starlight Precise 2.5, Bloom 2, Hyperion 2.5 (SDR vers HDR), Video Upscale ; Magnific Creative et Precise ; SeedVR 2 ; Runway Ruby (SDR vers HDR) ; Flux Video Upscale. Astra 1 et Starlight Precise 1 arrêtés par Topaz en octobre 2026, fin chez Krea le 16/11/2026.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "catalogue lu par le connecteur MCP Krea le 16/10/2026",
+      "ref": "mcp krea list_models (video, enhance)"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.5",
+    "note": "Prompt amélioré par Krea en plus du modèle de base. Visages réels refusés par défaut (filtre amont ByteDance).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "catalogue lu par le connecteur MCP Krea le 16/10/2026",
+      "ref": "mcp krea list_models (video, enhance)"
+     },
+     {
+      "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
+      "date": "2026-10-08",
+      "type": "editeur"
+     }
+    ]
+   }
   ]
  },
  {
@@ -1017,11 +1225,11 @@
    "Nano Banana Pro (image)"
   ],
   "seedance": {
-   "version": "2.0 (2.5 aussi proposé)",
-   "usd_480p_s": null,
-   "usd_720p_s": 0.216,
-   "usd_1080p_s": 0.59,
-   "note": "Seedance 2.0 : environ 22 crédits par 5 s en 720p, 60 en 1080p (tableau de la page tarifs), valorisés au plan Plus mensuel (59 $ pour 1 200 crédits). Le coût Seedance 2.5 n'est pas détaillé (page : environ 80 vidéos sur le plan Plus, sans durée ni résolution)."
+   "version": "2.5",
+   "usd_480p_s": 0.148,
+   "usd_720p_s": 0.344,
+   "usd_1080p_s": 0.787,
+   "note": "Seedance 2.5, 5 s : 15 / 35 / 80 crédits (devis du 16/10/2026, mesure maison), valorisés au plan Plus mensuel (59 $ pour 1 200 crédits, soit 0,0492 $ le crédit). Seedance 2.0 : 15 crédits en 480p, 22,5 en 720p ; 2.0 Mini 2,5 crédits en 480p."
   },
   "moderation": {
    "real_faces": "filtre partiel",
@@ -1136,6 +1344,198 @@
     "url": "https://www.forbes.com/sites/rashishrivastava/2026/02/11/racist-videos-and-payment-problems-the-dark-side-of-this-ai-startups-super-fast-growth/",
     "date": "2026-02-11",
     "type": "independant"
+   },
+   {
+    "url": null,
+    "date": "2026-10-16",
+    "type": "mesure",
+    "label": "mesure maison 16/10/2026",
+    "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+   }
+  ],
+  "offer": {
+   "billing": "abonnement",
+   "plan_observed": "PLUS, 1 200 crédits accordés le 16/10/2026, non reportés au renouvellement ; 6 vidéos et 8 images en parallèle",
+   "unlimited": [
+    {
+     "models": "Wan 3.0, Wan 3.0 Prime, Nano Banana 2 (1K/2K)",
+     "duration": "7 jours"
+    },
+    {
+     "models": "Seedream 5.0 Lite, Seedream 4.5, Flux.2 Pro 1K, Nano Banana, Kling O1 Image, GPT Image",
+     "duration": "365 jours"
+    },
+    {
+     "models": "Soul V2 et Soul Cinema",
+     "duration": "3 000 générations gratuites"
+    },
+    {
+     "models": "Kling 3.0 (720p, 5 s)",
+     "duration": "7 jours, seulement sur PLUS annuel"
+    }
+   ],
+   "unlimited_where": "Seulement sur le site higgsfield.ai, à la main (usage humain, scripts interdits). MCP, CLI, Canvas et Supercomputer débitent des crédits : Wan 3.0 par MCP a coûté 8,75 crédits, use_unlim refusé pour wan3_0 et seedream_v4_5.",
+   "notes": "Illimité en file standard, crédits en file prioritaire. Échec remboursé (testé). Aucun filigrane sur plan payant ; sorties à l'utilisateur, usage commercial non restreint, interdit d'entraîner un modèle avec.",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "mesure",
+     "label": "mesure maison 16/10/2026",
+     "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "5 s : 15 crédits en 480p, 35 en 720p, 80 en 1080p (audio ou non, même prix). Mode draft : brouillon 480p à 15 crédits, finalisable en 1080p sous 7 jours (prix de la finalisation non devisé). Visages photoréalistes acceptés en référence (omni_reference) et en image de départ, y compris trois acteurs réels en référence ; un premier essai à trois en image de départ a échoué sans message puis est passé à l'identique. Elements non compatibles avec 2.5.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.0 Mini",
+    "note": "2,5 crédits en 480p, 5 en 720p (5 s). Visages acceptés, y compris un photogramme à trois acteurs réels en image de départ et un acteur réel seul. Invente plus le décor, pas de finalisation 1080p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Seedance 2.0",
+    "note": "15 crédits en 480p, 22,5 en 720p (5 s) ; Seedance 2.0 Fast 5 crédits en 480p. Visage accepté via un Element « personnage » (création gratuite, contrôle IP passé).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Wan 3.0",
+    "note": "Par MCP : 5 / 8,75 / 17,5 crédits (480p / 720p / 1080p, 5 s) ; 0 crédit sur le site pendant 7 jours. Wan 3.0 Prime 720p : 15 crédits. Visage accepté en référence ; sortie 30 i/s avec une coupe franche à 2,47 s (monte de lui-même).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Cinema Studio 4.0",
+    "note": "Interface sur Seedance 2.5, jusqu'à 50 références, plans jusqu'à 30 s, extension avant et arrière. 15 crédits en 480p, 35 en 720p (5 s). Cinema Studio 3.0 : 25 crédits en 720p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Kling 3.0",
+    "note": "7,5 crédits (std sans son) ou 12,5 (pro avec son), 5 s.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "MiniMax H3 Max / H3",
+    "note": "H3 Max 768p 5 s : 12,5 crédits ; H3 2K 5 s : 10 crédits. Lip-sync sur gros plan et à trois personnes accepté avec l'image en référence (en image de départ : refus 422).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     },
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/stack-film/swap-telenovela-2026-10-15/BRIEF-SESSION-SUITE-2026-10-16.md"
+     }
+    ]
+   },
+   {
+    "model": "Veo 3.1",
+    "note": "Veo 3.1 Fast 4 s : 16 crédits ; Veo 3.1 preview high 8 s : 80 crédits.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Images",
+    "note": "Par MCP : Nano Banana 2 2K et Nano Banana Pro 2K 2 crédits, Seedream 4.5 1 crédit, GPT Image 2 low 1K 0,5 crédit, Soul Cinema 2K 0,12 crédit.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Voix (Seed Audio)",
+    "note": "0,3 crédit la phrase ; clonage, changement de voix et doublage par le connecteur.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/higgsfield-abonnement-2026-10-16/rapport.md"
+     }
+    ]
+   },
+   {
+    "model": "Genjutsu (remplacement d'objet)",
+    "note": "hf_mult_replace_object à 35 crédits refusé en 422 sans motif, même avec une seule référence.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "mesure",
+      "label": "mesure maison 16/10/2026",
+      "ref": "fleet-work/stack-film/swap-telenovela-2026-10-15/BRIEF-SESSION-SUITE-2026-10-16.md"
+     }
+    ]
    }
   ]
  },
@@ -1228,6 +1628,33 @@
     "date": "2026-10-15",
     "type": "independant"
    }
+  ],
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "Facturation aux tokens vidéo réels en fin de tâche.",
+   "sources": [
+    {
+     "url": "https://www.atlascloud.ai/pricing",
+     "date": "2026-10-15",
+     "type": "editeur"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "Visages réels en référence refusés selon sa propre FAQ (filtre amont).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des accès Seedance, 16/10/2026",
+      "ref": "fleet-work/seedance-acces-2026-10-16/rapport.md"
+     }
+    ]
+   }
   ]
  },
  {
@@ -1276,6 +1703,111 @@
     "url": "https://www.atlascloud.ai/it/blog/guides/best-seedance-2-5-api-providers-compared",
     "date": "2026-10-15",
     "type": "independant"
+   }
+  ],
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "Carte via Stripe, 5 $ minimum ; prestataire chinois.",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "independant",
+     "label": "relevé des règles publiées, 16/10/2026",
+     "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5 / 2.0",
+    "note": "Voie publiée « avatar virtuel » (humain photoréaliste généré, sans équivalent réel) : ingestion automatique sans revue puis appel en asset://. La page parle de Seedance 2.0 et ne dit pas que la voie vaut pour 2.5. Environ 0,27 $/s en 720p, 0,62 $/s en 1080p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "id": "piapi",
+  "name": "PiAPI",
+  "type": "revendeur",
+  "country": null,
+  "url": "https://piapi.ai",
+  "models": [
+   "Seedance 2.5 (tâche seedance-2.5-less-restriction)"
+  ],
+  "seedance": {
+   "version": "2.5",
+   "usd_480p_s": null,
+   "usd_720p_s": 0.385,
+   "usd_1080p_s": 0.88,
+   "note": "Tâche « less restriction » : visages acceptés après passage dans la Private Asset Library et revue."
+  },
+  "moderation": {
+   "real_faces": "verif_identite",
+   "public_figures": null,
+   "violence": null,
+   "notes": "Visages acceptés après dépôt dans la Private Asset Library et revue PiAPI (« wait for review before use ») ; « use only references for which you have the necessary rights and consent » ; acceptation non garantie. Rien ne dit si un visage synthétique passe la revue."
+  },
+  "refusal_billed": null,
+  "payment": [
+   "crédit prépayé"
+  ],
+  "lora_hosting": null,
+  "terms": null,
+  "reliability": null,
+  "user_feedback": null,
+  "api_vs_subscription": null,
+  "promotions": [],
+  "verdict": "tester",
+  "verdict_reason": "Une des rares voies publiées pour un visage fourni avec Seedance 2.5 ; revue manuelle, rien de testé chez nous.",
+  "offer": {
+   "billing": "paiement à l'usage",
+   "unlimited": [],
+   "notes": "E-mail + crédit.",
+   "sources": [
+    {
+     "url": null,
+     "date": "2026-10-16",
+     "type": "independant",
+     "label": "relevé des règles publiées, 16/10/2026",
+     "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+    }
+   ]
+  },
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "Tâche seedance-2.5-less-restriction : visages après Private Asset Library et revue, 0,385 $/s en 720p, 0,88 $/s en 1080p.",
+    "sources": [
+     {
+      "url": "https://piapi.ai/blogs/seedance-2-5-less-restriction",
+      "date": "2026-09-08",
+      "type": "editeur"
+     }
+    ]
+   }
+  ],
+  "sources": [
+   {
+    "url": "https://piapi.ai/blogs/seedance-2-5-less-restriction",
+    "date": "2026-09-08",
+    "type": "editeur"
+   },
+   {
+    "url": null,
+    "date": "2026-10-16",
+    "type": "independant",
+    "label": "relevé des règles publiées, 16/10/2026",
+    "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
    }
   ]
  },
@@ -1698,6 +2230,21 @@
     "url": "https://www.trustpilot.com/review/runwayml.com",
     "date": "2026-10-15",
     "type": "independant"
+   }
+  ],
+  "model_notes": [
+   {
+    "model": "Seedance 2.5",
+    "note": "La fiche Seedance 2.5 ne pose aucune règle sur les visages et son propre exemple part de la photo d'un coureur ; filtre amont probable, non documenté. 30 crédits/s en 720p, 68 en 1080p.",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
    }
   ]
  },
@@ -3851,6 +4398,21 @@
     "url": "https://www.trustpilot.com/review/firefly.adobe.com",
     "date": "2026-10-15",
     "type": "independant"
+   }
+  ],
+  "model_notes": [
+   {
+    "model": "Seedance",
+    "note": "« uploaded images and videos cannot contain real human faces » ; des personnages inventés par IA sont pris pour de vrais visages (forum Adobe, 25-26/09/2026).",
+    "sources": [
+     {
+      "url": null,
+      "date": "2026-10-16",
+      "type": "independant",
+      "label": "relevé des règles publiées, 16/10/2026",
+      "ref": "fleet-work/seedance-permissif-2026-10-16/rapport-regles.md"
+     }
+    ]
    }
   ]
  },

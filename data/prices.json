@@ -18042,5 +18042,19 @@
   "source_url": "https://replicate.com/xai/grok-imagine-video-extension",
   "verified": "page",
   "modality": "video"
+ },
+ {
+  "model_id": "bytedance-omnihuman-v2",
+  "platform": "fal",
+  "endpoint": null,
+  "unit": "per_second",
+  "price_usd_480p_s": null,
+  "price_usd_720p_s": 0.105,
+  "price_usd_1080p_s": null,
+  "price_usd_per_image": null,
+  "raw": "0,105 $/s, prix noté lors du test du 16/10/2026 ; sorties obtenues en 1280×720 et 860×1076, 24 i/s (mesure maison)",
+  "retrieved_at": "2026-10-16",
+  "source_url": null,
+  "verified": "mesure"
  }
 ]

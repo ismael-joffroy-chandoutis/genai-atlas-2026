@@ -9670,6 +9670,91 @@
   ]
  },
  {
+  "id": "bytedance-omnihuman-v2",
+  "family": "OmniHuman",
+  "variant": "OmniHuman V2",
+  "vendor": "ByteDance",
+  "country": "CN",
+  "modality": "video",
+  "released": "2026-10-16",
+  "access": {
+   "open_weights": false,
+   "license": null,
+   "api": true,
+   "consumer_app": null
+  },
+  "ranking": {
+   "aa_text_to_video": null,
+   "aa_image_to_video": null,
+   "aa_text_to_image": null,
+   "aa_image_edit": null,
+   "aa_note": "Pas encore classé au 16/10/2026."
+  },
+  "inputs": {
+   "text": null,
+   "image_refs_max": null,
+   "video_refs_max": null,
+   "video_refs_total_s": null,
+   "audio_refs_max": 1,
+   "audio_refs_total_s": null,
+   "first_frame": true,
+   "last_frame": null,
+   "keyframes_max": null,
+   "video_to_video": false,
+   "control": [],
+   "camera_control": null,
+   "input_3d": null,
+   "image_edit": null,
+   "multi_image_edit_max": null,
+   "lora_inference": null,
+   "lora_training": null,
+   "incompatible_combinations": "Part d'une image fixe : ne suit pas le mouvement d'un plan source. Audio par URL du stockage fal, data URI refusée."
+  },
+  "outputs": {
+   "max_resolution": null,
+   "min_s": null,
+   "max_s": null,
+   "fps": "24",
+   "native_audio": false,
+   "lip_sync": true,
+   "languages": null,
+   "max_images_per_call": null,
+   "text_rendering": null
+  },
+  "edit_functions": [
+   "avatar parlant à partir d'une image et d'un audio",
+   "plusieurs personnages dans le même plan"
+  ],
+  "local": {
+   "runs_on_rtx5090_32gb": false,
+   "vram_note": "Modèle fermé, accessible seulement par API."
+  },
+  "moderation": {
+   "real_faces": "inconnu",
+   "public_figures": null,
+   "notes": "Sur fal le 16/10/2026 : visages photoréalistes de synthèse acceptés, un personnage seul et trois personnages dans le même plan (mesure maison). Visage de personne réelle non testé."
+  },
+  "pros": [
+   "Visages photoréalistes de synthèse acceptés, seul et à trois (fal, 16/10/2026)",
+   "Plusieurs personnes dans le même plan",
+   "0,105 $/s sur fal"
+  ],
+  "cons": [
+   "Anime librement à partir d'une image fixe, ne suit pas un plan source",
+   "Poids non publiés",
+   "Résolution et durée maximales non relevées"
+  ],
+  "sources": [
+   {
+    "url": null,
+    "date": "2026-10-16",
+    "type": "mesure",
+    "label": "mesure maison 16/10/2026",
+    "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+   }
+  ]
+ },
+ {
   "id": "heygen-avatar-iv",
   "family": "HeyGen",
   "variant": "Avatar IV",

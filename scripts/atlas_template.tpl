@@ -130,6 +130,9 @@ const intCount = m => (m._int||{}).count || 0;
 const intList = m => { const i=m._int||{}; const L=[]; if((i.comfyui_local||[]).length) L.push("ComfyUI"); if((i.wan2gp||[]).length) L.push("Wan2GP"); (i.pinokio||[]).forEach(p=>L.push("Pinokio · "+p)); if(i.drawthings===true) L.push("Draw Things"); if(i.maestro===true) L.push("Maestro"); if(i.phosphene===true) L.push("Phosphene"); return L; };
 const intCell = m => { const L=intList(m); const api=((m._int||{}).comfyui_api||[]).length; return L.length ? `<b>${L.length}</b> <span class="var">${esc(L.map(x=>x.split(" · ")[0]).filter((x,i,a)=>a.indexOf(x)===i).join(", "))}</span>` : (api?'<span class="var">nœud API ComfyUI</span>':'<span class="no">–</span>'); };
 const best = (m, k) => (m._best || {})[k];
+const srcLi = s => `<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>`:esc(s.label||"(sans lien)")}${!s.url&&s.ref?` <span class="var">${esc(s.ref)}</span>`:""} <span class="var">${esc(s.date||"")} ${esc(s.type||"")}</span></li>`;
+const srcShort = L => (L||[]).map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">source</a> <span class="var">${esc(s.date||"")}</span>` : `<span class="var">${esc(s.label||"source sans lien")}</span>`).join(" · ");
+const offerCell = p => { const o = p._offer||{}; if(!o.billing) return n(null); const u = (o.unlimited||[]).length; return `${esc(o.billing)}${o.derived?' <span class="var">(déduit du type)</span>':""}${u?`<br><span class="chip good">illimité : ${u} lot${u>1?"s":""}</span>`:""}`; };
 let compare = new Set(); try { compare = new Set(JSON.parse(localStorage.getItem("atlas-compare") || "[]")); } catch(e) {}
 const saveCmp = () => { try { localStorage.setItem("atlas-compare", JSON.stringify([...compare])); } catch(e) {} };
 const cmpBtn = m => `<button class="cmp" data-cmp="${esc(m.id)}" aria-pressed="${compare.has(m.id)}" title="Ajouter à la comparaison">${compare.has(m.id)?"✓":"+"}</button>`;
@@ -227,6 +230,7 @@ const COLS = {
   ["Plateforme", p => `<span class="fam">${esc(p.name)}</span><br><span class="var">${esc(p.type||"")}</span>`, p => (p.name||"").toLowerCase()],
   ["Verdict", p => p.verdict ? `<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>` : n(null), p => ({fiable:0,tester:1,eviter:2}[p.verdict] ?? 3)],
   ["Pays", p => n(p.country), p => p.country||""],
+  ["Offre", offerCell, p => (p._offer||{}).billing||"~"],
   ["Seedance $/s 480p", p => money(g(p,"seedance.usd_480p_s")), p => g(p,"seedance.usd_480p_s") ?? 1e9, 1],
   ["720p", p => money(g(p,"seedance.usd_720p_s")), p => g(p,"seedance.usd_720p_s") ?? 1e9, 1],
   ["1080p", p => money(g(p,"seedance.usd_1080p_s")), p => g(p,"seedance.usd_1080p_s") ?? 1e9, 1],
@@ -253,7 +257,7 @@ function priceRows(m){
 }
 function detail(m){
   const li = a => (a&&a.length) ? "<ul>"+a.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>" : "<p class='note'>–</p>";
-  const src = (m.sources||[]).map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>`:"(sans lien)"} <span class="var">${esc(s.date||"")} ${esc(s.type||"")}</span></li>`).join("");
+  const src = (m.sources||[]).map(srcLi).join("");
   const sc = scoreList(m).map(([k,v]) => `<li>${esc(k)} : <b>${esc(v)}</b></li>`).join("");
   const L = m._local || {};
   const extra = [];
@@ -274,13 +278,16 @@ function detail(m){
     <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
 }
 function platformDetail(p){
-  const src = (p.sources||[]).map(s=>`<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>`:"(témoignage direct)"} <span class="var">${esc(s.date||"")} ${esc(s.type||"")}</span></li>`).join("");
+  const src = (p.sources||[]).map(srcLi).join("");
   const txt = v => { if (v == null) return ""; if (typeof v !== "object") return esc(v);
     if (Array.isArray(v)) return v.map(x => typeof x === "object" ? esc([x.text, x.ends ? "jusqu'au " + x.ends : "", x.source ? "" : ""].filter(Boolean).join(" · ")) + (x.source ? ` <a href="${esc(x.source)}" target="_blank" rel="noopener">source</a>` : "") : esc(x)).join("<br>");
     const parts = [v.summary, v.verdict, v.calc, v.clip && v.usd_per_clip_sub != null ? `Clip ${v.clip} : ${v.usd_per_clip_sub} $ par abonnement (${v.plan||""}), ${v.best_api ? v.best_api.usd_per_clip + " $ chez " + v.best_api.platform : "?"} en API` : null, v.breakeven || v.volume].filter(Boolean);
     return parts.length ? parts.map(esc).join("<br>") : esc(JSON.stringify(v)); };
   const row = (t,v) => (v && (typeof v !== "object" || Object.keys(v).length)) ? `<h4>${t}</h4><p>${txt(v)}</p>` : "";
-  return `<div class="det"><div>${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
+  const o = p._offer||{};
+  const offer = o.billing ? `<h4>Ce que comprend l'offre</h4><p>${esc(o.billing)}${o.derived?" (déduit du type de plateforme)":""}${o.plan_observed?"<br>"+esc(o.plan_observed):""}${(o.unlimited||[]).length?"<br><b>Illimité</b> : "+o.unlimited.map(x=>esc(x.models+" ("+x.duration+")")).join(" ; "):""}${o.unlimited_where?"<br>"+esc(o.unlimited_where):""}${o.notes?"<br>"+esc(o.notes):""}${(o.sources||[]).length?"<br>"+srcShort(o.sources):""}</p>` : "";
+  const mn = (p.model_notes||[]).length ? `<h4>Modèle par modèle sur ${esc(p.name)}</h4><ul>${p.model_notes.map(x=>`<li><b>${esc(x.model)}</b> : ${esc(x.note)} ${srcShort(x.sources)}</li>`).join("")}</ul>` : "";
+  return `${mn?`<div class="det" style="grid-template-columns:1fr"><div>${mn}</div></div>`:""}<div class="det"><div>${offer}${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
    <div>${row("Modération",[g(p,"moderation.notes"),g(p,"moderation.public_figures"),g(p,"moderation.violence")].filter(Boolean).join(" · "))}${row("Refus facturé",p.refusal_billed)}${row("Conditions",p.terms)}</div>
    <div>${row("Fiabilité",p.reliability)}${row("Retours d'usagers",p.user_feedback)}${row("Abonnement ou API",p.api_vs_subscription)}</div>
    <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
@@ -327,7 +334,7 @@ function renderModels(kind){
   let body;
   if (!DATA[kind].length) body = `<p class="note">Données en cours de collecte pour cet onglet.</p>`;
   else if (isMobile() && kind!=="platforms") body = `<div class="cards">${rows.map(m => card(m, kind)).join("")}</div>`;
-  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
+  else if (isMobile()) body = `<div class="cards">${rows.map(p => `<article class="card"><div class="top"><div><div class="name">${esc(p.name)}</div><div class="sub">${esc(p.type||"")} ${esc(p.country||"")}</div></div>${p.verdict?`<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>`:""}</div><div class="var">${esc(p.verdict_reason||"")}</div><div class="chips">${(p._offer||{}).billing?`<span class="chip">${esc(p._offer.billing)}</span>`:""}${((p._offer||{}).unlimited||[]).length?'<span class="chip good">illimité inclus</span>':""}</div><button class="more" data-open="${esc(p.id)}">${open.has(p.id)?"Masquer le détail":"Voir le détail"}</button>${open.has(p.id)?platformDetail(p):""}</article>`).join("")}</div>`;
   else body = `<div class="scroll"><table><thead><tr>${cols.map((c,i)=>`<th data-i="${i}" class="${i===sortCol?"sorted":""}">${esc(c[0])}${i===sortCol?(sortDir>0?" ↑":" ↓"):""}</th>`).join("")}</tr></thead><tbody>${
       rows.map(m => `<tr class="row" data-id="${esc(m.id)}">`+cols.map((c,i)=>`<td class="${c[4]||""} ${c[3]?"n":""}">${c[1](m)}</td>`).join("")+"</tr>"+(open.has(m.id)?`<tr class="detail"><td colspan="${cols.length}">${kind==="platforms"?platformDetail(m):detail(m)}</td></tr>`:"")).join("")}</tbody></table></div>`;
   $("#view").innerHTML = filtersHtml(kind) + body;
