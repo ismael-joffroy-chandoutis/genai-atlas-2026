@@ -1,0 +1,32 @@
+{
+  "note": "Statut des modèles et des plateformes : actif, arrêté, racheté, pas encore sorti, bêta, à vérifier. Seuls les cas appuyés sur une source datée sont listés ici. Un modèle ou une plateforme absent de ce fichier s'affiche « actif (présumé) » : aucun arrêt ni rachat relevé dans ses sources. \"sources\": \"fiche\" renvoie aux sources de la fiche du modèle, où le fait est écrit.",
+  "values": ["actif", "arrete", "rachete", "pas_sorti", "beta", "a_verifier"],
+  "models": {
+    "openai-sora-2": {"value": "arrete", "date": "2026-09-24", "note": "Application web et mobile fermées le 26/04/2026 (fermeture annoncée le 24/03/2026), API Videos coupée le 24/09/2026 sans remplacement.", "sources": [{"url": "https://developers.openai.com/api/docs/models/sora-2", "date": "2026-10-15", "type": "editeur"}, {"url": "https://engadget.com/ai/openai-is-shutting-down-its-sora-video-generation-app-211023358.html", "date": "2026-03-24", "type": "independant"}]},
+    "openai-sora-2-pro": {"value": "arrete", "date": "2026-09-24", "note": "Application fermée le 26/04/2026, API coupée le 24/09/2026.", "sources": [{"url": "https://developers.openai.com/api/docs/models/sora-2", "date": "2026-10-15", "type": "editeur"}]},
+    "kling-4-0": {"value": "actif", "date": "2026-10-15", "note": "Sorti le 15/10/2026 ; API entreprise et 4K HDR 10 bits annoncés « à venir ».", "sources": "fiche"},
+    "kling-4-0-flash": {"value": "actif", "date": "2026-09-28", "note": "Ouvert le 28/09/2026 aux abonnés Ultra annuels.", "sources": "fiche"},
+    "krea-3": {"value": "beta", "date": "2026-10-15", "note": "Bêta hébergée sortie le 15/10/2026, pas de poids téléchargeables au 16/10.", "sources": "fiche"},
+    "bytedance-omnihuman-v2": {"value": "actif", "date": "2026-10-16", "note": "Disponible sur fal le 16/10/2026 (testé).", "sources": "fiche"},
+    "vidu-q4-preview": {"value": "beta", "date": "2026-10-07", "note": "Préversion : prix, résolutions et fonctions peuvent changer.", "sources": "fiche"},
+    "minimax-fasth3-preview-v1-4-etapes": {"value": "beta", "date": "2026-08-27", "note": "Préversion.", "sources": "fiche"},
+    "sandai-magi-2-preview": {"value": "beta", "date": "2026-08-05", "note": "Préversion.", "sources": "fiche"},
+    "lynnreal-omni-32b": {"value": "beta", "date": "2026-09-13", "note": "Bêta, INT8 Standard « à venir ».", "sources": "fiche"},
+    "lynnreal-omni-flash-27b": {"value": "beta", "date": "2026-09-13", "note": "Bêta, INT8 Standard « à venir ».", "sources": "fiche"},
+    "tencent-hy-image-3-5-preview": {"value": "beta", "date": "2026-09-22", "note": "Préversion.", "sources": "fiche"},
+    "bfl-flux-3-dev": {"value": "pas_sorti", "date": "2026-10-15", "note": "Poids ouverts annoncés, aucune date au 15/10/2026.", "sources": "fiche"},
+    "alibaba-z-image-edit": {"value": "pas_sorti", "date": null, "note": "Annoncé depuis novembre 2025, marqué « to be released » sur le dépôt officiel (vérifié en août 2026).", "sources": "fiche"},
+    "cartesia-sonic-3-6": {"value": "beta", "date": "2026-08-27", "note": "Bêta.", "sources": "fiche"},
+    "google-gemini-3-1-flash-tts": {"value": "beta", "date": null, "note": "Préversion.", "sources": "fiche"},
+    "google-lyria-3-pro": {"value": "beta", "date": "2026-03-25", "note": "Préversion.", "sources": "fiche"},
+    "google-lyria-3-clip": {"value": "beta", "date": "2026-03-25", "note": "Préversion.", "sources": "fiche"},
+    "hume-octave-2": {"value": "beta", "date": null, "note": "Préversion.", "sources": "fiche"},
+    "playht": {"value": "rachete", "date": "2025-07-01", "note": "Racheté par Meta en juillet 2025 ; API fermée le 26/07/2025 selon plusieurs sources ; service, comptes et voix clonées supprimés au 31/12/2025.", "sources": "fiche"},
+    "coqui-xtts-v2": {"value": "arrete", "date": null, "note": "Société Coqui fermée ; les poids restent téléchargeables (licence non commerciale).", "sources": "fiche"},
+    "sesame-maya-miles": {"value": "a_verifier", "date": null, "note": "Bêta iOS fermée depuis octobre 2025 selon une seule source ; aucune annonce 2026 trouvée.", "sources": "fiche"},
+    "elevenlabs-turbo-v2-5": {"value": "a_verifier", "date": null, "note": "Déprécié, remplacé par Flash v2 : disponibilité restante non vérifiée.", "sources": "fiche"}
+  },
+  "platforms": {
+    "openai": {"value": "actif", "date": "2026-09-24", "note": "Images actives ; vidéo Sora arrêtée (application le 26/04/2026, API le 24/09/2026).", "sources": [{"url": "https://developers.openai.com/api/docs/models/sora-2", "date": "2026-10-15", "type": "editeur"}]}
+  }
+}

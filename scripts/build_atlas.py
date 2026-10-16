@@ -97,6 +97,21 @@ for p in platforms:
 for p in platforms:
     p["_stages"] = [s["id"] for s in stages.get("stages", []) if p["id"] in stages.get("platforms", {}).get(s["id"], [])]
 
+status = load("status.json", {"models": {}, "platforms": {}})
+def resolve_status(entry, own_sources):
+    if not entry:
+        return {"value": "actif", "presumed": True}
+    e = dict(entry)
+    if e.get("sources") == "fiche":
+        e["sources"] = own_sources or []
+        e["from_card"] = True
+    return e
+for L in (video, image, audio, threed):
+    for m in L:
+        m["_status"] = resolve_status(status.get("models", {}).get(m["id"]), m.get("sources"))
+for p in platforms:
+    p["_status"] = resolve_status(status.get("platforms", {}).get(p["id"]), p.get("sources"))
+
 data = {"stages": stages, "video": video, "image": image, "audio": audio, "threed": threed, "platforms": platforms, "rank_sources": rank.get("sources", {}), "gpu": gpu, "prices": [dict(p, atlas_id=alias.get(p.get("model_id"), p.get("model_id"))) for p in prices],
         "orphans": sorted({p.get("model_id") for p in prices} - {m["id"] for m in video + image} - set(alias)),
         "built": datetime.datetime.now().strftime("%d/%m/%Y %H:%M")}

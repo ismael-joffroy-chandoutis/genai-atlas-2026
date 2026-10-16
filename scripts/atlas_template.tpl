@@ -60,6 +60,7 @@ tr.detail td{white-space:normal;background:var(--bg)}
 .chip{font:500 11px var(--mono);padding:1px 6px;border-radius:4px;background:var(--bg);color:var(--fg);border:1px solid var(--line)}
 .chip.good{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
 .chip.bad{background:var(--bad-soft);border-color:transparent;color:var(--bad)}
+.chip.warn{background:var(--warn-soft);border-color:transparent;color:var(--warn)}
 .card .more{font:500 12px var(--body);color:var(--accent);background:none;border:0;padding:0;cursor:pointer;text-align:left}
 .choose{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:16px;align-items:start}
 .panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:10px;font-size:13px}
@@ -132,6 +133,12 @@ const intCell = m => { const L=intList(m); const api=((m._int||{}).comfyui_api||
 const best = (m, k) => (m._best || {})[k];
 const srcLi = s => `<li>${s.url?`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url)}</a>`:esc(s.label||"(sans lien)")}${!s.url&&s.ref?` <span class="var">${esc(s.ref)}</span>`:""} <span class="var">${esc(s.date||"")} ${esc(s.type||"")}</span></li>`;
 const srcShort = L => (L||[]).map(s => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">source</a> <span class="var">${esc(s.date||"")}</span>` : `<span class="var">${esc(s.label||"source sans lien")}</span>`).join(" · ");
+const ST_LAB = {actif:"actif", arrete:"arrêté", rachete:"racheté", pas_sorti:"pas encore sorti", beta:"bêta", a_verifier:"à vérifier"};
+const ST_CLS = {actif:"good", arrete:"bad", rachete:"bad", pas_sorti:"warn", beta:"warn", a_verifier:"warn"};
+const fdate = d => d ? d.split("-").reverse().join("/") : "";
+const statusCell = m => { const s = m._status||{}; if (s.presumed) return '<span class="var">actif (présumé)</span>'; return `<span class="chip ${ST_CLS[s.value]||""}">${esc(ST_LAB[s.value]||s.value)}</span>${s.date?` <span class="var">${fdate(s.date)}</span>`:""}`; };
+const statusSort = m => { const s=m._status||{}; return s.presumed ? 9 : ({arrete:0,rachete:1,pas_sorti:2,beta:3,a_verifier:4,actif:5}[s.value] ?? 8); };
+const statusBlock = m => { const s = m._status||{}; if (s.presumed) return `<h4>Statut</h4><p>actif (présumé) : aucun arrêt ni rachat relevé dans les sources de la fiche.</p>`; return `<h4>Statut</h4><p>${statusCell(m)}${s.note?"<br>"+esc(s.note):""}<br>${s.from_card?'<span class="var">source : voir les sources de la fiche</span>':srcShort(s.sources)}</p>`; };
 const offerCell = p => { const o = p._offer||{}; if(!o.billing) return n(null); const u = (o.unlimited||[]).length; return `${esc(o.billing)}${o.derived?' <span class="var">(déduit du type)</span>':""}${u?`<br><span class="chip good">illimité : ${u} lot${u>1?"s":""}</span>`:""}`; };
 let compare = new Set(); try { compare = new Set(JSON.parse(localStorage.getItem("atlas-compare") || "[]")); } catch(e) {}
 const saveCmp = () => { try { localStorage.setItem("atlas-compare", JSON.stringify([...compare])); } catch(e) {} };
@@ -140,6 +147,7 @@ const cmpBtn = m => `<button class="cmp" data-cmp="${esc(m.id)}" aria-pressed="$
 const COLS = {
  video: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
+  ["Statut", statusCell, statusSort],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
   ["Meilleur score", scoreCell, m => -(bestScore(m)||0), 1],
@@ -169,6 +177,7 @@ const COLS = {
  ],
  image: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
+  ["Statut", statusCell, statusSort],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
   ["Licence", m => n(g(m,"access.license")), m => g(m,"access.license")||""],
@@ -190,6 +199,7 @@ const COLS = {
  ],
  audio: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
+  ["Statut", statusCell, statusSort],
   ["Tâche", m => n(m.task), m => m.task||""],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
@@ -211,6 +221,7 @@ const COLS = {
  ],
  threed: [
   ["Modèle", m => `${cmpBtn(m)} ${name(m)}`, m => (m.family+" "+m.variant).toLowerCase()],
+  ["Statut", statusCell, statusSort],
   ["Tâche", m => n(m.task), m => m.task||""],
   ["Éditeur", m => `${esc(m.vendor)} <span class="var">${esc(m.country||"")}</span>`, m => m.vendor||""],
   ["Accès", acc, m => g(m,"access.open_weights") ? 0 : 1],
@@ -228,6 +239,7 @@ const COLS = {
  ],
  platforms: [
   ["Plateforme", p => `<span class="fam">${esc(p.name)}</span><br><span class="var">${esc(p.type||"")}</span>`, p => (p.name||"").toLowerCase()],
+  ["Statut", statusCell, statusSort],
   ["Verdict", p => p.verdict ? `<span class="pill v-${esc(p.verdict)}">${esc({fiable:"fiable",tester:"à tester",eviter:"à éviter"}[p.verdict]||p.verdict)}</span>` : n(null), p => ({fiable:0,tester:1,eviter:2}[p.verdict] ?? 3)],
   ["Pays", p => n(p.country), p => p.country||""],
   ["Offre", offerCell, p => (p._offer||{}).billing||"~"],
@@ -260,7 +272,7 @@ function detail(m){
   const src = (m.sources||[]).map(srcLi).join("");
   const sc = scoreList(m).map(([k,v]) => `<li>${esc(k)} : <b>${esc(v)}</b></li>`).join("");
   const L = m._local || {};
-  const extra = [];
+  const extra = [statusBlock(m)];
   if (g(m,"inputs.incompatible_combinations")) extra.push(`<h4>Ne se combine pas</h4><p>${esc(g(m,"inputs.incompatible_combinations"))}</p>`);
   if (g(m,"local.vram_note")) extra.push(`<h4>Local</h4><p>${esc(g(m,"local.vram_note"))}</p>`);
   if (L.rtx4090_note) extra.push(`<h4>RTX 4090</h4><p>${esc(L.rtx4090_note)}</p>`);
@@ -287,7 +299,8 @@ function platformDetail(p){
   const o = p._offer||{};
   const offer = o.billing ? `<h4>Ce que comprend l'offre</h4><p>${esc(o.billing)}${o.derived?" (déduit du type de plateforme)":""}${o.plan_observed?"<br>"+esc(o.plan_observed):""}${(o.unlimited||[]).length?"<br><b>Illimité</b> : "+o.unlimited.map(x=>esc(x.models+" ("+x.duration+")")).join(" ; "):""}${o.unlimited_where?"<br>"+esc(o.unlimited_where):""}${o.notes?"<br>"+esc(o.notes):""}${(o.sources||[]).length?"<br>"+srcShort(o.sources):""}</p>` : "";
   const mn = (p.model_notes||[]).length ? `<h4>Modèle par modèle sur ${esc(p.name)}</h4><ul>${p.model_notes.map(x=>`<li><b>${esc(x.model)}</b> : ${esc(x.note)} ${srcShort(x.sources)}</li>`).join("")}</ul>` : "";
-  return `${mn?`<div class="det" style="grid-template-columns:1fr"><div>${mn}</div></div>`:""}<div class="det"><div>${offer}${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
+  const stb = statusBlock(p);
+  return `${mn?`<div class="det" style="grid-template-columns:1fr"><div>${mn}</div></div>`:""}<div class="det"><div>${stb}${offer}${row("Pourquoi ce verdict",p.verdict_reason)}${row("Modèles",(p.models||[]).join(", "))}${row("Seedance",g(p,"seedance.note"))}${row("Promotions",p.promotions)}</div>
    <div>${row("Modération",[g(p,"moderation.notes"),g(p,"moderation.public_figures"),g(p,"moderation.violence")].filter(Boolean).join(" · "))}${row("Refus facturé",p.refusal_billed)}${row("Conditions",p.terms)}</div>
    <div>${row("Fiabilité",p.reliability)}${row("Retours d'usagers",p.user_feedback)}${row("Abonnement ou API",p.api_vs_subscription)}</div>
    <div><h4>Sources</h4><ul>${src||"<li>–</li>"}</ul></div></div>`;
@@ -316,6 +329,7 @@ function passes(m, kind){
 }
 function card(m, kind, reason){
   const chips = [];
+  { const st = m._status||{}; if (!st.presumed && st.value) chips.push(`<span class="chip ${ST_CLS[st.value]||""}">${esc(ST_LAB[st.value]||st.value)}${st.date?" "+fdate(st.date):""}</span>`); }
   const s = bestScore(m); if (s) chips.push(`<span class="chip">score ${s}</span>`);
   if (kind==="video"){ const mx=g(m,"outputs.max_s"); if(mx) chips.push(`<span class="chip">≤ ${mx} s</span>`); if(g(m,"outputs.native_audio")) chips.push('<span class="chip good">son</span>'); if(g(m,"inputs.first_frame")) chips.push('<span class="chip">1re img</span>'); if(g(m,"inputs.image_refs_max")) chips.push(`<span class="chip">${g(m,"inputs.image_refs_max")} réf.</span>`); const p=best(m,"price_usd_720p_s"); if(p!=null) chips.push(`<span class="chip good">${money(p)} $/s 720p</span>`); }
   if (kind==="image"){ if(g(m,"inputs.image_edit")) chips.push('<span class="chip">édition</span>'); const r=g(m,"inputs.image_refs_max"); if(r) chips.push(`<span class="chip">${r} réf.</span>`); const p=best(m,"price_usd_per_image"); if(p!=null) chips.push(`<span class="chip good">${money(p)} $/image</span>`); }
@@ -439,7 +453,7 @@ function renderChoose(){
     <section><h2>${ok.length} modèle${ok.length>1?"s":""} répond${ok.length>1?"ent":""}</h2><div class="cards" style="margin-top:10px">${ok.slice(0,60).map(m => card(m,k)).join("") || "<p class='note'>Aucun modèle ne remplit tous ces critères. Décochez un critère.</p>"}</div></section></div>`;
 }
 const CMP_ROWS = [
-  ["Éditeur", m => esc(m.vendor||"?")],["Accès", acc],["Licence", m => n(g(m,"access.license"))],["Scores", m => scoreList(m).map(([k,v])=>`${esc(k)} ${esc(v)}`).join("<br>") || n(null)],
+  ["Statut", statusCell],["Éditeur", m => esc(m.vendor||"?")],["Accès", acc],["Licence", m => n(g(m,"access.license"))],["Scores", m => scoreList(m).map(([k,v])=>`${esc(k)} ${esc(v)}`).join("<br>") || n(null)],
   ["Durée", m => g(m,"outputs.max_s")!=null?`${g(m,"outputs.min_s")??"?"}–${g(m,"outputs.max_s")} s`:n(null)],["Résolution max", m => n(g(m,"outputs.max_resolution"))],
   ["Son natif", m => b(g(m,"outputs.native_audio"))],["Lip-sync", m => b(g(m,"outputs.lip_sync"))],
   ["Images de réf.", m => n(g(m,"inputs.image_refs_max"))],["Vidéos de réf.", m => n(g(m,"inputs.video_refs_max"))],["Sons de réf.", m => n(g(m,"inputs.audio_refs_max"))],
