@@ -1129,7 +1129,7 @@
     "mac_tool": "Draw Things, mflux",
     "mac_note": "Draw Things : Qwen Image 2.1 avec LoRA depuis le 25/09/2026 ; mflux l'intègre (calcul Float16 possible). La fiche liste aussi DiffusionBee. Aucune vitesse publiée.",
     "rtx4090_24gb": true,
-    "rtx4090_note": "7B plus encodeur 8B ; Qwen ne publie pas de VRAM et propose le déchargement CPU. Le chiffre « 18,7 s en 1024² sur 4090 (SGLang) » du brouillon n'apparaît dans aucune des sources lues. Mesuré le 16/10/2026 sur RTX 4090 (BEQUIET, ComfyUI 0.41, int8) : 45,7 s par image 1024² en 50 pas, 7,8 s en Turbo 8 pas, 16,1 Go de VRAM au-dessus du repos.",
+    "rtx4090_note": "7B plus encodeur 8B ; Qwen ne publie pas de VRAM et propose le déchargement CPU. Le chiffre « 18,7 s en 1024² sur 4090 (SGLang) » n'apparaît dans aucune des sources lues. Mesuré le 16/10/2026 sur RTX 4090 (machine locale, ComfyUI 0.41, int8) : 45,7 s par image 1024² en 50 pas, 7,8 s en Turbo 8 pas, 16,1 Go de VRAM au-dessus du repos.",
     "sources": [
       {
         "url": "https://drawthings.ai/downloads/",
@@ -1162,11 +1162,11 @@
     "mac_studio_note": "128 Go = Mac Studio M5 Max (pas d'Ultra en 128 Go), même verdict que la colonne M5 Max 128 Go. Déduit : tourne sur M5 Max 128 Go, l'Ultra a plus de mémoire et le même logiciel Metal ; aucune mesure publiée sur Ultra.",
     "bench_2026_10_16": {
       "title": "Qwen-Image 2.1 contre FLUX 3 Image Klein",
-      "setup": "ComfyUI 0.41, int8 convrot pour les deux modèles, temps serveur ComfyUI par image. « Froid » = premier rendu après déchargement des modèles (cache disque Windows encore chaud) ; « chaud » = médiane des rendus suivants ; VRAM = pic pendant la série moins le niveau de repos ; RAM = pic de mémoire privée de ComfyUI. Sur BEQUIET, PyTorch n'est pas en cu130 : noyaux int8 en repli, temps 4090 pessimistes pour les deux modèles. Échantillon : 10 catégories, 2 graines, légende détaillée identique envoyée aux deux modèles.",
+      "setup": "ComfyUI 0.41, int8 convrot pour les deux modèles, temps serveur ComfyUI par image. « Froid » = premier rendu après déchargement des modèles (cache disque Windows encore chaud) ; « chaud » = médiane des rendus suivants ; VRAM = pic pendant la série moins le niveau de repos ; RAM = pic de mémoire privée de ComfyUI. Sur la machine locale à RTX 4090, PyTorch n'est pas en cu130 : noyaux int8 en repli, temps 4090 pessimistes pour les deux modèles. Échantillon : 10 catégories, 2 graines, légende détaillée identique envoyée aux deux modèles.",
       "runs": [
         {
           "config": "Qwen 2.1 Turbo, 8 pas",
-          "gpu": "RTX 5090 32 Go (TORRENT)",
+          "gpu": "RTX 5090 32 Go (machine locale)",
           "cold_s": 8.3,
           "warm_1024_s": 4.9,
           "warm_1344x768_s": 4.8,
@@ -1176,7 +1176,7 @@
         },
         {
           "config": "Qwen 2.1, 50 pas",
-          "gpu": "RTX 5090 32 Go (TORRENT)",
+          "gpu": "RTX 5090 32 Go (machine locale)",
           "cold_s": 32.3,
           "warm_1024_s": 29.2,
           "warm_1344x768_s": 28.5,
@@ -1186,7 +1186,7 @@
         },
         {
           "config": "Qwen 2.1 Turbo, 8 pas",
-          "gpu": "RTX 4090 24 Go (BEQUIET)",
+          "gpu": "RTX 4090 24 Go (machine locale)",
           "cold_s": 16.6,
           "warm_1024_s": 7.8,
           "warm_1344x768_s": 8.0,
@@ -1196,7 +1196,7 @@
         },
         {
           "config": "Qwen 2.1, 50 pas",
-          "gpu": "RTX 4090 24 Go (BEQUIET)",
+          "gpu": "RTX 4090 24 Go (machine locale)",
           "cold_s": 52.6,
           "warm_1024_s": 45.7,
           "warm_1344x768_s": 44.5,
@@ -1312,8 +1312,7 @@
           "url": null,
           "date": "2026-10-16",
           "type": "mesure",
-          "label": "mesure maison 16/10/2026",
-          "ref": "fleet-work/klein-vs-qwen21-2026-10-16/ (perf_summary.json, scores_claude.csv, klein-vs-qwen21.html)"
+          "label": "mesure maison 16/10/2026"
         }
       ]
     }
@@ -1733,7 +1732,7 @@
   },
   "bfl-flux-3-image-klein": {
     "rtx4090_24gb": true,
-    "rtx4090_note": "Mesuré le 16/10/2026 sur RTX 4090 (BEQUIET, ComfyUI 0.41.0, distillé INT8 + encodeur INT8, 1024², 15 pas) : 9,70 s par image à chaud, 14,76 s à froid, pic 11,2 Go de VRAM. Un test public sur 3090 donne environ 13 s, contre environ 82 s pour Qwen-Image 2.1. Banc du 16/10/2026 (16 pas, ComfyUI 0.41) : 10,9 s à chaud, 13,4 s à froid, 11,5 Go de VRAM au-dessus du repos.",
+    "rtx4090_note": "Mesuré le 16/10/2026 sur RTX 4090 (machine locale, ComfyUI 0.41.0, distillé INT8 + encodeur INT8, 1024², 15 pas) : 9,70 s par image à chaud, 14,76 s à froid, pic 11,2 Go de VRAM. Un test public sur 3090 donne environ 13 s, contre environ 82 s pour Qwen-Image 2.1. Banc du 16/10/2026 (16 pas, ComfyUI 0.41) : 10,9 s à chaud, 13,4 s à froid, 11,5 Go de VRAM au-dessus du repos.",
     "mac_m5max_128gb": true,
     "mac_tool": "MLX communautaire (vanch007/FLUX.3-Image-Klein-mlx)",
     "mac_note": "Déduit : 5,6B, versions MLX 4 et 8 bits publiées par la communauté le jour de la sortie ; non testé.",
@@ -1753,11 +1752,11 @@
     ],
     "bench_2026_10_16": {
       "title": "FLUX 3 Image Klein contre Qwen-Image 2.1",
-      "setup": "ComfyUI 0.41, int8 convrot pour les deux modèles, temps serveur ComfyUI par image. « Froid » = premier rendu après déchargement des modèles (cache disque Windows encore chaud) ; « chaud » = médiane des rendus suivants ; VRAM = pic pendant la série moins le niveau de repos ; RAM = pic de mémoire privée de ComfyUI. Sur BEQUIET, PyTorch n'est pas en cu130 : noyaux int8 en repli, temps 4090 pessimistes pour les deux modèles. Échantillon : 10 catégories, 2 graines, légende détaillée identique envoyée aux deux modèles.",
+      "setup": "ComfyUI 0.41, int8 convrot pour les deux modèles, temps serveur ComfyUI par image. « Froid » = premier rendu après déchargement des modèles (cache disque Windows encore chaud) ; « chaud » = médiane des rendus suivants ; VRAM = pic pendant la série moins le niveau de repos ; RAM = pic de mémoire privée de ComfyUI. Sur la machine locale à RTX 4090, PyTorch n'est pas en cu130 : noyaux int8 en repli, temps 4090 pessimistes pour les deux modèles. Échantillon : 10 catégories, 2 graines, légende détaillée identique envoyée aux deux modèles.",
       "runs": [
         {
           "config": "Klein distillé, 16 pas",
-          "gpu": "RTX 5090 32 Go (TORRENT)",
+          "gpu": "RTX 5090 32 Go (machine locale)",
           "cold_s": 8.5,
           "warm_1024_s": 6.3,
           "warm_1344x768_s": 6.2,
@@ -1767,7 +1766,7 @@
         },
         {
           "config": "Klein Base, 50 pas, CFG 3,5",
-          "gpu": "RTX 5090 32 Go (TORRENT)",
+          "gpu": "RTX 5090 32 Go (machine locale)",
           "cold_s": 37.9,
           "warm_1024_s": 36.1,
           "warm_1344x768_s": 35.6,
@@ -1777,7 +1776,7 @@
         },
         {
           "config": "Klein distillé, 16 pas",
-          "gpu": "RTX 4090 24 Go (BEQUIET)",
+          "gpu": "RTX 4090 24 Go (machine locale)",
           "cold_s": 13.4,
           "warm_1024_s": 10.9,
           "warm_1344x768_s": 10.5,
@@ -1787,7 +1786,7 @@
         },
         {
           "config": "Klein Base, 50 pas, CFG 3,5",
-          "gpu": "RTX 4090 24 Go (BEQUIET)",
+          "gpu": "RTX 4090 24 Go (machine locale)",
           "cold_s": 61.1,
           "warm_1024_s": 58.3,
           "warm_1344x768_s": 57.3,
@@ -1903,8 +1902,7 @@
           "url": null,
           "date": "2026-10-16",
           "type": "mesure",
-          "label": "mesure maison 16/10/2026",
-          "ref": "fleet-work/klein-vs-qwen21-2026-10-16/ (perf_summary.json, scores_claude.csv, klein-vs-qwen21.html)"
+          "label": "mesure maison 16/10/2026"
         }
       ]
     }

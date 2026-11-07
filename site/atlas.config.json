@@ -1,0 +1,6442 @@
+{
+ "title": "Atlas génératif 2026",
+ "lang": "fr",
+ "description": "Modèles de génération vidéo, image, audio et 3D comparés variante par variante : entrées, durées, références, prix par plateforme, exécution en local.",
+ "dataDatePath": "meta.data_date",
+ "dataVersionPath": "meta.version",
+ "staleAfterDays": 14,
+ "staleNote": "Les prix et les modèles changent chaque semaine.",
+ "defaultCollection": "video",
+ "dicts": {
+  "stage": {
+   "ecriture": "Écriture",
+   "storyboard": "Storyboard et animatique",
+   "tournage": "Tournage / génération vidéo",
+   "effets": "Effets et retouche de visage",
+   "montage": "Montage",
+   "etalonnage": "Étalonnage",
+   "son": "Son et voix",
+   "agrandissement": "Agrandissement"
+  },
+  "status": {
+   "actif": "Actif",
+   "arrete": "Arrêté",
+   "rachete": "Racheté",
+   "pas_sorti": "Pas encore sorti",
+   "beta": "Bêta",
+   "a_verifier": "À vérifier"
+  },
+  "country": {
+   "US": "États-Unis",
+   "CN": "Chine",
+   "DE": "Allemagne",
+   "IL": "Israël",
+   "AU": "Australie",
+   "SG": "Singapour",
+   "GB": "Royaume-Uni",
+   "FR": "France",
+   "KR": "Corée du Sud",
+   "CH": "Suisse",
+   "ES": "Espagne",
+   "HK/CN": "Hong Kong, Chine",
+   "SG/CN": "Singapour, Chine",
+   "SG/HK": "Singapour, Hong Kong"
+  },
+  "faces": {
+   "inconnu": "Inconnu",
+   "autorise": "Autorisés",
+   "verif_identite": "Vérification d'identité",
+   "bloque": "Bloqués",
+   "filtre partiel": "Filtre partiel",
+   "accepte": "Acceptés",
+   "refuse": "Refusés"
+  },
+  "task": {
+   "tts": "Synthèse vocale",
+   "stt": "Transcription",
+   "music": "Musique",
+   "audio_from_video": "Son à partir de la vidéo",
+   "realtime_dialogue": "Dialogue en temps réel",
+   "voice_clone": "Clonage de voix",
+   "dubbing": "Doublage",
+   "speech_to_speech": "Voix vers voix",
+   "sfx": "Bruitages",
+   "lip_sync": "Synchronisation labiale",
+   "image_to_3d": "Image vers 3D",
+   "scene_reconstruction": "Reconstruction de scène",
+   "depth_and_camera": "Profondeur et caméra",
+   "image_to_world": "Image vers monde",
+   "rigging_animation": "Rigging et animation",
+   "texturing": "Texturage",
+   "multiview_to_3d": "Vues multiples vers 3D",
+   "text_to_3d": "Texte vers 3D",
+   "part_segmentation": "Segmentation en parties"
+  },
+  "quality": {
+   "bonne": "Bonne",
+   "moyenne": "Moyenne",
+   "faible": "Faible",
+   "inconnu": "Inconnue"
+  },
+  "consent": {
+   "inconnu": "Inconnu",
+   "aucun": "Aucun",
+   "verification_identite": "Vérification d'identité",
+   "captcha_vocale": "Captcha vocal"
+  },
+  "voix": {
+   "inconnu": "Inconnu",
+   "bloque": "Bloquées"
+  },
+  "blender": {
+   "import_direct": "Import direct",
+   "addon": "Module complémentaire",
+   "none": "Aucun"
+  },
+  "ptype": {
+   "editeur": "Éditeur",
+   "agregateur": "Agrégateur",
+   "abonnement": "Abonnement",
+   "editeur (abonnement)": "Éditeur, abonnement",
+   "revendeur": "Revendeur",
+   "gpu-cloud": "Location de GPU",
+   "inference": "Inférence",
+   "clone": "Clone"
+  },
+  "verdict": {
+   "fiable": "Fiable",
+   "tester": "À tester",
+   "eviter": "À éviter"
+  },
+  "verified": {
+   "api_live": "API en direct",
+   "page": "Page publique",
+   "tiers": "Source tierce",
+   "mesure": "Mesure"
+  },
+  "unit": {
+   "per_second": "À la seconde",
+   "per_image": "À l'image",
+   "per_token": "Au jeton",
+   "subscription": "Abonnement",
+   "credits": "Crédits",
+   "1k_chars": "Pour 1 000 caractères",
+   "min": "À la minute",
+   "tokens": "Au jeton",
+   "track": "Au morceau",
+   "voix": "À la voix",
+   "abonnement": "Abonnement",
+   "per_generation": "À la génération",
+   "per_unit": "À l'unité",
+   "per_request": "À la requête"
+  },
+  "modality": {
+   "video": "Vidéo",
+   "image": "Image"
+  },
+  "tier": {
+   "machine-ondemand": "Machine à la demande",
+   "serverless": "Sans serveur",
+   "secure": "Cloud sécurisé",
+   "community": "Cloud communautaire",
+   "marketplace-min": "Place de marché, minimum",
+   "marketplace-median": "Place de marché, médiane",
+   "dedicated-monthly": "Dédié au mois",
+   "cloud-pc": "PC dans le cloud"
+  },
+  "provider": {
+   "runpod": "RunPod",
+   "vast": "Vast.ai",
+   "modal": "Modal",
+   "ovhcloud": "OVHcloud",
+   "verda": "Verda",
+   "hyperstack": "Hyperstack",
+   "scaleway": "Scaleway",
+   "lambda": "Lambda",
+   "digitalocean": "DigitalOcean",
+   "nebius": "Nebius",
+   "hetzner": "Hetzner",
+   "paperspace": "Paperspace",
+   "vultr": "Vultr",
+   "shadow": "Shadow",
+   "tensordock": "TensorDock"
+  },
+  "rankcat": {
+   "aa_t2v_audio": "AA, texte vers vidéo avec son",
+   "aa_t2v_noaudio": "AA, texte vers vidéo sans son",
+   "aa_i2v_audio": "AA, image vers vidéo avec son",
+   "aa_i2v_noaudio": "AA, image vers vidéo sans son",
+   "aa_video_edit_audio": "AA, édition vidéo avec son",
+   "aa_video_edit_noaudio": "AA, édition vidéo sans son",
+   "aa_t2i": "AA, texte vers image",
+   "aa_image_edit": "AA, édition d'image",
+   "arena_t2i": "Arena, texte vers image",
+   "arena_image_edit": "Arena, édition d'image",
+   "arena_multi_image_edit": "Arena, édition multi-images",
+   "arena_t2v": "Arena, texte vers vidéo",
+   "arena_i2v": "Arena, image vers vidéo",
+   "arena_video_edit": "Arena, édition vidéo"
+  },
+  "source_type": {
+   "editeur": "éditeur",
+   "independant": "indépendant",
+   "mesure": "mesuré"
+  }
+ },
+ "tones": {
+  "status": {
+   "arrete": "warn",
+   "rachete": "warn",
+   "pas_sorti": "warn",
+   "a_verifier": "warn",
+   "beta": ""
+  },
+  "verdict": {
+   "fiable": "good",
+   "eviter": "warn"
+  }
+ },
+ "fieldLabels": {
+  "mac_m5max_128gb": "MacBook Pro M5 Max 128 Go",
+  "mac_m5pro_64gb": "MacBook Pro M5 Pro 64 Go",
+  "mac_studio_128gb": "Mac Studio M5 Max 128 Go",
+  "mac_studio_256gb": "Mac Studio M5 Ultra 256 Go",
+  "mac_studio_512gb": "Mac Studio M5 Ultra 512 Go",
+  "title": "Titre",
+  "setup": "Dispositif",
+  "runs": "Mesures",
+  "edit": "Édition",
+  "files": "Fichiers",
+  "quality": "Qualité",
+  "categories": "Catégories",
+  "use": "Usage",
+  "sources": "Sources",
+  "date": "Date",
+  "note": "Note",
+  "notes": "Notes",
+  "value": "Valeur",
+  "model": "Modèle",
+  "model_id": "Identifiant du modèle",
+  "duration": "Durée",
+  "models": "Modèles",
+  "machine": "Machine",
+  "text": "Texte",
+  "task": "Tâche",
+  "url": "Lien",
+  "type": "Type",
+  "plan": "Offre",
+  "calc": "Calcul",
+  "verdict": "Verdict",
+  "clip": "Clip de référence",
+  "platform": "Plateforme",
+  "source": "Source",
+  "usd_per_clip": "Prix du clip",
+  "name": "Nom",
+  "label": "Libellé",
+  "ref": "Référence"
+ },
+ "about": [
+  {
+   "h": "Le classement",
+   "p": [
+    "Le premier écran classe les fiches sur un critère à la fois, à partir des scores et des prix déjà dans les données. Une fiche sans valeur n'est jamais comptée à 0 : elle reste à part, sous le classement.",
+    "Qualité et prix n'utilise aucune formule : ne figurent que les modèles qu'aucun autre ne bat à la fois sur le prix et sur le score.",
+    "Le rang est compté parmi les fiches de cet atlas. Le rang chez la source, qui compte aussi les variantes sans fiche, est au survol du numéro.",
+    "Les modèles arrêtés sortent du classement et restent consultables."
+   ]
+  },
+  {
+   "h": "Comment le lire",
+   "p": [
+    "« ? » veut dire que l'information n'est documentée nulle part où nous avons cherché. Rien n'est deviné.",
+    "Chaque source est marquée éditeur (annoncé par l'éditeur), indépendant (tiers, article, classement) ou mesuré (mesuré par nous ou publié comme mesure).",
+    "Les classements sont les scores Elo des arènes vidéo et image d'Artificial Analysis lus le 15 octobre 2026. À environ ±17 points près, deux modèles sont à égalité statistique. Chaque catégorie a sa propre échelle : deux catégories ne se comparent pas.",
+    "Les prix les plus bas ne retiennent que les prix à l'usage. Les prix d'abonnement restent dans le détail de chaque modèle."
+   ]
+  },
+  {
+   "h": "Corrections",
+   "p": [
+    "Les corrections sont bienvenues en <a href=\"https://github.com/ismael-joffroy-chandoutis/genai-atlas-2026/issues\" target=\"_blank\" rel=\"noopener\">issue</a>, avec une source datée."
+   ]
+  },
+  {
+   "h": "Licence",
+   "p": [
+    "Données et textes : <a href=\"https://github.com/ismael-joffroy-chandoutis/genai-atlas-2026/blob/main/LICENSE\" target=\"_blank\" rel=\"noopener\">CC BY-SA 4.0</a>. Code : <a href=\"https://github.com/ismael-joffroy-chandoutis/genai-atlas-2026/blob/main/LICENSE-CODE\" target=\"_blank\" rel=\"noopener\">MIT</a>. Données brutes sur <a href=\"https://github.com/ismael-joffroy-chandoutis/genai-atlas-2026\" target=\"_blank\" rel=\"noopener\">GitHub</a>.",
+    "Par <a href=\"https://ismaeljoffroychandoutis.com\" target=\"_blank\" rel=\"noopener\">Ismaël Joffroy Chandoutis</a>."
+   ]
+  }
+ ],
+ "collections": [
+  {
+   "id": "video",
+   "label": "Vidéo",
+   "noun": "modèle vidéo",
+   "nounPlural": "modèles vidéo",
+   "path": "collections.video",
+   "derived": "derived.video",
+   "idKey": "id",
+   "title": [
+    "variant"
+   ],
+   "titlePrefix": "family",
+   "subtitle": [
+    "vendor",
+    "family"
+   ],
+   "nameLabel": "Modèle",
+   "checkedPath": "_.checked",
+   "joins": [
+    {
+     "as": "local",
+     "from": "annexes.local_runs"
+    },
+    {
+     "as": "scores",
+     "from": "annexes.rankings.scores"
+    },
+    {
+     "as": "integ",
+     "from": "annexes.integrations.by_id"
+    },
+    {
+     "as": "prices",
+     "from": "collections.prices",
+     "key": "model_id",
+     "alias": "annexes.aliases",
+     "many": true
+    }
+   ],
+   "tags": [
+    {
+     "path": "_.status.value",
+     "dict": "status",
+     "hideIf": [
+      "actif"
+     ],
+     "datePath": "_.status.date"
+    },
+    {
+     "path": "access.open_weights",
+     "when": true,
+     "label": "Poids ouverts",
+     "tone": "good"
+    }
+   ],
+   "defaultSort": "i2va",
+   "sort": [
+    {
+     "id": "i2va",
+     "label": "Elo image vers vidéo, son",
+     "path": "_j.scores.aa_i2v_audio.elo",
+     "dir": "desc"
+    },
+    {
+     "id": "i2v",
+     "label": "Elo image vers vidéo, sans son",
+     "path": "_j.scores.aa_i2v_noaudio.elo",
+     "dir": "desc"
+    },
+    {
+     "id": "t2v",
+     "label": "Elo texte vers vidéo",
+     "path": "_j.scores.aa_t2v_noaudio.elo",
+     "dir": "desc"
+    },
+    {
+     "id": "p720",
+     "label": "Prix 720p le plus bas",
+     "path": "_.best.price_usd_720p_s",
+     "dir": "asc"
+    },
+    {
+     "id": "dur",
+     "label": "Durée maximale",
+     "path": "outputs.max_s",
+     "dir": "desc"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "dir": "desc"
+    },
+    {
+     "id": "nom",
+     "label": "Nom",
+     "path": "variant",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Accès",
+     "fmt": "flags",
+     "w": "4.25rem",
+     "pri": 3,
+     "items": [
+      {
+       "path": "access.open_weights",
+       "icon": "open",
+       "label": "Poids ouverts"
+      },
+      {
+       "path": "access.api",
+       "icon": "cloud",
+       "label": "API"
+      },
+      {
+       "path": "access.consumer_app",
+       "icon": "window",
+       "label": "Application"
+      }
+     ]
+    },
+    {
+     "label": "Accepte",
+     "fmt": "badges",
+     "pri": 2,
+     "w": "minmax(9rem,1.35fr)",
+     "items": [
+      {
+       "path": "inputs.image_refs_max",
+       "label": "img",
+       "count": true
+      },
+      {
+       "path": "inputs.video_refs_max",
+       "label": "vid",
+       "count": true
+      },
+      {
+       "path": "inputs.audio_refs_max",
+       "label": "son",
+       "count": true
+      },
+      {
+       "path": "inputs.first_frame",
+       "label": "1re image"
+      },
+      {
+       "path": "inputs.last_frame",
+       "label": "dernière"
+      },
+      {
+       "path": "inputs.lora_inference",
+       "label": "LoRA"
+      }
+     ]
+    },
+    {
+     "label": "Durée",
+     "path": "outputs.max_s",
+     "fmt": "num",
+     "unit": "s",
+     "d": 0,
+     "align": "r",
+     "w": "3rem",
+     "sort": "dur",
+     "pri": 2
+    },
+    {
+     "label": "Son",
+     "fmt": "flags",
+     "w": "2.25rem",
+     "pri": 3,
+     "items": [
+      {
+       "path": "outputs.native_audio",
+       "icon": "audio",
+       "label": "Son natif"
+      }
+     ]
+    },
+    {
+     "label": "En local",
+     "fmt": "badges",
+     "pri": 3,
+     "w": "minmax(5rem,.7fr)",
+     "items": [
+      {
+       "path": "local.runs_on_rtx5090_32gb",
+       "label": "5090"
+      },
+      {
+       "path": "_j.local.rtx4090_24gb",
+       "label": "4090"
+      },
+      {
+       "path": "_j.local.mac_m5max_128gb",
+       "label": "Mac"
+      }
+     ]
+    },
+    {
+     "label": "$/s 720p",
+     "path": "_.best.price_usd_720p_s",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.5rem",
+     "sort": "p720",
+     "phone": true,
+     "short": "$/s 720p",
+     "pri": 2
+    },
+    {
+     "label": "Elo, sans son",
+     "path": "_j.scores.aa_i2v_noaudio.elo",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "5.5rem",
+     "sort": "i2v",
+     "pri": 3
+    },
+    {
+     "label": "Elo, son",
+     "path": "_j.scores.aa_i2v_audio.elo",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4rem",
+     "sort": "i2va",
+     "phone": true,
+     "short": "Elo, son"
+    }
+   ],
+   "facets": [
+    {
+     "id": "acces",
+     "label": "Accès",
+     "type": "checks",
+     "items": [
+      {
+       "id": "ouverts",
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "icon": "open"
+      },
+      {
+       "id": "api",
+       "label": "API",
+       "path": "access.api",
+       "icon": "cloud"
+      },
+      {
+       "id": "app",
+       "label": "Application",
+       "path": "access.consumer_app",
+       "icon": "window"
+      }
+     ],
+     "icon": "cloud"
+    },
+    {
+     "id": "entrees",
+     "label": "Accepte en entrée",
+     "type": "checks",
+     "items": [
+      {
+       "id": "img",
+       "label": "Images de référence",
+       "path": "inputs.image_refs_max"
+      },
+      {
+       "id": "vid",
+       "label": "Vidéos de référence",
+       "path": "inputs.video_refs_max"
+      },
+      {
+       "id": "son",
+       "label": "Sons de référence",
+       "path": "inputs.audio_refs_max"
+      },
+      {
+       "id": "first",
+       "label": "Première image",
+       "path": "inputs.first_frame"
+      },
+      {
+       "id": "last",
+       "label": "Dernière image",
+       "path": "inputs.last_frame"
+      },
+      {
+       "id": "v2v",
+       "label": "Vidéo vers vidéo",
+       "path": "inputs.video_to_video"
+      },
+      {
+       "id": "cam",
+       "label": "Contrôle de caméra",
+       "path": "inputs.camera_control"
+      },
+      {
+       "id": "3d",
+       "label": "3D",
+       "path": "inputs.input_3d"
+      },
+      {
+       "id": "lora",
+       "label": "LoRA",
+       "path": "inputs.lora_inference"
+      },
+      {
+       "id": "lorat",
+       "label": "Entraînement de LoRA",
+       "path": "inputs.lora_training"
+      }
+     ],
+     "icon": "input"
+    },
+    {
+     "id": "sorties",
+     "label": "Produit",
+     "type": "checks",
+     "items": [
+      {
+       "id": "son",
+       "label": "Son natif",
+       "path": "outputs.native_audio"
+      },
+      {
+       "id": "lip",
+       "label": "Synchronisation labiale",
+       "path": "outputs.lip_sync"
+      }
+     ],
+     "icon": "output"
+    },
+    {
+     "id": "duree",
+     "label": "Durée maximale",
+     "type": "threshold",
+     "path": "outputs.max_s",
+     "steps": [
+      10,
+      15,
+      30,
+      60
+     ],
+     "unit": "s",
+     "icon": "clock"
+    },
+    {
+     "id": "etape",
+     "label": "Étape de production",
+     "type": "enum",
+     "path": "_.stages",
+     "dict": "stage",
+     "limit": 9,
+     "icon": "stage"
+    },
+    {
+     "id": "local",
+     "label": "Tourne en local",
+     "type": "checks",
+     "items": [
+      {
+       "id": "r5090",
+       "label": "RTX 5090",
+       "path": "local.runs_on_rtx5090_32gb"
+      },
+      {
+       "id": "r4090",
+       "label": "RTX 4090",
+       "path": "_j.local.rtx4090_24gb"
+      },
+      {
+       "id": "m128",
+       "label": "MacBook Pro 128 Go",
+       "path": "_j.local.mac_m5max_128gb"
+      },
+      {
+       "id": "m64",
+       "label": "MacBook Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb"
+      },
+      {
+       "id": "s128",
+       "label": "Mac Studio 128 Go",
+       "path": "_j.local.mac_studio_128gb"
+      },
+      {
+       "id": "s256",
+       "label": "Mac Studio 256 Go",
+       "path": "_j.local.mac_studio_256gb"
+      },
+      {
+       "id": "s512",
+       "label": "Mac Studio 512 Go",
+       "path": "_j.local.mac_studio_512gb"
+      }
+     ],
+     "icon": "laptop"
+    },
+    {
+     "id": "outils",
+     "label": "Intégré à",
+     "type": "checks",
+     "items": [
+      {
+       "id": "comfy",
+       "label": "ComfyUI",
+       "path": "_j.integ.comfyui_local"
+      },
+      {
+       "id": "wan",
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp"
+      },
+      {
+       "id": "pinokio",
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio"
+      },
+      {
+       "id": "dt",
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings"
+      },
+      {
+       "id": "maestro",
+       "label": "Maestro",
+       "path": "_j.integ.maestro"
+      }
+     ],
+     "icon": "tools"
+    },
+    {
+     "id": "visages",
+     "label": "Visages réels",
+     "type": "enum",
+     "path": "moderation.real_faces",
+     "dict": "faces",
+     "icon": "face"
+    },
+    {
+     "id": "statut",
+     "label": "Statut",
+     "type": "enum",
+     "path": "_.status.value",
+     "dict": "status",
+     "icon": "status"
+    },
+    {
+     "id": "pays",
+     "label": "Pays",
+     "type": "enum",
+     "path": "country",
+     "dict": "country",
+     "limit": 6,
+     "icon": "globe"
+    },
+    {
+     "id": "editeur",
+     "label": "Éditeur",
+     "type": "enum",
+     "path": "vendor",
+     "limit": 8,
+     "icon": "person"
+    }
+   ],
+   "axes": [
+    {
+     "id": "p720",
+     "label": "Prix 720p ($/s)",
+     "path": "_.best.price_usd_720p_s",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    },
+    {
+     "id": "p1080",
+     "label": "Prix 1080p ($/s)",
+     "path": "_.best.price_usd_1080p_s",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    },
+    {
+     "id": "i2va",
+     "label": "Elo image vers vidéo avec son",
+     "path": "_j.scores.aa_i2v_audio.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "i2v",
+     "label": "Elo image vers vidéo sans son",
+     "path": "_j.scores.aa_i2v_noaudio.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "t2v",
+     "label": "Elo texte vers vidéo sans son",
+     "path": "_j.scores.aa_t2v_noaudio.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "t2va",
+     "label": "Elo texte vers vidéo avec son",
+     "path": "_j.scores.aa_t2v_audio.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "edit",
+     "label": "Elo édition vidéo",
+     "path": "_j.scores.aa_video_edit_noaudio.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "dur",
+     "label": "Durée maximale (s)",
+     "path": "outputs.max_s",
+     "scale": "linear"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "scale": "date"
+    },
+    {
+     "id": "img",
+     "label": "Images de référence, maximum",
+     "path": "inputs.image_refs_max",
+     "scale": "linear"
+    }
+   ],
+   "map": {
+    "x": "p720",
+    "y": "i2va",
+    "label": "variant",
+    "fill": {
+     "path": "access.open_weights",
+     "on": "Poids ouverts",
+     "off": "Fermé"
+    }
+   },
+   "keys": [
+    {
+     "label": "Durée max",
+     "path": "outputs.max_s",
+     "fmt": "num",
+     "unit": "s",
+     "d": 0
+    },
+    {
+     "label": "Prix 720p, $/s",
+     "path": "_.best.price_usd_720p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "Prix 1080p, $/s",
+     "path": "_.best.price_usd_1080p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "Elo image vers vidéo, son",
+     "path": "_j.scores.aa_i2v_audio.elo",
+     "fmt": "num",
+     "d": 0
+    }
+   ],
+   "sections": [
+    {
+     "title": "En bref",
+     "fields": [
+      {
+       "label": "Points forts",
+       "path": "pros",
+       "fmt": "bullets",
+       "noLabel": false
+      },
+      {
+       "label": "Limites",
+       "path": "cons",
+       "fmt": "bullets"
+      }
+     ]
+    },
+    {
+     "title": "Entrées",
+     "fields": [
+      {
+       "label": "Texte",
+       "path": "inputs.text",
+       "fmt": "bool"
+      },
+      {
+       "label": "Images de référence",
+       "path": "inputs.image_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Vidéos de référence",
+       "path": "inputs.video_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Durée totale des vidéos",
+       "path": "inputs.video_refs_total_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Sons de référence",
+       "path": "inputs.audio_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Durée totale des sons",
+       "path": "inputs.audio_refs_total_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Première image",
+       "path": "inputs.first_frame",
+       "fmt": "bool"
+      },
+      {
+       "label": "Dernière image",
+       "path": "inputs.last_frame",
+       "fmt": "bool"
+      },
+      {
+       "label": "Images-clés",
+       "path": "inputs.keyframes_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Vidéo vers vidéo",
+       "path": "inputs.video_to_video",
+       "fmt": "bool"
+      },
+      {
+       "label": "Contrôles",
+       "path": "inputs.control",
+       "fmt": "list"
+      },
+      {
+       "label": "Contrôle de caméra",
+       "path": "inputs.camera_control",
+       "fmt": "bool"
+      },
+      {
+       "label": "3D",
+       "path": "inputs.input_3d",
+       "fmt": "bool"
+      },
+      {
+       "label": "Édition d'image",
+       "path": "inputs.image_edit",
+       "fmt": "bool"
+      },
+      {
+       "label": "Édition multi-images",
+       "path": "inputs.multi_image_edit_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "LoRA",
+       "path": "inputs.lora_inference",
+       "fmt": "bool"
+      },
+      {
+       "label": "Entraînement de LoRA",
+       "path": "inputs.lora_training",
+       "fmt": "bool"
+      },
+      {
+       "label": "Combinaisons incompatibles",
+       "path": "inputs.incompatible_combinations"
+      }
+     ]
+    },
+    {
+     "title": "Sorties",
+     "fields": [
+      {
+       "label": "Résolution",
+       "path": "outputs.max_resolution"
+      },
+      {
+       "label": "Durée minimale",
+       "path": "outputs.min_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Durée maximale",
+       "path": "outputs.max_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Images par seconde",
+       "path": "outputs.fps"
+      },
+      {
+       "label": "Son natif",
+       "path": "outputs.native_audio",
+       "fmt": "bool"
+      },
+      {
+       "label": "Synchronisation labiale",
+       "path": "outputs.lip_sync",
+       "fmt": "bool"
+      },
+      {
+       "label": "Langues",
+       "path": "outputs.languages"
+      },
+      {
+       "label": "Images par appel",
+       "path": "outputs.max_images_per_call",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Rendu du texte",
+       "path": "outputs.text_rendering"
+      }
+     ]
+    },
+    {
+     "title": "Fonctions d'édition",
+     "fields": [
+      {
+       "label": "Fonctions",
+       "path": "edit_functions",
+       "fmt": "list"
+      }
+     ]
+    },
+    {
+     "title": "Classements",
+     "fields": [
+      {
+       "label": "Scores",
+       "path": "_j.scores",
+       "fmt": "dicttable",
+       "keyDict": "rankcat",
+       "cols": [
+        {
+         "label": "Classement",
+         "path": "_k"
+        },
+        {
+         "label": "Elo",
+         "path": "elo",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "Rang",
+         "path": "rank",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "±",
+         "path": "ci",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "Votes",
+         "path": "votes",
+         "fmt": "num",
+         "d": 0
+        }
+       ]
+      },
+      {
+       "label": "Note",
+       "path": "ranking.aa_note"
+      }
+     ]
+    },
+    {
+     "title": "Prix par plateforme",
+     "fields": [
+      {
+       "label": "Prix",
+       "path": "_j.prices",
+       "fmt": "table",
+       "cols": [
+        {
+         "label": "Plateforme",
+         "path": "platform",
+         "fmt": "itemlink"
+        },
+        {
+         "label": "480p $/s",
+         "path": "price_usd_480p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "720p $/s",
+         "path": "price_usd_720p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "1080p $/s",
+         "path": "price_usd_1080p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "Image",
+         "path": "price_usd_per_image",
+         "fmt": "usd"
+        }
+       ],
+       "sortBy": [
+        "price_usd_720p_s",
+        "price_usd_per_image"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Tourne en local",
+     "fields": [
+      {
+       "label": "RTX 5090 32 Go",
+       "path": "local.runs_on_rtx5090_32gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mémoire vidéo",
+       "path": "local.vram_note"
+      },
+      {
+       "label": "RTX 4090 24 Go",
+       "path": "_j.local.rtx4090_24gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 4090",
+       "path": "_j.local.rtx4090_note"
+      },
+      {
+       "label": "MacBook Pro M5 Max 128 Go",
+       "path": "_j.local.mac_m5max_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Outil sur Mac",
+       "path": "_j.local.mac_tool"
+      },
+      {
+       "label": "Note Mac",
+       "path": "_j.local.mac_note"
+      },
+      {
+       "label": "MacBook Pro M5 Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 64 Go",
+       "path": "_j.local.mac64_note"
+      },
+      {
+       "label": "Mac Studio M5 Max 128 Go",
+       "path": "_j.local.mac_studio_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 256 Go",
+       "path": "_j.local.mac_studio_256gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 512 Go",
+       "path": "_j.local.mac_studio_512gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note Mac Studio",
+       "path": "_j.local.mac_studio_note"
+      },
+      {
+       "label": "Banc du 16/10/2026",
+       "path": "_j.local.bench_2026_10_16",
+       "fmt": "auto",
+       "full": true
+      },
+      {
+       "label": "Sources",
+       "path": "_j.local.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Intégré à",
+     "fields": [
+      {
+       "label": "ComfyUI, gabarits locaux",
+       "path": "_j.integ.comfyui_local",
+       "fmt": "list"
+      },
+      {
+       "label": "ComfyUI, gabarits API",
+       "path": "_j.integ.comfyui_api",
+       "fmt": "list"
+      },
+      {
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp",
+       "fmt": "list"
+      },
+      {
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio",
+       "fmt": "list"
+      },
+      {
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings",
+       "fmt": "bool"
+      },
+      {
+       "label": "Maestro",
+       "path": "_j.integ.maestro",
+       "fmt": "bool"
+      },
+      {
+       "label": "Phosphene",
+       "path": "_j.integ.phosphene",
+       "fmt": "bool"
+      },
+      {
+       "label": "Notes",
+       "path": "_j.integ.notes"
+      }
+     ]
+    },
+    {
+     "title": "Modération",
+     "fields": [
+      {
+       "label": "Visages réels",
+       "path": "moderation.real_faces",
+       "fmt": "dict",
+       "dict": "faces",
+       "always": true
+      },
+      {
+       "label": "Personnalités",
+       "path": "moderation.public_figures"
+      },
+      {
+       "label": "Notes",
+       "path": "moderation.notes"
+      }
+     ]
+    },
+    {
+     "title": "Accès",
+     "fields": [
+      {
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "fmt": "bool"
+      },
+      {
+       "label": "Licence",
+       "path": "access.license"
+      },
+      {
+       "label": "API",
+       "path": "access.api",
+       "fmt": "bool"
+      },
+      {
+       "label": "Application",
+       "path": "access.consumer_app",
+       "fmt": "bool"
+      },
+      {
+       "label": "Sortie",
+       "path": "released",
+       "fmt": "date"
+      },
+      {
+       "label": "Pays",
+       "path": "country",
+       "fmt": "dict",
+       "dict": "country"
+      },
+      {
+       "label": "Étapes",
+       "path": "_.stages",
+       "fmt": "list",
+       "dict": "stage"
+      },
+      {
+       "label": "Statut",
+       "path": "_.status.value",
+       "fmt": "dict",
+       "dict": "status"
+      },
+      {
+       "label": "Note de statut",
+       "path": "_.status.note"
+      }
+     ]
+    },
+    {
+     "title": "Sources",
+     "fields": [
+      {
+       "label": "Sources",
+       "path": "sources",
+       "fmt": "sources"
+      }
+     ]
+    }
+   ],
+   "hiddenFields": [
+    "id",
+    "modality",
+    "family",
+    "vendor",
+    "ranking.aa_text_to_video",
+    "ranking.aa_image_to_video",
+    "ranking.aa_text_to_image",
+    "ranking.aa_image_edit"
+   ],
+   "icon": "video",
+   "board": {
+    "title": "Top vidéo",
+    "default": "i2va",
+    "flags": [
+     {
+      "path": "access.open_weights",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "path": "access.api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "path": "access.consumer_app",
+      "icon": "window",
+      "label": "Application"
+     },
+     {
+      "path": "outputs.native_audio",
+      "icon": "audio",
+      "label": "Son natif"
+     }
+    ],
+    "filters": [
+     {
+      "f": "acces",
+      "o": "ouverts",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "f": "acces",
+      "o": "api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "f": "acces",
+      "o": "app",
+      "icon": "window",
+      "label": "Application"
+     },
+     {
+      "f": "local",
+      "o": "r5090",
+      "icon": "laptop",
+      "label": "RTX 5090"
+     },
+     {
+      "f": "local",
+      "o": "m128",
+      "icon": "laptop",
+      "label": "Mac 128 Go"
+     }
+    ],
+    "exclude": {
+     "path": "_.status.value",
+     "in": [
+      "arrete"
+     ],
+     "label": "Arrêtés, sortis du classement"
+    },
+    "criteria": [
+     {
+      "id": "i2va",
+      "label": "Image vers vidéo, son",
+      "kind": "score",
+      "path": "_j.scores.aa_i2v_audio.elo",
+      "ci": "_j.scores.aa_i2v_audio.ci",
+      "votes": "_j.scores.aa_i2v_audio.votes",
+      "rank": "_j.scores.aa_i2v_audio.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_i2v_audio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "t2va",
+      "label": "Texte vers vidéo, son",
+      "kind": "score",
+      "path": "_j.scores.aa_t2v_audio.elo",
+      "ci": "_j.scores.aa_t2v_audio.ci",
+      "votes": "_j.scores.aa_t2v_audio.votes",
+      "rank": "_j.scores.aa_t2v_audio.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_t2v_audio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "i2v",
+      "label": "Image vers vidéo",
+      "kind": "score",
+      "path": "_j.scores.aa_i2v_noaudio.elo",
+      "ci": "_j.scores.aa_i2v_noaudio.ci",
+      "votes": "_j.scores.aa_i2v_noaudio.votes",
+      "rank": "_j.scores.aa_i2v_noaudio.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_i2v_noaudio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "t2v",
+      "label": "Texte vers vidéo",
+      "kind": "score",
+      "path": "_j.scores.aa_t2v_noaudio.elo",
+      "ci": "_j.scores.aa_t2v_noaudio.ci",
+      "votes": "_j.scores.aa_t2v_noaudio.votes",
+      "rank": "_j.scores.aa_t2v_noaudio.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_t2v_noaudio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "edit",
+      "label": "Édition",
+      "kind": "score",
+      "path": "_j.scores.aa_video_edit_noaudio.elo",
+      "ci": "_j.scores.aa_video_edit_noaudio.ci",
+      "votes": "_j.scores.aa_video_edit_noaudio.votes",
+      "rank": "_j.scores.aa_video_edit_noaudio.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_video_edit_noaudio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "at2v",
+      "label": "arena.ai, texte",
+      "kind": "score",
+      "path": "_j.scores.arena_t2v.elo",
+      "ci": "_j.scores.arena_t2v.ci",
+      "votes": "_j.scores.arena_t2v.votes",
+      "rank": "_j.scores.arena_t2v.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.arena_t2v",
+      "srcLabel": "arena.ai",
+      "explain": "eloar",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "ai2v",
+      "label": "arena.ai, image",
+      "kind": "score",
+      "path": "_j.scores.arena_i2v.elo",
+      "ci": "_j.scores.arena_i2v.ci",
+      "votes": "_j.scores.arena_i2v.votes",
+      "rank": "_j.scores.arena_i2v.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.arena_i2v",
+      "srcLabel": "arena.ai",
+      "explain": "eloar",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "front",
+      "label": "Qualité et prix",
+      "kind": "front",
+      "x": {
+       "path": "_.best.price_usd_720p_s",
+       "better": "low",
+       "unit": "/s en 720p",
+       "label": "Prix 720p"
+      },
+      "y": {
+       "path": "_j.scores.aa_i2v_audio.elo",
+       "ci": "_j.scores.aa_i2v_audio.ci",
+       "better": "high"
+      },
+      "src": "annexes.rankings.sources.aa_i2v_audio",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "Aucune formule ici : figurent seulement les modèles qu'aucun autre ne bat à la fois sur le prix et sur le score. Le prix est le plus bas relevé à l'usage."
+     },
+     {
+      "id": "p720",
+      "label": "Moins cher en 720p",
+      "kind": "price",
+      "path": "_.best.price_usd_720p_s",
+      "dir": "asc",
+      "unit": "par seconde",
+      "note": "Prix à l'usage le plus bas relevé, toutes plateformes confondues, hors abonnement. Plus la barre est courte, moins c'est cher. Ce classement ne dit rien de la qualité."
+     },
+     {
+      "id": "p1080",
+      "label": "Moins cher en 1080p",
+      "kind": "price",
+      "path": "_.best.price_usd_1080p_s",
+      "dir": "asc",
+      "unit": "par seconde",
+      "note": "Prix à l'usage le plus bas relevé, toutes plateformes confondues, hors abonnement. Plus la barre est courte, moins c'est cher. Ce classement ne dit rien de la qualité."
+     }
+    ]
+   },
+   "views": [
+    "top",
+    "map",
+    "list"
+   ],
+   "logo": {
+    "path": "vendor",
+    "rules": [
+     {
+      "re": "^Google|DeepMind",
+      "host": "google.com"
+     },
+     {
+      "re": "^Tencent",
+      "host": "tencent.com"
+     },
+     {
+      "re": "^OpenAI",
+      "host": "openai.com"
+     },
+     {
+      "re": "^ElevenLabs",
+      "host": "elevenlabs.io"
+     },
+     {
+      "re": "^ByteDance",
+      "host": "bytedance.com"
+     },
+     {
+      "re": "^Microsoft",
+      "host": "microsoft.com"
+     },
+     {
+      "re": "^Black Forest",
+      "host": "bfl.ai"
+     },
+     {
+      "re": "^Kuaishou",
+      "host": "klingai.com"
+     },
+     {
+      "re": "^MiniMax",
+      "host": "minimax.io"
+     },
+     {
+      "re": "^Lightricks",
+      "host": "lightricks.com"
+     },
+     {
+      "re": "^Alibaba",
+      "host": "alibaba.com"
+     },
+     {
+      "re": "^Stability",
+      "host": "stability.ai"
+     },
+     {
+      "re": "^VAST",
+      "host": "tripo3d.ai"
+     },
+     {
+      "re": "^Luma",
+      "host": "lumalabs.ai"
+     },
+     {
+      "re": "^Shengshu",
+      "host": "vidu.com"
+     },
+     {
+      "re": "^NVIDIA",
+      "host": "nvidia.com"
+     },
+     {
+      "re": "^(xAI|SpaceXAI)",
+      "host": "x.ai"
+     },
+     {
+      "re": "^Meta",
+      "host": "meta.com"
+     },
+     {
+      "re": "^Resemble",
+      "host": "resemble.ai"
+     },
+     {
+      "re": "^Meshy",
+      "host": "meshy.ai"
+     },
+     {
+      "re": "^Krea",
+      "host": "krea.ai"
+     },
+     {
+      "re": "^Fish Audio",
+      "host": "fish.audio"
+     },
+     {
+      "re": "^Mistral",
+      "host": "mistral.ai"
+     },
+     {
+      "re": "^Midjourney",
+      "host": "midjourney.com"
+     },
+     {
+      "re": "^Ideogram",
+      "host": "ideogram.ai"
+     },
+     {
+      "re": "^Recraft",
+      "host": "recraft.ai"
+     },
+     {
+      "re": "^Leonardo",
+      "host": "leonardo.ai"
+     },
+     {
+      "re": "^Kyutai",
+      "host": "kyutai.org"
+     },
+     {
+      "re": "^PixVerse",
+      "host": "pixverse.ai"
+     },
+     {
+      "re": "^Runway",
+      "host": "runway.com"
+     },
+     {
+      "re": "^HeyGen",
+      "host": "heygen.com"
+     },
+     {
+      "re": "^HiDream",
+      "host": "hidream.ai"
+     },
+     {
+      "re": "^Suno",
+      "host": "suno.com"
+     },
+     {
+      "re": "^World Labs",
+      "host": "worldlabs.ai"
+     },
+     {
+      "re": "^Pika",
+      "host": "pika.art"
+     },
+     {
+      "re": "^Higgsfield",
+      "host": "higgsfield.ai"
+     },
+     {
+      "re": "^Reve",
+      "host": "reve.com"
+     },
+     {
+      "re": "^Cartesia",
+      "host": "cartesia.ai"
+     },
+     {
+      "re": "^Hume",
+      "host": "hume.ai"
+     },
+     {
+      "re": "^Inworld",
+      "host": "inworld.ai"
+     },
+     {
+      "re": "^Sesame",
+      "host": "sesame.com"
+     },
+     {
+      "re": "^Sync",
+      "host": "sync.so"
+     },
+     {
+      "re": "^Udio",
+      "host": "udio.com"
+     },
+     {
+      "re": "^Adobe",
+      "host": "adobe.com"
+     },
+     {
+      "re": "^Apple",
+      "host": "apple.com"
+     },
+     {
+      "re": "^Hedra",
+      "host": "hedra.com"
+     },
+     {
+      "re": "^Moonvalley",
+      "host": "moonvalley.com"
+     },
+     {
+      "re": "^Speechify",
+      "host": "speechify.com"
+     },
+     {
+      "re": "^Zyphra",
+      "host": "zyphra.com"
+     },
+     {
+      "re": "^StepFun",
+      "host": "stepfun.com"
+     },
+     {
+      "re": "^Creatify",
+      "host": "creatify.ai"
+     }
+    ]
+   }
+  },
+  {
+   "id": "image",
+   "label": "Image",
+   "noun": "modèle image",
+   "nounPlural": "modèles image",
+   "path": "collections.image",
+   "derived": "derived.image",
+   "idKey": "id",
+   "title": [
+    "variant"
+   ],
+   "titlePrefix": "family",
+   "subtitle": [
+    "vendor",
+    "family"
+   ],
+   "nameLabel": "Modèle",
+   "checkedPath": "_.checked",
+   "joins": [
+    {
+     "as": "local",
+     "from": "annexes.local_runs"
+    },
+    {
+     "as": "scores",
+     "from": "annexes.rankings.scores"
+    },
+    {
+     "as": "integ",
+     "from": "annexes.integrations.by_id"
+    },
+    {
+     "as": "prices",
+     "from": "collections.prices",
+     "key": "model_id",
+     "alias": "annexes.aliases",
+     "many": true
+    }
+   ],
+   "tags": [
+    {
+     "path": "_.status.value",
+     "dict": "status",
+     "hideIf": [
+      "actif"
+     ],
+     "datePath": "_.status.date"
+    },
+    {
+     "path": "access.open_weights",
+     "when": true,
+     "label": "Poids ouverts",
+     "tone": "good"
+    }
+   ],
+   "defaultSort": "t2i",
+   "sort": [
+    {
+     "id": "t2i",
+     "label": "Elo texte vers image",
+     "path": "_j.scores.aa_t2i.elo",
+     "dir": "desc"
+    },
+    {
+     "id": "edit",
+     "label": "Elo édition d'image",
+     "path": "_j.scores.aa_image_edit.elo",
+     "dir": "desc"
+    },
+    {
+     "id": "pimg",
+     "label": "Prix à l'image le plus bas",
+     "path": "_.best.price_usd_per_image",
+     "dir": "asc"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "dir": "desc"
+    },
+    {
+     "id": "nom",
+     "label": "Nom",
+     "path": "variant",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Accès",
+     "fmt": "flags",
+     "w": "4.25rem",
+     "pri": 3,
+     "items": [
+      {
+       "path": "access.open_weights",
+       "icon": "open",
+       "label": "Poids ouverts"
+      },
+      {
+       "path": "access.api",
+       "icon": "cloud",
+       "label": "API"
+      },
+      {
+       "path": "access.consumer_app",
+       "icon": "window",
+       "label": "Application"
+      }
+     ]
+    },
+    {
+     "label": "Accepte",
+     "fmt": "badges",
+     "pri": 2,
+     "w": "minmax(8rem,1.2fr)",
+     "items": [
+      {
+       "path": "inputs.image_refs_max",
+       "label": "img",
+       "count": true
+      },
+      {
+       "path": "inputs.image_edit",
+       "label": "édition"
+      },
+      {
+       "path": "inputs.lora_inference",
+       "label": "LoRA"
+      }
+     ]
+    },
+    {
+     "label": "Résolution",
+     "path": "outputs.max_resolution",
+     "pri": 3,
+     "w": "minmax(7rem,1fr)"
+    },
+    {
+     "label": "En local",
+     "fmt": "badges",
+     "pri": 3,
+     "w": "minmax(5rem,.7fr)",
+     "items": [
+      {
+       "path": "local.runs_on_rtx5090_32gb",
+       "label": "5090"
+      },
+      {
+       "path": "_j.local.rtx4090_24gb",
+       "label": "4090"
+      },
+      {
+       "path": "_j.local.mac_m5max_128gb",
+       "label": "Mac"
+      }
+     ]
+    },
+    {
+     "label": "$/image",
+     "path": "_.best.price_usd_per_image",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.5rem",
+     "sort": "pimg",
+     "phone": true,
+     "short": "par image",
+     "pri": 2
+    },
+    {
+     "label": "Elo texte",
+     "path": "_j.scores.aa_t2i.elo",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4.5rem",
+     "sort": "t2i",
+     "phone": true,
+     "short": "Elo"
+    },
+    {
+     "label": "Elo édition",
+     "path": "_j.scores.aa_image_edit.elo",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4.25rem",
+     "sort": "edit",
+     "pri": 3
+    }
+   ],
+   "facets": [
+    {
+     "id": "acces",
+     "label": "Accès",
+     "type": "checks",
+     "items": [
+      {
+       "id": "ouverts",
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "icon": "open"
+      },
+      {
+       "id": "api",
+       "label": "API",
+       "path": "access.api",
+       "icon": "cloud"
+      },
+      {
+       "id": "app",
+       "label": "Application",
+       "path": "access.consumer_app",
+       "icon": "window"
+      }
+     ],
+     "icon": "cloud"
+    },
+    {
+     "id": "entrees",
+     "label": "Accepte en entrée",
+     "type": "checks",
+     "items": [
+      {
+       "id": "img",
+       "label": "Images de référence",
+       "path": "inputs.image_refs_max"
+      },
+      {
+       "id": "edit",
+       "label": "Édition d'image",
+       "path": "inputs.image_edit"
+      },
+      {
+       "id": "multi",
+       "label": "Édition multi-images",
+       "path": "inputs.multi_image_edit_max"
+      },
+      {
+       "id": "lora",
+       "label": "LoRA",
+       "path": "inputs.lora_inference"
+      },
+      {
+       "id": "lorat",
+       "label": "Entraînement de LoRA",
+       "path": "inputs.lora_training"
+      }
+     ],
+     "icon": "input"
+    },
+    {
+     "id": "etape",
+     "label": "Étape de production",
+     "type": "enum",
+     "path": "_.stages",
+     "dict": "stage",
+     "limit": 9,
+     "icon": "stage"
+    },
+    {
+     "id": "local",
+     "label": "Tourne en local",
+     "type": "checks",
+     "items": [
+      {
+       "id": "r5090",
+       "label": "RTX 5090",
+       "path": "local.runs_on_rtx5090_32gb"
+      },
+      {
+       "id": "r4090",
+       "label": "RTX 4090",
+       "path": "_j.local.rtx4090_24gb"
+      },
+      {
+       "id": "m128",
+       "label": "MacBook Pro 128 Go",
+       "path": "_j.local.mac_m5max_128gb"
+      },
+      {
+       "id": "m64",
+       "label": "MacBook Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb"
+      },
+      {
+       "id": "s128",
+       "label": "Mac Studio 128 Go",
+       "path": "_j.local.mac_studio_128gb"
+      },
+      {
+       "id": "s256",
+       "label": "Mac Studio 256 Go",
+       "path": "_j.local.mac_studio_256gb"
+      },
+      {
+       "id": "s512",
+       "label": "Mac Studio 512 Go",
+       "path": "_j.local.mac_studio_512gb"
+      }
+     ],
+     "icon": "laptop"
+    },
+    {
+     "id": "outils",
+     "label": "Intégré à",
+     "type": "checks",
+     "items": [
+      {
+       "id": "comfy",
+       "label": "ComfyUI",
+       "path": "_j.integ.comfyui_local"
+      },
+      {
+       "id": "wan",
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp"
+      },
+      {
+       "id": "pinokio",
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio"
+      },
+      {
+       "id": "dt",
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings"
+      },
+      {
+       "id": "maestro",
+       "label": "Maestro",
+       "path": "_j.integ.maestro"
+      }
+     ],
+     "icon": "tools"
+    },
+    {
+     "id": "visages",
+     "label": "Visages réels",
+     "type": "enum",
+     "path": "moderation.real_faces",
+     "dict": "faces",
+     "icon": "face"
+    },
+    {
+     "id": "statut",
+     "label": "Statut",
+     "type": "enum",
+     "path": "_.status.value",
+     "dict": "status",
+     "icon": "status"
+    },
+    {
+     "id": "pays",
+     "label": "Pays",
+     "type": "enum",
+     "path": "country",
+     "dict": "country",
+     "limit": 6,
+     "icon": "globe"
+    },
+    {
+     "id": "editeur",
+     "label": "Éditeur",
+     "type": "enum",
+     "path": "vendor",
+     "limit": 8,
+     "icon": "person"
+    }
+   ],
+   "axes": [
+    {
+     "id": "pimg",
+     "label": "Prix à l'image ($)",
+     "path": "_.best.price_usd_per_image",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    },
+    {
+     "id": "t2i",
+     "label": "Elo texte vers image",
+     "path": "_j.scores.aa_t2i.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "edit",
+     "label": "Elo édition d'image",
+     "path": "_j.scores.aa_image_edit.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "at2i",
+     "label": "Elo Arena, texte vers image",
+     "path": "_j.scores.arena_t2i.elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "scale": "date"
+    },
+    {
+     "id": "refs",
+     "label": "Images de référence, maximum",
+     "path": "inputs.image_refs_max",
+     "scale": "linear"
+    }
+   ],
+   "map": {
+    "x": "pimg",
+    "y": "t2i",
+    "label": "variant",
+    "fill": {
+     "path": "access.open_weights",
+     "on": "Poids ouverts",
+     "off": "Fermé"
+    }
+   },
+   "keys": [
+    {
+     "label": "Prix à l'image",
+     "path": "_.best.price_usd_per_image",
+     "fmt": "usd"
+    },
+    {
+     "label": "Elo texte vers image",
+     "path": "_j.scores.aa_t2i.elo",
+     "fmt": "num",
+     "d": 0
+    },
+    {
+     "label": "Elo édition d'image",
+     "path": "_j.scores.aa_image_edit.elo",
+     "fmt": "num",
+     "d": 0
+    },
+    {
+     "label": "Images de référence",
+     "path": "inputs.image_refs_max",
+     "fmt": "num",
+     "d": 0
+    }
+   ],
+   "sections": [
+    {
+     "title": "En bref",
+     "fields": [
+      {
+       "label": "Points forts",
+       "path": "pros",
+       "fmt": "bullets",
+       "noLabel": false
+      },
+      {
+       "label": "Limites",
+       "path": "cons",
+       "fmt": "bullets"
+      }
+     ]
+    },
+    {
+     "title": "Entrées",
+     "fields": [
+      {
+       "label": "Texte",
+       "path": "inputs.text",
+       "fmt": "bool"
+      },
+      {
+       "label": "Images de référence",
+       "path": "inputs.image_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Vidéos de référence",
+       "path": "inputs.video_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Durée totale des vidéos",
+       "path": "inputs.video_refs_total_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Sons de référence",
+       "path": "inputs.audio_refs_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Durée totale des sons",
+       "path": "inputs.audio_refs_total_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Première image",
+       "path": "inputs.first_frame",
+       "fmt": "bool"
+      },
+      {
+       "label": "Dernière image",
+       "path": "inputs.last_frame",
+       "fmt": "bool"
+      },
+      {
+       "label": "Images-clés",
+       "path": "inputs.keyframes_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Vidéo vers vidéo",
+       "path": "inputs.video_to_video",
+       "fmt": "bool"
+      },
+      {
+       "label": "Contrôles",
+       "path": "inputs.control",
+       "fmt": "list"
+      },
+      {
+       "label": "Contrôle de caméra",
+       "path": "inputs.camera_control",
+       "fmt": "bool"
+      },
+      {
+       "label": "3D",
+       "path": "inputs.input_3d",
+       "fmt": "bool"
+      },
+      {
+       "label": "Édition d'image",
+       "path": "inputs.image_edit",
+       "fmt": "bool"
+      },
+      {
+       "label": "Édition multi-images",
+       "path": "inputs.multi_image_edit_max",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "LoRA",
+       "path": "inputs.lora_inference",
+       "fmt": "bool"
+      },
+      {
+       "label": "Entraînement de LoRA",
+       "path": "inputs.lora_training",
+       "fmt": "bool"
+      },
+      {
+       "label": "Combinaisons incompatibles",
+       "path": "inputs.incompatible_combinations"
+      }
+     ]
+    },
+    {
+     "title": "Sorties",
+     "fields": [
+      {
+       "label": "Résolution",
+       "path": "outputs.max_resolution"
+      },
+      {
+       "label": "Durée minimale",
+       "path": "outputs.min_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Durée maximale",
+       "path": "outputs.max_s",
+       "fmt": "num",
+       "unit": "s"
+      },
+      {
+       "label": "Images par seconde",
+       "path": "outputs.fps"
+      },
+      {
+       "label": "Son natif",
+       "path": "outputs.native_audio",
+       "fmt": "bool"
+      },
+      {
+       "label": "Synchronisation labiale",
+       "path": "outputs.lip_sync",
+       "fmt": "bool"
+      },
+      {
+       "label": "Langues",
+       "path": "outputs.languages"
+      },
+      {
+       "label": "Images par appel",
+       "path": "outputs.max_images_per_call",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Rendu du texte",
+       "path": "outputs.text_rendering"
+      }
+     ]
+    },
+    {
+     "title": "Fonctions d'édition",
+     "fields": [
+      {
+       "label": "Fonctions",
+       "path": "edit_functions",
+       "fmt": "list"
+      }
+     ]
+    },
+    {
+     "title": "Classements",
+     "fields": [
+      {
+       "label": "Scores",
+       "path": "_j.scores",
+       "fmt": "dicttable",
+       "keyDict": "rankcat",
+       "cols": [
+        {
+         "label": "Classement",
+         "path": "_k"
+        },
+        {
+         "label": "Elo",
+         "path": "elo",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "Rang",
+         "path": "rank",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "±",
+         "path": "ci",
+         "fmt": "num",
+         "d": 0
+        },
+        {
+         "label": "Votes",
+         "path": "votes",
+         "fmt": "num",
+         "d": 0
+        }
+       ]
+      },
+      {
+       "label": "Note",
+       "path": "ranking.aa_note"
+      }
+     ]
+    },
+    {
+     "title": "Prix par plateforme",
+     "fields": [
+      {
+       "label": "Prix",
+       "path": "_j.prices",
+       "fmt": "table",
+       "cols": [
+        {
+         "label": "Plateforme",
+         "path": "platform",
+         "fmt": "itemlink"
+        },
+        {
+         "label": "480p $/s",
+         "path": "price_usd_480p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "720p $/s",
+         "path": "price_usd_720p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "1080p $/s",
+         "path": "price_usd_1080p_s",
+         "fmt": "usd"
+        },
+        {
+         "label": "Image",
+         "path": "price_usd_per_image",
+         "fmt": "usd"
+        }
+       ],
+       "sortBy": [
+        "price_usd_720p_s",
+        "price_usd_per_image"
+       ]
+      }
+     ]
+    },
+    {
+     "title": "Tourne en local",
+     "fields": [
+      {
+       "label": "RTX 5090 32 Go",
+       "path": "local.runs_on_rtx5090_32gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mémoire vidéo",
+       "path": "local.vram_note"
+      },
+      {
+       "label": "RTX 4090 24 Go",
+       "path": "_j.local.rtx4090_24gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 4090",
+       "path": "_j.local.rtx4090_note"
+      },
+      {
+       "label": "MacBook Pro M5 Max 128 Go",
+       "path": "_j.local.mac_m5max_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Outil sur Mac",
+       "path": "_j.local.mac_tool"
+      },
+      {
+       "label": "Note Mac",
+       "path": "_j.local.mac_note"
+      },
+      {
+       "label": "MacBook Pro M5 Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 64 Go",
+       "path": "_j.local.mac64_note"
+      },
+      {
+       "label": "Mac Studio M5 Max 128 Go",
+       "path": "_j.local.mac_studio_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 256 Go",
+       "path": "_j.local.mac_studio_256gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 512 Go",
+       "path": "_j.local.mac_studio_512gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note Mac Studio",
+       "path": "_j.local.mac_studio_note"
+      },
+      {
+       "label": "Banc du 16/10/2026",
+       "path": "_j.local.bench_2026_10_16",
+       "fmt": "auto",
+       "full": true
+      },
+      {
+       "label": "Sources",
+       "path": "_j.local.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Intégré à",
+     "fields": [
+      {
+       "label": "ComfyUI, gabarits locaux",
+       "path": "_j.integ.comfyui_local",
+       "fmt": "list"
+      },
+      {
+       "label": "ComfyUI, gabarits API",
+       "path": "_j.integ.comfyui_api",
+       "fmt": "list"
+      },
+      {
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp",
+       "fmt": "list"
+      },
+      {
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio",
+       "fmt": "list"
+      },
+      {
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings",
+       "fmt": "bool"
+      },
+      {
+       "label": "Maestro",
+       "path": "_j.integ.maestro",
+       "fmt": "bool"
+      },
+      {
+       "label": "Phosphene",
+       "path": "_j.integ.phosphene",
+       "fmt": "bool"
+      },
+      {
+       "label": "Notes",
+       "path": "_j.integ.notes"
+      }
+     ]
+    },
+    {
+     "title": "Modération",
+     "fields": [
+      {
+       "label": "Visages réels",
+       "path": "moderation.real_faces",
+       "fmt": "dict",
+       "dict": "faces",
+       "always": true
+      },
+      {
+       "label": "Personnalités",
+       "path": "moderation.public_figures"
+      },
+      {
+       "label": "Notes",
+       "path": "moderation.notes"
+      }
+     ]
+    },
+    {
+     "title": "Accès",
+     "fields": [
+      {
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "fmt": "bool"
+      },
+      {
+       "label": "Licence",
+       "path": "access.license"
+      },
+      {
+       "label": "API",
+       "path": "access.api",
+       "fmt": "bool"
+      },
+      {
+       "label": "Application",
+       "path": "access.consumer_app",
+       "fmt": "bool"
+      },
+      {
+       "label": "Sortie",
+       "path": "released",
+       "fmt": "date"
+      },
+      {
+       "label": "Pays",
+       "path": "country",
+       "fmt": "dict",
+       "dict": "country"
+      },
+      {
+       "label": "Étapes",
+       "path": "_.stages",
+       "fmt": "list",
+       "dict": "stage"
+      },
+      {
+       "label": "Statut",
+       "path": "_.status.value",
+       "fmt": "dict",
+       "dict": "status"
+      },
+      {
+       "label": "Note de statut",
+       "path": "_.status.note"
+      }
+     ]
+    },
+    {
+     "title": "Sources",
+     "fields": [
+      {
+       "label": "Sources",
+       "path": "sources",
+       "fmt": "sources"
+      }
+     ]
+    }
+   ],
+   "hiddenFields": [
+    "id",
+    "modality",
+    "family",
+    "vendor",
+    "ranking.aa_text_to_video",
+    "ranking.aa_image_to_video",
+    "ranking.aa_text_to_image",
+    "ranking.aa_image_edit"
+   ],
+   "icon": "image",
+   "board": {
+    "title": "Top image",
+    "default": "t2i",
+    "flags": [
+     {
+      "path": "access.open_weights",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "path": "access.api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "path": "access.consumer_app",
+      "icon": "window",
+      "label": "Application"
+     }
+    ],
+    "filters": [
+     {
+      "f": "acces",
+      "o": "ouverts",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "f": "acces",
+      "o": "api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "f": "acces",
+      "o": "app",
+      "icon": "window",
+      "label": "Application"
+     },
+     {
+      "f": "local",
+      "o": "r5090",
+      "icon": "laptop",
+      "label": "RTX 5090"
+     },
+     {
+      "f": "local",
+      "o": "m128",
+      "icon": "laptop",
+      "label": "Mac 128 Go"
+     }
+    ],
+    "exclude": {
+     "path": "_.status.value",
+     "in": [
+      "arrete"
+     ],
+     "label": "Arrêtés, sortis du classement"
+    },
+    "criteria": [
+     {
+      "id": "t2i",
+      "label": "Texte vers image",
+      "kind": "score",
+      "path": "_j.scores.aa_t2i.elo",
+      "ci": "_j.scores.aa_t2i.ci",
+      "votes": "_j.scores.aa_t2i.votes",
+      "rank": "_j.scores.aa_t2i.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_t2i",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "edit",
+      "label": "Édition d'image",
+      "kind": "score",
+      "path": "_j.scores.aa_image_edit.elo",
+      "ci": "_j.scores.aa_image_edit.ci",
+      "votes": "_j.scores.aa_image_edit.votes",
+      "rank": "_j.scores.aa_image_edit.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.aa_image_edit",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "at2i",
+      "label": "arena.ai, texte",
+      "kind": "score",
+      "path": "_j.scores.arena_t2i.elo",
+      "ci": "_j.scores.arena_t2i.ci",
+      "votes": "_j.scores.arena_t2i.votes",
+      "rank": "_j.scores.arena_t2i.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.arena_t2i",
+      "srcLabel": "arena.ai",
+      "explain": "eloar",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "aedit",
+      "label": "arena.ai, édition",
+      "kind": "score",
+      "path": "_j.scores.arena_image_edit.elo",
+      "ci": "_j.scores.arena_image_edit.ci",
+      "votes": "_j.scores.arena_image_edit.votes",
+      "rank": "_j.scores.arena_image_edit.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.arena_image_edit",
+      "srcLabel": "arena.ai",
+      "explain": "eloar",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "amulti",
+      "label": "arena.ai, multi-images",
+      "kind": "score",
+      "path": "_j.scores.arena_multi_image_edit.elo",
+      "ci": "_j.scores.arena_multi_image_edit.ci",
+      "votes": "_j.scores.arena_multi_image_edit.votes",
+      "rank": "_j.scores.arena_multi_image_edit.rank",
+      "dir": "desc",
+      "src": "annexes.rankings.sources.arena_multi_image_edit",
+      "srcLabel": "arena.ai",
+      "explain": "eloar",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+     },
+     {
+      "id": "front",
+      "label": "Qualité et prix",
+      "kind": "front",
+      "x": {
+       "path": "_.best.price_usd_per_image",
+       "better": "low",
+       "unit": "l'image",
+       "label": "Prix à l'image"
+      },
+      "y": {
+       "path": "_j.scores.aa_t2i.elo",
+       "ci": "_j.scores.aa_t2i.ci",
+       "better": "high"
+      },
+      "src": "annexes.rankings.sources.aa_t2i",
+      "srcLabel": "Artificial Analysis",
+      "explain": "eloaa",
+      "note": "Aucune formule ici : figurent seulement les modèles qu'aucun autre ne bat à la fois sur le prix et sur le score. Le prix est le plus bas relevé à l'usage."
+     },
+     {
+      "id": "pimg",
+      "label": "Moins cher à l'image",
+      "kind": "price",
+      "path": "_.best.price_usd_per_image",
+      "dir": "asc",
+      "unit": "l'image",
+      "note": "Prix à l'usage le plus bas relevé, toutes plateformes confondues, hors abonnement. Plus la barre est courte, moins c'est cher. Ce classement ne dit rien de la qualité."
+     }
+    ]
+   },
+   "views": [
+    "top",
+    "map",
+    "list"
+   ],
+   "logo": {
+    "path": "vendor",
+    "rules": [
+     {
+      "re": "^Google|DeepMind",
+      "host": "google.com"
+     },
+     {
+      "re": "^Tencent",
+      "host": "tencent.com"
+     },
+     {
+      "re": "^OpenAI",
+      "host": "openai.com"
+     },
+     {
+      "re": "^ElevenLabs",
+      "host": "elevenlabs.io"
+     },
+     {
+      "re": "^ByteDance",
+      "host": "bytedance.com"
+     },
+     {
+      "re": "^Microsoft",
+      "host": "microsoft.com"
+     },
+     {
+      "re": "^Black Forest",
+      "host": "bfl.ai"
+     },
+     {
+      "re": "^Kuaishou",
+      "host": "klingai.com"
+     },
+     {
+      "re": "^MiniMax",
+      "host": "minimax.io"
+     },
+     {
+      "re": "^Lightricks",
+      "host": "lightricks.com"
+     },
+     {
+      "re": "^Alibaba",
+      "host": "alibaba.com"
+     },
+     {
+      "re": "^Stability",
+      "host": "stability.ai"
+     },
+     {
+      "re": "^VAST",
+      "host": "tripo3d.ai"
+     },
+     {
+      "re": "^Luma",
+      "host": "lumalabs.ai"
+     },
+     {
+      "re": "^Shengshu",
+      "host": "vidu.com"
+     },
+     {
+      "re": "^NVIDIA",
+      "host": "nvidia.com"
+     },
+     {
+      "re": "^(xAI|SpaceXAI)",
+      "host": "x.ai"
+     },
+     {
+      "re": "^Meta",
+      "host": "meta.com"
+     },
+     {
+      "re": "^Resemble",
+      "host": "resemble.ai"
+     },
+     {
+      "re": "^Meshy",
+      "host": "meshy.ai"
+     },
+     {
+      "re": "^Krea",
+      "host": "krea.ai"
+     },
+     {
+      "re": "^Fish Audio",
+      "host": "fish.audio"
+     },
+     {
+      "re": "^Mistral",
+      "host": "mistral.ai"
+     },
+     {
+      "re": "^Midjourney",
+      "host": "midjourney.com"
+     },
+     {
+      "re": "^Ideogram",
+      "host": "ideogram.ai"
+     },
+     {
+      "re": "^Recraft",
+      "host": "recraft.ai"
+     },
+     {
+      "re": "^Leonardo",
+      "host": "leonardo.ai"
+     },
+     {
+      "re": "^Kyutai",
+      "host": "kyutai.org"
+     },
+     {
+      "re": "^PixVerse",
+      "host": "pixverse.ai"
+     },
+     {
+      "re": "^Runway",
+      "host": "runway.com"
+     },
+     {
+      "re": "^HeyGen",
+      "host": "heygen.com"
+     },
+     {
+      "re": "^HiDream",
+      "host": "hidream.ai"
+     },
+     {
+      "re": "^Suno",
+      "host": "suno.com"
+     },
+     {
+      "re": "^World Labs",
+      "host": "worldlabs.ai"
+     },
+     {
+      "re": "^Pika",
+      "host": "pika.art"
+     },
+     {
+      "re": "^Higgsfield",
+      "host": "higgsfield.ai"
+     },
+     {
+      "re": "^Reve",
+      "host": "reve.com"
+     },
+     {
+      "re": "^Cartesia",
+      "host": "cartesia.ai"
+     },
+     {
+      "re": "^Hume",
+      "host": "hume.ai"
+     },
+     {
+      "re": "^Inworld",
+      "host": "inworld.ai"
+     },
+     {
+      "re": "^Sesame",
+      "host": "sesame.com"
+     },
+     {
+      "re": "^Sync",
+      "host": "sync.so"
+     },
+     {
+      "re": "^Udio",
+      "host": "udio.com"
+     },
+     {
+      "re": "^Adobe",
+      "host": "adobe.com"
+     },
+     {
+      "re": "^Apple",
+      "host": "apple.com"
+     },
+     {
+      "re": "^Hedra",
+      "host": "hedra.com"
+     },
+     {
+      "re": "^Moonvalley",
+      "host": "moonvalley.com"
+     },
+     {
+      "re": "^Speechify",
+      "host": "speechify.com"
+     },
+     {
+      "re": "^Zyphra",
+      "host": "zyphra.com"
+     },
+     {
+      "re": "^StepFun",
+      "host": "stepfun.com"
+     },
+     {
+      "re": "^Creatify",
+      "host": "creatify.ai"
+     }
+    ]
+   }
+  },
+  {
+   "id": "audio",
+   "label": "Audio",
+   "noun": "modèle audio",
+   "nounPlural": "modèles audio",
+   "path": "collections.audio",
+   "derived": "derived.audio",
+   "idKey": "id",
+   "title": [
+    "variant"
+   ],
+   "titlePrefix": "family",
+   "subtitle": [
+    "vendor",
+    "family"
+   ],
+   "nameLabel": "Modèle",
+   "checkedPath": "_.checked",
+   "joins": [
+    {
+     "as": "local",
+     "from": "annexes.local_runs_extra"
+    },
+    {
+     "as": "integ",
+     "from": "annexes.integrations.by_id"
+    }
+   ],
+   "tags": [
+    {
+     "path": "_.status.value",
+     "dict": "status",
+     "hideIf": [
+      "actif"
+     ],
+     "datePath": "_.status.date"
+    },
+    {
+     "path": "access.open_weights",
+     "when": true,
+     "label": "Poids ouverts",
+     "tone": "good"
+    },
+    {
+     "path": "task",
+     "dict": "task"
+    }
+   ],
+   "defaultSort": "voice",
+   "sort": [
+    {
+     "id": "voice",
+     "label": "Elo Speech Arena",
+     "path": "scores.aa_speech_arena_provider_voice_elo",
+     "dir": "desc"
+    },
+    {
+     "id": "tts",
+     "label": "Elo TTS Arena V2",
+     "path": "scores.hf_tts_arena_v2_elo",
+     "dir": "desc"
+    },
+    {
+     "id": "wer",
+     "label": "Erreurs de transcription",
+     "path": "scores.aa_stt_wer_pct",
+     "dir": "asc"
+    },
+    {
+     "id": "music",
+     "label": "Elo musique avec voix",
+     "path": "scores.aa_music_vocals_elo",
+     "dir": "desc"
+    },
+    {
+     "id": "k",
+     "label": "Prix pour 1 000 caractères",
+     "path": "price.usd_per_1k_chars",
+     "dir": "asc"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "dir": "desc"
+    },
+    {
+     "id": "nom",
+     "label": "Nom",
+     "path": "variant",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Accès",
+     "fmt": "flags",
+     "w": "4.25rem",
+     "pri": 3,
+     "items": [
+      {
+       "path": "access.open_weights",
+       "icon": "open",
+       "label": "Poids ouverts"
+      },
+      {
+       "path": "access.api",
+       "icon": "cloud",
+       "label": "API"
+      },
+      {
+       "path": "access.consumer_app",
+       "icon": "window",
+       "label": "Application"
+      }
+     ]
+    },
+    {
+     "label": "Tâche",
+     "path": "task",
+     "fmt": "dict",
+     "dict": "task",
+     "w": "minmax(7rem,1fr)",
+     "pri": 2
+    },
+    {
+     "label": "Clonage, secondes",
+     "path": "clone.seconds_needed",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4.5rem",
+     "pri": 3
+    },
+    {
+     "label": "En local",
+     "fmt": "badges",
+     "pri": 3,
+     "w": "minmax(5rem,.7fr)",
+     "items": [
+      {
+       "path": "local.runs_on_rtx5090_32gb",
+       "label": "5090"
+      },
+      {
+       "path": "local.rtx4090_24gb",
+       "label": "4090"
+      },
+      {
+       "path": "local.mac_m5max_128gb",
+       "label": "Mac"
+      }
+     ]
+    },
+    {
+     "label": "$/1 000 car.",
+     "path": "price.usd_per_1k_chars",
+     "fmt": "usd",
+     "align": "r",
+     "w": "5rem",
+     "sort": "k",
+     "pri": 2
+    },
+    {
+     "label": "$/min",
+     "path": "price.usd_per_min",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4rem",
+     "pri": 3,
+     "phone": true,
+     "short": "par minute"
+    },
+    {
+     "label": "Elo voix",
+     "path": "scores.aa_speech_arena_provider_voice_elo",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4.5rem",
+     "sort": "voice",
+     "phone": true,
+     "short": "Elo voix"
+    }
+   ],
+   "facets": [
+    {
+     "id": "tache",
+     "label": "Tâche",
+     "type": "enum",
+     "path": "task",
+     "dict": "task",
+     "limit": 10,
+     "icon": "stage"
+    },
+    {
+     "id": "acces",
+     "label": "Accès",
+     "type": "checks",
+     "items": [
+      {
+       "id": "ouverts",
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "icon": "open"
+      },
+      {
+       "id": "api",
+       "label": "API",
+       "path": "access.api",
+       "icon": "cloud"
+      },
+      {
+       "id": "app",
+       "label": "Application",
+       "path": "access.consumer_app",
+       "icon": "window"
+      }
+     ],
+     "icon": "cloud"
+    },
+    {
+     "id": "fr",
+     "label": "Qualité en français",
+     "type": "enum",
+     "path": "french_quality",
+     "dict": "quality",
+     "icon": "audio"
+    },
+    {
+     "id": "en",
+     "label": "Qualité en anglais",
+     "type": "enum",
+     "path": "english_quality",
+     "dict": "quality",
+     "icon": "audio"
+    },
+    {
+     "id": "clone",
+     "label": "Clonage",
+     "type": "enum",
+     "path": "clone.consent_check",
+     "dict": "consent",
+     "icon": "person"
+    },
+    {
+     "id": "etape",
+     "label": "Étape de production",
+     "type": "enum",
+     "path": "_.stages",
+     "dict": "stage",
+     "limit": 9,
+     "icon": "stage"
+    },
+    {
+     "id": "local",
+     "label": "Tourne en local",
+     "type": "checks",
+     "items": [
+      {
+       "id": "r5090",
+       "label": "RTX 5090",
+       "path": "local.runs_on_rtx5090_32gb"
+      },
+      {
+       "id": "r4090",
+       "label": "RTX 4090",
+       "path": "local.rtx4090_24gb"
+      },
+      {
+       "id": "m128",
+       "label": "MacBook Pro 128 Go",
+       "path": "local.mac_m5max_128gb"
+      },
+      {
+       "id": "m64",
+       "label": "MacBook Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb"
+      },
+      {
+       "id": "s128",
+       "label": "Mac Studio 128 Go",
+       "path": "_j.local.mac_studio_128gb"
+      }
+     ],
+     "icon": "laptop"
+    },
+    {
+     "id": "statut",
+     "label": "Statut",
+     "type": "enum",
+     "path": "_.status.value",
+     "dict": "status",
+     "icon": "status"
+    },
+    {
+     "id": "pays",
+     "label": "Pays",
+     "type": "enum",
+     "path": "country",
+     "dict": "country",
+     "limit": 6,
+     "icon": "globe"
+    },
+    {
+     "id": "editeur",
+     "label": "Éditeur",
+     "type": "enum",
+     "path": "vendor",
+     "limit": 8,
+     "icon": "person"
+    }
+   ],
+   "axes": [
+    {
+     "id": "k",
+     "label": "Prix pour 1 000 caractères ($)",
+     "path": "price.usd_per_1k_chars",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    },
+    {
+     "id": "min",
+     "label": "Prix à la minute ($)",
+     "path": "price.usd_per_min",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    },
+    {
+     "id": "voice",
+     "label": "Elo Speech Arena, voix du fournisseur",
+     "path": "scores.aa_speech_arena_provider_voice_elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "ctrl",
+     "label": "Elo Speech Arena, voix contrôlée",
+     "path": "scores.aa_speech_arena_controlled_voice_elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "tts",
+     "label": "Elo TTS Arena V2",
+     "path": "scores.hf_tts_arena_v2_elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "mv",
+     "label": "Elo musique avec voix",
+     "path": "scores.aa_music_vocals_elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "mi",
+     "label": "Elo musique instrumentale",
+     "path": "scores.aa_music_instrumental_elo",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "wer",
+     "label": "Taux d'erreur de transcription, %",
+     "path": "scores.aa_stt_wer_pct",
+     "scale": "linear",
+     "better": "low"
+    },
+    {
+     "id": "lat",
+     "label": "Latence, ms",
+     "path": "realtime_latency_ms",
+     "scale": "log",
+     "better": "low"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "scale": "date"
+    }
+   ],
+   "map": {
+    "x": "k",
+    "y": "voice",
+    "label": "variant",
+    "fill": {
+     "path": "access.open_weights",
+     "on": "Poids ouverts",
+     "off": "Fermé"
+    }
+   },
+   "keys": [
+    {
+     "label": "Elo Speech Arena",
+     "path": "scores.aa_speech_arena_provider_voice_elo",
+     "fmt": "num",
+     "d": 0
+    },
+    {
+     "label": "Pour 1 000 caractères",
+     "path": "price.usd_per_1k_chars",
+     "fmt": "usd"
+    },
+    {
+     "label": "À la minute",
+     "path": "price.usd_per_min",
+     "fmt": "usd"
+    },
+    {
+     "label": "Latence",
+     "path": "realtime_latency_ms",
+     "fmt": "num",
+     "unit": "ms",
+     "d": 0
+    }
+   ],
+   "sections": [
+    {
+     "title": "En bref",
+     "fields": [
+      {
+       "label": "Points forts",
+       "path": "pros",
+       "fmt": "bullets"
+      },
+      {
+       "label": "Limites",
+       "path": "cons",
+       "fmt": "bullets"
+      }
+     ]
+    },
+    {
+     "title": "Voix et langues",
+     "fields": [
+      {
+       "label": "Tâche",
+       "path": "task",
+       "fmt": "dict",
+       "dict": "task"
+      },
+      {
+       "label": "Langues",
+       "path": "languages"
+      },
+      {
+       "label": "Français",
+       "path": "french_quality",
+       "fmt": "dict",
+       "dict": "quality"
+      },
+      {
+       "label": "Note sur le français",
+       "path": "french_note"
+      },
+      {
+       "label": "Anglais",
+       "path": "english_quality",
+       "fmt": "dict",
+       "dict": "quality"
+      },
+      {
+       "label": "Accents anglais",
+       "path": "english_accents",
+       "fmt": "list"
+      },
+      {
+       "label": "Note sur l'anglais",
+       "path": "english_note"
+      },
+      {
+       "label": "Contrôle des émotions",
+       "path": "emotions_control"
+      },
+      {
+       "label": "Latence en temps réel",
+       "path": "realtime_latency_ms",
+       "fmt": "num",
+       "unit": "ms",
+       "d": 0
+      },
+      {
+       "label": "Durée maximale",
+       "path": "max_duration"
+      }
+     ]
+    },
+    {
+     "title": "Clonage",
+     "fields": [
+      {
+       "label": "Secondes nécessaires",
+       "path": "clone.seconds_needed",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Sans enregistrement préalable",
+       "path": "clone.zero_shot",
+       "fmt": "bool"
+      },
+      {
+       "label": "Contrôle du consentement",
+       "path": "clone.consent_check",
+       "fmt": "dict",
+       "dict": "consent"
+      }
+     ]
+    },
+    {
+     "title": "Scores",
+     "fields": [
+      {
+       "label": "Speech Arena, voix du fournisseur",
+       "path": "scores.aa_speech_arena_provider_voice_elo",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Speech Arena, voix contrôlée",
+       "path": "scores.aa_speech_arena_controlled_voice_elo",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "TTS Arena V2",
+       "path": "scores.hf_tts_arena_v2_elo",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Musique avec voix",
+       "path": "scores.aa_music_vocals_elo",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Musique instrumentale",
+       "path": "scores.aa_music_instrumental_elo",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Erreurs de transcription AA, %",
+       "path": "scores.aa_stt_wer_pct",
+       "fmt": "num"
+      },
+      {
+       "label": "Open ASR, erreurs en anglais, %",
+       "path": "scores.open_asr_en_avg_wer_pct",
+       "fmt": "num"
+      }
+     ]
+    },
+    {
+     "title": "Prix",
+     "fields": [
+      {
+       "label": "Plateforme",
+       "path": "price.platform"
+      },
+      {
+       "label": "Unité",
+       "path": "price.unit",
+       "fmt": "dict",
+       "dict": "unit"
+      },
+      {
+       "label": "Pour 1 000 caractères",
+       "path": "price.usd_per_1k_chars",
+       "fmt": "usd"
+      },
+      {
+       "label": "À la minute",
+       "path": "price.usd_per_min",
+       "fmt": "usd"
+      },
+      {
+       "label": "Au morceau",
+       "path": "price.usd_per_track",
+       "fmt": "usd"
+      },
+      {
+       "label": "Note",
+       "path": "price.note"
+      }
+     ]
+    },
+    {
+     "title": "Tourne en local",
+     "fields": [
+      {
+       "label": "RTX 5090 32 Go",
+       "path": "local.runs_on_rtx5090_32gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "RTX 4090 24 Go",
+       "path": "local.rtx4090_24gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "MacBook Pro M5 Max 128 Go",
+       "path": "local.mac_m5max_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Outil",
+       "path": "local.tool"
+      },
+      {
+       "label": "Mémoire vidéo",
+       "path": "local.vram_note"
+      },
+      {
+       "label": "MacBook Pro M5 Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 64 Go",
+       "path": "_j.local.mac64_note"
+      },
+      {
+       "label": "Mac Studio M5 Max 128 Go",
+       "path": "_j.local.mac_studio_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 256 Go",
+       "path": "_j.local.mac_studio_256gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 512 Go",
+       "path": "_j.local.mac_studio_512gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note Mac Studio",
+       "path": "_j.local.mac_studio_note"
+      },
+      {
+       "label": "Sources",
+       "path": "_j.local.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Intégré à",
+     "fields": [
+      {
+       "label": "ComfyUI, gabarits locaux",
+       "path": "_j.integ.comfyui_local",
+       "fmt": "list"
+      },
+      {
+       "label": "ComfyUI, gabarits API",
+       "path": "_j.integ.comfyui_api",
+       "fmt": "list"
+      },
+      {
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp",
+       "fmt": "list"
+      },
+      {
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio",
+       "fmt": "list"
+      },
+      {
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings",
+       "fmt": "bool"
+      },
+      {
+       "label": "Maestro",
+       "path": "_j.integ.maestro",
+       "fmt": "bool"
+      },
+      {
+       "label": "Phosphene",
+       "path": "_j.integ.phosphene",
+       "fmt": "bool"
+      },
+      {
+       "label": "Notes",
+       "path": "_j.integ.notes"
+      }
+     ]
+    },
+    {
+     "title": "Modération",
+     "fields": [
+      {
+       "label": "Voix de célébrités",
+       "path": "moderation.voix_celebrites",
+       "fmt": "dict",
+       "dict": "voix"
+      },
+      {
+       "label": "Notes",
+       "path": "moderation.notes"
+      }
+     ]
+    },
+    {
+     "title": "Accès",
+     "fields": [
+      {
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "fmt": "bool"
+      },
+      {
+       "label": "Licence",
+       "path": "access.license"
+      },
+      {
+       "label": "API",
+       "path": "access.api",
+       "fmt": "bool"
+      },
+      {
+       "label": "Application",
+       "path": "access.consumer_app",
+       "fmt": "bool"
+      },
+      {
+       "label": "Sortie",
+       "path": "released",
+       "fmt": "date"
+      },
+      {
+       "label": "Pays",
+       "path": "country",
+       "fmt": "dict",
+       "dict": "country"
+      },
+      {
+       "label": "Étapes",
+       "path": "_.stages",
+       "fmt": "list",
+       "dict": "stage"
+      },
+      {
+       "label": "Statut",
+       "path": "_.status.value",
+       "fmt": "dict",
+       "dict": "status"
+      },
+      {
+       "label": "Note de statut",
+       "path": "_.status.note"
+      }
+     ]
+    },
+    {
+     "title": "Sources",
+     "fields": [
+      {
+       "label": "Sources",
+       "path": "sources",
+       "fmt": "sources"
+      }
+     ]
+    }
+   ],
+   "hiddenFields": [
+    "id",
+    "family",
+    "vendor"
+   ],
+   "icon": "audio",
+   "board": {
+    "title": "Top audio",
+    "default": "voice",
+    "flags": [
+     {
+      "path": "access.open_weights",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "path": "access.api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "path": "access.consumer_app",
+      "icon": "window",
+      "label": "Application"
+     }
+    ],
+    "filters": [
+     {
+      "f": "acces",
+      "o": "ouverts",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "f": "acces",
+      "o": "api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "f": "acces",
+      "o": "app",
+      "icon": "window",
+      "label": "Application"
+     },
+     {
+      "f": "local",
+      "o": "r5090",
+      "icon": "laptop",
+      "label": "RTX 5090"
+     },
+     {
+      "f": "local",
+      "o": "m128",
+      "icon": "laptop",
+      "label": "Mac 128 Go"
+     }
+    ],
+    "exclude": {
+     "path": "_.status.value",
+     "in": [
+      "arrete"
+     ],
+     "label": "Arrêtés, sortis du classement"
+    },
+    "criteria": [
+     {
+      "id": "voice",
+      "label": "Voix, Speech Arena",
+      "kind": "score",
+      "path": "scores.aa_speech_arena_provider_voice_elo",
+      "dir": "desc",
+      "src": {
+       "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "ctrl",
+      "label": "Voix contrôlée",
+      "kind": "score",
+      "path": "scores.aa_speech_arena_controlled_voice_elo",
+      "dir": "desc",
+      "src": {
+       "url": "https://artificialanalysis.ai/text-to-speech/leaderboard/controlled-voice",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "tts",
+      "label": "Voix, TTS Arena",
+      "kind": "score",
+      "path": "scores.hf_tts_arena_v2_elo",
+      "dir": "desc",
+      "src": {
+       "url": "https://tts-agi-tts-arena-v2.hf.space/api/leaderboard",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "TTS Arena V2",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "mv",
+      "label": "Musique avec voix",
+      "kind": "score",
+      "path": "scores.aa_music_vocals_elo",
+      "dir": "desc",
+      "src": {
+       "url": "https://artificialanalysis.ai/music/leaderboard/vocals",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "mi",
+      "label": "Musique instrumentale",
+      "kind": "score",
+      "path": "scores.aa_music_instrumental_elo",
+      "dir": "desc",
+      "src": {
+       "url": "https://artificialanalysis.ai/music/leaderboard/instrumental",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "wer",
+      "label": "Transcription",
+      "kind": "measure",
+      "path": "scores.aa_stt_wer_pct",
+      "dir": "asc",
+      "src": {
+       "url": "https://artificialanalysis.ai/speech-to-text",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "note": "Taux d'erreur de transcription : plus la barre est courte, mieux c'est.",
+      "unit": "%"
+     },
+     {
+      "id": "front",
+      "label": "Qualité et prix",
+      "kind": "front",
+      "x": {
+       "path": "price.usd_per_1k_chars",
+       "better": "low",
+       "unit": "pour 1 000 car.",
+       "label": "Prix"
+      },
+      "y": {
+       "path": "scores.aa_speech_arena_provider_voice_elo",
+       "better": "high"
+      },
+      "src": {
+       "url": "https://artificialanalysis.ai/text-to-speech/leaderboard",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "Artificial Analysis",
+      "explain": "elonoci",
+      "note": "Aucune formule ici : figurent seulement les voix qu'aucune autre ne bat à la fois sur le prix et sur le score."
+     },
+     {
+      "id": "k",
+      "label": "Moins cher, voix",
+      "kind": "price",
+      "path": "price.usd_per_1k_chars",
+      "dir": "asc",
+      "unit": "pour 1 000 car.",
+      "note": "Prix relevé à l'usage. Plus la barre est courte, moins c'est cher. Ce classement ne dit rien de la qualité."
+     }
+    ]
+   },
+   "views": [
+    "top",
+    "map",
+    "list"
+   ],
+   "logo": {
+    "path": "vendor",
+    "rules": [
+     {
+      "re": "^Google|DeepMind",
+      "host": "google.com"
+     },
+     {
+      "re": "^Tencent",
+      "host": "tencent.com"
+     },
+     {
+      "re": "^OpenAI",
+      "host": "openai.com"
+     },
+     {
+      "re": "^ElevenLabs",
+      "host": "elevenlabs.io"
+     },
+     {
+      "re": "^ByteDance",
+      "host": "bytedance.com"
+     },
+     {
+      "re": "^Microsoft",
+      "host": "microsoft.com"
+     },
+     {
+      "re": "^Black Forest",
+      "host": "bfl.ai"
+     },
+     {
+      "re": "^Kuaishou",
+      "host": "klingai.com"
+     },
+     {
+      "re": "^MiniMax",
+      "host": "minimax.io"
+     },
+     {
+      "re": "^Lightricks",
+      "host": "lightricks.com"
+     },
+     {
+      "re": "^Alibaba",
+      "host": "alibaba.com"
+     },
+     {
+      "re": "^Stability",
+      "host": "stability.ai"
+     },
+     {
+      "re": "^VAST",
+      "host": "tripo3d.ai"
+     },
+     {
+      "re": "^Luma",
+      "host": "lumalabs.ai"
+     },
+     {
+      "re": "^Shengshu",
+      "host": "vidu.com"
+     },
+     {
+      "re": "^NVIDIA",
+      "host": "nvidia.com"
+     },
+     {
+      "re": "^(xAI|SpaceXAI)",
+      "host": "x.ai"
+     },
+     {
+      "re": "^Meta",
+      "host": "meta.com"
+     },
+     {
+      "re": "^Resemble",
+      "host": "resemble.ai"
+     },
+     {
+      "re": "^Meshy",
+      "host": "meshy.ai"
+     },
+     {
+      "re": "^Krea",
+      "host": "krea.ai"
+     },
+     {
+      "re": "^Fish Audio",
+      "host": "fish.audio"
+     },
+     {
+      "re": "^Mistral",
+      "host": "mistral.ai"
+     },
+     {
+      "re": "^Midjourney",
+      "host": "midjourney.com"
+     },
+     {
+      "re": "^Ideogram",
+      "host": "ideogram.ai"
+     },
+     {
+      "re": "^Recraft",
+      "host": "recraft.ai"
+     },
+     {
+      "re": "^Leonardo",
+      "host": "leonardo.ai"
+     },
+     {
+      "re": "^Kyutai",
+      "host": "kyutai.org"
+     },
+     {
+      "re": "^PixVerse",
+      "host": "pixverse.ai"
+     },
+     {
+      "re": "^Runway",
+      "host": "runway.com"
+     },
+     {
+      "re": "^HeyGen",
+      "host": "heygen.com"
+     },
+     {
+      "re": "^HiDream",
+      "host": "hidream.ai"
+     },
+     {
+      "re": "^Suno",
+      "host": "suno.com"
+     },
+     {
+      "re": "^World Labs",
+      "host": "worldlabs.ai"
+     },
+     {
+      "re": "^Pika",
+      "host": "pika.art"
+     },
+     {
+      "re": "^Higgsfield",
+      "host": "higgsfield.ai"
+     },
+     {
+      "re": "^Reve",
+      "host": "reve.com"
+     },
+     {
+      "re": "^Cartesia",
+      "host": "cartesia.ai"
+     },
+     {
+      "re": "^Hume",
+      "host": "hume.ai"
+     },
+     {
+      "re": "^Inworld",
+      "host": "inworld.ai"
+     },
+     {
+      "re": "^Sesame",
+      "host": "sesame.com"
+     },
+     {
+      "re": "^Sync",
+      "host": "sync.so"
+     },
+     {
+      "re": "^Udio",
+      "host": "udio.com"
+     },
+     {
+      "re": "^Adobe",
+      "host": "adobe.com"
+     },
+     {
+      "re": "^Apple",
+      "host": "apple.com"
+     },
+     {
+      "re": "^Hedra",
+      "host": "hedra.com"
+     },
+     {
+      "re": "^Moonvalley",
+      "host": "moonvalley.com"
+     },
+     {
+      "re": "^Speechify",
+      "host": "speechify.com"
+     },
+     {
+      "re": "^Zyphra",
+      "host": "zyphra.com"
+     },
+     {
+      "re": "^StepFun",
+      "host": "stepfun.com"
+     },
+     {
+      "re": "^Creatify",
+      "host": "creatify.ai"
+     }
+    ]
+   }
+  },
+  {
+   "id": "threed",
+   "label": "3D",
+   "noun": "modèle 3D",
+   "nounPlural": "modèles 3D",
+   "path": "collections.threed",
+   "derived": "derived.threed",
+   "idKey": "id",
+   "title": [
+    "variant"
+   ],
+   "titlePrefix": "family",
+   "subtitle": [
+    "vendor",
+    "family"
+   ],
+   "nameLabel": "Modèle",
+   "checkedPath": "_.checked",
+   "joins": [
+    {
+     "as": "local",
+     "from": "annexes.local_runs_extra"
+    },
+    {
+     "as": "integ",
+     "from": "annexes.integrations.by_id"
+    }
+   ],
+   "tags": [
+    {
+     "path": "_.status.value",
+     "dict": "status",
+     "hideIf": [
+      "actif"
+     ],
+     "datePath": "_.status.date"
+    },
+    {
+     "path": "access.open_weights",
+     "when": true,
+     "label": "Poids ouverts",
+     "tone": "good"
+    },
+    {
+     "path": "task",
+     "dict": "task"
+    }
+   ],
+   "defaultSort": "rendu",
+   "sort": [
+    {
+     "id": "rendu",
+     "label": "Elo 3D Arena, rendu",
+     "path": "scores.3d_arena_rendu",
+     "dir": "desc"
+    },
+    {
+     "id": "topo",
+     "label": "Elo 3D Arena, topologie",
+     "path": "scores.3d_arena_topologie",
+     "dir": "desc"
+    },
+    {
+     "id": "usd",
+     "label": "Prix le plus bas",
+     "path": "price.usd",
+     "dir": "asc"
+    },
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "dir": "desc"
+    },
+    {
+     "id": "nom",
+     "label": "Nom",
+     "path": "variant",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Accès",
+     "fmt": "flags",
+     "w": "4.25rem",
+     "pri": 3,
+     "items": [
+      {
+       "path": "access.open_weights",
+       "icon": "open",
+       "label": "Poids ouverts"
+      },
+      {
+       "path": "access.api",
+       "icon": "cloud",
+       "label": "API"
+      },
+      {
+       "path": "access.consumer_app",
+       "icon": "window",
+       "label": "Application"
+      }
+     ]
+    },
+    {
+     "label": "Tâche",
+     "path": "task",
+     "fmt": "dict",
+     "dict": "task",
+     "w": "minmax(7rem,1fr)",
+     "pri": 2
+    },
+    {
+     "label": "Produit",
+     "fmt": "badges",
+     "pri": 3,
+     "w": "minmax(7rem,1fr)",
+     "items": [
+      {
+       "path": "outputs.mesh",
+       "label": "maillage"
+      },
+      {
+       "path": "outputs.textures_pbr",
+       "label": "PBR"
+      },
+      {
+       "path": "outputs.splats",
+       "label": "splats"
+      },
+      {
+       "path": "outputs.rig",
+       "label": "rig"
+      }
+     ]
+    },
+    {
+     "label": "Blender",
+     "path": "blender.mode",
+     "fmt": "dict",
+     "dict": "blender",
+     "pri": 3,
+     "w": "minmax(5rem,.8fr)"
+    },
+    {
+     "label": "En local",
+     "fmt": "badges",
+     "pri": 3,
+     "w": "minmax(5rem,.7fr)",
+     "items": [
+      {
+       "path": "local.runs_on_rtx5090_32gb",
+       "label": "5090"
+      },
+      {
+       "path": "local.rtx4090_24gb",
+       "label": "4090"
+      },
+      {
+       "path": "local.mac_m5max_128gb",
+       "label": "Mac"
+      }
+     ]
+    },
+    {
+     "label": "Prix",
+     "path": "price.usd",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4rem",
+     "sort": "usd",
+     "pri": 2,
+     "phone": true,
+     "short": "prix"
+    },
+    {
+     "label": "Elo rendu",
+     "path": "scores.3d_arena_rendu",
+     "fmt": "num",
+     "d": 0,
+     "align": "r",
+     "w": "4.5rem",
+     "sort": "rendu",
+     "phone": true,
+     "short": "Elo rendu"
+    }
+   ],
+   "facets": [
+    {
+     "id": "tache",
+     "label": "Tâche",
+     "type": "enum",
+     "path": "task",
+     "dict": "task",
+     "limit": 10,
+     "icon": "stage"
+    },
+    {
+     "id": "acces",
+     "label": "Accès",
+     "type": "checks",
+     "items": [
+      {
+       "id": "ouverts",
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "icon": "open"
+      },
+      {
+       "id": "api",
+       "label": "API",
+       "path": "access.api",
+       "icon": "cloud"
+      },
+      {
+       "id": "app",
+       "label": "Application",
+       "path": "access.consumer_app",
+       "icon": "window"
+      }
+     ],
+     "icon": "cloud"
+    },
+    {
+     "id": "entrees",
+     "label": "Accepte en entrée",
+     "type": "checks",
+     "items": [
+      {
+       "id": "img",
+       "label": "Images",
+       "path": "inputs.images"
+      },
+      {
+       "id": "txt",
+       "label": "Texte",
+       "path": "inputs.text"
+      },
+      {
+       "id": "vid",
+       "label": "Vidéo",
+       "path": "inputs.video"
+      },
+      {
+       "id": "mv",
+       "label": "Vues multiples",
+       "path": "inputs.multiview"
+      }
+     ],
+     "icon": "input"
+    },
+    {
+     "id": "sorties",
+     "label": "Produit",
+     "type": "checks",
+     "items": [
+      {
+       "id": "mesh",
+       "label": "Maillage",
+       "path": "outputs.mesh"
+      },
+      {
+       "id": "pbr",
+       "label": "Textures PBR",
+       "path": "outputs.textures_pbr"
+      },
+      {
+       "id": "spl",
+       "label": "Splats",
+       "path": "outputs.splats"
+      },
+      {
+       "id": "rig",
+       "label": "Rig",
+       "path": "outputs.rig"
+      }
+     ],
+     "icon": "output"
+    },
+    {
+     "id": "blender",
+     "label": "Blender",
+     "type": "enum",
+     "path": "blender.mode",
+     "dict": "blender",
+     "icon": "cube"
+    },
+    {
+     "id": "etape",
+     "label": "Étape de production",
+     "type": "enum",
+     "path": "_.stages",
+     "dict": "stage",
+     "limit": 9,
+     "icon": "stage"
+    },
+    {
+     "id": "local",
+     "label": "Tourne en local",
+     "type": "checks",
+     "items": [
+      {
+       "id": "r5090",
+       "label": "RTX 5090",
+       "path": "local.runs_on_rtx5090_32gb"
+      },
+      {
+       "id": "r4090",
+       "label": "RTX 4090",
+       "path": "local.rtx4090_24gb"
+      },
+      {
+       "id": "m128",
+       "label": "MacBook Pro 128 Go",
+       "path": "local.mac_m5max_128gb"
+      },
+      {
+       "id": "m64",
+       "label": "MacBook Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb"
+      },
+      {
+       "id": "s128",
+       "label": "Mac Studio 128 Go",
+       "path": "_j.local.mac_studio_128gb"
+      }
+     ],
+     "icon": "laptop"
+    },
+    {
+     "id": "statut",
+     "label": "Statut",
+     "type": "enum",
+     "path": "_.status.value",
+     "dict": "status",
+     "icon": "status"
+    },
+    {
+     "id": "pays",
+     "label": "Pays",
+     "type": "enum",
+     "path": "country",
+     "dict": "country",
+     "limit": 6,
+     "icon": "globe"
+    },
+    {
+     "id": "editeur",
+     "label": "Éditeur",
+     "type": "enum",
+     "path": "vendor",
+     "limit": 8,
+     "icon": "person"
+    }
+   ],
+   "axes": [
+    {
+     "id": "date",
+     "label": "Date de sortie",
+     "path": "released",
+     "scale": "date"
+    },
+    {
+     "id": "rendu",
+     "label": "Elo 3D Arena, rendu",
+     "path": "scores.3d_arena_rendu",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "topo",
+     "label": "Elo 3D Arena, topologie",
+     "path": "scores.3d_arena_topologie",
+     "scale": "linear",
+     "better": "high"
+    },
+    {
+     "id": "usd",
+     "label": "Prix ($)",
+     "path": "price.usd",
+     "scale": "log",
+     "fmt": "usd",
+     "better": "low"
+    }
+   ],
+   "map": {
+    "x": "rendu",
+    "y": "topo",
+    "label": "variant",
+    "fill": {
+     "path": "access.open_weights",
+     "on": "Poids ouverts",
+     "off": "Fermé"
+    }
+   },
+   "keys": [
+    {
+     "label": "Elo rendu",
+     "path": "scores.3d_arena_rendu",
+     "fmt": "num",
+     "d": 0
+    },
+    {
+     "label": "Elo topologie",
+     "path": "scores.3d_arena_topologie",
+     "fmt": "num",
+     "d": 0
+    },
+    {
+     "label": "Prix",
+     "path": "price.usd",
+     "fmt": "usd"
+    }
+   ],
+   "sections": [
+    {
+     "title": "En bref",
+     "fields": [
+      {
+       "label": "Points forts",
+       "path": "pros",
+       "fmt": "bullets"
+      },
+      {
+       "label": "Limites",
+       "path": "cons",
+       "fmt": "bullets"
+      }
+     ]
+    },
+    {
+     "title": "Entrées",
+     "fields": [
+      {
+       "label": "Images",
+       "path": "inputs.images",
+       "fmt": "bool"
+      },
+      {
+       "label": "Texte",
+       "path": "inputs.text",
+       "fmt": "bool"
+      },
+      {
+       "label": "Vidéo",
+       "path": "inputs.video",
+       "fmt": "bool"
+      },
+      {
+       "label": "Vues multiples",
+       "path": "inputs.multiview",
+       "fmt": "bool"
+      },
+      {
+       "label": "Autres",
+       "path": "inputs.other"
+      }
+     ]
+    },
+    {
+     "title": "Sorties",
+     "fields": [
+      {
+       "label": "Maillage",
+       "path": "outputs.mesh",
+       "fmt": "bool"
+      },
+      {
+       "label": "Textures PBR",
+       "path": "outputs.textures_pbr",
+       "fmt": "bool"
+      },
+      {
+       "label": "Splats",
+       "path": "outputs.splats",
+       "fmt": "bool"
+      },
+      {
+       "label": "Rig",
+       "path": "outputs.rig",
+       "fmt": "bool"
+      },
+      {
+       "label": "Formats",
+       "path": "outputs.formats",
+       "fmt": "list"
+      },
+      {
+       "label": "Polygones",
+       "path": "outputs.polygons"
+      },
+      {
+       "label": "Autres",
+       "path": "outputs.other"
+      }
+     ]
+    },
+    {
+     "title": "Dans Blender",
+     "fields": [
+      {
+       "label": "Mode",
+       "path": "blender.mode",
+       "fmt": "dict",
+       "dict": "blender"
+      },
+      {
+       "label": "Note",
+       "path": "blender.note"
+      }
+     ]
+    },
+    {
+     "title": "Scores",
+     "fields": [
+      {
+       "label": "3D Arena, rendu",
+       "path": "scores.3d_arena_rendu",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "3D Arena, topologie",
+       "path": "scores.3d_arena_topologie",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "3D Arena, rendu maillage",
+       "path": "scores.3d_arena_rendu_maillage",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "3D Arena, rendu 3DGS",
+       "path": "scores.3d_arena_rendu_3dgs",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Note",
+       "path": "scores_note"
+      }
+     ]
+    },
+    {
+     "title": "Prix et vitesse",
+     "fields": [
+      {
+       "label": "Plateforme",
+       "path": "price.platform"
+      },
+      {
+       "label": "Unité",
+       "path": "price.unit",
+       "fmt": "dict",
+       "dict": "unit"
+      },
+      {
+       "label": "Prix",
+       "path": "price.usd",
+       "fmt": "usd"
+      },
+      {
+       "label": "Note",
+       "path": "price.note"
+      },
+      {
+       "label": "Vitesse",
+       "path": "speed"
+      }
+     ]
+    },
+    {
+     "title": "Tourne en local",
+     "fields": [
+      {
+       "label": "RTX 5090 32 Go",
+       "path": "local.runs_on_rtx5090_32gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "RTX 4090 24 Go",
+       "path": "local.rtx4090_24gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "MacBook Pro M5 Max 128 Go",
+       "path": "local.mac_m5max_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Outil",
+       "path": "local.tool"
+      },
+      {
+       "label": "Mémoire vidéo",
+       "path": "local.vram_note"
+      },
+      {
+       "label": "MacBook Pro M5 Pro 64 Go",
+       "path": "_j.local.mac_m5pro_64gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note 64 Go",
+       "path": "_j.local.mac64_note"
+      },
+      {
+       "label": "Mac Studio M5 Max 128 Go",
+       "path": "_j.local.mac_studio_128gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 256 Go",
+       "path": "_j.local.mac_studio_256gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Mac Studio M5 Ultra 512 Go",
+       "path": "_j.local.mac_studio_512gb",
+       "fmt": "bool"
+      },
+      {
+       "label": "Note Mac Studio",
+       "path": "_j.local.mac_studio_note"
+      },
+      {
+       "label": "Sources",
+       "path": "_j.local.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Intégré à",
+     "fields": [
+      {
+       "label": "ComfyUI, gabarits locaux",
+       "path": "_j.integ.comfyui_local",
+       "fmt": "list"
+      },
+      {
+       "label": "ComfyUI, gabarits API",
+       "path": "_j.integ.comfyui_api",
+       "fmt": "list"
+      },
+      {
+       "label": "Wan2GP",
+       "path": "_j.integ.wan2gp",
+       "fmt": "list"
+      },
+      {
+       "label": "Pinokio",
+       "path": "_j.integ.pinokio",
+       "fmt": "list"
+      },
+      {
+       "label": "Draw Things",
+       "path": "_j.integ.drawthings",
+       "fmt": "bool"
+      },
+      {
+       "label": "Maestro",
+       "path": "_j.integ.maestro",
+       "fmt": "bool"
+      },
+      {
+       "label": "Phosphene",
+       "path": "_j.integ.phosphene",
+       "fmt": "bool"
+      },
+      {
+       "label": "Notes",
+       "path": "_j.integ.notes"
+      }
+     ]
+    },
+    {
+     "title": "Accès",
+     "fields": [
+      {
+       "label": "Poids ouverts",
+       "path": "access.open_weights",
+       "fmt": "bool"
+      },
+      {
+       "label": "Licence",
+       "path": "access.license"
+      },
+      {
+       "label": "API",
+       "path": "access.api",
+       "fmt": "bool"
+      },
+      {
+       "label": "Application",
+       "path": "access.consumer_app",
+       "fmt": "bool"
+      },
+      {
+       "label": "Sortie",
+       "path": "released",
+       "fmt": "date"
+      },
+      {
+       "label": "Note de sortie",
+       "path": "released_note"
+      },
+      {
+       "label": "Autres tâches",
+       "path": "tasks_other",
+       "fmt": "list",
+       "dict": "task"
+      },
+      {
+       "label": "Pays",
+       "path": "country",
+       "fmt": "dict",
+       "dict": "country"
+      },
+      {
+       "label": "Étapes",
+       "path": "_.stages",
+       "fmt": "list",
+       "dict": "stage"
+      },
+      {
+       "label": "Statut",
+       "path": "_.status.value",
+       "fmt": "dict",
+       "dict": "status"
+      },
+      {
+       "label": "Note de statut",
+       "path": "_.status.note"
+      },
+      {
+       "label": "Note",
+       "path": "status_note"
+      }
+     ]
+    },
+    {
+     "title": "Sources",
+     "fields": [
+      {
+       "label": "Sources",
+       "path": "sources",
+       "fmt": "sources"
+      }
+     ]
+    }
+   ],
+   "hiddenFields": [
+    "id",
+    "family",
+    "vendor",
+    "task"
+   ],
+   "icon": "cube",
+   "board": {
+    "title": "Top 3D",
+    "default": "rendu",
+    "flags": [
+     {
+      "path": "access.open_weights",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "path": "access.api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "path": "access.consumer_app",
+      "icon": "window",
+      "label": "Application"
+     }
+    ],
+    "filters": [
+     {
+      "f": "acces",
+      "o": "ouverts",
+      "icon": "open",
+      "label": "Poids ouverts"
+     },
+     {
+      "f": "acces",
+      "o": "api",
+      "icon": "cloud",
+      "label": "API"
+     },
+     {
+      "f": "acces",
+      "o": "app",
+      "icon": "window",
+      "label": "Application"
+     },
+     {
+      "f": "local",
+      "o": "r5090",
+      "icon": "laptop",
+      "label": "RTX 5090"
+     },
+     {
+      "f": "local",
+      "o": "m128",
+      "icon": "laptop",
+      "label": "Mac 128 Go"
+     }
+    ],
+    "exclude": {
+     "path": "_.status.value",
+     "in": [
+      "arrete"
+     ],
+     "label": "Arrêtés, sortis du classement"
+    },
+    "criteria": [
+     {
+      "id": "rendu",
+      "label": "Rendu",
+      "kind": "score",
+      "path": "scores.3d_arena_rendu",
+      "dir": "desc",
+      "src": {
+       "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=render",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "3D Arena",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro. 3D Arena ne couvre encore que 12 modèles de cet atlas : c'est un repère.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "topo",
+      "label": "Topologie",
+      "kind": "score",
+      "path": "scores.3d_arena_topologie",
+      "dir": "desc",
+      "src": {
+       "url": "https://3d-arena-3d-arena.hf.space/api/leaderboard?vote_type=topology",
+       "date": "2026-10-15"
+      },
+      "srcLabel": "3D Arena",
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro. 3D Arena ne couvre encore que 10 modèles de cet atlas : c'est un repère.",
+      "explain": "elonoci"
+     },
+     {
+      "id": "usd",
+      "label": "Moins cher",
+      "kind": "price",
+      "path": "price.usd",
+      "dir": "asc",
+      "unit": "par génération",
+      "note": "Prix relevé par génération, sur la plateforme indiquée dans chaque fiche. Plus la barre est courte, moins c'est cher. Ce classement ne dit rien de la qualité."
+     }
+    ]
+   },
+   "views": [
+    "top",
+    "map",
+    "list"
+   ],
+   "logo": {
+    "path": "vendor",
+    "rules": [
+     {
+      "re": "^Google|DeepMind",
+      "host": "google.com"
+     },
+     {
+      "re": "^Tencent",
+      "host": "tencent.com"
+     },
+     {
+      "re": "^OpenAI",
+      "host": "openai.com"
+     },
+     {
+      "re": "^ElevenLabs",
+      "host": "elevenlabs.io"
+     },
+     {
+      "re": "^ByteDance",
+      "host": "bytedance.com"
+     },
+     {
+      "re": "^Microsoft",
+      "host": "microsoft.com"
+     },
+     {
+      "re": "^Black Forest",
+      "host": "bfl.ai"
+     },
+     {
+      "re": "^Kuaishou",
+      "host": "klingai.com"
+     },
+     {
+      "re": "^MiniMax",
+      "host": "minimax.io"
+     },
+     {
+      "re": "^Lightricks",
+      "host": "lightricks.com"
+     },
+     {
+      "re": "^Alibaba",
+      "host": "alibaba.com"
+     },
+     {
+      "re": "^Stability",
+      "host": "stability.ai"
+     },
+     {
+      "re": "^VAST",
+      "host": "tripo3d.ai"
+     },
+     {
+      "re": "^Luma",
+      "host": "lumalabs.ai"
+     },
+     {
+      "re": "^Shengshu",
+      "host": "vidu.com"
+     },
+     {
+      "re": "^NVIDIA",
+      "host": "nvidia.com"
+     },
+     {
+      "re": "^(xAI|SpaceXAI)",
+      "host": "x.ai"
+     },
+     {
+      "re": "^Meta",
+      "host": "meta.com"
+     },
+     {
+      "re": "^Resemble",
+      "host": "resemble.ai"
+     },
+     {
+      "re": "^Meshy",
+      "host": "meshy.ai"
+     },
+     {
+      "re": "^Krea",
+      "host": "krea.ai"
+     },
+     {
+      "re": "^Fish Audio",
+      "host": "fish.audio"
+     },
+     {
+      "re": "^Mistral",
+      "host": "mistral.ai"
+     },
+     {
+      "re": "^Midjourney",
+      "host": "midjourney.com"
+     },
+     {
+      "re": "^Ideogram",
+      "host": "ideogram.ai"
+     },
+     {
+      "re": "^Recraft",
+      "host": "recraft.ai"
+     },
+     {
+      "re": "^Leonardo",
+      "host": "leonardo.ai"
+     },
+     {
+      "re": "^Kyutai",
+      "host": "kyutai.org"
+     },
+     {
+      "re": "^PixVerse",
+      "host": "pixverse.ai"
+     },
+     {
+      "re": "^Runway",
+      "host": "runway.com"
+     },
+     {
+      "re": "^HeyGen",
+      "host": "heygen.com"
+     },
+     {
+      "re": "^HiDream",
+      "host": "hidream.ai"
+     },
+     {
+      "re": "^Suno",
+      "host": "suno.com"
+     },
+     {
+      "re": "^World Labs",
+      "host": "worldlabs.ai"
+     },
+     {
+      "re": "^Pika",
+      "host": "pika.art"
+     },
+     {
+      "re": "^Higgsfield",
+      "host": "higgsfield.ai"
+     },
+     {
+      "re": "^Reve",
+      "host": "reve.com"
+     },
+     {
+      "re": "^Cartesia",
+      "host": "cartesia.ai"
+     },
+     {
+      "re": "^Hume",
+      "host": "hume.ai"
+     },
+     {
+      "re": "^Inworld",
+      "host": "inworld.ai"
+     },
+     {
+      "re": "^Sesame",
+      "host": "sesame.com"
+     },
+     {
+      "re": "^Sync",
+      "host": "sync.so"
+     },
+     {
+      "re": "^Udio",
+      "host": "udio.com"
+     },
+     {
+      "re": "^Adobe",
+      "host": "adobe.com"
+     },
+     {
+      "re": "^Apple",
+      "host": "apple.com"
+     },
+     {
+      "re": "^Hedra",
+      "host": "hedra.com"
+     },
+     {
+      "re": "^Moonvalley",
+      "host": "moonvalley.com"
+     },
+     {
+      "re": "^Speechify",
+      "host": "speechify.com"
+     },
+     {
+      "re": "^Zyphra",
+      "host": "zyphra.com"
+     },
+     {
+      "re": "^StepFun",
+      "host": "stepfun.com"
+     },
+     {
+      "re": "^Creatify",
+      "host": "creatify.ai"
+     }
+    ]
+   }
+  },
+  {
+   "id": "platforms",
+   "label": "Plateformes",
+   "noun": "plateforme",
+   "nounPlural": "plateformes",
+   "path": "collections.platforms",
+   "derived": "derived.platforms",
+   "idKey": "id",
+   "title": [
+    "name"
+   ],
+   "subtitle": [
+    "type",
+    "country"
+   ],
+   "dicts": {
+    "0": "ptype",
+    "1": "country"
+   },
+   "nameLabel": "Plateforme",
+   "checkedPath": "_.checked",
+   "urlPath": "url",
+   "tags": [
+    {
+     "path": "verdict",
+     "dict": "verdict"
+    },
+    {
+     "path": "type",
+     "dict": "ptype"
+    },
+    {
+     "path": "_.status.value",
+     "dict": "status",
+     "hideIf": [
+      "actif"
+     ],
+     "datePath": "_.status.date"
+    }
+   ],
+   "defaultSort": "s720",
+   "sort": [
+    {
+     "id": "s720",
+     "label": "Seedance 720p, $/s",
+     "path": "seedance.usd_720p_s",
+     "dir": "asc"
+    },
+    {
+     "id": "nom",
+     "label": "Nom",
+     "path": "name",
+     "dir": "asc"
+    },
+    {
+     "id": "verdict",
+     "label": "Verdict",
+     "path": "verdict",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Type",
+     "path": "type",
+     "fmt": "dict",
+     "dict": "ptype",
+     "w": "minmax(6.5rem,1fr)",
+     "pri": 2
+    },
+    {
+     "label": "Visages réels",
+     "path": "moderation.real_faces",
+     "fmt": "dict",
+     "dict": "faces",
+     "w": "minmax(6rem,1fr)",
+     "pri": 3
+    },
+    {
+     "label": "Paiement",
+     "path": "payment",
+     "fmt": "list",
+     "w": "minmax(7rem,1.2fr)",
+     "pri": 3
+    },
+    {
+     "label": "Seedance 720p",
+     "path": "seedance.usd_720p_s",
+     "fmt": "usd",
+     "align": "r",
+     "w": "6.5rem",
+     "sort": "s720",
+     "pri": 2
+    },
+    {
+     "label": "Verdict",
+     "path": "verdict",
+     "fmt": "tag",
+     "dict": "verdict",
+     "w": "5rem",
+     "phone": true
+    }
+   ],
+   "facets": [
+    {
+     "id": "verdict",
+     "label": "Verdict",
+     "type": "enum",
+     "path": "verdict",
+     "dict": "verdict",
+     "icon": null
+    },
+    {
+     "id": "type",
+     "label": "Type",
+     "type": "enum",
+     "path": "type",
+     "dict": "ptype",
+     "icon": null
+    },
+    {
+     "id": "etape",
+     "label": "Étape de production",
+     "type": "enum",
+     "path": "_.stages",
+     "dict": "stage",
+     "limit": 9,
+     "icon": "stage"
+    },
+    {
+     "id": "visages",
+     "label": "Visages réels",
+     "type": "enum",
+     "path": "moderation.real_faces",
+     "dict": "faces",
+     "icon": "face"
+    },
+    {
+     "id": "paiement",
+     "label": "Paiement",
+     "type": "enum",
+     "path": "payment",
+     "limit": 8,
+     "icon": null
+    },
+    {
+     "id": "lora",
+     "label": "Options",
+     "type": "checks",
+     "items": [
+      {
+       "id": "lora",
+       "label": "Hébergement de LoRA",
+       "path": "lora_hosting"
+      },
+      {
+       "id": "promo",
+       "label": "Promotions relevées",
+       "path": "promotions"
+      },
+      {
+       "id": "abo",
+       "label": "Comparaison abonnement et API",
+       "path": "api_vs_subscription"
+      }
+     ],
+     "icon": "layers"
+    },
+    {
+     "id": "pays",
+     "label": "Pays",
+     "type": "enum",
+     "path": "country",
+     "dict": "country",
+     "limit": 6,
+     "icon": "globe"
+    }
+   ],
+   "axes": [
+    {
+     "id": "verdict",
+     "label": "Verdict",
+     "path": "verdict",
+     "scale": "discrete",
+     "values": [
+      "eviter",
+      "tester",
+      "fiable"
+     ],
+     "dict": "verdict"
+    },
+    {
+     "id": "type",
+     "label": "Type",
+     "path": "type",
+     "scale": "discrete",
+     "dict": "ptype"
+    },
+    {
+     "id": "visages",
+     "label": "Visages réels",
+     "path": "moderation.real_faces",
+     "scale": "discrete",
+     "dict": "faces",
+     "values": [
+      "bloque",
+      "verif_identite",
+      "filtre partiel",
+      "autorise",
+      "inconnu"
+     ]
+    },
+    {
+     "id": "s720",
+     "label": "Seedance 720p ($/s)",
+     "path": "seedance.usd_720p_s",
+     "scale": "log",
+     "fmt": "usd"
+    },
+    {
+     "id": "s1080",
+     "label": "Seedance 1080p ($/s)",
+     "path": "seedance.usd_1080p_s",
+     "scale": "log",
+     "fmt": "usd"
+    }
+   ],
+   "map": {
+    "x": "visages",
+    "y": "verdict",
+    "label": "name"
+   },
+   "keys": [
+    {
+     "label": "Seedance 720p, $/s",
+     "path": "seedance.usd_720p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "Seedance 1080p, $/s",
+     "path": "seedance.usd_1080p_s",
+     "fmt": "usd"
+    }
+   ],
+   "sections": [
+    {
+     "title": "Verdict",
+     "fields": [
+      {
+       "label": "Verdict",
+       "path": "verdict",
+       "fmt": "dict",
+       "dict": "verdict"
+      },
+      {
+       "label": "Raison",
+       "path": "verdict_reason"
+      }
+     ]
+    },
+    {
+     "title": "Offre",
+     "fields": [
+      {
+       "label": "Facturation",
+       "path": "offer.billing"
+      },
+      {
+       "label": "Offre relevée",
+       "path": "offer.plan_observed"
+      },
+      {
+       "label": "Illimité",
+       "path": "offer.unlimited",
+       "fmt": "auto"
+      },
+      {
+       "label": "Où",
+       "path": "offer.unlimited_where"
+      },
+      {
+       "label": "Notes",
+       "path": "offer.notes"
+      },
+      {
+       "label": "Sources",
+       "path": "offer.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Modèles",
+     "fields": [
+      {
+       "label": "Modèles",
+       "path": "models",
+       "fmt": "list"
+      },
+      {
+       "label": "Notes par modèle",
+       "path": "model_notes",
+       "fmt": "auto",
+       "full": true
+      },
+      {
+       "label": "Étapes",
+       "path": "_.stages",
+       "fmt": "list",
+       "dict": "stage"
+      },
+      {
+       "label": "Pourquoi",
+       "path": "_.why"
+      }
+     ]
+    },
+    {
+     "title": "Seedance",
+     "fields": [
+      {
+       "label": "Version",
+       "path": "seedance.version"
+      },
+      {
+       "label": "480p",
+       "path": "seedance.usd_480p_s",
+       "fmt": "usd"
+      },
+      {
+       "label": "720p",
+       "path": "seedance.usd_720p_s",
+       "fmt": "usd"
+      },
+      {
+       "label": "1080p",
+       "path": "seedance.usd_1080p_s",
+       "fmt": "usd"
+      },
+      {
+       "label": "Note",
+       "path": "seedance.note"
+      }
+     ]
+    },
+    {
+     "title": "Abonnement ou API",
+     "fields": [
+      {
+       "label": "Clip de référence",
+       "path": "api_vs_subscription.clip"
+      },
+      {
+       "label": "Offre",
+       "path": "api_vs_subscription.plan"
+      },
+      {
+       "label": "$ par mois",
+       "path": "api_vs_subscription.plan_usd_month",
+       "fmt": "usd"
+      },
+      {
+       "label": "Crédits par mois",
+       "path": "api_vs_subscription.credits_month",
+       "fmt": "num"
+      },
+      {
+       "label": "Crédits par clip",
+       "path": "api_vs_subscription.credits_per_clip",
+       "fmt": "num"
+      },
+      {
+       "label": "Prix du clip en abonnement",
+       "path": "api_vs_subscription.usd_per_clip_sub",
+       "fmt": "usd"
+      },
+      {
+       "label": "Clips par mois",
+       "path": "api_vs_subscription.clips_per_month",
+       "fmt": "num"
+      },
+      {
+       "label": "Meilleure API",
+       "path": "api_vs_subscription.best_api",
+       "fmt": "auto"
+      },
+      {
+       "label": "Calcul",
+       "path": "api_vs_subscription.calc"
+      },
+      {
+       "label": "Verdict",
+       "path": "api_vs_subscription.verdict"
+      },
+      {
+       "label": "Sources",
+       "path": "api_vs_subscription.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Promotions",
+     "fields": [
+      {
+       "label": "Promotions",
+       "path": "promotions",
+       "fmt": "promotions"
+      }
+     ]
+    },
+    {
+     "title": "Modération",
+     "fields": [
+      {
+       "label": "Visages réels",
+       "path": "moderation.real_faces",
+       "fmt": "dict",
+       "dict": "faces"
+      },
+      {
+       "label": "Personnalités",
+       "path": "moderation.public_figures"
+      },
+      {
+       "label": "Violence",
+       "path": "moderation.violence"
+      },
+      {
+       "label": "Notes",
+       "path": "moderation.notes"
+      },
+      {
+       "label": "Refus facturé",
+       "path": "refusal_billed"
+      },
+      {
+       "label": "Visages par modèle",
+       "path": "faces",
+       "fmt": "auto",
+       "full": true
+      }
+     ]
+    },
+    {
+     "title": "Pratique",
+     "fields": [
+      {
+       "label": "Paiement",
+       "path": "payment",
+       "fmt": "list"
+      },
+      {
+       "label": "Hébergement de LoRA",
+       "path": "lora_hosting"
+      },
+      {
+       "label": "Conditions",
+       "path": "terms"
+      },
+      {
+       "label": "Fiabilité",
+       "path": "reliability"
+      },
+      {
+       "label": "Retours",
+       "path": "user_feedback.summary"
+      },
+      {
+       "label": "Sources des retours",
+       "path": "user_feedback.sources",
+       "fmt": "sources"
+      }
+     ]
+    },
+    {
+     "title": "Sources",
+     "fields": [
+      {
+       "label": "Sources",
+       "path": "sources",
+       "fmt": "sources"
+      }
+     ]
+    }
+   ],
+   "hiddenFields": [
+    "id",
+    "name",
+    "url",
+    "country",
+    "type"
+   ],
+   "icon": "layers",
+   "logo": {
+    "path": "url",
+    "skip": [
+     "github.com",
+     "huggingface.co"
+    ]
+   },
+   "views": [
+    "map",
+    "list"
+   ]
+  },
+  {
+   "id": "prices",
+   "label": "Prix",
+   "noun": "prix",
+   "nounPlural": "prix",
+   "path": "collections.prices",
+   "idPrefix": "p",
+   "title": [
+    "model_id"
+   ],
+   "subtitle": [
+    "platform",
+    "endpoint"
+   ],
+   "nameLabel": "Modèle",
+   "tags": [
+    {
+     "path": "verified",
+     "dict": "verified"
+    }
+   ],
+   "defaultSort": "p720",
+   "sort": [
+    {
+     "id": "nom",
+     "label": "Modèle",
+     "path": "model_id",
+     "dir": "asc"
+    },
+    {
+     "id": "pf",
+     "label": "Plateforme",
+     "path": "platform",
+     "dir": "asc"
+    },
+    {
+     "id": "p480",
+     "label": "480p, $/s",
+     "path": "price_usd_480p_s",
+     "dir": "asc"
+    },
+    {
+     "id": "p720",
+     "label": "720p, $/s",
+     "path": "price_usd_720p_s",
+     "dir": "asc"
+    },
+    {
+     "id": "p1080",
+     "label": "1080p, $/s",
+     "path": "price_usd_1080p_s",
+     "dir": "asc"
+    },
+    {
+     "id": "pi",
+     "label": "À l'image",
+     "path": "price_usd_per_image",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Plateforme",
+     "path": "platform",
+     "w": "minmax(5rem,.8fr)",
+     "pri": 2
+    },
+    {
+     "label": "480p",
+     "path": "price_usd_480p_s",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.25rem",
+     "sort": "p480",
+     "pri": 3
+    },
+    {
+     "label": "720p",
+     "path": "price_usd_720p_s",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.25rem",
+     "sort": "p720",
+     "phone": true,
+     "short": "$/s 720p"
+    },
+    {
+     "label": "1080p",
+     "path": "price_usd_1080p_s",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.25rem",
+     "sort": "p1080",
+     "pri": 2
+    },
+    {
+     "label": "Image",
+     "path": "price_usd_per_image",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4.25rem",
+     "sort": "pi",
+     "phone": true,
+     "short": "par image"
+    },
+    {
+     "label": "Vérifié",
+     "path": "verified",
+     "fmt": "dict",
+     "dict": "verified",
+     "w": "6rem",
+     "pri": 3
+    },
+    {
+     "label": "Date",
+     "path": "retrieved_at",
+     "fmt": "date",
+     "w": "5rem",
+     "pri": 3
+    }
+   ],
+   "facets": [
+    {
+     "id": "plateforme",
+     "label": "Plateforme",
+     "type": "enum",
+     "path": "platform",
+     "limit": 10,
+     "icon": null
+    },
+    {
+     "id": "modalite",
+     "label": "Modalité",
+     "type": "enum",
+     "path": "modality",
+     "dict": "modality",
+     "icon": null
+    },
+    {
+     "id": "unite",
+     "label": "Unité",
+     "type": "enum",
+     "path": "unit",
+     "dict": "unit",
+     "icon": null
+    },
+    {
+     "id": "verifie",
+     "label": "Vérification",
+     "type": "enum",
+     "path": "verified",
+     "dict": "verified",
+     "icon": null
+    }
+   ],
+   "keys": [
+    {
+     "label": "480p, $/s",
+     "path": "price_usd_480p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "720p, $/s",
+     "path": "price_usd_720p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "1080p, $/s",
+     "path": "price_usd_1080p_s",
+     "fmt": "usd"
+    },
+    {
+     "label": "À l'image",
+     "path": "price_usd_per_image",
+     "fmt": "usd"
+    }
+   ],
+   "sections": [
+    {
+     "title": "Prix",
+     "fields": [
+      {
+       "label": "Fiche du modèle",
+       "path": "model_id",
+       "fmt": "ref",
+       "cols": [
+        "video",
+        "image",
+        "audio",
+        "threed"
+       ],
+       "alias": "annexes.aliases"
+      },
+      {
+       "label": "Plateforme",
+       "path": "platform"
+      },
+      {
+       "label": "Point d'accès",
+       "path": "endpoint"
+      },
+      {
+       "label": "Unité",
+       "path": "unit",
+       "fmt": "dict",
+       "dict": "unit"
+      },
+      {
+       "label": "Modalité",
+       "path": "modality",
+       "fmt": "dict",
+       "dict": "modality"
+      },
+      {
+       "label": "Prix unitaire",
+       "path": "price_usd_unit",
+       "fmt": "usd"
+      },
+      {
+       "label": "Unité de l'API",
+       "path": "unit_api"
+      },
+      {
+       "label": "Relevé brut",
+       "path": "raw"
+      }
+     ]
+    },
+    {
+     "title": "Vérification",
+     "fields": [
+      {
+       "label": "Méthode",
+       "path": "verified",
+       "fmt": "dict",
+       "dict": "verified"
+      },
+      {
+       "label": "Date",
+       "path": "retrieved_at",
+       "fmt": "date"
+      },
+      {
+       "label": "Source",
+       "path": "source_url",
+       "fmt": "url"
+      }
+     ]
+    }
+   ],
+   "icon": "tag"
+  },
+  {
+   "id": "gpu",
+   "label": "GPU",
+   "noun": "offre GPU",
+   "nounPlural": "offres GPU",
+   "path": "collections.gpu",
+   "idPrefix": "g",
+   "title": [
+    "gpu"
+   ],
+   "subtitle": [
+    "provider",
+    "tier",
+    "offer"
+   ],
+   "dicts": {
+    "0": "provider",
+    "1": "tier"
+   },
+   "nameLabel": "GPU",
+   "defaultSort": "h",
+   "sort": [
+    {
+     "id": "h",
+     "label": "Prix à l'heure",
+     "path": "price_usd_hour",
+     "dir": "asc"
+    },
+    {
+     "id": "vram",
+     "label": "Mémoire vidéo",
+     "path": "vram_gb",
+     "dir": "desc"
+    },
+    {
+     "id": "nom",
+     "label": "GPU",
+     "path": "gpu",
+     "dir": "asc"
+    }
+   ],
+   "columns": [
+    {
+     "label": "Fournisseur",
+     "path": "provider",
+     "fmt": "dict",
+     "dict": "provider",
+     "w": "minmax(5.5rem,.9fr)",
+     "pri": 2
+    },
+    {
+     "label": "Formule",
+     "path": "tier",
+     "fmt": "dict",
+     "dict": "tier",
+     "w": "minmax(7rem,1fr)",
+     "pri": 3
+    },
+    {
+     "label": "Facturation",
+     "path": "billing",
+     "w": "minmax(7rem,1.1fr)",
+     "pri": 3
+    },
+    {
+     "label": "Mémoire",
+     "path": "vram_gb",
+     "fmt": "num",
+     "unit": "Go",
+     "d": 0,
+     "align": "r",
+     "w": "4rem",
+     "sort": "vram",
+     "pri": 2
+    },
+    {
+     "label": "$/h",
+     "path": "price_usd_hour",
+     "fmt": "usd",
+     "align": "r",
+     "w": "4rem",
+     "sort": "h",
+     "phone": true,
+     "short": "par heure"
+    }
+   ],
+   "facets": [
+    {
+     "id": "fournisseur",
+     "label": "Fournisseur",
+     "type": "enum",
+     "path": "provider",
+     "dict": "provider",
+     "limit": 15,
+     "icon": null
+    },
+    {
+     "id": "formule",
+     "label": "Formule",
+     "type": "enum",
+     "path": "tier",
+     "dict": "tier",
+     "icon": null
+    },
+    {
+     "id": "vram",
+     "label": "Mémoire vidéo",
+     "type": "threshold",
+     "path": "vram_gb",
+     "steps": [
+      16,
+      24,
+      32,
+      48,
+      80
+     ],
+     "unit": "Go",
+     "icon": null
+    }
+   ],
+   "axes": [
+    {
+     "id": "vram",
+     "label": "Mémoire vidéo (Go)",
+     "path": "vram_gb",
+     "scale": "log"
+    },
+    {
+     "id": "h",
+     "label": "Prix à l'heure ($)",
+     "path": "price_usd_hour",
+     "scale": "log",
+     "fmt": "usd"
+    },
+    {
+     "id": "tier",
+     "label": "Formule",
+     "path": "tier",
+     "scale": "discrete",
+     "dict": "tier"
+    },
+    {
+     "id": "fourn",
+     "label": "Fournisseur",
+     "path": "provider",
+     "scale": "discrete",
+     "dict": "provider"
+    }
+   ],
+   "map": {
+    "x": "vram",
+    "y": "h",
+    "label": "gpu"
+   },
+   "keys": [
+    {
+     "label": "Mémoire vidéo",
+     "path": "vram_gb",
+     "fmt": "num",
+     "unit": "Go",
+     "d": 0
+    },
+    {
+     "label": "Prix à l'heure",
+     "path": "price_usd_hour",
+     "fmt": "usd"
+    },
+    {
+     "label": "€ à l'heure",
+     "path": "eur_per_hour",
+     "fmt": "num"
+    },
+    {
+     "label": "€ par mois",
+     "path": "eur_per_month",
+     "fmt": "num",
+     "d": 0
+    }
+   ],
+   "sections": [
+    {
+     "title": "Machine",
+     "fields": [
+      {
+       "label": "GPU",
+       "path": "gpu"
+      },
+      {
+       "label": "Offre",
+       "path": "offer"
+      },
+      {
+       "label": "Nombre de GPU",
+       "path": "gpu_count",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Mémoire vidéo",
+       "path": "vram_gb",
+       "fmt": "num",
+       "unit": "Go",
+       "d": 0
+      },
+      {
+       "label": "Processeur",
+       "path": "cpu"
+      },
+      {
+       "label": "Mémoire vive",
+       "path": "ram_gb",
+       "fmt": "num",
+       "unit": "Go",
+       "d": 0
+      },
+      {
+       "label": "Disque",
+       "path": "disk"
+      },
+      {
+       "label": "Système",
+       "path": "os"
+      },
+      {
+       "label": "Bureau distant",
+       "path": "remote_desktop"
+      },
+      {
+       "label": "Région",
+       "path": "region"
+      }
+     ]
+    },
+    {
+     "title": "Prix",
+     "fields": [
+      {
+       "label": "Fournisseur",
+       "path": "provider",
+       "fmt": "dict",
+       "dict": "provider"
+      },
+      {
+       "label": "Formule",
+       "path": "tier",
+       "fmt": "dict",
+       "dict": "tier"
+      },
+      {
+       "label": "$ à l'heure",
+       "path": "price_usd_hour",
+       "fmt": "usd"
+      },
+      {
+       "label": "$ par mois",
+       "path": "usd_per_month",
+       "fmt": "usd"
+      },
+      {
+       "label": "€ à l'heure",
+       "path": "eur_per_hour",
+       "fmt": "num"
+      },
+      {
+       "label": "€ par mois",
+       "path": "eur_per_month",
+       "fmt": "num"
+      },
+      {
+       "label": "Devise",
+       "path": "currency"
+      },
+      {
+       "label": "Taxes",
+       "path": "tax"
+      },
+      {
+       "label": "Facturation",
+       "path": "billing"
+      },
+      {
+       "label": "À l'arrêt",
+       "path": "stop_billing"
+      },
+      {
+       "label": "Offres relevées",
+       "path": "n_offers",
+       "fmt": "num",
+       "d": 0
+      },
+      {
+       "label": "Genre",
+       "path": "kind"
+      }
+     ]
+    },
+    {
+     "title": "Vérification",
+     "fields": [
+      {
+       "label": "Notes",
+       "path": "notes"
+      },
+      {
+       "label": "Relevé brut",
+       "path": "raw"
+      },
+      {
+       "label": "Méthode",
+       "path": "verified",
+       "fmt": "dict",
+       "dict": "verified"
+      },
+      {
+       "label": "Date",
+       "path": "retrieved_at",
+       "fmt": "date"
+      },
+      {
+       "label": "Date de la fiche",
+       "path": "date",
+       "fmt": "date"
+      },
+      {
+       "label": "Source",
+       "path": "source_url",
+       "fmt": "url"
+      }
+     ]
+    }
+   ],
+   "icon": "chip"
+  }
+ ],
+ "explain": {
+  "elo": "Elo : score issu de votes humains à l'aveugle entre deux résultats. Plus il est haut, mieux c'est. Chaque classement a sa propre échelle.",
+  "eloaa": "Elo : score issu de votes humains à l'aveugle entre deux résultats. Le trait fin donne la marge à 95 % ; signe ≈ : l'écart avec le rang précédent n'est pas significatif. Chaque classement a sa propre échelle.",
+  "eloar": "Score de type Elo, issu de votes humains à l'aveugle entre deux résultats. Le trait fin donne la marge indiquée par la source ; signe ≈ : l'écart avec le rang précédent n'est pas significatif. Chaque classement a sa propre échelle.",
+  "elonoci": "Elo : score issu de votes humains à l'aveugle entre deux résultats. La source ne donne pas ici de marge par modèle. Chaque classement a sa propre échelle."
+ },
+ "relations": {
+  "minimax-h3-api": {
+   "note": "Cette ligne décrit le service en API : le prix et le score y sont relevés. Elle porte aussi la mention Poids ouverts parce que la famille publie ses poids, sous d'autres fiches.",
+   "tag": "API, poids à part",
+   "open": [
+    "minimax-h3-fl2va-33b",
+    "minimax-h3-ref2va-33b"
+   ]
+  },
+  "ltx-2-5-fast-api": {
+   "note": "Cette ligne décrit le service en API : le prix et le score y sont relevés. Elle porte aussi la mention Poids ouverts parce que la famille publie ses poids, sous d'autres fiches.",
+   "tag": "API, poids à part",
+   "open": [
+    "ltx-2-5-dev",
+    "ltx-2-5-distilled"
+   ]
+  },
+  "ltx-2-5-pro-api": {
+   "note": "Cette ligne décrit le service en API : le prix et le score y sont relevés. Elle porte aussi la mention Poids ouverts parce que la famille publie ses poids, sous d'autres fiches.",
+   "tag": "API, poids à part",
+   "open": [
+    "ltx-2-5-dev",
+    "ltx-2-5-distilled"
+   ]
+  },
+  "ltx-2-3-pro-api": {
+   "note": "Cette ligne décrit le service en API : le prix et le score y sont relevés. Elle porte aussi la mention Poids ouverts parce que la famille publie ses poids, sous d'autres fiches.",
+   "tag": "API, poids à part",
+   "open": [
+    "ltx-2-3-open-weights"
+   ]
+  },
+  "ltx-2-3-fast-api": {
+   "note": "Cette ligne décrit le service en API : le prix et le score y sont relevés. Elle porte aussi la mention Poids ouverts parce que la famille publie ses poids, sous d'autres fiches.",
+   "tag": "API, poids à part",
+   "open": [
+    "ltx-2-3-open-weights"
+   ]
+  }
+ },
+ "display": {
+  "keep": "(^|\\.)(url|capture|id|model_id|raw|ref|name|source_name)$|\\.sources\\.",
+  "allow": [
+   "VOICES.md",
+   "example_vc.py",
+   "gradio_app.py",
+   "inference.py",
+   "app.py",
+   "README.md"
+  ],
+  "rules": []
+ }
+}

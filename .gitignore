@@ -1,7 +1,8 @@
 *.htm*
 .DS_Store
 __pycache__/
-site/
+!site/index.html
+!docs/index.html
 papiers/
 test-optique/
 data/raw/
@@ -11,3 +12,4 @@ data/model-ids.txt
 .venv/
 cache/
 *.bak
+.scan-terms

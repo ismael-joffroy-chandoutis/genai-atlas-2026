@@ -997,7 +997,7 @@
   "modality": "video",
   "released": "2026-07-30",
   "access": {
-   "open_weights": true,
+   "open_weights": false,
    "license": "MiniMax H3 Community License Agreement (formulaire de demande requis pour les États-Unis, l'UE, le Royaume-Uni et la Corée du Sud)",
    "api": true,
    "consumer_app": true
@@ -6198,7 +6198,7 @@
   "modality": "video",
   "released": "2026-03-05",
   "access": {
-   "open_weights": true,
+   "open_weights": false,
    "license": "API payante ; poids sous LTX-2.x Community License (gratuit sous 10 M$ de chiffre d'affaires annuel, accord commercial payant au-delà)",
    "api": true,
    "consumer_app": true
@@ -6292,7 +6292,7 @@
   "modality": "video",
   "released": "2026-03-05",
   "access": {
-   "open_weights": true,
+   "open_weights": false,
    "license": "API payante ; poids sous LTX-2.x Community License (gratuit sous 10 M$ de chiffre d'affaires annuel, accord commercial payant au-delà)",
    "api": true,
    "consumer_app": true
@@ -6666,7 +6666,7 @@
   ],
   "local": {
    "runs_on_rtx5090_32gb": null,
-   "vram_note": "NVFP4 conçu pour Blackwell (famille de la RTX 5090) ; aucun chiffre de VRAM officiel trouvé ; le chiffre « 16 Go » du brouillon n'a pas été retrouvé dans les sources lues."
+   "vram_note": "NVFP4 conçu pour Blackwell (famille de la RTX 5090) ; aucun chiffre de VRAM officiel trouvé ; le chiffre « 16 Go » n'a pas été retrouvé dans les sources lues."
   },
   "moderation": {
    "real_faces": "autorise",
@@ -6708,7 +6708,7 @@
   "modality": "video",
   "released": "2026-08-11",
   "access": {
-   "open_weights": true,
+   "open_weights": false,
    "license": "API payante ; poids sous LTX-2.x Community License (gratuit sous 10 M$ de chiffre d'affaires annuel, accord commercial payant au-delà)",
    "api": true,
    "consumer_app": true
@@ -6813,7 +6813,7 @@
   "modality": "video",
   "released": "2026-08-11",
   "access": {
-   "open_weights": true,
+   "open_weights": false,
    "license": "API payante ; poids sous LTX-2.x Community License (gratuit sous 10 M$ de chiffre d'affaires annuel, accord commercial payant au-delà)",
    "api": true,
    "consumer_app": true
@@ -7532,7 +7532,7 @@
    "aa_image_to_video": null,
    "aa_text_to_image": null,
    "aa_image_edit": null,
-   "aa_note": "AA, lu le 15/10/2026 : « Gemini Omni Flash » (daté du 19/05/2026) premier du classement I2V sans audio (ancienne échelle ancrée Wan 2.1 = 1000) avec 1368. Absent des classements v2.1 avec audio, où seule la 1.1 figure. Le brouillon attribuait ce 1368 à la 1.1 : c'est une erreur."
+   "aa_note": "AA, lu le 15/10/2026 : « Gemini Omni Flash » (daté du 19/05/2026) premier du classement I2V sans audio (ancienne échelle ancrée Wan 2.1 = 1000) avec 1368. Absent des classements v2.1 avec audio, où seule la 1.1 figure. Ce 1368 ne vaut pas pour la 1.1."
   },
   "inputs": {
    "text": true,
@@ -9749,8 +9749,7 @@
     "url": null,
     "date": "2026-10-16",
     "type": "mesure",
-    "label": "mesure maison 16/10/2026",
-    "ref": "fleet-work/omnihuman-telenovela-2026-10-16/"
+    "label": "mesure maison 16/10/2026"
    }
   ]
  },

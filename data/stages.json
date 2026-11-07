@@ -23,7 +23,7 @@
       "openai-sora-2-pro": ["storyboard"]
     },
     "why": {
-      "minimax-h3-max": "Lip-sync et doublage par piste audio fournie, testés en local sur les tours.",
+      "minimax-h3-max": "Lip-sync et doublage par piste audio fournie, testés sur machine locale.",
       "minimax-h3-max-turbo": "Version rapide et moins chère, utilisée pour les brouillons.",
       "seedance-2-0-mini": "2,5 crédits Higgsfield en 480p : retenu pour l'animatique (mesure maison 16/10/2026).",
       "seedance-2-5": "Mode brouillon 480p finalisable en 1080p (Higgsfield, mesure maison 16/10/2026)."
