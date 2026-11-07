@@ -1,6 +1,6 @@
 # Tables
 
-Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.11.07, published 7 November 2026, prices last read on 2026-10-16. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
+Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.11.07.1, published 7 November 2026, most prices last read on 2026-10-15, 12 lines re-read since, last on 2026-11-07. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
 
 ## Video
 
@@ -62,8 +62,8 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.11.07,
 | MiniMax H3 · H3 (API MiniMax et fal) | MiniMax | no | 4–15 s | 4K sur fal (agrandi d'une base 768p) ; 2K chez MiniMax et OpenRouter | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 2 | yes | no | no | no | 1158 | 1141 | – | 0.040 (kie) |
 | MiniMax H3 · H3 FL2VA 33B (poids ouverts) | MiniMax | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | 0 | 0 | 0 | yes / yes | 2 | yes | yes | yes | yes | 1158 | 1141 | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro |  |
 | MiniMax H3 · H3 Fun ControlNet Union (1.0 puis 2.0) | Alibaba PAI | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | ? | yes | ? | ? | ? | ? | ? | ComfyUI, Wan2GP, Pinokio |  |
-| MiniMax H3 · H3 Max | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 3 | no | no | ? | ? | 1156 | 1124 | – | 0.048 (fal) |
-| MiniMax H3 · H3 Max Turbo | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | ? | ? | 3 | yes / yes | ? | no | no | ? | ? | ? | ? | – | 0.024 (fal) |
+| MiniMax H3 · H3 Max | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 3 | no | no | ? | ? | 1156 | 1124 | – | 0.056 (fal) |
+| MiniMax H3 · H3 Max Turbo | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | ? | ? | 3 | yes / yes | ? | no | no | ? | ? | ? | ? | – | 0.028 (fal) |
 | MiniMax H3 · H3 PDD 8 étapes (33B et 20B, Wan2GP) | MiniMax / Wan2GP | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | 2 | yes | yes | yes | no | ? | ? | Wan2GP, Pinokio, Maestro |  |
 | MiniMax H3 · H3 Ref2VA 33B (poids ouverts) | MiniMax | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | 9 | 3 (15 s) | 3 (15 s) | no / no | 0 | yes | yes | yes | yes | ? | ? | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro |  |
 | MiniMax H3 · H3 Turbo LoRA (communautaires : lightx2v, larryvrh et dérivés) | Communauté (lightx2v, larryvrh) | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | 2 | yes | yes | yes | ? | ? | ? | Wan2GP, Pinokio, Maestro, Phosphene |  |
@@ -133,9 +133,9 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.11.07,
 | Firefly Image · Firefly Image Model 5 | Adobe | no | Propriétaire (Creative Cloud, API Firefly Services) | 4 MP natif (environ 2304x1792 constaté par un utilisateur) | ? | yes | no | no | ? | ? | ? | ? | – |  |
 | GPT Image · GPT Image 1 Mini | OpenAI | no | Propriétaire (API OpenAI) | ? | ? | yes | no | no | ? | ? | 942 | 924 | – | 0.011 (openai) |
 | GPT Image · GPT Image 1.5 | OpenAI | no | Propriétaire (API OpenAI) | ? | ? | yes | no | no | ? | ? | 1120 | 1116 | – | 0.020 (kie) |
-| GPT Image · GPT Image 2 | OpenAI | no | Propriétaire (API OpenAI) | 3840x2160 (4K, 8,3 MP) | ? | yes | no | no | ? | ? | 1187 | 1133 | – | 0.030 (kie) |
-| GPT Image · GPT Image 2.5 Flare | OpenAI | no | Propriétaire (API OpenAI) | 3840 px côté long, 8,3 MP max (au-delà de 2560x1440 = expérimental) | ? | yes | no | no | ? | ? | 1207 | 1178 | – | 0.024 (wavespeed) |
-| GPT Image · GPT Image 2.5 Sunburst | OpenAI | no | Propriétaire (API OpenAI) | 3840 px côté long, 8,3 MP max (au-delà de 2560x1440 = expérimental) | ? | yes | no | no | ? | ? | 1217 | 1199 | – | 0.024 (wavespeed) |
+| GPT Image · GPT Image 2 | OpenAI | no | Propriétaire (API OpenAI) | 3840x2160 (4K, 8,3 MP) | ? | yes | no | no | ? | ? | 1188 | 1136 | – | 0.030 (kie) |
+| GPT Image · GPT Image 2.5 Flare | OpenAI | no | Propriétaire (API OpenAI) | 3840 px côté long, 8,3 MP max (au-delà de 2560x1440 = expérimental) | ? | yes | no | no | ? | ? | 1208 | 1182 | – | 0.024 (wavespeed) |
+| GPT Image · GPT Image 2.5 Sunburst | OpenAI | no | Propriétaire (API OpenAI) | 3840 px côté long, 8,3 MP max (au-delà de 2560x1440 = expérimental) | ? | yes | no | no | ? | ? | 1227 | 1199 | – | 0.024 (wavespeed) |
 | Grok Imagine Image · Grok Imagine Image 2.0 | xAI (SpaceXAI) | no | Propriétaire (API xAI) | 2K (1K, 2K) | 5 | yes | no | no | ? | ? | 1166 | 1112 | – | 0.020 (kie) |
 | Grok Imagine Image · grok-imagine-image | xAI (SpaceXAI) | no | Propriétaire (API xAI) | ? | ? | yes | no | no | ? | ? | 1021 | 1071 | – | 0.020 (fal) |
 | Grok Imagine Image · grok-imagine-image-quality | xAI (SpaceXAI) | no | Propriétaire (API xAI) | ? | ? | yes | no | no | ? | ? | 1049 | 1091 | – | 0.050 (replicate) |

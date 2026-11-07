@@ -250,7 +250,7 @@
    "p": [
     "« ? » veut dire que l'information n'est documentée nulle part où nous avons cherché. Rien n'est deviné.",
     "Chaque source est marquée éditeur (annoncé par l'éditeur), indépendant (tiers, article, classement) ou mesuré (mesuré par nous ou publié comme mesure).",
-    "Les classements sont les scores Elo des arènes vidéo et image d'Artificial Analysis lus le 15 octobre 2026. À environ ±17 points près, deux modèles sont à égalité statistique. Chaque catégorie a sa propre échelle : deux catégories ne se comparent pas.",
+    "Les classements sont les scores Elo des arènes vidéo et image d'Artificial Analysis lus le 15 octobre 2026, sauf GPT Image 2.5 Sunburst, 2.5 Flare et GPT Image 2, relus le 7 novembre 2026. À environ ±17 points près, deux modèles sont à égalité statistique. Chaque catégorie a sa propre échelle : deux catégories ne se comparent pas.",
     "Les prix les plus bas ne retiennent que les prix à l'usage. Les prix d'abonnement restent dans le détail de chaque modèle."
    ]
   },
@@ -2736,7 +2736,8 @@
       "src": "annexes.rankings.sources.aa_t2i",
       "srcLabel": "Artificial Analysis",
       "explain": "eloaa",
-      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro."
+      "note": "La barre part du score le plus bas de ce classement : elle montre un écart, pas une proportion. Le rang est compté parmi les fiches de cet atlas ; le rang chez la source est au survol du numéro. Au 07/11/2026, GPT Image 2.6 Sunburst et Flare, sans fiche ici, passent devant : GPT Image 2.5 Sunburst est 3e chez Artificial Analysis. Les autres scores datent du 15/10/2026.",
+      "leaderNote": "3e chez Artificial Analysis, 07/11/2026"
      },
      {
       "id": "edit",

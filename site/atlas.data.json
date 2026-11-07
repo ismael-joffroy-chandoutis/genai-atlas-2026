@@ -1,9 +1,9 @@
 {
  "meta": {
   "title": "Atlas génératif 2026",
-  "version": "v2026.11.07",
+  "version": "v2026.11.07.1",
   "data_date": "2026-10-15",
-  "last_source_date": "2026-10-16",
+  "last_source_date": "2026-11-07",
   "counts": {
    "video": 107,
    "image": 83,
@@ -3849,7 +3849,7 @@
     "vendor": "PixVerse (AISphere)",
     "country": "CN",
     "modality": "video",
-    "released": "2026-09-17",
+    "released": "2026-09-24",
     "access": {
      "open_weights": false,
      "license": null,
@@ -3861,7 +3861,7 @@
      "aa_image_to_video": null,
      "aa_text_to_image": null,
      "aa_image_edit": null,
-     "aa_note": "Non classé."
+     "aa_note": "Non classé. Date : API de PixVerse, journal de l'éditeur (24/09/2026). Page fal créée le 17/09, publiée le 21/09. Application mobile sortie plus tôt, date non établie."
     },
     "inputs": {
      "text": false,
@@ -3918,6 +3918,11 @@
      {
       "url": "https://fal.ai/models/pixverse/music-video/vibemv/api",
       "date": "2026-09-17",
+      "type": "editeur"
+     },
+     {
+      "url": "https://docs.platform.pixverse.ai/changelog-2394996m0",
+      "date": "2026-09-24",
       "type": "editeur"
      }
     ]
@@ -10215,9 +10220,9 @@
     "ranking": {
      "aa_text_to_video": null,
      "aa_image_to_video": null,
-     "aa_text_to_image": 1217,
+     "aa_text_to_image": 1227,
      "aa_image_edit": 1199,
-     "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). #1 T2I et #1 édition AA au 15/10/2026 · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
+     "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). 3e T2I et 3e édition AA au 07/11/2026, derrière GPT Image 2.6 Sunburst et Flare, qui n'ont pas de fiche ici (1er des deux au 15/10/2026) · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
      "text": true,
@@ -10250,7 +10255,7 @@
      "lip_sync": null,
      "languages": null,
      "max_images_per_call": null,
-     "text_rendering": "bon (doc OpenAI : nettement amélioré, placement précis encore imparfait ; #1 AA)"
+     "text_rendering": "bon (doc OpenAI : nettement amélioré, placement précis encore imparfait ; #1 AA au 15/10/2026)"
     },
     "edit_functions": [
      "édition par instruction",
@@ -10269,7 +10274,7 @@
      "notes": "Paramètre API moderation = auto (défaut) ou low"
     },
     "pros": [
-     "#1 des deux classements Artificial Analysis (T2I et édition)",
+     "3e des deux classements Artificial Analysis (T2I et édition) au 07/11/2026",
      "Meilleure tenue des retouches et des sujets de référence d'un tour à l'autre",
      "Masque + multi-images dans la même API"
     ],
@@ -10303,6 +10308,16 @@
       "url": "https://getcoai.com/news/chatgpts-image-generator-now-creates-public-figures-and-controversial-content",
       "date": "2026-10-15",
       "type": "independant"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "date": "2026-11-07",
+      "type": "independant"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+      "date": "2026-11-07",
+      "type": "independant"
      }
     ]
    },
@@ -10323,8 +10338,8 @@
     "ranking": {
      "aa_text_to_video": null,
      "aa_image_to_video": null,
-     "aa_text_to_image": 1207,
-     "aa_image_edit": 1178,
+     "aa_text_to_image": 1208,
+     "aa_image_edit": 1182,
      "aa_note": "Elo mesuré en qualité max. Mêmes niveaux de qualité que Sunburst (low à max). Modèle « petit », par défaut pour la plupart des usages · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
@@ -10378,7 +10393,7 @@
     },
     "pros": [
      "Latence jusqu'à 50 % plus basse que gpt-image-2",
-     "#2 AA en T2I et en édition",
+     "4e AA en T2I et 5e en édition au 07/11/2026",
      "Même tarif au token que gpt-image-2"
     ],
     "cons": [
@@ -10405,6 +10420,16 @@
       "url": "https://artificialanalysis.ai/image/leaderboard/editing",
       "date": "2026-10-15",
       "type": "mesure"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "date": "2026-11-07",
+      "type": "independant"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+      "date": "2026-11-07",
+      "type": "independant"
      }
     ]
    },
@@ -10425,8 +10450,8 @@
     "ranking": {
      "aa_text_to_video": null,
      "aa_image_to_video": null,
-     "aa_text_to_image": 1187,
-     "aa_image_edit": 1133,
+     "aa_text_to_image": 1188,
+     "aa_image_edit": 1136,
      "aa_note": "Elo en qualité high. Niveaux : low, medium, high, auto · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
@@ -10479,7 +10504,7 @@
      "notes": "input_fidelity refusé : haute fidélité automatique sur les références"
     },
     "pros": [
-     "Toujours #3 en T2I",
+     "5e en T2I au 07/11/2026",
      "4K natif"
     ],
     "cons": [
@@ -10501,6 +10526,16 @@
       "url": "https://artificialanalysis.ai/image/leaderboard/editing",
       "date": "2026-10-15",
       "type": "mesure"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "date": "2026-11-07",
+      "type": "independant"
+     },
+     {
+      "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+      "date": "2026-11-07",
+      "type": "independant"
      }
     ]
    },
@@ -33786,7 +33821,7 @@
       "model": "Seedance 2.5",
       "model_id": "seedance-2-5",
       "value": "refuse",
-      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé sur cette plateforme.",
       "sources": [
        {
         "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -33908,7 +33943,7 @@
       "model": "Seedance 2.5",
       "model_id": "seedance-2-5",
       "value": "refuse",
-      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé sur cette plateforme.",
       "sources": [
        {
         "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -34033,7 +34068,7 @@
       "model": "Seedance 2.5",
       "model_id": "seedance-2-5",
       "value": "refuse",
-      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé sur cette plateforme.",
       "sources": [
        {
         "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -34124,7 +34159,7 @@
       "model": "Seedance 2.5",
       "model_id": "seedance-2-5",
       "value": "refuse",
-      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé sur cette plateforme.",
       "sources": [
        {
         "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -34328,16 +34363,16 @@
     "api_vs_subscription": null,
     "promotions": [
      {
-      "text": "H3 Max Turbo -40 % : 0,015 $/s en 480p, 0,024 $/s en 768p, 0,048 $/s en 1080p, puis 0,025 / 0,04 / 0,08 $/s",
-      "ends": "2026-10-15",
+      "text": "H3 Max Turbo -30 % : 0,0175 $/s en 480p, 0,028 $/s en 768p, 0,056 $/s en 1080p.",
+      "ends": "2026-11-15",
       "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
-      "date": "2026-10-15"
+      "date": "2026-11-07"
      },
      {
-      "text": "H3 Max -40 % : 0,03 $/s en 480p, 0,048 $/s en 768p, 0,096 $/s en 1080p, puis 0,05 / 0,08 / 0,16 $/s",
-      "ends": "2026-10-15",
+      "text": "H3 Max -30 % : 0,035 $/s en 480p, 0,056 $/s en 768p, 0,112 $/s en 1080p.",
+      "ends": "2026-11-15",
       "source": "https://fal.ai/models/minimax/h3-max/image-to-video",
-      "date": "2026-10-15"
+      "date": "2026-11-07"
      }
     ],
     "verdict": "fiable",
@@ -34458,7 +34493,7 @@
       "model": "Seedance 2.5",
       "model_id": "seedance-2-5",
       "value": "refuse",
-      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé chez nous sur cette plateforme.",
+      "note": "Hérité du filtre ByteDance (doc BytePlus du 08/10/2026) ; aucune voie de consentement publiée ; non testé sur cette plateforme.",
       "sources": [
        {
         "url": "https://docs.byteplus.com/en/docs/modelark/seedance-portrait-asset-guide",
@@ -35496,7 +35531,7 @@
     "api_vs_subscription": null,
     "promotions": [],
     "verdict": "tester",
-    "verdict_reason": "Une des rares voies publiées pour un visage fourni avec Seedance 2.5 ; revue manuelle, rien de testé chez nous.",
+    "verdict_reason": "Une des rares voies publiées pour un visage fourni avec Seedance 2.5 ; revue manuelle, aucun essai réalisé.",
     "offer": {
      "billing": "paiement à l'usage",
      "unlimited": [],
@@ -35910,18 +35945,6 @@
      ]
     },
     "promotions": [
-     {
-      "text": "Plan Max : Wan 3.0 illimité en mode Tool jusqu'au 18 octobre.",
-      "ends": "2026-10-18",
-      "source": "https://runway.com/pricing",
-      "date": "2026-10-15"
-     },
-     {
-      "text": "Entreprises : 2 mois d'usage offerts pour une signature avant le 31/10.",
-      "ends": "2026-10-31",
-      "source": "https://runway.com/pricing",
-      "date": "2026-10-15"
-     },
      {
       "text": "Facturation annuelle : Standard 12 $ au lieu de 15 $, Pro 28 $ au lieu de 35 $, Max 76 $ au lieu de 95 $.",
       "ends": null,
@@ -36928,12 +36951,6 @@
     },
     "promotions": [
      {
-      "text": "Starter : premier mois à 1 $ au lieu de 6 $ (-83 %).",
-      "ends": "2026-10-18",
-      "source": "https://elevenlabs.io/pricing",
-      "date": "2026-10-15"
-     },
-     {
       "text": "Creator : premier mois à 11 $ au lieu de 22 $ (-50 %).",
       "ends": null,
       "source": "https://elevenlabs.io/pricing",
@@ -37450,12 +37467,6 @@
      ]
     },
     "promotions": [
-     {
-      "text": "Magnific One illimité sur l'application de bureau jusqu'au 15 octobre.",
-      "ends": "2026-10-15",
-      "source": "https://www.magnific.com/pricing",
-      "date": "2026-10-15"
-     },
      {
       "text": "Wan 3.0 1080p à -50 % et Wan 3.0 PRIME à -40 %.",
       "ends": null,
@@ -49057,15 +49068,15 @@
     "endpoint": "blackforestlabs/flux-3/keyframes-to-video/draft",
     "unit": "per_second",
     "price_usd_480p_s": null,
-    "price_usd_720p_s": null,
+    "price_usd_720p_s": 0.06,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=image-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Your request will be charged at 0.06 $ per second of generated draft video (720p).",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=blackforestlabs/flux-3/keyframes-to-video/draft",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : Your request will be charged at $0.06 per second of generated draft video (720p).",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/blackforestlabs/flux-3/keyframes-to-video/draft",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.06,
     "unit_api": "seconds"
    },
    {
@@ -49247,15 +49258,15 @@
     "endpoint": "blackforestlabs/flux-3/extend-video/draft",
     "unit": "per_second",
     "price_usd_480p_s": null,
-    "price_usd_720p_s": null,
+    "price_usd_720p_s": 0.12,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.06 USD / seconds; catégorie=video-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Your request will be charged at 0.12 $ per second of generated draft video (720p).",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=blackforestlabs/flux-3/extend-video/draft",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : Your request will be charged at $0.12 per second of generated draft video (720p).",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/blackforestlabs/flux-3/extend-video/draft",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.06,
+    "price_usd_unit": 0.12,
     "unit_api": "seconds"
    },
    {
@@ -49264,15 +49275,15 @@
     "endpoint": "blackforestlabs/flux-3/first-last-frame-to-video/draft",
     "unit": "per_second",
     "price_usd_480p_s": null,
-    "price_usd_720p_s": null,
+    "price_usd_720p_s": 0.06,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=image-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Your request will be charged at 0.06 $ per second of generated draft video (720p).",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=blackforestlabs/flux-3/first-last-frame-to-video/draft",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : Your request will be charged at $0.06 per second of generated draft video (720p).",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/blackforestlabs/flux-3/first-last-frame-to-video/draft",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.06,
     "unit_api": "seconds"
    },
    {
@@ -49281,15 +49292,15 @@
     "endpoint": "blackforestlabs/flux-3/image-to-video/draft",
     "unit": "per_second",
     "price_usd_480p_s": null,
-    "price_usd_720p_s": null,
+    "price_usd_720p_s": 0.06,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=image-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Your request will be charged at 0.06 $ per second of generated draft video (720p).",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=blackforestlabs/flux-3/image-to-video/draft",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : Your request will be charged at $0.06 per second of generated draft video (720p).",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/blackforestlabs/flux-3/image-to-video/draft",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.06,
     "unit_api": "seconds"
    },
    {
@@ -49298,15 +49309,15 @@
     "endpoint": "blackforestlabs/flux-3/text-to-video/draft",
     "unit": "per_second",
     "price_usd_480p_s": null,
-    "price_usd_720p_s": null,
+    "price_usd_720p_s": 0.06,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=text-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Your request will be charged at 0.06 $ per second of generated draft video (720p).",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=blackforestlabs/flux-3/text-to-video/draft",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : Your request will be charged at $0.06 per second of generated draft video (720p).",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/blackforestlabs/flux-3/text-to-video/draft",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.06,
     "unit_api": "seconds"
    },
    {
@@ -51457,34 +51468,34 @@
     "platform": "fal",
     "endpoint": "fal-ai/kandinsky6-lite/image-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": null,
+    "price_usd_480p_s": 0.034,
     "price_usd_720p_s": null,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.17 USD / units; catégorie=image-to-video; unité non convertie (units) | page fal.ai : Your request will cost $0.17 per 5-second 480p video at the default 10 steps. For $1.00, you can run this model 5 times. Upscaling to 1080p costs $0.34 per video and 4x upscaling costs $0.69. Steps change the price: 4 steps cost $0.085, 16 steps cost $0.25.",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=fal-ai/kandinsky6-lite/image-to-video",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : A 5-second 480p video costs $0.17 at the default 10 steps. Soit 0,034 $/s, calculé sur 5 s en 480p à 10 pas. Le prix varie avec le nombre de pas.",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/fal-ai/kandinsky6-lite/image-to-video",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.17,
-    "unit_api": "units"
+    "price_usd_unit": 0.034,
+    "unit_api": "seconds"
    },
    {
     "model_id": "kandinsky6-lite",
     "platform": "fal",
     "endpoint": "fal-ai/kandinsky6-lite/text-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": null,
+    "price_usd_480p_s": 0.032,
     "price_usd_720p_s": null,
     "price_usd_1080p_s": null,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.16 USD / units; catégorie=text-to-video; unité non convertie (units) | page fal.ai : Your request will cost $0.16 per 5-second 480p video at the default 10 steps. For $1.00, you can run this model 6 times. Upscaling to 1080p costs $0.32 per video and 4x upscaling costs $0.65. Steps change the price: 4 steps cost $0.08, 16 steps cost $0.24.",
-    "retrieved_at": "2026-10-15",
-    "source_url": "https://api.fal.ai/v1/models/pricing?endpoint_id=fal-ai/kandinsky6-lite/text-to-video",
-    "verified": "api_live",
+    "raw": "page fal.ai lue le 07/11/2026 : A 5-second 480p video costs $0.16 at the default 10 steps. Soit 0,032 $/s, calculé sur 5 s en 480p à 10 pas. Le prix varie avec le nombre de pas.",
+    "retrieved_at": "2026-11-07",
+    "source_url": "https://fal.ai/models/fal-ai/kandinsky6-lite/text-to-video",
+    "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.16,
-    "unit_api": "units"
+    "price_usd_unit": 0.032,
+    "unit_api": "seconds"
    },
    {
     "model_id": "kandinsky6-pro",
@@ -54589,16 +54600,16 @@
     "platform": "fal",
     "endpoint": "minimax/h3-max/image-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": 0.03,
-    "price_usd_720p_s": 0.048,
-    "price_usd_1080p_s": 0.096,
+    "price_usd_480p_s": 0.035,
+    "price_usd_720p_s": 0.056,
+    "price_usd_1080p_s": 0.112,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=image-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Video costs $0.03 per second at 480p, $0.048 per second at 768p, and $0.096 per second at 1080p. Note: these are promotional rates, 40% off for a limited time. The discount ends October 15, after which 480p is $0.05/second, 768p is $0.08/second, and 1080p is $0.16/second. | colonnes = prix par seconde lus sur la page (première valeur citée par résolution ; 768p en colonne 720p)",
-    "retrieved_at": "2026-10-15",
+    "raw": "page fal.ai lue le 07/11/2026 : du 1er au 15 novembre 2026, 30 % de remise : $0.035 en 480p, $0.056 en 768p, $0.112 en 1080p par seconde. À partir du 16 novembre 2026 : $0.05, $0.08, $0.16.",
+    "retrieved_at": "2026-11-07",
     "source_url": "https://fal.ai/models/minimax/h3-max/image-to-video",
     "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.035,
     "unit_api": "seconds"
    },
    {
@@ -54623,16 +54634,16 @@
     "platform": "fal",
     "endpoint": "minimax/h3-max/text-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": 0.03,
-    "price_usd_720p_s": 0.048,
-    "price_usd_1080p_s": 0.096,
+    "price_usd_480p_s": 0.035,
+    "price_usd_720p_s": 0.056,
+    "price_usd_1080p_s": 0.112,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.03 USD / seconds; catégorie=text-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Video costs $0.03 per second at 480p, $0.048 per second at 768p, and $0.096 per second at 1080p. Note: these are promotional rates, 40% off for a limited time. The discount ends October 15, after which 480p is $0.05/second, 768p is $0.08/second, and 1080p is $0.16/second. | colonnes = prix par seconde lus sur la page (première valeur citée par résolution ; 768p en colonne 720p)",
-    "retrieved_at": "2026-10-15",
+    "raw": "page fal.ai lue le 07/11/2026 : du 1er au 15 novembre 2026, 30 % de remise : $0.035 en 480p, $0.056 en 768p, $0.112 en 1080p par seconde. À partir du 16 novembre 2026 : $0.05, $0.08, $0.16.",
+    "retrieved_at": "2026-11-07",
     "source_url": "https://fal.ai/models/minimax/h3-max/text-to-video",
     "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.03,
+    "price_usd_unit": 0.035,
     "unit_api": "seconds"
    },
    {
@@ -54717,16 +54728,16 @@
     "platform": "fal",
     "endpoint": "minimax/h3-max-turbo/image-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": 0.015,
-    "price_usd_720p_s": 0.024,
-    "price_usd_1080p_s": 0.048,
+    "price_usd_480p_s": 0.0175,
+    "price_usd_720p_s": 0.028,
+    "price_usd_1080p_s": 0.056,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.015 USD / seconds; catégorie=image-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Video costs $0.015 per second at 480p, $0.024 per second at 768p, and $0.048 per second at 1080p. Note: these are promotional rates, 40% off for a limited time. The discount ends October 15, after which 480p is $0.025/second, 768p is $0.04/second, and 1080p is $0.08/second. | colonnes = prix par seconde lus sur la page (première valeur citée par résolution ; 768p en colonne 720p)",
-    "retrieved_at": "2026-10-15",
+    "raw": "page fal.ai lue le 07/11/2026 : du 1er au 15 novembre 2026, 30 % de remise : $0.0175 en 480p, $0.028 en 768p, $0.056 en 1080p par seconde. À partir du 16 novembre 2026 : $0.025, $0.04, $0.08.",
+    "retrieved_at": "2026-11-07",
     "source_url": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video",
     "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.015,
+    "price_usd_unit": 0.0175,
     "unit_api": "seconds"
    },
    {
@@ -54734,16 +54745,16 @@
     "platform": "fal",
     "endpoint": "minimax/h3-max-turbo/text-to-video",
     "unit": "per_second",
-    "price_usd_480p_s": 0.015,
-    "price_usd_720p_s": 0.024,
-    "price_usd_1080p_s": 0.048,
+    "price_usd_480p_s": 0.0175,
+    "price_usd_720p_s": 0.028,
+    "price_usd_1080p_s": 0.056,
     "price_usd_per_image": null,
-    "raw": "unit_price=0.015 USD / seconds; catégorie=text-to-video; prix par seconde, résolution non précisée par l'API (colonnes null) | page fal.ai : Video costs $0.015 per second at 480p, $0.024 per second at 768p, and $0.048 per second at 1080p. Note: these are promotional rates, 40% off for a limited time. The discount ends October 15, after which 480p is $0.025/second, 768p is $0.04/second, and 1080p is $0.08/second. | colonnes = prix par seconde lus sur la page (première valeur citée par résolution ; 768p en colonne 720p)",
-    "retrieved_at": "2026-10-15",
+    "raw": "page fal.ai lue le 07/11/2026 : du 1er au 15 novembre 2026, 30 % de remise : $0.0175 en 480p, $0.028 en 768p, $0.056 en 1080p par seconde. À partir du 16 novembre 2026 : $0.025, $0.04, $0.08.",
+    "retrieved_at": "2026-11-07",
     "source_url": "https://fal.ai/models/minimax/h3-max-turbo/text-to-video",
     "verified": "page",
     "modality": "video",
-    "price_usd_unit": 0.015,
+    "price_usd_unit": 0.0175,
     "unit_api": "seconds"
    },
    {
@@ -59656,7 +59667,7 @@
  "annexes": {
   "rankings": {
    "generated": "2026-10-15",
-   "note": "Scores publics relevés le 15/10/2026 depuis les données embarquées des pages (Artificial Analysis : flux Next.js ; arena.ai : tableau rendu côté serveur). source_name = nom exact dans le classement. Un id peut avoir des scores issus d'une entrée par catégorie au plus ; les doublons de variantes (résolution, date) sont listés dans unmatched avec une note.",
+   "note": "Scores publics relevés le 15/10/2026 depuis les données embarquées des pages (Artificial Analysis : flux Next.js ; arena.ai : tableau rendu côté serveur). source_name = nom exact dans le classement. Un id peut avoir des scores issus d'une entrée par catégorie au plus ; les doublons de variantes (résolution, date) sont listés dans unmatched avec une note. Exception : GPT Image 2.5 Sunburst, 2.5 Flare et GPT Image 2 relus sur Artificial Analysis le 07/11/2026 (champ date du score).",
    "sources": {
     "aa_t2v_audio": {
      "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
@@ -61797,18 +61808,20 @@
     },
     "openai-gpt-image-2": {
      "aa_t2i": {
-      "elo": 1187,
-      "rank": 3,
-      "ci": 12,
+      "elo": 1188,
+      "rank": 5,
+      "ci": 11,
       "source_name": "GPT Image 2 (high)",
-      "votes": 12409
+      "votes": 13114,
+      "date": "2026-11-07"
      },
      "aa_image_edit": {
-      "elo": 1133,
-      "rank": 6,
-      "ci": 14,
+      "elo": 1136,
+      "rank": 10,
+      "ci": 12,
       "source_name": "GPT Image 2 (high)",
-      "votes": 13773
+      "votes": 14869,
+      "date": "2026-11-07"
      },
      "arena_t2i": {
       "elo": 1383,
@@ -61831,18 +61844,20 @@
     },
     "openai-gpt-image-2-5-flare": {
      "aa_t2i": {
-      "elo": 1207,
-      "rank": 2,
+      "elo": 1208,
+      "rank": 4,
       "ci": 10,
       "source_name": "GPT Image 2.5 Flare (max)",
-      "votes": 12174
+      "votes": 12632,
+      "date": "2026-11-07"
      },
      "aa_image_edit": {
-      "elo": 1178,
-      "rank": 2,
+      "elo": 1182,
+      "rank": 5,
       "ci": 11,
       "source_name": "GPT Image 2.5 Flare (max)",
-      "votes": 18194
+      "votes": 19457,
+      "date": "2026-11-07"
      },
      "arena_t2i": {
       "elo": 1398,
@@ -61868,18 +61883,20 @@
     },
     "openai-gpt-image-2-5-sunburst": {
      "aa_t2i": {
-      "elo": 1217,
-      "rank": 1,
+      "elo": 1227,
+      "rank": 3,
       "ci": 10,
       "source_name": "GPT Image 2.5 Sunburst (max)",
-      "votes": 12792
+      "votes": 13294,
+      "date": "2026-11-07"
      },
      "aa_image_edit": {
       "elo": 1199,
-      "rank": 1,
+      "rank": 3,
       "ci": 11,
       "source_name": "GPT Image 2.5 Sunburst (max)",
-      "votes": 17344
+      "votes": 18575,
+      "date": "2026-11-07"
      },
      "arena_t2i": {
       "elo": 1425,
@@ -74276,9 +74293,9 @@
     },
     "checked": "2026-10-15",
     "best": {
-     "price_usd_480p_s": 0.03,
-     "price_usd_720p_s": 0.048,
-     "price_usd_1080p_s": 0.096,
+     "price_usd_480p_s": 0.035,
+     "price_usd_720p_s": 0.056,
+     "price_usd_1080p_s": 0.112,
      "price_usd_per_image": null
     },
     "n_prices": 8
@@ -74297,9 +74314,9 @@
     },
     "checked": "2026-10-15",
     "best": {
-     "price_usd_480p_s": 0.015,
-     "price_usd_720p_s": 0.024,
-     "price_usd_1080p_s": 0.048,
+     "price_usd_480p_s": 0.0175,
+     "price_usd_720p_s": 0.028,
+     "price_usd_1080p_s": 0.056,
      "price_usd_per_image": null
     },
     "n_prices": 5
@@ -74830,7 +74847,7 @@
      "value": "actif",
      "presumed": true
     },
-    "checked": "2026-09-17",
+    "checked": "2026-09-24",
     "best": {
      "price_usd_480p_s": null,
      "price_usd_720p_s": null,
@@ -76066,7 +76083,7 @@
      "value": "actif",
      "presumed": true
     },
-    "checked": "2026-10-15",
+    "checked": "2026-11-07",
     "best": {
      "price_usd_480p_s": null,
      "price_usd_720p_s": null,
@@ -76084,7 +76101,7 @@
      "value": "actif",
      "presumed": true
     },
-    "checked": "2026-10-15",
+    "checked": "2026-11-07",
     "best": {
      "price_usd_480p_s": null,
      "price_usd_720p_s": null,
@@ -76102,7 +76119,7 @@
      "value": "actif",
      "presumed": true
     },
-    "checked": "2026-10-15",
+    "checked": "2026-11-07",
     "best": {
      "price_usd_480p_s": null,
      "price_usd_720p_s": null,

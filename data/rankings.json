@@ -1,6 +1,6 @@
 {
  "generated": "2026-10-15",
- "note": "Scores publics relevés le 15/10/2026 depuis les données embarquées des pages (Artificial Analysis : flux Next.js ; arena.ai : tableau rendu côté serveur). source_name = nom exact dans le classement. Un id peut avoir des scores issus d'une entrée par catégorie au plus ; les doublons de variantes (résolution, date) sont listés dans unmatched avec une note.",
+ "note": "Scores publics relevés le 15/10/2026 depuis les données embarquées des pages (Artificial Analysis : flux Next.js ; arena.ai : tableau rendu côté serveur). source_name = nom exact dans le classement. Un id peut avoir des scores issus d'une entrée par catégorie au plus ; les doublons de variantes (résolution, date) sont listés dans unmatched avec une note. Exception : GPT Image 2.5 Sunburst, 2.5 Flare et GPT Image 2 relus sur Artificial Analysis le 07/11/2026 (champ date du score).",
  "sources": {
   "aa_t2v_audio": {
    "url": "https://artificialanalysis.ai/video/leaderboard/text-to-video",
@@ -2141,18 +2141,20 @@
   },
   "openai-gpt-image-2": {
    "aa_t2i": {
-    "elo": 1187,
-    "rank": 3,
-    "ci": 12,
+    "elo": 1188,
+    "rank": 5,
+    "ci": 11,
     "source_name": "GPT Image 2 (high)",
-    "votes": 12409
+    "votes": 13114,
+    "date": "2026-11-07"
    },
    "aa_image_edit": {
-    "elo": 1133,
-    "rank": 6,
-    "ci": 14,
+    "elo": 1136,
+    "rank": 10,
+    "ci": 12,
     "source_name": "GPT Image 2 (high)",
-    "votes": 13773
+    "votes": 14869,
+    "date": "2026-11-07"
    },
    "arena_t2i": {
     "elo": 1383,
@@ -2175,18 +2177,20 @@
   },
   "openai-gpt-image-2-5-flare": {
    "aa_t2i": {
-    "elo": 1207,
-    "rank": 2,
+    "elo": 1208,
+    "rank": 4,
     "ci": 10,
     "source_name": "GPT Image 2.5 Flare (max)",
-    "votes": 12174
+    "votes": 12632,
+    "date": "2026-11-07"
    },
    "aa_image_edit": {
-    "elo": 1178,
-    "rank": 2,
+    "elo": 1182,
+    "rank": 5,
     "ci": 11,
     "source_name": "GPT Image 2.5 Flare (max)",
-    "votes": 18194
+    "votes": 19457,
+    "date": "2026-11-07"
    },
    "arena_t2i": {
     "elo": 1398,
@@ -2212,18 +2216,20 @@
   },
   "openai-gpt-image-2-5-sunburst": {
    "aa_t2i": {
-    "elo": 1217,
-    "rank": 1,
+    "elo": 1227,
+    "rank": 3,
     "ci": 10,
     "source_name": "GPT Image 2.5 Sunburst (max)",
-    "votes": 12792
+    "votes": 13294,
+    "date": "2026-11-07"
    },
    "aa_image_edit": {
     "elo": 1199,
-    "rank": 1,
+    "rank": 3,
     "ci": 11,
     "source_name": "GPT Image 2.5 Sunburst (max)",
-    "votes": 17344
+    "votes": 18575,
+    "date": "2026-11-07"
    },
    "arena_t2i": {
     "elo": 1425,

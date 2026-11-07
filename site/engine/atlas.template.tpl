@@ -1377,7 +1377,7 @@ function renderBoard(items) {
   const others = ORDER.filter(id => id !== cid && cfgOf(id).board);
   $("#bleaders").innerHTML = others.length ? `<div class="leaders">${others.map(id => {
     const k = cfgOf(id).board.criteria[0], top = boardRows(id, COLS[id].items, k).rows[0];
-    return top ? `<a class="leader" href="#v-${id}" data-tip="${esc(k.label)}">${ico(cfgOf(id).icon)}<div>${esc(cfgOf(id).label)}, n° 1<b>${esc(shortTitle(top.it))}</b></div></a>` : "";
+    return top ? `<a class="leader" href="#v-${id}" data-tip="${esc(k.label)}">${ico(cfgOf(id).icon)}<div>${esc(cfgOf(id).label)}, ${k.leaderNote ? "en tête de l'atlas" : "n° 1"}<b>${esc(shortTitle(top.it))}</b>${k.leaderNote ? esc(k.leaderNote) : ""}</div></a>` : "";
   }).join("")}</div>` : "";
   const on = sel(cid);
   const fp = (b.filters || []).map(x => `<button class="fpill" data-f="${esc(x.f)}" data-o="${esc(x.o)}" aria-pressed="${!!on[x.f]?.has(x.o)}">${ico(x.icon)}${esc(x.label)}</button>`).join("");

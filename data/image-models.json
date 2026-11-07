@@ -16,9 +16,9 @@
     "ranking": {
       "aa_text_to_video": null,
       "aa_image_to_video": null,
-      "aa_text_to_image": 1217,
+      "aa_text_to_image": 1227,
       "aa_image_edit": 1199,
-      "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). #1 T2I et #1 édition AA au 15/10/2026 · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
+      "aa_note": "Elo mesuré en qualité max. Niveaux de qualité API : low, medium, high, xhigh, max, auto (xhigh et max nouveaux en 2.5). Tokens de sortie à 1024² : low 196, medium 439, high 1756, xhigh 3122, max 7024 (mesure APIYI). 3e T2I et 3e édition AA au 07/11/2026, derrière GPT Image 2.6 Sunburst et Flare, qui n'ont pas de fiche ici (1er des deux au 15/10/2026) · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
       "text": true,
@@ -51,7 +51,7 @@
       "lip_sync": null,
       "languages": null,
       "max_images_per_call": null,
-      "text_rendering": "bon (doc OpenAI : nettement amélioré, placement précis encore imparfait ; #1 AA)"
+      "text_rendering": "bon (doc OpenAI : nettement amélioré, placement précis encore imparfait ; #1 AA au 15/10/2026)"
     },
     "edit_functions": [
       "édition par instruction",
@@ -70,7 +70,7 @@
       "notes": "Paramètre API moderation = auto (défaut) ou low"
     },
     "pros": [
-      "#1 des deux classements Artificial Analysis (T2I et édition)",
+      "3e des deux classements Artificial Analysis (T2I et édition) au 07/11/2026",
       "Meilleure tenue des retouches et des sujets de référence d'un tour à l'autre",
       "Masque + multi-images dans la même API"
     ],
@@ -104,6 +104,16 @@
         "url": "https://getcoai.com/news/chatgpts-image-generator-now-creates-public-figures-and-controversial-content",
         "date": "2026-10-15",
         "type": "independant"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "date": "2026-11-07",
+        "type": "independant"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+        "date": "2026-11-07",
+        "type": "independant"
       }
     ]
   },
@@ -124,8 +134,8 @@
     "ranking": {
       "aa_text_to_video": null,
       "aa_image_to_video": null,
-      "aa_text_to_image": 1207,
-      "aa_image_edit": 1178,
+      "aa_text_to_image": 1208,
+      "aa_image_edit": 1182,
       "aa_note": "Elo mesuré en qualité max. Mêmes niveaux de qualité que Sunburst (low à max). Modèle « petit », par défaut pour la plupart des usages · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
@@ -179,7 +189,7 @@
     },
     "pros": [
       "Latence jusqu'à 50 % plus basse que gpt-image-2",
-      "#2 AA en T2I et en édition",
+      "4e AA en T2I et 5e en édition au 07/11/2026",
       "Même tarif au token que gpt-image-2"
     ],
     "cons": [
@@ -206,6 +216,16 @@
         "url": "https://artificialanalysis.ai/image/leaderboard/editing",
         "date": "2026-10-15",
         "type": "mesure"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "date": "2026-11-07",
+        "type": "independant"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+        "date": "2026-11-07",
+        "type": "independant"
       }
     ]
   },
@@ -226,8 +246,8 @@
     "ranking": {
       "aa_text_to_video": null,
       "aa_image_to_video": null,
-      "aa_text_to_image": 1187,
-      "aa_image_edit": 1133,
+      "aa_text_to_image": 1188,
+      "aa_image_edit": 1136,
       "aa_note": "Elo en qualité high. Niveaux : low, medium, high, auto · Forfait contre API : ce score est mesuré par l'API, au niveau de qualité indiqué. Dans ChatGPT (forfait Plus ou Pro) et dans Codex, le niveau de qualité n'est ni réglable ni publié par OpenAI, et aucun classement ne note la version ChatGPT : on ne peut donc pas lui attribuer un score distinct. À l'œil, comparer une image ChatGPT à la même demande en API qualité high puis max."
     },
     "inputs": {
@@ -280,7 +300,7 @@
       "notes": "input_fidelity refusé : haute fidélité automatique sur les références"
     },
     "pros": [
-      "Toujours #3 en T2I",
+      "5e en T2I au 07/11/2026",
       "4K natif"
     ],
     "cons": [
@@ -302,6 +322,16 @@
         "url": "https://artificialanalysis.ai/image/leaderboard/editing",
         "date": "2026-10-15",
         "type": "mesure"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+        "date": "2026-11-07",
+        "type": "independant"
+      },
+      {
+        "url": "https://artificialanalysis.ai/image/leaderboard/editing",
+        "date": "2026-11-07",
+        "type": "independant"
       }
     ]
   },

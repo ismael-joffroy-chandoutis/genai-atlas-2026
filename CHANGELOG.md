@@ -2,6 +2,10 @@
 
 Numéro de version = date de publication (vAAAA.MM.JJ, suffixe .N si plusieurs versions le même jour). La première ligne `## v…` de ce fichier donne la version affichée en tête de la page (scripts/build_atlas.py).
 
+## v2026.11.07.1 · 07/11/2026
+
+- Corrections, valeurs relues à la source le 07/11/2026. Prix fal : Kandinsky 6 Lite ramené à la seconde (0,032 et 0,034 $/s en 480p), FLUX 3 brouillon (0,06 $/s, prolongation 0,12 $/s), H3 Max et H3 Max Turbo (tarif de novembre). VibeMV daté de l'API PixVerse (24/09/2026). Classement Artificial Analysis relu pour GPT Image 2.5 Sunburst, 2.5 Flare et GPT Image 2 : Sunburst passe 3e, GPT Image 2.6 reste sans fiche. Six promotions expirées retirées, deux promotions fal en cours ajoutées. Les autres prix et scores restent ceux du 15/10/2026.
+
 ## v2026.11.07 · 07/11/2026
 
 - Atlas interactif publié sur GitHub Pages (`docs/index.html`). Noms de machines et chemins locaux retirés des données. `open_weights` passé à `false` sur les cinq fiches d'API (MiniMax H3, LTX-2.3 Pro et Fast, LTX-2.5 Pro et Fast), qui décrivent un service ; les poids restent sur leurs propres fiches. Compteurs du README recalés sur les données (107 vidéo, 83 image, 51 plateformes, 1139 prix). Aucun autre chiffre modifié.

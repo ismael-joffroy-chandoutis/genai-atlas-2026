@@ -3828,7 +3828,7 @@
   "vendor": "PixVerse (AISphere)",
   "country": "CN",
   "modality": "video",
-  "released": "2026-09-17",
+  "released": "2026-09-24",
   "access": {
    "open_weights": false,
    "license": null,
@@ -3840,7 +3840,7 @@
    "aa_image_to_video": null,
    "aa_text_to_image": null,
    "aa_image_edit": null,
-   "aa_note": "Non classé."
+   "aa_note": "Non classé. Date : API de PixVerse, journal de l'éditeur (24/09/2026). Page fal créée le 17/09, publiée le 21/09. Application mobile sortie plus tôt, date non établie."
   },
   "inputs": {
    "text": false,
@@ -3897,6 +3897,11 @@
    {
     "url": "https://fal.ai/models/pixverse/music-video/vibemv/api",
     "date": "2026-09-17",
+    "type": "editeur"
+   },
+   {
+    "url": "https://docs.platform.pixverse.ai/changelog-2394996m0",
+    "date": "2026-09-24",
     "type": "editeur"
    }
   ]
