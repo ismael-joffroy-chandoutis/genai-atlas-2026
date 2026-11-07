@@ -1,6 +1,6 @@
 # Tables
 
-Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.10.16, data as of 16 October 2026. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
+Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.11.07, published 7 November 2026, prices last read on 2026-10-16. `?` = not documented. Prices: cheapest pay-per-use price found, in USD per second of video or per image, with the platform. Local columns: RTX 5090 32 GB, RTX 4090 24 GB, Mac M5 Max 128 GB. "Integrated in" = the model ships in the official ComfyUI templates (local, not API nodes), in Wan2GP, Pinokio, Draw Things, Maestro or Phosphene. Notes inside the JSON files are in French.
 
 ## Video
 
@@ -39,13 +39,13 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.10.16,
 | Kling · AI Avatar v2 (Standard et Pro) | Kuaishou (KlingAI) | no | ? | ? | no | 1 | ? | 1 | yes / ? | ? | ? | no | ? | ? | ? | ? | – |  |
 | Kling · Video O1 (Pro) | Kuaishou (KlingAI) | no | 3–10 s | 720p (OpenRouter) | ? | ? | 1 | 0 | yes / yes | 0 | ? | no | ? | ? | 885 | ? | – | 0.112 (openrouter) |
 | LTX · LTX-2.3 (poids ouverts dev et distillé 22B) | Lightricks | yes | ? | 4K (via upscaler spatial ; largeur et hauteur multiples de 32) | yes | ? | ? | ? | yes / yes | ? | yes | ? | yes | yes | ? | ? | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene | 0.030 (wavespeed) |
-| LTX · LTX-2.3 Fast (API) | Lightricks | yes | 6–20 s | 4K (3840x2160) | yes | ? | ? | ? | yes / ? | ? | no | no | no | no | 845 | 889 | – | 0.030 (ltx) |
+| LTX · LTX-2.3 Fast (API) | Lightricks | no | 6–20 s | 4K (3840x2160) | yes | ? | ? | ? | yes / ? | ? | no | no | no | no | 845 | 889 | – | 0.030 (ltx) |
 | LTX · LTX-2.3 IC-LoRA de contrôle (Union, Motion-Track, HDR, DubIt, In-Outpainting, Relight, Foley V2A) | Lightricks | yes | ? | 4K HDR (IC-LoRA HDR, sortie EXR) | yes | ? | ? | ? | yes / yes | 3 | yes | ? | ? | ? | ? | ? | Pinokio, Maestro, Phosphene |  |
-| LTX · LTX-2.3 Pro (API) | Lightricks | yes | 6–10 s | 4K (3840x2160) | yes | ? | ? | ? | yes / ? | ? | no | no | no | no | 894 | 903 | – | 0.040 (ltx) |
-| LTX · LTX-2.5 Fast (API) | Lightricks | yes | 6–20 s | 4K (3840x2160) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 951 | 985 | – | 0.030 (replicate) |
+| LTX · LTX-2.3 Pro (API) | Lightricks | no | 6–10 s | 4K (3840x2160) | yes | ? | ? | ? | yes / ? | ? | no | no | no | no | 894 | 903 | – | 0.040 (ltx) |
+| LTX · LTX-2.5 Fast (API) | Lightricks | no | 6–20 s | 4K (3840x2160) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 951 | 985 | – | 0.030 (replicate) |
 | LTX · LTX-2.5 IC-LoRA Layout-To-Render | Lightricks | yes | ? | 1920x1088 (deuxième passe) | ? | ? | ? | ? | yes / yes | 3 | yes | ? | ? | ? | ? | ? | Wan2GP, Pinokio |  |
 | LTX · LTX-2.5 IC-LoRA officielles (Refine-Details, Restore, SDR-To-HDR, Alpha-Gen, Ingredients, Clean-Plate, Deblur, Decompression, Colorization, Day-To-Night, Water-Simulation, Pixel-Spatial-Upscaler) | Lightricks | yes | ? | 4K HDR (via Pixel-Spatial-Upscaler et SDR-To-HDR) | ? | ? | ? | ? | yes / ? | ? | yes | ? | ? | ? | ? | ? | Pinokio |  |
-| LTX · LTX-2.5 Pro (API) | Lightricks | yes | 6–10 s | 4K selon docs.ltx.io ; 1080p maximum sur fal (contradiction) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 948 | 957 | – | 0.120 (fal) |
+| LTX · LTX-2.5 Pro (API) | Lightricks | no | 6–10 s | 4K selon docs.ltx.io ; 1080p maximum sur fal (contradiction) | yes | ? | ? | ? | yes / yes | ? | no | no | no | no | 948 | 957 | – | 0.120 (fal) |
 | LTX · LTX-2.5 dev 22B (bf16) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | ? | ? | ? | ? | ComfyUI, Wan2GP, Pinokio, Maestro, Phosphene | 0.100 (wavespeed) |
 | LTX · LTX-2.5 distillé 22B (8 étapes) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | yes | yes | ? | ? | ComfyUI, Wan2GP, Pinokio, Maestro, Phosphene |  |
 | LTX · LTX-2.5 distillé quantifié (NVFP4, int8 convrot) | Lightricks | yes | ? | 4K HDR (3840x2176 dans l'exemple officiel, upscaler spatial x2 et DFR) | yes | ? | ? | ? | yes / yes | ? | yes | ? | yes | no | ? | ? | Wan2GP, Pinokio, Maestro |  |
@@ -59,7 +59,7 @@ Generated from `data/*.json` by `scripts/export_tables.py`. Version v2026.10.16,
 | MiniMax H3 · FastH3 Preview v1 4 étapes (VSA) | FastVideo (Hao AI Lab) | yes | ? | ? | yes | 0 | 0 | 0 | no / no | 0 | ? | ? | ? | no | ? | ? | Pinokio |  |
 | MiniMax H3 · FastH3 V2 8 étapes (INT8 ConvRot, NVFP4, FP8) | FastVideo (Hao AI Lab) | yes | ? | 768p (petit côté 768, plafond 768x1344) | yes | 0 | 0 | 0 | yes / yes | 2 | ? | yes | ? | no | ? | ? | ComfyUI |  |
 | MiniMax H3 · FastH3-Omni (Reactor) | Reactor | no | 5–15 s | 1344x768 (16:9), 768x1344 (9:16), 1024x768, 768x768 | yes | 9 | ? | 3 | yes / yes | 2 | ? | no | ? | ? | ? | ? | – |  |
-| MiniMax H3 · H3 (API MiniMax et fal) | MiniMax | yes | 4–15 s | 4K sur fal (agrandi d'une base 768p) ; 2K chez MiniMax et OpenRouter | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 2 | yes | no | no | no | 1158 | 1141 | – | 0.040 (kie) |
+| MiniMax H3 · H3 (API MiniMax et fal) | MiniMax | no | 4–15 s | 4K sur fal (agrandi d'une base 768p) ; 2K chez MiniMax et OpenRouter | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 2 | yes | no | no | no | 1158 | 1141 | – | 0.040 (kie) |
 | MiniMax H3 · H3 FL2VA 33B (poids ouverts) | MiniMax | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | 0 | 0 | 0 | yes / yes | 2 | yes | yes | yes | yes | 1158 | 1141 | ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro |  |
 | MiniMax H3 · H3 Fun ControlNet Union (1.0 puis 2.0) | Alibaba PAI | yes | 4–15 s | 768p natif (petit côté 768 px) ; 2K via H3-Regenerate-2K non publié | yes | ? | ? | ? | yes / yes | ? | yes | ? | ? | ? | ? | ? | ComfyUI, Wan2GP, Pinokio |  |
 | MiniMax H3 · H3 Max | fal (post-entraînement de MiniMax H3) | no | 0.92–15 s | 1080p (raffinage latent depuis 768p) ; 2K pour relight, extend et lip-sync | yes | 9 | 3 (15 s) | 3 (15 s) | yes / yes | 3 | no | no | ? | ? | 1156 | 1124 | – | 0.048 (fal) |

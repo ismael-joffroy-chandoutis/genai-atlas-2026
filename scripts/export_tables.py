@@ -22,7 +22,8 @@ import re
 _cl = ROOT / "CHANGELOG.md"
 _vm = re.search(r"^## (v[0-9.]+) · (\d{2})/(\d{2})/(\d{4})", _cl.read_text(), re.M) if _cl.exists() else None
 MONTHS = ["January","February","March","April","May","June","July","August","September","October","November","December"]
-asof = f"Version {_vm.group(1)}, data as of {int(_vm.group(2))} {MONTHS[int(_vm.group(3))-1]} {_vm.group(4)}." if _vm else "Data as of 15 October 2026."
+_read = max((p.get("retrieved_at") or "" for p in prices), default="")
+asof = (f"Version {_vm.group(1)}, published {int(_vm.group(2))} {MONTHS[int(_vm.group(3))-1]} {_vm.group(4)}, prices last read on {_read}.") if _vm else "Data as of 15 October 2026."
 best = {}
 for p in prices:
     if p.get("unit") == "subscription":
