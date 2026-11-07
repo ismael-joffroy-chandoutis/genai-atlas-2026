@@ -4,25 +4,28 @@
 
 # GenAI Atlas 2026
 
+[Open the interactive atlas](https://ismael-joffroy-chandoutis.github.io/genai-atlas-2026/): one page, no dependency, searchable offline.
+
 A comparison of generative video and image models as of 15 October 2026, variant by variant: what each one accepts as input (text, reference images, reference videos, reference audio, first and last frame, keyframes, 3D, control maps, LoRA), what it outputs (duration, resolution, native audio, lip-sync), its editing functions, its independent ranking, whether it runs locally on an RTX 5090, an RTX 4090 or a MacBook Pro M5 Max (128 GB), a MacBook Pro M5 Pro (64 GB), a Mac Studio M5 Max (128 GB) or M5 Ultra (256 or 512 GB), and what it costs, platform by platform. It was built for filmmakers who need to choose a tool for a given shot, not a favourite model.
 
 <img src="monde.jpg" alt="image-monde" width="100%">
 
 ## What is inside
 
-- `TABLES.md`: the two big tables (106 video variants, 81 image variants), readable directly on GitHub.
+- `TABLES.md`: the two big tables (107 video variants, 83 image variants), readable directly on GitHub.
 - `data/`: the source data in JSON, one object per variant, every object with dated sources.
   - `video-models.json`, `image-models.json`: capabilities, inputs, outputs, ranking, moderation, strengths and weaknesses.
-  - `prices.json`: 1138 prices for 362 models across 27 platforms (pay-per-use APIs, vendors, subscriptions).
+  - `prices.json`: 1139 prices for 363 models across 27 platforms (pay-per-use APIs, vendors, subscriptions).
   - `local-runs.json`: whether each open-weight model runs on a Mac M5 Max 128 GB and on an RTX 4090 24 GB, with the tool to use.
   - `gpu-hour.json`: GPU rental by the hour (RunPod, Vast.ai, Modal) and whole machines you rent and install Pinokio or ComfyUI on yourself (Scaleway, OVHcloud, Hetzner, DigitalOcean, Paperspace, Lambda, Vultr, Shadow, Nebius, Verda, Hyperstack, TensorDock), with what stopping a machine still bills.
   - `audio-models.json`: 139 audio variants (speech, voice cloning, transcription, music, sound effects, sound from video, dubbing, lip-sync, real-time dialogue), with the Artificial Analysis Speech, Music and speech-to-text arenas, TTS Arena V2 and the Open ASR Leaderboard, and the consent check of each voice cloning service.
   - `3d-models.json`: 76 3D variants (image to 3D, scene reconstruction, worlds, rigging, depth and camera), with the 3D Arena scores.
   - `rankings.json`: every public leaderboard score by category (Artificial Analysis and arena.ai: text, image and reference to video, with and without audio, video editing, text to image, image editing, multi-image editing).
-  - `platforms.json`: 50 platforms: verdict, moderation of real faces, whether a refusal is billed, payment, Seedance price, user feedback, subscription versus API cost, current promotions.
+  - `platforms.json`: 51 platforms: verdict, moderation of real faces, whether a refusal is billed, payment, Seedance price, user feedback, subscription versus API cost, current promotions.
   - `integrations.json`: in which local tools each model ships (official ComfyUI templates, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene).
   - `SCHEMA.md`: the format of every file.
-- `scripts/`: price readers (fal, OpenRouter, GPU clouds), the price merger, the table export and the builder of a single-file interactive page (`python3 scripts/build_atlas.py`, output in `site/`).
+- `scripts/`: price readers (fal, OpenRouter, GPU clouds), the price merger, the table export and the builder of the interactive atlas (`scripts/build_site.py`).
+- `site/`: the interactive atlas as a single file (`index.html`, copied to `docs/index.html` for GitHub Pages), its configuration (`atlas.config.json`), all the data gathered in one JSON (`atlas.data.json`) and the reusable template (`engine/`).
 - `lab/focal-test/`: a reproducible test on focal length and sensor (see below).
 
 ## Guides
@@ -66,7 +69,9 @@ python3 scripts/fetch_openrouter.py      # public list, no key
 FAL_KEY=... python3 scripts/fetch_fal.py # price endpoint, slow (rate limited)
 python3 scripts/merge-prices.py
 python3 scripts/export_tables.py         # TABLES.md
-python3 scripts/build_atlas.py           # site/index.html
+python3 scripts/build_site.py merge      # site/atlas.data.json
+python3 scripts/build_site.py check      # no entry lost or changed
+python3 scripts/build_site.py render     # site/index.html
 ```
 
 ## Limits

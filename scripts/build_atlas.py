@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Construit atlas.html (page autonome, données embarquées) depuis data/*.json.
-Usage : python3 scripts/build_atlas.py [--out site/index.html]"""
+Ancienne page, remplacée par scripts/build_site.py.
+Usage : python3 scripts/build_atlas.py [--out site/ancienne-page.html]"""
 import json, sys, pathlib, datetime, html
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
@@ -152,7 +153,7 @@ data = {"stages": stages, "video": video, "image": image, "audio": audio, "three
         "version": version, "data_max": max([m.get("_checked") or "" for L in (video, image, audio, threed, platforms) for m in L] or [""])}
 
 tpl = (ROOT / "scripts" / "atlas_template.tpl").read_text()
-out = pathlib.Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "site" / "index.html"
+out = pathlib.Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else ROOT / "site" / "ancienne-page.html"
 out.parent.mkdir(parents=True, exist_ok=True)
 out.write_text(tpl.replace("/*__DATA__*/null", json.dumps(data, ensure_ascii=False).replace("</", "<\\/")))
 print(f"{out} : version {version}, {len(video)} video, {len(image)} image, {len(prices)} prix, {len(data['orphans'])} prix sans modele")

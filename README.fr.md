@@ -4,25 +4,28 @@
 
 # Atlas génératif 2026
 
+[Ouvrir l'atlas interactif](https://ismael-joffroy-chandoutis.github.io/genai-atlas-2026/) : une seule page, sans dépendance, consultable hors ligne.
+
 Un comparatif des modèles de génération vidéo et image au 15 octobre 2026, variante par variante : ce que chacun accepte en entrée (texte, images de référence, vidéos de référence, sons de référence, première et dernière image, images-clés, 3D, cartes de contrôle, LoRA), ce qu'il produit (durée, résolution, son natif, synchronisation labiale), ses fonctions d'édition, son classement indépendant, s'il tourne en local sur une RTX 5090, une RTX 4090 ou un MacBook Pro M5 Max (128 Go), un MacBook Pro M5 Pro (64 Go), un Mac Studio M5 Max (128 Go) ou M5 Ultra (256 ou 512 Go), et ce qu'il coûte, plateforme par plateforme. Il est fait pour des cinéastes qui doivent choisir un outil pour un plan donné, pas un modèle préféré.
 
 <img src="monde.jpg" alt="image-monde" width="100%">
 
 ## Ce qu'il contient
 
-- `TABLES.md` : les deux grands tableaux (106 variantes vidéo, 81 variantes image), lisibles directement sur GitHub.
+- `TABLES.md` : les deux grands tableaux (107 variantes vidéo, 83 variantes image), lisibles directement sur GitHub.
 - `data/` : les données sources en JSON, un objet par variante, chacun avec ses sources datées.
   - `video-models.json`, `image-models.json` : fonctions, entrées, sorties, classement, modération, points forts et faiblesses.
-  - `prices.json` : 1138 prix pour 362 modèles sur 27 plateformes (API à l'usage, éditeurs, abonnements).
+  - `prices.json` : 1139 prix pour 363 modèles sur 27 plateformes (API à l'usage, éditeurs, abonnements).
   - `local-runs.json` : si chaque modèle à poids ouverts tourne sur un Mac M5 Max 128 Go et sur une RTX 4090 24 Go, avec l'outil à utiliser.
   - `gpu-hour.json` : location de GPU à l'heure (RunPod, Vast.ai, Modal) et machines complètes louées sur lesquelles on installe soi-même Pinokio ou ComfyUI (Scaleway, OVHcloud, Hetzner, DigitalOcean, Paperspace, Lambda, Vultr, Shadow, Nebius, Verda, Hyperstack, TensorDock), avec ce que l'arrêt d'une machine facture encore.
   - `audio-models.json` : 139 variantes audio (synthèse vocale, clonage de voix, transcription, musique, bruitages, son à partir de la vidéo, doublage, synchronisation labiale, dialogue en temps réel), avec les arènes Speech, Music et transcription d'Artificial Analysis, TTS Arena V2 et l'Open ASR Leaderboard, et le contrôle de consentement de chaque service de clonage.
   - `3d-models.json` : 76 variantes 3D (image vers 3D, reconstruction de scène, mondes, rigging, profondeur et caméra), avec les scores de 3D Arena.
   - `rankings.json` : tous les scores des classements publics par catégorie (Artificial Analysis et arena.ai : texte, image et référence vers vidéo, avec et sans son, édition vidéo, texte vers image, édition d'image, édition multi-images).
-  - `platforms.json` : 50 plateformes : verdict, modération des visages réels, refus facturé ou non, paiement, prix de Seedance, retours d'usagers, coût abonnement contre API, promotions en cours.
+  - `platforms.json` : 51 plateformes : verdict, modération des visages réels, refus facturé ou non, paiement, prix de Seedance, retours d'usagers, coût abonnement contre API, promotions en cours.
   - `integrations.json` : dans quels outils locaux chaque modèle est intégré (templates officiels ComfyUI, Wan2GP, Pinokio, Draw Things, Maestro, Phosphene).
   - `SCHEMA.md` : le format de chaque fichier.
-- `scripts/` : lecteurs de prix (fal, OpenRouter, clouds GPU), fusion des prix, export des tableaux et construction d'une page interactive en un seul fichier (`python3 scripts/build_atlas.py`, sortie dans `site/`).
+- `scripts/` : lecteurs de prix (fal, OpenRouter, clouds GPU), fusion des prix, export des tableaux et construction de l'atlas interactif (`scripts/build_site.py`).
+- `site/` : l'atlas interactif en un seul fichier (`index.html`, copié dans `docs/index.html` pour GitHub Pages), sa configuration (`atlas.config.json`), toutes les données réunies en un JSON (`atlas.data.json`) et le gabarit réutilisable (`engine/`).
 - `lab/focal-test/` : un test reproductible sur la focale et le capteur (plus bas).
 
 ## Guides
@@ -66,7 +69,9 @@ python3 scripts/fetch_openrouter.py      # liste publique, sans clé
 FAL_KEY=... python3 scripts/fetch_fal.py # prix, lent (débit limité)
 python3 scripts/merge-prices.py
 python3 scripts/export_tables.py         # TABLES.md
-python3 scripts/build_atlas.py           # site/index.html
+python3 scripts/build_site.py merge      # site/atlas.data.json
+python3 scripts/build_site.py check      # aucune entrée perdue ni modifiée
+python3 scripts/build_site.py render     # site/index.html
 ```
 
 ## Limites
